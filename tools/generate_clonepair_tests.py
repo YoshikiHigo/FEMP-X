@@ -14,9 +14,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-MAIN_DIR = ROOT / "src" / "main" / "java" / "inequivalent"
-TEST_DIR = ROOT / "src" / "test" / "java" / "inequivalent"
-GRADLE_USER_HOME = os.environ.get("GRADLE_USER_HOME", "/tmp/femp-gradle-home")
+GRADLE_USER_HOME = os.environ.get("GRADLE_USER_HOME", str(Path.home() / ".gradle"))
 
 
 @dataclass(frozen=True)
@@ -59,7 +57,27 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--end-id", type=int, default=6000)
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument("--ids", type=str, default=None)
+    parser.add_argument("--package-name", type=str, default="inequivalent")
+    parser.add_argument("--include-existing", action="store_true")
+    parser.add_argument("--verify-before-write", action="store_true")
     return parser.parse_args()
+
+
+def read_text_with_fallback(path: Path) -> str:
+    for encoding in ("utf-8", "cp932", "utf-8-sig"):
+        try:
+            return path.read_text(encoding=encoding)
+        except UnicodeDecodeError:
+            continue
+    return path.read_text(encoding="utf-8", errors="ignore")
+
+
+def main_dir(package_name: str) -> Path:
+    return ROOT / "src" / "main" / "java" / package_name
+
+
+def test_dir(package_name: str) -> Path:
+    return ROOT / "src" / "test" / "java" / package_name
 
 
 def java_string(value: str) -> str:
@@ -162,9 +180,9 @@ def find_matching_brace(text: str, open_index: int) -> int:
     raise ValueError("Unmatched brace")
 
 
-def parse_class(class_id: int) -> dict[str, MethodInfo]:
-    path = MAIN_DIR / f"ClonePair{class_id}.java"
-    text = path.read_text()
+def parse_class(package_name: str, class_id: int) -> dict[str, MethodInfo]:
+    path = main_dir(package_name) / f"ClonePair{class_id}.java"
+    text = read_text_with_fallback(path)
     methods: dict[str, MethodInfo] = {}
     for match in METHOD_PATTERN.finditer(text):
         return_type, method_name, params_source = match.groups()
@@ -313,6 +331,8 @@ def pool_for_param(param: Param, body: str) -> list[str]:
         ])
     if type_name == "Integer":
         return ["null", "Integer.valueOf(-1)", "Integer.valueOf(0)", "Integer.valueOf(1)", "Integer.valueOf(2)", "Integer.valueOf(16)"]
+    if type_name == "Short":
+        return ["null", "Short.valueOf((short) -1)", "Short.valueOf((short) 0)", "Short.valueOf((short) 1)", "Short.valueOf((short) 8)", "Short.valueOf((short) 16)"]
     if type_name == "Double":
         return ["null", "Double.valueOf(-1.0)", "Double.valueOf(0.0)", "Double.valueOf(1.0)", "Double.valueOf(1.5)", "Double.valueOf(Double.NaN)"]
     if type_name == "Number":
@@ -349,7 +369,17 @@ def pool_for_param(param: Param, body: str) -> list[str]:
         return ["(byte) -1", "(byte) 0", "(byte) 1", "(byte) 16", "(byte) 0x7F", "(byte) 0xFF"]
     if type_name == "byte[]":
         bounds, matches = parse_array_constraints(body, (param.name,) + param.aliases)
-        expressions = ["null", "new byte[]{}", byte_array_expr([0]), byte_array_expr([0, 1, 2]), byte_array_expr([1, 2, 3, 4])]
+        expressions = [
+            "null",
+            "new byte[]{}",
+            byte_array_expr([0]),
+            byte_array_expr([0, 1, 2]),
+            byte_array_expr([1, 2, 3, 4]),
+            byte_array_expr(list(range(8))),
+            byte_array_expr(list(range(16))),
+            byte_array_expr(list(range(32))),
+            byte_array_expr(list(range(64))),
+        ]
         for bound in sorted(set(bounds)):
             if bound > 0:
                 expressions.append(byte_array_expr([0] * (bound - 1)))
@@ -386,6 +416,15 @@ def pool_for_param(param: Param, body: str) -> list[str]:
         return dedupe_preserve(["null", "i3()", "i3(i2(new int[]{0}))", "i3(i2(new int[]{1, 2}), i2(new int[]{3, 4}))"])
     if type_name == "long[]":
         return dedupe_preserve(["null", "new long[]{}", "new long[]{0L}", "new long[]{1L, 2L}"])
+    if type_name == "long[][]":
+        return dedupe_preserve([
+            "null",
+            "new long[][]{}",
+            "longMatrix(10, 16)",
+            "longMatrixSequential(10, 16)",
+            "longMatrix(9, 16)",
+            "longMatrix(10, 15)",
+        ])
     if type_name == "short[]":
         return dedupe_preserve(["null", "new short[]{}", "new short[]{0}", "new short[]{1, 2}", "new short[]{-1, 0, 1}"])
     if type_name == "char[]":
@@ -405,11 +444,25 @@ def pool_for_param(param: Param, body: str) -> list[str]:
     if type_name == "boolean[]":
         return dedupe_preserve(["null", "new boolean[]{}", "new boolean[]{true}", "new boolean[]{false, true}"])
     if type_name == "Object[]":
-        return dedupe_preserve(["null", "new Object[]{}", "new Object[]{" + java_string("a") + "}", "new Object[]{" + java_string("a") + ", Integer.valueOf(1)}"])
+        return dedupe_preserve([
+            "null",
+            "new Object[]{}",
+            "new Object[]{" + java_string("a") + "}",
+            "new Object[]{null}",
+            "new Object[]{" + java_string("a") + ", Integer.valueOf(1)}",
+            "new Object[]{null, Integer.valueOf(1)}",
+        ])
     if type_name == "Number[]":
         return dedupe_preserve(["null", "new Number[]{}", "new Number[]{Integer.valueOf(1)}", "new Number[]{Integer.valueOf(1), Double.valueOf(2.0)}", "new Number[]{Double.valueOf(1.5), Long.valueOf(2L), Integer.valueOf(3)}"])
     if type_name == "Class[]":
         return dedupe_preserve(["null", "new Class[]{}", "new Class[]{String.class}", "new Class[]{String.class, Integer.class}", "new Class[]{int.class, double.class}"])
+    if type_name == "StackTraceElement[]":
+        return dedupe_preserve([
+            "null",
+            "new StackTraceElement[]{}",
+            'new StackTraceElement[]{new StackTraceElement("A", "m1", "A.java", 10)}',
+            'new StackTraceElement[]{new StackTraceElement("A", "m1", "A.java", 10), new StackTraceElement("B", "m2", "B.java", 20)}',
+        ])
     if type_name == "byte[][][]":
         return dedupe_preserve([
             "null",
@@ -422,6 +475,8 @@ def pool_for_param(param: Param, body: str) -> list[str]:
         return ["null", "date(0L)", "date(86_400_000L)", "date(-86_400_000L)"]
     if type_name == "Calendar":
         return ["null", "calendar(0L)", "calendar(86_400_000L)", "calendar(1_000_000_000L)"]
+    if type_name == "Locale":
+        return ["null", 'locale("en", "US", "")', 'locale("ja", "JP", "")', 'locale("fr", "CA", "POSIX")']
     if type_name == "List":
         return ["null", "list()", "list(" + java_string("alpha") + ")", "list(" + java_string("alpha") + ", " + java_string("beta") + ")", "list(" + java_string("beta") + ", " + java_string("gamma") + ")"]
     if type_name == "List<String>" or type_name == "Collection<String>":
@@ -429,6 +484,14 @@ def pool_for_param(param: Param, body: str) -> list[str]:
     if type_name == "List<Double>":
         return ["null", "list()", "list(Double.valueOf(1.0))", "list(Double.valueOf(1.0), Double.valueOf(2.0))", "list(Double.valueOf(-1.0), Double.valueOf(0.0), Double.valueOf(1.0))"]
     if type_name == "List<Object>":
+        return ["null", "list()", "list(Integer.valueOf(1))", "list(Integer.valueOf(1), Integer.valueOf(2))", "list(Double.valueOf(1.5), Integer.valueOf(2))", "list(null, Integer.valueOf(2))"]
+    if type_name == "ArrayList":
+        return ["null", "list()", "list(" + java_string("alpha") + ")", "list(" + java_string("alpha") + ", " + java_string("beta") + ")", "list(" + java_string("beta") + ", " + java_string("gamma") + ")"]
+    if type_name == "ArrayList<String>":
+        return ["null", "list()", "list(" + java_string("alpha") + ")", "list(" + java_string("alpha") + ", " + java_string("beta") + ")", "list(" + java_string("beta") + ", " + java_string("gamma") + ")"]
+    if type_name == "ArrayList<Double>":
+        return ["null", "list()", "list(Double.valueOf(1.0))", "list(Double.valueOf(1.0), Double.valueOf(2.0))", "list(Double.valueOf(-1.0), Double.valueOf(0.0), Double.valueOf(1.0))"]
+    if type_name == "ArrayList<Object>":
         return ["null", "list()", "list(Integer.valueOf(1))", "list(Integer.valueOf(1), Integer.valueOf(2))", "list(Double.valueOf(1.5), Integer.valueOf(2))", "list(null, Integer.valueOf(2))"]
     if type_name == "Collection":
         return ["null", "list()", "list(" + java_string("alpha") + ")", "list(" + java_string("alpha") + ", " + java_string("beta") + ")"]
@@ -442,8 +505,24 @@ def pool_for_param(param: Param, body: str) -> list[str]:
         return ["null", "vectorOfStrings()", "vectorOfStrings(" + java_string("alpha") + ")", "vectorOfStrings(" + java_string("alpha") + ", " + java_string("beta") + ")"]
     if type_name == "Set<String>":
         return ["null", "stringSet()", "stringSet(" + java_string("alpha") + ")", "stringSet(" + java_string("alpha") + ", " + java_string("beta") + ")"]
+    if type_name == "Set" or raw_type_name == "Set":
+        return [
+            "null",
+            "linkedSet()",
+            "linkedSet(" + java_string("alpha") + ")",
+            "linkedSet(" + java_string("alpha") + ", " + java_string("beta") + ")",
+            "linkedSet(" + java_string("beta") + ", " + java_string("gamma") + ")",
+        ]
     if type_name == "StringBuffer":
         return ["null", "sb(" + java_string("") + ")", "sb(" + java_string("a") + ")", "sb(" + java_string("abc") + ")"]
+    if type_name == "StringBuilder":
+        return [
+            "null",
+            "new StringBuilder(" + java_string("") + ")",
+            "new StringBuilder(" + java_string("a") + ")",
+            "new StringBuilder(" + java_string("abc") + ")",
+            "new StringBuilder(" + java_string("suffix") + ")",
+        ]
     if type_name == "Hashtable":
         return ["null", "hashtable()", "hashtable(" + java_string("a") + ", " + java_string("1") + ")", "hashtable(" + java_string("a") + ", " + java_string("1") + ", " + java_string("b") + ", " + java_string("2") + ")"]
     if type_name == "Map":
@@ -458,6 +537,8 @@ def pool_for_param(param: Param, body: str) -> list[str]:
         return ["null", "String.class", "Integer.class", "Object.class", "int.class", "double.class"]
     if type_name == "Random":
         return ["null", "new java.util.Random(0L)", "new java.util.Random(1L)", "new java.util.Random(2L)"]
+    if type_name == "Comparator" or raw_type_name == "Comparator":
+        return ["null", "naturalComparator()", "reverseComparator()"]
     if raw_type_name == "Map":
         return ["null", "map()", "map(" + java_string("a") + ", " + java_string("1") + ")", "map(" + java_string("a") + ", " + java_string("1") + ", " + java_string("b") + ", " + java_string("2") + ")"]
     raise ValueError(f"Unsupported parameter type: {type_name}")
@@ -538,6 +619,17 @@ def string_array_literals(expression: str) -> list[str] | None:
     return re.findall(r'"((?:[^"\\]|\\.)*)"', expression)
 
 
+def string_array_startswith_any(expression: str, prefixes: list[str]) -> bool:
+    values = string_array_literals(expression)
+    if values is None:
+        return False
+    for value in values:
+        for prefix in prefixes:
+            if prefix != "" and value.startswith(prefix):
+                return True
+    return False
+
+
 def respects_min_max(params: tuple[Param, ...], case: tuple[str, ...]) -> bool:
     name_to_index = {param.name.lower(): index for index, param in enumerate(params)}
     if "min" not in name_to_index or "max" not in name_to_index:
@@ -553,6 +645,61 @@ def respects_loop_progress_constraints(method: MethodInfo, case: tuple[str, ...]
     if "while" not in method.body and "for" not in method.body:
         return True
     param_indices = {param.name: index for index, param in enumerate(method.params)}
+    for derived_name, source_name, _ in re.findall(
+        r"\b(?:final\s+)?(?:int|long|short|byte)\s+(\w+)\s*=\s*(\w+)\s*>>>\s*(\d+)\b",
+        method.body,
+    ):
+        if source_name not in param_indices:
+            continue
+        if not re.search(rf"new\s+[A-Za-z_][\w\[\]<>]*\s*\[\s*{re.escape(derived_name)}\s*\]", method.body):
+            continue
+        source_value = numeric_literal_value(case[param_indices[source_name]])
+        if source_value is not None and source_value < 0:
+            return False
+    string_values = {
+        param.name: string_literal_value(case[index])
+        for index, param in enumerate(method.params)
+        if normalized_type_name(param.effective_type) in {"String", "CharSequence"}
+    }
+    indexof_pairs = [
+        (receiver, needle)
+        for receiver, needle in re.findall(r"\b(\w+)\.indexOf\(\s*(\w+)\b", method.body)
+        if receiver in param_indices and needle in param_indices
+    ]
+    if indexof_pairs and ("while" in method.body or "for" in method.body):
+        for receiver, needle in indexof_pairs:
+            needle_value = string_values.get(needle)
+            if needle_value == "":
+                return False
+    stalled_index_match = re.search(r"while\s*\(\s*(\w+)\s*!=\s*-1[^)]*\)", method.body)
+    if stalled_index_match:
+        loop_index = stalled_index_match.group(1)
+        if re.search(rf"if\s*\(\s*{re.escape(loop_index)}\s*>\s*0\s*\)", method.body):
+            for receiver, needle in indexof_pairs:
+                receiver_value = string_values.get(receiver)
+                needle_value = string_values.get(needle)
+                if receiver_value is not None and needle_value not in {None, ""} and receiver_value.startswith(needle_value):
+                    return False
+    string_array_params = {
+        param.name: case[index]
+        for index, param in enumerate(method.params)
+        if normalized_type_name(param.effective_type) == "String[]"
+    }
+    indexed_string_arrays = [name for name in string_array_params if re.search(rf"\bindexOf\(\s*{re.escape(name)}\s*\[\s*i\s*\]", method.body)]
+    for name in indexed_string_arrays:
+        values = string_array_literals(string_array_params[name])
+        if values is not None and any(value == "" for value in values):
+            return False
+    for old_name in indexed_string_arrays:
+        old_values = string_array_literals(string_array_params[old_name])
+        if not old_values:
+            continue
+        for new_name, new_expr in string_array_params.items():
+            if new_name == old_name:
+                continue
+            if re.search(rf"\b{re.escape(new_name)}\s*\[\s*i\s*\]", method.body):
+                if string_array_startswith_any(new_expr, old_values):
+                    return False
     if "colors[i] >= quantity" in method.body and "quantity - 1" in method.body:
         if "kids" in param_indices and "quantity" in param_indices:
             kids_value = numeric_literal_value(case[param_indices["kids"]])
@@ -903,6 +1050,18 @@ def oracle_helpers_source() -> str:
         return new java.util.LinkedHashSet<>(java.util.Arrays.asList(items));
     }
 
+    static <T> java.util.LinkedHashSet<T> linkedSet(T... items) {
+        return new java.util.LinkedHashSet<>(java.util.Arrays.asList(items));
+    }
+
+    static java.util.Comparator<Object> naturalComparator() {
+        return (left, right) -> ((java.lang.Comparable<Object>) left).compareTo(right);
+    }
+
+    static java.util.Comparator<Object> reverseComparator() {
+        return (left, right) -> ((java.lang.Comparable<Object>) right).compareTo(left);
+    }
+
     static java.util.Date date(long millis) {
         return new java.util.Date(millis);
     }
@@ -911,6 +1070,10 @@ def oracle_helpers_source() -> str:
         java.util.GregorianCalendar calendar = new java.util.GregorianCalendar(java.util.TimeZone.getTimeZone("UTC"));
         calendar.setTimeInMillis(millis);
         return calendar;
+    }
+
+    static java.util.Locale locale(String language, String country, String variant) {
+        return new java.util.Locale(language, country, variant);
     }
 
     static StringBuffer sb(String value) {
@@ -968,12 +1131,26 @@ def oracle_helpers_source() -> str:
     static byte[][][] b3(byte[][]... planes) {
         return planes;
     }
+
+    static long[][] longMatrix(int rows, int columns) {
+        return new long[rows][columns];
+    }
+
+    static long[][] longMatrixSequential(int rows, int columns) {
+        long[][] values = new long[rows][columns];
+        for (int row = 0; row < rows; row++) {
+            for (int column = 0; column < columns; column++) {
+                values[row][column] = (((long) row) << 8) | column;
+            }
+        }
+        return values;
+    }
 """
 
 
-def build_oracle_source(class_id: int, cases_by_method: dict[str, list[tuple[str, ...]]]) -> str:
+def build_oracle_source(package_name: str, class_id: int, cases_by_method: dict[str, list[tuple[str, ...]]]) -> str:
     lines = [
-        "package inequivalent;",
+        f"package {package_name};",
         "",
         "import java.io.ByteArrayOutputStream;",
         "import java.io.ObjectOutputStream;",
@@ -1054,13 +1231,13 @@ def build_oracle_source(class_id: int, cases_by_method: dict[str, list[tuple[str
     return "\n".join(lines)
 
 
-def run_oracle(class_id: int, cases_by_method: dict[str, list[tuple[str, ...]]]) -> dict[str, list[OracleResult]]:
+def run_oracle(package_name: str, class_id: int, cases_by_method: dict[str, list[tuple[str, ...]]]) -> dict[str, list[OracleResult]]:
     with tempfile.TemporaryDirectory(prefix=f"clonepair-{class_id}-oracle-") as temp_dir:
         temp_path = Path(temp_dir)
-        source_dir = temp_path / "inequivalent"
+        source_dir = temp_path / package_name
         source_dir.mkdir(parents=True, exist_ok=True)
         oracle_path = source_dir / f"ClonePair{class_id}Oracle.java"
-        oracle_path.write_text(build_oracle_source(class_id, cases_by_method))
+        oracle_path.write_text(build_oracle_source(package_name, class_id, cases_by_method))
 
         compile_result = subprocess.run(
             ["javac", "-d", temp_dir, "-sourcepath", str(ROOT / "src" / "main" / "java"), str(oracle_path)],
@@ -1073,7 +1250,7 @@ def run_oracle(class_id: int, cases_by_method: dict[str, list[tuple[str, ...]]])
 
         try:
             run_result = subprocess.run(
-                ["java", "-cp", temp_dir, f"inequivalent.ClonePair{class_id}Oracle"],
+            ["java", "-ea", "-cp", temp_dir, f"{package_name}.ClonePair{class_id}Oracle"],
                 cwd=ROOT,
                 capture_output=True,
                 text=True,
@@ -1174,13 +1351,13 @@ def select_cases(method: MethodInfo, candidate_args: list[tuple[str, ...]], orac
     return selected[:5]
 
 
-def generate_test_source(class_id: int, method: MethodInfo, selected_cases: list[SelectedCase]) -> str:
+def generate_test_source(package_name: str, class_id: int, method: MethodInfo, selected_cases: list[SelectedCase]) -> str:
     lines = [
-        "package inequivalent;",
+        f"package {package_name};",
         "",
         "import org.junit.jupiter.api.Test;",
         "",
-        "import static inequivalent.ClonePairGeneratedTestSupport.*;",
+        f"import static {package_name}.ClonePairGeneratedTestSupport.*;",
         "import static org.junit.jupiter.api.Assertions.assertThrows;",
         "",
         f"class ClonePair{class_id}{method.name[0].upper() + method.name[1:]}Test {{",
@@ -1221,14 +1398,14 @@ def junit_classpath() -> str:
     )
     jars: list[Path] = []
     for pattern in required_patterns:
-        matches = sorted(cache_root.glob(pattern))
+        matches = sorted(path for path in cache_root.glob(pattern) if not path.name.endswith("-sources.jar"))
         if not matches:
             raise RuntimeError(f"Missing JUnit dependency for pattern: {pattern}")
         jars.append(matches[-1])
     return os.pathsep.join(str(path) for path in jars)
 
 
-def build_test_launcher_source(class_id: int) -> str:
+def build_test_launcher_source(package_name: str, class_id: int) -> str:
     return f"""
 import java.io.PrintWriter;
 
@@ -1246,8 +1423,8 @@ public class GeneratedTestLauncher {{
     public static void main(String[] args) {{
         LauncherDiscoveryRequest request = LauncherDiscoveryRequestBuilder.request()
                 .selectors(
-                        selectClass("inequivalent.ClonePair{class_id}Method1Test"),
-                        selectClass("inequivalent.ClonePair{class_id}Method2Test"))
+                        selectClass("{package_name}.ClonePair{class_id}Method1Test"),
+                        selectClass("{package_name}.ClonePair{class_id}Method2Test"))
                 .build();
         SummaryGeneratingListener listener = new SummaryGeneratingListener();
         Launcher launcher = LauncherFactory.create();
@@ -1264,17 +1441,23 @@ public class GeneratedTestLauncher {{
 """.strip()
 
 
-def run_gradle_tests(class_id: int) -> None:
+def run_generated_tests(package_name: str, class_id: int, method1_source: str, method2_source: str) -> None:
     classpath = junit_classpath()
     with tempfile.TemporaryDirectory(prefix=f"clonepair-{class_id}-tests-") as temp_dir:
         temp_path = Path(temp_dir)
+        package_dir = temp_path / package_name
+        package_dir.mkdir(parents=True, exist_ok=True)
         launcher_path = temp_path / "GeneratedTestLauncher.java"
-        launcher_path.write_text(build_test_launcher_source(class_id))
+        launcher_path.write_text(build_test_launcher_source(package_name, class_id))
+        method1_path = package_dir / f"ClonePair{class_id}Method1Test.java"
+        method2_path = package_dir / f"ClonePair{class_id}Method2Test.java"
+        method1_path.write_text(method1_source)
+        method2_path.write_text(method2_source)
         sources = [
-            ROOT / "src" / "main" / "java" / "inequivalent" / f"ClonePair{class_id}.java",
-            ROOT / "src" / "test" / "java" / "inequivalent" / "ClonePairGeneratedTestSupport.java",
-            ROOT / "src" / "test" / "java" / "inequivalent" / f"ClonePair{class_id}Method1Test.java",
-            ROOT / "src" / "test" / "java" / "inequivalent" / f"ClonePair{class_id}Method2Test.java",
+            main_dir(package_name) / f"ClonePair{class_id}.java",
+            test_dir(package_name) / "ClonePairGeneratedTestSupport.java",
+            method1_path,
+            method2_path,
             launcher_path,
         ]
         compile_result = subprocess.run(
@@ -1289,7 +1472,7 @@ def run_gradle_tests(class_id: int) -> None:
             )
 
         run_result = subprocess.run(
-            ["java", "-cp", os.pathsep.join([temp_dir, classpath]), "GeneratedTestLauncher"],
+            ["java", "-ea", "-cp", os.pathsep.join([temp_dir, classpath]), "GeneratedTestLauncher"],
             cwd=ROOT,
             capture_output=True,
             text=True,
@@ -1298,22 +1481,22 @@ def run_gradle_tests(class_id: int) -> None:
             raise RuntimeError(f"Custom test run failed for ClonePair{class_id}\n{run_result.stdout}\n{run_result.stderr}")
 
 
-def existing_test_ids() -> set[int]:
+def existing_test_ids(package_name: str) -> set[int]:
     ids = set()
-    for path in TEST_DIR.glob("ClonePair*Method*Test.java"):
+    for path in test_dir(package_name).glob("ClonePair*Method*Test.java"):
         stem = path.stem
         class_part = stem.replace("ClonePair", "").split("Method", 1)[0]
         ids.add(int(class_part))
     return ids
 
 
-def target_ids(start_id: int, end_id: int, explicit_ids: str | None) -> list[int]:
-    all_main_ids = sorted(int(path.stem.replace("ClonePair", "")) for path in MAIN_DIR.glob("ClonePair*.java"))
-    tested_ids = existing_test_ids()
+def target_ids(package_name: str, start_id: int, end_id: int, explicit_ids: str | None, include_existing: bool) -> list[int]:
+    all_main_ids = sorted(int(path.stem.replace("ClonePair", "")) for path in main_dir(package_name).glob("ClonePair*.java"))
+    tested_ids = existing_test_ids(package_name)
     if explicit_ids:
         requested = [int(value) for value in explicit_ids.split(",") if value.strip()]
-        return [class_id for class_id in requested if class_id in all_main_ids and class_id not in tested_ids]
-    return [class_id for class_id in all_main_ids if start_id <= class_id <= end_id and class_id not in tested_ids]
+        return [class_id for class_id in requested if class_id in all_main_ids and (include_existing or class_id not in tested_ids)]
+    return [class_id for class_id in all_main_ids if start_id <= class_id <= end_id and (include_existing or class_id not in tested_ids)]
 
 
 def ensure_support_compiles() -> None:
@@ -1322,7 +1505,8 @@ def ensure_support_compiles() -> None:
 
 def main() -> int:
     args = parse_args()
-    class_ids = target_ids(args.start_id, args.end_id, args.ids)
+    package_name = args.package_name
+    class_ids = target_ids(package_name, args.start_id, args.end_id, args.ids, args.include_existing)
     if args.limit is not None:
         class_ids = class_ids[:args.limit]
     if not class_ids:
@@ -1333,20 +1517,28 @@ def main() -> int:
 
     total = len(class_ids)
     for position, class_id in enumerate(class_ids, start=1):
-        methods = parse_class(class_id)
+        methods = parse_class(package_name, class_id)
         cases_by_method = {name: build_candidate_args(method) for name, method in methods.items()}
-        oracle_results = run_oracle(class_id, cases_by_method)
+        oracle_results = run_oracle(package_name, class_id, cases_by_method)
         selected_by_method = {
             name: select_cases(methods[name], cases_by_method[name], oracle_results[name])
             for name in ("method1", "method2")
         }
+        method_sources = {
+            method_name: generate_test_source(package_name, class_id, methods[method_name], selected_by_method[method_name])
+            for method_name in ("method1", "method2")
+        }
+
+        if args.verify_before_write:
+            run_generated_tests(package_name, class_id, method_sources["method1"], method_sources["method2"])
 
         for method_name in ("method1", "method2"):
-            test_path = TEST_DIR / f"ClonePair{class_id}{method_name[0].upper() + method_name[1:]}Test.java"
-            test_path.write_text(generate_test_source(class_id, methods[method_name], selected_by_method[method_name]))
+            test_path = test_dir(package_name) / f"ClonePair{class_id}{method_name[0].upper() + method_name[1:]}Test.java"
+            test_path.write_text(method_sources[method_name])
 
-        run_gradle_tests(class_id)
-        print(f"ClonePair{class_id} complete ({position}/{total})", flush=True)
+        if not args.verify_before_write:
+            run_generated_tests(package_name, class_id, method_sources["method1"], method_sources["method2"])
+        print(f"[{position}/{total}] ClonePair{class_id} complete", flush=True)
     return 0
 
 
