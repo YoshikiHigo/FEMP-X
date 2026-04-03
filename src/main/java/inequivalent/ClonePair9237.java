@@ -1,0 +1,37 @@
+package inequivalent;
+
+public class ClonePair9237 {
+
+    int method1(String line, int pos, String noWordSep) {
+        if (pos != 0) pos--;
+        char ch = line.charAt(pos);
+        if (noWordSep == null) noWordSep = "";
+        boolean selectNoLetter = (!Character.isLetterOrDigit(ch) && noWordSep.indexOf(ch) == -1);
+        int wordEnd = line.length();
+        for (int i = pos; i < line.length(); i++) {
+            ch = line.charAt(i);
+            if (selectNoLetter ^ (!Character.isLetterOrDigit(ch) && noWordSep.indexOf(ch) == -1)) {
+                wordEnd = i;
+                break;
+            }
+        }
+        return wordEnd;
+    }
+
+    int method2(String line, int pos, String noWordSep) {
+        char ch = line.charAt(pos);
+        if (noWordSep == null) {
+            noWordSep = "";
+        }
+        boolean selectNoLetter = (!Character.isLetterOrDigit(ch) && noWordSep.indexOf(ch) == -1);
+        int wordEnd = line.length();
+        for (int i = pos; i < line.length(); i++) {
+            ch = line.charAt(i);
+            if (selectNoLetter ^ (!Character.isLetterOrDigit(ch) && noWordSep.indexOf(ch) == -1)) {
+                wordEnd = i;
+                break;
+            }
+        }
+        return wordEnd;
+    }
+}
