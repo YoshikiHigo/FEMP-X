@@ -8,6 +8,7 @@ public class ClonePair11143 {
     boolean method2(Class target, Class source) {
         if (target.isAssignableFrom(source)) {
             return true;
-        } else return (target.equals(Boolean.TYPE) && source.equals(Boolean.class)) || (target.equals(Character.TYPE) && source.equals(Character.class)) || (target.equals(Byte.TYPE) && source.equals(Byte.class)) || (target.equals(Short.TYPE) && source.equals(Short.class)) || (target.equals(Integer.TYPE) && source.equals(Integer.class)) || (target.equals(Long.TYPE) && source.equals(Long.class)) || (target.equals(Float.TYPE) && source.equals(Float.class)) || (target.equals(Double.TYPE) && source.equals(Double.class));
+        } else
+            return (target.equals(Boolean.TYPE) && source.equals(Boolean.class)) || (target.equals(Character.TYPE) && source.equals(Character.class)) || (target.equals(Byte.TYPE) && source.equals(Byte.class)) || (target.equals(Short.TYPE) && source.equals(Short.class)) || (target.equals(Integer.TYPE) && source.equals(Integer.class)) || (target.equals(Long.TYPE) && source.equals(Long.class)) || (target.equals(Float.TYPE) && source.equals(Float.class)) || (target.equals(Double.TYPE) && source.equals(Double.class));
     }
 }

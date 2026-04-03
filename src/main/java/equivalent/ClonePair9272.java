@@ -4,7 +4,8 @@ public class ClonePair9272 {
     Short method1(Object obj) {
         if (obj == null) return null;
         if (obj instanceof Number) return Short.valueOf(((Number) obj).shortValue());
-        if (obj instanceof Boolean) return (obj.equals(Boolean.FALSE)) ? Short.valueOf((short) 0) : Short.valueOf((short) -1);
+        if (obj instanceof Boolean)
+            return (obj.equals(Boolean.FALSE)) ? Short.valueOf((short) 0) : Short.valueOf((short) -1);
         try {
             return Short.valueOf(obj.toString());
         } catch (Throwable t) {
