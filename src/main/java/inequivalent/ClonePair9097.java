@@ -1,0 +1,37 @@
+package inequivalent;
+
+public class ClonePair9097 {
+
+    double method1(double angle) {
+        while (angle > Math.PI) {
+            angle -= 2 * Math.PI;
+        }
+        while (angle <= -Math.PI) {
+            angle += 2 * Math.PI;
+        }
+        return angle;
+    }
+
+    double method2(double angle) {
+        if (angle > Math.PI) {
+            if (angle <= (Math.PI * 3.0)) {
+                angle = angle - (Math.PI * 2.0);
+            } else {
+                angle = Math.IEEEremainder(angle, (Math.PI * 2.0));
+                if (angle == -Math.PI) {
+                    angle = Math.PI;
+                }
+            }
+        } else if (angle <= -Math.PI) {
+            if (angle > (-Math.PI * 3.0)) {
+                angle = angle + (Math.PI * 2.0);
+            } else {
+                angle = Math.IEEEremainder(angle, (Math.PI * 2.0));
+                if (angle == -Math.PI) {
+                    angle = Math.PI;
+                }
+            }
+        }
+        return angle;
+    }
+}

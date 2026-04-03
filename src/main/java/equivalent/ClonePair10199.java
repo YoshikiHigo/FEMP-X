@@ -1,0 +1,13 @@
+package equivalent;
+
+public class ClonePair10199 {
+    Integer method1(String value) {
+        if (value == null) return null;
+        return Integer.parseInt(value);
+    }
+
+    Integer method2(String str) {
+        if (str == null) return null;
+        return Integer.parseInt(str);
+    }
+}
