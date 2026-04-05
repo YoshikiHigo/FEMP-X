@@ -1,0 +1,25 @@
+package all;
+
+public class ClonePair2574 {
+
+    boolean method1(byte[] bcommand,byte[] brecieved){
+      if (bcommand.length == brecieved.length) {
+        for (int i=0; i < bcommand.length; i++) {
+          if (bcommand[i] != brecieved[i]) {
+            return false;
+          }
+        }
+        return true;
+      }
+     else {
+        return false;
+      }
+    }
+
+    boolean method2(byte[] a,byte[] b){
+      int size;
+      if ((size=a.length) != b.length)   return false;
+      for (int i=0; i < size; i++)   if (a[i] != b[i])   return false;
+      return true;
+    }
+}

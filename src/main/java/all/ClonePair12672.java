@@ -1,0 +1,59 @@
+package all;
+
+public class ClonePair12672 {
+
+    boolean method1(byte[] data,int offset,int length){
+      if ((length & 3) != 0 || (length <= 4)) {
+        return false;
+      }
+      long chksum=0;
+      int count=length - 4;
+      long check;
+      int i;
+      for (i=offset; i < count; i+=4) {
+        check=data[i] & 0xff;
+        check|=data[i + 1] << 8 & 0xff00;
+        check|=data[i + 2] << 0x10 & 0xff0000;
+        check|=data[i + 3] << 0x18 & 0xff000000;
+        chksum^=check;
+      }
+      check=data[i] & 0xff;
+      check|=data[i + 1] << 8 & 0xff00;
+      check|=data[i + 2] << 0x10 & 0xff0000;
+      check|=data[i + 3] << 0x18 & 0xff000000;
+      check=data[i] & 0xff;
+      check|=data[i + 1] << 8 & 0xff00;
+      check|=data[i + 2] << 0x10 & 0xff0000;
+      check|=data[i + 3] << 0x18 & 0xff000000;
+      return 0 == chksum;
+    }
+
+    boolean method2(byte[] raw,int offset,int size){
+      if ((size & 3) != 0 || size <= 4) {
+        return false;
+      }
+      long chksum=0;
+      long chksum2=0;
+      int count=size - 4;
+      long check=-1;
+      int i;
+      for (i=offset; i < count; i+=4) {
+        check=raw[i] & 0xff;
+        check|=raw[i + 1] << 8 & 0xff00;
+        check|=raw[i + 2] << 0x10 & 0xff0000;
+        check|=raw[i + 3] << 0x18 & 0xff000000;
+        chksum^=check;
+      }
+      chksum2=check;
+      check=raw[i] & 0xff;
+      check|=raw[i + 1] << 8 & 0xff00;
+      check|=raw[i + 2] << 0x10 & 0xff0000;
+      check|=raw[i + 3] << 0x18 & 0xff000000;
+      chksum2^=check;
+      check=raw[i] & 0xff;
+      check|=raw[i + 1] << 8 & 0xff00;
+      check|=raw[i + 2] << 0x10 & 0xff0000;
+      check|=raw[i + 3] << 0x18 & 0xff000000;
+      return 0 == chksum;
+    }
+}

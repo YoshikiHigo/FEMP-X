@@ -1,0 +1,22 @@
+package all;
+
+public class ClonePair3475 {
+
+    boolean method1(int[] p0,int[] p1){
+      if (p0.length != p1.length) {
+        return false;
+      }
+      int size=p0.length;
+      boolean nonEqual=false;
+      for (int x=0; x < size; x++) {
+        nonEqual|=!(p0[x] == p1[x]);
+      }
+      return !nonEqual;
+    }
+
+    boolean method2(int[] a,int[] b){
+      if (a.length != b.length)   return false;
+      for (int i=0; i < a.length; i++)   if (a[i] != b[i])   return false;
+      return true;
+    }
+}

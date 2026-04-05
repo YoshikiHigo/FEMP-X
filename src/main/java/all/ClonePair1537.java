@@ -1,0 +1,30 @@
+package all;
+
+public class ClonePair1537 {
+
+    boolean method1(byte[] left,byte[] right){
+      if (left == null) {
+        return ((right == null) ? true : false);
+      }
+      if (right == null) {
+        return ((left == null) ? true : false);
+      }
+      if (left.length != right.length)   return false;
+      for (int i=0; i < left.length; i++) {
+        if (left[i] != right[i])     return false;
+      }
+      return true;
+    }
+
+    boolean method2(byte[] a,byte[] b){
+      if (null == a)   return (null == b);
+     else   if (null == b)   return false;
+     else   if (a.length == b.length) {
+        for (int cc=0, count=a.length; cc < count; cc++) {
+          if (a[cc] != b[cc])       return false;
+        }
+        return true;
+      }
+     else   return false;
+    }
+}

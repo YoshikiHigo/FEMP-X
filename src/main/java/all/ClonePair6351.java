@@ -1,0 +1,21 @@
+package all;
+
+public class ClonePair6351 {
+
+    long method1(byte[] array,int offset){
+      long value=0;
+      for (int i=0; i < 8; i++) {
+        value=(value << 8) + (array[offset + i] & 0xff);
+      }
+      return value;
+    }
+
+    long method2(byte[] data,int offset){
+      long ret=data[offset];
+      for (int i=1; i < 8; ++i) {
+        ret=ret << 8;
+        ret=ret | (data[offset + i] & 0xff);
+      }
+      return ret;
+    }
+}
