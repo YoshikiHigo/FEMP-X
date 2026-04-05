@@ -1045,12 +1045,8 @@ class_id,status,elapsed_ms,candidate_count,detail
 12044,difference_test_written,3274,53,candidate_index=0;method1=OK;method2=OK
 12045,no_counterexample_found,3381,65,
 12046,no_counterexample_found,3170,52,
-12047,no_counterexample_found,3219,52,
-12048,no_counterexample_found,2821,7,
-12049,no_counterexample_found,3523,65,
-12050,no_counterexample_found,3567,65,
-12051,no_counterexample_found,3531,52,
-12052,no_counterexample_found,3374,52,
+12047,12043,error,35073099,66,"Command '['java', '-ea', '-cp', 'C:\\Users\\yoshi\\AppData\\Local\\Temp\\clonepair-12043-equiv-lbtq2vdq', 'all.ClonePair12043EquivalenceOracle']' timed out after 20 seconds"
+o_counterexample_found,3374,52,
 12053,no_counterexample_found,3184,43,
 12054,no_counterexample_found,3203,43,
 12055,no_counterexample_found,2912,7,

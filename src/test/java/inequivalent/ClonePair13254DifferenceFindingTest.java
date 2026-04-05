@@ -1,0 +1,27 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair13254DifferenceFindingTest {
+
+    private final ClonePair13254 subject = new ClonePair13254();
+
+    @Test
+    void methodsGenerateDifferentStringsFromTwoCharacterPool() {
+        String method1Result = subject.method1("ab", 128);
+        assertEquals("a".repeat(128), method1Result);
+
+        boolean diverged = false;
+        for (int attempt = 0; attempt < 8; attempt++) {
+            if (!method1Result.equals(subject.method2("ab", 128))) {
+                diverged = true;
+                break;
+            }
+        }
+
+        assertTrue(diverged);
+    }
+}

@@ -1,0 +1,55 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair13344DifferenceFindingTest {
+
+    private final ClonePair13344 subject = new ClonePair13344();
+
+    @Test
+    void methodsHaveDifferentStdoutSideEffectsDuringInitialBytes() {
+        CapturedCall method1 = captureStdout(() -> subject.method1(new byte[]{0}, 0, 1, 0, 0));
+        CapturedCall method2 = captureStdout(() -> subject.method2(new byte[]{0}, 0, 1, 0, 0));
+
+        assertArrayEquals(new byte[]{0}, method1.result);
+        assertArrayEquals(new byte[]{0}, method2.result);
+        assertEquals("c = 0, p = 0, r = 0" + System.lineSeparator(), method1.output);
+        assertEquals("", method2.output);
+    }
+
+    private static CapturedCall captureStdout(ByteArrayCall call) {
+        PrintStream originalOut = System.out;
+        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+        try (PrintStream capturedOut = new PrintStream(buffer, true, StandardCharsets.UTF_8)) {
+            System.setOut(capturedOut);
+            byte[] result = call.run();
+            capturedOut.flush();
+            return new CapturedCall(result, buffer.toString(StandardCharsets.UTF_8));
+        } finally {
+            System.setOut(originalOut);
+        }
+    }
+
+    @FunctionalInterface
+    private interface ByteArrayCall {
+        byte[] run();
+    }
+
+    private static final class CapturedCall {
+
+        private final byte[] result;
+        private final String output;
+
+        private CapturedCall(byte[] result, String output) {
+            this.result = result;
+            this.output = output;
+        }
+    }
+}

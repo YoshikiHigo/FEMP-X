@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair13592DifferenceFindingTest {
+
+    private final ClonePair13592 subject = new ClonePair13592();
+
+    @Test
+    void methodsReturnDifferentValuesWhenFirstReplacementIsChosenCaseInsensitively() {
+        assertEquals("Ax", subject.method1("Aa", "a", "x"));
+        assertEquals("xx", subject.method2("Aa", "a", "x"));
+    }
+}

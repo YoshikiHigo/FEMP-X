@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+class ClonePair13393DifferenceFindingTest {
+
+    private final ClonePair13393 subject = new ClonePair13393();
+
+    @Test
+    void methodsTreatTabOnlyInputDifferently() {
+        assertArrayEquals(new String[]{""}, subject.method1("\t"));
+        assertArrayEquals(new String[]{"\t"}, subject.method2("\t"));
+    }
+}
