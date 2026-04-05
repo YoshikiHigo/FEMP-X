@@ -16,6 +16,8 @@ import generate_clonepair_tests as gen
 
 
 ROOT = Path(__file__).resolve().parents[1]
+AUTO_PACKAGE_NAME = "auto"
+DEFAULT_SOURCE_PACKAGES = ("equivalent", "inequivalent", "unverified")
 
 
 @dataclass(frozen=True)
@@ -53,13 +55,45 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--start-id", type=int, default=1)
     parser.add_argument("--end-id", type=int, default=1000)
     parser.add_argument("--class-id", type=int, default=None)
-    parser.add_argument("--package-name", type=str, default="all")
-    parser.add_argument("--log-path", type=Path, default=ROOT / "logs" / "all_upto_1000_equivalence_timing.csv")
-    parser.add_argument("--summary-path", type=Path, default=ROOT / "logs" / "all_upto_1000_equivalence_summary.txt")
+    parser.add_argument("--package-name", type=str, default=AUTO_PACKAGE_NAME)
+    parser.add_argument("--log-path", type=Path, default=ROOT / "logs" / "clonepair_equivalence_timing.csv")
+    parser.add_argument("--summary-path", type=Path, default=ROOT / "logs" / "clonepair_equivalence_summary.txt")
     parser.add_argument("--write-tests", action="store_true")
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--class-timeout-seconds", type=float, default=300.0)
     return parser.parse_args()
+
+
+def source_path(package_name: str, class_id: int) -> Path:
+    return ROOT / "src" / "main" / "java" / package_name / f"ClonePair{class_id}.java"
+
+
+def candidate_packages(package_name: str) -> tuple[str, ...]:
+    if package_name == AUTO_PACKAGE_NAME:
+        return DEFAULT_SOURCE_PACKAGES
+    return (package_name,)
+
+
+def existing_package_name(package_name: str, class_id: int) -> str | None:
+    matches = [
+        candidate
+        for candidate in candidate_packages(package_name)
+        if source_path(candidate, class_id).exists()
+    ]
+    if not matches:
+        return None
+    if len(matches) > 1:
+        raise RuntimeError(f"ClonePair{class_id} exists in multiple packages: {', '.join(matches)}")
+    return matches[0]
+
+
+def resolve_package_name(package_name: str, class_id: int) -> str:
+    resolved = existing_package_name(package_name, class_id)
+    if resolved is None:
+        if package_name == AUTO_PACKAGE_NAME:
+            raise FileNotFoundError(f"ClonePair{class_id} not found in {', '.join(DEFAULT_SOURCE_PACKAGES)}")
+        raise FileNotFoundError(f"ClonePair{class_id} not found in package {package_name}")
+    return resolved
 
 
 def extended_string_pool(body: str, param_name: str) -> list[str]:
@@ -266,9 +300,9 @@ def oracle_helpers_source() -> str:
 """
 
 
-def build_oracle_source(class_id: int, candidate_args: list[tuple[str, ...]]) -> str:
+def build_oracle_source(package_name: str, class_id: int, candidate_args: list[tuple[str, ...]]) -> str:
     lines = [
-        "package all;",
+        f"package {package_name};",
         "",
         "import java.io.ByteArrayOutputStream;",
         "import java.io.ObjectOutputStream;",
@@ -410,13 +444,13 @@ def timeout_until(deadline: float, reserve_seconds: float = 0.0) -> float:
     return remaining
 
 
-def run_oracle(class_id: int, candidate_args: list[tuple[str, ...]], deadline: float) -> Counterexample | None:
+def run_oracle(package_name: str, class_id: int, candidate_args: list[tuple[str, ...]], deadline: float) -> Counterexample | None:
     with tempfile.TemporaryDirectory(prefix=f"clonepair-{class_id}-equiv-") as temp_dir:
         temp_path = Path(temp_dir)
-        source_dir = temp_path / "all"
+        source_dir = temp_path / package_name
         source_dir.mkdir(parents=True, exist_ok=True)
         oracle_path = source_dir / f"ClonePair{class_id}EquivalenceOracle.java"
-        oracle_path.write_text(build_oracle_source(class_id, candidate_args), encoding="utf-8")
+        oracle_path.write_text(build_oracle_source(package_name, class_id, candidate_args), encoding="utf-8")
 
         compile_timeout = min(240.0, timeout_until(deadline, reserve_seconds=1.0))
         compile_result = subprocess.run(
@@ -433,7 +467,7 @@ def run_oracle(class_id: int, candidate_args: list[tuple[str, ...]], deadline: f
 
         run_timeout = timeout_until(deadline)
         run_result = subprocess.run(
-            ["java", "-ea", "-cp", temp_dir, f"all.ClonePair{class_id}EquivalenceOracle"],
+            ["java", "-ea", "-cp", temp_dir, f"{package_name}.ClonePair{class_id}EquivalenceOracle"],
             cwd=ROOT,
             capture_output=True,
             text=True,
@@ -460,14 +494,14 @@ def run_oracle(class_id: int, candidate_args: list[tuple[str, ...]], deadline: f
     )
 
 
-def generate_test_source(class_id: int, counterexample: Counterexample) -> str:
+def generate_test_source(package_name: str, class_id: int, counterexample: Counterexample) -> str:
     arguments = ", ".join(counterexample.args)
     lines = [
-        "package all;",
+        f"package {package_name};",
         "",
         "import org.junit.jupiter.api.Test;",
         "",
-        "import static all.ClonePairDifferenceTestSupport.*;",
+        f"import static {package_name}.ClonePairDifferenceTestSupport.*;",
         "",
         f"class ClonePair{class_id}DifferenceTest {{",
         "",
@@ -553,7 +587,8 @@ def process_class(package_name: str, class_id: int, write_tests: bool, class_tim
     candidate_count = 0
 
     try:
-        methods = normalize_methods(gen.parse_class(package_name, class_id))
+        resolved_package_name = resolve_package_name(package_name, class_id)
+        methods = normalize_methods(gen.parse_class(resolved_package_name, class_id))
         if not signature_compatible(methods):
             status = "signature_mismatch"
             detail = "method signatures differ"
@@ -562,21 +597,22 @@ def process_class(package_name: str, class_id: int, write_tests: bool, class_tim
             candidate_args = build_candidate_args(method)
             candidate_count = len(candidate_args)
             timeout_until(deadline)
-            counterexample = run_oracle(class_id, candidate_args, deadline)
+            counterexample = run_oracle(resolved_package_name, class_id, candidate_args, deadline)
             if counterexample is None:
                 status = "no_counterexample_found"
             else:
                 detail = (
+                    f"package={resolved_package_name};"
                     f"candidate_index={counterexample.candidate_index};"
                     f"method1={counterexample.method1_status};"
                     f"method2={counterexample.method2_status}"
                 )
-                test_path = ROOT / "src" / "test" / "java" / "all" / f"ClonePair{class_id}DifferenceTest.java"
+                test_path = ROOT / "src" / "test" / "java" / resolved_package_name / f"ClonePair{class_id}DifferenceTest.java"
                 if test_path.exists():
                     status = "difference_existing_test"
                 else:
                     if write_tests:
-                        test_path.write_text(generate_test_source(class_id, counterexample), encoding="utf-8")
+                        test_path.write_text(generate_test_source(resolved_package_name, class_id, counterexample), encoding="utf-8")
                         status = "difference_test_written"
                     else:
                         status = "difference_found"
@@ -716,8 +752,21 @@ def main() -> int:
             writer.writerow(["class_id", "status", "elapsed_ms", "candidate_count", "detail"])
 
         for class_id in range(args.start_id, args.end_id + 1):
-            source_path = ROOT / "src" / "main" / "java" / args.package_name / f"ClonePair{class_id}.java"
-            if not source_path.exists():
+            try:
+                resolved_package_name = existing_package_name(args.package_name, class_id)
+            except RuntimeError as exception:
+                total_classes += 1
+                status = "error"
+                detail = str(exception).replace("\n", " ")[:400]
+                candidate_count = 0
+                elapsed_ms = 0
+                statuses[status] = statuses.get(status, 0) + 1
+                error_count += 1
+                writer.writerow([class_id, status, elapsed_ms, candidate_count, detail])
+                log_file.flush()
+                print(f"ClonePair{class_id}: {status} (0 ms)", flush=True)
+                continue
+            if resolved_package_name is None:
                 continue
             if class_id in processed_ids:
                 continue
