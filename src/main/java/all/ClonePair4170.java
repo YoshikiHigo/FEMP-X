@@ -1,0 +1,22 @@
+package all;
+
+public class ClonePair4170 {
+
+    float method1(float val,float min,float max){
+      if (Float.isInfinite(val) || Float.isNaN(val))   return 0f;
+      float range=max - min;
+      while (val > max)   val-=range;
+      while (val < min)   val+=range;
+      return val;
+    }
+
+    float method2(float v,float min,float max){
+      if (v < min) {
+        v=min;
+      }
+     else   if (v > max) {
+        v=max;
+      }
+      return v;
+    }
+}

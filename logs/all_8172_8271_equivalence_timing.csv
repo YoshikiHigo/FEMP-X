@@ -1,0 +1,101 @@
+class_id,status,elapsed_ms,candidate_count,detail
+8172,no_counterexample_found,1439,81,
+8173,no_counterexample_found,1741,81,
+8174,no_counterexample_found,2390,81,
+8175,difference_test_written,2349,100,candidate_index=1;method1=EX;method2=OK
+8176,no_counterexample_found,2339,100,
+8177,no_counterexample_found,2078,125,
+8178,difference_test_written,2000,90,candidate_index=4;method1=OK;method2=OK
+8179,no_counterexample_found,1647,7,
+8180,difference_test_written,1891,90,candidate_index=1;method1=EX;method2=OK
+8181,no_counterexample_found,2325,100,
+8182,difference_test_written,2007,90,candidate_index=9;method1=OK;method2=EX
+8183,difference_test_written,1855,90,candidate_index=9;method1=OK;method2=EX
+8184,difference_test_written,1817,81,candidate_index=9;method1=OK;method2=EX
+8185,difference_test_written,3430,81,candidate_index=9;method1=OK;method2=EX
+8186,no_counterexample_found,2004,125,
+8187,difference_test_written,1555,81,candidate_index=9;method1=OK;method2=EX
+8188,no_counterexample_found,1822,100,
+8189,no_counterexample_found,2235,100,
+8190,no_counterexample_found,2146,125,
+8191,signature_mismatch,43,0,method signatures differ
+8192,no_counterexample_found,2014,125,
+8193,no_counterexample_found,3555,125,
+8194,no_counterexample_found,2201,100,
+8195,signature_mismatch,9,0,method signatures differ
+8196,signature_mismatch,8,0,method signatures differ
+8197,no_counterexample_found,1566,6,
+8198,no_counterexample_found,2062,100,
+8199,no_counterexample_found,1989,100,
+8200,signature_mismatch,22,0,method signatures differ
+8201,no_counterexample_found,1655,100,
+8202,no_counterexample_found,2001,125,
+8203,no_counterexample_found,10195,125,
+8204,no_counterexample_found,1985,100,
+8205,no_counterexample_found,1949,100,
+8206,no_counterexample_found,2141,125,
+8207,difference_test_written,1913,9,candidate_index=2;method1=OK;method2=OK
+8208,no_counterexample_found,2159,113,
+8209,no_counterexample_found,1479,30,
+8210,no_counterexample_found,1720,100,
+8211,no_counterexample_found,2823,3,
+8212,no_counterexample_found,1356,100,
+8213,no_counterexample_found,1932,224,
+8214,no_counterexample_found,2299,100,
+8215,no_counterexample_found,1721,100,
+8216,signature_mismatch,21,0,method signatures differ
+8217,no_counterexample_found,1865,3,
+8218,no_counterexample_found,2023,3,
+8219,signature_mismatch,21,0,method signatures differ
+8220,no_counterexample_found,1929,100,
+8221,no_counterexample_found,2123,100,
+8222,difference_test_written,15899,100,candidate_index=11;method1=OK;method2=OK
+8223,signature_mismatch,50,0,method signatures differ
+8224,signature_mismatch,40,0,method signatures differ
+8225,no_counterexample_found,1717,10,
+8226,difference_test_written,1996,100,candidate_index=11;method1=OK;method2=OK
+8227,no_counterexample_found,1714,100,
+8228,no_counterexample_found,1649,3,
+8229,signature_mismatch,21,0,method signatures differ
+8230,signature_mismatch,72,0,method signatures differ
+8231,difference_test_written,2119,81,candidate_index=17;method1=EX;method2=OK
+8232,no_counterexample_found,8733,81,
+8233,no_counterexample_found,2151,81,
+8234,no_counterexample_found,2130,81,
+8235,no_counterexample_found,2138,81,
+8236,no_counterexample_found,2173,81,
+8237,no_counterexample_found,1820,81,
+8238,no_counterexample_found,2051,81,
+8239,no_counterexample_found,2040,81,
+8240,no_counterexample_found,2124,81,
+8241,difference_test_written,2222,81,candidate_index=17;method1=EX;method2=OK
+8242,no_counterexample_found,2128,81,
+8243,no_counterexample_found,1967,81,
+8244,no_counterexample_found,1744,81,
+8245,no_counterexample_found,2068,81,
+8246,no_counterexample_found,1798,81,
+8247,difference_test_written,1537,81,candidate_index=1;method1=EX;method2=OK
+8248,no_counterexample_found,1735,100,
+8249,difference_test_written,8932,100,candidate_index=20;method1=OK;method2=OK
+8250,no_counterexample_found,2164,100,
+8251,no_counterexample_found,1781,100,
+8252,difference_test_written,5917,100,candidate_index=20;method1=OK;method2=OK
+8253,no_counterexample_found,3407,100,
+8254,no_counterexample_found,1813,100,
+8255,no_counterexample_found,1892,100,
+8256,no_counterexample_found,3969,100,
+8257,difference_test_written,2001,100,candidate_index=11;method1=OK;method2=OK
+8258,difference_test_written,1656,100,candidate_index=11;method1=OK;method2=OK
+8259,no_counterexample_found,1940,100,
+8260,no_counterexample_found,2026,90,
+8261,no_counterexample_found,2072,90,
+8262,no_counterexample_found,2116,81,
+8263,no_counterexample_found,2075,100,
+8264,difference_test_written,2295,100,candidate_index=59;method1=OK;method2=OK
+8265,no_counterexample_found,1822,113,
+8266,difference_test_written,2341,90,candidate_index=49;method1=OK;method2=OK
+8267,difference_test_written,2032,81,candidate_index=44;method1=OK;method2=OK
+8268,difference_test_written,2273,90,candidate_index=49;method1=OK;method2=OK
+8269,no_counterexample_found,14568,100,
+8270,no_counterexample_found,2175,100,
+8271,no_counterexample_found,2269,100,

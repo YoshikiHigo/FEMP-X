@@ -1,0 +1,3 @@
+﻿total_files=13710
+pass_files=13710
+fail_files=0

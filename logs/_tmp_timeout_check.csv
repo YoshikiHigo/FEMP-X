@@ -1,0 +1,2 @@
+class_id,status,elapsed_ms,candidate_count,detail
+12043,class_timeout,302,66,class processing exceeded allotted time

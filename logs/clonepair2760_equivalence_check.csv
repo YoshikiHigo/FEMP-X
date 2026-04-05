@@ -1,0 +1,2 @@
+class_id,status,elapsed_ms,candidate_count,detail
+2760,difference_test_written,982,6,candidate_index=4;method1=OK;method2=OK

@@ -1,0 +1,5 @@
+range=10008-10010
+total_classes=3
+difference_count=0
+error_count=0
+no_counterexample_found=3

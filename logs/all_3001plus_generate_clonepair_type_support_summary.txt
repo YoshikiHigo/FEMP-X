@@ -1,0 +1,6 @@
+range=all/ClonePair3001+
+unsupported_parameter_type_count=0
+distinct_normalized_return_type_count=53
+normalized_return_declarations=58
+sample_end_to_end_verified=6587,8029,10314,12786
+fixed_patterns=annotation_prefixes,c_style_array_declarators,generic_whitespace_in_type_names

@@ -1,0 +1,8 @@
+range=3001-3500
+total_classes=500
+difference_count=60
+error_count=0
+difference_existing_test=2
+difference_test_written=58
+no_counterexample_found=429
+signature_mismatch=11

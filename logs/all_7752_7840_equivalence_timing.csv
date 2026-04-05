@@ -1,0 +1,90 @@
+class_id,status,elapsed_ms,candidate_count,detail
+7752,no_counterexample_found,1831,64,
+7753,no_counterexample_found,1792,64,
+7754,difference_test_written,1856,9,candidate_index=0;method1=OK;method2=OK
+7755,difference_test_written,1866,9,candidate_index=0;method1=OK;method2=OK
+7756,difference_test_written,1938,9,candidate_index=0;method1=OK;method2=OK
+7757,difference_test_written,1888,9,candidate_index=0;method1=OK;method2=OK
+7758,difference_test_written,1832,9,candidate_index=0;method1=OK;method2=OK
+7759,no_counterexample_found,1731,9,
+7760,no_counterexample_found,1800,10,
+7761,difference_test_written,1880,9,candidate_index=0;method1=OK;method2=OK
+7762,difference_test_written,2534,9,candidate_index=0;method1=OK;method2=OK
+7763,no_counterexample_found,1178,100,
+7764,signature_mismatch,20,0,method signatures differ
+7765,difference_test_written,1473,9,candidate_index=0;method1=OK;method2=OK
+7766,difference_test_written,1958,9,candidate_index=0;method1=OK;method2=OK
+7767,no_counterexample_found,1852,9,
+7768,difference_test_written,1940,9,candidate_index=0;method1=OK;method2=OK
+7769,signature_mismatch,83,0,method signatures differ
+7770,no_counterexample_found,1996,100,
+7771,signature_mismatch,88,0,method signatures differ
+7772,difference_test_written,1825,9,candidate_index=0;method1=OK;method2=OK
+7773,difference_test_written,1793,9,candidate_index=0;method1=OK;method2=OK
+7774,difference_test_written,2141,9,candidate_index=0;method1=OK;method2=OK
+7775,no_counterexample_found,1558,9,
+7776,signature_mismatch,25,0,method signatures differ
+7777,signature_mismatch,77,0,method signatures differ
+7778,difference_test_written,1670,9,candidate_index=0;method1=OK;method2=OK
+7779,signature_mismatch,18,0,method signatures differ
+7780,signature_mismatch,75,0,method signatures differ
+7781,difference_test_written,2308,9,candidate_index=0;method1=OK;method2=OK
+7782,difference_test_written,1925,36,candidate_index=11;method1=OK;method2=OK
+7783,no_counterexample_found,1858,10,
+7784,signature_mismatch,74,0,method signatures differ
+7785,difference_test_written,2013,9,candidate_index=0;method1=OK;method2=OK
+7786,difference_test_written,1927,9,candidate_index=0;method1=OK;method2=OK
+7787,difference_test_written,2733,9,candidate_index=0;method1=OK;method2=OK
+7788,difference_test_written,1819,9,candidate_index=0;method1=OK;method2=OK
+7789,difference_test_written,2003,9,candidate_index=0;method1=OK;method2=OK
+7790,difference_test_written,2025,9,candidate_index=0;method1=OK;method2=OK
+7791,difference_test_written,1991,9,candidate_index=0;method1=OK;method2=OK
+7792,difference_test_written,1981,9,candidate_index=0;method1=OK;method2=OK
+7793,difference_test_written,1625,9,candidate_index=0;method1=OK;method2=OK
+7794,no_counterexample_found,1636,9,
+7795,no_counterexample_found,2493,10,
+7796,no_counterexample_found,3020,49,
+7797,no_counterexample_found,2397,49,
+7798,no_counterexample_found,2425,49,
+7799,signature_mismatch,9,0,method signatures differ
+7800,difference_test_written,2787,49,candidate_index=6;method1=OK;method2=OK
+7801,no_counterexample_found,3415,49,
+7802,no_counterexample_found,2913,49,
+7803,no_counterexample_found,2415,10,
+7804,no_counterexample_found,2652,10,
+7805,no_counterexample_found,2464,49,
+7806,no_counterexample_found,2168,49,
+7807,no_counterexample_found,1880,81,
+7808,no_counterexample_found,1629,10,
+7809,no_counterexample_found,1942,49,
+7810,signature_mismatch,8,0,method signatures differ
+7811,difference_test_written,1871,49,candidate_index=6;method1=OK;method2=OK
+7812,no_counterexample_found,1815,49,
+7813,no_counterexample_found,1738,10,
+7814,no_counterexample_found,2011,81,
+7815,signature_mismatch,58,0,method signatures differ
+7816,no_counterexample_found,2253,49,
+7817,no_counterexample_found,1914,49,
+7818,difference_test_written,1842,49,candidate_index=6;method1=OK;method2=OK
+7819,no_counterexample_found,1833,49,
+7820,no_counterexample_found,2007,125,
+7821,no_counterexample_found,2047,125,
+7822,no_counterexample_found,2081,125,
+7823,no_counterexample_found,2057,125,
+7824,no_counterexample_found,2111,125,
+7825,no_counterexample_found,2674,125,
+7826,no_counterexample_found,1208,100,
+7827,no_counterexample_found,2230,125,
+7828,no_counterexample_found,2253,125,
+7829,no_counterexample_found,2186,125,
+7830,no_counterexample_found,2283,125,
+7831,no_counterexample_found,2544,125,
+7832,no_counterexample_found,1954,100,
+7833,signature_mismatch,55,0,method signatures differ
+7834,difference_test_written,1875,49,candidate_index=6;method1=OK;method2=OK
+7835,no_counterexample_found,1731,49,
+7836,no_counterexample_found,1843,49,
+7837,signature_mismatch,11,0,method signatures differ
+7838,signature_mismatch,58,0,method signatures differ
+7839,signature_mismatch,76,0,method signatures differ
+7840,signature_mismatch,63,0,method signatures differ

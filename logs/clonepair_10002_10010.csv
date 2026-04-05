@@ -1,0 +1,10 @@
+class_id,status,elapsed_ms,candidate_count,detail
+10002,difference_test_written,1364,53,candidate_index=0;method1=OK;method2=OK
+10003,difference_test_written,1144,53,candidate_index=0;method1=OK;method2=OK
+10004,difference_test_written,1101,53,candidate_index=0;method1=OK;method2=OK
+10005,no_counterexample_found,1204,125,
+10006,difference_test_written,1234,126,candidate_index=0;method1=OK;method2=OK
+10007,difference_test_written,1087,8,candidate_index=0;method1=OK;method2=OK
+10008,no_counterexample_found,1056,7,
+10009,no_counterexample_found,1052,7,
+10010,no_counterexample_found,1068,7,

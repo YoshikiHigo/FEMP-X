@@ -1,0 +1,53 @@
+class_id,status,elapsed_ms,candidate_count,detail
+7701,difference_test_written,1239,49,candidate_index=6;method1=OK;method2=OK
+7702,no_counterexample_found,1490,49,
+7703,no_counterexample_found,1430,49,
+7704,difference_test_written,1703,100,candidate_index=11;method1=OK;method2=OK
+7705,difference_test_written,2178,100,candidate_index=11;method1=OK;method2=OK
+7706,no_counterexample_found,1747,49,
+7707,no_counterexample_found,1590,100,
+7708,no_counterexample_found,1402,6,
+7709,no_counterexample_found,1650,49,
+7710,signature_mismatch,25,0,method signatures differ
+7711,signature_mismatch,7,0,method signatures differ
+7712,no_counterexample_found,1725,49,
+7713,no_counterexample_found,2094,49,
+7714,no_counterexample_found,1787,49,
+7715,no_counterexample_found,1691,49,
+7716,signature_mismatch,21,0,method signatures differ
+7717,difference_test_written,1830,49,candidate_index=6;method1=OK;method2=OK
+7718,no_counterexample_found,1783,49,
+7719,no_counterexample_found,1481,100,
+7720,no_counterexample_found,1532,49,
+7721,signature_mismatch,17,0,method signatures differ
+7722,signature_mismatch,50,0,method signatures differ
+7723,no_counterexample_found,1834,49,
+7724,no_counterexample_found,1824,49,
+7725,no_counterexample_found,2413,49,
+7726,no_counterexample_found,2008,49,
+7727,signature_mismatch,23,0,method signatures differ
+7728,difference_test_written,1746,49,candidate_index=6;method1=OK;method2=OK
+7729,no_counterexample_found,1740,49,
+7730,no_counterexample_found,1897,49,
+7731,signature_mismatch,65,0,method signatures differ
+7732,signature_mismatch,72,0,method signatures differ
+7733,no_counterexample_found,1786,72,
+7734,signature_mismatch,55,0,method signatures differ
+7735,signature_mismatch,103,0,method signatures differ
+7736,no_counterexample_found,3476,100,
+7737,no_counterexample_found,1822,9,
+7738,signature_mismatch,73,0,method signatures differ
+7739,signature_mismatch,54,0,method signatures differ
+7740,signature_mismatch,64,0,method signatures differ
+7741,signature_mismatch,50,0,method signatures differ
+7742,no_counterexample_found,1897,100,
+7743,signature_mismatch,25,0,method signatures differ
+7744,no_counterexample_found,1842,9,
+7745,signature_mismatch,62,0,method signatures differ
+7746,difference_test_written,1835,100,candidate_index=11;method1=OK;method2=OK
+7747,no_counterexample_found,1875,72,
+7748,no_counterexample_found,1681,10,
+7749,no_counterexample_found,1740,100,
+7750,difference_test_written,8876,113,candidate_index=53;method1=EX;method2=OK
+7751,no_counterexample_found,1667,100,
+7752,error,8389624,72,"Command '['java', '-ea', '-cp', 'C:\\Users\\yoshi\\AppData\\Local\\Temp\\clonepair-7752-equiv-du8t5suf', 'all.ClonePair7752EquivalenceOracle']' timed out after 20 seconds"

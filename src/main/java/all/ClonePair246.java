@@ -1,0 +1,29 @@
+package all;
+
+public class ClonePair246 {
+
+    boolean method1(byte[] a,byte[] b){
+      int alength=(a == null) ? 0 : a.length;
+      int blength=(b == null) ? 0 : b.length;
+      if (alength != blength) {
+        return false;
+      }
+      for (int i=0; i < alength; ++i) {
+        if (a[i] != b[i]) {
+          return false;
+        }
+      }
+      return true;
+    }
+
+    boolean method2(byte[] b1,byte[] b2){
+      if (b1 == b2)   return true;
+      if (b1 == null || b2 == null)   return false;
+      int length=b1.length;
+      if (length != b2.length)   return false;
+      for (int index=0; index < length; index++) {
+        if (!(b1[index] == b2[index]))     return false;
+      }
+      return true;
+    }
+}

@@ -1,0 +1,10 @@
+range=7001-9000
+total_classes=2000
+difference_count=401
+difference_existing_test=0
+difference_test_written=401
+no_counterexample_found=1456
+signature_mismatch=143
+error_count=0
+max_elapsed_ms=61658
+max_elapsed_class_id=8358

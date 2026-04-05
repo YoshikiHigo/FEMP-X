@@ -1,0 +1,4 @@
+class_id,status,elapsed_ms,candidate_count,detail
+10008,no_counterexample_found,3080,7,
+10009,no_counterexample_found,2684,7,
+10010,no_counterexample_found,3049,7,

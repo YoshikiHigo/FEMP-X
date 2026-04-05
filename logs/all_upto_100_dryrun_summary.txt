@@ -1,0 +1,6 @@
+range=1-100
+total_classes=100
+difference_count=35
+error_count=0
+difference_existing_test=35
+no_counterexample_found=65

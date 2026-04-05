@@ -191,10 +191,15 @@ def parse_class(package_name: str, class_id: int) -> dict[str, MethodInfo]:
         body = text[open_index + 1:close_index]
         params = []
         for declared_type, param_name in split_params(params_source):
+            while param_name.endswith("[]"):
+                param_name = param_name[:-2].strip()
+                declared_type += "[]"
+            declared_type = normalized_type_name(declared_type)
             effective_type = infer_effective_type(body, declared_type, param_name)
+            effective_type = normalized_type_name(effective_type)
             aliases = infer_aliases(body, effective_type, param_name)
             params.append(Param(declared_type, param_name, effective_type, aliases))
-        methods[method_name] = MethodInfo(return_type, method_name, tuple(params), body)
+        methods[method_name] = MethodInfo(normalized_type_name(return_type), method_name, tuple(params), body)
     if set(methods) != {"method1", "method2"}:
         raise ValueError(f"Unexpected method set for ClonePair{class_id}: {sorted(methods)}")
     return methods
@@ -203,9 +208,9 @@ def parse_class(package_name: str, class_id: int) -> dict[str, MethodInfo]:
 def infer_effective_type(body: str, declared_type: str, param_name: str) -> str:
     if declared_type != "Object":
         return declared_type
-    cast_match = re.search(rf"\(([\w\[\]<>]+)\)\s*{re.escape(param_name)}\b", body)
+    cast_match = re.search(rf"\(([@\w$.\[\]<>?, ]+)\)\s*{re.escape(param_name)}\b", body)
     if cast_match:
-        return cast_match.group(1)
+        return normalized_type_name(cast_match.group(1))
     return declared_type
 
 
@@ -260,6 +265,8 @@ def default_string_pool(body: str, param_name: str) -> list[str]:
         values.extend([java_string("ab"), java_string("ab_CD"), java_string("ab_CD_VAR"), java_string("_"), java_string("ab__VAR")])
     if "formula" in lower_name or contains_any(body, ("Double.parseDouble", "contains(\"+\")", "contains(\"/\")", "contains(\"*\")", "contains(\"r\")")):
         values.extend([java_string(""), java_string("1"), java_string("1.5"), java_string("1,5"), java_string(" 1.5 "), java_string("1+2"), java_string("8/2"), java_string("3*4"), java_string("5r2"), java_string("bad")])
+    if contains_any(body, ("Integer.parseInt", "Long.parseLong")) and "16" in body:
+        values.extend([java_string(""), java_string("0"), java_string("00"), java_string("0A"), java_string("7F"), java_string("80"), java_string("FF"), java_string("0A0B"), java_string("CAFEBE"), java_string("GG")])
     if contains_any(body, ("split(\":\")", "split(\"/\")", "split(\"\\\\.\")", "Calendar", "GregorianCalendar")):
         values.extend([java_string("2020/05/06:07.08"), java_string("20200506"), java_string("20010101"), java_string("991231"), java_string("bad")])
     if contains_any(body, ("StringTokenizer", "Properties")):
@@ -297,6 +304,16 @@ def helper_list(name: str, *items: str) -> str:
 
 def normalized_type_name(type_name: str) -> str:
     type_name = type_name.strip()
+    while type_name.startswith("@"):
+        updated = re.sub(r"^@[\w$.]+(?:\([^()]*\))?\s*", "", type_name)
+        if updated == type_name:
+            break
+        type_name = updated.strip()
+    type_name = re.sub(r"\s+", " ", type_name)
+    type_name = re.sub(r"\s*<\s*", "<", type_name)
+    type_name = re.sub(r"\s*>\s*", ">", type_name)
+    type_name = re.sub(r"\s*,\s*", ",", type_name)
+    type_name = re.sub(r"\s*\[\s*\]", "[]", type_name)
     if type_name.endswith("..."):
         return type_name[:-3] + "[]"
     return type_name
@@ -333,8 +350,12 @@ def pool_for_param(param: Param, body: str) -> list[str]:
         return ["null", "Integer.valueOf(-1)", "Integer.valueOf(0)", "Integer.valueOf(1)", "Integer.valueOf(2)", "Integer.valueOf(16)"]
     if type_name == "Short":
         return ["null", "Short.valueOf((short) -1)", "Short.valueOf((short) 0)", "Short.valueOf((short) 1)", "Short.valueOf((short) 8)", "Short.valueOf((short) 16)"]
+    if type_name == "Byte":
+        return ["null", "Byte.valueOf((byte) -1)", "Byte.valueOf((byte) 0)", "Byte.valueOf((byte) 1)", "Byte.valueOf((byte) 8)", "Byte.valueOf((byte) 16)"]
     if type_name == "Double":
         return ["null", "Double.valueOf(-1.0)", "Double.valueOf(0.0)", "Double.valueOf(1.0)", "Double.valueOf(1.5)", "Double.valueOf(Double.NaN)"]
+    if type_name == "Float":
+        return ["null", "Float.valueOf(-1.0f)", "Float.valueOf(0.0f)", "Float.valueOf(1.0f)", "Float.valueOf(1.5f)", "Float.valueOf(Float.NaN)"]
     if type_name == "Number":
         return dedupe_preserve([
             "null",
@@ -429,6 +450,22 @@ def pool_for_param(param: Param, body: str) -> list[str]:
         return dedupe_preserve(["null", "new short[]{}", "new short[]{0}", "new short[]{1, 2}", "new short[]{-1, 0, 1}"])
     if type_name == "char[]":
         return dedupe_preserve(["null", "new char[]{}", array_expr("char", [java_char("a")]), array_expr("char", [java_char("a"), java_char(".")]), array_expr("char", [java_char("A"), java_char("B"), java_char("C")])])
+    if type_name == "char[][]":
+        return dedupe_preserve([
+            "null",
+            "new char[][]{}",
+            "new char[][]{new char[]{}}",
+            "new char[][]{new char[]{'a'}}",
+            "new char[][]{new char[]{'a', 'b'}, new char[]{'c'}}",
+        ])
+    if type_name == "CharSequence[]":
+        return dedupe_preserve([
+            "null",
+            "new CharSequence[]{}",
+            "new CharSequence[]{" + java_string("a") + "}",
+            "new CharSequence[]{" + java_string("a") + ", " + java_string("bc") + "}",
+            "new CharSequence[]{" + java_string("a") + ", null}",
+        ])
     if type_name == "String[]":
         if "System.exit" in body and "charAt(" in body:
             return dedupe_preserve([
@@ -475,14 +512,45 @@ def pool_for_param(param: Param, body: str) -> list[str]:
         return ["null", "date(0L)", "date(86_400_000L)", "date(-86_400_000L)"]
     if type_name == "Calendar":
         return ["null", "calendar(0L)", "calendar(86_400_000L)", "calendar(1_000_000_000L)"]
+    if type_name == "GregorianCalendar":
+        return [
+            "null",
+            "new java.util.GregorianCalendar(java.util.TimeZone.getTimeZone(\"UTC\"))",
+            "new java.util.GregorianCalendar(2020, java.util.Calendar.JANUARY, 2)",
+            "new java.util.GregorianCalendar(java.util.TimeZone.getTimeZone(\"Asia/Tokyo\"))",
+        ]
     if type_name == "Locale":
         return ["null", 'locale("en", "US", "")', 'locale("ja", "JP", "")', 'locale("fr", "CA", "POSIX")']
+    if type_name == "TimeZone":
+        return [
+            "null",
+            'java.util.TimeZone.getTimeZone("UTC")',
+            'java.util.TimeZone.getTimeZone("Asia/Tokyo")',
+            'java.util.TimeZone.getTimeZone("America/Los_Angeles")',
+        ]
     if type_name == "List":
         return ["null", "list()", "list(" + java_string("alpha") + ")", "list(" + java_string("alpha") + ", " + java_string("beta") + ")", "list(" + java_string("beta") + ", " + java_string("gamma") + ")"]
     if type_name == "List<String>" or type_name == "Collection<String>":
         return ["null", "list()", "list(" + java_string("alpha") + ")", "list(" + java_string("alpha") + ", " + java_string("beta") + ")", "list(" + java_string("beta") + ", " + java_string("gamma") + ")"]
     if type_name == "List<Double>":
         return ["null", "list()", "list(Double.valueOf(1.0))", "list(Double.valueOf(1.0), Double.valueOf(2.0))", "list(Double.valueOf(-1.0), Double.valueOf(0.0), Double.valueOf(1.0))"]
+    if type_name == "List<Integer>" or type_name == "Collection<Integer>":
+        return [
+            "null",
+            "list()",
+            "list(Integer.valueOf(0))",
+            "list(Integer.valueOf(1), Integer.valueOf(2))",
+            "list(Integer.valueOf(2), Integer.valueOf(1), Integer.valueOf(2))",
+            "list(Integer.valueOf(-1), Integer.valueOf(0), Integer.valueOf(1))",
+        ]
+    if type_name == "List<HashMap<String,Object>>":
+        return [
+            "null",
+            "list()",
+            "list(hashMap(" + java_string("a") + ", Integer.valueOf(1)))",
+            "list(hashMap(" + java_string("a") + ", Integer.valueOf(1), " + java_string("b") + ", " + java_string("two") + "))",
+            "list(hashMap(" + java_string("x") + ", Double.valueOf(1.5)), hashMap(" + java_string("y") + ", Boolean.TRUE))",
+        ]
     if type_name == "List<Object>":
         return ["null", "list()", "list(Integer.valueOf(1))", "list(Integer.valueOf(1), Integer.valueOf(2))", "list(Double.valueOf(1.5), Integer.valueOf(2))", "list(null, Integer.valueOf(2))"]
     if type_name == "ArrayList":
@@ -491,6 +559,15 @@ def pool_for_param(param: Param, body: str) -> list[str]:
         return ["null", "list()", "list(" + java_string("alpha") + ")", "list(" + java_string("alpha") + ", " + java_string("beta") + ")", "list(" + java_string("beta") + ", " + java_string("gamma") + ")"]
     if type_name == "ArrayList<Double>":
         return ["null", "list()", "list(Double.valueOf(1.0))", "list(Double.valueOf(1.0), Double.valueOf(2.0))", "list(Double.valueOf(-1.0), Double.valueOf(0.0), Double.valueOf(1.0))"]
+    if type_name == "ArrayList<Integer>":
+        return [
+            "null",
+            "list()",
+            "list(Integer.valueOf(0))",
+            "list(Integer.valueOf(1), Integer.valueOf(2))",
+            "list(Integer.valueOf(2), Integer.valueOf(1), Integer.valueOf(2))",
+            "list(Integer.valueOf(-1), Integer.valueOf(0), Integer.valueOf(1))",
+        ]
     if type_name == "ArrayList<Object>":
         return ["null", "list()", "list(Integer.valueOf(1))", "list(Integer.valueOf(1), Integer.valueOf(2))", "list(Double.valueOf(1.5), Integer.valueOf(2))", "list(null, Integer.valueOf(2))"]
     if type_name == "Collection":
@@ -503,6 +580,13 @@ def pool_for_param(param: Param, body: str) -> list[str]:
         return ["null", "vectorOfDoubles()", "vectorOfDoubles(1.0)", "vectorOfDoubles(1.0, 2.0)", "vectorOfDoubles(-1.0, 0.0, 1.0)"]
     if type_name == "Vector<String>":
         return ["null", "vectorOfStrings()", "vectorOfStrings(" + java_string("alpha") + ")", "vectorOfStrings(" + java_string("alpha") + ", " + java_string("beta") + ")"]
+    if type_name == "Enumeration":
+        return [
+            "null",
+            "vector().elements()",
+            "vectorOfStrings(" + java_string("alpha") + ").elements()",
+            "vectorOfStrings(" + java_string("alpha") + ", " + java_string("beta") + ").elements()",
+        ]
     if type_name == "Set<String>":
         return ["null", "stringSet()", "stringSet(" + java_string("alpha") + ")", "stringSet(" + java_string("alpha") + ", " + java_string("beta") + ")"]
     if type_name == "Set" or raw_type_name == "Set":
@@ -533,8 +617,18 @@ def pool_for_param(param: Param, body: str) -> list[str]:
         return ["null", "props()", "props(" + java_string("a") + ", " + java_string("1") + ")", "props(" + java_string("a") + ", " + java_string("1") + ", " + java_string("b") + ", " + java_string("2") + ")"]
     if type_name == "Double[]":
         return ["null", "new Double[]{}", "new Double[]{1.0}", "new Double[]{1.0, 2.0}", "new Double[]{1.0, null}"]
+    if type_name == "BitSet":
+        return ["null", "bitset()", "bitset(0)", "bitset(1, 3, 5)", "bitset(63, 64)"]
     if type_name == "Class":
         return ["null", "String.class", "Integer.class", "Object.class", "int.class", "double.class"]
+    if type_name == "ClassLoader":
+        return [
+            "null",
+            "ClassLoader.getSystemClassLoader()",
+            "ClassLoader.getPlatformClassLoader()",
+            "new java.net.URLClassLoader(new java.net.URL[0], null)",
+            "new java.net.URLClassLoader(new java.net.URL[0], ClassLoader.getPlatformClassLoader())",
+        ]
     if type_name == "Random":
         return ["null", "new java.util.Random(0L)", "new java.util.Random(1L)", "new java.util.Random(2L)"]
     if type_name == "Comparator" or raw_type_name == "Comparator":
@@ -563,7 +657,7 @@ def default_value_for_param(param: Param, body: str, pool: list[str]) -> str:
             for value in pool:
                 if value not in {"null", '""'}:
                     return value
-    if type_name in {"int", "long", "short", "byte", "double", "float", "Integer", "Long", "Double", "Number"}:
+    if type_name in {"int", "long", "short", "byte", "double", "float", "Integer", "Long", "Double", "Float", "Short", "Byte", "Number"}:
         loop_sensitive = (
             re.search(rf"(\+=|-=)\s*{re.escape(param.name)}\b", body)
             or re.search(rf"{re.escape(param.name)}\.length\(\)", body)
@@ -610,6 +704,16 @@ def string_literal_value(expression: str) -> str | None:
     if len(expression) >= 2 and expression[0] == '"' and expression[-1] == '"':
         value = expression[1:-1]
         return value.replace("\\n", "\n").replace("\\t", "\t").replace('\\"', '"').replace("\\\\", "\\")
+    return None
+
+
+def char_literal_value(expression: str) -> str | None:
+    if expression == "null":
+        return None
+    if len(expression) >= 3 and expression[0] == "'" and expression[-1] == "'":
+        value = expression[1:-1]
+        escapes = {"\\n": "\n", "\\t": "\t", "\\0": "\0", "\\'": "'", "\\\\": "\\"}
+        return escapes.get(value, value)
     return None
 
 
@@ -661,6 +765,11 @@ def respects_loop_progress_constraints(method: MethodInfo, case: tuple[str, ...]
         for index, param in enumerate(method.params)
         if normalized_type_name(param.effective_type) in {"String", "CharSequence"}
     }
+    char_values = {
+        param.name: char_literal_value(case[index])
+        for index, param in enumerate(method.params)
+        if normalized_type_name(param.effective_type) == "char"
+    }
     indexof_pairs = [
         (receiver, needle)
         for receiver, needle in re.findall(r"\b(\w+)\.indexOf\(\s*(\w+)\b", method.body)
@@ -671,15 +780,30 @@ def respects_loop_progress_constraints(method: MethodInfo, case: tuple[str, ...]
             needle_value = string_values.get(needle)
             if needle_value == "":
                 return False
-    stalled_index_match = re.search(r"while\s*\(\s*(\w+)\s*!=\s*-1[^)]*\)", method.body)
-    if stalled_index_match:
-        loop_index = stalled_index_match.group(1)
+    for loop_index in re.findall(r"while\s*\(\s*(\w+)\s*!=\s*-1\b", method.body):
         if re.search(rf"if\s*\(\s*{re.escape(loop_index)}\s*>\s*0\s*\)", method.body):
             for receiver, needle in indexof_pairs:
                 receiver_value = string_values.get(receiver)
                 needle_value = string_values.get(needle)
                 if receiver_value is not None and needle_value not in {None, ""} and receiver_value.startswith(needle_value):
                     return False
+    for loop_index, receiver, needle in re.findall(r"\b(\w+)\s*=\s*(\w+)\.indexOf\(\s*(\w+)\s*\)\s*;", method.body):
+        if receiver not in string_values or needle not in param_indices:
+            continue
+        if not re.search(rf"while\s*\(\s*{re.escape(loop_index)}\s*>=\s*0\s*\)", method.body) and not re.search(
+            rf"while\s*\(\s*{re.escape(loop_index)}\s*!=\s*-1\b",
+            method.body,
+        ):
+            continue
+        receiver_value = string_values.get(receiver)
+        if receiver_value is None:
+            continue
+        needle_string = string_values.get(needle)
+        needle_char = char_values.get(needle)
+        if needle_string not in {None, ""} and needle_string in receiver_value:
+            return False
+        if needle_char is not None and needle_char in receiver_value:
+            return False
     string_array_params = {
         param.name: case[index]
         for index, param in enumerate(method.params)
@@ -700,15 +824,17 @@ def respects_loop_progress_constraints(method: MethodInfo, case: tuple[str, ...]
             if re.search(rf"\b{re.escape(new_name)}\s*\[\s*i\s*\]", method.body):
                 if string_array_startswith_any(new_expr, old_values):
                     return False
-    if "colors[i] >= quantity" in method.body and "quantity - 1" in method.body:
-        if "kids" in param_indices and "quantity" in param_indices:
-            kids_value = numeric_literal_value(case[param_indices["kids"]])
-            quantity_value = numeric_literal_value(case[param_indices["quantity"]])
+    colors_match = re.search(r"colors\[i\]\s*>=\s*(\w+)", method.body)
+    while_positive_match = re.search(r"while\s*\(\s*(\w+)\s*>\s*0\s*\)", method.body)
+    if colors_match and while_positive_match:
+        quantity_name = colors_match.group(1)
+        kids_name = while_positive_match.group(1)
+        if quantity_name in param_indices and kids_name in param_indices and re.search(rf"{re.escape(quantity_name)}\s*-\s*1\b", method.body):
+            kids_value = numeric_literal_value(case[param_indices[kids_name]])
+            quantity_value = numeric_literal_value(case[param_indices[quantity_name]])
             if kids_value is not None and quantity_value is not None and kids_value > 0 and quantity_value > 0:
                 return False
-    gcd_loop_match = re.search(r"while\s*\(\s*(\w+)\s*!=\s*(\w+)\s*\)", method.body)
-    if gcd_loop_match:
-        left_name, right_name = gcd_loop_match.groups()
+    for left_name, right_name in re.findall(r"while\s*\(\s*(\w+)\s*!=\s*(\w+)\s*\)", method.body):
         if left_name in param_indices and right_name in param_indices:
             if re.search(rf"{re.escape(left_name)}\s*=\s*{re.escape(left_name)}\s*-\s*{re.escape(right_name)}\b", method.body) and re.search(
                 rf"{re.escape(right_name)}\s*=\s*{re.escape(right_name)}\s*-\s*{re.escape(left_name)}\b",
@@ -731,6 +857,10 @@ def respects_loop_progress_constraints(method: MethodInfo, case: tuple[str, ...]
         a_value = numeric_literal_value(case[param_indices["a"]])
         b_value = numeric_literal_value(case[param_indices["b"]])
         if a_value is not None and b_value is not None and (a_value <= 0 or b_value <= 0):
+            return False
+    if "while (t != 0)" in method.body and re.search(r"while\s*\(\s*\(\w+\s*&\s*1\)\s*==\s*0\s*&&\s*\(\w+\s*&\s*1\)\s*==\s*0\s*\)", method.body):
+        numeric_values = [numeric_literal_value(case[index]) for index, _ in enumerate(method.params)]
+        if any(value is not None and value <= 0 for value in numeric_values):
             return False
     if ">>= 1" in method.body and "while ((" in method.body and "do {" in method.body:
         numeric_values = [numeric_literal_value(case[index]) for index, _ in enumerate(method.params)]
@@ -787,6 +917,21 @@ def respects_loop_progress_constraints(method: MethodInfo, case: tuple[str, ...]
         value = numeric_literal_value(case[index])
         if value is not None and value <= 0:
             return False
+    for delta_name, left_name, right_name in re.findall(
+        r"\b(?:final\s+)?(?:int|long|short|byte|float|double)\s+(\w+)\s*=\s*(\w+)\s*-\s*(\w+)\s*;",
+        method.body,
+    ):
+        if left_name not in param_indices or right_name not in param_indices:
+            continue
+        if not re.search(rf"\b\w+\s*\+=\s*{re.escape(delta_name)}\b", method.body) and not re.search(
+            rf"\b\w+\s*-=\s*{re.escape(delta_name)}\b",
+            method.body,
+        ):
+            continue
+        left_value = numeric_literal_value(case[param_indices[left_name]])
+        right_value = numeric_literal_value(case[param_indices[right_name]])
+        if left_value is None or right_value is None or left_value - right_value <= 0:
+            return False
     for index, param in enumerate(method.params):
         value = numeric_literal_value(case[index])
         if re.search(rf"for\s*\([^;]*;[^;]*;[^)]*\+=\s*{re.escape(param.name)}\b", method.body):
@@ -833,6 +978,8 @@ def respects_loop_progress_constraints(method: MethodInfo, case: tuple[str, ...]
         if value == "" and ("while" in method.body or "for" in method.body) and re.search(rf"startsWith\(\s*(?:{name_pattern})\s*\)", method.body):
             return False
         if value == "" and ("while" in method.body or "for" in method.body) and re.search(rf"endsWith\(\s*(?:{name_pattern})\s*\)", method.body):
+            return False
+        if value == "" and ("while" in method.body or "for" in method.body) and re.search(rf"(?:{name_pattern})\.length\(\)", method.body):
             return False
         if value == "" and "replace(" in method.body and re.search(rf"(?:{name_pattern})\.length\(\)", method.body):
             return False
@@ -1110,6 +1257,14 @@ def oracle_helpers_source() -> str:
             values.put((K) keyValues[i], (V) keyValues[i + 1]);
         }
         return values;
+    }
+
+    static java.util.BitSet bitset(int... bits) {
+        java.util.BitSet bitSet = new java.util.BitSet();
+        for (int bit : bits) {
+            bitSet.set(bit);
+        }
+        return bitSet;
     }
 
     static double[][] d2(double[]... rows) {

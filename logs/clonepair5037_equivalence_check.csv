@@ -1,0 +1,2 @@
+class_id,status,elapsed_ms,candidate_count,detail
+5037,error,14874501,100,"Command '['java', '-ea', '-cp', 'C:\\Users\\yoshi\\AppData\\Local\\Temp\\clonepair-5037-equiv-o7qmurlp', 'all.ClonePair5037EquivalenceOracle']' timed out after 20 seconds"

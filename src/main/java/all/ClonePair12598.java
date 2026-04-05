@@ -1,0 +1,20 @@
+package all;
+
+public class ClonePair12598 {
+
+    double method1(double x,double coef[],int N){
+      double ans;
+      ans=x + coef[0];
+      for (int i=1; i < N; i++) {
+        ans=ans * x + coef[i];
+      }
+      return ans;
+    }
+
+    double method2(double x,double coef[],int N){
+      double ans;
+      ans=x + coef[0];
+      for (int i=1; i < N; i++)   ans=ans * x + coef[i];
+      return ans;
+    }
+}
