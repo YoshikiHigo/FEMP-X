@@ -11,7 +11,6 @@ public class ClonePair3187 {
         return n.intValue();
     }
 
-    @SuppressWarnings("unchecked")
     int method2(Map map, String name) {
         Object val = map.get(name);
         int ret = 0;

@@ -1,7 +1,6 @@
 package equivalent;
 
 public class ClonePair6812 {
-    @SuppressWarnings("unchecked")
     int method1(Object[] a, int fromIndex, int toIndex, Object key) {
         int low = fromIndex;
         int high = toIndex - 1;

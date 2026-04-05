@@ -19,7 +19,6 @@ public class ClonePair58 {
         return values.toString();
     }
 
-    @SuppressWarnings("unchecked")
     String method2(List source, String separator) {
         StringBuffer buffer = new StringBuffer();
         boolean first = true;

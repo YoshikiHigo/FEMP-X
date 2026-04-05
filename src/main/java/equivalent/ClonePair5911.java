@@ -1,7 +1,6 @@
 package equivalent;
 
 public class ClonePair5911 {
-    @SuppressWarnings("unchecked")
     int method1(Comparable c1, Comparable c2) {
         if (c1 == c2) return (0);
         if (c1 == null) return (-1);

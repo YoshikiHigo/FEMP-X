@@ -11,7 +11,6 @@ public class ClonePair3761 {
         return null;
     }
 
-    @SuppressWarnings("unchecked")
     String method2(Map formData, String key) {
         Object values = formData.get(key);
         if (values == null) return null;
