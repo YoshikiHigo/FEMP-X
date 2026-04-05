@@ -1,0 +1,32 @@
+package unverified;
+
+public class ClonePair6542 {
+
+    boolean method1(String l,String r){
+      if (l == null && r == null)   return true;
+      if (l == null || r == null)   return false;
+      try {
+        double ll=Double.parseDouble(l);
+        double rr=Double.parseDouble(r);
+        return (ll == rr);
+      }
+     catch (  NumberFormatException nfe) {
+      }
+      return l.equals(r);
+    }
+
+    boolean method2(String x,String y){
+      if (x == null)   return y == null;
+     else   if (y == null)   return false;
+     else   if (y.length() <= 0)   return x.length() <= 0;
+      char[] a=x.toCharArray();
+      char[] b=y.toCharArray();
+      char diff=(char)((a.length == b.length) ? 0 : 1);
+      int j=0;
+      for (int i=0; i < a.length; ++i) {
+        diff|=a[i] ^ b[j];
+        j=(j + 1) % b.length;
+      }
+      return diff == 0;
+    }
+}

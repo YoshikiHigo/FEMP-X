@@ -1,0 +1,25 @@
+package unverified;
+
+public class ClonePair5627 {
+
+    boolean method1(int i){
+      if (i % 4 != 0) {
+        return false;
+      }
+      if (i % 400 == 0) {
+        return true;
+      }
+      if (i % 100 == 0) {
+        return false;
+      }
+      return true;
+    }
+
+    boolean method2(int year){
+      boolean flag=false;
+      if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))) {
+        flag=true;
+      }
+      return flag;
+    }
+}
