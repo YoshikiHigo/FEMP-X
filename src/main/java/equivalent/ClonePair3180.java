@@ -39,7 +39,6 @@ public class ClonePair3180 {
         return milliseconds;
     }
 
-    @SuppressWarnings("unchecked")
     long method2(Map properties) {
         long milliseconds = -1;
         int byteslength = -1;

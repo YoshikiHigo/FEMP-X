@@ -12,7 +12,6 @@ public class ClonePair5908 {
         return o1.compareTo(o2);
     }
 
-    @SuppressWarnings("unchecked")
     int method2(Comparable a, Comparable b) {
         if (a != null && b != null) {
             return a.compareTo(b);
