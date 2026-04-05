@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+class ClonePair13184DifferenceFindingTest {
+
+    private final ClonePair13184 subject = new ClonePair13184();
+
+    @Test
+    void methodsParseParenthesizedSegmentDifferently() {
+        assertArrayEquals(new String[]{"x)y"}, subject.method1("(x)y"));
+        assertArrayEquals(new String[]{"x"}, subject.method2("(x)y"));
+    }
+}

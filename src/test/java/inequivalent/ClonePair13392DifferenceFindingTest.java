@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair13392DifferenceFindingTest {
+
+    private final ClonePair13392 subject = new ClonePair13392();
+
+    @Test
+    void methodsHandleSurroundingWhitespaceDifferently() {
+        assertEquals(" x ", subject.method1("<a> x </a>", "<a>", "</a>"));
+        assertEquals("x", subject.method2("<a> x </a>", "<a>", "</a>"));
+    }
+}

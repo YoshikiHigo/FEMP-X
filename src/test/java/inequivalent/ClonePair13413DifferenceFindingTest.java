@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static inequivalent.ClonePairDifferenceTestSupport.assertThrowsByName;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+class ClonePair13413DifferenceFindingTest {
+
+    private final ClonePair13413 subject = new ClonePair13413();
+
+    @Test
+    void methodsHaveDifferentExceptionBehaviorForSignedHexPair() {
+        assertThrowsByName("java.lang.NumberFormatException", () -> subject.method1("+0"));
+        assertArrayEquals(new byte[]{0}, subject.method2("+0"));
+    }
+}
