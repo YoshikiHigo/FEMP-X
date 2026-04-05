@@ -1,0 +1,5 @@
+class_id,method1_test_count,method2_test_count,method1_tests_success_on_method2,method2_tests_success_on_method1,all_cross_tests_succeeded,status,detail
+1,5,6,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+2,5,5,4,4,false,ok,method1ReturnsNormalizedAbsoluteDifference->method2	org.opentest4j.AssertionFailedError	expected: <2.75> but was: <1.75> method2ReturnsNormalizedEuclideanDifference->method1	org.opentest4j.AssertionFailedError	expected: <1.75> but was: <2.75>
+73,5,5,5,5,true,ok,
+10915,4,3,3,2,false,ok,"method1ReturnsTrueForAllowedAsciiCharacters->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2DoesNotTerminateForNonEmptyInput->method1	org.opentest4j.AssertionFailedError	Expected org.opentest4j.AssertionFailedError to be thrown, but nothing was thrown."

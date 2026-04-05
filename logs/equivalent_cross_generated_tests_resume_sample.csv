@@ -1,0 +1,3 @@
+class_id,method1_test_count,method2_test_count,method1_tests_success_on_method2,method2_tests_success_on_method1,all_cross_tests_succeeded,status,detail
+9315,3,3,3,3,true,ok,
+10044,4,4,4,4,true,ok,

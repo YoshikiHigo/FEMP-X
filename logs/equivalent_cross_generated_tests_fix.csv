@@ -1,0 +1,5 @@
+class_id,method1_test_count,method2_test_count,method1_tests_success_on_method2,method2_tests_success_on_method1,all_cross_tests_succeeded,status,detail
+3,7,7,7,7,true,ok,
+4731,5,5,5,5,true,ok,
+7003,7,7,7,7,true,ok,
+7008,7,7,7,7,true,ok,

@@ -1,0 +1,853 @@
+class_id,method1_test_count,method2_test_count,method1_tests_success_on_method2,method2_tests_success_on_method1,all_cross_tests_succeeded,status,detail
+1,5,6,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+2,5,5,4,4,false,ok,method1ReturnsNormalizedAbsoluteDifference->method2	org.opentest4j.AssertionFailedError	expected: <2.75> but was: <1.75> method2ReturnsNormalizedEuclideanDifference->method1	org.opentest4j.AssertionFailedError	expected: <1.75> but was: <2.75>
+4,5,5,4,3,false,ok,"method1ParsesValueWithSecSuffix->method2	java.lang.NumberFormatException	For input string: ""15(sec)"" method2ReturnsNullForBlankString->method1	java.lang.NumberFormatException	For input string: ""   "" method2ThrowsNumberFormatExceptionForNonNumericValue->method1	org.opentest4j.AssertionFailedError	Expected java.lang.NumberFormatException to be thrown, but nothing was thrown."
+53,5,5,2,2,false,ok,method1AddsAllLongArgumentsAsLong->method2	org.opentest4j.AssertionFailedError	expected: <12> but was: <5> method1PromotesToDoubleWhenAnyArgumentIsNotLong->method2	org.opentest4j.AssertionFailedError	expected: <9.5> but was: <4.5> method1SupportsNegativeValues->method2	org.opentest4j.AssertionFailedError	expected: <-4> but was: <2> method2ReturnsMaximumOfAllLongArgumentsAsLong->method1	org.opentes
+73,5,5,5,5,true,ok,
+74,5,5,5,3,false,ok,"method2SplitsPlainWordsOnWhitespace->method1	org.opentest4j.AssertionFailedError	expected: <[alpha, beta]> but was: <[alpha\tbeta]> method2PreservesEscapedQuoteCharacterInsideToken->method1	org.opentest4j.AssertionFailedError	expected: <[a""b, tail]> but was: <[a\, b tail]>"
+78,7,7,7,5,false,ok,method2FindsTargetIgnoringCase->method1	org.opentest4j.AssertionFailedError	expected: <4> but was: <-1> method2NormalizesNegativeFromIndexToZero->method1	org.opentest4j.AssertionFailedError	expected: <0> but was: <-1>
+83,5,5,3,4,false,ok,method1FindsTargetIgnoringCase->method2	org.opentest4j.AssertionFailedError	expected: <4> but was: <-1> method1NormalizesNegativeFromIndexToZero->method2	org.opentest4j.AssertionFailedError	expected: <0> but was: <-1> method2DoesNotIgnoreCase->method1	org.opentest4j.AssertionFailedError	expected: <-1> but was: <4>
+88,5,5,5,4,false,ok,method2DoesNotIgnoreCase->method1	org.opentest4j.AssertionFailedError	expected: <-1> but was: <7>
+89,5,5,4,4,false,ok,method1ReturnsFalseForCarriageReturnBecauseItIsNotExplicitlyAllowed->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2ReturnsTrueForWhitespaceCharactersRecognizedByCharacterApi->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+93,5,5,5,4,false,ok,method2ReturnsFalseForWhitespaceOutsideExplicitSet->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+105,4,4,4,3,false,ok,method2ReturnsFloatConvertedValueWhenInsideRange->method1	org.opentest4j.AssertionFailedError	expected: <0.12345679104328156> but was: <0.1234567890123>
+110,5,6,5,6,true,ok,
+116,5,5,4,4,false,ok,method1IncludesLowerBound->method2	org.opentest4j.AssertionFailedError	expected: <1.0> but was: <0.0> method2ExcludesLowerBound->method1	org.opentest4j.AssertionFailedError	expected: <0.0> but was: <1.0>
+134,4,4,4,4,true,ok,
+139,4,4,2,2,false,ok,method1ReturnsMaximumUsingNaturalOrderComparator->method2	org.opentest4j.AssertionFailedError	expected: <5.0> but was: <1.0> method1HonorsComparatorSemantics->method2	org.opentest4j.AssertionFailedError	expected: <1.0> but was: <5.0> method2ReturnsMinimumUsingNaturalOrderComparator->method1	org.opentest4j.AssertionFailedError	expected: <1.0> but was: <5.0> method2HonorsComparatorSemantics->method1
+140,4,4,3,3,false,ok,method1WrapsHueOfOneBackToRed->method2	org.opentest4j.AssertionFailedError	expected: <16711680> but was: <16777215> method2ProducesRedForCanonicalRedInput->method1	org.opentest4j.AssertionFailedError	expected: <16711680> but was: <8323072>
+142,5,5,5,4,false,ok,method2ReturnsTrueForTwoEmptyMatrices->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+143,4,4,3,2,false,ok,method1IsCaseSensitive->method2	org.opentest4j.AssertionFailedError	expected: <-1> but was: <0> method2ReturnsIndexOfCaseInsensitiveMatch->method1	org.opentest4j.AssertionFailedError	expected: <0> but was: <-1> method2ReturnsFirstMatchingIndexFromIteration->method1	org.opentest4j.AssertionFailedError	expected: <0> but was: <-1>
+187,5,5,4,4,false,ok,method1ReturnsFalseWhenOnlyOneArrayIsNull->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2TreatsNullAndEmptyArrayAsEqual->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+326,4,4,4,4,true,ok,
+656,5,5,5,5,true,ok,
+844,3,3,0,0,false,ok,method1MarksLiteralCharactersAsAllowed->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1SupportsHexAndDigitEscapes->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1ExpandsCaseInsensitiveRangesWithZEscape->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2ClearsLiteralCharactersFromDefaultAl
+880,3,3,2,2,false,ok,"method1AppendsQuarterValuesForEachRequestedBlock->method2	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <0.1> but was: <0.25> method2PrefillsQuarterValuesBeforeCopyLoopStops->method1	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <0.25> but was: <0.1>"
+881,4,5,3,4,false,ok,method1ReturnsFalseWhenAnyComparedByteDiffers->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2ReturnsTrueWhenLaterBytesDifferButFirstByteMatches->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+899,4,4,2,2,false,ok,"method1RightAlignsDataWhenTargetLengthIsLarger->method2	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <0.0> but was: <1.0> method1KeepsLastValuesWhenTargetLengthIsSmaller->method2	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <3.0> but was: <1.0> method2LeftAlignsDataWhenTargetLengthIsLarger->method1	org.opentest4j.AssertionFa"
+923,4,4,4,3,false,ok,method2KeepsOnlyAllowedCharacterRanges->method1	org.opentest4j.AssertionFailedError	expected: <0A z> but was: </0A z{>
+948,4,4,2,2,false,ok,method1ReturnsTrueWhenFirstFourBytesMatch->method2	java.lang.ArrayIndexOutOfBoundsException	Index 4 out of bounds for length 4 method1IgnoresDifferencesAfterFourthByte->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2ReturnsFalseWhenAnyOfFirstSixBytesDiffers->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2ThrowsArrayIndexOu
+949,4,4,4,4,true,ok,
+956,4,4,4,4,true,ok,
+981,4,5,3,3,false,ok,method1UsesAbsoluteToleranceWhenAverageMagnitudeIsSmall->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2DoesNotTreatSingleZeroAsEqualBySpecialCase->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2CanRejectSmallNonZeroValues->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+991,4,4,2,4,false,ok,method1UsesAbsoluteToleranceWhenAtLeastOneValueIsSmall->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1ScalesToleranceWhenBothValuesAreLarge->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+1040,4,5,3,4,false,ok,method1ReturnsFalseWhenEitherArrayIsNull->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2ReturnsTrueForSameReferenceIncludingNull->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+1074,4,4,3,2,false,ok,method1IgnoresEqualsWhenReferenceDiffers->method2	org.opentest4j.AssertionFailedError	expected: <-1> but was: <0> method2ReturnsLastIndexUsingEquals->method1	org.opentest4j.AssertionFailedError	expected: <1> but was: <-1> method2CanMatchDifferentObjectWithEqualValue->method1	org.opentest4j.AssertionFailedError	expected: <0> but was: <-1>
+1237,4,4,3,3,false,ok,method1StoresOddTrailingByteAsHighByteOfFinalChar->method2	org.opentest4j.AssertionFailedError	expected: <?> but was: <A> method2StoresOddTrailingByteAsLowByteOfFinalChar->method1	org.opentest4j.AssertionFailedError	expected: <A> but was: <?>
+1467,5,4,3,3,false,ok,method1ReturnsZeroForLongOutsideIntegerRange->method2	org.opentest4j.AssertionFailedError	expected: <0> but was: <-2147483648> method1HandlesBooleanValues->method2	org.opentest4j.AssertionFailedError	expected: <1> but was: <0> method2ReturnsZeroForNullAndUnsupportedType->method1	org.opentest4j.AssertionFailedError	expected: <0> but was: <1>
+1508,4,4,2,2,false,ok,method1ReturnsMinimumWithinRequestedRange->method2	org.opentest4j.AssertionFailedError	expected: <-3> but was: <9> method1UsesOnlyRequestedSubRange->method2	org.opentest4j.AssertionFailedError	expected: <4> but was: <7> method2ReturnsMaximumWithinRequestedRange->method1	org.opentest4j.AssertionFailedError	expected: <9> but was: <-3> method2UsesOnlyRequestedSubRange->method1	org.opentest4j.Assertio
+1521,4,4,2,3,false,ok,method1ReturnsFalseWhenSizesDiffer->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method1ReturnsFalseWhenAnyElementIsMissing->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2ReturnsTrueWhenCollectionsIntersect->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+1536,4,4,2,2,false,ok,method1ReturnsFalseWhenSizesDiffer->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method1ReturnsFalseWhenAnyElementIsMissing->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2ReturnsTrueWhenCollectionsIntersect->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2ReturnsTrueWhenSmallerCollectionIsS
+1579,5,4,5,4,true,ok,
+1598,4,4,2,2,false,ok,method1ConvertsOtherNumbersUsingIntValue->method2	org.opentest4j.AssertionFailedError	expected: <7> but was: <null> method1ParsesNumericStringViaDouble->method2	org.opentest4j.AssertionFailedError	expected: <12> but was: <null> method2ReturnsNullForNullAndUnsupportedTypes->method1	org.opentest4j.AssertionFailedError	expected: <null> but was: <7> method2ReturnsNullForAnyString->method1	org.opentest
+1610,5,4,4,3,false,ok,method1ReturnsIntegerAsIsAndConvertsOtherNumbers->method2	org.opentest4j.AssertionFailedError	expected: <3> but was: <null> method2ReturnsNullForNullAndUnsupportedNumberTypes->method1	org.opentest4j.AssertionFailedError	expected: <null> but was: <3>
+1640,4,4,3,3,false,ok,"method1ReturnsIntegerAndConvertsOtherNumbersUsingIntValue->method2	java.lang.NumberFormatException	For input string: ""3.9"" method2ThrowsNumberFormatExceptionForInvalidStringRepresentation->method1	org.opentest4j.AssertionFailedError	Expected java.lang.NumberFormatException to be thrown, but nothing was thrown."
+1655,3,5,2,2,false,ok,method1ReturnsNullForInvalidStringOrUnsupportedType->method2	org.opentest4j.AssertionFailedError	expected: <null> but was: <3> method2ConvertsNumbersUsingIntValue->method1	org.opentest4j.AssertionFailedError	expected: <3> but was: <null> method2HandlesBooleanValues->method1	org.opentest4j.AssertionFailedError	expected: <0> but was: <null> method2ParsesTrimmedStringRepresentation->method1	org.opent
+1670,4,4,2,2,false,ok,method1JoinsElementsWithTabs->method2	org.opentest4j.AssertionFailedError	expected: <a\tb\tc> but was: <a;b;c> method1AppendsNullElementsAsNullString->method2	org.opentest4j.AssertionFailedError	expected: <a\tnull\tc> but was: <a;null;c> method2JoinsElementsWithSemicolons->method1	org.opentest4j.AssertionFailedError	expected: <a;b;c> but was: <a\tb\tc> method2AppendsNullElementsAsNullString->metho
+1684,4,5,3,4,false,ok,method1ReturnsFalseWhenEitherArrayIsNull->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2ReturnsTrueForSameReferenceIncludingNull->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+1724,4,4,2,2,false,ok,"method1JoinsElementsWithCommaWithoutSpace->method2	org.opentest4j.AssertionFailedError	expected: <GET,POST,PUT> but was: <GET, POST, PUT> method1AppendsNullElementsAsNullString->method2	org.opentest4j.AssertionFailedError	expected: <GET,null> but was: <GET, null> method2JoinsElementsWithCommaAndSpace->method1	org.opentest4j.AssertionFailedError	expected: <GET, POST, PUT> but was: <GET,POST,PUT> me"
+1743,3,3,2,1,false,ok,"method1JoinsElementsWithCommaAndSpace->method2	org.opentest4j.AssertionFailedError	expected: <en, ja> but was: <['en','ja']> method2FormatsElementsInsideBracketedQuotedList->method1	org.opentest4j.AssertionFailedError	expected: <['en','ja']> but was: <en, ja> method2HandlesSingleElementList->method1	org.opentest4j.AssertionFailedError	expected: <['en']> but was: <en>"
+1846,3,3,2,2,false,ok,"method1JoinsElementsWithSingleSpaces->method2	org.opentest4j.AssertionFailedError	expected: <a b c> but was: <a, b, c> method2JoinsElementsWithCommaAndSpace->method1	org.opentest4j.AssertionFailedError	expected: <a, b, c> but was: <a b c>"
+1901,2,2,1,1,false,ok,"method1JoinsElementsWithTrailingNewlines->method2	org.opentest4j.AssertionFailedError	expected: <a\nb\n> but was: <a, b> method2JoinsElementsWithCommaAndSpaceWithoutTrailingSeparator->method1	org.opentest4j.AssertionFailedError	expected: <a, b> but was: <a\nb\n>"
+1907,3,2,2,1,false,ok,method1ReturnsFirstFirefoxMatchIgnoringCase->method2	org.opentest4j.AssertionFailedError	expected: <firefox> but was: <Chrome> method2AlwaysReturnsFirstBrowser->method1	org.opentest4j.AssertionFailedError	expected: <Chrome> but was: <firefox>
+1928,3,3,2,2,false,ok,"method1ConcatenatesAllElementsWithoutSeparator->method2	org.opentest4j.AssertionFailedError	expected: <123> but was: <1, 2, 3> method2JoinsAuthorsWithCommaAndSpaceWithoutTrailingSeparator->method1	org.opentest4j.AssertionFailedError	expected: <Ann, Bob> but was: <AnnBob>"
+1929,4,5,3,4,false,ok,"method1ThrowsNumberFormatExceptionWhenStringRepresentationIsOutOfRange->method2	org.opentest4j.AssertionFailedError	Expected java.lang.NumberFormatException to be thrown, but nothing was thrown. method2ConvertsNumbersUsingByteValue->method1	java.lang.NumberFormatException	Value out of range. Value:""130"" Radix:10"
+1936,5,4,4,3,false,ok,method1IsOrderSensitive->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2ReturnsTrueForSameMembersInDifferentOrder->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+1938,4,4,3,3,false,ok,method1IsCaseSensitive->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2ReturnsTrueForSameOrderedStringsIgnoringCase->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+2001,3,3,2,2,false,ok,method1ConcatenatesElementsWithoutSeparator->method2	org.opentest4j.AssertionFailedError	expected: <abc> but was: <a b c > method2ConcatenatesElementsWithTrailingSpaces->method1	org.opentest4j.AssertionFailedError	expected: <a b c > but was: <abc>
+2006,3,3,2,2,false,ok,"method1JoinsElementsWithCommaWithoutTrailingSeparator->method2	org.opentest4j.AssertionFailedError	expected: <a,b,c> but was: <1=a\n2=b\n3=c\n> method2FormatsElementsAsNumberedLines->method1	org.opentest4j.AssertionFailedError	expected: <1=a\n2=b\n> but was: <a,b>"
+2101,3,3,3,3,true,ok,
+2433,3,4,2,3,false,ok,"method1ParsesCommaDecimalByReplacingCommaWithDot->method2	java.lang.NumberFormatException	For input string: ""1,5"" method2ThrowsNumberFormatExceptionForCommaDecimal->method1	org.opentest4j.AssertionFailedError	Expected java.lang.NumberFormatException to be thrown, but nothing was thrown."
+2511,3,3,2,2,false,ok,method1StripsTrailingPointZero->method2	org.opentest4j.AssertionFailedError	expected: <12> but was: <null> method2ReturnsNullForBlankOrPointZeroString->method1	org.opentest4j.AssertionFailedError	expected: <null> but was: <12>
+2602,4,3,1,0,false,ok,"method1ReturnsNullSlotsForNullInput->method2	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <null> but was: <> method1ReturnsWholeStringWhenSeparatorIsMissing->method2	org.opentest4j.AssertionFailedError	array contents differ at index [1], expected: <null> but was: <> method1ReturnsNullForMissingLeftPartWhenSeparatorIsAtStart->method2	org.opentest4j.AssertionFail"
+2618,4,4,3,3,false,ok,"method1DropsLastCharacterOfTrailingSegmentInCurrentImplementation->method2	org.opentest4j.AssertionFailedError	array contents differ at index [2], expected: <> but was: <c> method2KeepsLastCharacterOfTrailingSegment->method1	org.opentest4j.AssertionFailedError	array contents differ at index [2], expected: <c> but was: <>"
+2646,4,4,4,4,true,ok,
+2697,3,3,2,2,false,ok,"method1ThrowsNumberFormatExceptionForLeadingExponentNotation->method2	org.opentest4j.AssertionFailedError	Expected java.lang.NumberFormatException to be thrown, but nothing was thrown. method2PrefixesOneForLeadingExponentNotation->method1	java.lang.NumberFormatException	For input string: ""e2"""
+2719,3,3,2,2,false,ok,"method1TokenizesWithoutTrimmingWholeInput->method2	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: < a > but was: <a > method2TrimsWholeInputBeforeTokenizing->method1	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <a > but was: < a >"
+2739,3,4,2,3,false,ok,"method1ReturnsTrueForSameReferenceIncludingNull->method2	java.lang.NullPointerException	Cannot read the array length because ""a"" is null method2ThrowsNullPointerExceptionForNullArray->method1	org.opentest4j.AssertionFailedError	Expected java.lang.NullPointerException to be thrown, but nothing was thrown."
+2760,3,3,2,2,false,ok,method1ReturnsMostFrequentValue->method2	org.opentest4j.AssertionFailedError	expected: <2> but was: <1> method2ReturnsMinimumValue->method1	org.opentest4j.AssertionFailedError	expected: <1> but was: <2>
+2799,4,4,3,2,false,ok,method1RecognizesPdfHeader->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2RecognizesValidHeader->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2RejectsInvalidHeaderOrInvalidSyncsafeBytes->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+2827,3,3,2,2,false,ok,method1ReplacesLowerAndUpperCaseDExponentMarkers->method2	org.opentest4j.AssertionFailedError	expected: <100.0> but was: <0.0> method2TruncatesAtSecondDecimalPoint->method1	org.opentest4j.AssertionFailedError	expected: <1.2> but was: <0.0>
+2909,3,3,2,2,false,ok,method1RecognizesIpv4MappedIpv6Prefix->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2RecognizesValidId3Header->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+2945,3,3,2,2,false,ok,method1ReturnsTrueForAsciiBytesUpTo126IncludingControlCharacters->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2ReturnsFalseForDisallowedControlCharacters->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+2975,4,4,4,3,false,ok,method2ParsesNumberAfterRemovingCommas->method1	org.opentest4j.AssertionFailedError	expected: <1234.0> but was: <0.0>
+3007,5,5,5,5,true,ok,
+3011,5,5,5,5,true,ok,
+3046,4,4,4,4,true,ok,
+3050,3,3,3,3,true,ok,
+3054,5,5,5,5,true,ok,
+3058,5,5,2,2,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case04->method1	org.o
+3067,5,5,5,5,true,ok,
+3094,3,3,3,3,true,ok,
+3105,3,3,3,3,true,ok,
+3109,3,3,3,3,true,ok,
+3112,4,4,4,4,true,ok,
+3116,3,3,3,3,true,ok,
+3121,4,3,4,3,true,ok,
+3129,5,5,5,5,true,ok,
+3130,5,5,5,5,true,ok,
+3137,5,5,5,5,true,ok,
+3171,5,5,5,5,true,ok,
+3172,5,5,3,5,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <foo> but was: <> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <foo/bar> but was: <>
+3176,5,4,3,4,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <foo/bar> but was: <foo.bar> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: </bar> but was: <foo.bar>
+3177,5,5,5,5,true,ok,
+3178,5,5,5,5,true,ok,
+3179,5,5,5,5,true,ok,
+3181,4,4,2,2,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+3184,4,4,3,3,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+3185,4,4,2,2,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+3186,5,5,5,5,true,ok,
+3195,5,5,5,5,true,ok,
+3197,5,5,5,5,true,ok,
+3199,5,5,5,5,true,ok,
+3220,5,5,5,5,true,ok,
+3233,5,5,5,5,true,ok,
+3241,5,5,5,5,true,ok,
+3243,5,5,1,5,false,ok,method1Case02->method2	java.lang.ClassCastException	class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap') method1Case03->method2	java.lang.ClassCastException	class java.lang.String cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'boot
+3396,5,5,4,3,false,ok,"method1Case04->method2	java.lang.ArrayIndexOutOfBoundsException	Index 0 out of bounds for length 0 method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case04->method1	org.opentest4j.AssertionFailedError	Expected java.lang.ArrayIndexOutOfBoundsException to be thrown, but nothing was thrown."
+3470,5,5,5,5,true,ok,
+3474,5,5,5,5,true,ok,
+3495,5,5,5,4,false,ok,method2Case02->method1	java.lang.ClassCastException	class java.lang.Double cannot be cast to class java.lang.Integer (java.lang.Double and java.lang.Integer are in module java.base of loader 'bootstrap')
+3547,5,5,2,2,false,ok,"method1Case03->method2	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <-Infinity> but was: <1.7976931348623157E308> method1Case04->method2	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <-Infinity> but was: <1.7976931348623157E308> method1Case05->method2	org.opentest4j.AssertionFailedError	array contents differ at index [0], exp"
+3559,5,5,5,5,true,ok,
+3569,5,5,5,5,true,ok,
+3578,5,5,5,5,true,ok,
+3589,5,5,5,5,true,ok,
+3594,5,5,4,3,false,ok,"method1Case04->method2	java.lang.ArrayIndexOutOfBoundsException	Index 0 out of bounds for length 0 method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case04->method1	org.opentest4j.AssertionFailedError	Expected java.lang.ArrayIndexOutOfBoundsException to be thrown, but nothing was thrown."
+3597,5,5,5,4,false,ok,"method2Case05->method1	java.lang.NullPointerException	Cannot read the array length because ""test1"" is null"
+3610,5,5,5,5,true,ok,
+3612,5,5,4,4,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+3637,5,5,5,5,true,ok,
+3646,3,3,3,3,true,ok,
+3648,3,3,3,3,true,ok,
+3649,5,5,5,4,false,ok,method2Case05->method1	java.lang.ClassCastException	class java.lang.String cannot be cast to class java.lang.Boolean (java.lang.String and java.lang.Boolean are in module java.base of loader 'bootstrap')
+3650,5,3,3,3,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <-32> but was: <0> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <32> but was: <0>
+3654,5,5,4,4,false,ok,method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <-1> but was: <-5> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <9> but was: <-13>
+3655,5,5,5,4,false,ok,method2Case02->method1	java.lang.ClassCastException	class java.lang.Integer cannot be cast to class java.lang.Double (java.lang.Integer and java.lang.Double are in module java.base of loader 'bootstrap')
+3656,5,5,5,5,true,ok,
+3668,5,5,5,5,true,ok,
+3669,5,5,5,5,true,ok,
+3671,4,4,3,3,false,ok,method1Case01->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+3682,4,4,4,4,true,ok,
+3687,4,4,4,4,true,ok,
+3723,5,5,3,4,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+3728,4,4,4,4,true,ok,
+3730,5,5,5,5,true,ok,
+3740,5,5,5,5,true,ok,
+3763,4,3,4,3,true,ok,
+3766,5,5,4,5,false,ok,method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+3784,4,4,4,4,true,ok,
+3794,4,4,3,3,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+3801,5,5,5,5,true,ok,
+3802,5,5,5,5,true,ok,
+3808,5,5,5,5,true,ok,
+3812,5,5,5,5,true,ok,
+3848,5,5,3,4,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <0.0> but was: <NaN> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <0.0> but was: <NaN> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+3850,5,5,5,5,true,ok,
+3868,3,3,3,3,true,ok,
+3881,3,3,3,3,true,ok,
+3886,5,5,5,5,true,ok,
+3896,4,4,3,4,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+3909,5,5,5,5,true,ok,
+3914,5,5,5,5,true,ok,
+3932,3,3,2,2,false,ok,"method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <{key=Value, other=Two}> but was: <{}> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <{a=1, b=2}> but was: <{}>"
+3934,3,3,3,3,true,ok,
+3935,5,5,5,5,true,ok,
+3945,5,5,5,5,true,ok,
+3965,5,5,5,5,true,ok,
+3970,5,5,5,5,true,ok,
+3972,3,3,3,3,true,ok,
+3974,5,5,5,5,true,ok,
+3980,5,5,5,5,true,ok,
+3986,5,5,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+3990,5,5,5,5,true,ok,
+3995,5,5,5,5,true,ok,
+4057,4,4,4,4,true,ok,
+4060,5,5,5,5,true,ok,
+4085,3,3,3,3,true,ok,
+4100,4,4,4,4,true,ok,
+4103,5,5,5,5,true,ok,Not equal lengths: 1/0 Not equal lengths: 2/0
+4117,5,5,5,5,true,ok,
+4136,5,5,3,3,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+4145,5,5,5,5,true,ok,
+4156,5,5,4,5,false,ok,method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <0.0> but was: <-0.5>
+4157,5,5,5,5,true,ok,
+4172,5,5,5,5,true,ok,
+4211,5,5,2,4,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <0.0> but was: <-1.0> method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <0.5> but was: <-1.0> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <1.0> but was: <-1.0> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <0.0> but was: <0.5>
+4214,3,3,3,3,true,ok,
+4218,5,3,3,2,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+4228,4,4,3,3,false,ok,method1Case01->method2	org.opentest4j.AssertionFailedError	expected: <0.0> but was: <1.0> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <1.0> but was: <0.0>
+4234,5,5,5,5,true,ok,
+4237,3,3,3,3,true,ok,
+4244,5,5,5,5,true,ok,
+4252,4,4,4,4,true,ok,
+4259,4,4,4,4,true,ok,
+4285,5,5,5,5,true,ok,
+4309,4,4,3,3,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+4319,4,4,4,4,true,ok,
+4333,4,4,4,4,true,ok,
+4350,5,5,4,4,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+4359,4,4,4,4,true,ok,
+4385,4,4,3,3,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+4394,5,5,5,5,true,ok,
+4400,5,5,5,5,true,ok,
+4401,5,5,5,5,true,ok,
+4402,5,5,5,5,true,ok,
+4405,5,5,5,5,true,ok,
+4406,3,3,3,3,true,ok,
+4431,4,4,4,4,true,ok,
+4463,5,5,4,4,false,ok,method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <1.4142135623730951> but was: <2.0> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <2.0> but was: <1.4142135623730951>
+4467,5,5,5,5,true,ok,
+4487,5,5,5,5,true,ok,
+4508,5,5,5,5,true,ok,
+4509,5,5,5,5,true,ok,
+4510,4,4,4,4,true,ok,
+4554,3,3,3,3,true,ok,
+4602,4,4,4,4,true,ok,
+4603,4,4,4,4,true,ok,
+4624,4,4,4,4,true,ok,
+4643,5,5,5,5,true,ok,
+4645,3,5,2,3,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+4647,4,4,4,4,true,ok,
+4702,4,4,4,4,true,ok,
+4711,4,3,2,1,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+4737,5,5,5,4,false,ok,method2Case03->method1	java.lang.ArrayIndexOutOfBoundsException	Index -1 out of bounds for length 1
+4786,5,5,4,5,false,ok,"method1Case01->method2	org.opentest4j.AssertionFailedError	Unexpected exception type thrown, expected: <java.lang.StringIndexOutOfBoundsException> but was: <java.lang.IndexOutOfBoundsException>"
+4818,4,4,4,4,true,ok,
+4857,5,5,5,5,true,ok,
+4858,5,5,3,3,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <f> but was: <...> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <fo> but was: <f...> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <...> but was: <f> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <f...> but was: <fo>
+4860,5,5,3,3,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <o> but was: <f> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <oo> but was: <fo> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <f> but was: <o> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <fo> but was: <oo>
+4864,4,5,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+4915,5,5,5,5,true,ok,
+4919,5,4,2,2,false,ok,"method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <java.util.GregorianCalendar[time=1588690800000,areFieldsSet=true,areAllFieldsSet=false,lenient=true,zone=sun.util.calendar.ZoneInfo[id=""Asia/Tokyo"",offset=32400000,dstSavings=0,useDaylight=false,transitions=10,lastRule=null],firstDayOfWeek=1,minimalDaysInFirstWeek=1,ERA=?,YEAR=2020,MONTH=4,WEEK_OF_YEAR=?,WEEK_OF_MONTH=?,DAY_OF_M"
+4928,5,5,5,5,true,ok,
+4937,5,5,2,2,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <-0.7615942> but was: <-0.7777778> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <0.46211717> but was: <0.46581197> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <0.7615942> but was: <0.7777778> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <-0.7777778> but was:
+4955,3,3,3,3,true,ok,"java.lang.NullPointerException: Cannot invoke ""java.util.Vector.size()"" because ""catalogueSubLocations"" is null 	at inequivalent.ClonePair4955.method2(ClonePair4955.java:172) 	at inequivalent.ClonePair4955CrossGeneratedTestRunner.crossFromMethod1_method1Case01(ClonePair4955CrossGeneratedTestRunner.java:13) 	at inequivalent.ClonePair4955CrossGeneratedTestRunner.main(ClonePair4955CrossGeneratedTestR"
+4965,5,5,5,5,true,ok,
+4975,3,3,3,3,true,ok,
+5035,5,5,4,4,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <0> but was: <-1> method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <-1> but was: <0>
+5071,4,4,4,4,true,ok,
+5091,4,4,4,4,true,ok,
+5093,5,5,4,3,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+5124,3,3,3,3,true,ok,
+5125,5,5,2,2,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case04->method1	org.o
+5126,5,5,2,4,false,ok,"method1Case01->method2	org.opentest4j.AssertionFailedError	Expected java.lang.NullPointerException to be thrown, but nothing was thrown. method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case04->method1	java.lang.NullPointerException	Cannot read the array l"
+5130,5,5,5,5,true,ok,
+5132,4,4,4,4,true,ok,
+5146,5,5,5,3,false,ok,method2Case03->method1	java.lang.ArrayIndexOutOfBoundsException	Index 1 out of bounds for length 1 method2Case05->method1	java.lang.ArrayIndexOutOfBoundsException	Index 1 out of bounds for length 1
+5170,4,4,4,4,true,ok,
+5171,3,3,3,3,true,ok,
+5176,3,3,3,3,true,ok,
+5192,5,5,5,5,true,ok,
+5205,5,5,5,5,true,ok,
+5239,5,5,4,4,false,ok,method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <2> but was: <1> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <1> but was: <2>
+5246,5,5,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+5253,4,4,4,4,true,ok,
+5297,5,5,5,5,true,ok,
+5311,5,5,5,5,true,ok,
+5315,5,5,5,5,true,ok,
+5321,5,5,5,5,true,ok,
+5381,3,3,3,3,true,ok,
+5384,5,5,5,4,false,ok,"method2Case01->method1	org.opentest4j.AssertionFailedError	Expected java.lang.ArrayIndexOutOfBoundsException to be thrown, but nothing was thrown."
+5445,5,5,3,2,false,ok,"method1Case03->method2	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <0> but was: <1> method1Case04->method2	org.opentest4j.AssertionFailedError	Expected java.lang.ArrayIndexOutOfBoundsException to be thrown, but nothing was thrown. method2Case03->method1	java.lang.ArrayIndexOutOfBoundsException	Index -1 out of bounds for length 0 method2Case04->method1	java.lan"
+5458,4,4,4,4,true,ok,
+5464,5,5,5,5,true,ok,
+5481,4,4,4,4,true,ok,
+5536,3,3,3,3,true,ok,
+5540,3,4,3,3,false,ok,method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+5572,4,4,4,2,false,ok,method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+5583,4,4,4,4,true,ok,
+5625,4,4,4,4,true,ok,
+5662,5,5,5,5,true,ok,
+5683,4,4,4,4,true,ok,
+5689,4,4,4,4,true,ok,
+5692,5,5,5,5,true,ok,
+5712,5,5,4,4,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+5717,5,5,4,3,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+5735,3,3,3,3,true,ok,
+5744,4,4,4,4,true,ok,
+5746,4,4,4,4,true,ok,
+5764,5,5,5,5,true,ok,
+5766,4,4,4,4,true,ok,
+5776,5,5,5,5,true,ok,
+5781,4,4,3,4,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+5795,5,5,5,5,true,ok,
+5801,5,5,5,5,true,ok,
+5822,5,5,5,5,true,ok,
+5847,5,5,5,4,false,ok,"method2Case05->method1	org.opentest4j.AssertionFailedError	Expected java.lang.NullPointerException to be thrown, but nothing was thrown."
+5865,5,5,5,5,true,ok,
+5881,5,5,5,5,true,ok,
+5882,4,4,4,4,true,ok,
+5884,4,4,4,4,true,ok,
+5885,5,5,5,5,true,ok,
+5901,3,4,3,2,false,ok,method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <1.0> but was: <0.0> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <1.5> but was: <0.0>
+5906,4,4,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+5907,4,4,4,4,true,ok,
+5918,5,5,3,3,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+5920,5,5,5,5,true,ok,
+5921,5,5,5,5,true,ok,
+5952,4,4,4,4,true,ok,
+5955,3,3,3,3,true,ok,
+5964,4,3,4,3,true,ok,
+5969,3,3,3,3,true,ok,
+5992,5,5,5,5,true,ok,
+5994,5,5,5,5,true,ok,
+5999,5,5,5,5,true,ok,
+6001,5,5,4,3,false,ok,"method1Case03->method2	java.lang.StringIndexOutOfBoundsException	Index 1 out of bounds for length 1 method2Case03->method1	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <-96> but was: <0> method2Case05->method1	org.opentest4j.AssertionFailedError	Expected java.lang.NullPointerException to be thrown, but nothing was thrown."
+6002,5,5,5,5,true,ok,
+6003,5,5,5,5,true,ok,
+6005,5,5,5,5,true,ok,
+6007,4,4,4,4,true,ok,
+6009,4,4,4,4,true,ok,
+6012,4,4,4,4,true,ok,
+6065,4,4,4,4,true,ok,
+6084,4,4,4,4,true,ok,
+6095,5,3,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+6113,4,4,4,4,true,ok,
+6121,5,5,5,5,true,ok,
+6129,5,5,5,5,true,ok,
+6149,5,5,5,5,true,ok,
+6163,5,5,5,5,true,ok,
+6170,5,5,5,5,true,ok,
+6180,5,5,5,5,true,ok,
+6183,5,5,5,5,true,ok,Vector dimension do not agree. Vector dimension do not agree.
+6188,5,5,3,4,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+6198,5,5,4,5,false,ok,"method1Case05->method2	java.lang.NullPointerException	Cannot invoke ""String.indexOf(int)"" because ""part"" is null"
+6244,5,5,4,4,false,ok,method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <2> but was: <3> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <3> but was: <2>
+6255,5,5,5,5,true,ok,
+6262,5,3,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+6270,5,5,5,5,true,ok,
+6350,4,4,4,4,true,ok,
+6378,5,5,5,5,true,ok,
+6423,5,5,5,5,true,ok,
+6446,5,5,5,5,true,ok,
+6454,5,5,5,5,true,ok,
+6476,5,5,5,5,true,ok,
+6491,5,5,5,5,true,ok,
+6497,5,5,5,5,true,ok,
+6507,5,5,5,5,true,ok,
+6537,5,5,5,5,true,ok,
+6538,4,4,4,4,true,ok,
+6539,5,5,5,5,true,ok,
+6540,3,3,3,3,true,ok,
+6550,3,3,3,3,true,ok,
+6558,5,5,5,5,true,ok,
+6563,4,4,4,4,true,ok,
+6568,3,3,3,3,true,ok,
+6582,5,5,5,5,true,ok,
+6587,5,5,5,5,true,ok,
+6607,5,5,5,5,true,ok,
+6617,5,5,5,5,true,ok,
+6618,5,5,5,5,true,ok,
+6623,5,5,5,5,true,ok,
+6648,5,5,5,5,true,ok,
+6649,5,5,5,5,true,ok,
+6653,5,5,5,5,true,ok,
+6661,5,5,5,5,true,ok,
+6671,5,5,4,5,false,ok,"method1Case05->method2	java.lang.NullPointerException	Cannot invoke ""String.length()"" because ""s"" is null"
+6673,5,5,5,5,true,ok,Matrix dimensions do not agree Matrix dimensions do not agree
+6689,5,5,4,4,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+6717,4,3,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+6729,4,4,4,4,true,ok,
+6742,3,3,3,3,true,ok,
+6745,3,3,3,3,true,ok,
+6750,3,3,3,3,true,ok,
+6753,4,5,4,4,false,ok,method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <-1> but was: <0>
+6757,4,4,4,4,true,ok,
+6776,4,4,4,4,true,ok,
+6780,4,4,3,4,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+6789,5,3,5,1,false,ok,"method2Case01->method1	org.opentest4j.AssertionFailedError	Expected java.lang.ArrayIndexOutOfBoundsException to be thrown, but nothing was thrown. method2Case02->method1	org.opentest4j.AssertionFailedError	Expected java.lang.NullPointerException to be thrown, but nothing was thrown."
+6806,4,4,2,2,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <  public alpha alpha;\r\n\r\n\r\n> but was: <  public alpha alpha()\r\n  {\r\n  }\r\n\r\n> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <  public alpha alpha;\r\n  public beta beta;\r\n\r\n\r\n> but was: <  public alpha alpha()\r\n  {\r\n  }\r\n\r\n  public beta beta()\r\n  {\r\n  }\r\n\r\n> method2Case03
+6819,3,3,3,3,true,ok,
+6823,3,3,3,3,true,ok,
+6905,5,5,5,5,true,ok,
+6953,5,5,5,5,true,ok,
+6962,5,5,5,5,true,ok,
+7000,5,5,4,4,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <66048> but was: <1179648> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <1179648> but was: <66048>
+7002,5,5,2,4,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <1> but was: <0> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <-1> but was: <0> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <2> but was: <0> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <0> but was: <1>
+7005,3,4,3,3,false,ok,method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+7017,5,5,5,5,true,ok,
+7047,4,4,4,4,true,ok,
+7068,5,5,3,3,false,ok,method1Case02->method2	java.lang.ArrayIndexOutOfBoundsException	Index -1 out of bounds for length 0 method1Case04->method2	java.lang.ArrayIndexOutOfBoundsException	Index -1 out of bounds for length 1 method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <33554432> but was: <0> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <50593792> but was: <0>
+7071,5,5,3,3,false,ok,"method1Case02->method2	java.lang.ArrayIndexOutOfBoundsException	Index -1 out of bounds for length 0 method1Case04->method2	java.lang.ArrayIndexOutOfBoundsException	Index -1 out of bounds for length 1 method2Case01->method1	org.opentest4j.AssertionFailedError	Expected java.lang.ArrayIndexOutOfBoundsException to be thrown, but nothing was thrown. method2Case03->method1	org.opentest4j.AssertionFailed"
+7091,3,3,3,3,true,ok,
+7156,4,4,4,4,true,ok,
+7158,5,5,4,5,false,ok,"method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <alpha, beta> but was: <alphabeta>"
+7162,3,3,3,3,true,ok,
+7201,4,4,4,4,true,ok,
+7204,4,4,4,4,true,ok,
+7247,3,3,3,3,true,ok,
+7255,5,5,5,5,true,ok,
+7259,3,3,3,3,true,ok,
+7266,5,5,5,5,true,ok,
+7282,5,5,5,5,true,ok,
+7287,5,5,5,5,true,ok,
+7317,3,3,3,3,true,ok,
+7330,3,3,2,2,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <0.0> but was: <NaN> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+7377,3,3,3,3,true,ok,
+7380,5,5,5,5,true,ok,
+7382,5,5,5,5,true,ok,
+7394,4,4,4,3,false,ok,method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+7407,5,5,5,5,true,ok,
+7435,4,4,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+7436,5,5,5,5,true,ok,
+7439,5,5,5,5,true,ok,
+7442,5,5,5,5,true,ok,
+7489,5,4,4,4,false,ok,method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <0.0> but was: <1.0>
+7493,4,4,3,3,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <1.5> but was: <2.0> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <2.0> but was: <1.5>
+7501,5,5,5,5,true,ok,
+7505,4,4,4,4,true,ok,
+7559,4,4,4,4,true,ok,
+7598,4,4,4,3,false,ok,method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+7658,4,4,3,3,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+7670,5,5,5,5,true,ok,
+7672,4,4,4,4,true,ok,
+7731,4,4,4,4,true,ok,
+7733,3,5,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+7754,3,3,1,1,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: [D@681a9515<[]> but was: [I@2f2c9b19<[]> method1Case03->method2	org.opentest4j.AssertionFailedError	expected: [D@65ab7765<[]> but was: [I@1b28cdfa<[]> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: [I@7229724f<[]> but was: [D@4c873330<[]> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <
+7765,3,3,1,1,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: [J@681a9515<[]> but was: [I@2f2c9b19<[]> method1Case03->method2	org.opentest4j.AssertionFailedError	expected: [J@65ab7765<[]> but was: [I@1b28cdfa<[]> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: [I@7229724f<[]> but was: [J@4c873330<[]> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <
+7785,3,3,1,1,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: [J@681a9515<[]> but was: [D@2f2c9b19<[]> method1Case03->method2	org.opentest4j.AssertionFailedError	expected: [J@65ab7765<[]> but was: [D@1b28cdfa<[]> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: [D@7229724f<[]> but was: [J@4c873330<[]> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: [
+7807,5,5,5,5,true,ok,
+7815,4,4,4,3,false,ok,method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+7828,5,5,5,5,true,ok,
+7834,4,4,4,4,true,ok,
+7843,4,4,4,4,true,ok,
+7844,5,5,5,5,true,ok,
+7845,5,5,5,5,true,ok,
+7846,4,4,4,4,true,ok,
+7851,5,5,4,4,false,ok,"method1Case01->method2	org.opentest4j.AssertionFailedError	Expected java.lang.NullPointerException to be thrown, but nothing was thrown. method2Case04->method1	java.lang.NullPointerException	Cannot invoke ""String.indexOf(String)"" because ""actionMapping"" is null"
+7854,3,3,3,3,true,ok,
+7856,5,5,5,5,true,ok,
+7860,4,4,4,4,true,ok,
+7862,4,4,4,4,true,ok,
+7871,5,5,3,3,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+7881,3,3,3,3,true,ok,
+7888,4,4,3,3,false,ok,"method1Case04->method2	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <2.0> but was: <1.0> method2Case04->method1	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <1.0> but was: <2.0>"
+7889,4,4,4,4,true,ok,
+7890,5,5,5,5,true,ok,
+7891,5,5,3,2,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case05->method1	org.o
+7894,4,4,4,4,true,ok,
+7895,3,3,3,3,true,ok,
+7910,5,5,5,5,true,ok,
+7918,5,5,5,5,true,ok,
+7921,5,5,5,5,true,ok,
+7925,5,3,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+7927,5,5,5,5,true,ok,
+7933,5,5,5,5,true,ok,
+7950,5,5,4,5,false,ok,"method1Case03->method2	java.lang.NullPointerException	Cannot invoke ""String.length()"" because ""pad"" is null"
+7960,3,3,3,3,true,ok,
+7963,5,5,3,3,false,ok,"method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <[oo]> but was: <[, oo]> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <[oo/bar]> but was: <[, oo/bar]> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <[, oo]> but was: <[oo]> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <[, oo/bar]> but was: <[oo/bar]>"
+7996,5,5,5,3,false,ok,method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <-1> but was: <0> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <1> but was: <0>
+8012,5,5,5,5,true,ok,
+8019,5,5,5,5,true,ok,
+8020,4,4,3,3,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <alpha.beta> but was: <alpha+beta> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <alpha+beta> but was: <alpha.beta>
+8023,4,4,2,2,false,ok,"method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <'alpha'> but was: <alpha> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <'alpha', 'beta'> but was: <alpha, beta> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <alpha> but was: <'alpha'> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <alpha, beta> but was: <'alph"
+8033,5,5,5,5,true,ok,
+8035,5,5,5,5,true,ok,
+8046,5,5,4,5,false,ok,method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <0> but was: <-1>
+8051,4,4,4,3,false,ok,method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <0> but was: <-1>
+8069,5,5,5,5,true,ok,
+8073,4,4,4,4,true,ok,
+8079,4,4,4,4,true,ok,
+8085,3,3,3,3,true,ok,
+8086,5,5,2,2,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: < > but was: <0> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <  > but was: <00> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <   > but was: <000> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <0> but was: < > method2Case04->method1	org.opentest4j.AssertionFai
+8115,4,4,4,4,true,ok,
+8117,5,5,2,2,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <  > but was: <?> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <    > but was: <??> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <      > but was: <???> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <?> but was: <  > method2Case04->method1	org.opentest4j.Asser
+8118,5,5,3,3,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <o> but was: <f> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <r> but was: <f> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <f> but was: <o> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <b> but was: <r>
+8121,5,5,5,5,true,ok,
+8133,4,4,2,4,false,ok,method1Case02->method2	java.lang.ArrayIndexOutOfBoundsException	Index 1 out of bounds for length 1 method1Case04->method2	java.lang.ArrayIndexOutOfBoundsException	Index 3 out of bounds for length 3
+8135,5,5,3,3,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <2> but was: <1> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <2.0> but was: <1.5> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <1> but was: <2> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <1.5> but was: <2.0>
+8142,3,4,2,2,false,ok,method1Case01->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+8159,5,5,5,5,true,ok,
+8160,5,5,5,5,true,ok,
+8177,5,5,5,5,true,ok,
+8179,3,3,3,3,true,ok,
+8186,5,5,5,5,true,ok,
+8190,5,5,5,5,true,ok,
+8191,4,3,4,3,true,ok,
+8196,3,3,3,2,false,ok,method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+8206,5,5,5,5,true,ok,
+8207,3,3,3,3,true,ok,
+8208,4,4,4,4,true,ok,
+8209,5,5,5,5,true,ok,
+8216,3,4,2,4,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+8228,3,3,3,3,true,ok,
+8249,4,4,3,3,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+8264,4,4,4,4,true,ok,
+8265,4,4,4,4,true,ok,
+8276,5,5,5,5,true,ok,
+8279,5,5,4,5,false,ok,"method1Case05->method2	java.lang.NullPointerException	Cannot invoke ""String.split(String)"" because ""a"" is null"
+8312,4,4,4,4,true,ok,
+8313,5,5,5,5,true,ok,
+8315,5,5,5,5,true,ok,
+8320,3,3,3,3,true,ok,"java.lang.StringIndexOutOfBoundsException: Range [0, -1) out of bounds for length 0 	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55) 	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52) 	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213) 	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210) 	at ja"
+8322,3,3,3,3,true,ok,
+8324,5,5,5,5,true,ok,
+8325,5,5,5,5,true,ok,
+8326,4,3,3,1,false,ok,"method1Case01->method2	org.opentest4j.AssertionFailedError	Expected java.lang.StringIndexOutOfBoundsException to be thrown, but nothing was thrown. method2Case02->method1	java.lang.StringIndexOutOfBoundsException	Index -1 out of bounds for length 0 method2Case03->method1	java.lang.StringIndexOutOfBoundsException	Index -1 out of bounds for length 1"
+8328,5,5,5,5,true,ok,
+8340,5,5,5,5,true,ok,
+8346,5,5,5,5,true,ok,
+8369,5,5,5,5,true,ok,
+8381,4,4,4,4,true,ok,
+8387,4,4,4,4,true,ok,
+8401,5,5,5,5,true,ok,
+8407,5,5,5,5,true,ok,
+8408,4,5,4,4,false,ok,"method2Case03->method1	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <1> but was: <0>"
+8411,5,5,5,5,true,ok,
+8422,3,4,3,4,true,ok,
+8538,5,5,4,4,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+8540,5,5,5,5,true,ok,
+8554,5,5,3,5,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <foo/bar> but was: <> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <foo.bar> but was: <>
+8556,4,4,4,4,true,ok,
+8574,5,5,5,4,false,ok,method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+8583,3,3,3,3,true,ok,
+8585,5,5,5,5,true,ok,
+8592,4,4,4,4,true,ok,
+8611,4,4,4,4,true,ok,
+8618,5,5,0,0,false,ok,method1Case01->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case05->method2	org.o
+8621,3,3,3,3,true,ok,
+8622,3,3,3,3,true,ok,
+8642,5,5,5,5,true,ok,
+8660,3,3,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+8669,4,5,3,4,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <1> but was: <0> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <0> but was: <1>
+8670,5,5,5,5,true,ok,
+8700,3,4,3,3,false,ok,method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+8702,3,3,2,2,false,ok,method1Case01->method2	org.opentest4j.AssertionFailedError	expected: <java.lang.Object> but was: <java.lang.String> method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <java.lang.String> but was: <java.lang.Object>
+8718,3,4,2,3,false,ok,method1Case01->method2	org.opentest4j.AssertionFailedError	expected: <java.lang.String> but was: <java.lang.Object> method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <java.lang.Object> but was: <java.lang.String>
+8725,5,5,5,5,true,ok,
+8745,4,4,3,4,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+8753,4,4,3,2,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+8755,4,4,4,3,false,ok,method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+8756,5,5,4,4,false,ok,"method1Case03->method2	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <2.0> but was: <0.0> method2Case03->method1	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <0.0> but was: <2.0>"
+8777,5,5,2,2,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.o
+8781,3,3,3,3,true,ok,
+8808,4,4,4,4,true,ok,
+8824,5,5,3,3,false,ok,"method1Case01->method2	org.opentest4j.AssertionFailedError	Expected java.lang.ArrayIndexOutOfBoundsException to be thrown, but nothing was thrown. method1Case04->method2	org.opentest4j.AssertionFailedError	Expected java.lang.NullPointerException to be thrown, but nothing was thrown. method2Case02->method1	java.lang.ArrayIndexOutOfBoundsException	arraycopy: source index -1 out of bounds for byte[0]"
+8825,5,5,4,5,false,ok,method1Case03->method2	java.lang.ArrayIndexOutOfBoundsException	arraycopy: last source index 1 out of bounds for byte[0]
+8849,5,5,5,5,true,ok,
+8876,5,5,4,5,false,ok,method1Case03->method2	java.lang.ArrayIndexOutOfBoundsException	arraycopy: last source index 1 out of bounds for byte[0]
+8902,5,5,4,5,false,ok,method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+8905,4,4,4,4,true,ok,
+8906,5,5,4,3,false,ok,"method1Case03->method2	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <1> but was: <4> method2Case03->method1	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <2> but was: <0> method2Case04->method1	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <4> but was: <1>"
+8908,4,4,4,4,true,ok,
+8911,5,5,5,5,true,ok,
+8913,5,5,3,4,false,ok,"method1Case04->method2	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <2> but was: <0> method1Case05->method2	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <4> but was: <1> method2Case04->method1	org.opentest4j.AssertionFailedError	array contents differ at index [0], expected: <1> but was: <4>"
+8918,4,4,3,3,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+8929,5,5,5,5,true,ok,
+8930,5,5,5,5,true,ok,
+8931,5,5,4,4,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+8946,5,4,4,4,false,ok,method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+8950,5,5,5,5,true,ok,
+8951,4,4,4,4,true,ok,
+8962,3,3,3,3,true,ok,
+8965,4,4,3,3,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+8967,4,3,2,2,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+8970,5,5,5,5,true,ok,"Invalid port number, using default. Invalid port number, using default. Invalid port number, using default. Invalid port number, using default. Invalid port number, using default. Invalid port number, using default. Invalid port number, using default. Invalid port number, using default."
+8981,4,4,4,4,true,ok,
+8994,4,4,3,3,false,ok,"method1Case02->method2	java.lang.ArrayIndexOutOfBoundsException	Index 0 out of bounds for length 0 method2Case01->method1	org.opentest4j.AssertionFailedError	Expected java.lang.ArrayIndexOutOfBoundsException to be thrown, but nothing was thrown."
+9029,5,5,5,5,true,ok,
+9050,5,5,5,5,true,ok,
+9063,5,5,4,5,false,ok,"method1Case05->method2	java.lang.NullPointerException	Cannot invoke ""String.length()"" because ""string2"" is null"
+9079,5,5,5,5,true,ok,
+9097,5,5,5,5,true,ok,
+9108,5,5,5,5,true,ok,
+9109,5,5,4,4,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <1> but was: <0> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <0> but was: <1>
+9139,5,4,5,4,true,ok,
+9140,5,5,4,4,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+9148,4,4,4,3,false,ok,method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+9150,3,3,3,3,true,ok,
+9151,5,5,3,4,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+9164,4,4,4,4,true,ok,
+9178,4,4,3,3,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <> but was: <alpha> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <beta> but was: <>
+9179,3,3,3,3,true,ok,
+9190,3,3,3,3,true,ok,
+9194,4,4,4,3,false,ok,method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+9203,5,5,5,5,true,ok,
+9237,4,4,3,4,false,ok,method1Case04->method2	java.lang.StringIndexOutOfBoundsException	Index 1 out of bounds for length 1
+9303,5,5,5,5,true,ok,
+9305,5,5,5,4,false,ok,method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+9308,5,5,5,5,true,ok,
+9312,4,4,4,4,true,ok,
+9326,4,4,4,4,true,ok,
+9340,5,5,5,5,true,ok,
+9398,5,5,3,5,false,ok,method1Case02->method2	java.lang.ArrayIndexOutOfBoundsException	Index -1 out of bounds for length 1 method1Case03->method2	java.lang.ArrayIndexOutOfBoundsException	Index -1 out of bounds for length 1
+9399,4,4,4,4,true,ok,
+9403,4,5,3,2,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <0> but was: <1> method2Case02->method1	java.lang.ArrayIndexOutOfBoundsException	Index 1 out of bounds for length 1 method2Case03->method1	java.lang.ArrayIndexOutOfBoundsException	Index 1 out of bounds for length 1 method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <1> but was: <0>
+9408,3,3,3,3,true,ok,
+9430,4,4,4,4,true,ok,
+9433,4,4,4,4,true,ok,
+9464,5,5,5,5,true,ok,
+9483,5,5,5,5,true,ok,
+9510,3,3,3,3,true,ok,
+9523,5,5,5,5,true,ok,
+9552,4,4,4,4,true,ok,
+9556,5,5,5,5,true,ok,
+9559,5,5,5,5,true,ok,
+9578,5,5,4,5,false,ok,"method1Case05->method2	java.lang.NullPointerException	Cannot read the array length because ""password1"" is null"
+9584,5,5,5,5,true,ok,
+9629,5,5,4,3,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+9650,5,5,5,5,true,ok,
+9665,3,3,3,3,true,ok,
+9669,5,5,4,4,false,ok,method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <2> but was: <3> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <3> but was: <2>
+9671,4,4,3,2,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+9690,5,5,3,3,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: < > but was: < > method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <a > but was: < a> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: < > but was: < > method2Case05->method1	org.opentest4j.AssertionFailedError	expected: < a> but was: <a >
+9735,5,5,5,5,true,ok,
+9745,5,5,5,5,true,ok,
+9771,5,5,5,5,true,ok,
+9828,5,5,5,5,true,ok,
+9877,4,4,4,4,true,ok,
+9945,5,5,5,5,true,ok,
+9954,4,4,2,2,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <a> but was: <null> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <null> but was: <1> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <1> but was: <null> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <null> but was: <a>
+9955,5,5,4,4,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <31> but was: <1> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <1> but was: <31>
+9961,5,5,2,2,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case04->method1	org.o
+9974,5,5,5,5,true,ok,
+9982,5,5,5,5,true,ok,
+9984,4,4,4,4,true,ok,
+9985,5,5,5,5,true,ok,
+10035,5,5,5,5,true,ok,
+10060,3,3,3,3,true,ok,
+10072,3,3,3,3,true,ok,
+10090,5,5,5,5,true,ok,
+10093,5,5,5,5,true,ok,
+10119,4,4,4,4,true,ok,
+10132,5,5,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+10135,4,4,1,1,false,ok,method1Case01->method2	org.opentest4j.AssertionFailedError	expected: <-0.7895463267948966> but was: <-0.7853981633974483> method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <0.4672897196261682> but was: <0.4636476090008061> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <0.7895463267948966> but was: <0.7853981633974483> method2Case01->method1	org.opentest4j.
+10151,5,5,5,5,true,ok,
+10191,4,4,4,4,true,ok,
+10247,5,5,5,5,true,ok,
+10262,5,5,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+10263,3,3,3,3,true,ok,
+10264,3,3,3,3,true,ok,
+10272,5,5,5,5,true,ok,
+10321,5,5,5,5,true,ok,
+10346,5,5,5,5,true,ok,
+10368,3,3,3,3,true,ok,
+10374,3,3,3,3,true,ok,Error decoding Integer-String '' Error decoding Integer-String 'a'
+10391,5,5,5,5,true,ok,
+10398,4,4,4,4,true,ok,
+10402,3,3,0,1,false,ok,method1Case01->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.o
+10428,5,5,4,5,false,ok,method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <0> but was: <-32>
+10430,5,5,5,5,true,ok,
+10436,3,3,3,3,true,ok,"java.lang.NumberFormatException: For input string: ""a"" 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) 	at java.base/java.lang.Integer.parseInt(Integer.java:565) 	at java.base/java.lang.Integer.valueOf(Integer.java:912) 	at inequivalent.ClonePair10436.method1(ClonePair10436.java:8) 	at inequivalent.ClonePair10436CrossGeneratedTestRunner.crossFromMethod2_"
+10498,3,3,3,3,true,ok,
+10521,5,5,5,5,true,ok,
+10553,4,4,4,4,true,ok,
+10556,5,5,4,4,false,ok,method1Case03->method2	java.lang.ArrayIndexOutOfBoundsException	Index 3 out of bounds for length 3 method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <513> but was: <1>
+10557,5,5,5,5,true,ok,
+10568,5,5,5,4,false,ok,method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <0> but was: <-1>
+10590,4,4,4,4,true,ok,
+10604,5,5,5,5,true,ok,
+10629,4,4,4,4,true,ok,
+10637,5,5,5,5,true,ok,
+10653,4,4,3,4,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+10659,5,5,5,5,true,ok,
+10660,4,4,4,4,true,ok,
+10666,5,5,5,5,true,ok,
+10680,5,5,5,5,true,ok,
+10681,5,5,5,5,true,ok,
+10727,5,5,5,5,true,ok,
+10738,4,5,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+10744,3,3,0,3,false,ok,"method1Case01->method2	org.opentest4j.AssertionFailedError	Unexpected exception type thrown, expected: <java.lang.NullPointerException> but was: <java.lang.AssertionError> method1Case02->method2	java.lang.AssertionError	 method1Case03->method2	java.lang.AssertionError"
+10810,5,5,5,5,true,ok,
+10814,5,5,5,5,true,ok,
+10818,3,3,2,3,false,ok,method1Case02->method2	java.lang.ArrayIndexOutOfBoundsException	Index -1 out of bounds for length 1
+10824,5,5,5,5,true,ok,
+10836,5,5,5,5,true,ok,
+10848,5,5,5,5,true,ok,
+10853,5,5,5,5,true,ok,
+10856,5,5,5,5,true,ok,
+10867,5,5,5,5,true,ok,
+10876,5,5,4,5,false,ok,method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <Aa> but was: <aA>
+10881,5,5,5,5,true,ok,
+10887,3,3,3,3,true,ok,
+10905,5,5,5,5,true,ok,
+10909,5,5,5,4,false,ok,"method2Case02->method1	java.lang.NullPointerException	Cannot invoke ""String.length()"" because ""fillString"" is null"
+10915,4,3,3,2,false,ok,"method1ReturnsTrueForAllowedAsciiCharacters->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2DoesNotTerminateForNonEmptyInput->method1	org.opentest4j.AssertionFailedError	Expected org.opentest4j.AssertionFailedError to be thrown, but nothing was thrown."
+10916,5,5,5,5,true,ok,
+10921,3,4,3,3,false,ok,method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+10932,4,4,4,4,true,ok,
+10934,4,4,4,4,true,ok,
+10937,4,4,4,4,true,ok,
+10943,4,4,4,3,false,ok,method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <1> but was: <0>
+10950,5,5,4,4,false,ok,"method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <aA> but was: <Aa> method2Case04->method1	java.lang.NullPointerException	Cannot invoke ""String.length()"" because ""paddingString"" is null"
+10951,5,5,5,4,false,ok,method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <fo> but was: <foo>
+10952,5,4,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+10961,3,3,3,3,true,ok,
+10962,5,5,5,5,true,ok,
+10967,5,5,5,5,true,ok,
+10973,5,5,5,5,true,ok,
+10977,5,5,5,5,true,ok,
+10979,5,5,4,3,false,ok,"method1Case05->method2	org.opentest4j.AssertionFailedError	Expected java.lang.ArrayIndexOutOfBoundsException to be thrown, but nothing was thrown. method2Case02->method1	java.lang.ArrayIndexOutOfBoundsException	Index -1 out of bounds for length 0 method2Case04->method1	java.lang.ArrayIndexOutOfBoundsException	Index -1 out of bounds for length 1"
+10983,5,5,5,5,true,ok,"java.lang.NullPointerException: Cannot invoke ""String.trim()"" because ""str2"" is null 	at inequivalent.ClonePair10983.method2(ClonePair10983.java:29) 	at inequivalent.ClonePair10983CrossGeneratedTestRunner.crossFromMethod1_method1Case05(ClonePair10983CrossGeneratedTestRunner.java:33) 	at inequivalent.ClonePair10983CrossGeneratedTestRunner.main(ClonePair10983CrossGeneratedTestRunner.java:97)"
+10996,4,4,4,3,false,ok,method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+11001,5,5,5,5,true,ok,
+11004,4,4,4,4,true,ok,
+11005,5,5,5,5,true,ok,
+11012,3,3,3,3,true,ok,
+11016,5,5,4,5,false,ok,method1Case02->method2	java.lang.ArrayIndexOutOfBoundsException	arraycopy: last destination index 1 out of bounds for byte[0]
+11025,5,5,5,5,true,ok,
+11046,5,5,5,4,false,ok,method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+11056,5,5,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+11057,5,5,5,4,false,ok,method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+11083,5,5,4,5,false,ok,method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+11119,4,4,4,4,true,ok,
+11131,5,5,5,5,true,ok,
+11157,5,5,5,5,true,ok,
+11204,4,5,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+11207,5,5,5,5,true,ok,
+11252,5,5,5,5,true,ok,
+11258,5,5,3,3,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <f> but was: <o> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <b> but was: <r> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <o> but was: <f> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <r> but was: <f>
+11266,5,5,5,5,true,ok,
+11268,5,5,5,5,true,ok,
+11270,5,5,5,5,true,ok,
+11272,3,3,3,3,true,ok,
+11276,4,4,4,4,true,ok,
+11282,5,5,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+11285,5,5,5,5,true,ok,
+11295,5,5,5,5,true,ok,
+11301,5,5,5,5,true,ok,
+11305,5,5,5,5,true,ok,
+11310,4,4,4,4,true,ok,
+11318,5,5,5,5,true,ok,
+11337,3,3,3,3,true,ok,
+11338,5,5,5,5,true,ok,
+11349,5,5,5,5,true,ok,
+11389,5,5,5,5,true,ok,
+11395,4,5,1,2,false,ok,"method1Case01->method2	org.opentest4j.AssertionFailedError	Expected java.lang.NullPointerException to be thrown, but nothing was thrown. method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <foo> but was: <> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <foo/bar> but was: </bar> method2Case02->method1	java.lang.NullPointerException	Cannot invoke ""String.index"
+11413,5,5,5,5,true,ok,
+11419,5,5,5,5,true,ok,
+11420,3,3,3,3,true,ok,
+11434,5,5,5,5,true,ok,
+11450,5,5,5,5,true,ok,
+11457,3,3,3,3,true,ok,
+11459,5,5,5,5,true,ok,
+11548,5,5,5,5,true,ok,
+11553,5,5,3,2,false,ok,"method1Case01->method2	org.opentest4j.AssertionFailedError	Expected java.lang.StringIndexOutOfBoundsException to be thrown, but nothing was thrown. method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <...> but was: <fo> method2Case02->method1	java.lang.StringIndexOutOfBoundsException	Range [0, -2) out of bounds for length 3 method2Case03->method1	java.lang.StringIndexOutOfBoundsEx"
+11583,3,3,3,3,true,ok,
+11584,5,5,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+11586,5,3,2,1,false,ok,"method1Case02->method2	java.lang.NullPointerException	Cannot invoke ""String.equals(Object)"" because ""replace"" is null method1Case04->method2	java.lang.NullPointerException	Cannot invoke ""String.equals(Object)"" because ""replace"" is null method1Case05->method2	java.lang.NullPointerException	Cannot invoke ""String.equals(Object)"" because ""replace"" is null method2Case01->method1	org.opentest4j.Assertio"
+11611,5,5,4,5,false,ok,method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <foo> but was: <>
+11682,5,5,5,5,true,ok,
+11685,3,4,2,3,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+11686,3,5,3,1,false,ok,"method2Case02->method1	java.lang.NullPointerException	Cannot invoke ""String.length()"" because ""replace"" is null method2Case03->method1	java.lang.NullPointerException	Cannot invoke ""String.length()"" because ""replace"" is null method2Case04->method1	java.lang.NullPointerException	Cannot invoke ""String.length()"" because ""replace"" is null method2Case05->method1	java.lang.NullPointerException	Cannot inv"
+11738,3,5,2,2,false,ok,"method1Case01->method2	org.opentest4j.AssertionFailedError	Expected java.lang.NullPointerException to be thrown, but nothing was thrown. method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <foo/bar> but was: </bar> method2Case04->method1	java.lang.OutOfMemoryError	Java heap space method2Case05->method1	java.lang.NullPointerException	Cannot invoke ""String.toLowerCase()"" because ""re"
+11739,5,5,3,5,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <aa> but was: <a> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <aaa> but was: <a>
+11744,3,5,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+11806,4,4,4,4,true,ok,
+11815,4,4,4,4,true,ok,
+11857,5,5,3,3,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <o> but was: <f> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <oo> but was: <fo> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <f> but was: <o> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <b> but was: <r>
+11860,5,5,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+11912,5,5,5,5,true,ok,
+12026,5,5,4,3,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: </bar> but was: <foo/bar> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <foo/bar> but was: </bar> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <foo> but was: <>
+12064,4,4,4,4,true,ok,
+12069,5,5,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+12133,4,5,2,4,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <> but was: <null> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: </bar> but was: <null/bar> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <null> but was: <>
+12135,3,4,2,2,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+12152,5,5,5,5,true,ok,
+12153,3,3,3,3,true,ok,
+12218,4,4,4,4,true,ok,
+12247,5,5,5,5,true,ok,
+12248,5,5,5,5,true,ok,
+12286,4,4,4,4,true,ok,
+12298,5,5,3,4,false,ok,"method1Case01->method2	org.opentest4j.AssertionFailedError	Expected java.lang.NullPointerException to be thrown, but nothing was thrown. method1Case05->method2	java.lang.NullPointerException	Cannot invoke ""String.length()"" because ""tgtStr"" is null method2Case01->method1	org.opentest4j.AssertionFailedError	Expected java.lang.NullPointerException to be thrown, but nothing was thrown."
+12302,5,5,4,4,false,ok,"method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <alpha,beta> but was: <alphanullbeta> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <alphanullbeta> but was: <alpha,beta>"
+12304,4,4,4,4,true,ok,
+12306,5,5,5,5,true,ok,
+12307,5,5,5,5,true,ok,
+12308,5,5,5,5,true,ok,
+12311,5,5,5,5,true,ok,
+12313,3,3,3,3,true,ok,
+12364,5,5,5,5,true,ok,
+12381,5,5,5,5,true,ok,
+12382,5,5,5,5,true,ok,
+12384,4,4,4,4,true,ok,
+12413,5,5,2,2,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <f...> but was: <f> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <b...> but was: <b> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <...> but was: <> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <f> but was: <f...> method2Case04->method1	org.opentest4j.Assertio
+12414,3,3,3,3,true,ok,
+12428,5,5,5,5,true,ok,
+12434,5,5,5,5,true,ok,
+12451,5,5,5,5,true,ok,
+12468,5,5,5,5,true,ok,
+12469,5,4,5,4,true,ok,
+12480,5,5,5,5,true,ok,
+12484,5,5,5,5,true,ok,
+12488,3,3,3,3,true,ok,
+12489,5,5,5,5,true,ok,
+12490,5,5,5,5,true,ok,
+12519,5,5,5,5,true,ok,
+12524,5,5,5,5,true,ok,
+12534,5,5,5,5,true,ok,
+12537,3,3,3,3,true,ok,
+12540,5,5,5,5,true,ok,
+12543,3,3,3,3,true,ok,
+12547,4,4,4,4,true,ok,
+12549,5,5,5,5,true,ok,
+12554,5,5,5,5,true,ok,
+12582,4,4,2,2,false,ok,method1Case01->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+12591,4,4,4,4,true,ok,"FEHLER: ForLoop: start < stop und schritt < 1 FEHLER: start = -1, stop = 1, schritt = -1 FEHLER: ForLoop: start < stop und schritt < 1 FEHLER: start = 0, stop = 1, schritt = -1"
+12600,5,5,5,5,true,ok,
+12614,5,5,5,5,true,ok,
+12632,5,5,5,5,true,ok,
+12642,3,5,3,5,true,ok,
+12648,3,5,3,5,true,ok,
+12656,4,4,4,4,true,ok,
+12665,4,4,4,4,true,ok,
+12669,5,5,5,5,true,ok,
+12670,3,3,3,3,true,ok,
+12678,5,5,5,4,false,ok,"method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <[foo, bar]> but was: <[foo/bar]>"
+12679,3,3,3,3,true,ok,
+12692,5,5,3,3,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <foo/bar> but was: </bar> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <foo.bar> but was: <.bar> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: </bar> but was: <foo/bar> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <.bar> but was: <foo.bar>
+12700,5,5,4,4,false,ok,"method1Case04->method2	org.opentest4j.AssertionFailedError	array contents differ at index [2], expected: <1> but was: <-1> method2Case04->method1	org.opentest4j.AssertionFailedError	array contents differ at index [2], expected: <-1> but was: <1>"
+12702,5,5,5,4,false,ok,"method2Case05->method1	java.lang.NullPointerException	Cannot invoke ""String.toCharArray()"" because ""newString"" is null"
+12703,5,5,5,5,true,ok,
+12786,5,5,4,4,false,ok,method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+12827,5,5,5,5,true,ok,
+12828,5,5,5,5,true,ok,
+12829,4,4,3,2,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+12832,5,5,5,5,true,ok,
+12841,4,4,4,4,true,ok,
+12852,5,5,5,5,true,ok,
+12863,5,5,5,5,true,ok,
+12897,5,5,4,2,false,ok,"method1Case04->method2	java.lang.NullPointerException	Cannot invoke ""java.util.Date.equals(Object)"" because ""dataInicial"" is null method2Case01->method1	org.opentest4j.AssertionFailedError	Expected java.lang.NullPointerException to be thrown, but nothing was thrown. method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case05->method1	org.opentest4j.As"
+12919,3,3,3,3,true,ok,
+12923,5,5,5,5,true,ok,
+12929,5,5,5,5,true,ok,
+13008,5,5,5,5,true,ok,
+13012,3,3,3,3,true,ok,
+13014,3,3,1,2,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <10> but was: <0> method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <2748> but was: <0> method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <0> but was: <10>
+13056,3,3,3,3,true,ok,
+13067,5,5,5,5,true,ok,
+13164,5,5,4,4,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <false> but was: <true>
+13184,5,5,5,5,true,ok,
+13197,5,5,1,1,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case02->method1	org.o
+13232,3,3,3,3,true,ok,
+13245,5,5,5,5,true,ok,
+13250,5,5,5,4,false,ok,method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+13254,4,4,4,4,true,ok,
+13256,4,4,4,4,true,ok,
+13268,3,4,2,2,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+13274,3,3,3,3,true,ok,
+13293,5,5,5,5,true,ok,
+13328,4,4,3,4,false,ok,"method1Case04->method2	org.opentest4j.AssertionFailedError	Expected java.lang.ArrayIndexOutOfBoundsException to be thrown, but nothing was thrown."
+13331,5,3,5,3,true,ok,
+13341,4,4,4,4,true,ok,
+13344,5,5,5,5,true,ok,
+13368,5,5,5,5,true,ok,
+13384,5,5,5,5,true,ok,
+13387,5,5,5,5,true,ok,
+13392,4,4,4,4,true,ok,
+13393,5,5,5,5,true,ok,
+13394,3,3,3,3,true,ok,
+13402,5,5,5,5,true,ok,
+13406,5,5,4,5,false,ok,"method1Case05->method2	java.lang.NullPointerException	Cannot read the array length because ""digest1"" is null"
+13413,5,4,5,4,true,ok,
+13420,5,5,5,5,true,ok,
+13444,3,3,3,3,true,ok,
+13451,5,4,5,4,true,ok,
+13558,4,4,4,4,true,ok,
+13564,4,3,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+13565,5,5,5,5,true,ok,Error: ' ' is not a hex digit Error: '.' is not a hex digit
+13592,4,3,3,3,false,ok,method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <foo/bar> but was: <foo>
+13615,4,4,4,4,true,ok,
+13630,5,5,5,5,true,ok,
+38338,4,4,4,4,true,ok,

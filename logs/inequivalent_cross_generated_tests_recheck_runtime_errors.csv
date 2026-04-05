@@ -1,0 +1,32 @@
+class_id,method1_test_count,method2_test_count,method1_tests_success_on_method2,method2_tests_success_on_method1,all_cross_tests_succeeded,status,detail
+5130,5,5,5,5,true,ok,
+11738,3,5,2,2,false,ok,"method1Case01->method2	org.opentest4j.AssertionFailedError	Expected java.lang.NullPointerException to be thrown, but nothing was thrown. method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <foo/bar> but was: </bar> method2Case04->method1	java.lang.OutOfMemoryError	Java heap space method2Case05->method1	java.lang.NullPointerException	Cannot invoke ""String.toLowerCase()"" because ""re"
+11806,4,4,4,4,true,ok,
+11860,5,5,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+11912,5,5,5,5,true,ok,
+12026,5,5,4,3,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: </bar> but was: <foo/bar> method2Case03->method1	org.opentest4j.AssertionFailedError	expected: <foo/bar> but was: </bar> method2Case05->method1	org.opentest4j.AssertionFailedError	expected: <foo> but was: <>
+12064,4,4,4,4,true,ok,
+12069,5,5,0,0,false,class_timeout,class processing exceeded 30.0 seconds
+12133,4,5,2,4,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <> but was: <null> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: </bar> but was: <null/bar> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <null> but was: <>
+12135,3,4,2,2,false,ok,method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <false> but was: <true> method2Case01->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <true> but was: <false>
+12152,5,5,5,5,true,ok,
+12153,3,3,3,3,true,ok,
+12218,4,4,4,4,true,ok,
+12247,5,5,5,5,true,ok,
+12248,5,5,5,5,true,ok,
+12286,4,4,4,4,true,ok,
+12298,5,5,3,4,false,ok,"method1Case01->method2	org.opentest4j.AssertionFailedError	Expected java.lang.NullPointerException to be thrown, but nothing was thrown. method1Case05->method2	java.lang.NullPointerException	Cannot invoke ""String.length()"" because ""tgtStr"" is null method2Case01->method1	org.opentest4j.AssertionFailedError	Expected java.lang.NullPointerException to be thrown, but nothing was thrown."
+12302,5,5,4,4,false,ok,"method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <alpha,beta> but was: <alphanullbeta> method2Case04->method1	org.opentest4j.AssertionFailedError	expected: <alphanullbeta> but was: <alpha,beta>"
+12304,4,4,4,4,true,ok,
+12306,5,5,5,5,true,ok,
+12307,5,5,5,5,true,ok,
+12364,5,5,5,5,true,ok,
+12382,5,5,5,5,true,ok,
+12384,4,4,4,4,true,ok,
+12413,5,5,2,2,false,ok,method1Case02->method2	org.opentest4j.AssertionFailedError	expected: <f...> but was: <f> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <b...> but was: <b> method1Case05->method2	org.opentest4j.AssertionFailedError	expected: <...> but was: <> method2Case02->method1	org.opentest4j.AssertionFailedError	expected: <f> but was: <f...> method2Case04->method1	org.opentest4j.Assertio
+12451,5,5,5,5,true,ok,
+12519,5,5,5,5,true,ok,
+12537,3,3,3,3,true,ok,
+12547,4,4,4,4,true,ok,
+12549,5,5,5,5,true,ok,
+12554,5,5,5,5,true,ok,

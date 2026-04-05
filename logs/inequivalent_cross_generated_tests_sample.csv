@@ -1,0 +1,4 @@
+class_id,method1_test_count,method2_test_count,method1_tests_success_on_method2,method2_tests_success_on_method1,all_cross_tests_succeeded,status,detail
+10072,3,3,3,3,true,ok,
+10135,4,4,1,1,false,ok,method1Case01->method2	org.opentest4j.AssertionFailedError	expected: <-0.7895463267948966> but was: <-0.7853981633974483> method1Case03->method2	org.opentest4j.AssertionFailedError	expected: <0.4672897196261682> but was: <0.4636476090008061> method1Case04->method2	org.opentest4j.AssertionFailedError	expected: <0.7895463267948966> but was: <0.7853981633974483> method2Case01->method1	org.opentest4j.
+13254,4,4,4,4,true,ok,
