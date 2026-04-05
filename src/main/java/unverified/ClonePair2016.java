@@ -1,0 +1,25 @@
+package unverified;
+
+public class ClonePair2016 {
+
+    boolean method1(byte[] a,byte[] b){
+      boolean v=a.length == b.length;
+      for (int i=0; i < a.length && v; i++) {
+        if (a[i] != b[i])     v=false;
+      }
+      return v;
+    }
+
+    boolean method2(byte[] signreq2,byte[] signres2){
+      boolean retval=true;
+      if (signreq2.length != signres2.length) {
+        return false;
+      }
+      for (int i=0; i < signreq2.length; i++) {
+        if (signreq2[i] != signres2[i]) {
+          return false;
+        }
+      }
+      return retval;
+    }
+}

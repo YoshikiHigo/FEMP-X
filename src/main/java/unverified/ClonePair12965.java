@@ -1,0 +1,24 @@
+package unverified;
+
+public class ClonePair12965 {
+
+    String method1(int i){
+      if (i < 10) {
+        return "000" + i;
+      }
+      if (i < 100) {
+        return "00" + i;
+      }
+      if (i < 1000) {
+        return "0" + i;
+      }
+      return String.valueOf(i);
+    }
+
+    String method2(int i){
+      if (i < 10)   return "000" + i;
+      if (i < 100)   return "00" + i;
+      if (i < 1000)   return "0" + i;
+      return "" + i;
+    }
+}

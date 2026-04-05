@@ -1,0 +1,47 @@
+package unverified;
+
+public class ClonePair1777 {
+
+    boolean method1(byte[] array1,byte[] array2){
+      boolean equal=false;
+      if (array1 == array2) {
+        equal=true;
+      }
+     else   if ((array1 != null) && (array2 != null)) {
+        int length=array1.length;
+        if (length == array2.length) {
+          equal=true;
+          for (int i=0; i < length; i++) {
+            if (array1[i] != array2[i]) {
+              equal=false;
+              break;
+            }
+          }
+        }
+     else {
+          equal=false;
+        }
+      }
+     else {
+        equal=false;
+      }
+      return equal;
+    }
+
+    boolean method2(byte[] a,byte[] b){
+      if (a == b) {
+        return true;
+      }
+      if (a == null || b == null) {
+        return false;
+      }
+      if (a.length != b.length) {
+        return false;
+      }
+      int nonEqual=0;
+      for (int i=0; i != a.length; i++) {
+        nonEqual|=(a[i] ^ b[i]);
+      }
+      return nonEqual == 0;
+    }
+}

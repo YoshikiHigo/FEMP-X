@@ -1,0 +1,33 @@
+package unverified;
+
+public class ClonePair10418 {
+
+    double method1(double angle){
+      if (angle < -Math.PI) {
+        int _180s=((int)(-angle / (Math.PI)));
+        if (_180s % 2 == 1) {
+          _180s++;
+        }
+        double remove=_180s * (Math.PI);
+        return angle + remove;
+      }
+     else   if (angle > Math.PI) {
+        int _180s=((int)(angle / (Math.PI)));
+        if (_180s % 2 == 1) {
+          _180s++;
+        }
+        double remove=_180s * (Math.PI);
+        return angle - remove;
+      }
+     else {
+        return angle;
+      }
+    }
+
+    double method2(double ang){
+      double a=ang % (2 * Math.PI);
+      if (a > Math.PI)   a-=(2 * Math.PI);
+     else   if (a < -Math.PI)   a+=(2 * Math.PI);
+      return a;
+    }
+}

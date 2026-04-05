@@ -1,0 +1,18 @@
+package unverified;
+
+public class ClonePair5816 {
+
+    boolean method1(byte[] source,int sourceStart,byte[] target,int targetStart,int len){
+      int sourceEnd=sourceStart + len;
+      int delta=targetStart - sourceStart;
+      for (int i=sourceStart; i < sourceEnd; i++) {
+        if (source[i] != target[i + delta])     return false;
+      }
+      return true;
+    }
+
+    boolean method2(byte[] a,int aOffset,byte[] b,int bOffset,int length){
+      for (int i=0; i < length; i++)   if (a[aOffset + i] != b[bOffset + i])   return false;
+      return true;
+    }
+}
