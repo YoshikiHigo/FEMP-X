@@ -1,0 +1,21 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+class ClonePair8930DifferenceFindingTest {
+    @Test
+    void methodsHandleInvalidIntegerPropertyDifferently() {
+        ClonePair8930 clonePair = new ClonePair8930();
+        String key = "ClonePair8930DifferenceFindingTest.property";
+        System.setProperty(key, "x");
+        try {
+            assertEquals(7, clonePair.method1(key, 7));
+            assertThrows(NumberFormatException.class, () -> clonePair.method2(key, 7));
+        } finally {
+            System.clearProperty(key);
+        }
+    }
+}

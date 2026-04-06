@@ -1,0 +1,32 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+
+class ClonePair12308DifferenceFindingTest {
+    @Test
+    void method1WritesToStdoutButMethod2DoesNot() {
+        ClonePair12308 clonePair = new ClonePair12308();
+        PrintStream originalOut = System.out;
+        ByteArrayOutputStream method1Out = new ByteArrayOutputStream();
+        ByteArrayOutputStream method2Out = new ByteArrayOutputStream();
+
+        try {
+            System.setOut(new PrintStream(method1Out));
+            assertEquals(1.3f, clonePair.method1(1.0f, "1.30"), 0.0f);
+
+            System.setOut(new PrintStream(method2Out));
+            assertEquals(1.3f, clonePair.method2(1.0f, "1.30"), 0.0f);
+        } finally {
+            System.setOut(originalOut);
+        }
+
+        assertFalse(method1Out.toString().isEmpty());
+        assertEquals("", method2Out.toString());
+    }
+}

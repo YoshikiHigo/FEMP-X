@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+class ClonePair11025DifferenceFindingTest {
+    @Test
+    void methodsUseDifferentSourceIndexForExtraVertices() {
+        ClonePair11025 clonePair = new ClonePair11025();
+        int[] sc = {4};
+        int[] oldList = {0, 1, 2, 3, 4, 5};
+
+        assertArrayEquals(new int[]{0, 1, 2, 4}, clonePair.method1(sc, oldList, 4));
+        assertArrayEquals(new int[]{0, 1, 2, 5}, clonePair.method2(sc, oldList, 4));
+    }
+}

@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair7828DifferenceFindingTest {
+    @Test
+    void methodsStopAtClosingParenthesisDifferently() {
+        ClonePair7828 clonePair = new ClonePair7828();
+        byte[] input = {0x29, 1};
+
+        assertEquals(1, clonePair.method1(input, (byte) 1, 0));
+        assertEquals(-1, clonePair.method2(input, (byte) 1, 0));
+    }
+}

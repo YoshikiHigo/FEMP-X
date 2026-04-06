@@ -1,0 +1,19 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Vector;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair9303DifferenceFindingTest {
+    @Test
+    void methodsQuoteCommandsWithSpacesDifferently() {
+        ClonePair9303 clonePair = new ClonePair9303();
+        Vector<String> commands = new Vector<>();
+        commands.add("a b");
+
+        assertEquals("a b", clonePair.method1(commands, 0, 1));
+        assertEquals("\"a b\"", clonePair.method2(commands, 0, 1));
+    }
+}

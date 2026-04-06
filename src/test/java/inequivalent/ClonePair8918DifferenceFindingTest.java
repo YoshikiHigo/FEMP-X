@@ -1,0 +1,20 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair8918DifferenceFindingTest {
+    @Test
+    void methodsUseAlphaAndBlueChannelsDifferently() {
+        ClonePair8918 clonePair = new ClonePair8918();
+        byte[][][] pixelMap = new byte[5][1][1];
+        pixelMap[0][0][0] = 1;
+        pixelMap[1][0][0] = 2;
+        pixelMap[2][0][0] = 3;
+        pixelMap[4][0][0] = 4;
+
+        assertEquals((4 << 24) | (1 << 16) | (2 << 8) | 3, clonePair.method1(pixelMap, 1, 1)[0][0]);
+        assertEquals((0xFF << 24) | (1 << 16) | (2 << 8) | 1, clonePair.method2(pixelMap, 1, 1)[0][0]);
+    }
+}

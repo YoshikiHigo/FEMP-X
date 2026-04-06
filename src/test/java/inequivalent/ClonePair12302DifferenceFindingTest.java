@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair12302DifferenceFindingTest {
+    @Test
+    void methodsHandleNullDelimiterDifferently() {
+        ClonePair12302 clonePair = new ClonePair12302();
+
+        assertEquals("a,b", clonePair.method1(Arrays.asList("a", "b"), null));
+        assertEquals("anullb", clonePair.method2(Arrays.asList("a", "b"), null));
+    }
+}

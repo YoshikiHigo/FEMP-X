@@ -1,0 +1,19 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+
+class ClonePair11119DifferenceFindingTest {
+    @Test
+    void methodsUseDifferentZeroToleranceForDx() {
+        ClonePair11119 clonePair = new ClonePair11119();
+
+        double method1Result = clonePair.method1(0.0f, 0.0f, 0.00005f, 1.0f);
+        double method2Result = clonePair.method2(0.0f, 0.0f, 0.00005f, 1.0f);
+
+        assertEquals(Math.PI / 2.0, method1Result, 0.0);
+        assertNotEquals(method1Result, method2Result);
+    }
+}

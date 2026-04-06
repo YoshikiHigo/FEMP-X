@@ -1,0 +1,20 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Vector;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair7330DifferenceFindingTest {
+    @Test
+    void methodsReturnSumAndMeanDifferently() {
+        ClonePair7330 clonePair = new ClonePair7330();
+        Vector<Double> values = new Vector<>();
+        values.add(1.0);
+        values.add(3.0);
+
+        assertEquals(4.0, clonePair.method1(values));
+        assertEquals(2.0, clonePair.method2(values));
+    }
+}

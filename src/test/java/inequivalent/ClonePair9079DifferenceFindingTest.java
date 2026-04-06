@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Date;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair9079DifferenceFindingTest {
+    @Test
+    void methodsCompareDatesAndInstantsDifferently() {
+        ClonePair9079 clonePair = new ClonePair9079();
+
+        assertEquals(0, clonePair.method1(new Date(1_000L), new Date(2_000L)));
+        assertEquals(-1, clonePair.method2(new Date(1_000L), new Date(2_000L)));
+    }
+}

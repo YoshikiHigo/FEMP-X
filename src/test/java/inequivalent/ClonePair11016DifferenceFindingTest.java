@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+class ClonePair11016DifferenceFindingTest {
+    @Test
+    void methodsUseDifferentDestinationOffsets() {
+        ClonePair11016 clonePair = new ClonePair11016();
+        byte[] data = {1, 2};
+
+        assertArrayEquals(new byte[]{2}, clonePair.method1(data, 1, 2));
+        assertThrows(ArrayIndexOutOfBoundsException.class, () -> clonePair.method2(data, 1, 2));
+    }
+}

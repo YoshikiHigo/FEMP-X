@@ -1,0 +1,33 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+
+class ClonePair9556DifferenceFindingTest {
+    @Test
+    void methodsHandleNaNAndStdoutDifferently() {
+        ClonePair9556 clonePair = new ClonePair9556();
+        double[] values = {Double.NaN};
+        PrintStream originalOut = System.out;
+        ByteArrayOutputStream method1Out = new ByteArrayOutputStream();
+        ByteArrayOutputStream method2Out = new ByteArrayOutputStream();
+
+        try {
+            System.setOut(new PrintStream(method1Out));
+            assertEquals(-1, clonePair.method1(values));
+
+            System.setOut(new PrintStream(method2Out));
+            assertEquals(0, clonePair.method2(values));
+        } finally {
+            System.setOut(originalOut);
+        }
+
+        assertFalse(method1Out.toString().isEmpty());
+        assertEquals("", method2Out.toString());
+    }
+}

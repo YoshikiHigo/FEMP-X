@@ -1,0 +1,19 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Vector;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair7670DifferenceFindingTest {
+    @Test
+    void methodsRemovePrefixesAndSuffixesDifferently() {
+        ClonePair7670 clonePair = new ClonePair7670();
+        Vector<String> affixes = new Vector<>();
+        affixes.add("a");
+
+        assertEquals("bc", clonePair.method1("abc", affixes));
+        assertEquals("abc", clonePair.method2("abc", affixes));
+    }
+}

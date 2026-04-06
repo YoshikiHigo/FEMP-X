@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair9178DifferenceFindingTest {
+    @Test
+    void methodsReturnCommonPrefixAndLexicographicMinimumDifferently() {
+        ClonePair9178 clonePair = new ClonePair9178();
+
+        assertEquals("a", clonePair.method1(Arrays.asList("ab", "ac")));
+        assertEquals("ab", clonePair.method2(Arrays.asList("ab", "ac")));
+    }
+}

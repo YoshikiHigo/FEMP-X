@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Random;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+class ClonePair6270DifferenceFindingTest {
+    @Test
+    void methodsConsumeRandomValuesDifferently() {
+        ClonePair6270 clonePair = new ClonePair6270();
+
+        assertArrayEquals(new boolean[][]{{false, false}, {true, false}}, clonePair.method1(2, 0.5, new Random(0L)));
+        assertArrayEquals(new boolean[][]{{false, false}, {false, false}}, clonePair.method2(2, 0.5, new Random(0L)));
+    }
+}

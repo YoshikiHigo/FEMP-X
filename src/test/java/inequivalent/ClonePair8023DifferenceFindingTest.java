@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Collections;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair8023DifferenceFindingTest {
+    @Test
+    void methodsQuoteValuesDifferently() {
+        ClonePair8023 clonePair = new ClonePair8023();
+
+        assertEquals("'a'", clonePair.method1(Collections.singletonList("a")));
+        assertEquals("a", clonePair.method2(Collections.singletonList("a")));
+    }
+}

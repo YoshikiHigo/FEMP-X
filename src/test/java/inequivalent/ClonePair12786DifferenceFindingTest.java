@@ -1,0 +1,22 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertSame;
+
+class ClonePair12786DifferenceFindingTest {
+    @Test
+    void methodsWriteDifferentValuesToResultArray() {
+        ClonePair12786 clonePair = new ClonePair12786();
+        double[][] arg1 = {{2.0}};
+        double[][] arg2 = {{1.0}};
+        double[][] result1 = {{0.0}};
+        double[][] result2 = {{0.0}};
+
+        assertSame(result1, clonePair.method1(arg1, arg2, result1));
+        assertSame(result2, clonePair.method2(arg1, arg2, result2));
+        assertArrayEquals(new double[]{3.0}, result1[0]);
+        assertArrayEquals(new double[]{1.0}, result2[0]);
+    }
+}

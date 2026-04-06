@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair11001DifferenceFindingTest {
+    @Test
+    void methodsAggregateValuesDifferently() {
+        ClonePair11001 clonePair = new ClonePair11001();
+        float[] values = {2.0f, 3.0f};
+
+        assertEquals(5.0, clonePair.method1(0, 2, values), 0.0);
+        assertEquals(6.0, clonePair.method2(0, 2, values), 0.0);
+    }
+}

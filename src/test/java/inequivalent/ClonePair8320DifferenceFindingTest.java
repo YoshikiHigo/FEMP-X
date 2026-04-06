@@ -1,0 +1,53 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair8320DifferenceFindingTest {
+    @Test
+    void methodsDifferInStdoutSideEffect() {
+        ClonePair8320 clonePair = new ClonePair8320();
+
+        CapturedCall method1 = captureStdout(() -> clonePair.method1("1.0", "0.0"));
+        CapturedCall method2 = captureStdout(() -> clonePair.method2("1.0", "0.0"));
+
+        assertEquals(true, method1.result);
+        assertEquals(true, method2.result);
+        assertTrue(method1.output.contains("1.0 : 0.0"));
+        assertTrue(method2.output.isEmpty());
+    }
+
+    private static CapturedCall captureStdout(BooleanCall call) {
+        PrintStream originalOut = System.out;
+        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+        try (PrintStream capturedOut = new PrintStream(buffer, true, StandardCharsets.UTF_8)) {
+            System.setOut(capturedOut);
+            boolean result = call.run();
+            capturedOut.flush();
+            return new CapturedCall(result, buffer.toString(StandardCharsets.UTF_8));
+        } finally {
+            System.setOut(originalOut);
+        }
+    }
+
+    @FunctionalInterface
+    private interface BooleanCall {
+        boolean run();
+    }
+
+    private static final class CapturedCall {
+        private final boolean result;
+        private final String output;
+
+        private CapturedCall(boolean result, String output) {
+            this.result = result;
+            this.output = output;
+        }
+    }
+}

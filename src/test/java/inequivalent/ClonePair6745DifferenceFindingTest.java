@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Calendar;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair6745DifferenceFindingTest {
+    @Test
+    void onlyMethod1UsesFullLeapYearRule() {
+        ClonePair6745 clonePair = new ClonePair6745();
+
+        assertEquals(28, clonePair.method1(Calendar.FEBRUARY, 1900));
+        assertEquals(29, clonePair.method2(Calendar.FEBRUARY, 1900));
+    }
+}

@@ -1,0 +1,29 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair8970DifferenceFindingTest {
+    @Test
+    void methodsHandleOutOfRangePortsDifferently() {
+        ClonePair8970 clonePair = new ClonePair8970();
+        PrintStream originalErr = System.err;
+        ByteArrayOutputStream method1Err = new ByteArrayOutputStream();
+        ByteArrayOutputStream method2Err = new ByteArrayOutputStream();
+        try {
+            System.setErr(new PrintStream(method1Err));
+            assertEquals(80, clonePair.method1("70000", 80));
+            System.setErr(new PrintStream(method2Err));
+            assertEquals(70_000, clonePair.method2("70000", 80));
+        } finally {
+            System.setErr(originalErr);
+        }
+        assertTrue(method1Err.size() > 0);
+        assertEquals(0, method2Err.size());
+    }
+}

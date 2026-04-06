@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair7162DifferenceFindingTest {
+    @Test
+    void methodsInterpretTheSameIntArrayDifferently() {
+        ClonePair7162 clonePair = new ClonePair7162();
+        int[] input = {160, 0, 0, 0, 0, 0};
+
+        assertEquals(0.0, clonePair.method1(input));
+        assertEquals(2_147_483_648.0, clonePair.method2(input));
+    }
+}

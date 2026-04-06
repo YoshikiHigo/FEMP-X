@@ -1,0 +1,18 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair12832DifferenceFindingTest {
+    @Test
+    void onlyMethod1RequiresClassesInTheSameOrder() {
+        ClonePair12832 clonePair = new ClonePair12832();
+        Class[] first = {String.class, Integer.class};
+        Class[] second = {Integer.class, String.class};
+
+        assertFalse(clonePair.method1(first, second));
+        assertTrue(clonePair.method2(first, second));
+    }
+}

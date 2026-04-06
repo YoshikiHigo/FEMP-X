@@ -1,0 +1,26 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair8950DifferenceFindingTest {
+    @Test
+    void methodsHandleCaseDifferently() {
+        ClonePair8950 clonePair = new ClonePair8950();
+        PrintStream originalOut = System.out;
+        try (PrintStream capturedOut = new PrintStream(new ByteArrayOutputStream(), true, StandardCharsets.UTF_8)) {
+            System.setOut(capturedOut);
+
+            assertTrue(clonePair.method1("a", "A"));
+            assertFalse(clonePair.method2("a", "A"));
+        } finally {
+            System.setOut(originalOut);
+        }
+    }
+}

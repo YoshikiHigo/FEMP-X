@@ -1,0 +1,15 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+class ClonePair9985DifferenceFindingTest {
+    @Test
+    void methodsHandleEscapedDelimitersDifferently() {
+        ClonePair9985 clonePair = new ClonePair9985();
+
+        assertArrayEquals(new String[]{"a\\", "b"}, clonePair.method1("a\\,b", ','));
+        assertArrayEquals(new String[]{"a,b"}, clonePair.method2("a\\,b", ','));
+    }
+}

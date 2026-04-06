@@ -1,0 +1,15 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+class ClonePair10887DifferenceFindingTest {
+    @Test
+    void methodsHandleNegativeOneDifferently() {
+        ClonePair10887 clonePair = new ClonePair10887();
+
+        assertArrayEquals(new int[]{-1}, (int[]) clonePair.method1("-1"));
+        assertArrayEquals(new int[0], (int[]) clonePair.method2("-1"));
+    }
+}
