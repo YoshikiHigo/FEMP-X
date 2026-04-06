@@ -1,0 +1,30 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair9403DifferenceFindingTest {
+    @Test
+    void methodsDifferInReturnValueAndStdoutSideEffect() {
+        ClonePair9403 clonePair = new ClonePair9403();
+        PrintStream originalOut = System.out;
+        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+        int method1Result;
+        try (PrintStream capturedOut = new PrintStream(buffer, true, StandardCharsets.UTF_8)) {
+            System.setOut(capturedOut);
+            method1Result = clonePair.method1(new int[]{2, 4});
+        } finally {
+            System.setOut(originalOut);
+        }
+
+        assertEquals(0, method1Result);
+        assertEquals(2, clonePair.method2(new int[]{2, 4}));
+        assertTrue(buffer.toString(StandardCharsets.UTF_8).contains("JBB.handle_SelectPlayer"));
+    }
+}

@@ -1,0 +1,30 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair8951DifferenceFindingTest {
+    @Test
+    void methodsSortValuesInOppositeOrders() {
+        ClonePair8951 clonePair = new ClonePair8951();
+
+        assertEquals(Arrays.asList("b", "a"), keys(clonePair.method1(mapOfTwoValues())));
+        assertEquals(Arrays.asList("a", "b"), keys(clonePair.method2(mapOfTwoValues())));
+    }
+
+    private static HashMap<String, Integer> mapOfTwoValues() {
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("a", 1);
+        map.put("b", 2);
+        return map;
+    }
+
+    private static java.util.List keys(LinkedHashMap map) {
+        return Arrays.asList(map.keySet().toArray());
+    }
+}

@@ -1,0 +1,27 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.concurrent.atomic.AtomicBoolean;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair8621DifferenceFindingTest {
+    @Test
+    void methodsCompareThreadNameAndGroupNameDifferently() throws InterruptedException {
+        ClonePair8621 clonePair = new ClonePair8621();
+        AtomicBoolean method1Result = new AtomicBoolean();
+        AtomicBoolean method2Result = new AtomicBoolean();
+        Thread thread = new Thread(new ThreadGroup("group"), () -> {
+            method1Result.set(clonePair.method1(null, "worker", false));
+            method2Result.set(clonePair.method2(null, "worker", false));
+        }, "worker");
+
+        thread.start();
+        thread.join();
+
+        assertTrue(method1Result.get());
+        assertFalse(method2Result.get());
+    }
+}

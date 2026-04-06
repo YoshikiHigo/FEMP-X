@@ -1,0 +1,21 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Date;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair12897DifferenceFindingTest {
+    @Test
+    void onlyMethod1AcceptsReferenceEqualToStartWhenRangeIsReversed() {
+        ClonePair12897 clonePair = new ClonePair12897();
+        Date from = new Date(10L);
+        Date to = new Date(0L);
+        Date ref = new Date(10L);
+
+        assertTrue(clonePair.method1(from, to, ref));
+        assertFalse(clonePair.method2(from, to, ref));
+    }
+}

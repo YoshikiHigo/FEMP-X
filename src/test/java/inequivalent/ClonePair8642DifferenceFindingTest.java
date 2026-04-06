@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair8642DifferenceFindingTest {
+    @Test
+    void methodsStripEndianSuffixesDifferently() {
+        ClonePair8642 clonePair = new ClonePair8642();
+
+        assertTrue(clonePair.method1("utfbe", "utf"));
+        assertFalse(clonePair.method2("utfbe", "utf"));
+    }
+}

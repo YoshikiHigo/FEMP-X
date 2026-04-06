@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair9735DifferenceFindingTest {
+    @Test
+    void methodsNormalizeOddMultipleOfPiDifferently() {
+        ClonePair9735 clonePair = new ClonePair9735();
+        double angle = 3.0 * Math.PI;
+
+        assertEquals(Math.PI, clonePair.method1(angle), 1.0e-12);
+        assertEquals(-Math.PI, clonePair.method2(angle), 1.0e-12);
+    }
+}

@@ -1,0 +1,28 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+class ClonePair10681DifferenceFindingTest {
+    @Test
+    void methodsHandleInvalidSystemPropertyDifferently() {
+        ClonePair10681 clonePair = new ClonePair10681();
+        String key = "inequivalent.ClonePair10681DifferenceFindingTest.value";
+        String original = System.getProperty(key);
+
+        try {
+            System.setProperty(key, "x");
+
+            assertThrows(NumberFormatException.class, () -> clonePair.method1(key, 7));
+            assertEquals(7, clonePair.method2(key, 7));
+        } finally {
+            if (original == null) {
+                System.clearProperty(key);
+            } else {
+                System.setProperty(key, original);
+            }
+        }
+    }
+}

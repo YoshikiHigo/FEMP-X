@@ -1,0 +1,41 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair11207DifferenceFindingTest {
+    @Test
+    void onlyMethod1DoesNotFinishForEmptyNeedle() throws Exception {
+        assertFalse(finishesInSeparateProcess("method1"));
+        assertTrue(finishesInSeparateProcess("method2"));
+    }
+
+    private static boolean finishesInSeparateProcess(String methodName) throws IOException, InterruptedException {
+        String java = System.getProperty("java.home") + "/bin/java";
+        Process process = new ProcessBuilder(java, "-cp", System.getProperty("java.class.path"), Runner.class.getName(), methodName)
+                .redirectErrorStream(true)
+                .start();
+        boolean finished = process.waitFor(1, TimeUnit.SECONDS);
+        if (!finished) {
+            process.destroyForcibly();
+            process.waitFor();
+        }
+        return finished;
+    }
+
+    public static class Runner {
+        public static void main(String[] args) {
+            ClonePair11207 clonePair = new ClonePair11207();
+            if ("method1".equals(args[0])) {
+                clonePair.method1("a", "", "x");
+            } else {
+                clonePair.method2("a", "", "x");
+            }
+        }
+    }
+}

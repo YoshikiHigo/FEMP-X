@@ -1,0 +1,19 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+
+class ClonePair6262DifferenceFindingTest {
+    @Test
+    void methodsGenerateDifferentStrings() {
+        ClonePair6262 clonePair = new ClonePair6262();
+
+        String method1Result = clonePair.method1(1, 1, 1);
+        String method2Result = clonePair.method2(1, 1, 1);
+
+        assertEquals("1 \n", method1Result);
+        assertNotEquals(method1Result, method2Result);
+    }
+}

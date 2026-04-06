@@ -1,0 +1,15 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+class ClonePair8618DifferenceFindingTest {
+    @Test
+    void methodsUseDifferentMonthAndDayOrigins() {
+        ClonePair8618 clonePair = new ClonePair8618();
+
+        assertArrayEquals(new String[]{"2000", "01", "01"}, clonePair.method1(2000.0));
+        assertArrayEquals(new String[]{"2000", "00", "00"}, clonePair.method2(2000.0));
+    }
+}

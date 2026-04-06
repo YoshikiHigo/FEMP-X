@@ -1,0 +1,18 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.HashSet;
+import java.util.TreeSet;
+
+import static org.junit.jupiter.api.Assertions.assertInstanceOf;
+
+class ClonePair7282DifferenceFindingTest {
+    @Test
+    void methodsReturnDifferentSetImplementations() {
+        ClonePair7282 clonePair = new ClonePair7282();
+
+        assertInstanceOf(HashSet.class, clonePair.method1("b,a", ","));
+        assertInstanceOf(TreeSet.class, clonePair.method2("b,a", ","));
+    }
+}

@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair6607DifferenceFindingTest {
+    @Test
+    void methodsAverageDifferentWindows() {
+        ClonePair6607 clonePair = new ClonePair6607();
+        double[] values = {1.0, 2.0, 3.0};
+
+        assertEquals(2.5, clonePair.method1(values, 1, 2), 0.0);
+        assertEquals(1.5, clonePair.method2(values, 1, 2), 0.0);
+    }
+}

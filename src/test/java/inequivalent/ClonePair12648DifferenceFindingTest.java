@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair12648DifferenceFindingTest {
+    @Test
+    void onlyMethod1TrimsBeforeComparingIgnoringCase() {
+        ClonePair12648 clonePair = new ClonePair12648();
+        String[] searchIn = {"a"};
+
+        assertTrue(clonePair.method1(" a ", searchIn));
+        assertFalse(clonePair.method2(" a ", searchIn));
+    }
+}

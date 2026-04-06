@@ -1,0 +1,47 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair7156DifferenceFindingTest {
+    @Test
+    void methodsExitWithDifferentStatusesForInvalidLengths() throws Exception {
+        assertEquals(1, runInSeparateProcess("method1").exitStatus);
+        assertEquals(0, runInSeparateProcess("method2").exitStatus);
+    }
+
+    private static ProcessResult runInSeparateProcess(String methodName) throws IOException, InterruptedException {
+        String java = System.getProperty("java.home") + "/bin/java";
+        Process process = new ProcessBuilder(java, "-cp", System.getProperty("java.class.path"), ExitRunner.class.getName(), methodName)
+                .redirectErrorStream(true)
+                .start();
+        String output = new String(process.getInputStream().readAllBytes(), StandardCharsets.UTF_8);
+        return new ProcessResult(process.waitFor(), output);
+    }
+
+    private static class ProcessResult {
+        private final int exitStatus;
+        @SuppressWarnings("unused")
+        private final String output;
+
+        private ProcessResult(int exitStatus, String output) {
+            this.exitStatus = exitStatus;
+            this.output = output;
+        }
+    }
+
+    public static class ExitRunner {
+        public static void main(String[] args) {
+            ClonePair7156 clonePair = new ClonePair7156();
+            if ("method1".equals(args[0])) {
+                clonePair.method1(0, 1.0, new int[]{1}, 1);
+            } else {
+                clonePair.method2(0, 1.0, new int[]{1}, 1);
+            }
+        }
+    }
+}

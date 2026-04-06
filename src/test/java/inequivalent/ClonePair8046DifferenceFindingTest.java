@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair8046DifferenceFindingTest {
+    @Test
+    void methodsHandleCaseDifferently() {
+        ClonePair8046 clonePair = new ClonePair8046();
+        String[] supported = {"A"};
+
+        assertEquals(0, clonePair.method1(supported, "a"));
+        assertEquals(-1, clonePair.method2(supported, "a"));
+    }
+}

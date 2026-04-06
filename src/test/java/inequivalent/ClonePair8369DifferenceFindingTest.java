@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair8369DifferenceFindingTest {
+    @Test
+    void methodsReturnMinimumAndMaximumDifferently() {
+        ClonePair8369 clonePair = new ClonePair8369();
+        double[] input = {1.0, 2.0};
+
+        assertEquals(1.0, clonePair.method1(input, 2));
+        assertEquals(2.0, clonePair.method2(input, 2));
+    }
+}

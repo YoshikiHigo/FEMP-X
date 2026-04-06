@@ -1,0 +1,15 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair8660DifferenceFindingTest {
+    @Test
+    void methodsHandleValueJustBelowOneDifferently() {
+        ClonePair8660 clonePair = new ClonePair8660();
+
+        assertEquals(0, clonePair.method1(0.9999999999995));
+        assertEquals(-1, clonePair.method2(0.9999999999995));
+    }
+}

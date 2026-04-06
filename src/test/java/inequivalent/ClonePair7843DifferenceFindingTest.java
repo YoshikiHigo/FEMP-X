@@ -1,0 +1,19 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair7843DifferenceFindingTest {
+    @Test
+    void methodsRequireSameRuntimeClassDifferently() {
+        ClonePair7843 clonePair = new ClonePair7843();
+
+        assertFalse(clonePair.method1(Collections.singletonList("a"), new ArrayList<>(Collections.singletonList("a"))));
+        assertTrue(clonePair.method2(Collections.singletonList("a"), new ArrayList<>(Collections.singletonList("a"))));
+    }
+}

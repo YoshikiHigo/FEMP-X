@@ -1,0 +1,26 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Calendar;
+import java.util.Date;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair6823DifferenceFindingTest {
+    @Test
+    void onlyMethod2AcceptsDifferentDayInSameMonth() {
+        ClonePair6823 clonePair = new ClonePair6823();
+        Calendar calendar = Calendar.getInstance();
+        if (calendar.get(Calendar.DAY_OF_MONTH) == 1) {
+            calendar.add(Calendar.DAY_OF_MONTH, 1);
+        } else {
+            calendar.add(Calendar.DAY_OF_MONTH, -1);
+        }
+        Date sameMonthDifferentDay = calendar.getTime();
+
+        assertFalse(clonePair.method1(sameMonthDifferentDay));
+        assertTrue(clonePair.method2(sameMonthDifferentDay));
+    }
+}

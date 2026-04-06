@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair12665DifferenceFindingTest {
+    @Test
+    void methodsHandleNaNAndReversedEndpointsDifferently() {
+        ClonePair12665 clonePair = new ClonePair12665();
+
+        assertTrue(clonePair.method1(Double.NEGATIVE_INFINITY, Double.NaN, -2.0, Double.NEGATIVE_INFINITY));
+        assertFalse(clonePair.method2(Double.NEGATIVE_INFINITY, Double.NaN, -2.0, Double.NEGATIVE_INFINITY));
+    }
+}

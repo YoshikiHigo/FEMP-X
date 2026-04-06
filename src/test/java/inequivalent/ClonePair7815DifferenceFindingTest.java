@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair7815DifferenceFindingTest {
+    @Test
+    void methodsCompareByteArraysDifferently() {
+        ClonePair7815 clonePair = new ClonePair7815();
+
+        assertFalse(clonePair.method1(new byte[]{1}, new byte[]{1}));
+        assertTrue(clonePair.method2(new byte[]{1}, new byte[]{1}));
+    }
+}

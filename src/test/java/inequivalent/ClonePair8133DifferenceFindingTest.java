@@ -1,0 +1,20 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair8133DifferenceFindingTest {
+    @Test
+    void methodsWriteOutOfRangeValuesDifferently() {
+        ClonePair8133 clonePair = new ClonePair8133();
+        byte[] method1Target = new byte[8];
+        byte[] method2Target = new byte[8];
+
+        assertEquals(1, clonePair.method1(256, method1Target, 0));
+        assertEquals(3, clonePair.method2(256, method2Target, 0));
+        assertArrayEquals(new byte[]{'?', 0, 0, 0, 0, 0, 0, 0}, method1Target);
+        assertArrayEquals(new byte[]{0, 1, (byte) 0x82, 0, 0, 0, 0, 0}, method2Target);
+    }
+}

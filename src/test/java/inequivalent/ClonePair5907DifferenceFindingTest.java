@@ -1,0 +1,15 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair5907DifferenceFindingTest {
+    @Test
+    void onlyMethod2OverflowsDistanceForHugeCoordinates() {
+        ClonePair5907 clonePair = new ClonePair5907();
+
+        assertEquals(Math.atan(1.0), clonePair.method1(0.0, 0.0, Double.MAX_VALUE, Double.MAX_VALUE), 0.0);
+        assertEquals(0.0, clonePair.method2(0.0, 0.0, Double.MAX_VALUE, Double.MAX_VALUE), 0.0);
+    }
+}

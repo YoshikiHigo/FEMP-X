@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair6757DifferenceFindingTest {
+    @Test
+    void onlyMethod1MatchesWildcardOctets() {
+        ClonePair6757 clonePair = new ClonePair6757();
+
+        assertTrue(clonePair.method1("1.2", "*.2"));
+        assertFalse(clonePair.method2("1.2", "*.2"));
+    }
+}

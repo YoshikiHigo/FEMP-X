@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair7266DifferenceFindingTest {
+    @Test
+    void methodsRoundFloatingPointPolynomialEvaluationDifferently() {
+        ClonePair7266 clonePair = new ClonePair7266();
+        double[] coefficients = {1.0e16, -1.0e16, 1.0};
+
+        assertEquals(1.0, clonePair.method1(1.0, coefficients));
+        assertEquals(0.0, clonePair.method2(1.0, coefficients));
+    }
+}

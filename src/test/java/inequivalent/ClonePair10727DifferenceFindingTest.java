@@ -1,0 +1,15 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair10727DifferenceFindingTest {
+    @Test
+    void methodsHandleNonAsciiDigitsDifferently() {
+        ClonePair10727 clonePair = new ClonePair10727();
+
+        assertEquals(1, clonePair.method1("\u0660", 0));
+        assertEquals(0, clonePair.method2("\u0660", 0));
+    }
+}

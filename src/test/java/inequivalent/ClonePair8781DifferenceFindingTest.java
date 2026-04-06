@@ -1,0 +1,18 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.GregorianCalendar;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair8781DifferenceFindingTest {
+    @Test
+    void methodsHandleCenturyLeapYearsDifferently() {
+        ClonePair8781 clonePair = new ClonePair8781();
+        GregorianCalendar calendar = new GregorianCalendar(1900, GregorianCalendar.FEBRUARY, 1);
+
+        assertEquals(28, clonePair.method1(calendar));
+        assertEquals(29, clonePair.method2(calendar));
+    }
+}

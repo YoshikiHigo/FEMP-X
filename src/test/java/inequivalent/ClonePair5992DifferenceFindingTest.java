@@ -1,0 +1,26 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Vector;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertSame;
+
+class ClonePair5992DifferenceFindingTest {
+    @Test
+    void methodsMutateFirstVectorDifferently() {
+        ClonePair5992 clonePair = new ClonePair5992();
+        Vector<String> method1Values = new Vector<>();
+        method1Values.add("a");
+        Vector<String> method2Values = new Vector<>();
+        method2Values.add("a");
+        Vector<String> otherValues = new Vector<>();
+        otherValues.add("a");
+
+        assertSame(method1Values, clonePair.method1(method1Values, otherValues));
+        assertSame(method2Values, clonePair.method2(method2Values, otherValues));
+        assertEquals(2, method1Values.size());
+        assertEquals(0, method2Values.size());
+    }
+}

@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Collections;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair11459DifferenceFindingTest {
+    @Test
+    void methodsHandleLeadingSpacesDifferently() {
+        ClonePair11459 clonePair = new ClonePair11459();
+
+        assertEquals(Collections.singletonList(" a"), clonePair.method1(" a", 2));
+        assertEquals(Collections.singletonList("a"), clonePair.method2(" a", 2));
+    }
+}

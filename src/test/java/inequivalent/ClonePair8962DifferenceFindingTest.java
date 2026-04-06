@@ -1,0 +1,29 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair8962DifferenceFindingTest {
+    @Test
+    void methodsUseFirstAndLastAtSignsDifferently() {
+        ClonePair8962 clonePair = new ClonePair8962();
+        StringBuffer method1Input = new StringBuffer("a@b@c");
+        StringBuffer method2Input = new StringBuffer("a@b@c");
+        PrintStream originalOut = System.out;
+        try (PrintStream capturedOut = new PrintStream(new ByteArrayOutputStream(), true, StandardCharsets.UTF_8)) {
+            System.setOut(capturedOut);
+
+            assertEquals("a", clonePair.method1(method1Input));
+            assertEquals("a@b", clonePair.method2(method2Input));
+        } finally {
+            System.setOut(originalOut);
+        }
+        assertEquals("b@c", method1Input.toString());
+        assertEquals("c", method2Input.toString());
+    }
+}
