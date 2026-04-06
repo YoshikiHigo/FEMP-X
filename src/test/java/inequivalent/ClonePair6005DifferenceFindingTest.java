@@ -1,0 +1,20 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Properties;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair6005DifferenceFindingTest {
+    @Test
+    void testDifference() {
+        ClonePair6005 clonePair = new ClonePair6005();
+        Properties defaults = new Properties();
+        defaults.setProperty("name", "value");
+        Properties props = new Properties(defaults);
+
+        assertEquals("value", clonePair.method1("${name}", props));
+        assertEquals("${name}", clonePair.method2("${name}", props));
+    }
+}

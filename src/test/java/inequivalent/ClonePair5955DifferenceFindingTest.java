@@ -1,0 +1,23 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+import org.opentest4j.AssertionFailedError;
+
+import java.time.Duration;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTimeoutPreemptively;
+
+class ClonePair5955DifferenceFindingTest {
+    @Test
+    void testDifference() {
+        ClonePair5955 clonePair = new ClonePair5955();
+
+        assertEquals(1, clonePair.method1(1, 6));
+        assertThrows(
+                AssertionFailedError.class,
+                () -> assertTimeoutPreemptively(Duration.ofMillis(100), () -> clonePair.method2(1, 6))
+        );
+    }
+}

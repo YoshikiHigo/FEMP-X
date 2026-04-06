@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+class ClonePair5969DifferenceFindingTest {
+    @Test
+    void testDifference() {
+        ClonePair5969 clonePair = new ClonePair5969();
+
+        assertEquals(0.5f, clonePair.method1("a; q=0.5"));
+        assertThrows(NumberFormatException.class, () -> clonePair.method2("a; q=0.5"));
+    }
+}
