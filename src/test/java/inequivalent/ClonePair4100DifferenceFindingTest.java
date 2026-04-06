@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair4100DifferenceFindingTest {
+
+    private final ClonePair4100 subject = new ClonePair4100();
+
+    @Test
+    void methodsTreatEqualButDistinctStringObjectsDifferently() {
+        assertFalse(subject.method1(new String[]{new String("a")}, new String[]{new String("a")}));
+        assertTrue(subject.method2(new String[]{new String("a")}, new String[]{new String("a")}));
+    }
+}

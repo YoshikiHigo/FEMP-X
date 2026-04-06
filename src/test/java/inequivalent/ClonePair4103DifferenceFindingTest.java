@@ -1,0 +1,55 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair4103DifferenceFindingTest {
+
+    private final ClonePair4103 subject = new ClonePair4103();
+
+    @Test
+    void methodsHaveDifferentStderrSideEffectsForMismatchedLengths() {
+        CapturedCall method1 = captureStderr(() -> subject.method1(new String[]{"a"}, new String[]{"a", "b"}));
+        CapturedCall method2 = captureStderr(() -> subject.method2(new String[]{"a"}, new String[]{"a", "b"}));
+
+        assertFalse(method1.result);
+        assertFalse(method2.result);
+        assertTrue(method1.output.contains("Not equal lengths: 1/2"));
+        assertTrue(method2.output.isEmpty());
+    }
+
+    private static CapturedCall captureStderr(BooleanCall call) {
+        PrintStream originalErr = System.err;
+        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+        try (PrintStream capturedErr = new PrintStream(buffer, true, StandardCharsets.UTF_8)) {
+            System.setErr(capturedErr);
+            boolean result = call.run();
+            capturedErr.flush();
+            return new CapturedCall(result, buffer.toString(StandardCharsets.UTF_8));
+        } finally {
+            System.setErr(originalErr);
+        }
+    }
+
+    @FunctionalInterface
+    private interface BooleanCall {
+        boolean run();
+    }
+
+    private static final class CapturedCall {
+
+        private final boolean result;
+        private final String output;
+
+        private CapturedCall(boolean result, String output) {
+            this.result = result;
+            this.output = output;
+        }
+    }
+}

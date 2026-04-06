@@ -1,0 +1,18 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+
+class ClonePair3974DifferenceFindingTest {
+
+    private final ClonePair3974 subject = new ClonePair3974();
+
+    @Test
+    void methodsReturnSlightlyDifferentAngles() {
+        assertNotEquals(
+                Double.doubleToLongBits(subject.method1(-1.0, 3.5)),
+                Double.doubleToLongBits(subject.method2(-1.0, 3.5))
+        );
+    }
+}

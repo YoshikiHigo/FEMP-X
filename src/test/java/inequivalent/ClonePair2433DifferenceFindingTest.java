@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static inequivalent.ClonePairDifferenceTestSupport.assertThrowsByName;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair2433DifferenceFindingTest {
+
+    private final ClonePair2433 subject = new ClonePair2433();
+
+    @Test
+    void methodsTreatCommaDecimalDifferently() {
+        assertEquals(1.5, subject.method1("1,5"));
+        assertThrowsByName("java.lang.NumberFormatException", () -> subject.method2("1,5"));
+    }
+}

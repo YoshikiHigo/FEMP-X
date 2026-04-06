@@ -1,0 +1,20 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair73DifferenceFindingTest {
+
+    private final ClonePair73 subject = new ClonePair73();
+
+    @Test
+    void methodsDisagreeOnEmSpaceSeparator() {
+        String query = "alpha\u2003beta";
+
+        assertEquals(List.of("alpha\u2003beta"), subject.method1(query));
+        assertEquals(List.of("alpha", "beta"), subject.method2(query));
+    }
+}

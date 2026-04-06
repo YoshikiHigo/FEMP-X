@@ -1,0 +1,18 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+class ClonePair3802DifferenceFindingTest {
+
+    private final ClonePair3802 subject = new ClonePair3802();
+
+    @Test
+    void methodsMarkTagEndsAndStartsDifferently() {
+        int[][] tags = {{0, 1}};
+
+        assertArrayEquals(new boolean[]{false, true}, subject.method1(tags, 2));
+        assertArrayEquals(new boolean[]{true, false}, subject.method2(tags, 2));
+    }
+}

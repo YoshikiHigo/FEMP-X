@@ -1,0 +1,24 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+import org.opentest4j.AssertionFailedError;
+
+import java.time.Duration;
+
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTimeoutPreemptively;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair110DifferenceFindingTest {
+
+    private final ClonePair110 subject = new ClonePair110();
+
+    @Test
+    void method1DoesNotTerminateWhenBoundsCollapseBelowInput() {
+        assertThrows(
+                AssertionFailedError.class,
+                () -> assertTimeoutPreemptively(Duration.ofMillis(100), () -> subject.method1(-1.0, 0.0, 0.0))
+        );
+        assertTrue(Double.isNaN(subject.method2(-1.0, 0.0, 0.0)));
+    }
+}

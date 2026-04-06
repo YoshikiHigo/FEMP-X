@@ -1,0 +1,19 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair78DifferenceFindingTest {
+
+    private final ClonePair78 subject = new ClonePair78();
+
+    @Test
+    void methodsHandleCaseSensitivityDifferently() {
+        char[] source = "abRaCadabra".toCharArray();
+        char[] target = "cAD".toCharArray();
+
+        assertEquals(-1, subject.method1(source, 0, source.length, target, 0, target.length, 0));
+        assertEquals(4, subject.method2(source, 0, source.length, target, 0, target.length, 0));
+    }
+}

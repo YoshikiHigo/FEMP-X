@@ -1,0 +1,18 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair1901DifferenceFindingTest {
+
+    private final ClonePair1901 subject = new ClonePair1901();
+
+    @Test
+    void methodsUseDifferentLineAndCommaFormatting() {
+        assertEquals("a\nb\n", subject.method1(List.of("a", "b")));
+        assertEquals("a, b", subject.method2(List.of("a", "b")));
+    }
+}

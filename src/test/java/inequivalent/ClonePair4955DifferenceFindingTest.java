@@ -1,0 +1,23 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Hashtable;
+import java.util.Vector;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair4955DifferenceFindingTest {
+    @Test
+    void testDifference() {
+        ClonePair4955 clonePair = new ClonePair4955();
+
+        Hashtable<String, Object> values = new Hashtable<>();
+        Vector<String> materialTypeIds = new Vector<>();
+        materialTypeIds.add("008-24-code");
+        values.put("MaterialTypeId", materialTypeIds);
+
+        assertEquals(" AND ( NatureOfContents:code) AND ", clonePair.method1(values));
+        assertEquals(" AND (MaterialTypeID:008-24-code) AND ", clonePair.method2(values));
+    }
+}

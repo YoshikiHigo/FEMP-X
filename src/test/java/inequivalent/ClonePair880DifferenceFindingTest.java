@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+class ClonePair880DifferenceFindingTest {
+
+    private final ClonePair880 subject = new ClonePair880();
+
+    @Test
+    void methodsPlacePaddingInDifferentPositions() {
+        assertArrayEquals(new double[]{0.0, 0.25, 0.25, 0.25, 0.25}, subject.method1(new double[]{0.0}, 1));
+        assertArrayEquals(new double[]{0.25, 0.25, 0.25, 0.25, 0.0}, subject.method2(new double[]{0.0}, 1));
+    }
+}

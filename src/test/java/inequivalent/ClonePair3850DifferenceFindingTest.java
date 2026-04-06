@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair3850DifferenceFindingTest {
+
+    private final ClonePair3850 subject = new ClonePair3850();
+
+    @Test
+    void methodsReturnDifferentRoundedCorrelationValues() {
+        assertEquals(1.0, subject.method1(new double[]{1.0, 2.0}, new double[]{1.0, 2.0}));
+        assertEquals(0.9999999999999999, subject.method2(new double[]{1.0, 2.0}, new double[]{1.0, 2.0}));
+    }
+}

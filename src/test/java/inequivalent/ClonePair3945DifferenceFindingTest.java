@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static inequivalent.ClonePairDifferenceTestSupport.assertThrowsByName;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair3945DifferenceFindingTest {
+
+    private final ClonePair3945 subject = new ClonePair3945();
+
+    @Test
+    void methodsTreatSharedNullReferenceDifferently() {
+        assertEquals(0, subject.method1(null, null));
+        assertThrowsByName("java.lang.NullPointerException", () -> subject.method2(null, null));
+    }
+}

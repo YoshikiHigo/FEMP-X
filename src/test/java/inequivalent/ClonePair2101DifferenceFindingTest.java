@@ -1,0 +1,54 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair2101DifferenceFindingTest {
+
+    private final ClonePair2101 subject = new ClonePair2101();
+
+    @Test
+    void methodsHaveDifferentStdoutSideEffects() {
+        CapturedCall method1 = captureStdout(() -> subject.method1(new byte[]{1, 0, 0, 0}));
+        CapturedCall method2 = captureStdout(() -> subject.method2(new byte[]{1, 0, 0, 0}));
+
+        assertEquals(1, method1.result);
+        assertEquals(1, method2.result);
+        assertEquals("", method1.output);
+        assertEquals("1" + System.lineSeparator() + "0" + System.lineSeparator() + "0" + System.lineSeparator() + "0" + System.lineSeparator(), method2.output);
+    }
+
+    private static CapturedCall captureStdout(IntCall call) {
+        PrintStream originalOut = System.out;
+        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+        try (PrintStream capturedOut = new PrintStream(buffer, true, StandardCharsets.UTF_8)) {
+            System.setOut(capturedOut);
+            int result = call.run();
+            capturedOut.flush();
+            return new CapturedCall(result, buffer.toString(StandardCharsets.UTF_8));
+        } finally {
+            System.setOut(originalOut);
+        }
+    }
+
+    @FunctionalInterface
+    private interface IntCall {
+        int run();
+    }
+
+    private static final class CapturedCall {
+
+        private final int result;
+        private final String output;
+
+        private CapturedCall(int result, String output) {
+            this.result = result;
+            this.output = output;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair3112DifferenceFindingTest {
+
+    private final ClonePair3112 subject = new ClonePair3112();
+
+    @Test
+    void method2MutatesChecksumBlockButMethod1DoesNot() {
+        byte[] method1Input = {1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0};
+        byte[] method2Input = method1Input.clone();
+
+        assertTrue(subject.method1(method1Input));
+        assertTrue(subject.method2(method2Input));
+        assertArrayEquals(new byte[]{1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0}, method1Input);
+        assertArrayEquals(new byte[]{1, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0}, method2Input);
+    }
+}

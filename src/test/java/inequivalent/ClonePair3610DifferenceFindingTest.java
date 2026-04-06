@@ -1,0 +1,18 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair3610DifferenceFindingTest {
+
+    private final ClonePair3610 subject = new ClonePair3610();
+
+    @Test
+    void methodsRemovePrefixAndSuffixDifferently() {
+        String[] affixes = {"a"};
+
+        assertEquals("bc", subject.method1("abc", affixes));
+        assertEquals("abc", subject.method2("abc", affixes));
+    }
+}

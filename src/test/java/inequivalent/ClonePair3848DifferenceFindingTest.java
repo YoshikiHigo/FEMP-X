@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair3848DifferenceFindingTest {
+
+    private final ClonePair3848 subject = new ClonePair3848();
+
+    @Test
+    void methodsComputeSumAndMaxDistanceDifferently() {
+        assertEquals(2.0, subject.method1(new double[]{1.0, 1.0}, new double[]{0.0, 0.0}));
+        assertEquals(1.0, subject.method2(new double[]{1.0, 1.0}, new double[]{0.0, 0.0}));
+    }
+}

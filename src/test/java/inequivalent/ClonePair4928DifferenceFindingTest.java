@@ -1,0 +1,25 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Vector;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair4928DifferenceFindingTest {
+    @Test
+    void testDifference() {
+        ClonePair4928 clonePair = new ClonePair4928();
+
+        Vector<String> first = new Vector<>();
+        first.add("b");
+        first.add("a");
+        Vector<String> second = new Vector<>();
+        second.add("a");
+        second.add("b");
+
+        assertTrue(clonePair.method1(first, second));
+        assertFalse(clonePair.method2(first, second));
+    }
+}

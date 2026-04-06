@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
+
+class ClonePair3569DifferenceFindingTest {
+
+    private final ClonePair3569 subject = new ClonePair3569();
+
+    @Test
+    void methodsHandleIntegerDifferently() {
+        assertNull(subject.method1(1));
+        assertEquals(1.0, subject.method2(1));
+    }
+}

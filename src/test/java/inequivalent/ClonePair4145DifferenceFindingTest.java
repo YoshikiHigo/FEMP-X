@@ -1,0 +1,19 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.List;
+
+import static inequivalent.ClonePairDifferenceTestSupport.assertThrowsByName;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+class ClonePair4145DifferenceFindingTest {
+
+    private final ClonePair4145 subject = new ClonePair4145();
+
+    @Test
+    void methodsHandleIntegerElementDifferently() {
+        assertThrowsByName("java.lang.ClassCastException", () -> subject.method1(List.of(1)));
+        assertArrayEquals(new String[]{"1"}, subject.method2(List.of(1)));
+    }
+}

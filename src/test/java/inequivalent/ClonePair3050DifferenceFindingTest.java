@@ -1,0 +1,19 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair3050DifferenceFindingTest {
+
+    private final ClonePair3050 subject = new ClonePair3050();
+
+    @Test
+    void methodsRecognizeDifferentHeaders() {
+        byte[] pngHeader = {(byte) 0x89, 0x50, 0x4E, 0x47, 0, 0, 0, 0};
+
+        assertTrue(subject.method1(pngHeader));
+        assertFalse(subject.method2(pngHeader));
+    }
+}

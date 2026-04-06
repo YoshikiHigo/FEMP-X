@@ -1,0 +1,29 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Calendar;
+import java.util.Date;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair4319DifferenceFindingTest {
+    @Test
+    void testDifference() {
+        ClonePair4319 clonePair = new ClonePair4319();
+
+        Date first = date(2020, Calendar.JANUARY, 1, 1);
+        Date second = date(2020, Calendar.JANUARY, 1, 2);
+
+        assertFalse(clonePair.method1(first, second));
+        assertTrue(clonePair.method2(first, second));
+    }
+
+    private static Date date(int year, int month, int day, int hour) {
+        Calendar calendar = Calendar.getInstance();
+        calendar.clear();
+        calendar.set(year, month, day, hour, 0, 0);
+        return calendar.getTime();
+    }
+}

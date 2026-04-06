@@ -1,0 +1,21 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.nio.charset.StandardCharsets;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair2909DifferenceFindingTest {
+
+    private final ClonePair2909 subject = new ClonePair2909();
+
+    @Test
+    void methodsRecognizeDifferentHeaders() {
+        byte[] id3Header = "ID3\0\0\0\0\0\0\0".getBytes(StandardCharsets.ISO_8859_1);
+
+        assertFalse(subject.method1(id3Header));
+        assertTrue(subject.method2(id3Header));
+    }
+}
