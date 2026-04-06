@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair3740DifferenceFindingTest {
+
+    private final ClonePair3740 subject = new ClonePair3740();
+
+    @Test
+    void method2IgnoresFirstElementButMethod1DoesNot() {
+        assertFalse(subject.method1(new double[]{1.0}, new double[]{2.0}, 0.0));
+        assertTrue(subject.method2(new double[]{1.0}, new double[]{2.0}, 0.0));
+    }
+}

@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair3177DifferenceFindingTest {
+
+    private final ClonePair3177 subject = new ClonePair3177();
+
+    @Test
+    void methodsUseFirstAndLastDelimiterDifferently() {
+        assertEquals("b,c", subject.method1("a,b,c", ",", false));
+        assertEquals("c", subject.method2("a,b,c", ",", false));
+    }
+}

@@ -1,0 +1,54 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+class ClonePair3995DifferenceFindingTest {
+
+    private final ClonePair3995 subject = new ClonePair3995();
+
+    @Test
+    void methodsHaveDifferentStdoutSideEffectsWhenCreatingSteps() {
+        CapturedCall method1 = captureStdout(() -> subject.method1(new double[]{0.0, 1.0}, 1.0, 2));
+        CapturedCall method2 = captureStdout(() -> subject.method2(new double[]{0.0, 1.0}, 1.0, 2));
+
+        assertArrayEquals(new double[]{0.0, 1.0}, method1.result);
+        assertArrayEquals(new double[]{0.0, 1.0}, method2.result);
+        org.junit.jupiter.api.Assertions.assertEquals("", method1.output);
+        org.junit.jupiter.api.Assertions.assertEquals("Creating Time Steps..." + System.lineSeparator(), method2.output);
+    }
+
+    private static CapturedCall captureStdout(DoubleArrayCall call) {
+        PrintStream originalOut = System.out;
+        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+        try (PrintStream capturedOut = new PrintStream(buffer, true, StandardCharsets.UTF_8)) {
+            System.setOut(capturedOut);
+            double[] result = call.run();
+            capturedOut.flush();
+            return new CapturedCall(result, buffer.toString(StandardCharsets.UTF_8));
+        } finally {
+            System.setOut(originalOut);
+        }
+    }
+
+    @FunctionalInterface
+    private interface DoubleArrayCall {
+        double[] run();
+    }
+
+    private static final class CapturedCall {
+
+        private final double[] result;
+        private final String output;
+
+        private CapturedCall(double[] result, String output) {
+            this.result = result;
+            this.output = output;
+        }
+    }
+}

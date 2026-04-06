@@ -1,0 +1,19 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair2945DifferenceFindingTest {
+
+    private final ClonePair2945 subject = new ClonePair2945();
+
+    @Test
+    void methodsTreatControlByteDifferently() {
+        byte[] input = {1};
+
+        assertTrue(subject.method1(input));
+        assertFalse(subject.method2(input));
+    }
+}

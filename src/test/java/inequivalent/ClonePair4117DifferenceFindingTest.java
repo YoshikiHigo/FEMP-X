@@ -1,0 +1,58 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair4117DifferenceFindingTest {
+
+    private final ClonePair4117 subject = new ClonePair4117();
+
+    @Test
+    void methodsTreatOrderAndStderrDifferently() {
+        String[] left = {"a", "b"};
+        String[] right = {"b", "a"};
+
+        CapturedCall method1 = captureStderr(() -> subject.method1(left, right));
+        CapturedCall method2 = captureStderr(() -> subject.method2(left, right));
+
+        assertTrue(method1.result);
+        assertFalse(method2.result);
+        assertTrue(method1.output.isEmpty());
+        assertTrue(method2.output.contains("Not equal: a and b"));
+    }
+
+    private static CapturedCall captureStderr(BooleanCall call) {
+        PrintStream originalErr = System.err;
+        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+        try (PrintStream capturedErr = new PrintStream(buffer, true, StandardCharsets.UTF_8)) {
+            System.setErr(capturedErr);
+            boolean result = call.run();
+            capturedErr.flush();
+            return new CapturedCall(result, buffer.toString(StandardCharsets.UTF_8));
+        } finally {
+            System.setErr(originalErr);
+        }
+    }
+
+    @FunctionalInterface
+    private interface BooleanCall {
+        boolean run();
+    }
+
+    private static final class CapturedCall {
+
+        private final boolean result;
+        private final String output;
+
+        private CapturedCall(boolean result, String output) {
+            this.result = result;
+            this.output = output;
+        }
+    }
+}

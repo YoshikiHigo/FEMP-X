@@ -1,0 +1,19 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair5132DifferenceFindingTest {
+    @Test
+    void testDifference() {
+        ClonePair5132 clonePair = new ClonePair5132();
+
+        double[] left = {Double.NaN};
+        double[] right = {Double.NaN};
+
+        assertTrue(clonePair.method1(left, right));
+        assertFalse(clonePair.method2(left, right));
+    }
+}

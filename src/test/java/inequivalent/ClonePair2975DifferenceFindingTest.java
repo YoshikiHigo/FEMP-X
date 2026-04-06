@@ -1,0 +1,54 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair2975DifferenceFindingTest {
+
+    private final ClonePair2975 subject = new ClonePair2975();
+
+    @Test
+    void methodsTreatCommaGroupedNumberDifferently() {
+        CapturedCall method1 = captureStdout(() -> subject.method1("1,000"));
+        CapturedCall method2 = captureStdout(() -> subject.method2("1,000"));
+
+        assertEquals(0.0, method1.result);
+        assertEquals(1000.0, method2.result);
+        assertEquals("NumberFormatException: For input string: \"1,000\"" + System.lineSeparator(), method1.output);
+        assertEquals("", method2.output);
+    }
+
+    private static CapturedCall captureStdout(DoubleCall call) {
+        PrintStream originalOut = System.out;
+        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+        try (PrintStream capturedOut = new PrintStream(buffer, true, StandardCharsets.UTF_8)) {
+            System.setOut(capturedOut);
+            double result = call.run();
+            capturedOut.flush();
+            return new CapturedCall(result, buffer.toString(StandardCharsets.UTF_8));
+        } finally {
+            System.setOut(originalOut);
+        }
+    }
+
+    @FunctionalInterface
+    private interface DoubleCall {
+        double run();
+    }
+
+    private static final class CapturedCall {
+
+        private final double result;
+        private final String output;
+
+        private CapturedCall(double result, String output) {
+            this.result = result;
+            this.output = output;
+        }
+    }
+}

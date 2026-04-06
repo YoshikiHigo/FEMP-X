@@ -1,0 +1,54 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair3909DifferenceFindingTest {
+
+    private final ClonePair3909 subject = new ClonePair3909();
+
+    @Test
+    void methodsHaveDifferentStdoutSideEffectsForDifferentDimensions() {
+        CapturedCall method1 = captureStdout(() -> subject.method1(new double[]{1.0}, new double[]{1.0, 2.0}));
+        CapturedCall method2 = captureStdout(() -> subject.method2(new double[]{1.0}, new double[]{1.0, 2.0}));
+
+        assertEquals(0.0, method1.result);
+        assertEquals(0.0, method2.result);
+        assertEquals("Points of different dimensions are being compared" + System.lineSeparator(), method1.output);
+        assertEquals("", method2.output);
+    }
+
+    private static CapturedCall captureStdout(DoubleCall call) {
+        PrintStream originalOut = System.out;
+        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+        try (PrintStream capturedOut = new PrintStream(buffer, true, StandardCharsets.UTF_8)) {
+            System.setOut(capturedOut);
+            double result = call.run();
+            capturedOut.flush();
+            return new CapturedCall(result, buffer.toString(StandardCharsets.UTF_8));
+        } finally {
+            System.setOut(originalOut);
+        }
+    }
+
+    @FunctionalInterface
+    private interface DoubleCall {
+        double run();
+    }
+
+    private static final class CapturedCall {
+
+        private final double result;
+        private final String output;
+
+        private CapturedCall(double result, String output) {
+            this.result = result;
+            this.output = output;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+
+class ClonePair3648DifferenceFindingTest {
+
+    private final ClonePair3648 subject = new ClonePair3648();
+
+    @Test
+    void methodsApplyGammaCorrectionDifferently() {
+        float[] input = {0.1f, 0.0f, 0.0f};
+
+        assertNotEquals(subject.method1(input)[0], subject.method2(input)[0]);
+    }
+}

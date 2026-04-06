@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static inequivalent.ClonePairDifferenceTestSupport.assertThrowsByName;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair3649DifferenceFindingTest {
+
+    private final ClonePair3649 subject = new ClonePair3649();
+
+    @Test
+    void methodsHandleStringArgumentsDifferently() {
+        assertThrowsByName("java.lang.ClassCastException", () -> subject.method1("a", "b"));
+        assertEquals(-1, subject.method2("a", "b"));
+    }
+}

@@ -1,0 +1,18 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair3646DifferenceFindingTest {
+
+    private final ClonePair3646 subject = new ClonePair3646();
+
+    @Test
+    void methodsTreatBackslashAsPathSeparatorDifferently() {
+        String[] patterns = {".*"};
+
+        assertEquals("dir\\file", subject.method1("dir\\file", patterns));
+        assertEquals("file", subject.method2("dir\\file", patterns));
+    }
+}

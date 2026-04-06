@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair3199DifferenceFindingTest {
+
+    private final ClonePair3199 subject = new ClonePair3199();
+
+    @Test
+    void methodsCompareLengthAndContentInDifferentOrder() {
+        assertEquals(-1, subject.method1(new char[]{'A', 'B', 'C'}, new char[]{'a', 'b'}));
+        assertEquals(1, subject.method2(new char[]{'A', 'B', 'C'}, new char[]{'a', 'b'}));
+    }
+}

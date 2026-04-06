@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair3914DifferenceFindingTest {
+
+    private final ClonePair3914 subject = new ClonePair3914();
+
+    @Test
+    void methodsComputeEuclideanAndManhattanDistanceDifferently() {
+        assertEquals(Math.sqrt(8.0), subject.method1(new double[]{1.0, 2.0}, new double[]{-1.0, 0.0, 1.0}));
+        assertEquals(4.0, subject.method2(new double[]{1.0, 2.0}, new double[]{-1.0, 0.0, 1.0}));
+    }
+}

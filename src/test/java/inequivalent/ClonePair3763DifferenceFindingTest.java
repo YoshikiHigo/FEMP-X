@@ -1,0 +1,20 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Map;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair3763DifferenceFindingTest {
+
+    private final ClonePair3763 subject = new ClonePair3763();
+
+    @Test
+    void methodsTreatWhitespaceAroundMapValueDifferently() {
+        Map<String, String> map = Map.of("key", " value ");
+
+        assertEquals(" value ", subject.method1(map, "key"));
+        assertEquals("value", subject.method2(map, "key"));
+    }
+}

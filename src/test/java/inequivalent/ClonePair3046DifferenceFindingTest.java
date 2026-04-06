@@ -1,0 +1,21 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair3046DifferenceFindingTest {
+
+    private final ClonePair3046 subject = new ClonePair3046();
+
+    @Test
+    void methodsCompareDifferentEffectiveLengthsForLongArrays() {
+        byte[] left = new byte[17];
+        byte[] right = new byte[17];
+        right[16] = 1;
+
+        assertFalse(subject.method1(left, right));
+        assertTrue(subject.method2(left, right));
+    }
+}

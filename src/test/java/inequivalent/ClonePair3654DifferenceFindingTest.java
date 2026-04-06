@@ -1,0 +1,54 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair3654DifferenceFindingTest {
+
+    private final ClonePair3654 subject = new ClonePair3654();
+
+    @Test
+    void methodsHandleMixedTypesAndStdoutDifferently() {
+        CapturedCall method1 = captureStdout(() -> subject.method1("1", 2));
+        CapturedCall method2 = captureStdout(() -> subject.method2("1", 2));
+
+        assertTrue(method1.result < 0);
+        assertTrue(method2.result > 0);
+        assertTrue(method1.output.contains("Warning: compared values: 1, 2 have different types"));
+        assertTrue(method2.output.isEmpty());
+    }
+
+    private static CapturedCall captureStdout(IntCall call) {
+        PrintStream originalOut = System.out;
+        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
+        try (PrintStream capturedOut = new PrintStream(buffer, true, StandardCharsets.UTF_8)) {
+            System.setOut(capturedOut);
+            int result = call.run();
+            capturedOut.flush();
+            return new CapturedCall(result, buffer.toString(StandardCharsets.UTF_8));
+        } finally {
+            System.setOut(originalOut);
+        }
+    }
+
+    @FunctionalInterface
+    private interface IntCall {
+        int run();
+    }
+
+    private static final class CapturedCall {
+
+        private final int result;
+        private final String output;
+
+        private CapturedCall(int result, String output) {
+            this.result = result;
+            this.output = output;
+        }
+    }
+}

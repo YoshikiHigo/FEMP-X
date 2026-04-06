@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static inequivalent.ClonePairDifferenceTestSupport.assertThrowsByName;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair4DifferenceFindingTest {
+
+    private final ClonePair4 subject = new ClonePair4();
+
+    @Test
+    void methodsInterpretSecSuffixDifferently() {
+        assertEquals(42L, subject.method1("42(sec)"));
+        assertThrowsByName("java.lang.NumberFormatException", () -> subject.method2("42(sec)"));
+    }
+}

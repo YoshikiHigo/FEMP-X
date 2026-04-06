@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair3176DifferenceFindingTest {
+
+    private final ClonePair3176 subject = new ClonePair3176();
+
+    @Test
+    void methodsTreatEqualPrefixLengthDifferently() {
+        assertEquals("010", subject.method1("010", "010", true));
+        assertEquals("", subject.method2("010", "010", true));
+    }
+}

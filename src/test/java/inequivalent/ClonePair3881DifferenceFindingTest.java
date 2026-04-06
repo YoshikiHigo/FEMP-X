@@ -1,0 +1,17 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair3881DifferenceFindingTest {
+
+    private final ClonePair3881 subject = new ClonePair3881();
+
+    @Test
+    void methodsHandleBothNegativeInfinityDifferently() {
+        assertTrue(Double.isNaN(subject.method1(Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY)));
+        assertEquals(Double.NEGATIVE_INFINITY, subject.method2(Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY));
+    }
+}

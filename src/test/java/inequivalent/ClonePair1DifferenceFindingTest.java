@@ -1,0 +1,23 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static inequivalent.ClonePairDifferenceTestSupport.equalThrowable;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair1DifferenceFindingTest {
+
+    private final ClonePair1 subject = new ClonePair1();
+
+    @Test
+    void methodsReturnDifferentMessagesWhenAdjacentCausesCompareEqual() {
+        Throwable input = equalThrowable(
+                "root",
+                1,
+                equalThrowable("mid", 1, equalThrowable("leaf", 2, null))
+        );
+
+        assertEquals("leaf", subject.method1(input));
+        assertEquals("root", subject.method2(input));
+    }
+}

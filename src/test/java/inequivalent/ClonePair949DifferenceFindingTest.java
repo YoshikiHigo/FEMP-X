@@ -1,0 +1,18 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+
+class ClonePair949DifferenceFindingTest {
+
+    private final ClonePair949 subject = new ClonePair949();
+
+    @Test
+    void methodsProduceDifferentApproximationsForNegativeInput() {
+        long method1Bits = Double.doubleToLongBits(subject.method1(-1.0, false));
+        long method2Bits = Double.doubleToLongBits(subject.method2(-1.0, false));
+
+        assertNotEquals(method1Bits, method2Bits);
+    }
+}

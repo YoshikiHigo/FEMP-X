@@ -1,0 +1,19 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair93DifferenceFindingTest {
+
+    private final ClonePair93 subject = new ClonePair93();
+
+    @Test
+    void methodsTreatFormFeedDifferently() {
+        char[] input = {'\f'};
+
+        assertTrue(subject.method1(input, 0, 1));
+        assertFalse(subject.method2(input, 0, 1));
+    }
+}

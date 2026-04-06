@@ -1,0 +1,24 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+import org.opentest4j.AssertionFailedError;
+
+import java.time.Duration;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTimeoutPreemptively;
+
+class ClonePair3986DifferenceFindingTest {
+
+    private final ClonePair3986 subject = new ClonePair3986();
+
+    @Test
+    void method2DoesNotTerminateWhenCharacterIsPresent() {
+        assertEquals("b", subject.method1("a", 'a', 'b'));
+        assertThrows(
+                AssertionFailedError.class,
+                () -> assertTimeoutPreemptively(Duration.ofMillis(100), () -> subject.method2("a", 'a', 'b'))
+        );
+    }
+}

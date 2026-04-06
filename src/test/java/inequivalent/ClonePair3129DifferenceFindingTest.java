@@ -1,0 +1,19 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Locale;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
+
+class ClonePair3129DifferenceFindingTest {
+
+    private final ClonePair3129 subject = new ClonePair3129();
+
+    @Test
+    void methodsTreatVariantWithoutCountryDifferently() {
+        assertNull(subject.method1("en__POSIX"));
+        assertEquals(new Locale("en", "", "POSIX"), subject.method2("en__POSIX"));
+    }
+}

@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair2827DifferenceFindingTest {
+
+    private final ClonePair2827 subject = new ClonePair2827();
+
+    @Test
+    void methodsTreatFortranExponentDifferently() {
+        assertEquals(100.0, subject.method1("1d2"));
+        assertEquals(0.0, subject.method2("1d2"));
+    }
+}

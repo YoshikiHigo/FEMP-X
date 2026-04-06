@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+class ClonePair899DifferenceFindingTest {
+
+    private final ClonePair899 subject = new ClonePair899();
+
+    @Test
+    void methodsCopySourceSliceToDifferentOffsets() {
+        assertArrayEquals(new double[]{2.0}, subject.method1(new double[]{1.0, 2.0}, 1));
+        assertArrayEquals(new double[]{1.0}, subject.method2(new double[]{1.0, 2.0}, 1));
+    }
+}
