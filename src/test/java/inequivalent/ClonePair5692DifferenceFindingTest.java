@@ -1,0 +1,16 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair5692DifferenceFindingTest {
+    @Test
+    void testDifference() {
+        ClonePair5692 clonePair = new ClonePair5692();
+
+        assertTrue(clonePair.method1("A", "a", true));
+        assertFalse(clonePair.method2("A", "a", true));
+    }
+}

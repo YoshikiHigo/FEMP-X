@@ -1,0 +1,32 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
+
+class ClonePair6673DifferenceFindingTest {
+    @Test
+    void testDifference() {
+        ClonePair6673 clonePair = new ClonePair6673();
+        PrintStream originalErr = System.err;
+        ByteArrayOutputStream method1Err = new ByteArrayOutputStream();
+        ByteArrayOutputStream method2Err = new ByteArrayOutputStream();
+
+        try {
+            System.setErr(new PrintStream(method1Err));
+            assertNull(clonePair.method1(new float[][]{{1.0f, 2.0f}}, new float[][]{{1.0f}}));
+
+            System.setErr(new PrintStream(method2Err));
+            assertNull(clonePair.method2(new float[][]{{1.0f, 2.0f}}, new float[][]{{1.0f}}));
+        } finally {
+            System.setErr(originalErr);
+        }
+
+        assertEquals("Matrix dimensions do not agree" + System.lineSeparator(), method1Err.toString());
+        assertEquals("", method2Err.toString());
+    }
+}
