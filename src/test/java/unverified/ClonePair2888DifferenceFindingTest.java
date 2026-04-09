@@ -1,0 +1,31 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static unverified.ClonePairByteArrayBooleanUnaryTestSupport.*;
+
+class ClonePair2888DifferenceFindingTest {
+
+    private final ClonePair2888 subject = new ClonePair2888();
+
+    @Test
+    void methodsDisagreeOnGeneratedInput() {
+        InvocationOutcome method1Outcome = capture(subject::method1, new byte[]{'G', 'I', 'F', '8', '7', 'a'});
+        InvocationOutcome method2Outcome = capture(subject::method2, new byte[]{'G', 'I', 'F', '8', '7', 'a'});
+
+        assertEquals("OK", method1Outcome.status);
+        assertEquals(false, method1Outcome.value);
+        assertNull(method1Outcome.exceptionClass);
+        assertEquals("OK", method2Outcome.status);
+        assertEquals(true, method2Outcome.value);
+        assertNull(method2Outcome.exceptionClass);
+        assertEquals(method1Outcome.stdout, method2Outcome.stdout);
+        assertEquals(method1Outcome.stderr, method2Outcome.stderr);
+        assertInputStatePreserved(method1Outcome);
+        assertInputStatePreserved(method2Outcome);
+    }
+}

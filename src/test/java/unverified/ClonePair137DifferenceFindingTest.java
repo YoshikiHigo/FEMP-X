@@ -1,0 +1,16 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair137DifferenceFindingTest {
+
+    private final ClonePair137 subject = new ClonePair137();
+
+    @Test
+    void methodsDisagreeForReversedBounds() {
+        assertEquals(1.0, subject.method1(0.5, 1.0, 0.0), 0.0);
+        assertEquals(0.0, subject.method2(0.5, 1.0, 0.0), 0.0);
+    }
+}

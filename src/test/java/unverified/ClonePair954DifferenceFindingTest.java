@@ -1,0 +1,16 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair954DifferenceFindingTest {
+
+    private final ClonePair954 subject = new ClonePair954();
+
+    @Test
+    void methodsUseDifferentUpperTailCutoffs() {
+        assertEquals(0.0, subject.method1(18.67, true), 0.0);
+        assertEquals(4.342638793276687E-78, subject.method2(18.67, true), 0.0);
+    }
+}
