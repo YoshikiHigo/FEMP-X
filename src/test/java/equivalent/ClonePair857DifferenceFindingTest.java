@@ -1,0 +1,18 @@
+package equivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+class ClonePair857DifferenceFindingTest {
+
+    private final ClonePair857 subject = new ClonePair857();
+
+    @Test
+    void methodsInterpretSecondArgumentDifferently() {
+        double[] input = {1.0, 3.0, 5.0};
+
+        assertArrayEquals(new double[]{2.0, 3.0, 4.0}, subject.method1(input, 1));
+        assertArrayEquals(new double[]{1.0, 3.0, 5.0}, subject.method2(input, 1));
+    }
+}
