@@ -1,0 +1,17 @@
+package equivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair117DifferenceFindingTest {
+
+    private final ClonePair117 subject = new ClonePair117();
+
+    @Test
+    void methodsHandleNaNThirdArgumentDifferently() {
+        assertEquals(Double.NEGATIVE_INFINITY, subject.method1(Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY, Double.NaN));
+        assertTrue(Double.isNaN(subject.method2(Double.NEGATIVE_INFINITY, Double.NEGATIVE_INFINITY, Double.NaN)));
+    }
+}

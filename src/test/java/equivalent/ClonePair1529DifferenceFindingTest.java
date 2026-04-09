@@ -1,0 +1,22 @@
+package equivalent;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair1529DifferenceFindingTest {
+
+    private final ClonePair1529 subject = new ClonePair1529();
+
+    @Test
+    void methodsTreatCollectionOrderDifferently() {
+        List<String> first = List.of("a", "b");
+        List<String> second = List.of("b", "a");
+
+        assertTrue(subject.method1(first, second));
+        assertFalse(subject.method2(first, second));
+    }
+}
