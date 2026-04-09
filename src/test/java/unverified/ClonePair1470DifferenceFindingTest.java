@@ -1,0 +1,18 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class ClonePair1470DifferenceFindingTest {
+
+    private final ClonePair1470 subject = new ClonePair1470();
+
+    @Test
+    void methodsHandleLongObjectsDifferently() {
+        Object input = Long.valueOf(3L);
+
+        assertEquals(3, subject.method1(input));
+        assertEquals(0, subject.method2(input));
+    }
+}

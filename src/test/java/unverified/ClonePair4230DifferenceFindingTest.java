@@ -1,0 +1,39 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static unverified.ClonePairGenericInvocationTestSupport.*;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair4230DifferenceFindingTest {
+
+    private final ClonePair4230 subject = new ClonePair4230();
+
+    @Test
+    void methodsDisagreeOnGeneratedInput() {
+        InvocationOutcome method1Outcome = capture(values -> subject.method1((String) values[0], (String) values[1], (String) values[2], (String) values[3], (String) values[4], ((Boolean) values[5]).booleanValue(), ((Integer) values[6]).intValue()), new Object[]{"", null, "", "", "", true, 1});
+        InvocationOutcome method2Outcome = capture(values -> subject.method2((String) values[0], (String) values[1], (String) values[2], (String) values[3], (String) values[4], ((Boolean) values[5]).booleanValue(), ((Integer) values[6]).intValue()), new Object[]{"", null, "", "", "", true, 1});
+
+        assertCoreOutcome(
+            method1Outcome,
+            "OK",
+            "String(CSA=)",
+            null,
+            "java.lang.Object[][String(),null,String(),String(),String(),Boolean(true),Integer(1)]",
+            "java.lang.Object[][String(),null,String(),String(),String(),Boolean(true),Integer(1)]"
+        );
+        assertCoreOutcome(
+            method2Outcome,
+            "OK",
+            "String(CQ==)",
+            null,
+            "java.lang.Object[][String(),null,String(),String(),String(),Boolean(true),Integer(1)]",
+            "java.lang.Object[][String(),null,String(),String(),String(),Boolean(true),Integer(1)]"
+        );
+        assertTextEquals("stdout", "", method1Outcome.stdout);
+        assertTextEquals("stdout", "", method2Outcome.stdout);
+        assertTextEquals("stderr", "", method1Outcome.stderr);
+        assertTextEquals("stderr", "", method2Outcome.stderr);
+    }
+}

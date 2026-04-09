@@ -1,0 +1,53 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static unverified.ClonePairListStringTestSupport.*;
+
+class ClonePair1956NoDifferenceTest {
+
+    private final ClonePair1956 subject = new ClonePair1956();
+
+    // No separating input was found; these tests document representative equivalent paths.
+    @Test
+    void noDifferenceFoundForRepresentativeReturnValues() {
+        assertBothMethodsReturn("", list());
+        assertBothMethodsReturn("alpha", list("alpha"));
+        assertBothMethodsReturn("alpha, beta", list("alpha", "beta"));
+        assertBothMethodsReturn("beta, gamma", list("beta", "gamma"));
+    }
+
+    @Test
+    void noDifferenceFoundForRepresentativeExceptionOutcomes() {
+        assertBothMethodsThrow("java.lang.NullPointerException", null);
+    }
+
+    private void assertBothMethodsReturn(String expected, java.util.List input) {
+        InvocationOutcome method1Outcome = capture(subject::method1, input);
+        InvocationOutcome method2Outcome = capture(subject::method2, input);
+
+        assertEquals("OK", method1Outcome.status);
+        assertEquals("OK", method2Outcome.status);
+        assertEquals(expected, method1Outcome.value);
+        assertEquals(expected, method2Outcome.value);
+        assertEquals(method1Outcome.stdout, method2Outcome.stdout);
+        assertEquals(method1Outcome.stderr, method2Outcome.stderr);
+        assertInputStatePreserved(method1Outcome);
+        assertInputStatePreserved(method2Outcome);
+    }
+
+    private void assertBothMethodsThrow(String exceptionClass, java.util.List input) {
+        InvocationOutcome method1Outcome = capture(subject::method1, input);
+        InvocationOutcome method2Outcome = capture(subject::method2, input);
+
+        assertEquals("EX", method1Outcome.status);
+        assertEquals("EX", method2Outcome.status);
+        assertEquals(exceptionClass, method1Outcome.exceptionClass);
+        assertEquals(exceptionClass, method2Outcome.exceptionClass);
+        assertEquals(method1Outcome.stdout, method2Outcome.stdout);
+        assertEquals(method1Outcome.stderr, method2Outcome.stderr);
+        assertInputStatePreserved(method1Outcome);
+        assertInputStatePreserved(method2Outcome);
+    }
+}

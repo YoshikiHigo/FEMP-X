@@ -1,0 +1,17 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair987DifferenceFindingTest {
+
+    private final ClonePair987 subject = new ClonePair987();
+
+    @Test
+    void methodsHandleNaNPairsDifferently() {
+        assertFalse(subject.method1(Double.NaN, Double.NaN, 0.1));
+        assertTrue(subject.method2(Double.NaN, Double.NaN, 0.1));
+    }
+}
