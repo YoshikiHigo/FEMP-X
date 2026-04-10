@@ -1,0 +1,39 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static unverified.ClonePairGenericInvocationTestSupport.*;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair12291DifferenceFindingTest {
+
+    private final ClonePair12291 subject = new ClonePair12291();
+
+    @Test
+    void methodsDisagreeOnGeneratedInput() {
+        InvocationOutcome method1Outcome = capture(values -> subject.method1((java.util.Collection) values[0], (String) values[1]), new Object[]{list("alpha", "beta"), null});
+        InvocationOutcome method2Outcome = capture(values -> subject.method2((java.util.Collection) values[0], (String) values[1]), new Object[]{list("alpha", "beta"), null});
+
+        assertCoreOutcome(
+            method1Outcome,
+            "OK",
+            "String(YWxwaGFudWxsYmV0YQ==)",
+            null,
+            "java.lang.Object[][java.util.ArrayList[String(YWxwaGE=),String(YmV0YQ==)],null]",
+            "java.lang.Object[][java.util.ArrayList[String(YWxwaGE=),String(YmV0YQ==)],null]"
+        );
+        assertCoreOutcome(
+            method2Outcome,
+            "OK",
+            "String(YWxwaGEsYmV0YQ==)",
+            null,
+            "java.lang.Object[][java.util.ArrayList[String(YWxwaGE=),String(YmV0YQ==)],null]",
+            "java.lang.Object[][java.util.ArrayList[String(YWxwaGE=),String(YmV0YQ==)],null]"
+        );
+        assertTextEquals("stdout", "", method1Outcome.stdout);
+        assertTextEquals("stdout", "", method2Outcome.stdout);
+        assertTextEquals("stderr", "", method1Outcome.stderr);
+        assertTextEquals("stderr", "", method2Outcome.stderr);
+    }
+}

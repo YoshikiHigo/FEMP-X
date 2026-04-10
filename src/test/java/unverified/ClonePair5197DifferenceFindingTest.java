@@ -1,0 +1,39 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static unverified.ClonePairGenericInvocationTestSupport.*;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair5197DifferenceFindingTest {
+
+    private final ClonePair5197 subject = new ClonePair5197();
+
+    @Test
+    void methodsDisagreeOnGeneratedInput() {
+        InvocationOutcome method1Outcome = capture(values -> subject.method1((String) values[0], ((Character) values[1]).charValue()), new Object[]{"a.b.c", '.'});
+        InvocationOutcome method2Outcome = capture(values -> subject.method2((String) values[0], ((Character) values[1]).charValue()), new Object[]{"a.b.c", '.'});
+
+        assertCoreOutcome(
+            method1Outcome,
+            "OK",
+            "Integer(1)",
+            null,
+            "java.lang.Object[][String(YS5iLmM=),Character(46)]",
+            "java.lang.Object[][String(YS5iLmM=),Character(46)]"
+        );
+        assertCoreOutcome(
+            method2Outcome,
+            "OK",
+            "Integer(3)",
+            null,
+            "java.lang.Object[][String(YS5iLmM=),Character(46)]",
+            "java.lang.Object[][String(YS5iLmM=),Character(46)]"
+        );
+        assertTextEquals("stdout", "", method1Outcome.stdout);
+        assertTextEquals("stdout", "", method2Outcome.stdout);
+        assertTextEquals("stderr", "", method1Outcome.stderr);
+        assertTextEquals("stderr", "", method2Outcome.stderr);
+    }
+}

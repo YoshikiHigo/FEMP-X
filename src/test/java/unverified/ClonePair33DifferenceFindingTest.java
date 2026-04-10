@@ -1,0 +1,19 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
+
+class ClonePair33DifferenceFindingTest {
+
+    private final ClonePair33 subject = new ClonePair33();
+
+    @Test
+    void methodsInterpretTrailingDotZeroStringsDifferently() {
+        String input = "42.0";
+
+        assertEquals(Long.valueOf(42L), subject.method1(input));
+        assertNull(subject.method2(input));
+    }
+}

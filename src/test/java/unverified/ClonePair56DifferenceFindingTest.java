@@ -1,0 +1,19 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static unverified.ClonePairDifferenceTestSupport.assertThrowsByName;
+
+class ClonePair56DifferenceFindingTest {
+
+    private final ClonePair56 subject = new ClonePair56();
+
+    @Test
+    void methodsDisagreeWhenTheFirstListElementIsNull() {
+        java.util.List<String> input = java.util.Arrays.asList((String) null, "b");
+
+        assertEquals("null,b", subject.method1(input, ","));
+        assertThrowsByName("java.lang.NullPointerException", () -> subject.method2(input, ","));
+    }
+}

@@ -1,0 +1,17 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair983DifferenceFindingTest {
+
+    private final ClonePair983 subject = new ClonePair983();
+
+    @Test
+    void methodsHandleInfiniteInputsDifferently() {
+        assertFalse(subject.method1(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY, 0.0));
+        assertTrue(subject.method2(Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY, 0.0));
+    }
+}

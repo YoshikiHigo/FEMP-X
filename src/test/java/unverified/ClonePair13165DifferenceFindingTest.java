@@ -1,0 +1,39 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static unverified.ClonePairGenericInvocationTestSupport.*;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair13165DifferenceFindingTest {
+
+    private final ClonePair13165 subject = new ClonePair13165();
+
+    @Test
+    void methodsDisagreeOnGeneratedInput() {
+        InvocationOutcome method1Outcome = capture(values -> subject.method1((java.util.Calendar) values[0], (java.util.Calendar) values[1]), new Object[]{calendar(86_400_000L), calendar(0L)});
+        InvocationOutcome method2Outcome = capture(values -> subject.method2((java.util.Calendar) values[0], (java.util.Calendar) values[1]), new Object[]{calendar(86_400_000L), calendar(0L)});
+
+        assertCoreOutcome(
+            method1Outcome,
+            "OK",
+            "Boolean(true)",
+            null,
+            "java.lang.Object[][Calendar(86400000,VVRD),Calendar(0,VVRD)]",
+            "java.lang.Object[][Calendar(86400000,VVRD),Calendar(0,VVRD)]"
+        );
+        assertCoreOutcome(
+            method2Outcome,
+            "OK",
+            "Boolean(false)",
+            null,
+            "java.lang.Object[][Calendar(86400000,VVRD),Calendar(0,VVRD)]",
+            "java.lang.Object[][Calendar(86400000,VVRD),Calendar(0,VVRD)]"
+        );
+        assertTextEquals("stdout", "", method1Outcome.stdout);
+        assertTextEquals("stdout", "", method2Outcome.stdout);
+        assertTextEquals("stderr", "", method1Outcome.stderr);
+        assertTextEquals("stderr", "", method2Outcome.stderr);
+    }
+}

@@ -1,0 +1,41 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static unverified.ClonePairGenericInvocationTestSupport.*;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair5547DifferenceFindingTest {
+
+    private final ClonePair5547 subject = new ClonePair5547();
+
+    @Test
+    void methodsDisagreeOnGeneratedInput() {
+        InvocationOutcome method1Outcome = capture(values -> subject.method1((String) values[0], ((Boolean) values[1]).booleanValue()), new Object[]{"", false});
+        InvocationOutcome method2Outcome = capture(values -> subject.method2((String) values[0], ((Boolean) values[1]).booleanValue()), new Object[]{"", false});
+        String lineSeparator = System.lineSeparator();
+
+        assertCoreOutcome(
+            method1Outcome,
+            "OK",
+            "Boolean(false)",
+            null,
+            "java.lang.Object[][String(),Boolean(false)]",
+            "java.lang.Object[][String(),Boolean(false)]"
+        );
+        assertCoreOutcome(
+            method2Outcome,
+            "OK",
+            "Boolean(false)",
+            null,
+            "java.lang.Object[][String(),Boolean(false)]",
+            "java.lang.Object[][String(),Boolean(false)]"
+        );
+        assertNotEquals(method1Outcome.stdout, method2Outcome.stdout);
+        assertTextEquals("stdout", "", method1Outcome.stdout);
+        assertTextEquals("stdout", "*** Error while parsing boolean attribute value 'false'" + lineSeparator, method2Outcome.stdout);
+        assertTextEquals("stderr", "", method1Outcome.stderr);
+        assertTextEquals("stderr", "", method2Outcome.stderr);
+    }
+}

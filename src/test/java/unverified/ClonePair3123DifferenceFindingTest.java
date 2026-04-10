@@ -1,0 +1,28 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static unverified.ClonePairStringDoubleTestSupport.*;
+
+class ClonePair3123DifferenceFindingTest {
+
+    private final ClonePair3123 subject = new ClonePair3123();
+
+    @Test
+    void methodsDisagreeOnGeneratedInput() {
+        InvocationOutcome method1Outcome = capture(subject::method1, "3*4");
+        InvocationOutcome method2Outcome = capture(subject::method2, "3*4");
+
+        assertEquals("EX", method1Outcome.status);
+        assertEquals("java.lang.NullPointerException", method1Outcome.exceptionClass);
+        assertNull(method1Outcome.value);
+        assertEquals("EX", method2Outcome.status);
+        assertEquals("java.lang.NumberFormatException", method2Outcome.exceptionClass);
+        assertNull(method2Outcome.value);
+        assertEquals(method1Outcome.stdout, method2Outcome.stdout);
+        assertEquals(method1Outcome.stderr, method2Outcome.stderr);
+    }
+}

@@ -1,0 +1,38 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static unverified.ClonePairGenericInvocationTestSupport.*;
+
+class ClonePair3788DifferenceFindingTest {
+
+    private final ClonePair3788 subject = new ClonePair3788();
+
+    @Test
+    void methodsDisagreeOnGeneratedInput() {
+        InvocationOutcome method1Outcome = capture(values -> subject.method1((String) values[0], (String) values[1]), new Object[]{"a.b", "a"});
+        InvocationOutcome method2Outcome = capture(values -> subject.method2((String) values[0], (String) values[1]), new Object[]{"a.b", "a"});
+        String lineSeparator = System.lineSeparator();
+
+        assertOutcome(
+            method1Outcome,
+            "OK",
+            "Boolean(false)",
+            null,
+            "",
+            "",
+            "java.lang.Object[][String(YS5i),String(YQ==)]",
+            "java.lang.Object[][String(YS5i),String(YQ==)]"
+        );
+        assertOutcome(
+            method2Outcome,
+            "OK",
+            "Boolean(false)",
+            null,
+            "Compare failed: lengths differ" + lineSeparator,
+            "",
+            "java.lang.Object[][String(YS5i),String(YQ==)]",
+            "java.lang.Object[][String(YS5i),String(YQ==)]"
+        );
+    }
+}
