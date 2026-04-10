@@ -1,0 +1,24 @@
+package equivalent;
+
+import org.junit.jupiter.api.Test;
+import org.opentest4j.AssertionFailedError;
+
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class ClonePair3139DifferenceFindingTest {
+
+    private final ClonePair3139 subject = new ClonePair3139();
+
+    @Test
+    void methodsDisagreeOnRecheckedInput() {
+        float method1Result = subject.method1(new float[]{0.0f, -0.0f});
+        assertEquals(Float.floatToRawIntBits(-0.0f), Float.floatToRawIntBits(method1Result));
+        float method2Result = subject.method2(new float[]{0.0f, -0.0f});
+        assertEquals(Float.floatToRawIntBits(0.0f), Float.floatToRawIntBits(method2Result));
+    }
+}

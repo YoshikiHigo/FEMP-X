@@ -1,0 +1,22 @@
+package equivalent;
+
+import org.junit.jupiter.api.Test;
+import org.opentest4j.AssertionFailedError;
+
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class ClonePair3111DifferenceFindingTest {
+
+    private final ClonePair3111 subject = new ClonePair3111();
+
+    @Test
+    void methodsDisagreeOnRecheckedInput() {
+        assertThrows(java.lang.NullPointerException.class, () -> subject.method1(null, new Object()));
+        assertThrows(java.lang.ClassCastException.class, () -> subject.method2(null, new Object()));
+    }
+}
