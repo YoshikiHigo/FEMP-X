@@ -1,0 +1,40 @@
+package inequivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static inequivalent.ClonePairGenericInvocationTestSupport.*;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair8611DifferenceFindingTest {
+
+    private final ClonePair8611 subject = new ClonePair8611();
+
+    @Test
+    void methodsDisagreeOnGeneratedInput() {
+        Object[] inputs = new Object[]{0.5, 0.5, 1.0, -1.0, -1.0, -1.0};
+        InvocationOutcome method1Outcome = capture(values -> subject.method1(((Double) values[0]).doubleValue(), ((Double) values[1]).doubleValue(), ((Double) values[2]).doubleValue(), ((Double) values[3]).doubleValue(), ((Double) values[4]).doubleValue(), ((Double) values[5]).doubleValue()), inputs);
+        InvocationOutcome method2Outcome = capture(values -> subject.method2(((Double) values[0]).doubleValue(), ((Double) values[1]).doubleValue(), ((Double) values[2]).doubleValue(), ((Double) values[3]).doubleValue(), ((Double) values[4]).doubleValue(), ((Double) values[5]).doubleValue()), inputs);
+
+        assertCoreOutcome(
+            method1Outcome,
+            "OK",
+            "Double(3.6)",
+            null,
+            "java.lang.Object[][Double(0.5),Double(0.5),Double(1.0),Double(-1.0),Double(-1.0),Double(-1.0)]",
+            "java.lang.Object[][Double(0.5),Double(0.5),Double(1.0),Double(-1.0),Double(-1.0),Double(-1.0)]"
+        );
+        assertCoreOutcome(
+            method2Outcome,
+            "OK",
+            "Double(3.6000000000000005)",
+            null,
+            "java.lang.Object[][Double(0.5),Double(0.5),Double(1.0),Double(-1.0),Double(-1.0),Double(-1.0)]",
+            "java.lang.Object[][Double(0.5),Double(0.5),Double(1.0),Double(-1.0),Double(-1.0),Double(-1.0)]"
+        );
+        assertTextEquals("stdout", "", method1Outcome.stdout);
+        assertTextEquals("stdout", "", method2Outcome.stdout);
+        assertTextEquals("stderr", "", method1Outcome.stderr);
+        assertTextEquals("stderr", "", method2Outcome.stderr);
+    }
+}
