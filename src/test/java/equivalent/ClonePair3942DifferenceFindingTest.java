@@ -1,0 +1,39 @@
+package equivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static equivalent.ClonePairGenericInvocationTestSupport.*;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair3942DifferenceFindingTest {
+
+    private final ClonePair3942 subject = new ClonePair3942();
+
+    @Test
+    void methodsDisagreeOnGeneratedInput() {
+        InvocationOutcome method1Outcome = capture(values -> subject.method1((byte[]) values[0], (byte[]) values[1]), new Object[]{new byte[]{1, 2, 3, 4}, new byte[]{0, 1, 2, 3, 4, 5, 6, 7}});
+        InvocationOutcome method2Outcome = capture(values -> subject.method2((byte[]) values[0], (byte[]) values[1]), new Object[]{new byte[]{1, 2, 3, 4}, new byte[]{0, 1, 2, 3, 4, 5, 6, 7}});
+
+        assertCoreOutcome(
+            method1Outcome,
+            "OK",
+            "Integer(1)",
+            null,
+            "java.lang.Object[][byte[][1, 2, 3, 4],byte[][0, 1, 2, 3, 4, 5, 6, 7]]",
+            "java.lang.Object[][byte[][1, 2, 3, 4],byte[][0, 1, 2, 3, 4, 5, 6, 7]]"
+        );
+        assertCoreOutcome(
+            method2Outcome,
+            "OK",
+            "Integer(-1)",
+            null,
+            "java.lang.Object[][byte[][1, 2, 3, 4],byte[][0, 1, 2, 3, 4, 5, 6, 7]]",
+            "java.lang.Object[][byte[][1, 2, 3, 4],byte[][0, 1, 2, 3, 4, 5, 6, 7]]"
+        );
+        assertTextEquals("stdout", "", method1Outcome.stdout);
+        assertTextEquals("stdout", "", method2Outcome.stdout);
+        assertTextEquals("stderr", "", method1Outcome.stderr);
+        assertTextEquals("stderr", "", method2Outcome.stderr);
+    }
+}

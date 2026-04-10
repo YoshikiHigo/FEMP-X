@@ -1,0 +1,40 @@
+package equivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static equivalent.ClonePairGenericInvocationTestSupport.*;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair8213DifferenceFindingTest {
+
+    private final ClonePair8213 subject = new ClonePair8213();
+
+    @Test
+    void methodsDisagreeOnGeneratedInput() {
+        Object[] inputs = new Object[]{"1", 0.5, -1.0, false, false, " ", list()};
+        InvocationOutcome method1Outcome = capture(values -> subject.method1((String) values[0], ((Double) values[1]).doubleValue(), ((Double) values[2]).doubleValue(), ((Boolean) values[3]).booleanValue(), ((Boolean) values[4]).booleanValue(), (String) values[5], (java.util.ArrayList) values[6]), inputs);
+        InvocationOutcome method2Outcome = capture(values -> subject.method2((String) values[0], ((Double) values[1]).doubleValue(), ((Double) values[2]).doubleValue(), ((Boolean) values[3]).booleanValue(), ((Boolean) values[4]).booleanValue(), (String) values[5], (java.util.ArrayList) values[6]), inputs);
+
+        assertCoreOutcome(
+            method1Outcome,
+            "OK",
+            "Boolean(false)",
+            null,
+            "java.lang.Object[][String(MQ==),Double(0.5),Double(-1.0),Boolean(false),Boolean(false),String(IA==),java.util.ArrayList[]]",
+            "java.lang.Object[][String(MQ==),Double(0.5),Double(-1.0),Boolean(false),Boolean(false),String(IA==),java.util.ArrayList[String(ICBpcyBvdXQgb2YgdGhlIGludGVydmFsIF0wLjU7LTEuMFs=)]]"
+        );
+        assertCoreOutcome(
+            method2Outcome,
+            "OK",
+            "Boolean(false)",
+            null,
+            "java.lang.Object[][String(MQ==),Double(0.5),Double(-1.0),Boolean(false),Boolean(false),String(IA==),java.util.ArrayList[]]",
+            "java.lang.Object[][String(MQ==),Double(0.5),Double(-1.0),Boolean(false),Boolean(false),String(IA==),java.util.ArrayList[String(ICBpcyBvdXQgdGhlIGludGVydmFsIF0wLjU7LTEuMFs=)]]"
+        );
+        assertTextEquals("stdout", "", method1Outcome.stdout);
+        assertTextEquals("stdout", "", method2Outcome.stdout);
+        assertTextEquals("stderr", "", method1Outcome.stderr);
+        assertTextEquals("stderr", "", method2Outcome.stderr);
+    }
+}
