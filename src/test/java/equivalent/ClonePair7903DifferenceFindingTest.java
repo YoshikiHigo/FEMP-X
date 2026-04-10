@@ -1,0 +1,22 @@
+package equivalent;
+
+import org.junit.jupiter.api.Test;
+import org.opentest4j.AssertionFailedError;
+
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class ClonePair7903DifferenceFindingTest {
+
+    private final ClonePair7903 subject = new ClonePair7903();
+
+    @Test
+    void methodsDisagreeOnRecheckedInput() {
+        assertEquals(5, subject.method1(Integer.MIN_VALUE, 3));
+        assertEquals(1, subject.method2(Integer.MIN_VALUE, 3));
+    }
+}

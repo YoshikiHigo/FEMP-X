@@ -1,0 +1,22 @@
+package equivalent;
+
+import org.junit.jupiter.api.Test;
+import org.opentest4j.AssertionFailedError;
+
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class ClonePair3494DifferenceFindingTest {
+
+    private final ClonePair3494 subject = new ClonePair3494();
+
+    @Test
+    void methodsDisagreeOnRecheckedInput() {
+        assertTrue(subject.method1(new int[]{}, Integer.MIN_VALUE, new int[]{}, 4, -1));
+        assertThrows(java.lang.ArrayIndexOutOfBoundsException.class, () -> subject.method2(new int[]{}, Integer.MIN_VALUE, new int[]{}, 4, -1));
+    }
+}

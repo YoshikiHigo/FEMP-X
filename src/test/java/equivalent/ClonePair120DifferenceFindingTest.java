@@ -1,0 +1,23 @@
+package equivalent;
+
+import org.junit.jupiter.api.Test;
+import org.opentest4j.AssertionFailedError;
+
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class ClonePair120DifferenceFindingTest {
+
+    private final ClonePair120 subject = new ClonePair120();
+
+    @Test
+    void methodsDisagreeOnRecheckedInput() {
+        assertEquals(Double.MAX_VALUE, subject.method1(Double.MAX_VALUE, 0.0d, 0.0d));
+        double method2Result = subject.method2(Double.MAX_VALUE, 0.0d, 0.0d);
+        assertTrue(Double.isNaN(method2Result));
+    }
+}

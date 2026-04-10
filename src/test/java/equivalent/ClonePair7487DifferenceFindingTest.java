@@ -1,0 +1,22 @@
+package equivalent;
+
+import org.junit.jupiter.api.Test;
+import org.opentest4j.AssertionFailedError;
+
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class ClonePair7487DifferenceFindingTest {
+
+    private final ClonePair7487 subject = new ClonePair7487();
+
+    @Test
+    void methodsDisagreeOnRecheckedInput() {
+        assertEquals("_", subject.method1("_", Integer.MIN_VALUE, '\n'));
+        assertThrows(java.lang.OutOfMemoryError.class, () -> subject.method2("_", Integer.MIN_VALUE, '\n'));
+    }
+}

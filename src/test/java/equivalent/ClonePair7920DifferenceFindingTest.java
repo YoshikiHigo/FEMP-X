@@ -1,0 +1,26 @@
+package equivalent;
+
+import org.junit.jupiter.api.Test;
+import org.opentest4j.AssertionFailedError;
+
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class ClonePair7920DifferenceFindingTest {
+
+    private final ClonePair7920 subject = new ClonePair7920();
+
+    @Test
+    void methodsDisagreeOnRecheckedInput() {
+        ArrayList<String> method1Messages = new ArrayList<>();
+        assertFalse(subject.method1("0", 0, 0, false, false, null, method1Messages));
+        assertEquals(List.of("null is out of the interval ]0;0["), method1Messages);
+        ArrayList<String> method2Messages = new ArrayList<>();
+        assertFalse(subject.method2("0", 0, 0, false, false, null, method2Messages));
+        assertEquals(List.of("null is out the interval ]0;0["), method2Messages);
+    }
+}
