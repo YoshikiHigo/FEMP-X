@@ -1,0 +1,31 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static unverified.ClonePairGenericInvocationTestSupport.*;
+
+class ClonePair5786NoDifferenceTest {
+
+    private final ClonePair5786 subject = new ClonePair5786();
+
+    // No separating input was found; these tests document representative equivalent paths.
+    @Test
+    void noDifferenceFoundForRepresentativeInputs() {
+        assertEquivalent(
+            capture(values -> subject.method1((String) values[0], (Object) values[1], (Object) values[2]), new Object[]{"", Integer.valueOf(7), Integer.valueOf(7)}),
+            capture(values -> subject.method2((String) values[0], (Object) values[1], (Object) values[2]), new Object[]{"", Integer.valueOf(7), Integer.valueOf(7)})
+        );
+        assertEquivalent(
+            capture(values -> subject.method1((String) values[0], (Object) values[1], (Object) values[2]), new Object[]{null, Integer.valueOf(7), Integer.valueOf(7)}),
+            capture(values -> subject.method2((String) values[0], (Object) values[1], (Object) values[2]), new Object[]{null, Integer.valueOf(7), Integer.valueOf(7)})
+        );
+        assertEquivalent(
+            capture(values -> subject.method1((String) values[0], (Object) values[1], (Object) values[2]), new Object[]{"foo", Integer.valueOf(7), Integer.valueOf(7)}),
+            capture(values -> subject.method2((String) values[0], (Object) values[1], (Object) values[2]), new Object[]{"foo", Integer.valueOf(7), Integer.valueOf(7)})
+        );
+        assertEquivalent(
+            capture(values -> subject.method1((String) values[0], (Object) values[1], (Object) values[2]), new Object[]{"foo/bar", Integer.valueOf(7), Integer.valueOf(7)}),
+            capture(values -> subject.method2((String) values[0], (Object) values[1], (Object) values[2]), new Object[]{"foo/bar", Integer.valueOf(7), Integer.valueOf(7)})
+        );
+    }
+}

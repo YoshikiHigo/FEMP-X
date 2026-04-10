@@ -15,6 +15,7 @@ class ClonePair2981DifferenceFindingTest {
     void methodsDisagreeOnGeneratedInput() {
         InvocationOutcome method1Outcome = capture(subject::method1, " ");
         InvocationOutcome method2Outcome = capture(subject::method2, " ");
+        String lineSeparator = System.lineSeparator();
 
         assertEquals("OK", method1Outcome.status);
         assertEquals(Double.valueOf("0.0"), method1Outcome.value);
@@ -23,7 +24,7 @@ class ClonePair2981DifferenceFindingTest {
         assertEquals(Double.valueOf("0.0"), method2Outcome.value);
         assertNull(method2Outcome.exceptionClass);
         assertNotEquals(method1Outcome.stdout, method2Outcome.stdout);
-        assertEquals("NumberFormatException: empty String\n", method1Outcome.stdout);
+        assertEquals("NumberFormatException: empty String" + lineSeparator, method1Outcome.stdout);
         assertEquals("", method2Outcome.stdout);
         assertEquals(method1Outcome.stderr, method2Outcome.stderr);
     }

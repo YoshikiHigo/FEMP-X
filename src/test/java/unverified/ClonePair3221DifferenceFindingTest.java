@@ -12,6 +12,7 @@ class ClonePair3221DifferenceFindingTest {
     void methodsDisagreeOnGeneratedInput() {
         InvocationOutcome method1Outcome = capture(values -> subject.method1((Object) values[0], (Object) values[1]), new Object[]{Integer.valueOf(7), date(0L)});
         InvocationOutcome method2Outcome = capture(values -> subject.method2((Object) values[0], (Object) values[1]), new Object[]{Integer.valueOf(7), date(0L)});
+        String lineSeparator = System.lineSeparator();
 
         assertOutcome(
             method1Outcome,
@@ -28,7 +29,7 @@ class ClonePair3221DifferenceFindingTest {
             "OK",
             "Integer(-29)",
             null,
-            "Warning: compared values: 7, Thu Jan 01 09:00:00 JST 1970 have different types\n",
+            "Warning: compared values: 7, Thu Jan 01 09:00:00 JST 1970 have different types" + lineSeparator,
             "",
             "java.lang.Object[][Integer(7),Date(0)]",
             "java.lang.Object[][Integer(7),Date(0)]"

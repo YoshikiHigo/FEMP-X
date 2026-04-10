@@ -12,6 +12,7 @@ class ClonePair3554DifferenceFindingTest {
     void methodsDisagreeOnGeneratedInput() {
         InvocationOutcome method1Outcome = capture(values -> subject.method1((int[]) values[0], (int[]) values[1]), new Object[]{new int[]{0}, new int[]{}});
         InvocationOutcome method2Outcome = capture(values -> subject.method2((int[]) values[0], (int[]) values[1]), new Object[]{new int[]{0}, new int[]{}});
+        String lineSeparator = System.lineSeparator();
 
         assertOutcome(
             method1Outcome,
@@ -28,7 +29,7 @@ class ClonePair3554DifferenceFindingTest {
             "OK",
             "Boolean(false)",
             null,
-            "\nLength of two configurations are not the same, can not be compared!\n",
+            "\nLength of two configurations are not the same, can not be compared!" + lineSeparator,
             "",
             "java.lang.Object[][int[][0],int[][]]",
             "java.lang.Object[][int[][0],int[][]]"
