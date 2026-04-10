@@ -1,0 +1,36 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
+import java.util.Random;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+
+class ClonePair6272DifferenceFindingTest {
+
+    private final ClonePair6272 subject = new ClonePair6272();
+
+    @Test
+    void methodsDisagreeOnGeneratedInput() {
+        Random method1Random = new Random(0L);
+        Random method2Random = new Random(0L);
+
+        boolean[][] method1Result = subject.method1(3, 1.0, method1Random);
+        boolean[][] method2Result = subject.method2(3, 1.0, method2Random);
+
+        assertEquals(
+            "[[false, true, true], [true, false, true], [true, true, false]]",
+            Arrays.deepToString(method1Result)
+        );
+        assertEquals(
+            "[[false, true, true], [true, false, false], [true, false, false]]",
+            Arrays.deepToString(method2Result)
+        );
+        assertNotEquals(Arrays.deepToString(method1Result), Arrays.deepToString(method2Result));
+
+        assertEquals(0.3851891847407185, method1Random.nextDouble());
+        assertEquals(0.6374174253501083, method2Random.nextDouble());
+    }
+}

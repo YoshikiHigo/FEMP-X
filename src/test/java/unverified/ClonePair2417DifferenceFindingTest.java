@@ -16,6 +16,7 @@ class ClonePair2417DifferenceFindingTest {
     void methodsDisagreeOnGeneratedInput() {
         InvocationOutcome method1Outcome = capture(subject::method1, new byte[]{1});
         InvocationOutcome method2Outcome = capture(subject::method2, new byte[]{1});
+        String lineSeparator = System.lineSeparator();
 
         assertEquals("EX", method1Outcome.status);
         assertEquals("java.lang.ArrayIndexOutOfBoundsException", method1Outcome.exceptionClass);
@@ -24,7 +25,7 @@ class ClonePair2417DifferenceFindingTest {
         assertEquals("java.lang.ArrayIndexOutOfBoundsException", method2Outcome.exceptionClass);
         assertNull(method2Outcome.value);
         assertNotEquals(method1Outcome.stdout, method2Outcome.stdout);
-        assertEquals("1\n", method1Outcome.stdout);
+        assertEquals("1" + lineSeparator, method1Outcome.stdout);
         assertEquals("", method2Outcome.stdout);
         assertEquals(method1Outcome.stderr, method2Outcome.stderr);
         assertInputStatePreserved(method1Outcome);

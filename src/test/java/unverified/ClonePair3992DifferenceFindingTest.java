@@ -1,9 +1,11 @@
 package unverified;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static unverified.ClonePairGenericInvocationTestSupport.*;
 
+@Tag("timeout")
 class ClonePair3992DifferenceFindingTest {
 
     private final ClonePair3992 subject = new ClonePair3992();

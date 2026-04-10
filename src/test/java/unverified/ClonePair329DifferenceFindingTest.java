@@ -17,6 +17,7 @@ class ClonePair329DifferenceFindingTest {
     void methodsDisagreeOnStandardOutputSideEffectsForGeneratedInput() {
         InvocationOutcome method1Outcome = capture(subject::method1, new byte[]{1}, new byte[]{2});
         InvocationOutcome method2Outcome = capture(subject::method2, new byte[]{1}, new byte[]{2});
+        String lineSeparator = System.lineSeparator();
 
         assertEquals("OK", method1Outcome.status);
         assertEquals(false, method1Outcome.value);
@@ -25,8 +26,8 @@ class ClonePair329DifferenceFindingTest {
         assertEquals(false, method2Outcome.value);
         assertNull(method2Outcome.exceptionClass);
         assertNotEquals(method1Outcome.stdout, method2Outcome.stdout);
-        assertEquals("Value error at 0 : 1 != 2\n", method1Outcome.stdout);
-        assertEquals("Compare failed: bytes at 0 differ [1] [2]\n", method2Outcome.stdout);
+        assertEquals("Value error at 0 : 1 != 2" + lineSeparator, method1Outcome.stdout);
+        assertEquals("Compare failed: bytes at 0 differ [1] [2]" + lineSeparator, method2Outcome.stdout);
         assertEquals(method1Outcome.stderr, method2Outcome.stderr);
         assertInputStatePreserved(method1Outcome);
         assertInputStatePreserved(method2Outcome);

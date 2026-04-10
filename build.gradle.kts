@@ -16,5 +16,27 @@ dependencies {
 }
 
 tasks.test {
-    useJUnitPlatform()
+    useJUnitPlatform {
+        excludeTags("timeout")
+    }
+}
+
+val timeoutTest by tasks.registering(Test::class) {
+    description = "Runs timeout-sensitive tests in isolated JVMs."
+    group = "verification"
+
+    testClassesDirs = sourceSets.test.get().output.classesDirs
+    classpath = sourceSets.test.get().runtimeClasspath
+
+    useJUnitPlatform {
+        includeTags("timeout")
+    }
+
+    forkEvery = 1
+    maxParallelForks = 1
+    shouldRunAfter(tasks.test)
+}
+
+tasks.check {
+    dependsOn(timeoutTest)
 }

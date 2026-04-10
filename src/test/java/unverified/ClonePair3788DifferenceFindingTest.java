@@ -12,6 +12,7 @@ class ClonePair3788DifferenceFindingTest {
     void methodsDisagreeOnGeneratedInput() {
         InvocationOutcome method1Outcome = capture(values -> subject.method1((String) values[0], (String) values[1]), new Object[]{"a.b", "a"});
         InvocationOutcome method2Outcome = capture(values -> subject.method2((String) values[0], (String) values[1]), new Object[]{"a.b", "a"});
+        String lineSeparator = System.lineSeparator();
 
         assertOutcome(
             method1Outcome,
@@ -28,7 +29,7 @@ class ClonePair3788DifferenceFindingTest {
             "OK",
             "Boolean(false)",
             null,
-            "Compare failed: lengths differ\n",
+            "Compare failed: lengths differ" + lineSeparator,
             "",
             "java.lang.Object[][String(YS5i),String(YQ==)]",
             "java.lang.Object[][String(YS5i),String(YQ==)]"

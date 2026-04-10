@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import os
 import subprocess
 import tempfile
 from dataclasses import dataclass
@@ -19,6 +20,8 @@ MAIN_SOURCE = ROOT / "src" / "main" / "java"
 TEST_SOURCE = ROOT / "src" / "test" / "java" / "unverified"
 SUPPORT_SOURCE = TEST_SOURCE / "ClonePairGenericInvocationTestSupport.java"
 PACKAGE_NAME = "unverified"
+MAX_EXACT_STREAM_ASSERT_CHARS = 2048
+STREAM_PREFIX_ASSERT_CHARS = 128
 
 
 @dataclass(frozen=True)
@@ -86,6 +89,20 @@ def java_string(value: str | None) -> str:
         "\b": "\\b",
     }
     return '"' + "".join(escapes.get(char, char) for char in value) + '"'
+
+
+def exact_stream_assertion(label: str, expected: str, access: str) -> str:
+    return f"        assertTextEquals(\"{label}\", {java_string(expected)}, {access});"
+
+
+def approximate_stream_assertions(label: str, expected: str, access: str) -> list[str]:
+    if not expected:
+        return [exact_stream_assertion(label, expected, access)]
+    snippet = expected[:STREAM_PREFIX_ASSERT_CHARS]
+    return [
+        f"        assertTrue(!{access}.isEmpty());",
+        f"        assertTextContains(\"{label}\", {java_string(snippet)}, {access});",
+    ]
 
 
 def normalize_signature(methods: dict[str, gen.MethodInfo]) -> tuple[str, tuple[str, ...]]:
@@ -352,7 +369,7 @@ def build_oracle_source(class_id: int, methods: dict[str, gen.MethodInfo], cases
         "    }",
         "",
         "    static void emit(int index, InvocationOutcome method1, InvocationOutcome method2) {",
-        '        System.out.println(index + "\\t" + format(method1) + "\\t" + format(method2));',
+        '        System.out.println("CASE\\t" + index + "\\t" + format(method1) + "\\t" + format(method2));',
         "    }",
         "",
         "    static String format(InvocationOutcome outcome) {",
@@ -399,7 +416,7 @@ def run_oracle(
                 "-d",
                 temp_dir,
                 "-sourcepath",
-                str(MAIN_SOURCE) + ":" + str(ROOT / "src" / "test" / "java"),
+                str(MAIN_SOURCE) + os.pathsep + str(ROOT / "src" / "test" / "java"),
                 str(oracle_path),
                 str(SUPPORT_SOURCE),
             ],
@@ -412,7 +429,7 @@ def run_oracle(
             raise RuntimeError(compile_result.stderr)
 
         run_result = subprocess.run(
-            ["java", "-cp", temp_dir, f"{PACKAGE_NAME}.ClonePair{class_id}GenericOracle"],
+            ["java", "-ea", "-cp", temp_dir, f"{PACKAGE_NAME}.ClonePair{class_id}GenericOracle"],
             cwd=ROOT,
             capture_output=True,
             text=True,
@@ -423,25 +440,27 @@ def run_oracle(
 
     outcomes: list[CaseOutcome] = []
     for raw_line in run_result.stdout.splitlines():
+        if not raw_line.startswith("CASE\t"):
+            continue
         parts = raw_line.split("\t")
-        case = cases[int(parts[0])]
+        case = cases[int(parts[1])]
         method1 = Probe(
-            parts[1],
-            decode_field(parts[2]),
+            parts[2],
             decode_field(parts[3]),
-            decode_field(parts[4]) or "",
+            decode_field(parts[4]),
             decode_field(parts[5]) or "",
             decode_field(parts[6]) or "",
             decode_field(parts[7]) or "",
+            decode_field(parts[8]) or "",
         )
         method2 = Probe(
-            parts[8],
-            decode_field(parts[9]),
+            parts[9],
             decode_field(parts[10]),
-            decode_field(parts[11]) or "",
+            decode_field(parts[11]),
             decode_field(parts[12]) or "",
             decode_field(parts[13]) or "",
             decode_field(parts[14]) or "",
+            decode_field(parts[15]) or "",
         )
         outcomes.append(CaseOutcome(case, method1, method2))
     if len(outcomes) != len(cases):
@@ -508,22 +527,33 @@ def stream_assertions(label: str, left_expected: str, right_expected: str) -> li
     right_access = f"{right_var}.{label}"
     lines: list[str] = []
     if left_expected == right_expected:
-        lines.append(f"        assertTextEquals(\"{label}\", {java_string(left_expected)}, {left_access});")
-        lines.append(f"        assertTextEquals(\"{label}\", {java_string(right_expected)}, {right_access});")
+        if len(left_expected) <= MAX_EXACT_STREAM_ASSERT_CHARS:
+            lines.append(exact_stream_assertion(label, left_expected, left_access))
+            lines.append(exact_stream_assertion(label, right_expected, right_access))
+        else:
+            lines.extend(approximate_stream_assertions(label, left_expected, left_access))
+            lines.extend(approximate_stream_assertions(label, right_expected, right_access))
+            lines.append(f"        assertTextEquals(\"{label}\", {left_access}, {right_access});")
         return lines
     lines.append(f"        assertNotEquals({left_access}, {right_access});")
     if label == "stderr":
         if left_expected:
             lines.append(f"        assertTrue(!{left_access}.isEmpty());")
         else:
-            lines.append(f"        assertTextEquals(\"stderr\", {java_string(left_expected)}, {left_access});")
+            lines.append(exact_stream_assertion("stderr", left_expected, left_access))
         if right_expected:
             lines.append(f"        assertTrue(!{right_access}.isEmpty());")
         else:
-            lines.append(f"        assertTextEquals(\"stderr\", {java_string(right_expected)}, {right_access});")
+            lines.append(exact_stream_assertion("stderr", right_expected, right_access))
     else:
-        lines.append(f"        assertTextEquals(\"{label}\", {java_string(left_expected)}, {left_access});")
-        lines.append(f"        assertTextEquals(\"{label}\", {java_string(right_expected)}, {right_access});")
+        if len(left_expected) <= MAX_EXACT_STREAM_ASSERT_CHARS:
+            lines.append(exact_stream_assertion(label, left_expected, left_access))
+        else:
+            lines.extend(approximate_stream_assertions(label, left_expected, left_access))
+        if len(right_expected) <= MAX_EXACT_STREAM_ASSERT_CHARS:
+            lines.append(exact_stream_assertion(label, right_expected, right_access))
+        else:
+            lines.extend(approximate_stream_assertions(label, right_expected, right_access))
     return lines
 
 
@@ -619,6 +649,7 @@ def write_test(class_id: int, difference: bool, source: str) -> None:
 
 def main() -> int:
     args = parse_args()
+    failures: list[tuple[int, str]] = []
     for class_id in target_ids(args):
         src = source_path(class_id)
         if not src.exists():
@@ -627,23 +658,32 @@ def main() -> int:
         if existing is not None and not args.overwrite:
             print(f"ClonePair{class_id}: skipped-existing")
             continue
-        methods = gen.parse_class(PACKAGE_NAME, class_id)
-        normalize_signature(methods)
-        cases = build_cases(methods)
-        outcomes = run_oracle(
-            class_id,
-            methods,
-            cases,
-            timeout_seconds=args.class_timeout_seconds,
-            invocation_timeout_millis=args.invocation_timeout_millis,
-        )
-        separating = next((outcome for outcome in outcomes if difference_kind(outcome) is not None), None)
-        if separating is not None:
-            write_test(class_id, True, generate_difference_test_source(class_id, methods, separating))
-            print(f"ClonePair{class_id}: difference:{difference_kind(separating)}")
-        else:
-            write_test(class_id, False, generate_no_difference_test_source(class_id, methods, select_representative_cases(outcomes)))
-            print(f"ClonePair{class_id}: no-difference")
+        try:
+            methods = gen.parse_class(PACKAGE_NAME, class_id)
+            normalize_signature(methods)
+            cases = build_cases(methods)
+            outcomes = run_oracle(
+                class_id,
+                methods,
+                cases,
+                timeout_seconds=args.class_timeout_seconds,
+                invocation_timeout_millis=args.invocation_timeout_millis,
+            )
+            separating = next((outcome for outcome in outcomes if difference_kind(outcome) is not None), None)
+            if separating is not None:
+                write_test(class_id, True, generate_difference_test_source(class_id, methods, separating))
+                print(f"ClonePair{class_id}: difference:{difference_kind(separating)}")
+            else:
+                write_test(class_id, False, generate_no_difference_test_source(class_id, methods, select_representative_cases(outcomes)))
+                print(f"ClonePair{class_id}: no-difference")
+        except Exception as exception:
+            failures.append((class_id, str(exception).splitlines()[0]))
+            print(f"ClonePair{class_id}: error:{exception.__class__.__name__}: {str(exception).splitlines()[0]}")
+    if failures:
+        print("Failures:")
+        for class_id, message in failures:
+            print(f"ClonePair{class_id}: {message}")
+        return 1
     return 0
 
 

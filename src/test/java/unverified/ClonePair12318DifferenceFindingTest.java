@@ -1,0 +1,41 @@
+package unverified;
+
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
+
+import static unverified.ClonePairGenericInvocationTestSupport.*;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+@Tag("timeout")
+class ClonePair12318DifferenceFindingTest {
+
+    private final ClonePair12318 subject = new ClonePair12318();
+
+    @Test
+    void methodsDisagreeOnGeneratedInput() {
+        InvocationOutcome method1Outcome = captureWithTimeout(values -> subject.method1((String) values[0]), 200L, new Object[]{"a"});
+        InvocationOutcome method2Outcome = captureWithTimeout(values -> subject.method2((String) values[0]), 200L, new Object[]{"a"});
+
+        assertCoreOutcome(
+            method1Outcome,
+            "OK",
+            "Boolean(true)",
+            null,
+            "java.lang.Object[][String(YQ==)]",
+            "java.lang.Object[][String(YQ==)]"
+        );
+        assertCoreOutcome(
+            method2Outcome,
+            "TIMEOUT",
+            null,
+            null,
+            "java.lang.Object[][String(YQ==)]",
+            "java.lang.Object[][String(YQ==)]"
+        );
+        assertTextEquals("stdout", "", method1Outcome.stdout);
+        assertTextEquals("stdout", "", method2Outcome.stdout);
+        assertTextEquals("stderr", "", method1Outcome.stderr);
+        assertTextEquals("stderr", "", method2Outcome.stderr);
+    }
+}
