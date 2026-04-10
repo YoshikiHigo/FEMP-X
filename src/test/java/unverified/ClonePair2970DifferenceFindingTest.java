@@ -1,0 +1,31 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static unverified.ClonePairStringDoubleTestSupport.*;
+
+class ClonePair2970DifferenceFindingTest {
+
+    private final ClonePair2970 subject = new ClonePair2970();
+
+    @Test
+    void methodsDisagreeOnGeneratedInput() {
+        InvocationOutcome method1Outcome = capture(subject::method1, " ");
+        InvocationOutcome method2Outcome = capture(subject::method2, " ");
+        String lineSeparator = System.lineSeparator();
+
+        assertEquals("OK", method1Outcome.status);
+        assertEquals(Double.valueOf("0.0"), method1Outcome.value);
+        assertNull(method1Outcome.exceptionClass);
+        assertEquals("OK", method2Outcome.status);
+        assertEquals(Double.valueOf("0.0"), method2Outcome.value);
+        assertNull(method2Outcome.exceptionClass);
+        assertNotEquals(method1Outcome.stdout, method2Outcome.stdout);
+        assertEquals("NumberFormatException: empty String" + lineSeparator, method1Outcome.stdout);
+        assertEquals("", method2Outcome.stdout);
+        assertEquals(method1Outcome.stderr, method2Outcome.stderr);
+    }
+}

@@ -1,0 +1,37 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static unverified.ClonePairGenericInvocationTestSupport.*;
+
+class ClonePair3074DifferenceFindingTest {
+
+    private final ClonePair3074 subject = new ClonePair3074();
+
+    @Test
+    void methodsDisagreeOnGeneratedInput() {
+        InvocationOutcome method1Outcome = capture(values -> subject.method1((Object) values[0], (Object) values[1]), new Object[]{"a.b", "ab"});
+        InvocationOutcome method2Outcome = capture(values -> subject.method2((Object) values[0], (Object) values[1]), new Object[]{"a.b", "ab"});
+
+        assertOutcome(
+            method1Outcome,
+            "OK",
+            "Integer(-1)",
+            null,
+            "",
+            "",
+            "java.lang.Object[][String(YS5i),String(YWI=)]",
+            "java.lang.Object[][String(YS5i),String(YWI=)]"
+        );
+        assertOutcome(
+            method2Outcome,
+            "OK",
+            "Integer(1)",
+            null,
+            "",
+            "",
+            "java.lang.Object[][String(YS5i),String(YWI=)]",
+            "java.lang.Object[][String(YS5i),String(YWI=)]"
+        );
+    }
+}

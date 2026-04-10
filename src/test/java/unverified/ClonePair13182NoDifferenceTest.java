@@ -1,0 +1,27 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import static unverified.ClonePairGenericInvocationTestSupport.*;
+
+class ClonePair13182NoDifferenceTest {
+
+    private final ClonePair13182 subject = new ClonePair13182();
+
+    // No separating input was found; these tests document representative equivalent paths.
+    @Test
+    void noDifferenceFoundForRepresentativeInputs() {
+        assertEquivalent(
+            capture(values -> subject.method1((java.util.Calendar) values[0], (java.util.Calendar) values[1]), new Object[]{calendar(0L), calendar(0L)}),
+            capture(values -> subject.method2((java.util.Calendar) values[0], (java.util.Calendar) values[1]), new Object[]{calendar(0L), calendar(0L)})
+        );
+        assertEquivalent(
+            capture(values -> subject.method1((java.util.Calendar) values[0], (java.util.Calendar) values[1]), new Object[]{null, calendar(0L)}),
+            capture(values -> subject.method2((java.util.Calendar) values[0], (java.util.Calendar) values[1]), new Object[]{null, calendar(0L)})
+        );
+        assertEquivalent(
+            capture(values -> subject.method1((java.util.Calendar) values[0], (java.util.Calendar) values[1]), new Object[]{calendar(86_400_000L), calendar(0L)}),
+            capture(values -> subject.method2((java.util.Calendar) values[0], (java.util.Calendar) values[1]), new Object[]{calendar(86_400_000L), calendar(0L)})
+        );
+    }
+}

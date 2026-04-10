@@ -1,0 +1,32 @@
+package unverified;
+
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class ClonePair170DifferenceFindingTest {
+
+    private final ClonePair170 subject = new ClonePair170();
+
+    @Test
+    void methodsDisagreeOnStandardOutputSideEffects() {
+        ByteArrayOutputStream method1Out = new ByteArrayOutputStream();
+        ByteArrayOutputStream method2Out = new ByteArrayOutputStream();
+        PrintStream originalOut = System.out;
+        try {
+            System.setOut(new PrintStream(method1Out));
+            assertTrue(subject.method1(new byte[]{1}, new byte[]{1}));
+            System.setOut(new PrintStream(method2Out));
+            assertTrue(subject.method2(new byte[]{1}, new byte[]{1}));
+        } finally {
+            System.setOut(originalOut);
+        }
+
+        assertEquals(0, method1Out.size());
+        assertTrue(method2Out.size() > 0);
+    }
+}
