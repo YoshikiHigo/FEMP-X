@@ -10,6 +10,7 @@ import java.util.BitSet;
 import java.util.Calendar;
 import java.util.Collection;
 import java.util.Date;
+import java.util.Enumeration;
 import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.Hashtable;
@@ -88,6 +89,35 @@ final class ClonePairGenericInvocationTestSupport {
         @Override
         public String toString() {
             throw new IllegalStateException("boom");
+        }
+    }
+
+    static final class ReplayableEnumeration<T> implements Enumeration<T> {
+
+        private final ArrayList<T> items;
+        private int index;
+
+        private ReplayableEnumeration(List<T> items) {
+            this(items, 0);
+        }
+
+        private ReplayableEnumeration(List<T> items, int index) {
+            this.items = new ArrayList<>(items);
+            this.index = index;
+        }
+
+        @Override
+        public boolean hasMoreElements() {
+            return index < items.size();
+        }
+
+        @Override
+        public T nextElement() {
+            return items.get(index++);
+        }
+
+        private ReplayableEnumeration<T> copy() {
+            return new ReplayableEnumeration<>(items, index);
         }
     }
 
@@ -316,6 +346,11 @@ final class ClonePairGenericInvocationTestSupport {
         return new Vector<>(Arrays.asList(items));
     }
 
+    @SafeVarargs
+    static <T> Enumeration<T> enumeration(T... items) {
+        return new ReplayableEnumeration<>(Arrays.asList(items));
+    }
+
     static LinkedHashSet<String> stringSet(String... items) {
         return new LinkedHashSet<>(Arrays.asList(items));
     }
@@ -454,6 +489,9 @@ final class ClonePairGenericInvocationTestSupport {
         if (value instanceof ThrowingToStringObject) {
             return new ThrowingToStringObject();
         }
+        if (value instanceof ReplayableEnumeration<?> enumeration) {
+            return enumeration.copy();
+        }
         if (value instanceof StringBuilder stringBuilder) {
             return new StringBuilder(stringBuilder.toString());
         }
@@ -555,6 +593,20 @@ final class ClonePairGenericInvocationTestSupport {
         }
         if (value instanceof ThrowingToStringObject) {
             builder.append("ThrowingToStringObject");
+            return;
+        }
+        if (value instanceof ReplayableEnumeration<?> enumeration) {
+            builder.append("Enumeration(");
+            boolean first = true;
+            ReplayableEnumeration<?> copy = enumeration.copy();
+            while (copy.hasMoreElements()) {
+                if (!first) {
+                    builder.append(",");
+                }
+                first = false;
+                appendSnapshot(builder, copy.nextElement());
+            }
+            builder.append(")");
             return;
         }
         if (value instanceof StringBuilder stringBuilder) {

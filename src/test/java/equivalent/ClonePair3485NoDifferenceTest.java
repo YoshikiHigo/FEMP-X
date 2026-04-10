@@ -1,0 +1,23 @@
+package equivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static equivalent.ClonePairGenericInvocationTestSupport.*;
+
+class ClonePair3485NoDifferenceTest {
+
+    private final ClonePair3485 subject = new ClonePair3485();
+
+    // No separating input was found; these tests document representative equivalent paths.
+    @Test
+    void noDifferenceFoundForRepresentativeInputs() {
+        assertEquivalent(
+            capture(values -> subject.method1((short[]) values[0], (short[]) values[1]), new Object[]{new short[]{}, new short[]{}}),
+            capture(values -> subject.method2((short[]) values[0], (short[]) values[1]), new Object[]{new short[]{}, new short[]{}})
+        );
+        assertEquivalent(
+            capture(values -> subject.method1((short[]) values[0], (short[]) values[1]), new Object[]{null, new short[]{}}),
+            capture(values -> subject.method2((short[]) values[0], (short[]) values[1]), new Object[]{null, new short[]{}})
+        );
+    }
+}

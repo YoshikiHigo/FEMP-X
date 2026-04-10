@@ -17,9 +17,9 @@ import generate_clonepair_tests as gen
 
 ROOT = Path(__file__).resolve().parents[1]
 MAIN_SOURCE = ROOT / "src" / "main" / "java"
-TEST_SOURCE = ROOT / "src" / "test" / "java" / "unverified"
-SUPPORT_SOURCE = TEST_SOURCE / "ClonePairGenericInvocationTestSupport.java"
-PACKAGE_NAME = "unverified"
+TEST_JAVA_SOURCE = ROOT / "src" / "test" / "java"
+DEFAULT_PACKAGE_NAME = "unverified"
+TEMPLATE_SUPPORT_SOURCE = TEST_JAVA_SOURCE / DEFAULT_PACKAGE_NAME / "ClonePairGenericInvocationTestSupport.java"
 MAX_EXACT_STREAM_ASSERT_CHARS = 2048
 STREAM_PREFIX_ASSERT_CHARS = 128
 
@@ -47,24 +47,33 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--start-id", type=int, default=3001)
     parser.add_argument("--end-id", type=int, default=4000)
     parser.add_argument("--ids", type=str, default=None)
+    parser.add_argument("--package-name", type=str, default=DEFAULT_PACKAGE_NAME)
     parser.add_argument("--overwrite", action="store_true")
     parser.add_argument("--class-timeout-seconds", type=float, default=180.0)
     parser.add_argument("--invocation-timeout-millis", type=int, default=500)
     return parser.parse_args()
 
 
-def source_path(class_id: int) -> Path:
-    return MAIN_SOURCE / PACKAGE_NAME / f"ClonePair{class_id}.java"
+def source_path(package_name: str, class_id: int) -> Path:
+    return MAIN_SOURCE / package_name / f"ClonePair{class_id}.java"
 
 
-def test_path(class_id: int, difference: bool) -> Path:
+def test_dir(package_name: str) -> Path:
+    return TEST_JAVA_SOURCE / package_name
+
+
+def support_source_path(package_name: str) -> Path:
+    return test_dir(package_name) / "ClonePairGenericInvocationTestSupport.java"
+
+
+def test_path(package_name: str, class_id: int, difference: bool) -> Path:
     suffix = "DifferenceFindingTest" if difference else "NoDifferenceTest"
-    return TEST_SOURCE / f"ClonePair{class_id}{suffix}.java"
+    return test_dir(package_name) / f"ClonePair{class_id}{suffix}.java"
 
 
-def existing_test_path(class_id: int) -> Path | None:
+def existing_test_path(package_name: str, class_id: int) -> Path | None:
     for difference in (True, False):
-        path = test_path(class_id, difference)
+        path = test_path(package_name, class_id, difference)
         if path.exists():
             return path
     return None
@@ -74,6 +83,19 @@ def target_ids(args: argparse.Namespace) -> list[int]:
     if args.ids:
         return [int(value) for value in args.ids.split(",") if value.strip()]
     return list(range(args.start_id, args.end_id + 1))
+
+
+def ensure_support_source(package_name: str) -> Path:
+    target = support_source_path(package_name)
+    if package_name == DEFAULT_PACKAGE_NAME and target.exists():
+        return target
+
+    template = TEMPLATE_SUPPORT_SOURCE.read_text(encoding="utf-8")
+    rewritten = template.replace(f"package {DEFAULT_PACKAGE_NAME};", f"package {package_name};", 1)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    if not target.exists() or target.read_text(encoding="utf-8") != rewritten:
+        target.write_text(rewritten, encoding="utf-8")
+    return target
 
 
 def java_string(value: str | None) -> str:
@@ -330,6 +352,10 @@ def wrapped_args(case: tuple[str, ...]) -> str:
     return "new Object[]{" + ", ".join(case) + "}"
 
 
+def case_var_name(index: int) -> str:
+    return f"caseInputs{index}"
+
+
 def encode_field(value: str | None) -> str:
     if value is None:
         return "-"
@@ -342,14 +368,20 @@ def decode_field(value: str) -> str | None:
     return base64.b64decode(value.encode("ascii")).decode("utf-8")
 
 
-def build_oracle_source(class_id: int, methods: dict[str, gen.MethodInfo], cases: list[tuple[str, ...]], timeout_millis: int) -> str:
+def build_oracle_source(
+    package_name: str,
+    class_id: int,
+    methods: dict[str, gen.MethodInfo],
+    cases: list[tuple[str, ...]],
+    timeout_millis: int,
+) -> str:
     lines = [
-        f"package {PACKAGE_NAME};",
+        f"package {package_name};",
         "",
         "import java.util.Base64;",
         "import java.util.*;",
         "",
-        f"import static {PACKAGE_NAME}.ClonePairGenericInvocationTestSupport.*;",
+        f"import static {package_name}.ClonePairGenericInvocationTestSupport.*;",
         "",
         f"public class ClonePair{class_id}GenericOracle {{",
         "",
@@ -358,11 +390,15 @@ def build_oracle_source(class_id: int, methods: dict[str, gen.MethodInfo], cases
     ]
     for index, case in enumerate(cases):
         rendered_args = wrapped_args(case)
+        inputs_var = case_var_name(index)
+        lines.append(
+            f"        Object[] {inputs_var} = {rendered_args};"
+        )
         lines.append(
             "        emit("
             f"{index}, "
-            f"captureWithTimeout({invocation_expression('method1', methods['method1'])}, {timeout_millis}L, {rendered_args}), "
-            f"captureWithTimeout({invocation_expression('method2', methods['method2'])}, {timeout_millis}L, {rendered_args})"
+            f"captureWithTimeout({invocation_expression('method1', methods['method1'])}, {timeout_millis}L, {inputs_var}), "
+            f"captureWithTimeout({invocation_expression('method2', methods['method2'])}, {timeout_millis}L, {inputs_var})"
             ");"
         )
     lines.extend([
@@ -392,19 +428,21 @@ def build_oracle_source(class_id: int, methods: dict[str, gen.MethodInfo], cases
 
 
 def run_oracle(
+    package_name: str,
     class_id: int,
     methods: dict[str, gen.MethodInfo],
     cases: list[tuple[str, ...]],
     timeout_seconds: float,
     invocation_timeout_millis: int,
 ) -> list[CaseOutcome]:
+    support_source = ensure_support_source(package_name)
     with tempfile.TemporaryDirectory(prefix=f"clonepair-{class_id}-generic-") as temp_dir:
         temp_path = Path(temp_dir)
-        oracle_dir = temp_path / PACKAGE_NAME
+        oracle_dir = temp_path / package_name
         oracle_dir.mkdir(parents=True, exist_ok=True)
         oracle_path = oracle_dir / f"ClonePair{class_id}GenericOracle.java"
         oracle_path.write_text(
-            build_oracle_source(class_id, methods, cases, invocation_timeout_millis),
+            build_oracle_source(package_name, class_id, methods, cases, invocation_timeout_millis),
             encoding="utf-8",
         )
 
@@ -418,7 +456,7 @@ def run_oracle(
                 "-sourcepath",
                 str(MAIN_SOURCE) + os.pathsep + str(ROOT / "src" / "test" / "java"),
                 str(oracle_path),
-                str(SUPPORT_SOURCE),
+                str(support_source),
             ],
             cwd=ROOT,
             capture_output=True,
@@ -429,7 +467,7 @@ def run_oracle(
             raise RuntimeError(compile_result.stderr)
 
         run_result = subprocess.run(
-            ["java", "-ea", "-cp", temp_dir, f"{PACKAGE_NAME}.ClonePair{class_id}GenericOracle"],
+            ["java", "-ea", "-cp", temp_dir, f"{package_name}.ClonePair{class_id}GenericOracle"],
             cwd=ROOT,
             capture_output=True,
             text=True,
@@ -557,17 +595,17 @@ def stream_assertions(label: str, left_expected: str, right_expected: str) -> li
     return lines
 
 
-def generate_difference_test_source(class_id: int, methods: dict[str, gen.MethodInfo], outcome: CaseOutcome) -> str:
+def generate_difference_test_source(package_name: str, class_id: int, methods: dict[str, gen.MethodInfo], outcome: CaseOutcome) -> str:
     rendered_args = wrapped_args(outcome.args)
     uses_timeout = outcome.method1.status == "TIMEOUT" or outcome.method2.status == "TIMEOUT"
     capture_method = "captureWithTimeout" if uses_timeout else "capture"
     capture_suffix = ", 200L" if uses_timeout else ""
     lines = [
-        f"package {PACKAGE_NAME};",
+        f"package {package_name};",
         "",
         "import org.junit.jupiter.api.Test;",
         "",
-        f"import static {PACKAGE_NAME}.ClonePairGenericInvocationTestSupport.*;",
+        f"import static {package_name}.ClonePairGenericInvocationTestSupport.*;",
         "import static org.junit.jupiter.api.Assertions.assertNotEquals;",
         "import static org.junit.jupiter.api.Assertions.assertTrue;",
         "",
@@ -577,8 +615,9 @@ def generate_difference_test_source(class_id: int, methods: dict[str, gen.Method
         "",
         "    @Test",
         "    void methodsDisagreeOnGeneratedInput() {",
-        f"        InvocationOutcome method1Outcome = {capture_method}({invocation_expression('method1', methods['method1'])}{capture_suffix}, {rendered_args});",
-        f"        InvocationOutcome method2Outcome = {capture_method}({invocation_expression('method2', methods['method2'])}{capture_suffix}, {rendered_args});",
+        f"        Object[] inputs = {rendered_args};",
+        f"        InvocationOutcome method1Outcome = {capture_method}({invocation_expression('method1', methods['method1'])}{capture_suffix}, inputs);",
+        f"        InvocationOutcome method2Outcome = {capture_method}({invocation_expression('method2', methods['method2'])}{capture_suffix}, inputs);",
         "",
         "        assertCoreOutcome(",
         "            method1Outcome,",
@@ -607,13 +646,13 @@ def generate_difference_test_source(class_id: int, methods: dict[str, gen.Method
     return "\n".join(lines)
 
 
-def generate_no_difference_test_source(class_id: int, methods: dict[str, gen.MethodInfo], outcomes: list[CaseOutcome]) -> str:
+def generate_no_difference_test_source(package_name: str, class_id: int, methods: dict[str, gen.MethodInfo], outcomes: list[CaseOutcome]) -> str:
     lines = [
-        f"package {PACKAGE_NAME};",
+        f"package {package_name};",
         "",
         "import org.junit.jupiter.api.Test;",
         "",
-        f"import static {PACKAGE_NAME}.ClonePairGenericInvocationTestSupport.*;",
+        f"import static {package_name}.ClonePairGenericInvocationTestSupport.*;",
         "",
         f"class ClonePair{class_id}NoDifferenceTest {{",
         "",
@@ -623,12 +662,14 @@ def generate_no_difference_test_source(class_id: int, methods: dict[str, gen.Met
         "    @Test",
         "    void noDifferenceFoundForRepresentativeInputs() {",
     ]
-    for outcome in outcomes:
+    for index, outcome in enumerate(outcomes):
         rendered_args = wrapped_args(outcome.args)
+        inputs_var = case_var_name(index)
         lines.extend([
+            f"        Object[] {inputs_var} = {rendered_args};",
             "        assertEquivalent(",
-            f"            capture({invocation_expression('method1', methods['method1'])}, {rendered_args}),",
-            f"            capture({invocation_expression('method2', methods['method2'])}, {rendered_args})",
+            f"            capture({invocation_expression('method1', methods['method1'])}, {inputs_var}),",
+            f"            capture({invocation_expression('method2', methods['method2'])}, {inputs_var})",
             "        );",
         ])
     lines.extend([
@@ -639,9 +680,9 @@ def generate_no_difference_test_source(class_id: int, methods: dict[str, gen.Met
     return "\n".join(lines)
 
 
-def write_test(class_id: int, difference: bool, source: str) -> None:
-    target = test_path(class_id, difference)
-    opposite = test_path(class_id, not difference)
+def write_test(package_name: str, class_id: int, difference: bool, source: str) -> None:
+    target = test_path(package_name, class_id, difference)
+    opposite = test_path(package_name, class_id, not difference)
     target.write_text(source, encoding="utf-8")
     if opposite.exists():
         opposite.unlink()
@@ -649,20 +690,22 @@ def write_test(class_id: int, difference: bool, source: str) -> None:
 
 def main() -> int:
     args = parse_args()
+    ensure_support_source(args.package_name)
     failures: list[tuple[int, str]] = []
     for class_id in target_ids(args):
-        src = source_path(class_id)
+        src = source_path(args.package_name, class_id)
         if not src.exists():
             continue
-        existing = existing_test_path(class_id)
+        existing = existing_test_path(args.package_name, class_id)
         if existing is not None and not args.overwrite:
             print(f"ClonePair{class_id}: skipped-existing")
             continue
         try:
-            methods = gen.parse_class(PACKAGE_NAME, class_id)
+            methods = gen.parse_class(args.package_name, class_id)
             normalize_signature(methods)
             cases = build_cases(methods)
             outcomes = run_oracle(
+                args.package_name,
                 class_id,
                 methods,
                 cases,
@@ -671,10 +714,15 @@ def main() -> int:
             )
             separating = next((outcome for outcome in outcomes if difference_kind(outcome) is not None), None)
             if separating is not None:
-                write_test(class_id, True, generate_difference_test_source(class_id, methods, separating))
+                write_test(args.package_name, class_id, True, generate_difference_test_source(args.package_name, class_id, methods, separating))
                 print(f"ClonePair{class_id}: difference:{difference_kind(separating)}")
             else:
-                write_test(class_id, False, generate_no_difference_test_source(class_id, methods, select_representative_cases(outcomes)))
+                write_test(
+                    args.package_name,
+                    class_id,
+                    False,
+                    generate_no_difference_test_source(args.package_name, class_id, methods, select_representative_cases(outcomes)),
+                )
                 print(f"ClonePair{class_id}: no-difference")
         except Exception as exception:
             failures.append((class_id, str(exception).splitlines()[0]))

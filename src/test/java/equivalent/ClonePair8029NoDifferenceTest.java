@@ -1,0 +1,30 @@
+package equivalent;
+
+import org.junit.jupiter.api.Test;
+
+import static equivalent.ClonePairGenericInvocationTestSupport.*;
+
+class ClonePair8029NoDifferenceTest {
+
+    private final ClonePair8029 subject = new ClonePair8029();
+
+    // No separating input was found; these tests document representative equivalent paths.
+    @Test
+    void noDifferenceFoundForRepresentativeInputs() {
+        Object[] caseInputs0 = new Object[]{"", list(), false};
+        assertEquivalent(
+            capture(values -> subject.method1((String) values[0], (java.util.List) values[1], ((Boolean) values[2]).booleanValue()), caseInputs0),
+            capture(values -> subject.method2((String) values[0], (java.util.List) values[1], ((Boolean) values[2]).booleanValue()), caseInputs0)
+        );
+        Object[] caseInputs1 = new Object[]{"", null, false};
+        assertEquivalent(
+            capture(values -> subject.method1((String) values[0], (java.util.List) values[1], ((Boolean) values[2]).booleanValue()), caseInputs1),
+            capture(values -> subject.method2((String) values[0], (java.util.List) values[1], ((Boolean) values[2]).booleanValue()), caseInputs1)
+        );
+        Object[] caseInputs2 = new Object[]{"", list(), true};
+        assertEquivalent(
+            capture(values -> subject.method1((String) values[0], (java.util.List) values[1], ((Boolean) values[2]).booleanValue()), caseInputs2),
+            capture(values -> subject.method2((String) values[0], (java.util.List) values[1], ((Boolean) values[2]).booleanValue()), caseInputs2)
+        );
+    }
+}

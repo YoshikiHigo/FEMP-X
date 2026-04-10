@@ -583,9 +583,9 @@ def pool_for_param(param: Param, body: str) -> list[str]:
     if type_name == "Enumeration":
         return [
             "null",
-            "vector().elements()",
-            "vectorOfStrings(" + java_string("alpha") + ").elements()",
-            "vectorOfStrings(" + java_string("alpha") + ", " + java_string("beta") + ").elements()",
+            "enumeration()",
+            "enumeration(" + java_string("alpha") + ")",
+            "enumeration(" + java_string("alpha") + ", " + java_string("beta") + ")",
         ]
     if type_name == "Set<String>":
         return ["null", "stringSet()", "stringSet(" + java_string("alpha") + ")", "stringSet(" + java_string("alpha") + ", " + java_string("beta") + ")"]
