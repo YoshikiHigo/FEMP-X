@@ -1,0 +1,6 @@
+class_id,status,difference_kind,case_count,case_label,logical_args,method1_status,method2_status,method1_exception_class,method2_exception_class,error
+5995,difference_found,timeout,7,shared_0_1,"[""sharedValue"", ""sharedValue""]",TIMEOUT,OK,,,
+5996,no_difference,,7,,[],,,,,
+5998,difference_found,timeout,7,shared_0_1,"[""sharedValue"", ""sharedValue""]",OK,TIMEOUT,,,
+6008,no_difference,,3,,[],,,,,
+6013,difference_found,return,3,distinct_equal_0_1,"[""leftValue"", ""rightValue""]",OK,OK,,,

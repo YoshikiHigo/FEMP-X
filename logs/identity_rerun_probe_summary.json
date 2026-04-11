@@ -1,0 +1,58 @@
+{
+  "checked_on": "2026-04-11",
+  "total_targets": 5,
+  "workers": 1,
+  "class_timeout_seconds": 60.0,
+  "invocation_timeout_millis": 1000,
+  "elapsed_seconds": 31.443,
+  "status_counts": {
+    "difference_found": 3,
+    "no_difference": 2
+  },
+  "difference_counts": {
+    "timeout": 2,
+    "return": 1
+  },
+  "difference_examples": [
+    {
+      "class_id": 5995,
+      "difference_kind": "timeout",
+      "case_label": "shared_0_1",
+      "logical_args": [
+        "sharedValue",
+        "sharedValue"
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 5998,
+      "difference_kind": "timeout",
+      "case_label": "shared_0_1",
+      "logical_args": [
+        "sharedValue",
+        "sharedValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "TIMEOUT",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6013,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,30 @@
+{
+  "checked_on": "2026-04-11",
+  "total_targets": 1226,
+  "workers": 12,
+  "class_timeout_seconds": 60.0,
+  "invocation_timeout_millis": 1000,
+  "elapsed_seconds": 681.38,
+  "status_counts": {
+    "no_difference": 1225,
+    "difference_found": 1
+  },
+  "difference_counts": {
+    "exception": 1
+  },
+  "difference_examples": [
+    {
+      "class_id": 13198,
+      "difference_kind": "exception",
+      "case_label": "novel_0_2",
+      "logical_args": [
+        "\" \""
+      ],
+      "method1_status": "EX",
+      "method2_status": "EX",
+      "method1_exception_class": "java.lang.NumberFormatException",
+      "method2_exception_class": "java.lang.StringIndexOutOfBoundsException"
+    }
+  ],
+  "errors": []
+}

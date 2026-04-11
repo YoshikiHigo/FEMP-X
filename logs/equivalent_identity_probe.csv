@@ -1,0 +1,6 @@
+class_id,status,difference_kind,case_count,case_label,logical_args,method1_status,method2_status,method1_exception_class,method2_exception_class,error
+1004,no_difference,,3,,[],,,,,
+100,no_difference,,1,,[],,,,,
+10026,no_difference,,1,,[],,,,,
+10044,no_difference,,4,,[],,,,,
+10034,no_difference,,1,,[],,,,,

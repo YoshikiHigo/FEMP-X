@@ -1,0 +1,243 @@
+{
+  "checked_on": "2026-04-11",
+  "total_targets": 8597,
+  "workers": 12,
+  "class_timeout_seconds": 120.0,
+  "invocation_timeout_millis": 1000,
+  "elapsed_seconds": 7023.02,
+  "status_counts": {
+    "no_difference": 8580,
+    "difference_found": 17
+  },
+  "difference_counts": {
+    "timeout": 17
+  },
+  "error_count": 0,
+  "difference_examples": [
+    {
+      "class_id": 3677,
+      "difference_kind": "timeout",
+      "example_args": [
+        "\"\"",
+        "\"A\""
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 3683,
+      "difference_kind": "timeout",
+      "example_args": [
+        "\"\"",
+        "\"bar\""
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 4851,
+      "difference_kind": "timeout",
+      "example_args": [
+        "new double[]{}"
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "EX",
+      "method1_exception_class": "",
+      "method2_exception_class": "java.lang.ArrayIndexOutOfBoundsException"
+    },
+    {
+      "class_id": 5798,
+      "difference_kind": "timeout",
+      "example_args": [
+        "new byte[]{}",
+        "1",
+        "new byte[]{}",
+        "-1",
+        "0"
+      ],
+      "method1_status": "OK",
+      "method2_status": "TIMEOUT",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 5800,
+      "difference_kind": "timeout",
+      "example_args": [
+        "new byte[]{0}",
+        "0",
+        "new byte[]{}",
+        "1",
+        "1"
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 5799,
+      "difference_kind": "timeout",
+      "example_args": [
+        "new byte[]{}",
+        "1",
+        "new byte[]{}",
+        "-1",
+        "1"
+      ],
+      "method1_status": "OK",
+      "method2_status": "TIMEOUT",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 5797,
+      "difference_kind": "timeout",
+      "example_args": [
+        "new byte[]{}",
+        "0",
+        "new byte[]{}",
+        "1",
+        "0"
+      ],
+      "method1_status": "OK",
+      "method2_status": "TIMEOUT",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6429,
+      "difference_kind": "timeout",
+      "example_args": [
+        "new float[]{}",
+        "-1",
+        "-1",
+        "null",
+        "-1"
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6703,
+      "difference_kind": "timeout",
+      "example_args": [
+        "0",
+        "2",
+        "1"
+      ],
+      "method1_status": "OK",
+      "method2_status": "TIMEOUT",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6709,
+      "difference_kind": "timeout",
+      "example_args": [
+        "0",
+        "-1",
+        "1"
+      ],
+      "method1_status": "OK",
+      "method2_status": "TIMEOUT",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6705,
+      "difference_kind": "timeout",
+      "example_args": [
+        "0",
+        "-1",
+        "1"
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6695,
+      "difference_kind": "timeout",
+      "example_args": [
+        "2",
+        "-1",
+        "2"
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6995,
+      "difference_kind": "timeout",
+      "example_args": [
+        "0",
+        "2",
+        "2"
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 7132,
+      "difference_kind": "timeout",
+      "example_args": [
+        "new byte[]{}",
+        "4"
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "EX",
+      "method1_exception_class": "",
+      "method2_exception_class": "java.lang.ArrayIndexOutOfBoundsException"
+    },
+    {
+      "class_id": 7525,
+      "difference_kind": "timeout",
+      "example_args": [
+        "Integer.valueOf(7)",
+        "Integer.valueOf(7)"
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 13333,
+      "difference_kind": "timeout",
+      "example_args": [
+        "null",
+        "null",
+        "null"
+      ],
+      "method1_status": "EX",
+      "method2_status": "TIMEOUT",
+      "method1_exception_class": "java.lang.NullPointerException",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 13404,
+      "difference_kind": "timeout",
+      "example_args": [
+        "new byte[]{0}",
+        "new byte[]{0, 1, 2, 3, 4, 5, 6, 7}"
+      ],
+      "method1_status": "OK",
+      "method2_status": "TIMEOUT",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    }
+  ],
+  "errors": []
+}

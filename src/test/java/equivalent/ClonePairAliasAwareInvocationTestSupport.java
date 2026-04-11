@@ -1,4 +1,4 @@
-package unverified;
+package equivalent;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -34,7 +34,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.concurrent.atomic.AtomicInteger;
 
-final class ClonePairGenericInvocationTestSupport {
+final class ClonePairAliasAwareInvocationTestSupport {
 
     @FunctionalInterface
     interface Invocation {
@@ -121,12 +121,12 @@ final class ClonePairGenericInvocationTestSupport {
         }
     }
 
-    private ClonePairGenericInvocationTestSupport() {
+    private ClonePairAliasAwareInvocationTestSupport() {
     }
 
     static InvocationOutcome capture(Invocation invocation, Object... inputs) {
-        Object[] actualInputs = cloneInputs(inputs);
-        String originalInputsSnapshot = snapshot(actualInputs);
+        Object[] actualInputs = inputs;
+        String originalInputsSnapshot = safeSnapshot(actualInputs);
         ByteArrayOutputStream stdoutBuffer = new ByteArrayOutputStream();
         ByteArrayOutputStream stderrBuffer = new ByteArrayOutputStream();
         PrintStream originalOut = System.out;
@@ -139,7 +139,7 @@ final class ClonePairGenericInvocationTestSupport {
             Object value = invocation.invoke(actualInputs);
             return new InvocationOutcome(
                 "OK",
-                snapshot(value),
+                safeSnapshot(value),
                 null,
                 stdoutBuffer.toString(StandardCharsets.UTF_8),
                 stderrBuffer.toString(StandardCharsets.UTF_8),
@@ -165,8 +165,8 @@ final class ClonePairGenericInvocationTestSupport {
     }
 
     static InvocationOutcome captureWithTimeout(Invocation invocation, long timeoutMillis, Object... inputs) {
-        Object[] actualInputs = cloneInputs(inputs);
-        String originalInputsSnapshot = snapshot(actualInputs);
+        Object[] actualInputs = inputs;
+        String originalInputsSnapshot = safeSnapshot(actualInputs);
         ByteArrayOutputStream stdoutBuffer = new ByteArrayOutputStream();
         ByteArrayOutputStream stderrBuffer = new ByteArrayOutputStream();
         PrintStream originalOut = System.out;
@@ -193,7 +193,7 @@ final class ClonePairGenericInvocationTestSupport {
                 Object value = future.get(timeoutMillis, TimeUnit.MILLISECONDS);
                 return new InvocationOutcome(
                     "OK",
-                    snapshot(value),
+                    safeSnapshot(value),
                     null,
                     stdoutBuffer.toString(StandardCharsets.UTF_8),
                     stderrBuffer.toString(StandardCharsets.UTF_8),
@@ -209,7 +209,7 @@ final class ClonePairGenericInvocationTestSupport {
                     stdoutBuffer.toString(StandardCharsets.UTF_8),
                     stderrBuffer.toString(StandardCharsets.UTF_8),
                     originalInputsSnapshot,
-                    snapshot(actualInputs)
+                    "<snapshot-skipped-after-timeout>"
                 );
             } catch (ExecutionException executionException) {
                 Throwable cause = executionException.getCause();
@@ -234,7 +234,7 @@ final class ClonePairGenericInvocationTestSupport {
                     stdoutBuffer.toString(StandardCharsets.UTF_8),
                     stderrBuffer.toString(StandardCharsets.UTF_8),
                     originalInputsSnapshot,
-                    snapshot(actualInputs)
+                    "<snapshot-skipped-after-timeout>"
                 );
             }
         } finally {
@@ -288,18 +288,6 @@ final class ClonePairGenericInvocationTestSupport {
         checkEquals("stderr", left.stderr, right.stderr);
         checkEquals("originalInputsSnapshot", left.originalInputsSnapshot, right.originalInputsSnapshot);
         checkEquals("inputAfterSnapshot", left.inputAfterSnapshot, right.inputAfterSnapshot);
-    }
-
-    static void assertDifferent(InvocationOutcome left, InvocationOutcome right) {
-        if (Objects.equals(left.status, right.status)
-            && Objects.equals(left.valueSnapshot, right.valueSnapshot)
-            && Objects.equals(left.exceptionClass, right.exceptionClass)
-            && Objects.equals(left.stdout, right.stdout)
-            && Objects.equals(left.stderr, right.stderr)
-            && Objects.equals(left.originalInputsSnapshot, right.originalInputsSnapshot)
-            && Objects.equals(left.inputAfterSnapshot, right.inputAfterSnapshot)) {
-            throw new AssertionError("expected outcomes to differ");
-        }
     }
 
     static void assertInputStatePreserved(InvocationOutcome outcome) {
@@ -744,6 +732,14 @@ final class ClonePairGenericInvocationTestSupport {
             thread.setDaemon(true);
             thread.setName("clonepair-generic-invocation");
             return thread;
+        }
+    }
+
+    static String safeSnapshot(Object value) {
+        try {
+            return snapshot(value);
+        } catch (Throwable throwable) {
+            return "SNAPSHOT_EX(" + throwable.getClass().getName() + ")";
         }
     }
 }

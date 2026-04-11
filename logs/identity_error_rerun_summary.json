@@ -1,0 +1,279 @@
+{
+  "checked_on": "2026-04-11",
+  "total_targets": 93,
+  "workers": 8,
+  "class_timeout_seconds": 60.0,
+  "invocation_timeout_millis": 1000,
+  "elapsed_seconds": 94.044,
+  "status_counts": {
+    "difference_found": 40,
+    "no_difference": 53
+  },
+  "difference_counts": {
+    "return": 38,
+    "timeout": 2
+  },
+  "difference_examples": [
+    {
+      "class_id": 6013,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6015,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 5995,
+      "difference_kind": "timeout",
+      "case_label": "shared_0_1",
+      "logical_args": [
+        "sharedValue",
+        "sharedValue"
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 5998,
+      "difference_kind": "timeout",
+      "case_label": "shared_0_1",
+      "logical_args": [
+        "sharedValue",
+        "sharedValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "TIMEOUT",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6017,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6020,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6022,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6021,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6023,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6019,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6029,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6032,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6035,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6043,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6046,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6047,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6053,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6054,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6058,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 6057,
+      "difference_kind": "return",
+      "case_label": "distinct_equal_0_1",
+      "logical_args": [
+        "leftValue",
+        "rightValue"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    }
+  ],
+  "errors": []
+}

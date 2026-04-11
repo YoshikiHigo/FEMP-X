@@ -1,0 +1,14 @@
+{
+  "checked_on": "2026-04-11",
+  "total_targets": 3,
+  "workers": 1,
+  "class_timeout_seconds": 60.0,
+  "invocation_timeout_millis": 1000,
+  "elapsed_seconds": 15.119,
+  "status_counts": {
+    "no_difference": 3
+  },
+  "difference_counts": {},
+  "difference_examples": [],
+  "errors": []
+}

@@ -1,0 +1,268 @@
+{
+  "checked_on": "2026-04-11",
+  "total_targets": 3191,
+  "workers": 12,
+  "class_timeout_seconds": 60.0,
+  "invocation_timeout_millis": 1000,
+  "elapsed_seconds": 2119.484,
+  "status_counts": {
+    "no_difference": 2998,
+    "difference_found": 193
+  },
+  "difference_counts": {
+    "timeout": 127,
+    "return": 35,
+    "exception": 31
+  },
+  "difference_examples": [
+    {
+      "class_id": 8662,
+      "difference_kind": "timeout",
+      "case_label": "novel_0_1",
+      "logical_args": [
+        "Double.NEGATIVE_INFINITY"
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 8912,
+      "difference_kind": "timeout",
+      "case_label": "novel_0_1",
+      "logical_args": [
+        "Double.POSITIVE_INFINITY"
+      ],
+      "method1_status": "OK",
+      "method2_status": "TIMEOUT",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 8914,
+      "difference_kind": "timeout",
+      "case_label": "novel_0_1",
+      "logical_args": [
+        "Double.POSITIVE_INFINITY"
+      ],
+      "method1_status": "OK",
+      "method2_status": "TIMEOUT",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 8907,
+      "difference_kind": "timeout",
+      "case_label": "novel_0_1",
+      "logical_args": [
+        "Double.POSITIVE_INFINITY"
+      ],
+      "method1_status": "OK",
+      "method2_status": "TIMEOUT",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 8997,
+      "difference_kind": "timeout",
+      "case_label": "novel_0_1",
+      "logical_args": [
+        "Double.POSITIVE_INFINITY"
+      ],
+      "method1_status": "OK",
+      "method2_status": "TIMEOUT",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 9003,
+      "difference_kind": "timeout",
+      "case_label": "novel_0_1",
+      "logical_args": [
+        "Double.POSITIVE_INFINITY"
+      ],
+      "method1_status": "OK",
+      "method2_status": "TIMEOUT",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 9002,
+      "difference_kind": "timeout",
+      "case_label": "novel_0_1",
+      "logical_args": [
+        "Double.POSITIVE_INFINITY"
+      ],
+      "method1_status": "OK",
+      "method2_status": "TIMEOUT",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 9152,
+      "difference_kind": "timeout",
+      "case_label": "novel_0_1",
+      "logical_args": [
+        "Double.POSITIVE_INFINITY"
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 9304,
+      "difference_kind": "timeout",
+      "case_label": "novel_0_1",
+      "logical_args": [
+        "Double.POSITIVE_INFINITY"
+      ],
+      "method1_status": "OK",
+      "method2_status": "TIMEOUT",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 9344,
+      "difference_kind": "timeout",
+      "case_label": "novel_0_1",
+      "logical_args": [
+        "Double.POSITIVE_INFINITY"
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 9348,
+      "difference_kind": "timeout",
+      "case_label": "novel_0_1",
+      "logical_args": [
+        "Double.POSITIVE_INFINITY"
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 9391,
+      "difference_kind": "timeout",
+      "case_label": "novel_0_1",
+      "logical_args": [
+        "Double.POSITIVE_INFINITY"
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 9389,
+      "difference_kind": "timeout",
+      "case_label": "novel_0_1",
+      "logical_args": [
+        "Double.POSITIVE_INFINITY"
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 9455,
+      "difference_kind": "timeout",
+      "case_label": "baseline",
+      "logical_args": [
+        "\"foo\"",
+        "\"foo\"",
+        "\"foo\""
+      ],
+      "method1_status": "OK",
+      "method2_status": "TIMEOUT",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 9742,
+      "difference_kind": "timeout",
+      "case_label": "novel_0_1",
+      "logical_args": [
+        "Double.POSITIVE_INFINITY"
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 9862,
+      "difference_kind": "timeout",
+      "case_label": "novel_1_1",
+      "logical_args": [
+        "\"foo\"",
+        "new String(\"\")",
+        "\"foo\""
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 9882,
+      "difference_kind": "return",
+      "case_label": "novel_0_0",
+      "logical_args": [
+        "-0.0"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 9868,
+      "difference_kind": "timeout",
+      "case_label": "novel_1_1",
+      "logical_args": [
+        "\"foo\"",
+        "new String(\"\")",
+        "\"foo\""
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 9869,
+      "difference_kind": "timeout",
+      "case_label": "novel_1_1",
+      "logical_args": [
+        "\"\"",
+        "new String(\"\")",
+        "\"foo\""
+      ],
+      "method1_status": "TIMEOUT",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    },
+    {
+      "class_id": 9889,
+      "difference_kind": "return",
+      "case_label": "novel_0_0",
+      "logical_args": [
+        "-0.0"
+      ],
+      "method1_status": "OK",
+      "method2_status": "OK",
+      "method1_exception_class": "",
+      "method2_exception_class": ""
+    }
+  ],
+  "errors": []
+}
