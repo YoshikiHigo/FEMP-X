@@ -290,6 +290,18 @@ final class ClonePairGenericInvocationTestSupport {
         checkEquals("inputAfterSnapshot", left.inputAfterSnapshot, right.inputAfterSnapshot);
     }
 
+    static void assertDifferent(InvocationOutcome left, InvocationOutcome right) {
+        if (Objects.equals(left.status, right.status)
+            && Objects.equals(left.valueSnapshot, right.valueSnapshot)
+            && Objects.equals(left.exceptionClass, right.exceptionClass)
+            && Objects.equals(left.stdout, right.stdout)
+            && Objects.equals(left.stderr, right.stderr)
+            && Objects.equals(left.originalInputsSnapshot, right.originalInputsSnapshot)
+            && Objects.equals(left.inputAfterSnapshot, right.inputAfterSnapshot)) {
+            throw new AssertionError("expected outcomes to differ");
+        }
+    }
+
     static void assertInputStatePreserved(InvocationOutcome outcome) {
         checkEquals("inputAfterSnapshot", outcome.originalInputsSnapshot, outcome.inputAfterSnapshot);
     }
