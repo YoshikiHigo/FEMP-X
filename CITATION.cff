@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: >-
+  If you use FEMP-X, please cite the dataset release below.
+type: dataset
+title: "FEMP-X: A Witness-Augmented Dataset for Candidate Functionally Equivalent Java Method Pairs"
+authors:
+  - family-names: Higo
+    given-names: Yoshiki
+    affiliation: "The University of Osaka"
+repository-code: "https://github.com/YoshikiHigo/FEMP-X"
+url: "https://github.com/YoshikiHigo/FEMP-X"
+abstract: >-
+  FEMP-X is a witness-augmented dataset for candidate functionally equivalent
+  Java method pairs. It extends an original candidate pool of 13,710 Java
+  method pairs with execution-validated witnesses of inequivalence generated in
+  a Codex-based workflow using GPT-5.4. The release is designed to support
+  research on semantic clone detection, behavioral similarity analysis,
+  counterexample generation, executable test generation, and LLM-assisted
+  dataset curation.
+keywords:
+  - dataset
+  - code clone
+  - semantic clone detection
+  - functionally equivalent methods
+  - counterexample generation
+  - behavioral similarity
+  - Java
+license: "CC-BY-NC 4.0"
+
+version: "1.0.0"
+date-released: "2026-04-13"
+doi: "10.5281/zenodo.19543614"
