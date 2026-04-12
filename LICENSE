@@ -1,0 +1,85 @@
+FEMP-X License Notice
+=====================
+
+This release of FEMP-X, including the SQLite dataset file `FEMP-X.sqlite`
+and the accompanying documentation files distributed together with it, is
+made available under the following license:
+
+Creative Commons Attribution-NonCommercial 4.0 International
+(CC BY-NC 4.0)
+
+Canonical license URL:
+https://creativecommons.org/licenses/by-nc/4.0/
+
+Summary
+-------
+
+You may share and adapt this material, provided that:
+
+1. you give appropriate credit,
+2. you provide a link to the license,
+3. you indicate whether changes were made, and
+4. you do not use the material for commercial purposes.
+
+You may not apply legal terms or technological measures that legally restrict
+others from doing anything the license permits.
+
+For the full legal terms, please refer to the canonical license text at the
+URL above.
+
+Attribution and Provenance
+--------------------------
+
+FEMP-X is derived in part from IJADataset and includes source-code content
+obtained from IJADataset.
+
+The source-code content contained in this release, including the code stored
+in the `pair_src` field of `FEMP-X.sqlite`, is distributed under the same
+CC BY-NC 4.0 license as IJADataset.
+
+This release also includes additional metadata and curation results created
+for FEMP-X, including human-status metadata, LLM-based witness-generation
+results, behavioral-difference categories, and generated test-source text.
+
+When redistributing or adapting this release, please preserve attribution to:
+
+- FEMP-X
+- IJADataset
+- the CC BY-NC 4.0 license
+
+Recommended Attribution
+-----------------------
+
+A reasonable attribution should include:
+
+- the name of the dataset: FEMP-X
+- the creator/maintainer: Yoshiki Higo
+- the source repository or release location
+- a reference to IJADataset as an upstream source
+- a link to the CC BY-NC 4.0 license
+- an indication of whether changes were made
+
+Example attribution text:
+
+"FEMP-X, created by Yoshiki Higo, derived in part from IJADataset,
+licensed under CC BY-NC 4.0. Changes were made."
+
+Non-Commercial Restriction
+--------------------------
+
+This release may not be used for commercial purposes.
+
+For the meaning of "NonCommercial", please refer to the CC BY-NC 4.0
+license itself.
+
+No Warranty
+-----------
+
+This material is provided as-is, without warranties of any kind.
+
+Notes
+-----
+
+- This file is provided as a release-level license notice for FEMP-X.
+- If a Zenodo record is created for this release, the Zenodo metadata should
+  also specify CC BY-NC 4.0 as the license.
