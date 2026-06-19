@@ -542,6 +542,20 @@ final class ClonePairGenericInvocationTestSupport {
         if (value instanceof double[] doubles) {
             return doubles.clone();
         }
+        if (value instanceof double[][] doubles) {
+            double[][] clone = new double[doubles.length][];
+            for (int i = 0; i < doubles.length; i++) {
+                clone[i] = doubles[i] == null ? null : doubles[i].clone();
+            }
+            return clone;
+        }
+        if (value instanceof int[][] ints) {
+            int[][] clone = new int[ints.length][];
+            for (int i = 0; i < ints.length; i++) {
+                clone[i] = ints[i] == null ? null : ints[i].clone();
+            }
+            return clone;
+        }
         if (value instanceof boolean[] booleans) {
             return booleans.clone();
         }
