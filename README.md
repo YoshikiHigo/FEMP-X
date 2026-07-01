@@ -31,7 +31,7 @@ The key novelty of FEMP-X is not merely that it increases the number of annotate
 
 ## Construction Summary
 
-FEMP-X was constructed with **GPT-5.4 through Codex** in an agentic workflow.
+FEMP-X was constructed with **GPT-5.4 and GPT-5.5 through Codex** in an agentic workflow.
 
 For each candidate pair:
 
@@ -53,15 +53,16 @@ A retained witness may expose one of the following types of behavioral differenc
 - `exception`: the two methods differ in exception behavior
 - `no_termination`: only one side fails to terminate, for example due to timeout or infinite looping behavior
 
-## This Zenodo Release Includes
+## Available Artifacts
 
-This Zenodo release includes:
+FEMP-X is available through the GitHub repository, a Dropbox-hosted SQLite database file, and the Zenodo release.
 
-- a SQLite database containing the dataset
+- the GitHub repository, which contains the Java clone-pair source files and generated JUnit tests under `src/test/java`
+- the SQLite database file `FEMP-X.sqlite`, available from Dropbox and Zenodo
 - this `README.md`
 - `llm_inspected_pairs.md`, which documents the main LLM-augmented table in detail
 
-The generated JUnit test cases are **not** distributed as separate files in this release. Instead, they are stored inside the SQLite database as source text in the `test_src` field of `llm_inspected_pairs`.
+The generated JUnit test cases are available both as source files in the GitHub repository and as source text inside the SQLite database in the `test_src` field of `llm_inspected_pairs`.
 
 ## Main Table
 
@@ -84,34 +85,35 @@ In this release, `llm_inspected_pairs` contains **13,710** rows.
 
 ### Overall distribution
 
-- `witness_found`: **4,193**
-- `no_witness_found`: **9,517**
+- `witness_found`: **5,627**
+- `no_witness_found`: **8,083**
 
 ### Breakdown of `witness_found` by `difference_type`
 
-- `return_value`: **2,676**
-- `exception`: **798**
-- `no_termination`: **415**
-- `side_effect`: **304**
+- `return_value`: **3,386**
+- `exception`: **1,327**
+- `no_termination`: **555**
+- `side_effect`: **359**
 
 ### Distribution by human curation status
 
 | human_status | llm_status | difference_type | count |
 |---|---|---|---:|
-| `human_equivalent` | `no_witness_found` | `NULL` | 1,225 |
-| `human_equivalent` | `witness_found` | `exception` | 50 |
-| `human_equivalent` | `witness_found` | `no_termination` | 6 |
-| `human_equivalent` | `witness_found` | `return_value` | 57 |
+| `human_equivalent` | `no_witness_found` | `NULL` | 1,189 |
+| `human_equivalent` | `witness_found` | `exception` | 70 |
+| `human_equivalent` | `witness_found` | `no_termination` | 9 |
+| `human_equivalent` | `witness_found` | `return_value` | 70 |
 | `human_equivalent` | `witness_found` | `side_effect` | 4 |
 | `human_inequivalent` | `no_witness_found` | `NULL` | 4 |
 | `human_inequivalent` | `witness_found` | `exception` | 59 |
 | `human_inequivalent` | `witness_found` | `no_termination` | 18 |
-| `human_inequivalent` | `witness_found` | `return_value` | 771 |
-| `not_manually_inspected` | `no_witness_found` | `NULL` | 8,288 |
-| `not_manually_inspected` | `witness_found` | `exception` | 689 |
-| `not_manually_inspected` | `witness_found` | `no_termination` | 391 |
-| `not_manually_inspected` | `witness_found` | `return_value` | 1,848 |
-| `not_manually_inspected` | `witness_found` | `side_effect` | 300 |
+| `human_inequivalent` | `witness_found` | `return_value` | 736 |
+| `human_inequivalent` | `witness_found` | `side_effect` | 35 |
+| `not_manually_inspected` | `no_witness_found` | `NULL` | 6,890 |
+| `not_manually_inspected` | `witness_found` | `exception` | 1,198 |
+| `not_manually_inspected` | `witness_found` | `no_termination` | 528 |
+| `not_manually_inspected` | `witness_found` | `return_value` | 2,580 |
+| `not_manually_inspected` | `witness_found` | `side_effect` | 320 |
 
 These counts indicate that FEMP-X contributes a large witness-backed layer not only over the original human-validated subset but also over the previously uninspected portion of the candidate pool.
 
@@ -201,7 +203,7 @@ Finally, although the released artifact is execution-backed, downstream use stil
 
 ## AI Usage Disclosure
 
-This dataset was curated in part with **GPT-5.4 through Codex**.
+This dataset was curated in part with **GPT-5.4 and GPT-5.5 through Codex**.
 
 The model was used in an agentic workflow to generate candidate distinguishing tests, execute them immediately, and iteratively refine the search when no behavioral difference was reproduced. Only execution-validated witness tests were retained in the released artifact.
 
@@ -232,6 +234,10 @@ Project repository:
 Zenodo release:
 
 - https://doi.org/10.5281/zenodo.19543614
+
+Dropbox-hosted SQLite database:
+
+- https://www.dropbox.com/scl/fi/p2o4ruoodapassvdlv1gq/FEMP-X.sqlite?rlkey=bqpccg324hrx544cacxw8kzdd&st=ps3pa0pw&dl=0
 
 ## Citation
 
