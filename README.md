@@ -6,7 +6,7 @@ Unlike datasets that provide only pair-level labels, FEMP-X adds **execution-val
 
 FEMP-X is built on top of the original candidate pool of **13,710** Java method pairs derived from the prior FEMPD study.
 
-Zenodo DOI: https://doi.org/10.5281/zenodo.19543614
+Zenodo DOI: https://doi.org/10.5281/zenodo.21149373
 
 ## Overview
 
@@ -233,7 +233,7 @@ Project repository:
 
 Zenodo release:
 
-- https://doi.org/10.5281/zenodo.19543614
+- https://doi.org/10.5281/zenodo.21149373
 
 Dropbox-hosted SQLite database:
 
@@ -244,7 +244,7 @@ Dropbox-hosted SQLite database:
 If you use FEMP-X, please cite:
 
 1. the Zenodo release of FEMP-X:
-   https://doi.org/10.5281/zenodo.19543614
+   https://doi.org/10.5281/zenodo.21149373
 2. the original FEMPD paper
 
 If an accompanying FEMP-X paper is published later, its citation information can be added in a future revision of this README.
