@@ -243,11 +243,12 @@ Dropbox-hosted SQLite database:
 
 If you use FEMP-X, please cite:
 
-1. the Zenodo release of FEMP-X:
+1. the FEMP-X paper:
+   Yoshiki Higo, "FEMP-X: A Witness-Augmented Dataset for Candidate Functionally Equivalent Java Method Pairs", accepted by the 42nd International Conference on Software Maintenance and Evolution (ICSME 2026), Data Showcase track, pp. xx--xx, Benevento, Italy, September 16--18, 2026.
+2. the Zenodo release of FEMP-X:
    https://doi.org/10.5281/zenodo.21149373
-2. the original FEMPD paper
-
-If an accompanying FEMP-X paper is published later, its citation information can be added in a future revision of this README.
+3. the original FEMPD paper:
+   Yoshiki Higo, "Dataset of Functionally Equivalent Java Methods and Its Application to Evaluating Clone Detection Tools", IEICE Transactions on Information and Systems, Vol. E107.D, No. 6, pp. 751--760, 2024. https://doi.org/10.1587/transinf.2023EDP7268
 
 ## Contact
 
