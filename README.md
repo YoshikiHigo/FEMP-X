@@ -6,7 +6,7 @@ Unlike datasets that provide only pair-level labels, FEMP-X adds **execution-val
 
 FEMP-X is built on top of the original candidate pool of **13,710** Java method pairs derived from the prior FEMPD study.
 
-Zenodo DOI: https://doi.org/10.5281/zenodo.21149373
+Zenodo DOI (version 1.0.1): https://doi.org/10.5281/zenodo.21149373
 
 ## Overview
 
@@ -60,7 +60,7 @@ A retained witness may expose one of the following types of behavioral differenc
 FEMP-X is available through the GitHub repository, a Dropbox-hosted SQLite database file, and the Zenodo release.
 
 - the GitHub repository, which contains the Java clone-pair source files and generated JUnit tests under `src/test/java`
-- the SQLite database file `FEMP-X.sqlite`, available from Dropbox and Zenodo
+- the SQLite database file `FEMP-X.sqlite`, available from Dropbox (version 1.0.2) and Zenodo (version 1.0.1)
 - this `README.md`
 - `llm_inspected_pairs.md`, which documents the main LLM-augmented table in detail
 
@@ -237,6 +237,8 @@ Zenodo release:
 
 - https://doi.org/10.5281/zenodo.21149373
 
+The Zenodo record holds **version 1.0.1** of the dataset. Version 1.0.2, which adds the witnesses found in the Claude Fable 5.1 re-verification pass, has not been uploaded to Zenodo; it is distributed only through the GitHub repository and the Dropbox-hosted database file below.
+
 Dropbox-hosted SQLite database:
 
 - https://www.dropbox.com/scl/fi/tt94ib6oebpwrmolsrj6t/FEMP-X-v1.0.2.sqlite?rlkey=09n9u36zxl6ak8907uro1ji6w&dl=0
@@ -247,7 +249,7 @@ If you use FEMP-X, please cite:
 
 1. the FEMP-X paper:
    Yoshiki Higo, "FEMP-X: A Witness-Augmented Dataset for Candidate Functionally Equivalent Java Method Pairs", accepted by the 42nd International Conference on Software Maintenance and Evolution (ICSME 2026), Data Showcase track, pp. xx--xx, Benevento, Italy, September 16--18, 2026.
-2. the Zenodo release of FEMP-X:
+2. the Zenodo release of FEMP-X (version 1.0.1):
    https://doi.org/10.5281/zenodo.21149373
 3. the original FEMPD paper:
    Yoshiki Higo, "Dataset of Functionally Equivalent Java Methods and Its Application to Evaluating Clone Detection Tools", IEICE Transactions on Information and Systems, Vol. E107.D, No. 6, pp. 751--760, 2024. https://doi.org/10.1587/transinf.2023EDP7268
