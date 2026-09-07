@@ -239,7 +239,7 @@ Zenodo release:
 
 Dropbox-hosted SQLite database:
 
-- https://www.dropbox.com/scl/fi/p2o4ruoodapassvdlv1gq/FEMP-X.sqlite?rlkey=bqpccg324hrx544cacxw8kzdd&st=ps3pa0pw&dl=0
+- https://www.dropbox.com/scl/fi/tt94ib6oebpwrmolsrj6t/FEMP-X-v1.0.2.sqlite?rlkey=09n9u36zxl6ak8907uro1ji6w&dl=0
 
 ## Citation
 
