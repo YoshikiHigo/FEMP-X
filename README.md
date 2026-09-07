@@ -60,7 +60,7 @@ A retained witness may expose one of the following types of behavioral differenc
 FEMP-X is available through the GitHub repository, a Dropbox-hosted SQLite database file, and the Zenodo release.
 
 - the GitHub repository, which contains the Java clone-pair source files and generated JUnit tests under `src/test/java`
-- the SQLite database file `FEMP-X.sqlite`, available from Dropbox (version 1.0.2) and Zenodo (version 1.0.1)
+- the SQLite database file `FEMP-X-v1.0.2.sqlite`, available from Dropbox (version 1.0.2) and Zenodo (version 1.0.1)
 - this `README.md`
 - `llm_inspected_pairs.md`, which documents the main LLM-augmented table in detail
 
@@ -138,12 +138,12 @@ Therefore, pairs in the `no_witness_found` category may be useful as **candidate
 
 You can inspect the SQLite artifact with standard SQLite tools.
 
-In the examples below, we assume that the SQLite database file is named `FEMP-X.sqlite`. If your local copy uses a different filename, replace it accordingly.
+In the examples below, we assume that the SQLite database file is named `FEMP-X-v1.0.2.sqlite`. If your local copy uses a different filename, replace it accordingly.
 
 Example:
 
 ```bash
-sqlite3 FEMP-X.sqlite
+sqlite3 FEMP-X-v1.0.2.sqlite
 ```
 
 Useful SQLite commands:
@@ -225,7 +225,7 @@ FEMP-X adds a new reusable witness-backed layer over that foundation.
 
 ## License
 
-This release is distributed under **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**. FEMP-X is derived in part from IJADataset, and the source-code content contained in this release, including the code stored in the `pair_src` field of `FEMP-X.sqlite`, is distributed under the same CC BY-NC 4.0 license. Please preserve attribution to FEMP-X and IJADataset, provide a link to the license, indicate whether changes were made, and do not use the material for commercial purposes. See the accompanying `LICENSE` file for details.
+This release is distributed under **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**. FEMP-X is derived in part from IJADataset, and the source-code content contained in this release, including the code stored in the `pair_src` field of `FEMP-X-v1.0.2.sqlite`, is distributed under the same CC BY-NC 4.0 license. Please preserve attribution to FEMP-X and IJADataset, provide a link to the license, indicate whether changes were made, and do not use the material for commercial purposes. See the accompanying `LICENSE` file for details.
 
 ## Availability
 
