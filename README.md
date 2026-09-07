@@ -8,6 +8,8 @@ FEMP-X is built on top of the original candidate pool of **13,710** Java method 
 
 Zenodo DOI (version 1.0.1): https://doi.org/10.5281/zenodo.21149373
 
+**Note on versions:** the record counts reported in the ICSME 2026 paper are those of **version 1.0.1** of FEMP-X, available from the GitHub release page (https://github.com/YoshikiHigo/FEMP-X/releases/tag/v1.0.1) and from Zenodo. This README describes **version 1.0.2**, which adds the witnesses found in a re-verification pass with Claude Fable 5.1.
+
 ## Overview
 
 The original FEMPD dataset was constructed from Java methods extracted from IJADataset. Methods were grouped by identical return types and parameter types, test cases were generated for each method, and the generated tests were executed mutually between method pairs in the same group. Pairs that succeeded in both directions were retained as candidate pairs for functional equivalence, and a subset of them was manually inspected.
