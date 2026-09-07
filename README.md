@@ -60,7 +60,7 @@ A retained witness may expose one of the following types of behavioral differenc
 FEMP-X is available through the GitHub repository, a Dropbox-hosted SQLite database file, and the Zenodo release.
 
 - the GitHub repository, which contains the Java clone-pair source files and generated JUnit tests under `src/test/java`
-- the SQLite database file `FEMP-X-v1.0.2.sqlite`, available from Dropbox (version 1.0.2) and Zenodo (version 1.0.1)
+- the SQLite database file (`FEMP-X-v1.0.2.sqlite` on Dropbox; version 1.0.1 on Zenodo)
 - this `README.md`
 - `llm_inspected_pairs.md`, which documents the main LLM-augmented table in detail
 
