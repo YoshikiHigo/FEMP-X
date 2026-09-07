@@ -127,35 +127,35 @@ Notes:
 In this release, the table contains:
 
 - total rows: `13710`
-- `witness_found`: `5627`
-- `no_witness_found`: `8083`
+- `witness_found`: `6208`
+- `no_witness_found`: `7502`
 
 Breakdown of `witness_found` rows by `difference_type`:
 
-- `return_value`: `3386`
-- `exception`: `1327`
-- `no_termination`: `555`
-- `side_effect`: `359`
+- `return_value`: `3731`
+- `exception`: `1420`
+- `no_termination`: `679`
+- `side_effect`: `378`
 
 Detailed distribution by human label:
 
 | human_status | llm_status | difference_type | count |
 |---|---|---|---:|
-| `human_equivalent` | `no_witness_found` | `NULL` | 1189 |
-| `human_equivalent` | `witness_found` | `exception` | 70 |
+| `human_equivalent` | `no_witness_found` | `NULL` | 1180 |
+| `human_equivalent` | `witness_found` | `exception` | 72 |
 | `human_equivalent` | `witness_found` | `no_termination` | 9 |
-| `human_equivalent` | `witness_found` | `return_value` | 70 |
-| `human_equivalent` | `witness_found` | `side_effect` | 4 |
+| `human_equivalent` | `witness_found` | `return_value` | 76 |
+| `human_equivalent` | `witness_found` | `side_effect` | 5 |
 | `human_inequivalent` | `no_witness_found` | `NULL` | 4 |
 | `human_inequivalent` | `witness_found` | `exception` | 59 |
 | `human_inequivalent` | `witness_found` | `no_termination` | 18 |
 | `human_inequivalent` | `witness_found` | `return_value` | 736 |
 | `human_inequivalent` | `witness_found` | `side_effect` | 35 |
-| `not_manually_inspected` | `no_witness_found` | `NULL` | 6890 |
-| `not_manually_inspected` | `witness_found` | `exception` | 1198 |
-| `not_manually_inspected` | `witness_found` | `no_termination` | 528 |
-| `not_manually_inspected` | `witness_found` | `return_value` | 2580 |
-| `not_manually_inspected` | `witness_found` | `side_effect` | 320 |
+| `not_manually_inspected` | `no_witness_found` | `NULL` | 6318 |
+| `not_manually_inspected` | `witness_found` | `exception` | 1289 |
+| `not_manually_inspected` | `witness_found` | `no_termination` | 652 |
+| `not_manually_inspected` | `witness_found` | `return_value` | 2919 |
+| `not_manually_inspected` | `witness_found` | `side_effect` | 338 |
 
 ## Typical Queries
 
