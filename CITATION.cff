@@ -8,13 +8,12 @@ authors:
     given-names: Yoshiki
     affiliation: "The University of Osaka"
 repository-code: "https://github.com/YoshikiHigo/FEMP-X"
-url: "https://github.com/YoshikiHigo/FEMP-X"
+url: "https://github.com/YoshikiHigo/FEMP-X/releases/tag/v1.0.3"
 abstract: >-
   FEMP-X is a witness-augmented dataset for candidate functionally equivalent
   Java method pairs. It extends an original candidate pool of 13,710 Java
-  method pairs with execution-validated witnesses of inequivalence generated in
-  a Codex-based workflow using GPT-5.4 and GPT-5.5 and extended by a
-  re-verification pass with Claude Fable 5.1 through Claude Code. The release
+  method pairs with execution-validated witnesses of inequivalence and
+  updated record counts reflecting additional experiments after ICSME 2026. The release
   is designed to support
   research on semantic clone detection, behavioral similarity analysis,
   counterexample generation, executable test generation, and LLM-assisted
@@ -29,6 +28,5 @@ keywords:
   - Java
 license: "CC-BY-NC 4.0"
 
-version: "1.0.2"
-date-released: "2026-09-07"
-doi: "10.5281/zenodo.21149373"
+version: "1.0.3"
+date-released: "2026-11-02"
