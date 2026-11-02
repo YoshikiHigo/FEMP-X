@@ -72,3 +72,7 @@ jacoco.exec
 results/
 output/
 tmp/
+
+# Private experiment tooling and logs
+/tools/
+/logs/
