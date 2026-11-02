@@ -1,0 +1,29 @@
+{
+  "createdAt": "2026-11-02T03:16:43.739Z",
+  "initialCheck": {
+    "completed": false,
+    "reason": "Stopped after existing stderr assertions failed under Windows CRLF; untagged nontermination tests also left running daemon threads in the shared JVM.",
+    "example": "unverified.ClonePair4079DifferenceFindingTest",
+    "expectedStderr": "Not equal lengths: 0/1\n"
+  },
+  "isolatedLfCheck": {
+    "test": "unverified.ClonePair4079DifferenceFindingTest",
+    "passed": true
+  },
+  "configuration": {
+    "testJvmLineSeparator": "LF",
+    "isolatedNonterminationClasses": 679,
+    "previouslyTaggedClasses": 518,
+    "additionalUntaggedClasses": 161,
+    "isolatedForkEvery": 1,
+    "isolatedMaxParallelForks": 1
+  },
+  "normalTestResult": {
+    "classes": 13031,
+    "tests": 15271,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "subjectSourcesAndWitnessTestsChanged": false
+}
