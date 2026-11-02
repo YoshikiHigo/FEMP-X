@@ -1,0 +1,33 @@
+{
+  "createdAt": "2026-11-02T03:23:48.512Z",
+  "command": ".\\gradlew.bat check --console=plain",
+  "exitCode": 0,
+  "duration": "9m 6s",
+  "tasks": {
+    "test": {
+      "classes": 13031,
+      "tests": 15271,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "timeoutTest": {
+      "classes": 679,
+      "tests": 679,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "totalClasses": 13710,
+  "totalTests": 15950,
+  "all13710PairClassesCovered": true,
+  "uniqueClasses": 13710,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "testJvmLineSeparator": "LF",
+  "isolatedNonterminationClasses": 679,
+  "databaseValidation": "logs/releases/v1.0.3-database-validation.json",
+  "downloadLinkValidation": "logs/releases/v1.0.3-download-link-validation.json"
+}
