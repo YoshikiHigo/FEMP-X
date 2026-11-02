@@ -127,13 +127,13 @@ Notes:
 In this release, the table contains:
 
 - total rows: `13710`
-- `witness_found`: `6208`
-- `no_witness_found`: `7502`
+- `witness_found`: `6383`
+- `no_witness_found`: `7327`
 
 Breakdown of `witness_found` rows by `difference_type`:
 
-- `return_value`: `3731`
-- `exception`: `1420`
+- `return_value`: `3875`
+- `exception`: `1451`
 - `no_termination`: `679`
 - `side_effect`: `378`
 
@@ -141,8 +141,8 @@ Detailed distribution by human label:
 
 | human_status | llm_status | difference_type | count |
 |---|---|---|---:|
-| `human_equivalent` | `no_witness_found` | `NULL` | 1180 |
-| `human_equivalent` | `witness_found` | `exception` | 72 |
+| `human_equivalent` | `no_witness_found` | `NULL` | 1176 |
+| `human_equivalent` | `witness_found` | `exception` | 76 |
 | `human_equivalent` | `witness_found` | `no_termination` | 9 |
 | `human_equivalent` | `witness_found` | `return_value` | 76 |
 | `human_equivalent` | `witness_found` | `side_effect` | 5 |
@@ -151,10 +151,10 @@ Detailed distribution by human label:
 | `human_inequivalent` | `witness_found` | `no_termination` | 18 |
 | `human_inequivalent` | `witness_found` | `return_value` | 736 |
 | `human_inequivalent` | `witness_found` | `side_effect` | 35 |
-| `not_manually_inspected` | `no_witness_found` | `NULL` | 6318 |
-| `not_manually_inspected` | `witness_found` | `exception` | 1289 |
+| `not_manually_inspected` | `no_witness_found` | `NULL` | 6147 |
+| `not_manually_inspected` | `witness_found` | `exception` | 1316 |
 | `not_manually_inspected` | `witness_found` | `no_termination` | 652 |
-| `not_manually_inspected` | `witness_found` | `return_value` | 2919 |
+| `not_manually_inspected` | `witness_found` | `return_value` | 3063 |
 | `not_manually_inspected` | `witness_found` | `side_effect` | 338 |
 
 ## Typical Queries
