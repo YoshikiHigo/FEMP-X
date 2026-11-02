@@ -15,9 +15,31 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
+val isolatedTestClasses = fileTree("src/test/java") {
+    include("**/ClonePair*DifferenceFindingTest.java")
+}.files.mapNotNull { testSource ->
+    val isolationMarker = Regex(
+        """@Tag\(\s*"timeout"\s*\)|@BehavioralDifference\(\s*DifferenceType\.NO_TERMINATION\s*\)"""
+    )
+    if (isolationMarker.containsMatchIn(testSource.readText())) {
+        testSource.relativeTo(file("src/test/java")).invariantSeparatorsPath
+            .removeSuffix(".java").replace('/', '.')
+    } else {
+        null
+    }
+}.sorted()
+
+tasks.withType<Test>().configureEach {
+    // Stored witness assertions use LF, including output produced by println.
+    systemProperty("line.separator", "\n")
+}
+
 tasks.test {
     useJUnitPlatform {
         excludeTags("timeout")
+    }
+    filter {
+        isolatedTestClasses.forEach { excludeTestsMatching(it) }
     }
 }
 
@@ -28,9 +50,11 @@ val timeoutTest by tasks.registering(Test::class) {
     testClassesDirs = sourceSets.test.get().output.classesDirs
     classpath = sourceSets.test.get().runtimeClasspath
 
-    useJUnitPlatform {
-        includeTags("timeout")
+    useJUnitPlatform()
+    filter {
+        isolatedTestClasses.forEach { includeTestsMatching(it) }
     }
+    onlyIf { isolatedTestClasses.isNotEmpty() }
 
     forkEvery = 1
     maxParallelForks = 1
