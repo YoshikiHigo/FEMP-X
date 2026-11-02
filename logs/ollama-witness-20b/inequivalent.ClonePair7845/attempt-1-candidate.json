@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all possible inputs: they both throw the same exception for null or empty arrays, and for non‑empty arrays they compute the minimum in the same way. No concrete input can distinguish their return value, side effects, or exception behavior."
+}

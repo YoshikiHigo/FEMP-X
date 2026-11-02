@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the index of the minimum element in the array. For any non‑empty array they perform identical comparisons and return the same index. For an empty array or a null reference both methods attempt to access the first element, causing a NullPointerException in the same way. No input can produce a differing return value, side effect, exception type, or non‑termination between the two methods."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible byte[] inputs and initial states. Both perform reference equality checks, null checks, length comparisons, and element-wise equality checks in the same logical order, yielding the same boolean result for every input combination. No concrete input can distinguish their outputs, side effects, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1100,
+  "eval_count": 220,
+  "total_duration": 2100717900,
+  "load_duration": 3065000
+}

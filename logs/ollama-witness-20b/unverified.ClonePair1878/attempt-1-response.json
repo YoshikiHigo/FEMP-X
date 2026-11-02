@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical checks and return the same boolean value for all possible byte[] inputs. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1251,
+  "eval_count": 51,
+  "total_duration": 815119000,
+  "load_duration": 11548700
+}

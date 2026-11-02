@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same boolean for all possible String inputs; they handle nulls identically and use compareTo==0 which is equivalent to equals for Java Strings. No concrete separating input exists."
+}

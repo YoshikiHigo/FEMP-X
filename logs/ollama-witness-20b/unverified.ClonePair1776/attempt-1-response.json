@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For a two‑byte input the two implementations produce different padding. method1 pads with \\\"==\\\" while method2 pads with \\\"=\\\" and an extra base64 character.\",\"arguments_java\":[\"new byte[]{0,0}\"],\"parameter_types\":[\"byte[]\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1560,
+  "eval_count": 309,
+  "total_duration": 2799037000,
+  "load_duration": 2585900
+}

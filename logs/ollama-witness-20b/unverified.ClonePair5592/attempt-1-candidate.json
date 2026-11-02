@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical arithmetic modulo operations and handle negative results in the same way. For any pair of integer inputs (x, n) and (x, y) where n and y are the same value, the two methods produce the same result or throw the same exception. No deterministic, bounded input can distinguish them under the allowed difference types."
+}

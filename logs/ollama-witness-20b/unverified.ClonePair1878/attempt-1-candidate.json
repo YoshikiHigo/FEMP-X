@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks and return the same boolean value for all possible byte[] inputs. No input can distinguish their behavior."
+}

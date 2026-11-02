@@ -1,0 +1,65 @@
+{
+  "key": "unverified.ClonePair11755",
+  "stable": true,
+  "differenceType": "no_termination",
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.OutOfMemoryError",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]"
+      },
+      {
+        "status": "TIMEOUT",
+        "valueSnapshot": null,
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "<snapshot-skipped-after-timeout>"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.OutOfMemoryError",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]"
+      },
+      {
+        "status": "TIMEOUT",
+        "valueSnapshot": null,
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "<snapshot-skipped-after-timeout>"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "no_termination",
+    "reason": "When the search string is empty, method1 enters an infinite loop because it repeatedly finds the empty string at the same position and never advances the search index. Method2, however, advances the search index by the length of the replacement string on each iteration, eventually exceeding the string length and terminating. The input below demonstrates this behavior.",
+    "arguments_java": [
+      "\"abc\"",
+      "\"\"",
+      "\"x\""
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": "method1’s while loop condition is based on startindex > -1. With find==\"\", startindex is always 0, so the loop never ends. method2’s loop uses gofrom = next + lenB; with lenB>0 this eventually becomes greater than the current text length, causing the loop to exit."
+  },
+  "remainingSeconds": 137.112
+}

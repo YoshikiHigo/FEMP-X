@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 compares element‑wise and returns false when the contents differ, while method2 only checks that the arrays are non‑null and of equal length; due to a misplaced else, it never compares the elements, so it returns true for any two non‑null arrays of the same length.",
+  "arguments_java": [
+    "new byte[]{1,2}",
+    "new byte[]{3,4}"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "byte[]"
+  ],
+  "void_return": false
+}

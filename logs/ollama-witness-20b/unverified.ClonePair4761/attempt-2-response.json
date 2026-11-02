@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the maximum of a double array in exactly the same way: they initialize a candidate value (either an index or the first element) and then iterate over the array, updating the candidate only when a strictly greater value is found. For all possible inputs—including empty arrays, null arrays, arrays containing NaN, infinities, or any finite numbers—the two methods exhibit identical behavior in terms of return value, side effects, exceptions, and termination. No deterministic, bounded input can distinguish them, so no separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1234,
+  "eval_count": 285,
+  "total_duration": 2582983600,
+  "load_duration": 2551300
+}

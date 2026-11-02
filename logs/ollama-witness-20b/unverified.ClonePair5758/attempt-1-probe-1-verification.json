@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair5758",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(dHJ1ZSA=),Boolean(false)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(dHJ1ZSA=),Boolean(false)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(dHJ1ZSA=),Boolean(false)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(dHJ1ZSA=),Boolean(false)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(dHJ1ZSA=),Boolean(false)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(dHJ1ZSA=),Boolean(false)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(dHJ1ZSA=),Boolean(false)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(dHJ1ZSA=),Boolean(false)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 trims the input before comparison, so the string \"true \" (with a trailing space) is trimmed to \"true\" and matches, returning true. method2 compares the raw string with \"true\" using equalsIgnoreCase, which does not ignore trailing spaces, so the comparison fails and the method returns the default value (false).",
+    "arguments_java": [
+      "\"true \"",
+      "false"
+    ],
+    "parameter_types": [
+      "String",
+      "boolean"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 164.633
+}

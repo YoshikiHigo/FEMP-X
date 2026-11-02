@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, when the search string is empty, both methods enter an infinite loop due to the zero-length match, and otherwise they perform the same substring replacement logic. No input can be constructed that causes one method to terminate or produce a different result while the other does not."
+}

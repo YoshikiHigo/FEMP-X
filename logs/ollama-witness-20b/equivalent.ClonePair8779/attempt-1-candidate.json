@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all relevant Unicode ranges and specific code points handled by both methods, their logical flow yields identical boolean results for every possible char input. No concrete separating input was identified."
+}

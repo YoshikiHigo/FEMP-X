@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 treats any Number by converting its intValue() to an Integer, while method2 attempts to parse the Number’s toString() as an integer.  By supplying a Number whose intValue() returns a valid integer but whose toString() yields a non‑numeric string, method1 returns that integer whereas method2 throws a NumberFormatException.\",\"arguments_java\":[\"new Number(){public int intValue(){return 5;}public long longValue(){return 5L;}public float floatValue(){return 5f;}public double doubleValue(){return 5d;}public String toString(){return \\\"abc\\\";}}\"],\"parameter_types\":[\"Object\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1116,
+  "eval_count": 591,
+  "total_duration": 4911400400,
+  "load_duration": 18586600
+}

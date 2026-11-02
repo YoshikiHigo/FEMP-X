@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods contain identical logic; no input can produce a differing return value, side effect, exception type, or non‑termination."
+}

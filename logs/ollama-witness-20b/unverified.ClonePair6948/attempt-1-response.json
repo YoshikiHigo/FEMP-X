@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods compute the same unsigned 32‑bit integer from four consecutive bytes. Both perform identical signed‑to‑unsigned conversion and use the same shift/mask logic. No input can cause one to return a different value, throw a different exception type, or terminate differently while the other behaves the same.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1404,
+  "eval_count": 302,
+  "total_duration": 2812176700,
+  "load_duration": 3381800
+}

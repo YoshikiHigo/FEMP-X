@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods produce identical results for all possible inputs. Both interpret each byte as unsigned, then set the corresponding sign bit if the original byte was negative. This is equivalent to simply treating the byte as unsigned. Therefore no concrete separating input exists."
+}

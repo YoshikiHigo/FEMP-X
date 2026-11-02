@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible int[] inputs, including null, empty, and non-empty arrays. No concrete input can distinguish their return values, side effects, or exception behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; they perform the same null checks and iterate over the array comparing each element to the target string. No input can cause one to return a different value, throw an exception, or exhibit a side effect that the other does not."
+}

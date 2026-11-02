@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return null when the argument is null and otherwise delegate to Long.parseLong, which throws the same NumberFormatException for invalid inputs. No deterministic, bounded input can distinguish them."
+}

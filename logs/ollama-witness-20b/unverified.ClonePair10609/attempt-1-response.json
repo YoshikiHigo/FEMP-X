@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of the two methods, no deterministic input can be constructed that causes one method to produce a different return value, side effect, exception type, or non‑termination while the other behaves differently. Both methods exhibit identical behavior for all possible combinations of the three String arguments, including nulls, empty strings, and strings of arbitrary length. Therefore, no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1314,
+  "eval_count": 481,
+  "total_duration": 3867473600,
+  "load_duration": 7169100
+}

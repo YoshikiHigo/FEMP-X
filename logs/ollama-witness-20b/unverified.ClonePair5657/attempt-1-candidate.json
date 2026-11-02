@@ -1,0 +1,16 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "When both arguments are null, method1 returns false (because it checks s1==null || s2==null) whereas method2 returns true (because it returns (s2==null) when s1 is null).",
+  "arguments_java": [
+    "null",
+    "null",
+    "true"
+  ],
+  "parameter_types": [
+    "String",
+    "String",
+    "boolean"
+  ],
+  "void_return": false
+}

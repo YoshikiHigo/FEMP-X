@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all inputs that can be represented by standard CharSequence implementations. No concrete separating input can be constructed without violating the constraints (e.g., using non‑deterministic or side‑effecting CharSequence implementations).\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 965,
+  "eval_count": 573,
+  "total_duration": 4512670400,
+  "load_duration": 2037800
+}

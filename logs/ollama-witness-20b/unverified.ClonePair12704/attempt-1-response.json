@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods differ only in the locale used for converting the hexadecimal string to upper case. For all standard locales the mapping of the characters 0‑9 and a‑f to their upper‑case forms is identical, so the resulting strings are the same for any input. No deterministic, bounded input can produce a difference in return value, side effect, exception, or non‑termination between the two methods.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1234,
+  "eval_count": 294,
+  "total_duration": 2415286400,
+  "load_duration": 10559100
+}

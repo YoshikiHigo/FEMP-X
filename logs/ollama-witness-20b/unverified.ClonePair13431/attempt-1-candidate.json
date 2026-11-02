@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte conversion logic for all valid inputs, including edge cases such as empty strings, odd-length strings, and null values. They both throw the same exceptions under the same conditions, and there is no observable difference in return values, side effects, or termination behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; all control flow and arithmetic expressions are the same, so no concrete input can distinguish them."
+}

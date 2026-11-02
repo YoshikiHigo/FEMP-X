@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for comparing a prefix of one byte array against another; given the same inputs they produce the same return value, throw the same exception (NullPointerException when either argument is null), and have no side effects. No concrete separating input exists."
+}

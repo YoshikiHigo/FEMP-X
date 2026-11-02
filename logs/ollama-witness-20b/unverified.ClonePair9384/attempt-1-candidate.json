@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the minimum of a non‑null array in the same way; the only difference is that method2 compares the first element against itself, which has no effect. For all inputs that terminate normally (non‑null arrays of length ≥1), both methods return the same value. For empty or null arrays both throw the same exception. No concrete input can distinguish the two methods."
+}

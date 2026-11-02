@@ -1,0 +1,63 @@
+{
+  "key": "unverified.ClonePair8835",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-3)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][short[][1, 2],Short(3)]",
+        "inputAfterSnapshot": "java.lang.Object[][short[][1, 2],Short(3)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-3)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][short[][1, 2],Short(3)]",
+        "inputAfterSnapshot": "java.lang.Object[][short[][1, 2],Short(3)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-3)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][short[][1, 2],Short(3)]",
+        "inputAfterSnapshot": "java.lang.Object[][short[][1, 2],Short(3)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-3)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][short[][1, 2],Short(3)]",
+        "inputAfterSnapshot": "java.lang.Object[][short[][1, 2],Short(3)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For a sorted array that does not contain the key, method1 returns the negative insertion point minus one computed from the last mid value, whereas method2 returns the negative insertion point minus one computed from the final low value. With a=[1,2] and key=3, method1 returns -2 while method2 returns -3.",
+    "arguments_java": [
+      "new short[]{1,2}",
+      "(short)3"
+    ],
+    "parameter_types": [
+      "short[]",
+      "short"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 159.787
+}

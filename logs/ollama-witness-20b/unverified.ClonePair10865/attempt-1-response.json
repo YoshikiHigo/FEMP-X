@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods evaluate the same set of characters (hexadecimal digits 0-9, a-f, A-F) to true and all other characters to false. No input can cause one method to return true while the other returns false, nor can one method throw an exception or terminate differently under any deterministic, bounded input.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 900,
+  "eval_count": 295,
+  "total_duration": 2304727000,
+  "load_duration": 2896700
+}

@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair7813",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ClassCastException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(98)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(98)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ClassCastException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(98)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(98)]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ClassCastException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(98)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(98)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ClassCastException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(98)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(98)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For the input character 'b' (ASCII 98), method1 returns -1 because it falls between '9' and 'A', whereas method2 correctly maps it to the hexadecimal value 11. Both methods receive the same input and initial state, yet their return values differ.",
+    "arguments_java": [
+      "'b'"
+    ],
+    "parameter_types": [
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 165.504
+}

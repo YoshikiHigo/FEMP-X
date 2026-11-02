@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; they perform the same range checks and return the same characters for all integer inputs. No concrete input can distinguish their behavior."
+}

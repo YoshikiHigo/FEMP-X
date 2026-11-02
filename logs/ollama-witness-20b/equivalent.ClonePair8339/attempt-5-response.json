@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For n=4, method1 returns 3 (falls into the branch where n>3 but n<8) while method2 returns 2 (falls into the branch where n<0x10 but n>=0x4). The branching structure of method2 causes the else‑return 2 to be taken before the later else‑if (n<0x8) branch.\",\"arguments_java\":[\"4\"],\"parameter_types\":[\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 2237,
+  "eval_count": 1111,
+  "total_duration": 8871036200,
+  "load_duration": 2596400
+}

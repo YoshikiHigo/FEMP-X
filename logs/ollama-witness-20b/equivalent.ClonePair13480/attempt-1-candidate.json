@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical conversions for all valid inputs; no concrete separating input was found."
+}

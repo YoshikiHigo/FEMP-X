@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit big‑endian value from the first four bytes of the array. For any byte array of length at least four (or null, which throws the same exception), the two implementations produce identical results. No deterministic, bounded input can distinguish them."
+}

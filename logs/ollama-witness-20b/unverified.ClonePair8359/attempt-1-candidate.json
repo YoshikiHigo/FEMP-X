@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they either return the same index after skipping leading whitespace, throw the same exception for null or out‑of‑bounds indices, or return the original index when no whitespace is present. No concrete input can distinguish their return value, side effects, or exception behavior."
+}

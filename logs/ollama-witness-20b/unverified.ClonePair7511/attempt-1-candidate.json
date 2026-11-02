@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns true when the two objects are equal according to their equals() method, regardless of class. method2 first checks that the two objects are of the same class; if they are not, it returns false even if equals() would return true. Using a java.util.Date and a java.sql.Date that represent the same instant demonstrates this difference: Date.equals(java.sql.Date) returns true, but the class check in method2 causes it to return false.",
+  "arguments_java": [
+    "new java.util.Date(1000L)",
+    "new java.sql.Date(1000L)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

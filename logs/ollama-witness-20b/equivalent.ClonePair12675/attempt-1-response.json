@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical bounds‑checked scans over the same byte range and return the same boolean value for any input. No input can cause a difference in return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1123,
+  "eval_count": 84,
+  "total_duration": 1073039400,
+  "load_duration": 2191700
+}

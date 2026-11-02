@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair6235",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9vIGJhcg==),String(Zm9vIGJheg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9vIGJhcg==),String(Zm9vIGJheg==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9vIGJhcg==),String(Zm9vIGJheg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9vIGJhcg==),String(Zm9vIGJheg==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9vIGJhcg==),String(Zm9vIGJheg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9vIGJhcg==),String(Zm9vIGJheg==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9vIGJhcg==),String(Zm9vIGJheg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9vIGJhcg==),String(Zm9vIGJheg==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 compares the entire strings and returns false for \"foo bar\" vs \"foo baz\" because the characters differ, while method2 splits each string on the first space and compares only the first token; both tokens are \"foo\", so method2 returns true.",
+    "arguments_java": [
+      "\"foo bar\"",
+      "\"foo baz\""
+    ],
+    "parameter_types": [
+      "String",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 162.874
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all control paths, both methods behave identically for every possible combination of inputs. No concrete input can distinguish their return values, side effects, or termination behavior."
+}

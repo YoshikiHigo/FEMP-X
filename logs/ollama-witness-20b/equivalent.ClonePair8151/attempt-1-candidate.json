@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are byte‑by‑byte identical; they perform the same iteration, the same condition check, and the same list construction. No input can cause one to behave differently from the other."
+}

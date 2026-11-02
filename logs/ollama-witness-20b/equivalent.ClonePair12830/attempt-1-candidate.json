@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical element‑wise reference comparisons and have the same null‑handling semantics. No input can cause one to return a different value, throw a different exception, or exhibit non‑termination while the other behaves differently."
+}

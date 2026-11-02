@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 calls a.equals(b) which throws a RuntimeException when the two arguments are the same instance; method2 detects identity first and returns true without invoking equals, so it does not throw.\",\"arguments_java\":[\"ThrowingEquals.INSTANCE\",\"ThrowingEquals.INSTANCE\"],\"parameter_types\":[\"Object\",\"Object\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 868,
+  "eval_count": 827,
+  "total_duration": 6490697600,
+  "load_duration": 5174100
+}

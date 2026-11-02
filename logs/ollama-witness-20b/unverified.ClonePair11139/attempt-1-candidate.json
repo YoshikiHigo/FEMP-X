@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, the only pathological case is when the search string is empty, which causes an infinite loop in both methods. No input leads to a difference in return value, side effects, exceptions, or termination."
+}

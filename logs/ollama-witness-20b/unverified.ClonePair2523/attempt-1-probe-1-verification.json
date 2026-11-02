@@ -1,0 +1,61 @@
+{
+  "key": "unverified.ClonePair2523",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(16711680)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, -1, 0]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, -1, 0]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(16711680)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, -1, 0]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, -1, 0]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(16711680)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, -1, 0]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, -1, 0]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(16711680)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, -1, 0]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, -1, 0]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 interprets all bytes as unsigned and combines them with little‑endian order. method2 performs signed shifts and then compensates for negative values only for the lower three bytes. When the third byte (index 2) is negative, method2 adds 16777216 to the shifted value, producing a larger result than method1.",
+    "arguments_java": [
+      "new byte[]{0,0,(byte)-1,0}"
+    ],
+    "parameter_types": [
+      "byte[]"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 163.271
+}

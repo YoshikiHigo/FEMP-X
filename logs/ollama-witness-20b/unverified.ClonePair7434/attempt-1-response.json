@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical control flow and return logic for all possible String inputs, including nulls and empty strings. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 937,
+  "eval_count": 501,
+  "total_duration": 4140081100,
+  "load_duration": 5174200
+}

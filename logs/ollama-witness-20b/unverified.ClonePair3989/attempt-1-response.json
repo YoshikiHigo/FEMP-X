@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of all possible combinations of null and non‑null values for the two string parameters, both methods exhibit identical behavior for every input. No concrete input can be constructed that causes a divergence in return value, side effect, exception, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 889,
+  "eval_count": 486,
+  "total_duration": 3912233200,
+  "load_duration": 10134300
+}

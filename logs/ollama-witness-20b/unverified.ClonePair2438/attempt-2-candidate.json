@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods produce identical results for all possible byte[] inputs of length 4. For the most significant byte, both methods ultimately shift the same 8-bit value into the same position, and for the lower three bytes the signed-to-unsigned conversion in method1 matches the masking in method2. Since addition and bitwise OR on non‑overlapping byte fields yield the same 32‑bit integer, no concrete input can distinguish the two implementations."
+}

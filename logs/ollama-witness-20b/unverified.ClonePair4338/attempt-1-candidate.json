@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logical checks on the same input: they both return false if either argument is null, and otherwise compare the year, month/day components of the dates. Using Calendar for day-of-year versus Date's deprecated getters yields the same result for all finite, deterministic Date values. No input can be constructed that causes a divergence in return value, side effect, exception, or non‑termination."
+}

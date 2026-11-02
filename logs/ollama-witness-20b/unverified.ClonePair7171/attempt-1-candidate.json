@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte-to-int conversion using the same arithmetic and masking logic. For any valid byte array and offset within bounds, they produce the same 32‑bit integer. For out‑of‑bounds or null inputs, both throw the same type of exception (ArrayIndexOutOfBoundsException or NullPointerException). No deterministic input can distinguish their behavior."
+}

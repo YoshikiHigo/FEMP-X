@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same value for all possible String inputs: null for null input, a Double instance for a valid numeric string, and null for any non‑numeric string. No deterministic difference in return value, side effect, exception type, or termination behavior can be observed with any finite, deterministic input."
+}

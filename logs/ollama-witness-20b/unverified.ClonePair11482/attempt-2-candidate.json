@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the control flow and string manipulation logic in both methods, no deterministic input can be constructed that leads to a differing observable behavior (return value, exception, side‑effect, or non‑termination). The methods handle all edge cases (nulls, empty strings, absent patterns, etc.) in the same way, and their replacement loops produce identical results for any finite input. Therefore, no separating test case exists."
+}

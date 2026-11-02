@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs. Both compute the same new capacity, perform the same array copy logic, and return either the original array or a new array with the same contents. They also both throw a NullPointerException when the input array is null. No concrete input can distinguish their return values, side effects, or exception behavior."
+}

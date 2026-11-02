@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compare the same logical components of the dates (year, month/day versus era/year/day_of_year). For any pair of java.util.Date objects, the conditions evaluated by method1 and method2 are equivalent. No deterministic, bounded input can cause one method to return true while the other returns false, nor can one method terminate when the other does not. Therefore a concrete separating test case cannot be constructed."
+}

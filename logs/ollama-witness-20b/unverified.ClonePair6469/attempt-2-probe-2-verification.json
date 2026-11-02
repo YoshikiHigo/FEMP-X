@@ -1,0 +1,68 @@
+{
+  "key": "unverified.ClonePair6469",
+  "stable": true,
+  "differenceType": "exception",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][127]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][127],Integer(0)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][127]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][127],Integer(0)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 writes exactly in_len bytes to out_buff, while method2 writes 4*in_len bytes. With in_len=1, out_offset=0 and out_buff of length 1, method1 completes normally, but method2 attempts to write four bytes and throws ArrayIndexOutOfBoundsException.",
+    "arguments_java": [
+      "new float[]{0.0f}",
+      "0",
+      "1",
+      "new byte[]{0}",
+      "0"
+    ],
+    "parameter_types": [
+      "float[]",
+      "int",
+      "int",
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 146.808
+}

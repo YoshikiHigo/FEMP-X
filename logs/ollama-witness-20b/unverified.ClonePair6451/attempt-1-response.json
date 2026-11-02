@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"Both methods write different numbers of bytes into the same output buffer and thus return buffers with different contents. In method1 a 4‑byte little‑endian representation of the scaled float is written, while method2 writes a 3‑byte representation of a different value. The returned byte arrays therefore differ.\",\"arguments_java\":[\"new float[]{1.0f}\"],\"parameter_types\":[\"float[]\",\"int\",\"int\",\"byte[]\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1610,
+  "eval_count": 374,
+  "total_duration": 3291852000,
+  "load_duration": 2872500
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte filtering and packing; no input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1191,
+  "eval_count": 47,
+  "total_duration": 781667500,
+  "load_duration": 9680400
+}

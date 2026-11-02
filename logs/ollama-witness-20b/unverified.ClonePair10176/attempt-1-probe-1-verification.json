@@ -1,0 +1,65 @@
+{
+  "key": "unverified.ClonePair10176",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String()",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(),String(YQ==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(),String(YQ==),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String()",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(),String(YQ==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(),String(YQ==),null]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String()",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(),String(YQ==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(),String(YQ==),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String()",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(),String(YQ==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(),String(YQ==),null]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "no_termination",
+    "reason": "method1 enters an infinite loop when the input string is empty and the search string is non‑empty, while method2 returns immediately.",
+    "arguments_java": [
+      "\"\"",
+      "\"a\"",
+      "null"
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": "In method1, lastPos becomes negative after the first iteration (pos = -1, lastPos = -1 + find.length()). The subsequent call to str.indexOf(find, lastPos) treats a negative start index as 0, so pos remains -1 and the loop condition pos >= 0 is never satisfied, causing an infinite loop. Method2 checks strLen > 0 before entering its loop, so it terminates immediately."
+  },
+  "remainingSeconds": 145.935
+}

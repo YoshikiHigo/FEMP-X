@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte-to-hex conversion over the same index range; no input can cause differing observable behavior under the allowed difference types."
+}

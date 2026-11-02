@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic: they return true if the character is a digit '0'–'9', otherwise false. No input can cause a differing return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 885,
+  "eval_count": 73,
+  "total_duration": 650445700,
+  "load_duration": 9368900
+}

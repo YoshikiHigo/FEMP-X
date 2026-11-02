@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform the same null checks and delegate to String.replaceAll; no input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1133,
+  "eval_count": 46,
+  "total_duration": 732511300,
+  "load_duration": 12232600
+}

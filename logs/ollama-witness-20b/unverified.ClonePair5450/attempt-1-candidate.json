@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same leap year logic; no input can distinguish their outputs."
+}

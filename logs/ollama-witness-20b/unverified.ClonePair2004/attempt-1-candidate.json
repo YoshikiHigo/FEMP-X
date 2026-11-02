@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks on the byte arrays and return the same boolean value for all possible inputs. No input can cause them to diverge in return value, side effects, exceptions, or non‑termination."
+}

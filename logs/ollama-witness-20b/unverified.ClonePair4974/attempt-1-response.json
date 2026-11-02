@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible inputs: they return the default value when the Properties object is null or the property is missing, and otherwise parse the property value using Integer.parseInt or Integer.valueOf, which throw the same NumberFormatException for non‑numeric strings. No input can cause one method to terminate normally while the other throws an exception, or vice versa, or produce a different return value. Therefore no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 894,
+  "eval_count": 225,
+  "total_duration": 2009752500,
+  "load_duration": 9305500
+}

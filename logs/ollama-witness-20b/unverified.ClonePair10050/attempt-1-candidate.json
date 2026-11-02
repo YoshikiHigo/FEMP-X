@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods evaluate the same character ranges for all possible char values; no input can distinguish their return values."
+}

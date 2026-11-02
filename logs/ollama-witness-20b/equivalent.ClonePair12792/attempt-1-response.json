@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods produce identical UTF‑8 byte arrays for all int inputs; exhaustive reasoning shows no input leads to a differing return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1539,
+  "eval_count": 998,
+  "total_duration": 7964338900,
+  "load_duration": 7713800
+}

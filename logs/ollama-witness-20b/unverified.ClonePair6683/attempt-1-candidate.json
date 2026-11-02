@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all combinations of null, empty, and non‑empty strings, both methods produce identical boolean results for every possible pair of inputs. No concrete separating test case exists."
+}

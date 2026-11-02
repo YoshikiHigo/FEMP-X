@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods use the same logic with StringBuilder and StringBuffer, which are functionally equivalent for the operations performed. No input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1244,
+  "eval_count": 75,
+  "total_duration": 1038727400,
+  "load_duration": 2040600
+}

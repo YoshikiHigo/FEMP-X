@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all integer inputs, both methods produce identical results for every possible int value. No concrete separating input was found."
+}

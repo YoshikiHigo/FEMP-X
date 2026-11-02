@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical unsigned 32‑bit little‑endian conversion of four consecutive bytes. For any byte array and offset that is within bounds, they compute the same integer value. For out‑of‑bounds or null inputs, both throw the same type of exception (ArrayIndexOutOfBoundsException or NullPointerException). No deterministic input can distinguish their behavior."
+}

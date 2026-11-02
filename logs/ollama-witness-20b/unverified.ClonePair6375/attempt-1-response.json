@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte‑to‑long conversion for any 8‑byte slice of the array; no input causes a differing return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 998,
+  "eval_count": 1087,
+  "total_duration": 8542045000,
+  "load_duration": 2039800
+}

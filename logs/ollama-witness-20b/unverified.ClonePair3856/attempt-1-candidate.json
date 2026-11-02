@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical dot‑product calculations on the two input arrays; they return the same value for any pair of arrays (including null or empty arrays). No distinguishing input exists."
+}

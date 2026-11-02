@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all execution paths, both methods produce identical results for every possible combination of inputs. No concrete separating test case can be constructed that distinguishes their behavior under the allowed criteria."
+}

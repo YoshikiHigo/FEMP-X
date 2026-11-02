@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. They both throw the same exceptions for null or out‑of‑bounds indices, and for any valid string and start index they return the first non‑whitespace position (or the original index if none). No concrete input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1063,
+  "eval_count": 285,
+  "total_duration": 2301638500,
+  "load_duration": 14018200
+}

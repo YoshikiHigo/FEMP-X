@@ -1,0 +1,64 @@
+{
+  "key": "unverified.ClonePair8390",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][65],byte[][97],Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][65],byte[][97],Integer(1)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][65],byte[][97],Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][65],byte[][97],Integer(1)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][65],byte[][97],Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][65],byte[][97],Integer(1)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][65],byte[][97],Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][65],byte[][97],Integer(1)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 converts uppercase letters to lowercase before comparison, while method2 compares bytes directly. With inputs where the two arrays contain the same letter in different cases, method1 returns true and method2 returns false.",
+    "arguments_java": [
+      "new byte[]{(byte)'A'}",
+      "new byte[]{(byte)'a'}",
+      "1"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 158.808
+}

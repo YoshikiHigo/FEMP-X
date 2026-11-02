@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical 32‑bit little‑endian reconstruction of four consecutive bytes starting at the given offset. They handle signed bytes in the same way (by masking with 0xff or adding 256), and both throw ArrayIndexOutOfBoundsException when the array is too short or the offset is invalid. No deterministic input can produce a different return value, side effect, exception type, or non‑termination between the two methods."
+}

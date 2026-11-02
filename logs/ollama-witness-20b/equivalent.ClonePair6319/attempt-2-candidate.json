@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning, the two methods compute the same value for all valid inputs (including edge cases such as empty or null arrays). No concrete separating input exists."
+}

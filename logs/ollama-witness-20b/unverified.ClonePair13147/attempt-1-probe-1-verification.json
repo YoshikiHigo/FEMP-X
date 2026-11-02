@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair13147",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.StringIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MA==)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.StringIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MA==)]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.StringIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MA==)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.StringIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MA==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 throws StringIndexOutOfBoundsException for odd‑length input, while method2 silently truncates the last character and returns a shorter byte array.",
+    "arguments_java": [
+      "\"0\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 149.529
+}

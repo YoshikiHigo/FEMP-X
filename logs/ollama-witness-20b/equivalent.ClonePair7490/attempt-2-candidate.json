@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all 65536 possible char values, both methods produce identical strings for every input. No concrete separating test case exists."
+}

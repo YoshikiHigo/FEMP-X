@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 throws NumberFormatException when the system property value is the empty string, whereas method2 returns the default value in that case.",
+  "arguments_java": [
+    "\"\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical operations: they both replace occurrences of oldString with newString, update count[0] with the number of replacements, and return the resulting string. The only syntactic difference is the use of StringBuilder versus StringBuffer, which does not affect the observable behavior for the given inputs. No concrete input can distinguish their return values, side effects, exceptions, or termination behavior."
+}

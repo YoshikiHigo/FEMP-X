@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte conversion of a string into a byte array; they handle null strings by throwing the same NullPointerException, and otherwise produce the same result. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1218,
+  "eval_count": 67,
+  "total_duration": 877324700,
+  "load_duration": 2165900
+}

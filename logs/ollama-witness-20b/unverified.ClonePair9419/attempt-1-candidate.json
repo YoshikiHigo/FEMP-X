@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, the only pathological case is when the search string is empty, which causes an infinite loop in both methods. No input can make one method terminate while the other does not, nor can it produce a differing return value, side effect, or exception type. Therefore no concrete separating test case exists."
+}

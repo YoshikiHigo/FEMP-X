@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical little‑endian conversion of four consecutive bytes starting at the supplied index/offset. For any byte array and integer index/offset that does not cause an exception, both methods compute the same 32‑bit integer. No input can produce a differing return value, side effect, or exception type without invoking the same exception in both methods."
+}

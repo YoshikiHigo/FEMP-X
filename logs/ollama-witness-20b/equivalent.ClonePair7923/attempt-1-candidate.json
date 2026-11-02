@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 calls Calendar.get(Calendar.DAY_OF_WEEK) once and compares the result to SATURDAY or SUNDAY. method2 calls get twice; if the Calendar implementation returns different values on successive calls, the two methods can diverge. The supplied Calendar subclass returns SATURDAY on the first call and MONDAY on the second call, so method1 returns true while method2 returns false.",
+  "arguments_java": [
+    "new GregorianCalendar(){int counter=0; @Override public int get(int field){ if(field==Calendar.DAY_OF_WEEK){ counter++; return counter==1?Calendar.SATURDAY:Calendar.MONDAY;} return super.get(field);} }"
+  ],
+  "parameter_types": [
+    "java.util.Calendar"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 uses equals which compares milliseconds, so two Date objects differing by less than a second are not equal. method2 compares only seconds (time/1000), so such dates are considered equal.",
+  "arguments_java": [
+    "new Date(1000L)",
+    "new Date(1500L)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

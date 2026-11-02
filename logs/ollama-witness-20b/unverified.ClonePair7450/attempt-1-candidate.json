@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte extraction from the array; for any valid input (including null or insufficient length) they either return the same integer or throw the same exception. No concrete input can distinguish their behavior."
+}

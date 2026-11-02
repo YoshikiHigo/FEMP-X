@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods evaluate the same disjoint character ranges in different orders; for every possible char input they return identical results. No input can distinguish them."
+}

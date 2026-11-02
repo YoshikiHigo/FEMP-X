@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 returns the default value when the system property is non‑numeric (or missing), whereas method2 attempts to parse the property and throws NumberFormatException for a non‑numeric value. Using a property that is known to exist and is non‑numeric, such as \\\"user.home\\\", demonstrates the difference.\",\"arguments_java\":[\"\\\"user.home\\\"\"],\"parameter_types\":[\"String\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1087,
+  "eval_count": 318,
+  "total_duration": 2778631000,
+  "load_duration": 2053100
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs and char values under the given constraints; no concrete separating input can be constructed.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1196,
+  "eval_count": 250,
+  "total_duration": 2375829900,
+  "load_duration": 5206600
+}

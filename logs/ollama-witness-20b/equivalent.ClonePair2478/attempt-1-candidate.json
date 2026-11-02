@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 interprets the first four bytes of the array as a big‑endian 32‑bit integer, while method2 interprets them as a little‑endian integer. For the input byte[]{1,2,3,4} method1 returns 0x01020304 (16909060) and method2 returns 0x04030201 (67305985).",
+  "arguments_java": [
+    "new byte[]{1,2,3,4}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false
+}

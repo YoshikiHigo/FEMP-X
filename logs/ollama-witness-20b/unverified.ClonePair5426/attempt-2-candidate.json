@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical leap‑year logic for all 32‑bit integer inputs. For every integer value, both methods evaluate the same conditions in the same order and produce the same boolean result. No input can cause a difference in return value, side effect, exception, or non‑termination."
+}

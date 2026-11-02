@@ -1,0 +1,68 @@
+{
+  "key": "unverified.ClonePair6465",
+  "stable": true,
+  "differenceType": "exception",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][127]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][127],Integer(0)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][127],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][127]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][127],Integer(0)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][127],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 writes one byte per input element and succeeds with a single‑byte output buffer, whereas method2 writes three bytes per input element and will throw an ArrayIndexOutOfBoundsException when the output buffer is too small.",
+    "arguments_java": [
+      "new float[]{0f}",
+      "0",
+      "1",
+      "new byte[]{0}",
+      "0"
+    ],
+    "parameter_types": [
+      "float[]",
+      "int",
+      "int",
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 166.483
+}

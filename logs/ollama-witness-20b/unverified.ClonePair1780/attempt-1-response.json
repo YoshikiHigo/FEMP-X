@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical logic: they compare byte arrays for reference equality, nullity, length, and element-wise equality. No input can cause a divergence in return value, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1259,
+  "eval_count": 67,
+  "total_duration": 939909400,
+  "load_duration": 3182500
+}

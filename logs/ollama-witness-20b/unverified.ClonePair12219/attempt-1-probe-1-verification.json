@@ -1,0 +1,61 @@
+{
+  "key": "unverified.ClonePair12219",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns true for the 9‑character string \"A00000000\" because it satisfies all its validation rules and the checksum equals the last digit, whereas method2 returns false because the string is shorter than the required 11 characters and does not start with \"begin \".",
+    "arguments_java": [
+      "\"A00000000\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 130.089
+}

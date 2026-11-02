@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic: they iterate from the given index until a whitespace or the end of the string is reached. For any deterministic, bounded input (including null, negative, or large indices), both methods either return the same index or throw the same exception (NullPointerException when the string is null). No input can cause one method to terminate differently, produce a different return value, or exhibit a side‑effect that the other does not. Therefore, no concrete separating test case exists."
+}

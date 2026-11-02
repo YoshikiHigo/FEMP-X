@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of the array in the same way; they have identical control flow, variable usage, and return the same value for all inputs, including null and empty arrays. No distinguishing input exists."
+}

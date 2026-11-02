@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same linear search over the array and return the index of the first matching character or -1 if none is found. They have identical control flow, side effects, and exception behavior for all possible inputs, so no concrete separating test case exists."
+}

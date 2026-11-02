@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all deterministic, bounded String inputs. Both return null for null, empty, or whitespace-only strings, and both return the parsed Double for any valid numeric string. No input can cause one method to return a non‑null value while the other returns null, nor can one method throw an exception that the other does not. Therefore, no concrete separating test case exists."
+}

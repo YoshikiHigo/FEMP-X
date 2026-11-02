@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, they produce identical boolean results for every possible char input. Both methods accept exactly the set of characters that are hexadecimal digits (0‑9, a‑f, A‑F) and reject all others. No deterministic, bounded input can distinguish them."
+}

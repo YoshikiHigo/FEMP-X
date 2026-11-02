@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all deterministic, bounded inputs. Both perform null checks and ultimately delegate to the same equals comparison, with no side effects or differing control flow that could produce a distinguishable result.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 877,
+  "eval_count": 297,
+  "total_duration": 2652313500,
+  "load_duration": 2046700
+}

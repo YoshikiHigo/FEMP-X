@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic for counting non‑overlapping occurrences of the second string within the first. The guard clauses, loop conditions, and index updates are equivalent for all possible inputs, so no concrete separating test case can be constructed."
+}

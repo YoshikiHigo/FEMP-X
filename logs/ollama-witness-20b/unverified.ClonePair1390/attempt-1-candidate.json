@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks on the input byte arrays: they first handle null cases, then compare lengths, and finally iterate element‑wise. For any deterministic, bounded input the control flow and return values of method1 and method2 are the same. No input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

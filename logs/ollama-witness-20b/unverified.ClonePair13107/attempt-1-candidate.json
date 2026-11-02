@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical string replacement logic for all deterministic, bounded inputs. Edge cases such as null arguments, empty tokens, or tokens not present in the source produce the same behavior (either the same result or the same exception). No concrete input can be constructed that causes one method to return a different value, throw a different exception, or terminate differently while the other behaves otherwise."
+}

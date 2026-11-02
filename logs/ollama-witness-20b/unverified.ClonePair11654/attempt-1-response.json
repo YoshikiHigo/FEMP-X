@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 replaces non‑overlapping occurrences of the search string, while method2 skips the next character after a replacement, allowing overlapping matches to be replaced. For input \\\"aaa\\\" with find \\\"aa\\\" and replace \\\"b\\\", method1 returns \\\"ba\\\" (first \\\"aa\\\" replaced, remaining \\\"a\\\" appended), whereas method2 returns \\\"bba\\\" (both overlapping \\\"aa\\\" substrings are replaced).\",\"arguments_java\":[\"\\\"aaa\\\"\"],\"parameter_types\":[\"String\",\"String\",\"String\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1249,
+  "eval_count": 344,
+  "total_duration": 2787899000,
+  "load_duration": 2554100
+}

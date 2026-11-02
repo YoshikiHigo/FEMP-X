@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logical checks and loops over the array elements. For any pair of long[] inputs (including nulls, equal references, equal lengths, and differing lengths), both methods return the same boolean value. No deterministic input can cause a divergence in return value, side effect, exception type, or non‑termination."
+}

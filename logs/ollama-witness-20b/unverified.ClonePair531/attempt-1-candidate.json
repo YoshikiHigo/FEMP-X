@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible byte[] inputs. Both perform the same null checks, length checks, and element-wise comparisons, and they return the same boolean value for every combination of arguments. No input can cause a difference in return value, side effects, exceptions, or non-termination."
+}

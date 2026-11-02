@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all deterministic, bounded inputs. Both compute the first occurrence of the start delimiter, then the first occurrence of the end delimiter after that position, and return the substring between them or null if either delimiter is missing. No input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

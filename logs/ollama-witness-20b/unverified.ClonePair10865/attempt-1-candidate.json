@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods evaluate the same set of characters (hexadecimal digits 0-9, a-f, A-F) to true and all other characters to false. No input can cause one method to return true while the other returns false, nor can one method throw an exception or terminate differently under any deterministic, bounded input."
+}

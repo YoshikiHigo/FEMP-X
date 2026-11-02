@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They either return the same string, throw the same exception (NullPointerException when any argument is null), or both enter an infinite loop when the pattern to replace is the empty string. No concrete input can distinguish the two implementations."
+}

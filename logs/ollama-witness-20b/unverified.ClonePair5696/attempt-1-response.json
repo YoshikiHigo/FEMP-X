@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement the same Gregorian leap‑year rule for all 32‑bit integer inputs; exhaustive reasoning shows no input causes differing return values, side effects, or exceptions.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 924,
+  "eval_count": 1450,
+  "total_duration": 11369301500,
+  "load_duration": 9316100
+}

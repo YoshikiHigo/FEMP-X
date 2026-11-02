@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit unsigned integer from four consecutive bytes using equivalent arithmetic (left shift vs. multiply by 256). For any valid byte array and offset within bounds they produce identical results, and for out‑of‑bounds or null inputs both throw ArrayIndexOutOfBoundsException or NullPointerException respectively. No deterministic input can distinguish their return values, side effects, or exception types."
+}

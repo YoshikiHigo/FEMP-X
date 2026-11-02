@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For a sorted array that does not contain the key, method1 returns the negative insertion point minus one computed from the last mid value, whereas method2 returns the negative insertion point minus one computed from the final low value. With a=[1,2] and key=3, method1 returns -2 while method2 returns -3.\",\"arguments_java\":[\"new short[]{1,2}\",\"(short)3\"],\"parameter_types\":[\"short[]\",\"short\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1246,
+  "eval_count": 537,
+  "total_duration": 4245470300,
+  "load_duration": 3826600
+}

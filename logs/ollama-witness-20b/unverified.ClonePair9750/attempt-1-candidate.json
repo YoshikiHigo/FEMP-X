@@ -1,0 +1,15 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 implements wildcard pattern matching (with '?' and '*') and will return true for the string \"a\" against the pattern \"*\", whereas method2 simply checks for exact equality of the two character arrays and will return false because the arrays differ in length and content.",
+  "arguments_java": [
+    "new char[]{'a'}",
+    "new char[]{'*'}"
+  ],
+  "parameter_types": [
+    "char[]",
+    "char[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

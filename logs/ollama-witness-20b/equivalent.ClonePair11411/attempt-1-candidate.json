@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical byte results for all int inputs; no distinguishing test case exists."
+}

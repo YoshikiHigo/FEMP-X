@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical element‑by‑element comparisons of the two byte arrays and return the same boolean value for all possible inputs. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1183,
+  "eval_count": 66,
+  "total_duration": 909045000,
+  "load_duration": 6373200
+}

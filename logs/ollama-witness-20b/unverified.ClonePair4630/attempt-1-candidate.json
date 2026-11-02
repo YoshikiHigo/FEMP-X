@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the minimum of a double array in the same way. For all possible inputs—including empty arrays, null arrays, arrays containing NaN, positive, negative, or infinite values—both methods either return the same value or throw the same exception type. No concrete input can distinguish their behavior under the allowed difference criteria."
+}

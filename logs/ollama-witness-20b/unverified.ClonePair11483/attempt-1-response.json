@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of all control‑flow paths, both methods produce identical results for every possible deterministic input. No concrete separating test case can be constructed that distinguishes their return values, side effects, exceptions, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1339,
+  "eval_count": 1245,
+  "total_duration": 9945318800,
+  "load_duration": 21785700
+}

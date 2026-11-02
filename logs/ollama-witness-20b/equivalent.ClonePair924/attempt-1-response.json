@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all valid inputs and error cases. Both convert each byte to a two‑character hexadecimal string, handling negative byte values in the same way, and both throw the same exceptions for out‑of‑bounds or null arguments. No concrete input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1005,
+  "eval_count": 357,
+  "total_duration": 3051520900,
+  "load_duration": 11465000
+}

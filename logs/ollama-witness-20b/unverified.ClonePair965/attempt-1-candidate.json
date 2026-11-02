@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for comparing two byte arrays; for any deterministic input they produce the same return value, side effects, and exception behavior. No concrete separating test case exists."
+}

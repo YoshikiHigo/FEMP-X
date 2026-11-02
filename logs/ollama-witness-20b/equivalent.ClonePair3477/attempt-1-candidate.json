@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs of type short[]; no concrete separating input exists."
+}

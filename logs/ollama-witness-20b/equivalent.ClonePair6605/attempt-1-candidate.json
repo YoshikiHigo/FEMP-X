@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element-wise equality checks for long arrays, handling nulls and reference equality in the same way. No input can cause one to return a different value, throw an exception, or exhibit non-termination while the other does not."
+}

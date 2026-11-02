@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair7698",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(RkI=),String(RWE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(RkI=),String(RWE=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(RkI=),String(RWE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(RkI=),String(RWE=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(RkI=),String(RWE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(RkI=),String(RWE=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(RkI=),String(RWE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(RkI=),String(RWE=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns true when two distinct String objects have the same hashCode and class, while method2 returns false because it relies on equals. The pair new String(\"FB\") and new String(\"Ea\") both hash to 2236 but are not equal.",
+    "arguments_java": [
+      "new String(\"FB\")",
+      "new String(\"Ea\")"
+    ],
+    "parameter_types": [
+      "Object",
+      "Object"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 158.988
+}

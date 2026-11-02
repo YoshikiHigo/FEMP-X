@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods evaluate to the same boolean result for all possible String inputs, including nulls, equal strings, and unequal strings. No concrete input can be constructed that causes a divergence in return value, side effects, exceptions, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 948,
+  "eval_count": 458,
+  "total_duration": 3728810100,
+  "load_duration": 5711100
+}

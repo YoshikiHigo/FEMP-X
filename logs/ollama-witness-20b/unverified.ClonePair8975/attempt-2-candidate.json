@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical logical conditions for all 16‑bit char values. For every possible input character, method1 and method2 return the same boolean value, so no concrete separating test case exists."
+}

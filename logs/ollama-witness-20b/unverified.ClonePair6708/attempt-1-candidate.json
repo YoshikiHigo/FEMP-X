@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the minimum of three integers; for all possible integer inputs they return the same value. No concrete input can distinguish their behaviors."
+}

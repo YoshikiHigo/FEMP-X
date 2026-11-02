@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: they compare the lengths of the byte arrays and then compare each element in order, returning true only if all elements match. No input can cause one method to return a different value, throw a different exception, mutate the inputs, or result in non‑termination. Therefore no concrete separating test case exists."
+}

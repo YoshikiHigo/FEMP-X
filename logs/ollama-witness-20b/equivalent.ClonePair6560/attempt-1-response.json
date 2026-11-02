@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical logic: they retrieve the array from the map, check for null or empty, and return the first element or null. No input can cause a difference in return value, side effects, or exceptions.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 963,
+  "eval_count": 80,
+  "total_duration": 902155100,
+  "load_duration": 14431400
+}

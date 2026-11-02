@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods evaluate the same character ranges in equivalent order for all integer inputs; no input can produce a differing return value, side effect, exception, or non-termination."
+}

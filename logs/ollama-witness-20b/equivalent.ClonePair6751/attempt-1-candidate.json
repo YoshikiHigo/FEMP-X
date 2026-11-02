@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same unsigned integer value from a byte array and exhibit identical behavior for all valid inputs, including the null case where both throw a NullPointerException. No concrete input can distinguish their return values, side effects, or exception types."
+}

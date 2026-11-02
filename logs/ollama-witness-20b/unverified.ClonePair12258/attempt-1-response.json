@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are byte‑for‑byte identical; they perform the same operations on the same inputs and therefore cannot be distinguished by any deterministic test.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1202,
+  "eval_count": 55,
+  "total_duration": 597667000,
+  "load_duration": 2585200
+}

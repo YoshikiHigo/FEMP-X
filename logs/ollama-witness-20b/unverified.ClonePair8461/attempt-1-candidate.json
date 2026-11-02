@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 attempts to construct a Double directly from the string, which throws NumberFormatException for strings containing leading/trailing whitespace. method2 trims the string before parsing, so it succeeds on such inputs.",
+  "arguments_java": [
+    "\" 1.0 \""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

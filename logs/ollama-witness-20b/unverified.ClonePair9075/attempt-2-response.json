@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible inputs: they either return the first whitespace‑position index (or the original offset if none), or throw the same exception (StringIndexOutOfBoundsException for negative or out‑of‑range offsets, or NullPointerException for a null string). No concrete input can distinguish their return values, side effects, or exception types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1163,
+  "eval_count": 217,
+  "total_duration": 1756087200,
+  "load_duration": 2818800
+}

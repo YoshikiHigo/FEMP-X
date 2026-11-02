@@ -1,0 +1,63 @@
+{
+  "key": "unverified.ClonePair3587",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][1, 2, 3],int[][3, 2, 1]]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][1, 2, 3],int[][3, 2, 1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][1, 2, 3],int[][3, 2, 1]]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][1, 2, 3],int[][3, 2, 1]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][1, 2, 3],int[][3, 2, 1]]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][1, 2, 3],int[][3, 2, 1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][1, 2, 3],int[][3, 2, 1]]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][1, 2, 3],int[][3, 2, 1]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 compares the two arrays in opposite order (oid1[--length] vs oid2[length]), so it returns true when oid1 is the reverse of oid2. method2 compares the arrays element‑wise in the same order, returning true only when the arrays are identical. For the input oid1=[1,2,3] and oid2=[3,2,1], method1 returns true while method2 returns false.",
+    "arguments_java": [
+      "new int[]{1,2,3}",
+      "new int[]{3,2,1}"
+    ],
+    "parameter_types": [
+      "int[]",
+      "int[]"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 162.151
+}

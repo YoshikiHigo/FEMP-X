@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the same 64‑bit value for any byte array of length at least offset+8. Method1 reads the eight bytes in reverse order while shifting left each time, which is mathematically equivalent to method2 reading the bytes forward and shifting each byte by its position. Therefore no concrete input can distinguish their return values, side effects, or termination behavior."
+}

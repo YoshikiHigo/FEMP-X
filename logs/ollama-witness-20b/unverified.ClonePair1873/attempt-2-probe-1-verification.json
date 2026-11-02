@@ -1,0 +1,63 @@
+{
+  "key": "unverified.ClonePair1873",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,null]",
+        "inputAfterSnapshot": "java.lang.Object[][null,null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,null]",
+        "inputAfterSnapshot": "java.lang.Object[][null,null]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,null]",
+        "inputAfterSnapshot": "java.lang.Object[][null,null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,null]",
+        "inputAfterSnapshot": "java.lang.Object[][null,null]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "When both arguments are null, method1 returns true (since a==a2), whereas method2 throws a NullPointerException because the else branch executes a loop over arrayOne.length when arrayOne is null.",
+    "arguments_java": [
+      "null",
+      "null"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "byte[]"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 159.883
+}

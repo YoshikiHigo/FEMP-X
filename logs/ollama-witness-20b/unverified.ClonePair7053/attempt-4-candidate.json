@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods interpret the four bytes starting at the given offset as a little‑endian unsigned 32‑bit integer. For any valid byte array and offset, they compute the same value. They also throw the same exceptions for out‑of‑bounds or null inputs. No concrete input can distinguish their behavior."
+}

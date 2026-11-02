@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical leap‑year logic for all int inputs; no input can cause differing return values, side effects, exceptions, or non‑termination."
+}

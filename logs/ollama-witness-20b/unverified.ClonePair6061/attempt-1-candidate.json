@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive comparison of the control flow and conditions in both methods, no input can cause a divergence in return value, side effects, or termination behavior. Both methods evaluate equality of two Object[] arrays in exactly the same way, handling nulls and element comparisons identically. Therefore, no concrete separating test case exists."
+}

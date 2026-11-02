@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "method1 and method2 exhibit identical behavior for all possible String inputs; no concrete separating test case exists."
+}

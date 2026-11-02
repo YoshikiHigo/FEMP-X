@@ -1,0 +1,17 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 transposes the input array into a 2D array using column-major indexing (A[j*w+i]), whereas method2 fills the 2D array in row-major order (array[k++]). With w=2 and h=3 the resulting matrices differ: method1 produces [[0.0,2.0,4.0],[1.0,3.0,5.0]] while method2 produces [[0.0,1.0,2.0],[3.0,4.0,5.0]].",
+  "arguments_java": [
+    "new double[]{0.0,1.0,2.0,3.0,4.0,5.0}",
+    "2",
+    "3"
+  ],
+  "parameter_types": [
+    "double[]",
+    "int",
+    "int"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

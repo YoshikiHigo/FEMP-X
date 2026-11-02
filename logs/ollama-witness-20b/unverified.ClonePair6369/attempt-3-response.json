@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 sign‑extends the first byte, so a negative first byte causes the high 32 bits of the resulting long to be all 1s. method2 treats all bytes as unsigned, producing a value whose high 32 bits are 0. With a negative first byte and non‑zero following bytes the two methods return different long values.\",\"arguments_java\":[\"new byte[]{(byte)-1,1,2,3,4,5,6,7}\",\"0\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1206,
+  "eval_count": 756,
+  "total_duration": 6161774000,
+  "load_duration": 19326700
+}

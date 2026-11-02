@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic for all integer inputs; exhaustive reasoning shows they always return the same value for any combination of left, above, upperLeft (or a, b, c). No input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1200,
+  "eval_count": 76,
+  "total_duration": 987304400,
+  "load_duration": 2037300
+}

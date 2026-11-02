@@ -1,0 +1,17 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 replaces every non‑overlapping occurrence of oldPattern with newPattern, advancing the search position by the length of oldPattern. method2 replaces occurrences of key with value but advances the search position by value.length(), which can skip overlapping matches when value is longer than key. For the input text=\"aaa\", key=\"a\", value=\"aa\", method1 performs three replacements (\"aaa\" → \"aaaaaa\"), while method2 performs only two replacements (\"aaa\" → \"aaaa\").",
+  "arguments_java": [
+    "\"aaa\"",
+    "\"a\"",
+    "\"aa\""
+  ],
+  "parameter_types": [
+    "String",
+    "String",
+    "String"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

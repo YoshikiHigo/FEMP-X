@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are byte‑code identical; they perform the same null check, type checks, conversions, and exception handling. No input can distinguish their behavior."
+}

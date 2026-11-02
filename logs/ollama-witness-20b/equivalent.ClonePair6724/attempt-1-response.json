@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical big-endian conversion of the first eight bytes of the input array. For any input array of length ≥8 they compute the same long value; for shorter arrays they both throw ArrayIndexOutOfBoundsException; for null they both throw NullPointerException. No deterministic input can distinguish their behaviors.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 934,
+  "eval_count": 287,
+  "total_duration": 2613988700,
+  "load_duration": 6595200
+}

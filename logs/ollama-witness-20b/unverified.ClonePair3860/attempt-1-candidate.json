@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical dot‑product calculations on the two input arrays. They handle nulls, empty arrays, and normal numeric values in the same way, and there is no observable difference in return value, side effects, or exceptions for any deterministic, bounded input."
+}

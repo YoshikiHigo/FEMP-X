@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical unsigned byte-to-int conversion for all valid inputs; no deterministic input can cause a difference in return value, side effect, exception type, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1286,
+  "eval_count": 335,
+  "total_duration": 2704567000,
+  "load_duration": 17602000
+}

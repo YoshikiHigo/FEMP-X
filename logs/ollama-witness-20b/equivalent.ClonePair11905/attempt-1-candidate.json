@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For input 999, method1 pads with three leading zeros producing a 5‑character string \"00999\", whereas method2 pads with only one leading zero producing a 4‑character string \"0999\".",
+  "arguments_java": [
+    "999"
+  ],
+  "parameter_types": [
+    "int"
+  ],
+  "void_return": false
+}

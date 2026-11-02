@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical bit‑wise operations; operator precedence in Java ensures that the expressions in method1 and method2 are parsed the same way. Consequently, for any byte array input the resulting Base64 strings are identical, and no concrete separating test case exists."
+}

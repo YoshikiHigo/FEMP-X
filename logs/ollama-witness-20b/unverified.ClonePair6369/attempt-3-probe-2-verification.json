@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair6369",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-71773907085621753)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, 1, 2, 3, 4, 5, 6, 7],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, 1, 2, 3, 4, 5, 6, 7],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-71773907085621753)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, 1, 2, 3, 4, 5, 6, 7],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, 1, 2, 3, 4, 5, 6, 7],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-71773907085621753)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, 1, 2, 3, 4, 5, 6, 7],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, 1, 2, 3, 4, 5, 6, 7],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-71773907085621753)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, 1, 2, 3, 4, 5, 6, 7],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, 1, 2, 3, 4, 5, 6, 7],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 sign‑extends the first byte, so a negative first byte causes the high 32 bits of the resulting long to be all 1s. method2 treats all bytes as unsigned, producing a value whose high 32 bits are 0. With a negative first byte and non‑zero following bytes the two methods return different long values.",
+    "arguments_java": [
+      "new byte[]{(byte)-1,1,2,3,4,5,6,7}",
+      "0"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 139.166
+}

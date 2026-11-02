@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks in the same order; for any pair of char[] inputs (including nulls) they produce the same boolean result. No input can distinguish them."
+}

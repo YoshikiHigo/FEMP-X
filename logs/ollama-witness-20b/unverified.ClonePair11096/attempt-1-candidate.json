@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs under the allowed differences. No concrete separating test case can be constructed that distinguishes return value, side effect, exception type, or non‑termination between method1 and method2."
+}

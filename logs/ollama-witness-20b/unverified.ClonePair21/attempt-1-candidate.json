@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods use the same parsing logic (Long.valueOf and new Long) which are equivalent for all String inputs; no input can distinguish their return values, side effects, or exceptions."
+}

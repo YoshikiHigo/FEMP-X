@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform equivalent checks for all possible String inputs: they both return false for null, trim whitespace, and then compare the trimmed string to \\\"true\\\", \\\"yes\\\", or \\\"1\\\" in a case‑insensitive manner. No deterministic, bounded input can cause one method to return a different value or throw an exception while the other does not.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 765,
+  "eval_count": 966,
+  "total_duration": 7849364200,
+  "load_duration": 3816100
+}

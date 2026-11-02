@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical element‑by‑element equality checks on the two boolean arrays; no input can cause differing return values, side effects, exceptions, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 929,
+  "eval_count": 85,
+  "total_duration": 1117106600,
+  "load_duration": 5217200
+}

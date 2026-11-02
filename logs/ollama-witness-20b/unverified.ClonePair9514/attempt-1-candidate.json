@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible Calendar inputs, including null, and there is no input that causes one method to return a different value, throw a different exception, or exhibit non‑termination."
+}

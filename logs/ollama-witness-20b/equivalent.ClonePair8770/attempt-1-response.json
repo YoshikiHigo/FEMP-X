@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods return the same character for all integer inputs; no input distinguishes them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1209,
+  "eval_count": 102,
+  "total_duration": 1107867700,
+  "load_duration": 4590900
+}

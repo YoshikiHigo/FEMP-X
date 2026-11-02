@@ -1,0 +1,15 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 uses Calendar.get(Calendar.YEAR) which returns the full year (e.g., 2000), while method2 uses Date.getYear() which returns the year minus 1900 (e.g., 100 for 2000). For a date such as 2000‑01‑01, method1 will compare 2000 == 2000 and return true, whereas method2 will compare 100 == 100 but the year values are mismatched in the comparison logic, leading to false. The two methods receive the same input and initial state, yet produce different boolean results.",
+  "arguments_java": [
+    "date(946684800000L)",
+    "date(946684800000L)"
+  ],
+  "parameter_types": [
+    "Date",
+    "Date"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

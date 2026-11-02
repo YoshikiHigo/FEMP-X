@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic for checking alphabetic characters or underscore; no input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 814,
+  "eval_count": 50,
+  "total_duration": 490744000,
+  "load_duration": 10905000
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible String inputs; both return true iff the arguments are both null or both non‑null and equal according to String.equals, and both return false otherwise. No input can cause a divergence in return value, side effect, exception, or termination."
+}

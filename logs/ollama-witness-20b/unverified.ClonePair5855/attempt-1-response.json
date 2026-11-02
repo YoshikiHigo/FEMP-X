@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical bounds checks and element-wise comparisons; no input can cause one to return a different value, throw an exception, or terminate differently than the other.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1399,
+  "eval_count": 513,
+  "total_duration": 4331709500,
+  "load_duration": 2550700
+}

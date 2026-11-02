@@ -1,0 +1,16 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 trims the property value before parsing, so a value with surrounding whitespace is parsed successfully, whereas method2 does not trim and throws NumberFormatException.",
+  "arguments_java": [
+    "props(\"x\", \"  42  \")",
+    "\"x\"",
+    "0"
+  ],
+  "parameter_types": [
+    "java.util.Properties",
+    "java.lang.String",
+    "int"
+  ],
+  "void_return": false
+}

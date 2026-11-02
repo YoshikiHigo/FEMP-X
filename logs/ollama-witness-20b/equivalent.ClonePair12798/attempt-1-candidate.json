@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all possible 64‑bit unsigned inputs, both methods produce identical results for every pair of arguments. No concrete separating input exists."
+}

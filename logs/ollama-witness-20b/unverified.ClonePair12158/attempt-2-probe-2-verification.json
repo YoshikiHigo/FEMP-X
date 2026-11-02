@@ -1,0 +1,61 @@
+{
+  "key": "unverified.ClonePair12158",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "The string \"A00000000\" satisfies all constraints of method1: it has length 9, the first character is in the allowed set, positions 1–7 are digits, and the checksum calculation yields 0, which matches the last character. Thus method1 returns true. Method2, however, expects a 16‑character date/time format and immediately rejects the 9‑character input, returning false.",
+    "arguments_java": [
+      "\"A00000000\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 140.82
+}

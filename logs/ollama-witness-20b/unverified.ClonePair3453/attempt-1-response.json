@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods handle all possible String inputs in the same way: they return null for null or empty strings, and otherwise return Float.parseFloat(value) or Float.valueOf(value), which are equivalent. No input can produce a different return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 776,
+  "eval_count": 612,
+  "total_duration": 4851242900,
+  "load_duration": 4825300
+}

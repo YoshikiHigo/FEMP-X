@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they compute the maximum element of a non‑empty int array, and for empty or null arrays they both throw the same ArrayIndexOutOfBoundsException or NullPointerException respectively. No concrete input can distinguish their return values, side effects, or exception types."
+}

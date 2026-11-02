@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical results for all possible Calendar inputs, including null, and neither exhibits side effects or non-termination. No concrete separating test case exists."
+}

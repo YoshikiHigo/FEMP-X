@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no deterministic, bounded input can be constructed that causes one method to produce a different return value, side effect, exception type, or non‑termination while the other behaves differently. Both methods exhibit identical control flow for all possible String arguments, including edge cases such as null, empty, or overlapping substrings. Therefore, no concrete separating test case exists."
+}

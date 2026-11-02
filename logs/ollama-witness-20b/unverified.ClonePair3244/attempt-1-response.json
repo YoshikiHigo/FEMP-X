@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical element-wise equality checks; no input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 955,
+  "eval_count": 40,
+  "total_duration": 631772200,
+  "load_duration": 8622200
+}

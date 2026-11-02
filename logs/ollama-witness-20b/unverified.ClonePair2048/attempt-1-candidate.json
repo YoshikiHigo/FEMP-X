@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical element-wise equality checks; no input can produce differing return values, side effects, or exception types beyond the trivial null‑pointer case already covered. No distinguishing test case exists."
+}

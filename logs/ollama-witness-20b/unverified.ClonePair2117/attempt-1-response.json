@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets the byte array as a big‑endian 32‑bit integer, while method2 interprets it as little‑endian. For the input {1,2,3,4} the two methods produce different integer values.\",\"arguments_java\":[\"new byte[]{1,2,3,4}\"],\"parameter_types\":[\"byte[]\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1208,
+  "eval_count": 467,
+  "total_duration": 3943995700,
+  "load_duration": 2091200
+}

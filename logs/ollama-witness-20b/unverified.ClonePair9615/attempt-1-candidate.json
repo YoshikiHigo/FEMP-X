@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all integer inputs; both evaluate the same conditions and return the same value. No input can distinguish their behavior."
+}

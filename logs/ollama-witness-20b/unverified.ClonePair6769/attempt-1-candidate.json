@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of three integers; for all possible integer inputs they produce identical results, so no concrete separating input exists."
+}

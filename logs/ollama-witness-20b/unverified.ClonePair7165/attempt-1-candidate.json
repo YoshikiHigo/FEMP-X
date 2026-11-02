@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible String inputs. Both treat null and empty strings as equivalent and return true only when both inputs are null or empty, or when both are non-null and equal. No input can cause a differing return value, side effect, exception, or non‑termination."
+}

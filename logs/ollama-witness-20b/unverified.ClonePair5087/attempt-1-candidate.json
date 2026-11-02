@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all integer combinations, both methods exhibit identical behavior for every possible input, including edge cases involving negative values, zero, and overflow scenarios. No concrete separating input can be constructed that distinguishes their return values, side effects, or exception behavior."
+}

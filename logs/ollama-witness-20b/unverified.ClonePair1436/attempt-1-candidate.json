@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logical checks on the byte arrays. They return the same boolean value for all possible inputs, including nulls, empty arrays, and arrays with identical or differing contents. No input can cause one method to return a different value, throw an exception, or exhibit a side‑effect that the other does not."
+}

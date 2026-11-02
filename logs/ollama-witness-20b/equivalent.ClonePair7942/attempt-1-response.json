@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte-by-byte comparisons using equivalent loop constructs; for all deterministic, bounded inputs they produce the same result, throw the same exceptions, and terminate normally. No concrete separating input can be constructed under the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1154,
+  "eval_count": 292,
+  "total_duration": 2594392400,
+  "load_duration": 2558200
+}

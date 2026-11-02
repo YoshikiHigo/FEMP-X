@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible byte[] inputs, including edge cases such as empty arrays, unequal lengths, and null references. No concrete input can distinguish their return values, side effects, or exception outcomes.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1170,
+  "eval_count": 250,
+  "total_duration": 2348034900,
+  "load_duration": 5892300
+}

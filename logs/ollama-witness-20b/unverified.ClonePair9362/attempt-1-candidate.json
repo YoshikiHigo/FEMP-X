@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum element of a non‑empty int array in the same way. For an empty array they both throw a NullPointerException due to accessing index 0, and for a null array they both throw a NullPointerException. No deterministic input can produce a differing return value, side effect, exception type, or non‑termination between the two methods."
+}

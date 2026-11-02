@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: they compare the lengths of the byte arrays and then element‑wise equality. For any pair of byte arrays (including null, empty, or non‑empty), both methods return the same boolean value or throw the same NullPointerException. No input can distinguish their behavior."
+}

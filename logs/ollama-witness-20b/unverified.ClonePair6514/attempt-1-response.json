@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte‑to‑long conversions over an 8‑byte window starting at the supplied index/offset. For any valid or invalid input (including null, negative indices, or insufficient length), they either produce the same result or throw the same exception type. No deterministic, bounded input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1024,
+  "eval_count": 248,
+  "total_duration": 2192702600,
+  "load_duration": 2023100
+}

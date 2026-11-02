@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical checks and return the same boolean value for any pair of short arrays. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1011,
+  "eval_count": 50,
+  "total_duration": 755259500,
+  "load_duration": 4925700
+}

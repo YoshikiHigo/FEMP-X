@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical parsing and byte conversion logic; no input can cause a differing return value, side effect, exception type, or non‑termination. The only differences are in variable names and intermediate variable usage, which do not affect observable behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1077,
+  "eval_count": 361,
+  "total_duration": 2875853300,
+  "load_duration": 16246900
+}

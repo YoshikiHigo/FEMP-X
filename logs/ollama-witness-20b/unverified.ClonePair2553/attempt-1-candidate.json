@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical bit‑wise reconstruction of a 32‑bit integer from a 4‑byte array. For any valid byte array of length 4 they produce the same result, and for invalid inputs (null or shorter than 4) they both throw the same exception type. No concrete input can distinguish their behavior."
+}

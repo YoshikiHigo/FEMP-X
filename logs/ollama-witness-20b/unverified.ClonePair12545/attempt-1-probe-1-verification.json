@@ -1,0 +1,61 @@
+{
+  "key": "unverified.ClonePair12545",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEyMyA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEyMyA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEyMyA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEyMyA=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEyMyA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEyMyA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEyMyA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEyMyA=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 trims the input before checking for digits, so a string containing only whitespace around digits (e.g. \" 123 \") is considered a valid digit string and returns true. method2 does not trim; the leading/trailing spaces are treated as non‑digit characters, causing retBool to be set to false. Thus the same input yields different return values.",
+    "arguments_java": [
+      "\" 123 \""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 151.458
+}

@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 returns an Integer constructed from the object's toString(), while method2 attempts to parse that string as an int and throws NumberFormatException for non‑numeric strings.",
+  "arguments_java": [
+    "new Object()"
+  ],
+  "parameter_types": [
+    "Object"
+  ],
+  "void_return": false
+}

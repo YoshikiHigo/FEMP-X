@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, the only pathological case is when the target (or toReplace) string is empty, which causes both methods to enter an infinite loop. No input leads to a difference in return value, side effect, exception type, or termination status."
+}

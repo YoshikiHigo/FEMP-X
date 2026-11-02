@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical unsigned big-endian conversion of 8 bytes; no input can produce differing outputs, side effects, or exceptions beyond the shared array bounds or null checks."
+}

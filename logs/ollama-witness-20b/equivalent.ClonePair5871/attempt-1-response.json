@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement the same Horner evaluation algorithm and exhibit identical behavior for all possible inputs, including edge cases such as empty or null arrays and special double values. No concrete input can be found that distinguishes their return values, side effects, or exception types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1158,
+  "eval_count": 211,
+  "total_duration": 2101113600,
+  "load_duration": 19425700
+}

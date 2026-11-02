@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair5069",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(1)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(1)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(1)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(1)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns true for candidate 1 (since it treats 1 as a prime), while method2 returns false because it explicitly checks n<=2 and returns n==2.",
+    "arguments_java": [
+      "1"
+    ],
+    "parameter_types": [
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 167.177
+}

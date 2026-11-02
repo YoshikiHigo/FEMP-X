@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical bitwise operations on the same 4-byte slice of the array; no input can cause differing return values, side effects, or exceptions.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1229,
+  "eval_count": 65,
+  "total_duration": 950340600,
+  "load_duration": 4472500
+}

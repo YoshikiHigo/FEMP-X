@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning, method1 and method2 behave identically for all possible Date inputs under the same JVM default timezone. No concrete input can distinguish their return values, side effects, or exception behavior."
+}

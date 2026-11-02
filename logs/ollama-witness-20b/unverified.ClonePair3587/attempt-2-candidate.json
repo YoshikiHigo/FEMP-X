@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical element‑wise equality checks. For any pair of non‑null int arrays of equal length, method1 compares each pair of elements in the same order as method2, and for unequal lengths both return false. The only remaining cases involve null arguments, which cause a NullPointerException in both methods. Therefore no concrete input can distinguish the two methods."
+}

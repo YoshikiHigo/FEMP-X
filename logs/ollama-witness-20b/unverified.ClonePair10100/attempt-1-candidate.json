@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all possible String inputs: they return null for null or non‑numeric strings and return the parsed Integer for numeric strings. Integer.parseInt only throws NumberFormatException, which is caught by both methods, so no distinguishing input exists."
+}

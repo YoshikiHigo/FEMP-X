@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, when the target string is empty both methods enter an infinite loop, and when the target is null both methods throw a NullPointerException. No input can cause one method to return a different value, throw a different exception type, or terminate while the other does not.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1285,
+  "eval_count": 361,
+  "total_duration": 2927261500,
+  "load_duration": 4737300
+}

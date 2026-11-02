@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods delegate to the same underlying parsing logic (Long.parseLong vs new Long(String)), which behave identically for all valid and invalid decimal string inputs, including null, empty, whitespace, and overflow cases. No deterministic input can distinguish their return values, side effects, or exception types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 909,
+  "eval_count": 259,
+  "total_duration": 2239538700,
+  "load_duration": 3130000
+}

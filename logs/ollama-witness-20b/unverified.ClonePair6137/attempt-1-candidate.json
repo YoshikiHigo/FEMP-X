@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 interprets the two input bytes as an unsigned 16‑bit value, while method2 interprets the first byte as a signed byte before the left shift, producing a signed 16‑bit value. For a high byte of 0xFF (255) and a low byte of 0x00, method1 yields (65280‑32767)/32767 ≈ 0.993, whereas method2 yields (short)0xFF00 = –256, giving –256/32767 ≈ –0.0078. The returned float arrays therefore differ.",
+  "arguments_java": [
+    "new byte[]{(byte)0xFF,(byte)0x00}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

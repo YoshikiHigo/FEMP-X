@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same linear search over the byte array and return the first matching index or -1; no input can distinguish their behavior."
+}

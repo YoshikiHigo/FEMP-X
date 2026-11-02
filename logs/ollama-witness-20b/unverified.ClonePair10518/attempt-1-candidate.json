@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return Integer objects that are equal according to Integer.equals() for any valid numeric string, and they both return null for null or invalid input. The only distinction is that method1 always creates a new Integer instance while method2 may return a cached instance for values between –128 and 127, but this difference is not observable through the return value itself. No deterministic, bounded input can cause the methods to produce different observable results (return value, side effects, exceptions, or non‑termination)."
+}

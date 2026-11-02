@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations on any standard List implementation; no deterministic input can cause one to behave differently from the other under the constraints given."
+}

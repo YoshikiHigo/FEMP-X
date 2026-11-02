@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods process exactly the first four bytes of the input array (or throw the same exception for shorter or null inputs). No input can cause one method to behave differently from the other."
+}

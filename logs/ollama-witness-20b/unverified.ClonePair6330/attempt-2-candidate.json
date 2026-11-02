@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 assembles the 8 bytes in big‑endian order (data[offset+7] becomes the most significant byte), whereas method2 assembles them in little‑endian order (data[idx] becomes the least significant byte). With a byte array containing 8 distinct values and offset/idx = 0, the two methods produce different long values.",
+  "arguments_java": [
+    "new byte[]{1,2,3,4,5,6,7,8}",
+    "0"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "int"
+  ],
+  "void_return": false
+}

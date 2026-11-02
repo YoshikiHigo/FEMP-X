@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical character‑by‑character processing over the same index range and produce the same string for all valid inputs. No input can cause one to return a different value, throw a different exception, or terminate differently."
+}

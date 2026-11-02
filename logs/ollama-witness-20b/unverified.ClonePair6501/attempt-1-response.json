@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets each byte as a signed 7‑bit value plus a sign bit, whereas method2 treats the byte as an unsigned 8‑bit value. For a byte value of –2 (0xFE) at position 3, method1 produces 0x7F000000 while method2 produces 0xFE000000.\",\"arguments_java\":[\"new byte[]{0,0,0,-2,0,0,0,0}\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1341,
+  "eval_count": 1732,
+  "total_duration": 13616156800,
+  "load_duration": 4551000
+}

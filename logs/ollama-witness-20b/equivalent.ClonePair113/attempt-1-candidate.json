@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods contain identical logic and produce the same result for all deterministic inputs. No concrete input can be found that distinguishes them."
+}

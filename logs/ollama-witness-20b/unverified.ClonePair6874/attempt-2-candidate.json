@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical bitwise reconstruction of a 32‑bit integer from four consecutive bytes. The first method accumulates the shifted byte values using addition, while the second uses bitwise OR. Since the shifted byte values occupy disjoint 8‑bit fields, addition and OR produce the same result for all valid inputs. Edge cases such as null arrays or out‑of‑bounds indices cause a NullPointerException or ArrayIndexOutOfBoundsException in both methods, and no input can distinguish their behavior. Therefore no concrete separating test case exists."
+}

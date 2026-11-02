@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit value for any 4‑byte array (or return 0 for other lengths). The XOR in method1 and the addition in method2 produce identical results because each byte occupies a distinct byte position. Therefore no concrete input can distinguish their behaviours."
+}

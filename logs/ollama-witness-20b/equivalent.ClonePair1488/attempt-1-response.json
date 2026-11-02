@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns true when left is non‑null and right is null, whereas method2 returns false in the same situation.\",\"arguments_java\":[\"new byte[]{1,2}\"],\"parameter_types\":[\"byte[]\",\"byte[]\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 929,
+  "eval_count": 148,
+  "total_duration": 1483505100,
+  "load_duration": 2035000
+}

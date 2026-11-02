@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same signed byte array for any non‑null input string of even length; they behave identically for all deterministic, bounded inputs. No concrete separating test case exists."
+}

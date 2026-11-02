@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical element-wise comparisons of the input byte arrays; for all possible inputs they return the same boolean value or throw the same exception. No concrete separating input exists."
+}

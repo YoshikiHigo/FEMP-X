@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For n = 0x100 (256), method1 follows the branch where n > 0xFF but n < 0x1000, ultimately returning 16. method2, due to its nested if-else structure, takes the else of the second if (num < 0x100) and returns 4. Thus the two methods produce different return values for the same input.",
+  "arguments_java": [
+    "256"
+  ],
+  "parameter_types": [
+    "int"
+  ],
+  "void_return": false
+}

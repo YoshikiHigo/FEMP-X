@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair8491",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.23)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(ICAxLjIzICA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(ICAxLjIzICA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.23)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(ICAxLjIzICA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(ICAxLjIzICA=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.23)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(ICAxLjIzICA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(ICAxLjIzICA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.23)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(ICAxLjIzICA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(ICAxLjIzICA=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 trims the input string before parsing, so a string with leading/trailing whitespace such as \"  1.23  \" is successfully parsed to a Double value 1.23. method2 does not trim the input; Double.valueOf(\"  1.23  \") throws a NumberFormatException, causing method2 to return null. Thus the same input yields different return values.",
+    "arguments_java": [
+      "\"  1.23  \""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 161.07
+}

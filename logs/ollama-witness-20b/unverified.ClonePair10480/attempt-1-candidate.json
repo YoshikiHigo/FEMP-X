@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same Integer value (or null) for all possible String inputs. The only difference is that method1 always creates a new Integer object while method2 may return a cached Integer instance for small values, but the returned values are equal according to Integer.equals(). Therefore no concrete input can distinguish the two methods based on return value, side effects, exceptions, or termination."
+}

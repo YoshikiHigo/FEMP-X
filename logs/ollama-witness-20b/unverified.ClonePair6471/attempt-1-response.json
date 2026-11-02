@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For a negative input float, method1 adds 0x1000000 to a negative product, while method2 adds 0x7FFFFF, producing different byte sequences.\",\"arguments_java\":[\"new float[]{-1.0f}\"],\"parameter_types\":[\"float[]\",\"int\",\"int\",\"byte[]\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1613,
+  "eval_count": 340,
+  "total_duration": 3091128600,
+  "load_duration": 4838700
+}

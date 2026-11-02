@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 calls Calendar.get once and returns a boolean; method2 calls Calendar.get twice. By supplying a Calendar subclass that throws an exception on its second get call, method1 completes normally while method2 throws a RuntimeException.\",\"arguments_java\":[\"new GregorianCalendar(){int count=0;public int get(int field){count++;if(count==2)throw new RuntimeException(\\\"boom\\\");return super.get(field);}}\"],\"parameter_types\":[\"Calendar\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 812,
+  "eval_count": 522,
+  "total_duration": 14441198100,
+  "load_duration": 9991177900
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs: they return the smallest index of any character from the array within the string starting at the given position, or -1 if none are found. Edge cases such as null arrays, empty strings, or out‑of‑range start positions produce the same exceptions or results in both methods. No concrete input can distinguish them."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods return true for the same set of characters (digits 0‑9, hexadecimal letters a‑f and A‑F) and false otherwise; no input distinguishes their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1246,
+  "eval_count": 2071,
+  "total_duration": 15965780900,
+  "load_duration": 24540100
+}

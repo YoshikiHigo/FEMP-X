@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are structurally identical; for any given inputs they perform the same operations and produce the same result. No concrete input can be found that distinguishes their behavior."
+}

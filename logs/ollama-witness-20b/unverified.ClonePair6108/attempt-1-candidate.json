@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible Object[] inputs; no concrete separating input can be constructed that causes differing return values, side effects, exceptions, or non‑termination."
+}

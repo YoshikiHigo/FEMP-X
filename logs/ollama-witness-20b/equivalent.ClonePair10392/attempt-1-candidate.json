@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical control flow and behavior for all possible CharSequence inputs and any arrays, including nulls and empty cases. No concrete input can distinguish their return values, side effects, or exception behavior."
+}

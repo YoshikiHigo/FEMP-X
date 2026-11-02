@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are byte‑for‑byte identical; they perform the same null checks, length checks, and element‑wise comparisons. No input can cause them to diverge in return value, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1257,
+  "eval_count": 71,
+  "total_duration": 932352300,
+  "load_duration": 8469600
+}

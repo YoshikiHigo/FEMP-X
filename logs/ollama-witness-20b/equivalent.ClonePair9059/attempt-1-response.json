@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods implement identical logic for all possible combinations of null and non‑null Date arguments and for all time values. No input can produce a different return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1105,
+  "eval_count": 465,
+  "total_duration": 3873721000,
+  "load_duration": 5182600
+}

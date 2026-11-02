@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for computing the angle between two points; for any finite float inputs they produce the same double result. No distinguishing input exists."
+}

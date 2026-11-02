@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical tokenization and substring extraction logic; no input can cause a difference in return value, side effects, or termination."
+}

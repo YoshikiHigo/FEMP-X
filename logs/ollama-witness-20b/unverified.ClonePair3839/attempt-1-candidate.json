@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 accesses b[i] for each element of a, causing a NullPointerException when b is null, while method2 immediately returns 0.0 when ovx.length <= 0, so it does not attempt to access ovy and therefore does not throw.",
+  "arguments_java": [
+    "new double[]{1.0}",
+    "null"
+  ],
+  "parameter_types": [
+    "double[]",
+    "double[]"
+  ],
+  "void_return": false
+}

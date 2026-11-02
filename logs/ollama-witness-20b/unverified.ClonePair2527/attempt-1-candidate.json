@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic and produce the same return value, side effects, and exception behavior for all possible byte[] inputs. No concrete separating input exists."
+}

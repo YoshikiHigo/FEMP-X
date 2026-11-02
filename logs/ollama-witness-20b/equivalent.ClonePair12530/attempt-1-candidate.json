@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform an identical linear search over the string starting at the given index and return the same result for all possible inputs. No input can distinguish their return values, side effects, or exception behavior."
+}

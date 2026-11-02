@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. They handle nulls, empty strings, and normal replacements in the same way, and both enter an infinite loop when the search string is empty. No concrete separating input can be constructed without invoking undefined or non‑terminating behavior that is common to both methods.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 997,
+  "eval_count": 401,
+  "total_duration": 3450142200,
+  "load_duration": 10056000
+}

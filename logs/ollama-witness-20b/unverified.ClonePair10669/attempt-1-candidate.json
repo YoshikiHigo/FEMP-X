@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical angle normalization logic; for any double input the sequence of operations and resulting value are the same. No input can produce a differing return value, side effect, exception, or non‑termination."
+}

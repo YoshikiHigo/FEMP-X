@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical signed-to-unsigned byte conversion and bit-shifting for the first four bytes starting at the given offset. For any valid input (including null or insufficient length, which both throw the same NullPointerException or ArrayIndexOutOfBoundsException), the outputs and exceptions match exactly. No deterministic separating input exists."
+}

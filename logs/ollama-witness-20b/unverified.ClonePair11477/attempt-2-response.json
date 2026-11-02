@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of the two methods, all control paths that could be exercised with deterministic, bounded inputs produce identical results. Both methods guard against nulls and empty strings in the same way, and their replacement logic behaves equivalently for all possible string inputs. No concrete input can be constructed that leads to a different return value, side effect, exception, or non‑termination. Therefore, no separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1513,
+  "eval_count": 786,
+  "total_duration": 6376108300,
+  "load_duration": 18529300
+}

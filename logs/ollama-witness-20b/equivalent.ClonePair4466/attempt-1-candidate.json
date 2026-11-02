@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the mean of non‑zero elements in the same way. For any input array (including empty, all‑zero, or null) they produce the same result or throw the same exception. No concrete input can distinguish them."
+}

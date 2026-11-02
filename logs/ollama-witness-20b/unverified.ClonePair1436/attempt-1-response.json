@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical logical checks on the byte arrays. They return the same boolean value for all possible inputs, including nulls, empty arrays, and arrays with identical or differing contents. No input can cause one method to return a different value, throw an exception, or exhibit a side‑effect that the other does not.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1264,
+  "eval_count": 170,
+  "total_duration": 1733195500,
+  "load_duration": 4232300
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they both throw ArrayIndexOutOfBoundsException on an empty array, throw NullPointerException on a null array, and otherwise return the maximum element. No distinguishing input exists."
+}

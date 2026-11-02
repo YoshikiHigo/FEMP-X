@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 first checks that the two objects are of the same runtime class before delegating to equals, whereas method2 only checks for nullity and then calls equals unconditionally.  In the test below we create a java.util.Date and a java.sql.Date that represent the same instant.  java.util.Date.equals(java.sql.Date) returns true because it compares the millisecond value, but the two objects are of different classes, so method1 returns false while method2 returns true.",
+  "arguments_java": [
+    "new java.util.Date(0L)",
+    "new java.sql.Date(0L)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical control flow and return values for all possible combinations of null and non‑null integer arrays with any lengths and contents. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 976,
+  "eval_count": 338,
+  "total_duration": 2859999900,
+  "load_duration": 4839900
+}

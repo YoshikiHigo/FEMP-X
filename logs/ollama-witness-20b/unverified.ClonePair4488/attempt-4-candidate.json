@@ -1,0 +1,15 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 can handle a pattern consisting of 101 consecutive '*' characters and a single-character input, returning true because the pattern matches any string. method2 uses a fixed-size stack of length 100 to backtrack on '*'. When the pattern contains 101 '*', the algorithm attempts to push 202 indices onto the stack (two per '*'), exceeding the array bounds and throwing an ArrayIndexOutOfBoundsException. Thus the two methods exhibit different behavior on the same input.",
+  "arguments_java": [
+    "\"*\".repeat(101)",
+    "\"a\""
+  ],
+  "parameter_types": [
+    "String",
+    "String"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

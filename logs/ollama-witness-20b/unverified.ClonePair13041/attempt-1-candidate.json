@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical computations: both iterate over the first up to 12 characters of the input string, accumulate a base‑37 hash, and then repeatedly divide by 37 while the result is divisible by 37 and non‑zero. The loop constructs (a while loop versus a for loop with an empty body) are semantically equivalent for all possible inputs, including null (both throw NPE) and any string. No deterministic, bounded input can produce a differing return value, side effect, exception type, or non‑termination between the two methods."
+}

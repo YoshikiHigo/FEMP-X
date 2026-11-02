@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the same length value and perform identical writes to destBuffer. For all possible integer inputs and byte array contents, the control flow, side effects, and return values are identical. No input can cause one method to behave differently from the other.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1254,
+  "eval_count": 215,
+  "total_duration": 2000414000,
+  "load_duration": 12966300
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"All possible byte values produce identical two‑character hexadecimal strings in both methods; no input distinguishes the return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1233,
+  "eval_count": 686,
+  "total_duration": 5702631200,
+  "load_duration": 2550900
+}

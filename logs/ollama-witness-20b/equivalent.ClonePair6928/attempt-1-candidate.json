@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: they iterate over the byte array starting at the given index, return the index of the first zero byte, or the array length if none is found. No input can cause differing behavior."
+}

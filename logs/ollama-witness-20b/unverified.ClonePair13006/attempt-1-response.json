@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical range checks and return the same integer value for all possible long inputs; no input distinguishes their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 998,
+  "eval_count": 305,
+  "total_duration": 2424973800,
+  "load_duration": 15307900
+}

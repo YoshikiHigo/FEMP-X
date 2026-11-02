@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return 0 for the empty string, parse the string as an integer for any non‑empty string, and throw a NullPointerException when the argument is null. No input can distinguish the two implementations."
+}

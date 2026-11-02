@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return null for null or empty strings, return an Integer object (either cached or newly allocated) for valid numeric strings, and throw NumberFormatException for invalid numeric strings. No input can distinguish their return values, side effects, or exception types."
+}

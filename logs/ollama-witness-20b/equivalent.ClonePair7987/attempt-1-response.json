@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical operations on the same Calendar instance and produce the same string representation for any non‑null Date input. They both throw a NullPointerException when the input is null, and for all other inputs the formatting logic is equivalent. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1086,
+  "eval_count": 173,
+  "total_duration": 1677106400,
+  "load_duration": 3917300
+}

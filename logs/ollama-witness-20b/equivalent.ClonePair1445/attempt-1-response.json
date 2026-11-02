@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods produce identical hexadecimal string representations for all possible byte array inputs; no concrete input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1013,
+  "eval_count": 632,
+  "total_duration": 5182726100,
+  "load_duration": 7534100
+}

@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair5914",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.RuntimeException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.RuntimeException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.RuntimeException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.RuntimeException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 returns 0 when both arguments are the same reference, even if that reference’s compareTo throws an exception. method2 calls compareTo on the arguments when both are non‑null, so it propagates the exception.",
+    "arguments_java": [
+      "new Comparable[]{new Comparable(){public int compareTo(Object o){throw new RuntimeException();}}}[0]",
+      "new Comparable[]{new Comparable(){public int compareTo(Object o){throw new RuntimeException();}}}[0]"
+    ],
+    "parameter_types": [
+      "Comparable",
+      "Comparable"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 152.91
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are byte‑for‑byte identical; they perform the same arithmetic on the same input array and return the same integer. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1015,
+  "eval_count": 59,
+  "total_duration": 757741100,
+  "load_duration": 8646300
+}

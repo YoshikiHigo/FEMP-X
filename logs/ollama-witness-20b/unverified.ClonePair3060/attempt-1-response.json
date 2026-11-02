@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all deterministic, bounded inputs: they both return null for null or empty source strings, otherwise they split the string using the provided delimiters via StringTokenizer and return the resulting tokens array. No input can produce a differing return value, side effect, exception type, or non‑termination between the two implementations.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1145,
+  "eval_count": 519,
+  "total_duration": 4280919100,
+  "load_duration": 10829500
+}

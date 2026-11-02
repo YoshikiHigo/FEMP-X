@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods evaluate the same set of conditions and return true for the same set of characters; the order of checks does not affect the outcome for any input."
+}

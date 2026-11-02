@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible inputs. Both perform the same null checks, reference equality check, and case-sensitive or case-insensitive equality comparison. No input can cause a difference in return value, side effects, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 930,
+  "eval_count": 283,
+  "total_duration": 2626019100,
+  "load_duration": 2046100
+}

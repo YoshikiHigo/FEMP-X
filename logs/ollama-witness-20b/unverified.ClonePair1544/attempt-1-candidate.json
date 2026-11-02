@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are logically equivalent for all possible byte[] inputs. Both handle nulls identically, compare lengths, and check element equality in a loop that visits each index exactly once. The direction of iteration (forward vs. backward) does not affect the outcome. No input can cause a difference in return value, side effects, exceptions, or non‑termination."
+}

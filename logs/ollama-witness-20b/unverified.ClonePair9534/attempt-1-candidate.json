@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same string representation for any Calendar instance or null. They use equivalent logic and produce identical results for all possible inputs, so no concrete separating test case exists."
+}

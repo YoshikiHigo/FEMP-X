@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical binary search logic; for any deterministic, bounded input (including null, empty, or non-empty arrays with any integer values), they produce the same return value or throw the same exception. No concrete input can distinguish their behavior under the allowed difference types."
+}

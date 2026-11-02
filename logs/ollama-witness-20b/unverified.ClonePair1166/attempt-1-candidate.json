@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: they compare the first array to the second array up to the length of the second array, returning true if all corresponding bytes match and false otherwise. No input can cause one method to behave differently from the other."
+}

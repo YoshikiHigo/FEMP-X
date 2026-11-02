@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods implement the same leap‑year logic for all int inputs; no input can cause one to return a different value, throw an exception, or exhibit a side effect. Therefore a concrete separating test case cannot be constructed.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 807,
+  "eval_count": 191,
+  "total_duration": 1864943500,
+  "load_duration": 9117200
+}

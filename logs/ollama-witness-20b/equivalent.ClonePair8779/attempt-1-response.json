@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of all relevant Unicode ranges and specific code points handled by both methods, their logical flow yields identical boolean results for every possible char input. No concrete separating input was identified.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1051,
+  "eval_count": 926,
+  "total_duration": 7533298100,
+  "load_duration": 3751700
+}

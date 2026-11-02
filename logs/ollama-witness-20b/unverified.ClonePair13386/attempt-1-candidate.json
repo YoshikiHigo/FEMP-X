@@ -1,0 +1,19 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 implements Damerau–Levenshtein transposition, reducing the edit distance from 2 to 1 for the pair (\"ab\",\"ba\"), while method2 does not. Both methods receive the same inputs and initial workspace array, but method1 returns 1 and method2 returns 2.",
+  "arguments_java": [
+    "\"ab\"",
+    "\"ba\"",
+    "10",
+    "new int[9]"
+  ],
+  "parameter_types": [
+    "String",
+    "String",
+    "int",
+    "int[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

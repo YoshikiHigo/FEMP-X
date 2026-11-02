@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 compares ERA, YEAR and DAY_OF_YEAR, while method2 compares YEAR, MONTH and DAY_OF_MONTH. For dates that are on the same calendar day but in different eras (e.g., 1 Jan 1 AD vs 1 Jan 1 BC) method1 returns false (eras differ) whereas method2 returns true (year, month and day match).\",\"arguments_java\":[\"new GregorianCalendar(1, Calendar.JANUARY, 1).getTime()\",\"new GregorianCalendar(0, Calendar.JANUARY, 1).getTime()\"],\"parameter_types\":[\"java.util.Date\",\"java.util.Date\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1042,
+  "eval_count": 565,
+  "total_duration": 4584506400,
+  "load_duration": 8340400
+}

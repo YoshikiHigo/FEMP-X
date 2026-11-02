@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 converts a hex byte value of 128 (0x80) to -128 by subtracting 256 when the parsed integer is >=128, whereas method2 only subtracts 256 when the value is strictly >128. Thus for the input \"80\" the two methods return different byte arrays: method1 returns [ (byte)-128 ] and method2 returns [ (byte)128 ].",
+  "arguments_java": [
+    "\"80\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

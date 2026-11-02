@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical uppercase-to-lowercase conversion for all 16‑bit char values; no input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 956,
+  "eval_count": 153,
+  "total_duration": 1454655200,
+  "load_duration": 2560300
+}

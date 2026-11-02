@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic for all possible byte[] inputs: they both treat bytes in the range 32–126 as printable characters and replace any other byte with a period. The signedness of the byte values and the comparison bounds are equivalent, so no concrete input can distinguish their return values, side effects, or exception behavior."
+}

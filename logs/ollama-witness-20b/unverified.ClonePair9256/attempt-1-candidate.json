@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; they perform the same operations on the same inputs and produce the same outputs for all possible arguments. No concrete separating input can be found."
+}

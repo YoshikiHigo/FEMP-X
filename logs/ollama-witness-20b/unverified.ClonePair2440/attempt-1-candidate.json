@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two implementations, no input can be constructed that causes a difference in return value, side effects, or exception type. Both methods perform equivalent unsigned byte-to-int conversion for all four positions, handling negative bytes correctly via sign extension and masking. Therefore, no concrete separating test case exists."
+}

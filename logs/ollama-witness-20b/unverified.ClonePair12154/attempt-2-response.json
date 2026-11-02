@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns false because the input string has length 10 and does not match the required 9‑character pattern, whereas method2 returns true because the string contains a ‘#’ that is not part of a ‘#{’ sequence and is followed by the literal substring \\\" do \\\".\",\"arguments_java\":[\"\\\"# test do \\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1366,
+  "eval_count": 363,
+  "total_duration": 3210824600,
+  "load_duration": 3019500
+}

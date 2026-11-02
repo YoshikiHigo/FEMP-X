@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks on the two boolean arrays; they return the same boolean value for any input and have no side effects or exceptions. No concrete separating input exists."
+}

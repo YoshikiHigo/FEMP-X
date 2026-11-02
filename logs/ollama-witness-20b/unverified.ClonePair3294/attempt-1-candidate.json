@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they return true iff the two int arrays are non‑null, have the same length, and contain equal elements in the same order. The only operations performed are length checks and element comparisons, and the control flow paths in both methods are equivalent. Therefore no concrete input can distinguish their return values, side effects, or exception behavior."
+}

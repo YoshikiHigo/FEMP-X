@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs. Method1 returns true only when the two arrays are the same reference or have identical contents; otherwise it returns false. Method2 performs the same checks: it returns true only when the arrays are the same reference or have identical contents, and false otherwise. No input can cause a divergence in return value, side effects, exceptions, or non‑termination."
+}

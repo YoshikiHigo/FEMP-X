@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical results for all valid GregorianCalendar inputs, including null, negative years, and all month/day combinations. No concrete separating input exists."
+}

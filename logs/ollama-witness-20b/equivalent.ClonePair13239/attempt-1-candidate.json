@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compare the same logical date components (year and day-of-year), and they both return false when either Calendar is null. No input can cause a divergence in return value, side effect, exception, or termination."
+}

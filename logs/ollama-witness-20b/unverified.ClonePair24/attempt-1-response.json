@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs: they return null when the argument is null and otherwise delegate to Long.parseLong, which throws the same NumberFormatException for invalid inputs. No deterministic, bounded input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 905,
+  "eval_count": 164,
+  "total_duration": 1607130500,
+  "load_duration": 2564100
+}

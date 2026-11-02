@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of all control paths, both methods perform identical operations for every possible combination of arguments. No input can cause a difference in return value, side effects, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 2749,
+  "eval_count": 115,
+  "total_duration": 1601266900,
+  "load_duration": 2967900
+}

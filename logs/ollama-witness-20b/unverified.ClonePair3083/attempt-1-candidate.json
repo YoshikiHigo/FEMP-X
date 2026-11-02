@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical integer comparisons and throw the same exceptions for null or non-Integer inputs; no concrete input can distinguish their behavior."
+}

@@ -1,0 +1,60 @@
+{
+  "key": "equivalent.ClonePair7923",
+  "stable": true,
+  "differenceType": "exception",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Calendar(1577804400000,QXNpYS9Ub2t5bw==)]",
+        "inputAfterSnapshot": "java.lang.Object[][Calendar(1577804400000,QXNpYS9Ub2t5bw==)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.RuntimeException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Calendar(1577804400000,QXNpYS9Ub2t5bw==)]",
+        "inputAfterSnapshot": "java.lang.Object[][Calendar(1577804400000,QXNpYS9Ub2t5bw==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Calendar(1577804400000,QXNpYS9Ub2t5bw==)]",
+        "inputAfterSnapshot": "java.lang.Object[][Calendar(1577804400000,QXNpYS9Ub2t5bw==)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.RuntimeException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Calendar(1577804400000,QXNpYS9Ub2t5bw==)]",
+        "inputAfterSnapshot": "java.lang.Object[][Calendar(1577804400000,QXNpYS9Ub2t5bw==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 invokes Calendar.get once and returns a boolean; method2 invokes Calendar.get twice. By supplying a Calendar subclass that throws a RuntimeException on its second get call, method1 completes normally while method2 throws an exception.",
+    "arguments_java": [
+      "new GregorianCalendar(2020, Calendar.JANUARY, 1){int count=0;public int get(int field){count++; if(count==2) throw new RuntimeException(\"boom\"); return super.get(field);}}"
+    ],
+    "parameter_types": [
+      "Calendar"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 128.721
+}

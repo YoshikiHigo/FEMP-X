@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical range checks and cast; no input can distinguish their behavior."
+}

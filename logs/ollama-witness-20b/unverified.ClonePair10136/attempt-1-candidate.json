@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of both methods, all control paths produce identical results for every possible input respecting the method signatures and preconditions. No concrete separating test case can be constructed that distinguishes their behavior."
+}

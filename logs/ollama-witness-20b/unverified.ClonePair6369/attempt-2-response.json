@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 preserves the sign of the first byte, while method2 treats all bytes as unsigned. With a negative first byte the two methods produce different long values.\",\"arguments_java\":[\"new byte[]{(byte)-1,0,0,0,0,0,0,0}\",\"0\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1076,
+  "eval_count": 575,
+  "total_duration": 4592711400,
+  "load_duration": 2041600
+}

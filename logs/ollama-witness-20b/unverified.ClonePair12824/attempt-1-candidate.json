@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return the element at the given index if the index is within bounds, otherwise they return an empty string, and they both throw a NullPointerException or ArrayIndexOutOfBoundsException for null arrays or negative indices. No concrete input can distinguish them."
+}

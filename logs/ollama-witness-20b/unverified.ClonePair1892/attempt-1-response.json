@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all possible byte[] inputs. Both return true only when the arrays are either the same reference or have identical contents and lengths, and both return false otherwise. No input can cause a differing return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1251,
+  "eval_count": 292,
+  "total_duration": 2543285200,
+  "load_duration": 2660300
+}

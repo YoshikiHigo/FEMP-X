@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they compare the lengths of the two byte arrays and then element‑wise equality. The only structural difference is that method2 uses an explicit else clause, but this does not affect the outcome. For any pair of byte arrays (including null, empty, or differing lengths), both methods return the same boolean value or throw the same exception. No input can distinguish their behavior."
+}

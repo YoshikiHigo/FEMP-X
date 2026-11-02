@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical byte‑to‑int conversions for any non‑null byte array and non‑negative offset that allows four bytes to be read. Both use the same arithmetic for signed bytes and will throw the same exceptions (ArrayIndexOutOfBoundsException or NullPointerException) for out‑of‑bounds or null inputs. No deterministic, bounded input can distinguish their behavior."
+}

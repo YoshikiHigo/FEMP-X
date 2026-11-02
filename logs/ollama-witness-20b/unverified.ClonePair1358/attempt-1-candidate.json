@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: they first compare array lengths, then iterate over the arrays comparing each element. For all possible byte[] inputs (including null, which throws the same NullPointerException in both methods), the return value, side effects, and exception behavior are the same. No concrete input can distinguish them."
+}

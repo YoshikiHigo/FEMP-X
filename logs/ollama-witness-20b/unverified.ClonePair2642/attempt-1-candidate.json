@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 returns false when array lengths differ, while method2 throws ArrayIndexOutOfBoundsException because it accesses second[i] beyond its length.",
+  "arguments_java": [
+    "new byte[]{1,2}",
+    "new byte[]{1}"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "byte[]"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible inputs: they both return the default value when the system property is absent or cannot be parsed as an integer, and otherwise return the parsed integer. No deterministic, bounded input can distinguish their behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the dot product of two arrays in the same way; they handle nulls, empty arrays, and normal inputs identically. No concrete input can distinguish their return values, side effects, or exception behavior."
+}

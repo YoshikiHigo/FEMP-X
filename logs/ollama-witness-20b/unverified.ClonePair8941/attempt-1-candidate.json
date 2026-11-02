@@ -1,0 +1,15 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 treats negative parsed values as default, while method2 returns the negative value. With the system property \"testKey\" set to \"-5\", method1 returns the supplied default, whereas method2 returns -5.",
+  "arguments_java": [
+    "\"testKey\"",
+    "-5"
+  ],
+  "parameter_types": [
+    "String",
+    "int"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. They both perform a straightforward find-and-replace using StringBuffer and String.substring, handling nulls and empty strings in the same way. No input can cause one method to return a different value, throw a different exception, or terminate differently than the other.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1145,
+  "eval_count": 408,
+  "total_duration": 3231883200,
+  "load_duration": 4388200
+}

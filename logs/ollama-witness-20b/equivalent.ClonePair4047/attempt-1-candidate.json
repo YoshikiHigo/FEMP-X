@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; they compute the same expression using the same control flow and constants. No input can distinguish their behavior."
+}

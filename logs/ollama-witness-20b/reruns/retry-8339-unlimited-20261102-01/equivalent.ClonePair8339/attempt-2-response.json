@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For input 63 (0x3f), method1 follows the branch where n>0x0000000f and n>0x0000001f, returning 6. Method2’s nested if chain reaches the else of the third if (num < 0x10), which returns 2. Thus the return values differ.\",\"arguments_java\":[\"63\"],\"parameter_types\":[\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 2346,
+  "eval_count": 440,
+  "total_duration": 3770649200,
+  "load_duration": 22336000
+}

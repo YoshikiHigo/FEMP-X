@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: both return -1 when the array/list is null or empty, and both return the first index where the element matches a non‑null array/list entry. No input can cause a divergence in return value, side effect, exception, or non‑termination."
+}

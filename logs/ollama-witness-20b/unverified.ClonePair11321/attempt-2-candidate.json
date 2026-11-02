@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After thorough analysis of both methods, no deterministic, bounded input can cause them to behave differently. Both methods compute the same padding length and either return the original string or a left‑padded string containing the entire original text. They handle null, negative, and equal lengths identically, and neither method performs any side effects or throws exceptions in a way that would diverge. Therefore, no separating test case exists."
+}

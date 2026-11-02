@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all deterministic, bounded inputs. Both iterate from the given index until a whitespace or the end of the string is reached, and both throw the same exception (StringIndexOutOfBoundsException) when the index is out of bounds. No input can produce a differing return value, side effect, exception type, or non‑termination between the two implementations.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1042,
+  "eval_count": 213,
+  "total_duration": 1767060400,
+  "load_duration": 2115800
+}

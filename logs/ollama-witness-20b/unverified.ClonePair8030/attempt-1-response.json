@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte-to-hex conversion over the same index range; no input can cause differing observable behavior under the allowed difference types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1318,
+  "eval_count": 327,
+  "total_duration": 2992613000,
+  "load_duration": 2153000
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same logic for computing the maximum of three integers; for any input the control flow and return values are identical, so no concrete separating input exists."
+}

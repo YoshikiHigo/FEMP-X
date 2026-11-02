@@ -1,0 +1,60 @@
+{
+  "key": "equivalent.ClonePair2681",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(16909060)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(16909060)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(16909060)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(16909060)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 interprets the first four bytes in reverse order (indices 3,2,1,0) while method2 interprets them in natural order (indices 0,1,2,3). For an input array longer than four bytes, the two methods produce different 32‑bit integers.",
+    "arguments_java": [
+      "new byte[]{1,2,3,4,5}"
+    ],
+    "parameter_types": [
+      "byte[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 168.754
+}

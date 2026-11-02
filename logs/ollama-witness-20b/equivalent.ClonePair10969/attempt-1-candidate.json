@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical mappings from hexadecimal characters to their numeric values; for any input character, the returned byte value is the same. No input can distinguish them."
+}

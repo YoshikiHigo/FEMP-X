@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"When the pattern is the empty string, method1 returns the index after the starting position (fromIndex+1) while method2 returns the starting position (fromIndex).\",\"arguments_java\":[\"\\\"abc\\\"\"],\"parameter_types\":[\"String\",\"String\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1501,
+  "eval_count": 626,
+  "total_duration": 5259916300,
+  "load_duration": 4155700
+}

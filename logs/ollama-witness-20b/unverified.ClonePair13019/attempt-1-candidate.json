@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic: they iterate over the first up to 12 characters of the input string, accumulating a value based on character ranges, then repeatedly divide by 37 while the result is divisible and non‑zero. No input can cause one method to diverge from the other in return value, side effects, or termination."
+}

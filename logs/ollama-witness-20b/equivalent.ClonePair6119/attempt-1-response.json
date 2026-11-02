@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical conditional logic for all possible double inputs, including edge cases such as NaN, positive/negative infinity, and values outside the defined ranges. No input can cause a differing return value, side effect, exception, or non‑termination between method1 and method2.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1596,
+  "eval_count": 226,
+  "total_duration": 2210328600,
+  "load_duration": 2134400
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑by‑element comparison using the length of the first array; they throw the same exceptions for null or mismatched lengths and return the same boolean value for all valid inputs. No concrete input can distinguish their behavior."
+}

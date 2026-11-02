@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible inputs of type char[][]. No input can cause a difference in return value, side effects, exceptions, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1026,
+  "eval_count": 205,
+  "total_duration": 2038842200,
+  "load_duration": 3574200
+}

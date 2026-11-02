@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return true iff the two arrays are the same reference, and otherwise return false after handling nulls and length mismatches in the same way. No concrete input can distinguish them."
+}

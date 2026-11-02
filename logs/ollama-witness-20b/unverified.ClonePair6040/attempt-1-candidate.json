@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks: they both compare nullity, array lengths, and element equality in the same logical order. The forward loop in method1 and the reverse loop with a ternary condition in method2 are equivalent in all cases, so no concrete input can distinguish their behavior."
+}

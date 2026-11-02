@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: they first compare array lengths and then iterate over elements, setting the result to false if any mismatch is found. For any pair of byte arrays (including nulls, which both throw NullPointerException), the return value, side effects, and exception behavior are the same. No deterministic input can distinguish them."
+}

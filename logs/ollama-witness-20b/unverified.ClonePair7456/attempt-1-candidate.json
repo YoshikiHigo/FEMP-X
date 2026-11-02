@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical character-to-HTML-entity mappings; for any char input they return the same string. No input can distinguish their behavior."
+}

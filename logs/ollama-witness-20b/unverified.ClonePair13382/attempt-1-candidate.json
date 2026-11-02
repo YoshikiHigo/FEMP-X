@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 parses each octet with Integer.parseInt and casts to byte, so an octet of 256 is accepted and wrapped to 0 (byte overflow). method2 explicitly rejects any octet >255 and returns null. Thus for the input \"256.0.0.1\" method1 returns a byte array while method2 returns null.",
+  "arguments_java": [
+    "\"256.0.0.1\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all possible String inputs: they return null when the input is null or not a valid integer representation, and otherwise return the parsed Integer. No input can distinguish their return values, side effects, exceptions, or termination behavior."
+}

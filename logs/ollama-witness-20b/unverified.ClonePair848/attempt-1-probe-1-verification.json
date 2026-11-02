@@ -1,0 +1,63 @@
+{
+  "key": "unverified.ClonePair848",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2],byte[][3, 2]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2],byte[][3, 2]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2],byte[][3, 2]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2],byte[][3, 2]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2],byte[][3, 2]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2],byte[][3, 2]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2],byte[][3, 2]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2],byte[][3, 2]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns false when any element differs, while method2 overwrites the result on each iteration and only the last comparison determines the final value. For arrays where the first elements differ but the last elements match, method1 returns false but method2 returns true.",
+    "arguments_java": [
+      "new byte[]{1,2}",
+      "new byte[]{3,2}"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "byte[]"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 156.356
+}

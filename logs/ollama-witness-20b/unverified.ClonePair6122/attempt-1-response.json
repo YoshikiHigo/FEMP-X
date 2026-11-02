@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 subtracts 0x7FFFFFFF from the 32‑bit integer before scaling, whereas method2 does not. With a 4‑byte input of 0x00 0x00 0x00 0x00 (value 0), method1 produces (0-0x7FFFFFFF)/0x7FFFFFFF = -1.0f, while method2 produces 0/0x7FFFFFFF = 0.0f.\",\"arguments_java\":[\"new byte[]{0,0,0,0}\"],\"parameter_types\":[\"byte[]\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1654,
+  "eval_count": 319,
+  "total_duration": 2892529200,
+  "load_duration": 3200500
+}

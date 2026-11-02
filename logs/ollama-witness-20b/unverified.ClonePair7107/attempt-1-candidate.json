@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical logic; for any byte input they compute the same two hexadecimal digit strings and concatenate them. No input can distinguish their return values, side effects, or exception behavior."
+}

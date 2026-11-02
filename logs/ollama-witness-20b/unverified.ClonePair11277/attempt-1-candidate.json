@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks and loops; for any deterministic, bounded input they produce the same result. No concrete separating input can be constructed without violating the constraints."
+}

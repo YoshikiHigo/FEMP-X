@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte-to-long conversions over eight bytes; they handle null and out-of-bounds indices in the same way, and no input can cause one to return a different value, throw a different exception, or terminate differently."
+}

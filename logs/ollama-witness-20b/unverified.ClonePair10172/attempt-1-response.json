@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods return the same boolean value for every possible char input; no input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 770,
+  "eval_count": 72,
+  "total_duration": 631738900,
+  "load_duration": 15165700
+}

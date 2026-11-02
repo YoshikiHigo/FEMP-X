@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform the same logic: they iterate from the given index while the character at that index is whitespace, incrementing the index until a non‑whitespace character or the end of the string is reached. For any input string and integer index, the returned value will be identical. No input can distinguish the two implementations.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1055,
+  "eval_count": 90,
+  "total_duration": 1119728200,
+  "load_duration": 7472000
+}

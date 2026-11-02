@@ -1,0 +1,62 @@
+{
+  "key": "equivalent.ClonePair8034",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==),null,String(Yg==)],String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==),null,String(Yg==)],String(YQ==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==),null,String(Yg==)],String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==),null,String(Yg==)],String(YQ==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==),null,String(Yg==)],String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==),null,String(Yg==)],String(YQ==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==),null,String(Yg==)],String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==),null,String(Yg==)],String(YQ==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 throws NullPointerException when array contains a null element and the searched element is non‑null, whereas method2 safely skips null entries and returns -1.",
+    "arguments_java": [
+      "new String[]{\"a\", null, \"b\"}",
+      "\"a\""
+    ],
+    "parameter_types": [
+      "String[]",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 98.027
+}

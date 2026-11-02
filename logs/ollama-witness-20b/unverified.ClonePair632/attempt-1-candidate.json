@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: they first compare lengths, then iterate over the arrays comparing each element, returning false on mismatch and true otherwise. No input can cause a differing return value, side effect, exception type, or non‑termination. Therefore no concrete separating test case exists."
+}

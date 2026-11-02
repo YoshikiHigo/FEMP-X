@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks for null, length, and element equality. They return the same boolean value for all possible byte[] inputs, including cases where the arrays are the same reference or have identical contents. No distinguishing input exists."
+}

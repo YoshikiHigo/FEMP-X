@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical leap‑year logic; exhaustive reasoning shows no input yields differing return values.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 829,
+  "eval_count": 203,
+  "total_duration": 1806808100,
+  "load_duration": 2286700
+}

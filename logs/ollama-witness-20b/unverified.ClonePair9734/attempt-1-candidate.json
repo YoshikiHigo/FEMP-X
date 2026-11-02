@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all possible inputs of type char[]; no concrete separating input exists."
+}

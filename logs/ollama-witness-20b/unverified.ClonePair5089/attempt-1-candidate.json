@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same algorithm for computing a positive remainder. For all integer inputs (including negative values and zero modulo, which both throw ArithmeticException), the two methods produce identical results. No concrete input can be found that distinguishes them."
+}

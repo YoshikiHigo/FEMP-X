@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all possible inputs: they both return the default value when the system property is absent or cannot be parsed as an integer, and they both return the parsed integer value when parsing succeeds. No input can cause a divergence in return value, side effect, exception, or termination."
+}

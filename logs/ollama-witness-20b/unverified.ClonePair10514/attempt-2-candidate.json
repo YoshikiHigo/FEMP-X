@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return an Integer object with the parsed numeric value when the input is a valid integer literal, and return null otherwise. The construction of the Integer object in method1 and the autoboxing of the primitive int in method2 do not affect the observable return value, and neither method mutates its argument, writes to stdout/stderr, throws a different exception type, or fails to terminate. Therefore no concrete separating test case exists."
+}

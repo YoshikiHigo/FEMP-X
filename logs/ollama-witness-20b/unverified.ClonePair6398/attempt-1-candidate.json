@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte extraction from the array using equivalent index calculations. For any valid input (array length >= offset+8) they produce the same long value. For invalid inputs (e.g., null array or insufficient length), both throw the same exception types (NullPointerException or ArrayIndexOutOfBoundsException). No deterministic difference in return value, side effects, or termination behavior can be observed with any concrete input."
+}

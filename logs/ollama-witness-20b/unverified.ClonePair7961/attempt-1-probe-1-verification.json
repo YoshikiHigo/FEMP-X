@@ -1,0 +1,65 @@
+{
+  "key": "unverified.ClonePair7961",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(bnVsbGE=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==),null,Integer(2)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==),null,Integer(2)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(bnVsbGE=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==),null,Integer(2)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==),null,Integer(2)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(bnVsbGE=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==),null,Integer(2)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==),null,Integer(2)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(bnVsbGE=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==),null,Integer(2)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==),null,Integer(2)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 inserts a null pad string into a StringBuffer, which throws a NullPointerException, whereas method2 concatenates the null pad string with the word, producing the string \"nulla\".",
+    "arguments_java": [
+      "\"a\"",
+      "null",
+      "2"
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "int"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 155.727
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute equality based on the same underlying date components (year, month, day) using either Calendar or the deprecated Date getters. For any Date instance representable by java.util.Date (i.e., any millisecond value since the epoch), the two methods return the same boolean result. No deterministic, bounded input can cause one to return true while the other returns false, nor can one cause a side‑effect or exception that the other does not. Therefore, no concrete separating test case exists."
+}

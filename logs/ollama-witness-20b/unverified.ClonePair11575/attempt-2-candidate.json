@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs. In particular, when the target/oldToken string is empty, both methods enter an infinite loop because the index never advances. For all other cases, they perform the same string replacement logic, handling null arguments in the same way (appending the literal \"null\" string). Therefore no concrete separating test case exists."
+}

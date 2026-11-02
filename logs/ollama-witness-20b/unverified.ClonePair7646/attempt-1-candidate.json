@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns false because Date.equals compares milliseconds, while method2 returns true because it compares epoch seconds (1000/1000 == 1500/1000).",
+  "arguments_java": [
+    "new Date(1000L)",
+    "new Date(1500L)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive reasoning over all possible combinations of null and non‑null arguments, the two methods exhibit identical control flow and return values for every input. No concrete separating test case can be constructed that satisfies the constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 862,
+  "eval_count": 327,
+  "total_duration": 2734158200,
+  "load_duration": 23267100
+}

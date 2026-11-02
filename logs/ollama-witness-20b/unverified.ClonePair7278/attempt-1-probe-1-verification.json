@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair7278",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,String()]",
+        "inputAfterSnapshot": "java.lang.Object[][null,String()]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,String()]",
+        "inputAfterSnapshot": "java.lang.Object[][null,String()]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,String()]",
+        "inputAfterSnapshot": "java.lang.Object[][null,String()]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,String()]",
+        "inputAfterSnapshot": "java.lang.Object[][null,String()]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 throws a NullPointerException when the first argument is null and the second argument is the empty string, because it reaches the third guard clause and then attempts to evaluate x.length(); method2 handles this case safely and returns false.",
+    "arguments_java": [
+      "null",
+      "\"\""
+    ],
+    "parameter_types": [
+      "String",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 158.53
+}

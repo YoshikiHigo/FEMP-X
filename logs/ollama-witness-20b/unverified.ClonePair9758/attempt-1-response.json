@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Unable to construct a concrete input that guarantees the two methods behave differently while satisfying the requirement that both receive the same argument expressions and initial state.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 948,
+  "eval_count": 3134,
+  "total_duration": 24350110700,
+  "load_duration": 9724800
+}

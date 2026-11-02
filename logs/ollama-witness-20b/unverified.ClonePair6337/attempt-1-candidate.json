@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same modulo operation for all integer inputs, handling negative divisors and dividends identically. No input can produce a differing return value, side effect, exception type, or non‑termination."
+}

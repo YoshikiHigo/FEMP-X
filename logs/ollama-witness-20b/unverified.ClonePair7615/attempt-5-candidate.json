@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No concrete separating input can be constructed using only deterministic, local, bounded expressions that satisfy the constraints. The only way to create asymmetric equals behavior requires shared mutable state (e.g., a shared array or reference holder) between the two arguments, which is disallowed by the specification. Therefore, a valid test case distinguishing method1 and method2 cannot be provided under the given restrictions."
+}

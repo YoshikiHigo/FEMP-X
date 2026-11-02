@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logical checks on the byte arrays: they both return true only when both arrays are non‑null, have the same length, and contain identical byte values at every index. The order of null and length checks differs but does not affect the outcome for any possible input. No concrete input can produce a differing return value, side effect, exception, or non‑termination between the two methods."
+}

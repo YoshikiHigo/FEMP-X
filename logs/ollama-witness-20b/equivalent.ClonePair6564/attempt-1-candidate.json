@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same dot‑product computation; with any finite float arrays they produce identical results, and the only edge case (null arrays) is handled identically by both. No concrete input can distinguish them."
+}

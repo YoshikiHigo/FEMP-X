@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical element‑wise comparisons over the first n (or len) indices of two int arrays. For any input that does not trigger an exception, both methods return the same boolean value. For inputs that trigger an exception (e.g., null arrays or indices beyond array bounds), both methods throw the same type of exception (ArrayIndexOutOfBoundsException or NullPointerException) in the same circumstances. No deterministic, bounded input can distinguish their behavior."
+}

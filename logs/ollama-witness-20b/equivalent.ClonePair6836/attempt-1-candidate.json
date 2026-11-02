@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical for all valid inputs. They perform the same bounds checks, use the same search logic, and return the same values. No deterministic, bounded input can produce a differing result, side effect, or exception between the two implementations."
+}

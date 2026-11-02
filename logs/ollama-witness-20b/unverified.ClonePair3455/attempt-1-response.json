@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible inputs. They return the same boolean value for every pair of int[] arguments, and neither method mutates its arguments or produces side effects. No distinguishing input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 955,
+  "eval_count": 428,
+  "total_duration": 3416001100,
+  "load_duration": 5354800
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the control flow and side‑effects of both methods, no deterministic, bounded input can be constructed that causes one method to terminate with a different return value, throw a different exception, or exhibit a side‑effect while the other behaves differently. All candidate inputs either lead to identical behavior or to shared non‑termination, which is not an acceptable distinguishing difference under the given rules."
+}

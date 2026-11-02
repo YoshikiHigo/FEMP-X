@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they allocate a new array of length in.length-1 (or fromArray.length-1) and copy all elements except the one at the specified index. For any valid input (including null or empty arrays), both methods either throw the same exception or return the same result. No concrete input can distinguish their behavior."
+}

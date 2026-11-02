@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs: they return null when the input is null or cannot be parsed as a Long, and otherwise return the parsed Long value. No deterministic, bounded input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 876,
+  "eval_count": 259,
+  "total_duration": 2337861400,
+  "load_duration": 13117100
+}

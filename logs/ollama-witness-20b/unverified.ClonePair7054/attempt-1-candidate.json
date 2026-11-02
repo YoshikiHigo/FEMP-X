@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical unsigned little‑endian conversion of four bytes; for any valid input they produce the same result, and for any invalid input they throw the same exception. No concrete separating input exists."
+}

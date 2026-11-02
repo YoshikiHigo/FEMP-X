@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: they check for nulls, equal lengths, and element-wise equality, returning the same boolean result for any given pair of byte arrays. No input can cause a differing return value, side effect, exception, or non‑termination."
+}

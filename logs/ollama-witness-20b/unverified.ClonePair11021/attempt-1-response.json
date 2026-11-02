@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 replaces all occurrences of pattern with the replacement string, which can be null, effectively removing the pattern. method2 only performs a replacement if the replace argument is non‑null and non‑empty; if replace is null it returns the original string unchanged. With str=\\\"abcabc\\\", pattern=\\\"abc\\\", replace=null, method1 returns \\\"\\\" (the pattern is removed), whereas method2 returns \\\"abcabc\\\" (no replacement occurs).\",\"arguments_java\":[\"\\\"abcabc\\\"\",\"\\\"abc\\\"\",\"null\"],\"parameter_types\":[\"String\",\"String\",\"String\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1234,
+  "eval_count": 593,
+  "total_duration": 4711893300,
+  "load_duration": 5266500
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 uses bitwise OR while method2 uses addition; with byte values that cause a carry when added, the two results differ. For the input byte array { (byte)255, (byte)255, (byte)255, (byte)255 } and offset 0, method1 returns 0xFFFFFFFF (i.e., -1 as an int), whereas method2 returns 0xFFFFFF00 + 0xFF = 0xFFFFFFFF but due to signed int overflow the intermediate addition produces a different final value (-16769601).\",\"arguments_java\":[\"new byte[]{(byte)255,(byte)255,(byte)255,(byte)255}\"],\"parameter_types\":[\"byte[]\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1231,
+  "eval_count": 511,
+  "total_duration": 4192126800,
+  "load_duration": 5836200
+}

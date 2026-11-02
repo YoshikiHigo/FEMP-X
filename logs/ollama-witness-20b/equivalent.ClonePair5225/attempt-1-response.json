@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical logic: they retrieve a property by key and return the default value if the property is null, otherwise they return the trimmed property value. No input can cause a difference in return value, side effect, exception, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 863,
+  "eval_count": 78,
+  "total_duration": 973566200,
+  "load_duration": 2638600
+}

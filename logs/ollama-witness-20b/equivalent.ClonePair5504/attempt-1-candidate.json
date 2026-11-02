@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same mid index for all feasible inputs. The only difference is the use of unsigned right shift versus division by two. For any non‑negative low and high that fit in an int (which is always the case for array indices), (low+high) >>> 1 and (low+high)/2 produce identical results. Since array lengths are bounded by available memory, no input can cause an overflow that would distinguish the two expressions. Therefore no concrete separating input exists."
+}

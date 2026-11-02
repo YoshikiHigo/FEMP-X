@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical bitwise operations on the two bytes at the specified offset. They handle endianness in the same way, mask the bytes with 0xFF, and combine them using the same shift and OR operations. For any valid byte array and offset, both methods produce the same integer result. Edge cases such as null arrays, out‑of‑bounds offsets, or negative offsets result in the same ArrayIndexOutOfBoundsException or NullPointerException in both methods. Therefore, no concrete separating input exists."
+}

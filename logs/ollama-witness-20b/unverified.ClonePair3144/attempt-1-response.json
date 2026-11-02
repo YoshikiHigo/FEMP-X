@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible inputs: they compute the maximum element of a non‑empty float array, throw ArrayIndexOutOfBoundsException on an empty array, and throw NullPointerException when the argument is null. No input can distinguish their return values, side effects, or exception types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1003,
+  "eval_count": 148,
+  "total_duration": 1408098000,
+  "load_duration": 8516000
+}

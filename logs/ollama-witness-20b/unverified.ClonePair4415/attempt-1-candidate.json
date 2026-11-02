@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same primality test logic and return identical results for all deterministic, bounded long inputs. No concrete separating input was identified."
+}

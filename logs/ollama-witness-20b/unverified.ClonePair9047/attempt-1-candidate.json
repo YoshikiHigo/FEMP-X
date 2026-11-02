@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all double inputs; the else-if in method1 and the two independent ifs in method2 produce identical results for every possible value of lng/phi. No concrete input can distinguish them."
+}

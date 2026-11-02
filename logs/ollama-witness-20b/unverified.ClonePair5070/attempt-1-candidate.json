@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same primality test logic; the use of ceil versus floor for the square root bound does not affect the set of odd divisors examined, so no input can distinguish their return values, side effects, or termination behavior."
+}

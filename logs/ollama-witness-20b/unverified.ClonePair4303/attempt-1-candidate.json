@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logical checks on the same Date inputs using the default Calendar/GregorianCalendar instances. No deterministic input can cause one to return true while the other returns false, nor can one throw an exception where the other does not. Therefore no concrete separating test case exists."
+}

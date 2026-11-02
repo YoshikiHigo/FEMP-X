@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns true when the two arguments are the same reference, regardless of the equals implementation, while method2 calls equals on the arguments. By using an object whose equals method always returns false, we can make method1 return true and method2 return false.",
+  "arguments_java": [
+    "new Object(){ @Override public boolean equals(Object o){ return false; } }",
+    "new Object(){ @Override public boolean equals(Object o){ return false; } }"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

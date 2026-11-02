@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks in the same order and return the same boolean value for any pair of char[] inputs. No input can cause a difference in return value, side effect, exception, or non‑termination."
+}

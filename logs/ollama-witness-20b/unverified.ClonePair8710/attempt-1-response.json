@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns '?' for input 51 because the condition >51 && <62 is false (51 is not greater than 51), whereas method2 returns 'z' for input 51 because the condition 26 <= sixBit <= 51 is true.\",\"arguments_java\":[\"51\"],\"parameter_types\":[\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1152,
+  "eval_count": 400,
+  "total_duration": 3356207600,
+  "load_duration": 2259700
+}

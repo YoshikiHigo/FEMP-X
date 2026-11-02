@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No deterministic, self‑contained input can be constructed that causes method1 to throw a NumberFormatException while method2 returns the default value, without modifying global state such as system properties. All inputs that produce a non‑null property value are dependent on the runtime environment and therefore cannot be guaranteed to exist in a fresh JVM. Consequently, a concrete separating test case cannot be provided under the given constraints."
+}

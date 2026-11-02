@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical checks for nulls, length equality, and element-wise equality of byte arrays. No input can cause a divergence in return value, side effects, exceptions, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1269,
+  "eval_count": 232,
+  "total_duration": 2156178600,
+  "load_duration": 4774000
+}

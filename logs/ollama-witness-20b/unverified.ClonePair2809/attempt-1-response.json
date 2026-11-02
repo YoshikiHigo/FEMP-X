@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of all possible byte array combinations—including nulls, empty arrays, equal and unequal lengths, and differing contents—both method1 and method2 produce identical boolean results for every input. No concrete separating test case can be constructed that distinguishes their behavior within the allowed constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1274,
+  "eval_count": 723,
+  "total_duration": 5865394400,
+  "load_duration": 14696200
+}

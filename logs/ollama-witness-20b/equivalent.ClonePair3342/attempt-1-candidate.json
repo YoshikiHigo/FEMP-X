@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs. Both methods first check that the lengths of the two arrays are equal, returning false if they differ. If the lengths are equal, they iterate over the arrays and return false on the first mismatch; otherwise they return true. They both throw a NullPointerException when either argument is null, and they do not modify the input arrays or produce side effects. Therefore no concrete input can distinguish the two methods."
+}

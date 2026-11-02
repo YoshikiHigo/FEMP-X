@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 rejects IPs with leading zeros in an octet (e.g., \"01\") because it disallows a non‑zero octet that starts with 0, while method2 accepts them and parses the numeric value normally.",
+  "arguments_java": [
+    "\"01.2.3.4\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

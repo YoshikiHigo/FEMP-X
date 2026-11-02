@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods compute the maximum of three integers with identical tie‑breaking logic; exhaustive reasoning shows no input can produce a different result.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1153,
+  "eval_count": 943,
+  "total_duration": 7504869500,
+  "load_duration": 8106100
+}

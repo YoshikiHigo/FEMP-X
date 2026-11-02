@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform equivalent range normalization for all finite double inputs; the only non‑terminating cases are for infinite values, and both methods loop indefinitely in those cases. No concrete input distinguishes the two methods."
+}

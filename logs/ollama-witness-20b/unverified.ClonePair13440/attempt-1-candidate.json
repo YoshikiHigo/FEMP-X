@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte conversion logic for all valid inputs, handling null, odd-length, and non-hex characters in the same way. No concrete input can be constructed that causes one method to return a different byte array, throw a different exception type, or exhibit non-termination while the other behaves differently."
+}

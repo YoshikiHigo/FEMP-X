@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair7734",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(1000),Date(1999)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(1000),Date(1999)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(1000),Date(1999)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(1000),Date(1999)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(1000),Date(1999)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(1000),Date(1999)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(1000),Date(1999)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(1000),Date(1999)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 compares Date values by truncating to whole seconds (getTime()/1000), whereas method2 uses Date.equals which compares full milliseconds. For two Date objects whose times differ only in the sub‑second part, method1 returns true while method2 returns false.",
+    "arguments_java": [
+      "date(1000L)",
+      "date(1999L)"
+    ],
+    "parameter_types": [
+      "Object",
+      "Object"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 157.395
+}

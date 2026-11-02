@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical bitwise operations on the same byte array slice: both compute a long by shifting each byte and combining the results using either bitwise OR or addition. Since the shifts produce non‑overlapping bit positions, the OR and addition yield the same value for all possible inputs, and no input can distinguish the two methods.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1182,
+  "eval_count": 383,
+  "total_duration": 3348238900,
+  "load_duration": 2340400
+}

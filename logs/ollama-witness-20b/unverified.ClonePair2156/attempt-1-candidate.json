@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit big‑endian integer from the first four bytes of the array and exhibit identical exception behaviour for all valid inputs. No deterministic input can produce a differing return value, side effect, exception type, or non‑termination."
+}

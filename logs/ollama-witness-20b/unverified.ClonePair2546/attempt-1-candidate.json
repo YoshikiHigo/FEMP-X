@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical byte‑by‑byte equality checks and return the same boolean value for all possible inputs. No input can distinguish their behavior."
+}

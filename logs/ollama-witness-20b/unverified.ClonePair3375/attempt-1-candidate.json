@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical element‑wise comparisons of two int arrays. For all possible inputs—including null arrays, empty arrays, and arrays of any length—their control flow and return values are the same. No concrete input can distinguish their behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement the same leap‑year logic for all integer inputs, including negative values, so no concrete input can distinguish their behavior."
+}

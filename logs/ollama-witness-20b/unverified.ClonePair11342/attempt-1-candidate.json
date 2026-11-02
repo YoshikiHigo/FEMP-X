@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the last index of a substring in a string using identical logic; for all deterministic, bounded inputs they produce the same result, throw the same exceptions, and terminate normally. No concrete separating input can be found."
+}

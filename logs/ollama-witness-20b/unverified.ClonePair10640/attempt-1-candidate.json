@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are mathematically equivalent for all finite double inputs; they both normalize an angle to the range [-π, π] using the same arithmetic. For special values such as NaN or infinities both methods enter an infinite loop, and for all other values they produce identical results. No concrete input can be found that distinguishes the return value, side effects, exceptions, or termination behavior of method1 and method2."
+}

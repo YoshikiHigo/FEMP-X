@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform exactly the same operations on the input byte arrays; they compute length equality, iterate over indices, compare each element, and return the same boolean result. No input can cause a divergence in return value, side effects, exceptions, or termination."
+}

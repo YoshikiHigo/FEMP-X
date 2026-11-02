@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods delegate to the same underlying Float parsing logic (Float.valueOf / new Float(String) ultimately call Float.parseFloat). For any String input—including edge cases such as empty strings, whitespace, numeric literals, NaN, Infinity, or malformed numbers—the behavior (returning a Float instance or null) is identical. No input can produce a differing return value, side effect, exception type, or non‑termination between the two methods."
+}

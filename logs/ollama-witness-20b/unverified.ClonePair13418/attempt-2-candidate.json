@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, they behave identically for all valid inputs: for any even‑length hexadecimal string they produce the same byte array, and for any odd‑length string both throw a StringIndexOutOfBoundsException. No deterministic, bounded input can distinguish their behavior under the allowed difference categories."
+}

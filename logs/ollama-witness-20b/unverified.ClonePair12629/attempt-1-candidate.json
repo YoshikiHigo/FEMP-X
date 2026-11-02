@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all valid inputs, including null. They both throw a NullPointerException when the string argument is null, and otherwise perform the same length checks and padding logic. No concrete input can distinguish their return values, side effects, or exception types."
+}

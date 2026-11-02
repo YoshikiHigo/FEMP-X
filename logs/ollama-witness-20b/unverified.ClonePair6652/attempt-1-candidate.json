@@ -1,0 +1,16 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 trims the retrieved string and treats a string of only whitespace as empty, returning the default value; method2 does not trim, so it returns the original whitespace string.",
+  "arguments_java": [
+    "map(\"k\",\"   \")",
+    "\"k\"",
+    "\"def\""
+  ],
+  "parameter_types": [
+    "Map",
+    "String",
+    "String"
+  ],
+  "void_return": false
+}

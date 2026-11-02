@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte-wise comparison of the given string against the byte array starting at the specified offset. For any deterministic, bounded input—including null arrays, out‑of‑bounds offsets, empty strings, or normal cases—both methods either return the same boolean value or throw the same exception (NullPointerException or ArrayIndexOutOfBoundsException). No concrete input can be constructed that causes one method to behave differently from the other under the stated constraints."
+}

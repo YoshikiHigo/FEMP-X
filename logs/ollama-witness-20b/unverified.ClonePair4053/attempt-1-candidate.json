@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all possible finite input strings, both methods exhibit identical behavior: they return the first character following a single '&' that is not another '&', or the null character '\u0000' if no such character exists. No input causes a differing return value, side effect, exception type, or non‑termination."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical operations: they iterate over the input string two characters at a time, parse each pair as a hexadecimal byte, and store the result in a byte array. For any valid or invalid input (including null, odd-length strings, or strings containing non-hex characters), both methods either produce the same byte array or throw the same exception. No concrete input can be found that distinguishes their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1015,
+  "eval_count": 267,
+  "total_duration": 2148243400,
+  "load_duration": 8027200
+}

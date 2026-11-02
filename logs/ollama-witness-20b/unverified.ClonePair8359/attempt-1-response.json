@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible inputs: they either return the same index after skipping leading whitespace, throw the same exception for null or out‑of‑bounds indices, or return the original index when no whitespace is present. No concrete input can distinguish their return value, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1049,
+  "eval_count": 231,
+  "total_duration": 2162408100,
+  "load_duration": 6353600
+}

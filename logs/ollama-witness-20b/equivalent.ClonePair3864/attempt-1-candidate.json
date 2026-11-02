@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same computation: they iterate over the common prefix of the two strings, compute the minimum of 4 and the prefix length, multiply by 0.1 and by (1 - commonality). No input can cause a different return value, side effect, exception, or non‑termination."
+}

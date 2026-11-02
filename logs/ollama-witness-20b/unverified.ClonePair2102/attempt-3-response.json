@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 treats all bytes as unsigned and builds an integer with byte[3] as the most significant byte, while method2 keeps byte[3] signed. For the input byte[]{0,0,0,-1}, method1 returns 255 (0x000000FF) and method2 returns –16,777,216 (0xFF000000).\",\"arguments_java\":[\"new byte[]{0,0,0,-1}\"],\"parameter_types\":[\"byte[]\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1483,
+  "eval_count": 720,
+  "total_duration": 5832217900,
+  "load_duration": 10909400
+}

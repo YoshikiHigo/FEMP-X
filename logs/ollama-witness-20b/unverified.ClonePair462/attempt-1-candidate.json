@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible byte[] inputs: they both return true iff the second array is a prefix of the first, and both throw NullPointerException when either argument is null. No concrete input can distinguish their return values, side effects, or exception behavior."
+}

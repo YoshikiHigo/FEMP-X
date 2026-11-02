@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "",
+  "done": true,
+  "done_reason": "length",
+  "prompt_eval_count": 941,
+  "eval_count": 4096,
+  "total_duration": 31083110900,
+  "load_duration": 5814500
+}

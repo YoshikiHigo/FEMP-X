@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no concrete input can be constructed that causes one method to exhibit a different observable behavior (return value, side effect, exception, or non‑termination) while the other behaves normally. Both methods share the same failure mode when the search string is empty: they enter an infinite loop. All other edge cases (null arguments, overlapping patterns, etc.) produce identical results or identical exceptions. Therefore, no separating test case exists for this pair."
+}

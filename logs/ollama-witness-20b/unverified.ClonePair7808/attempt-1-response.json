@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For input 97 (character 'a'), method1 returns 0 while method2 returns 10.\",\"arguments_java\":[\"97\"],\"parameter_types\":[\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1002,
+  "eval_count": 164,
+  "total_duration": 1571164000,
+  "load_duration": 3260100
+}

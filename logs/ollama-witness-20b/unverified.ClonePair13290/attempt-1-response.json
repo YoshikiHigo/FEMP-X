@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical conversions of a hex string to a byte array. They handle null, even and odd lengths, and byte value ranges in the same way, resulting in equivalent outputs and exceptions for all deterministic, bounded inputs.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1027,
+  "eval_count": 332,
+  "total_duration": 2636059200,
+  "load_duration": 14377400
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte extraction and bitwise assembly; for any input array and start index, they either return the same integer or throw the same exception. No concrete separating input exists."
+}

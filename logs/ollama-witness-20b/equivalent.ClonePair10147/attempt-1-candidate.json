@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical angle normalization; no input can distinguish their return values, side effects, or exception behavior."
+}

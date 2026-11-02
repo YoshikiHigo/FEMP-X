@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods behave identically for all deterministic, bounded String inputs: they return the same Float value (or null) and have no observable side effects. No concrete separating input can be constructed under the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 754,
+  "eval_count": 683,
+  "total_duration": 5374683900,
+  "load_duration": 7723800
+}

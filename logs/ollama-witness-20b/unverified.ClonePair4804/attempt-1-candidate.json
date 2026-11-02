@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical median calculations on a cloned array; for all possible inputs (including null, empty, and non-empty arrays) they either return the same value or throw the same exception. No concrete input can distinguish their behavior."
+}

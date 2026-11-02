@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1(\" 1 \") throws NumberFormatException and returns null, while method2(\" 1 \") trims the string to \"1\" and returns Double.valueOf(\"1\") = 1.0",
+  "arguments_java": [
+    "\" 1 \""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

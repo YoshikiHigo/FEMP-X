@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical bitwise operations; the only syntactic difference is the placement of parentheses around the cast of w0, which does not affect the resulting value. No input can cause a differing outcome."
+}

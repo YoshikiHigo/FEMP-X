@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 uses Integer.valueOf which returns a cached Integer instance for values between -128 and 127, whereas method2 uses new Integer which always creates a new instance. For the input \"1\" method1 returns the cached Integer(1) and method2 returns a distinct Integer(1) object, so the returned objects are not the same reference.",
+  "arguments_java": [
+    "\"1\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

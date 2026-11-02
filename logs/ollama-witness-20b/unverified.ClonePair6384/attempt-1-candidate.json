@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs: they either return the same 64‑bit value constructed from eight consecutive bytes starting at the given offset, or they throw the same exception (ArrayIndexOutOfBoundsException or NullPointerException) under the same conditions. No input can cause one method to terminate normally while the other throws, nor can one produce a different return value for the same input. Therefore no concrete separating test case exists."
+}

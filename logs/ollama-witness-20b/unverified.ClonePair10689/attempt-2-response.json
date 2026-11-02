@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods read the same system property and behave identically for all possible inputs that can be supplied without modifying the environment. Since the test harness cannot set or modify system properties, there is no concrete input that will cause method1 to throw an exception while method2 returns a default value, or vice versa. Therefore no separating test case can be constructed under the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1193,
+  "eval_count": 216,
+  "total_duration": 2086649400,
+  "load_duration": 2167900
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical checks for whether the input character is a decimal digit (ASCII codes 48–57). For any character, method1 returns true if it is one of '0'..'9', and method2 returns true if its numeric value is between 47 and 58 exclusive. These conditions are logically equivalent, so no concrete input can distinguish their behaviors.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 834,
+  "eval_count": 105,
+  "total_duration": 914997200,
+  "load_duration": 11499200
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical escaping logic for all characters; no input can produce a differing return value, side effect, exception, or non‑termination."
+}

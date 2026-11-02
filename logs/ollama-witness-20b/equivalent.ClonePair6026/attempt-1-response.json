@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical element‑by‑element equality checks with the same null handling and ordering; no deterministic input can cause one to return a different value, throw a different exception, or terminate differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1049,
+  "eval_count": 164,
+  "total_duration": 1663040300,
+  "load_duration": 15244200
+}

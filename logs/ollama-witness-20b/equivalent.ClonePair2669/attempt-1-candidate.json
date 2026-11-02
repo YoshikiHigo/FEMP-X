@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit unsigned integer from the first four bytes of the array. For any byte array of length at least four, method1 sums the bytes shifted by 8*i, masking to 8 bits, while method2 constructs the same value by repeatedly multiplying by 256 and adding the unsigned byte. For arrays shorter than four bytes both methods throw a NullPointerException or ArrayIndexOutOfBoundsException at the same point. No deterministic input can produce a differing return value, side effect, exception type, or non‑termination."
+}

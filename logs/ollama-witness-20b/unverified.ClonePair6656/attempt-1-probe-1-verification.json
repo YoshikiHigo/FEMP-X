@@ -1,0 +1,64 @@
+{
+  "key": "unverified.ClonePair6656",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(ZGVm)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.HashMap{String(aw==)->String()},String(aw==),String(ZGVm)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.HashMap{String(aw==)->String()},String(aw==),String(ZGVm)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String()",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.HashMap{String(aw==)->String()},String(aw==),String(ZGVm)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.HashMap{String(aw==)->String()},String(aw==),String(ZGVm)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(ZGVm)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.HashMap{String(aw==)->String()},String(aw==),String(ZGVm)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.HashMap{String(aw==)->String()},String(aw==),String(ZGVm)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String()",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.HashMap{String(aw==)->String()},String(aw==),String(ZGVm)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.HashMap{String(aw==)->String()},String(aw==),String(ZGVm)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns the default value when the map entry is an empty string, whereas method2 returns the empty string itself.",
+    "arguments_java": [
+      "map(\"k\",\"\")",
+      "\"k\"",
+      "\"def\""
+    ],
+    "parameter_types": [
+      "Map",
+      "String",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 163.382
+}

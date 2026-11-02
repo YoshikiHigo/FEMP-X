@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"No deterministic, local input can distinguish the two methods without modifying global state. The only behavioral difference occurs when a system property is present with a non‑numeric value, causing method1 to throw a NumberFormatException while method2 catches it and returns the default. Since the test harness forbids setting or reading system properties in the input expressions, there is no valid concrete input that can trigger this divergence. Therefore, a separating test case cannot be constructed under the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1275,
+  "eval_count": 223,
+  "total_duration": 1979574200,
+  "load_duration": 2052200
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they iterate over the array, compare each element to the given key, and return the following element if found, otherwise return the default. The code paths, side effects, and exception behavior are the same for all possible inputs. No concrete separating test case exists."
+}

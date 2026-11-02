@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the same unsigned 32‑bit integer from a 4‑byte array and throw identical exceptions for shorter arrays; exhaustive reasoning shows no input yields a differing return value, side effect, or exception type.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1268,
+  "eval_count": 391,
+  "total_duration": 3386269100,
+  "load_duration": 2656800
+}

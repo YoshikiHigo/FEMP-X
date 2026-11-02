@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods evaluate equality of the two input strings; method1 performs a character-by-character comparison that reduces to a simple equality check when the lengths are the same, and returns false when the lengths differ. Method2 directly uses compareTo to check equality. For any pair of strings, the two methods produce the same boolean result, so no concrete separating input exists."
+}

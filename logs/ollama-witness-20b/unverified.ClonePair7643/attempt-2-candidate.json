@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No concrete separating input can be constructed with standard Java types that satisfies the required conditions (same runtime class, identical hashCode, but unequal equals) while keeping the input deterministic and bounded. The only way to achieve such a scenario would be to define a custom class with overridden hashCode and equals, but anonymous classes would have distinct runtime classes, violating the class equality guard in method2. Therefore, no valid test case distinguishing method1 and method2 exists under the given constraints."
+}

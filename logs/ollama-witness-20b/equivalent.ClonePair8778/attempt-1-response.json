@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally identical; they perform the same computations on the same inputs and produce the same results for all possible inputs within the allowed domain. No concrete separating test case can be constructed.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1319,
+  "eval_count": 121,
+  "total_duration": 1388826500,
+  "load_duration": 5669000
+}

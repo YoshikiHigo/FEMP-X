@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible byte[] inputs. Both handle nulls, length checks, and element-wise comparison in the same way, and the reference-equality shortcut in method2 only triggers when both arguments are null, which method1 already handles. No input can produce a differing return value, side effect, exception, or non-termination."
+}

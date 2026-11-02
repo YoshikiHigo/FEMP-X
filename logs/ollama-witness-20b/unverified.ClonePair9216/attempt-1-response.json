@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. They perform the same substring replacement logic, handle nulls in the same way (throwing NPE), and both enter an infinite loop when the search string is empty. No concrete input can distinguish their return values, side effects, exceptions, or termination properties.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1219,
+  "eval_count": 224,
+  "total_duration": 2215950600,
+  "load_duration": 8784400
+}

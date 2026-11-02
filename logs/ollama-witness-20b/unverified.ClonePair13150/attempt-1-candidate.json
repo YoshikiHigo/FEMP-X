@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs: they throw the same exception types on null or odd-length strings, and produce identical byte arrays for even-length inputs. No concrete separating test case can be constructed under the given constraints."
+}

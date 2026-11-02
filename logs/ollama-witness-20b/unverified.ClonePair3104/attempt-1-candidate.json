@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible byte[] inputs. Both return false for any array whose length is not exactly 8, and for arrays of length 8 they compare the same sequence of bytes using equivalent byte literals. They also both throw a NullPointerException when passed a null reference. No deterministic, bounded input can distinguish their behavior."
+}

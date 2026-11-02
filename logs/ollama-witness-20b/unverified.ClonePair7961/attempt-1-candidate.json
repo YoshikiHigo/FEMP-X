@@ -1,0 +1,17 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 inserts a null pad string into a StringBuffer, which throws a NullPointerException, whereas method2 concatenates the null pad string with the word, producing the string \"nulla\".",
+  "arguments_java": [
+    "\"a\"",
+    "null",
+    "2"
+  ],
+  "parameter_types": [
+    "String",
+    "String",
+    "int"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

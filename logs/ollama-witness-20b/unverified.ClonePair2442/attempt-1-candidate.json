@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 treats the last byte as signed and includes its negative value in the result, whereas method2 converts all four bytes to unsigned values before combining them. For an input where the last byte is negative, the two methods produce different integer results.",
+  "arguments_java": [
+    "new byte[]{0,0,0,(byte)-1}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false
+}

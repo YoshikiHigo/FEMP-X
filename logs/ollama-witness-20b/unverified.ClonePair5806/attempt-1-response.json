@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte‑array slice comparisons; for all deterministic, bounded inputs they produce the same result (including exceptions). No concrete separating input was found.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1176,
+  "eval_count": 283,
+  "total_duration": 2559862400,
+  "load_duration": 2634900
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical unsigned 4‑byte to int conversion. For any non‑null byte array of length ≥4 and any valid offset, they compute the same result. For shorter arrays or null arrays both throw the same exception. No deterministic input distinguishes them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1405,
+  "eval_count": 255,
+  "total_duration": 2354479500,
+  "load_duration": 6162400
+}

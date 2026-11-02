@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are logically equivalent for all possible boolean[] inputs. Both return true only when the two arrays are non‑null, have the same length, and contain identical elements (or are the same reference). In all other cases they return false. No concrete input can distinguish their behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible inputs; they perform the same checks and conversions, and any differences are only in formatting of the control flow, not in observable behavior."
+}

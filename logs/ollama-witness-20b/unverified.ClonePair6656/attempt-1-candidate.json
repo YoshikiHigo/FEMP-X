@@ -1,0 +1,16 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns the default value when the map entry is an empty string, whereas method2 returns the empty string itself.",
+  "arguments_java": [
+    "map(\"k\",\"\")",
+    "\"k\"",
+    "\"def\""
+  ],
+  "parameter_types": [
+    "Map",
+    "String",
+    "String"
+  ],
+  "void_return": false
+}

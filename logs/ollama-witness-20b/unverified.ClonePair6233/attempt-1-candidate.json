@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logical checks on the input arrays. They both return the same boolean value for all possible combinations of null, equal, and unequal arrays, and neither method mutates its arguments or produces side effects. Therefore, no concrete input can distinguish their behavior."
+}

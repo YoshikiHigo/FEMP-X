@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of a non‑empty int array by initializing with the first element and then iterating over the remaining elements. For an empty array they both throw ArrayIndexOutOfBoundsException, and for a null array they both throw NullPointerException. No deterministic input can cause one method to behave differently from the other."
+}

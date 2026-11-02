@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 interprets the byte array as an unsigned 64‑bit value, while method2 masks each byte to 0x7f and then restores the sign bit only for the most significant byte of each pair of bytes. For an input where the most significant byte has its high bit set (e.g. 0x80) the two methods produce different results.",
+  "arguments_java": [
+    "new byte[]{(byte)0x80,0,0,0,0,0,0,0}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

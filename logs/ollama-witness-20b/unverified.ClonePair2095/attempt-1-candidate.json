@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical null checks, length checks, and element-wise comparisons for byte arrays. No input can cause one to return a different boolean value, throw a different exception, or exhibit non-termination while the other behaves differently. Therefore, no concrete separating test case exists."
+}

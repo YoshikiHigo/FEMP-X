@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods format a Calendar into a YYYY-MM-DD string in exactly the same way. For any non‑null Calendar instance the logic for year, month, and day is identical, and for a null argument both methods throw a NullPointerException. No deterministic input can cause one method to return a different string or a different exception type than the other.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1100,
+  "eval_count": 141,
+  "total_duration": 1206746300,
+  "load_duration": 4403600
+}

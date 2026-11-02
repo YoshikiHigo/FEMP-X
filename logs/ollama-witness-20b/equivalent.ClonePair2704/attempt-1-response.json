@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible byte[] inputs, including nulls and length mismatches. No concrete input can distinguish their return values, side effects, exceptions, or termination characteristics.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 953,
+  "eval_count": 116,
+  "total_duration": 1305792200,
+  "load_duration": 2391600
+}

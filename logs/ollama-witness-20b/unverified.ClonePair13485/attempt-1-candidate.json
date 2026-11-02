@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No concrete input can be found that causes method1 and method2 to exhibit different observable behaviors under the allowed difference types. Both methods process the same hexadecimal string in a way that yields identical byte arrays for all valid inputs, and they both throw the same exceptions for invalid inputs. Therefore, no separating test case exists."
+}

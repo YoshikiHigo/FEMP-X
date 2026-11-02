@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns the default value when the map entry is an empty string, whereas method2 returns the empty string itself.\",\"arguments_java\":[\"map(\\\"k\\\",\\\"\\\")\",\"\\\"k\\\"\",\"\\\"def\\\"\"],\"parameter_types\":[\"Map\",\"String\",\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1117,
+  "eval_count": 211,
+  "total_duration": 2001180500,
+  "load_duration": 3671700
+}

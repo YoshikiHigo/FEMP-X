@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all valid and invalid inputs: they initialize the minimum to the first element and then compare all elements. For an empty array both throw ArrayIndexOutOfBoundsException, and for a null array both throw NullPointerException. No input can distinguish the two implementations."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑by‑element comparison of two byte arrays. They differ only in the loop condition syntax (i != length vs i < length), which evaluates the same for all non‑negative lengths. For equal lengths the loops iterate the same number of times; for unequal lengths both immediately return false. When either argument is null both methods throw a NullPointerException. No deterministic, bounded input can cause one method to return a different value, throw a different exception, or exhibit a side‑effect that the other does not. Therefore no concrete separating test case exists."
+}

@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair6072",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==)],java.lang.Object[][String(YQ==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==)],java.lang.Object[][String(YQ==)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==)],java.lang.Object[][String(YQ==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==)],java.lang.Object[][String(YQ==)]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==)],java.lang.Object[][String(YQ==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==)],java.lang.Object[][String(YQ==)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==)],java.lang.Object[][String(YQ==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==)],java.lang.Object[][String(YQ==)]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 checks that the two arrays are of the same runtime class; method2 does not. Passing a String[] and an Object[] of the same length and with equal elements causes method1 to return false (due to class mismatch) while method2 returns true (elements compare equal).",
+    "arguments_java": [
+      "new String[]{\"a\"}",
+      "new Object[]{\"a\"}"
+    ],
+    "parameter_types": [
+      "Object[]",
+      "Object[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 163.71
+}

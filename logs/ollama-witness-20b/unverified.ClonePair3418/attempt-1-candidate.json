@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return a Float parsed from the string when the string represents a valid floating‑point number, and they return null otherwise (including when the input is null). No deterministic, bounded input can distinguish the two implementations."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are logically equivalent: both return true for all ASCII alphanumeric characters (0-9, a-z, A-Z) and false otherwise. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1114,
+  "eval_count": 87,
+  "total_duration": 1161035500,
+  "load_duration": 3282000
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical logic for all possible combinations of null and non‑null Date arguments and for all time values. No input can produce a different return value, side effect, exception, or non‑termination."
+}

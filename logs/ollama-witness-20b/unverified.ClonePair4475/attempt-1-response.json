@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform the same computation: they iterate over the array and return the maximum value. No input can cause a difference in return value, side effects, exceptions, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 995,
+  "eval_count": 61,
+  "total_duration": 836289200,
+  "load_duration": 6593000
+}

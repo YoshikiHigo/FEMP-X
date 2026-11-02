@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 throws NullPointerException when the first argument is null, while method2 accepts null and returns the string \\\"null\\\" (optionally padded with spaces). Both methods receive the same input and initial state.\",\"arguments_java\":[\"null\"],\"parameter_types\":[\"String\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1108,
+  "eval_count": 163,
+  "total_duration": 1598151700,
+  "load_duration": 20408000
+}

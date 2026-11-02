@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they compute the length of the input string and iterate while the current index is less than that length and the character at that index is whitespace. For any given input string (including null, which causes a NullPointerException in both methods) and any integer index, the two methods either both return the same index or both throw the same exception. No deterministic, bounded input can distinguish their behavior."
+}

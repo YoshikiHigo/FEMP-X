@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In every case where one method returns a value, the other returns the same value; where one throws an exception, the other throws the same type of exception. No input can be constructed that causes a divergence in return value, side effect, exception type, or termination."
+}

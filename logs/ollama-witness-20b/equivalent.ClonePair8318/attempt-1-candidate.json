@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical computations; the only difference is the use of Math versus java.lang.Math, which refer to the same class. Therefore no input can distinguish their behavior."
+}

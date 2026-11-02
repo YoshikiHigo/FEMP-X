@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods contain identical conditional logic and return the same Calendar constant for every integer input. No input can cause a difference in return value, side effect, exception, or non‑termination."
+}

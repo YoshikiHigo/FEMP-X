@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded String inputs. They parse the string (or its comma‑replaced form) and return a Double when parsing succeeds; otherwise they return null. No input causes one method to throw an exception, return a different value, or exhibit non‑termination while the other behaves differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 898,
+  "eval_count": 567,
+  "total_duration": 4791669300,
+  "load_duration": 4848400
+}

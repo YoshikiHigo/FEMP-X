@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible byte array inputs; they perform the same length check and element-wise comparison, returning the same boolean value or throwing the same exception when given null arguments. No concrete input can distinguish their behavior."
+}

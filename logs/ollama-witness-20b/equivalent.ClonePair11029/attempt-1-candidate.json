@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic: they return false when either argument is null, otherwise they iterate over the array and return true if any element equals the key, otherwise false. No input can cause differing behavior."
+}

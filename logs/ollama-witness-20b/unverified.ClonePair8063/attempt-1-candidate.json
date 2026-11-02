@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical operations: both mask the second byte with 0x0ff, shift the first byte (sign‑extended) left by 8 bits, OR the results, and cast to char. No input can cause a divergence in return value, side effects, or exception type between the two implementations."
+}

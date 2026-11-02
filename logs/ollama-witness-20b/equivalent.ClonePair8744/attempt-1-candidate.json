@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return 0 for null or empty strings, otherwise they parse the string as a short using the same underlying parsing logic. No input can cause one method to return a different value, throw a different exception type, mutate arguments, or exhibit non‑termination."
+}

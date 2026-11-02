@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 lowercases any character with bit 0x20 set by OR, so for characters outside the ASCII uppercase range (e.g., U+00C0 'À') it incorrectly converts them to U+00E0 ('à'). method2 only lowercases ASCII uppercase letters and leaves all other characters unchanged. Thus the two methods produce different results for such inputs.",
+  "arguments_java": [
+    "'\\u00C0'"
+  ],
+  "parameter_types": [
+    "char"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods contain identical logic; the only difference is formatting (braces). No input can distinguish their return values, side effects, exceptions, or termination behavior."
+}

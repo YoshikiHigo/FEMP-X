@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns false because the input string has length 10 and does not match the required 9‑character pattern, whereas method2 returns true because the string contains a ‘#’ that is not part of a ‘#{’ sequence and is followed by the literal substring \" do \".",
+  "arguments_java": [
+    "\"# test do \""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

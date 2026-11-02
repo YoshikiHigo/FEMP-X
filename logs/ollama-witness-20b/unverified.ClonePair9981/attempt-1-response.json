@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic for all finite double inputs; no input causes differing return values, side effects, exceptions, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1037,
+  "eval_count": 501,
+  "total_duration": 5314910200,
+  "load_duration": 5169000
+}

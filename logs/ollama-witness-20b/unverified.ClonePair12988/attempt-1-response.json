@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all long inputs; the boundary checks use >/< versus >=/<= but both return the same value at the limits, and otherwise cast the long to int. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 966,
+  "eval_count": 286,
+  "total_duration": 2298903100,
+  "load_duration": 12237200
+}

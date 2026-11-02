@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible String inputs: they both return null for null or empty strings, and for any non‑empty string they both delegate to the standard Float parsing routine, which throws NumberFormatException on invalid input and returns the same Float value otherwise. No deterministic, bounded input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 783,
+  "eval_count": 745,
+  "total_duration": 5932577700,
+  "load_duration": 5402900
+}

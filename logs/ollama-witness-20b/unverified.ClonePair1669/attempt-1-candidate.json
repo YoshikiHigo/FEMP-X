@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No concrete input distinguishes the two methods; their logic is equivalent for all byte[] inputs."
+}

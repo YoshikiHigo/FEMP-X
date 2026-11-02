@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "When both arguments are null, method1 returns true (since a==b), whereas method2 attempts to access arrayOne.length in the else branch and throws a NullPointerException.",
+  "arguments_java": [
+    "null",
+    "null"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "byte[]"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical null‑check and element‑wise comparison; no input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 972,
+  "eval_count": 73,
+  "total_duration": 670427700,
+  "load_duration": 2628800
+}

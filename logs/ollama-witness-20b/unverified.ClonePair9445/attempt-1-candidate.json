@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They handle nulls, empty strings, and overlapping replacements in the same way, and no input causes one to terminate while the other does not or produces a different result."
+}

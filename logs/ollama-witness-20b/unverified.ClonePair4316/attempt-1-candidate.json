@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 compares only the year, month, and day components of the two Date objects, ignoring the time of day, whereas method2 first checks for exact equality of the two Date objects (which includes the time component). For two Date instances that represent the same calendar day but different times, method1 will return true while method2 will return false.",
+  "arguments_java": [
+    "date(0L)",
+    "date(1000L)"
+  ],
+  "parameter_types": [
+    "Date",
+    "Date"
+  ],
+  "void_return": false
+}

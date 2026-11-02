@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: they both check array lengths, iterate over elements, and return true only if all corresponding bytes match. No input can cause a different return value, side effect, exception type, or non‑termination."
+}

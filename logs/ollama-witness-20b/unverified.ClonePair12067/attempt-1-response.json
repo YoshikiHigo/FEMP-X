@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic for determining whether a character is alphanumeric. For any char input, method1 and method2 return the same boolean value. No deterministic input can separate their behaviors.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 856,
+  "eval_count": 121,
+  "total_duration": 1347404800,
+  "load_duration": 20414800
+}

@@ -1,0 +1,64 @@
+{
+  "key": "unverified.ClonePair11482",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(Zm9v)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9v),String(Zm9v),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9v),String(Zm9v),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(Zm9v)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9v),String(Zm9v),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9v),String(Zm9v),null]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(Zm9v)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9v),String(Zm9v),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9v),String(Zm9v),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(Zm9v)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9v),String(Zm9v),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9v),String(Zm9v),null]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 throws a NullPointerException when newStr is null because it concatenates newStr to resultStr, whereas method2 appends the string \"null\" to the StringBuilder when replaceSting is null, producing a normal return value.",
+    "arguments_java": [
+      "\"foo\"",
+      "\"foo\"",
+      "null"
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 142.549
+}

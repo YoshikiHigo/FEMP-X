@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair6503",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-72057594037927936)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -1],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -1],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-72057594037927936)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -1],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -1],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-72057594037927936)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -1],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -1],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-72057594037927936)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -1],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -1],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "In method1 the most‑significant byte (buffer[offset+7]) is first masked with 0x7F, so its high bit is cleared. If that byte is negative, the method then adds Long.MIN_VALUE (0x8000000000000000L) to the partially built value, setting the high bit to 1 but leaving the remaining 7 bits as the masked value (0x7F). Thus the high byte of the result becomes 0x80. In method2 the byte is treated as unsigned and simply concatenated, so a negative byte (0xFF) produces a high byte of 0xFF. Therefore the two methods return different longs for a buffer whose most‑significant byte is negative and all other bytes are zero.\n\nExample: buffer = {0,0,0,0,0,0,0,-1} with offset 0.\nMethod1 returns 0x800000000000007FL (Long.MIN_VALUE + 0x7F).\nMethod2 returns 0xFFL.\n",
+    "arguments_java": [
+      "new byte[]{0,0,0,0,0,0,0,-1}",
+      "0"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 147.625
+}

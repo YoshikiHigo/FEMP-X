@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive reasoning over all possible short array contents and key values, both methods exhibit identical behavior: they perform a binary search using the same update rules (modulo the equivalent arithmetic of shifting versus division) and return the same index or insertion point. No concrete input can be constructed that causes a divergence in return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1239,
+  "eval_count": 944,
+  "total_duration": 7629260600,
+  "load_duration": 4456100
+}

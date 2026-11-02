@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods evaluate the same logical conditions for all possible inputs; no input can cause a divergence in return value, side effect, exception, or termination."
+}

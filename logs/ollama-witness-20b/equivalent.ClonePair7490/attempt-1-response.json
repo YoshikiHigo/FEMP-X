@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For the character with code point 0x00FF (decimal 255), method1 produces \\\"\\\\\\\\u0ff\\\" while method2 produces \\\"\\\\\\\\u00ff\\\". The two strings differ, so the methods are not equivalent for this input.\",\"arguments_java\":[\"'\\\\u00ff'\"],\"parameter_types\":[\"char\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1074,
+  "eval_count": 476,
+  "total_duration": 4090700300,
+  "load_duration": 4455800
+}

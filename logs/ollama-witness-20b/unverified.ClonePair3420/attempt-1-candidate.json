@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return null for all possible String inputs, including null and those that cause NumberFormatException. No input can produce a differing return value, side effect, exception, or non‑termination."
+}

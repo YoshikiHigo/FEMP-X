@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible byte[] inputs. Both compare lengths first, then iterate over each index comparing the corresponding bytes. They both return true only when lengths match and all bytes are equal, and both throw a NullPointerException when either argument is null. No input can cause a differing return value, side effect, exception type, or non‑termination."
+}

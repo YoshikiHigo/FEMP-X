@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical unsigned 32‑bit little‑endian conversion of four consecutive bytes. For any byte array and offset that is within bounds, they compute the same integer value. For out‑of‑bounds or null inputs, both throw the same type of exception (ArrayIndexOutOfBoundsException or NullPointerException). No deterministic input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1322,
+  "eval_count": 327,
+  "total_duration": 2830913700,
+  "load_duration": 8171100
+}

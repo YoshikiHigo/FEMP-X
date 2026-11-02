@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical null checks, length checks, and element-wise comparisons on the byte arrays. For all possible inputs, they return the same boolean value and have no side effects. No concrete separating test case exists."
+}

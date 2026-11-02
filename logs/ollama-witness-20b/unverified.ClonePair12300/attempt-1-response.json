@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. They handle null collections, empty collections, single-element collections, and collections with multiple elements in the same way, and they both throw a NullPointerException when the separator is null. No concrete input can distinguish their outputs or side effects.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1114,
+  "eval_count": 283,
+  "total_duration": 2331199700,
+  "load_duration": 5121800
+}

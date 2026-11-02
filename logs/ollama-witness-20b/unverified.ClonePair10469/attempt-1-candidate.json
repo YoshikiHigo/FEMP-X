@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible String inputs. Both return null for null or empty strings, return an Integer for valid numeric strings, and return null for any other non‑numeric string. No side‑effects, exceptions, or termination differences exist that can be triggered by a concrete input."
+}

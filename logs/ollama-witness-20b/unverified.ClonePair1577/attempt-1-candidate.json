@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same unsigned hexadecimal representation for every possible byte value; exhaustive reasoning shows no input can produce a differing return value, side effect, exception, or non‑termination."
+}

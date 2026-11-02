@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they remove spaces, split the string into two‑character hex pairs, parse each pair as a base‑16 integer, cast to byte, and store the result in an array. The use of replaceAll versus replace does not affect the outcome for the allowed inputs, and both methods throw the same exceptions for null or malformed inputs. No deterministic, bounded input can be constructed that causes one method to return a different value, throw a different exception type, or terminate differently than the other."
+}

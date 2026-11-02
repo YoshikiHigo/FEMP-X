@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical string substitutions; no input can distinguish their behavior."
+}

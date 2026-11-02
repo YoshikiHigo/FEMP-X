@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical operations; the only difference is the use of StringBuffer versus StringBuilder, which does not affect the result for the given inputs. No concrete separating input exists."
+}

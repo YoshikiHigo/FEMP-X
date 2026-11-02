@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical byte‑to‑int conversions for any byte array of length 4 or more, and they throw the same exceptions for shorter arrays. No deterministic, bounded input can cause one method to return a different value, throw a different exception, or exhibit a side‑effect that the other does not.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1200,
+  "eval_count": 398,
+  "total_duration": 3423566800,
+  "load_duration": 13053000
+}

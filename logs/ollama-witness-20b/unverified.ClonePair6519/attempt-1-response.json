@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. They use the same loop bounds, array allocation, and byte extraction logic (the only difference is the use of unsigned versus signed right shift, which does not affect the resulting byte values for any 32‑bit integer). Consequently, no concrete test case can distinguish their outputs, side effects, or exception types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1243,
+  "eval_count": 351,
+  "total_duration": 3035361500,
+  "load_duration": 5310900
+}

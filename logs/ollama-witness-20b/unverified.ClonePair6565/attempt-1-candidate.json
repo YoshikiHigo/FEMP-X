@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑wise dot product loops and return the same float value for any pair of float arrays of equal length. No input can distinguish their behavior."
+}

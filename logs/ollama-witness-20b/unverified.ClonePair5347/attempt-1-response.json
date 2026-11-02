@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For year = Integer.MIN_VALUE, method1 evaluates the leap‑year rule using the % operator, which yields a negative remainder for the 400‑year test, causing method1 to return false. method2 uses bitwise AND to test divisibility by 4 and then the % operator only for the 100‑year check; since Integer.MIN_VALUE % 100 is not zero, the 400‑year test is skipped and method2 returns true. Thus the two methods produce different boolean results for the same input.\",\"arguments_java\":[\"Integer.MIN_VALUE\"],\"parameter_types\":[\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 852,
+  "eval_count": 578,
+  "total_duration": 4578194600,
+  "load_duration": 5675100
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the dot product of two float arrays in identical ways. They both iterate over the length of the first array and multiply corresponding elements of the two arrays. For any valid input (including null arrays, empty arrays, arrays of different lengths, or arrays containing NaN or infinite values), both methods either throw the same type of exception (NullPointerException or ArrayIndexOutOfBoundsException) or return the same numeric result. No concrete input can be found that distinguishes the two methods under the allowed difference criteria."
+}

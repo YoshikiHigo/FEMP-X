@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical element‑by‑element comparisons of the input byte arrays. For all possible inputs (including nulls, empty arrays, and arrays of equal or unequal lengths), both methods return the same boolean value, mutate no arguments, and never throw exceptions. Therefore no concrete separating test case exists."
+}

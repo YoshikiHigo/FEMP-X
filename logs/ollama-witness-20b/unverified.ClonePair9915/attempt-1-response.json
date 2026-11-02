@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods return true for the same set of characters (space, carriage return, line feed, tab) and false for all other characters. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 764,
+  "eval_count": 84,
+  "total_duration": 995692600,
+  "load_duration": 21931900
+}

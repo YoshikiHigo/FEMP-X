@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both throw NullPointerException when the source is null, loop infinitely when the search string is empty, and otherwise produce the same transformed string. No concrete separating input can be constructed without violating the constraints."
+}

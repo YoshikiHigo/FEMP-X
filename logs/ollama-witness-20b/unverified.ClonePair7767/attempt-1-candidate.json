@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods are identical in implementation; they produce the same result for any input and have no side effects or exceptions."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical control flow and return logic for all possible byte[] inputs, including nulls, empty arrays, and arrays of equal or differing lengths. No input can cause one method to return a different value, throw an exception, or exhibit a side‑effect that the other does not. Therefore, no concrete separating test case exists."
+}

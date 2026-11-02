@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of a double array in identical ways. For any valid non‑empty array they return the same value, and for empty or null arrays they both throw the same ArrayIndexOutOfBoundsException or NullPointerException respectively. No deterministic input can distinguish their behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they iterate over the string from startIndex, incrementing startIndex while the current character is a space. The only difference is syntactic (block vs single statement). For any input (including null, negative indices, or indices beyond the string length), both methods either throw the same exception or return the same value. No concrete input can distinguish their behavior."
+}

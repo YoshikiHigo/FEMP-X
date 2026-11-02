@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they compute the length of the input string, then increment the index/start while the current character is whitespace. For any valid input (including null, negative indices, or indices beyond the string length), both methods exhibit the same behavior—either returning the same index or throwing the same exception. No concrete input can distinguish their return value, side effects, or exception types."
+}

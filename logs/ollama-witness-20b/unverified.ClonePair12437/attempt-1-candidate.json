@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations for all possible inputs: they create a StringBuffer with the given capacity, append the input string (or the literal \"null\" if the input is null), and then append the required number of space characters using either a char or a single‑character string. Since the StringBuffer constructor throws the same exception for negative capacities and the loop bounds are computed identically, there is no input that causes a differing return value, side effect, exception type, or non‑termination."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for comparing byte arrays; exhaustive reasoning shows no input can cause differing return values, side effects, or exceptions."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform equivalent checks: they compare the year and the day-of-year (method1) versus the year, month, and day (method2). For any pair of Date objects, the conditions are logically equivalent, and both methods throw the same exceptions for null inputs. No concrete input can distinguish their behavior."
+}

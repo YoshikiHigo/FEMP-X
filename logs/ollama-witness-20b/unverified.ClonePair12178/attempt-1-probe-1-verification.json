@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair12178",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTE0MDAwMDA0)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTE0MDAwMDA0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTE0MDAwMDA0)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTE0MDAwMDA0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTE0MDAwMDA0)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTE0MDAwMDA0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTE0MDAwMDA0)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTE0MDAwMDA0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1(\"A14000004\") returns true because the 9‑character code satisfies all format checks and the checksum matches the last digit. method2(\"A14000004\") trims the string, sees its length is 9 (outside the 3–4 range it accepts), and therefore returns false. The same input and initial state produce different boolean results.",
+    "arguments_java": [
+      "\"A14000004\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 110.847
+}

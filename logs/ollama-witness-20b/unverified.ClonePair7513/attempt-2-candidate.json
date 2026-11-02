@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 relies solely on equals, which returns true for both objects. method2 additionally checks that the hashCodes are equal; the two anonymous objects override equals to always return true but provide different hashCode values, so method1 returns true while method2 returns false.",
+  "arguments_java": [
+    "new Object(){public boolean equals(Object o){return true;}public int hashCode(){return 1;}}",
+    "new Object(){public boolean equals(Object o){return true;}public int hashCode(){return 2;}}"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

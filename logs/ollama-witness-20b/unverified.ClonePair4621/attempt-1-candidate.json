@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of a double array in the same way; for all possible inputs (including null, empty, and arrays containing NaN or infinities) they exhibit identical behavior (either returning the same value or throwing the same exception). No concrete separating input exists."
+}

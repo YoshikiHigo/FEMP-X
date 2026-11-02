@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all input quadrants and edge cases (including zero and infinite values), both methods produce identical results for every possible pair of double arguments. No concrete separating input exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all inputs that can be constructed without causing an exception in the equals call. No deterministic, bounded input can be provided that causes method1 to return a value while method2 throws an exception or vice versa, because all standard Java objects either return a boolean from equals or return false without throwing. Therefore, no concrete separating test case exists."
+}

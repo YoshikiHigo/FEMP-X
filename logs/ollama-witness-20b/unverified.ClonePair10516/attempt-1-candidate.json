@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all possible String inputs: they return null for null or non‑numeric strings, and otherwise return an Integer equal to the parsed value. The only difference is that method1 always creates a new Integer instance while method2 may return a cached instance, but the generic test compares values using equals, not identity. Therefore no concrete separating input exists."
+}

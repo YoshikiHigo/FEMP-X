@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, when the search string is empty they both enter an infinite loop, and for all other cases they perform the same replacement logic. No input can be constructed that causes one method to return a different value, throw a different exception, or terminate differently while the other does not.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1202,
+  "eval_count": 377,
+  "total_duration": 3008376900,
+  "load_duration": 2040900
+}

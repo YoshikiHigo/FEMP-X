@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; the only difference is an extra pair of parentheses in the second method’s condition, which does not affect execution. No concrete input can distinguish their behavior."
+}

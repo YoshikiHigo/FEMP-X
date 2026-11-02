@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive reasoning, both methods return the same boolean for all possible String inputs (including null, empty, and non‑empty strings). No concrete input can distinguish their behaviors.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1129,
+  "eval_count": 404,
+  "total_duration": 3278462000,
+  "load_duration": 8376600
+}

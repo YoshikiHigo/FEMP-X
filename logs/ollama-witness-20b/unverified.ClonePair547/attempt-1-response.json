@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible byte[] inputs. Both perform the same null checks, length checks, and element-wise comparisons, and they return the same boolean value in every scenario. No input can cause a difference in return value, side effects, exceptions, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1242,
+  "eval_count": 305,
+  "total_duration": 2802235000,
+  "load_duration": 10235300
+}

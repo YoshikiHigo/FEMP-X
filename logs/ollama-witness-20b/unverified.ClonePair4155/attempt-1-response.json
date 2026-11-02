@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical arithmetic and branching on the same floating‑point values. All constants are either float literals or int literals that are promoted to float in the same way, and the order of operations is the same. No input can cause a different return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1548,
+  "eval_count": 587,
+  "total_duration": 4959021400,
+  "load_duration": 7497100
+}

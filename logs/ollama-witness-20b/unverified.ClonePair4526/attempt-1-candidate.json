@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same leap‑year logic; exhaustive reasoning shows that for every int input the two methods return identical boolean values. No deterministic, bounded input can distinguish them."
+}

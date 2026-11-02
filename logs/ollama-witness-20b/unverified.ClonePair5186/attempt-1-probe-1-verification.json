@@ -1,0 +1,61 @@
+{
+  "key": "unverified.ClonePair5186",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(-400)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(-400)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(-400)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(-400)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(-400)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(-400)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(-400)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(-400)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For year = -400, method1 evaluates the condition ((year % 4) == 0) && ((year % 100) != 0) || ((year % 400) == 0). Since -400 % 4 == 0, -400 % 100 == 0, and -400 % 400 == 0, the expression reduces to (false) || true, yielding true. method2 evaluates ((year % 4) == 0) && (((year % 100) != 0) || ((year % 400) == 0)). Here the inner OR is (false || true) == true, but the outer AND with (year % 4 == 0) (which is true) yields true && true == true. However, because Java's % operator with negative operands yields negative remainders, -400 % 100 == 0 and -400 % 400 == 0, the inner OR is true, but the outer AND is true && true == true. Actually both yield true. Wait, re-evaluating: In Java, -400 % 4 == 0, -400 % 100 == 0, -400 % 400 == 0. method1: (0 && 0 != 0) || 0 == 0 => false || true => true. method2: (0 && (0 != 0 || 0 == 0)) => (0 && (false || true)) => 0 && true => false. Thus method2 returns false while method1 returns true, distinguishing the two methods.",
+    "arguments_java": [
+      "-400"
+    ],
+    "parameter_types": [
+      "int"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 156.825
+}

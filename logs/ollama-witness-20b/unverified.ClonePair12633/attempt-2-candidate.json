@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they either return the original string, a substring, or throw the same StringIndexOutOfBoundsException for negative widths. No distinguishing test case exists."
+}

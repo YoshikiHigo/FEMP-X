@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical 4‑byte little‑endian extraction from a byte array. For any non‑null array and integer index, they either return the same integer or throw the same exception (ArrayIndexOutOfBoundsException or NullPointerException). No deterministic input can distinguish their behavior."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods produce identical results for all possible inputs (including empty lists, null lists, and lists containing null or empty strings). No deterministic, bounded input can distinguish their return values, side effects, exception types, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1141,
+  "eval_count": 390,
+  "total_duration": 3293221100,
+  "load_duration": 2683200
+}

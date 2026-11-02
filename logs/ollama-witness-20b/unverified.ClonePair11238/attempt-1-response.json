@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, the only potential divergence would arise when the needle (sub) is the empty string, which causes both methods to enter an infinite loop due to repeated indexOf(\\\"\\\",c) returning the same position. Since no input can distinguish the two implementations without invoking non‑terminating behavior, no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1117,
+  "eval_count": 304,
+  "total_duration": 2426317400,
+  "load_duration": 6231800
+}

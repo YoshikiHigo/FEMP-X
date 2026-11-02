@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair8548",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMCA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMCA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMCA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMCA=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMCA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMCA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMCA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMCA=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 trims the input string before parsing, so it successfully parses \" 1.0 \" into 1.0. method2 does not trim; the leading/trailing spaces cause NumberFormatException, leading to a null return.",
+    "arguments_java": [
+      "\" 1.0 \""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 164.248
+}

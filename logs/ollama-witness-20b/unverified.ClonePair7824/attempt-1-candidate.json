@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic: they iterate from the given index until the end of the array, returning the index of the first occurrence of the specified byte or -1 if none is found. They both throw a NullPointerException when the array is null and otherwise produce the same result for any valid input. No concrete input can distinguish their behavior."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical hex parsing and byte conversion; they handle null and odd-length strings in the same way, and produce the same byte array for all valid inputs. No input can distinguish their behaviors.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1034,
+  "eval_count": 221,
+  "total_duration": 1841179500,
+  "load_duration": 3592000
+}

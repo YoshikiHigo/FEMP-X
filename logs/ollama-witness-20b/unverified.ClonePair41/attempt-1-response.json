@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs: they return null for null, otherwise they parse the string into a Long using the same underlying Long.valueOf logic (via Long.valueOf or new Long). No input can distinguish return value, side effects, exceptions, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 912,
+  "eval_count": 89,
+  "total_duration": 961180600,
+  "load_duration": 6428500
+}

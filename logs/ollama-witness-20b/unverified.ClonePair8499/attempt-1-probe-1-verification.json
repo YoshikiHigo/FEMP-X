@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair8499",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMA==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMA==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMA==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMA==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 trims the input before parsing, so \" 1.0\" is parsed as 1.0, whereas method2 does not trim and throws NumberFormatException, resulting in null.",
+    "arguments_java": [
+      "\" 1.0\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 120.91
+}

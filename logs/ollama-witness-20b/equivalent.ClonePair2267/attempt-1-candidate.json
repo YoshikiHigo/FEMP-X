@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations on the first four bytes of the input array. They both throw the same exceptions for null or too-short arrays, and produce the same integer result for any valid input. No deterministic, bounded input can distinguish their behavior."
+}

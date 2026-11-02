@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 interprets the 4‑byte array as an unsigned 32‑bit little‑endian integer, while method2 builds a big‑endian integer by repeatedly multiplying the accumulator by 256 after adding each byte. For the input {1,2,3,4} the two methods produce different results: method1 returns 67305985 (0x04030201) whereas method2 returns 67469825 (0x04030201 shifted to big‑endian).",
+  "arguments_java": [
+    "new byte[]{1,2,3,4}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

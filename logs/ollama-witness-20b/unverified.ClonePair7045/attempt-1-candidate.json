@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical unsigned byte to int conversion using the same arithmetic and bitwise operations; for all valid inputs (including edge cases such as null arrays, negative offsets, and byte values in the full range), they produce the same result or throw the same exception. No concrete input can distinguish their behavior."
+}

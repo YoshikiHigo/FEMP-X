@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical observable behavior for all possible String inputs: they return an Integer parsed from the string or null if the input is null or not a valid integer. No distinguishing input can be constructed that causes a different return value, side effect, exception, or non‑termination."
+}

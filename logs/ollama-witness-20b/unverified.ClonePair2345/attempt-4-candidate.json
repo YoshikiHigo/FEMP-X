@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After careful analysis of both methods, they produce identical results for all possible byte[] inputs. No input can cause a difference in return value, side effect, exception, or non‑termination."
+}

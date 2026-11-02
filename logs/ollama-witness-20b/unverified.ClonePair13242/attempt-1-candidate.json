@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logical checks on the same Calendar fields (YEAR, MONTH, DATE/DAY_OF_MONTH). For any pair of Calendar instances (including nulls), the outcome of method1 and method2 will always be the same: true if and only if the two calendars represent the same year, month, and day. No input can distinguish their behavior."
+}

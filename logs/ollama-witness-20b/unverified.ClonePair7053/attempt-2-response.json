@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets the 4 bytes starting at the given offset as a little‑endian unsigned integer, while method2 interprets them as a big‑endian unsigned integer. For the byte array {1,0,0,0} and offset 0, method1 returns 1, whereas method2 returns 1<<24 = 16777216.\",\"arguments_java\":[\"new byte[]{1,0,0,0}\",\"0\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1538,
+  "eval_count": 411,
+  "total_duration": 3432902100,
+  "load_duration": 3589300
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "For any given array and offset, both methods access the same eight consecutive indices (offset through offset+7). Therefore they either both succeed and return the same value or both throw an ArrayIndexOutOfBoundsException. No input can make one method terminate normally while the other throws, nor can one method produce a different return value or side effect. Hence no concrete separating test case exists."
+}

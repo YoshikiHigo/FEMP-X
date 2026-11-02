@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical switch checks on the character c; they return true for the same set of whitespace characters and false otherwise. No input can distinguish their behavior."
+}

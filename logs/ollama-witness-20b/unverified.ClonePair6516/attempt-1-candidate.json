@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical bit‑shifting and masking operations; operator precedence ensures that the expressions in method2 are equivalent to those in method1. For all valid inputs (including null, empty arrays, negative or zero lengths, and any integer values), both methods produce the same byte array or throw the same exception. No concrete separating input exists."
+}

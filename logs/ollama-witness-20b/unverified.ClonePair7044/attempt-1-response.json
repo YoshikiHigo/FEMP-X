@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte extraction and conversion; for any valid or invalid input they either produce the same integer result or throw the same exception. No deterministic, bounded input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1239,
+  "eval_count": 372,
+  "total_duration": 3268639500,
+  "load_duration": 2813100
+}

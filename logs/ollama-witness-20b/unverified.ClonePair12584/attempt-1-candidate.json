@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 throws NegativeArraySizeException when a_normLength is negative, while method2 simply returns the original string without throwing an exception.",
+  "arguments_java": [
+    "\"abc\"",
+    "-1"
+  ],
+  "parameter_types": [
+    "String",
+    "int"
+  ],
+  "void_return": false
+}

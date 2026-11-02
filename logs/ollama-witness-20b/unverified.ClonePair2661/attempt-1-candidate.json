@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element-wise comparisons of the two byte arrays. The forward and backward loops are equivalent in all cases, including equal lengths, unequal lengths, and null inputs, and neither method mutates its arguments or produces side effects. Therefore no concrete separating input exists."
+}

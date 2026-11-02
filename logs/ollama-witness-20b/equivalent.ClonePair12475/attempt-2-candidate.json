@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "In method1 the character '/' is not treated as a terminator in case 1, so it is appended to the result. In method2 '/' is treated as a terminator and causes an early return of the current result. With input \"a/\" at position 0, method1 returns \"a/\" while method2 returns \"a\".",
+  "arguments_java": [
+    "\"a/\"",
+    "0"
+  ],
+  "parameter_types": [
+    "String",
+    "int"
+  ],
+  "void_return": false
+}

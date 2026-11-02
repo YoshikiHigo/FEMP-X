@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 invokes a.equals(b) when both arguments are the same non‑null reference, which in this test throws a RuntimeException. method2 checks identity first and returns true without calling equals, so it does not throw.\",\"arguments_java\":[\"SAME\",\"SAME\"],\"parameter_types\":[\"Object\",\"Object\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1043,
+  "eval_count": 743,
+  "total_duration": 5917227400,
+  "load_duration": 10126300
+}

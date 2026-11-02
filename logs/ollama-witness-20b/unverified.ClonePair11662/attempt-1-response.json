@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, they both throw a NullPointerException when either the input string or the search string is null, and they both enter an infinite loop when the search string is the empty string (regardless of the replacement string). No input can cause one method to terminate or produce a different return value while the other does not.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1235,
+  "eval_count": 469,
+  "total_duration": 3783145600,
+  "load_duration": 4196200
+}

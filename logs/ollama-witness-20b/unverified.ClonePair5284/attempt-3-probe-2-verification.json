@@ -1,0 +1,63 @@
+{
+  "key": "unverified.ClonePair5284",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Kg==),String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Kg==),String(YQ==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Kg==),String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Kg==),String(YQ==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Kg==),String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Kg==),String(YQ==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Kg==),String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Kg==),String(YQ==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "no_termination",
+    "reason": "For pattern \"*\" and any non‑empty input, method1 enters an infinite loop because it keeps pushing and popping the same indices, whereas method2 correctly returns true. The stack in method1 is never exhausted but the loop never terminates. The loop condition is `for(;;)` with no break when patternIndex reaches patternLen and inputIndex < inputLen, causing the infinite backtracking. method2 handles the single star case by immediately returning true after matching the rest of the string. The input is a simple non‑empty string, e.g. \"a\".",
+    "arguments_java": [
+      "\"*\"",
+      "\"a\""
+    ],
+    "parameter_types": [
+      "String",
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": "method1 pushes two indices onto the stack when encountering '*', then increments patternIndex to 1 (patternLen). The next iteration sees patternIndex==patternLen but inputIndex< inputLen, so it does not return. Since stacktop>0, it pops the indices, resetting patternIndex to 0 and inputIndex to 1. This repeats indefinitely, never reaching a return statement. method2, after detecting a single '*', skips the while loops and returns true."
+  },
+  "remainingSeconds": 121.498
+}

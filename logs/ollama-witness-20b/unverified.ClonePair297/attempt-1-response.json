@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte‑array equality checks. They return the same boolean for all possible byte[] inputs (including empty arrays and null, which both throw NullPointerException). No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1209,
+  "eval_count": 242,
+  "total_duration": 2228450200,
+  "load_duration": 10102300
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of the input array in the same way; they both throw an ArrayIndexOutOfBoundsException on an empty array and return the same value for all non-empty arrays. No concrete input can distinguish their behavior."
+}

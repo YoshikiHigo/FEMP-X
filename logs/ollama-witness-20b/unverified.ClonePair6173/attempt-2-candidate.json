@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 subtracts 0x7FFFFF unconditionally, while method2 subtracts 0x1000000 only when the 24‑bit value exceeds 0x7FFFFF. With the byte array {0x80,0x00,0x80} both methods interpret the same 24‑bit value 0x800080, but method1 produces 129 and method2 produces –8388480 before scaling, leading to different float results.",
+  "arguments_java": [
+    "new byte[]{(byte)0x80,(byte)0x00,(byte)0x80}",
+    "-1",
+    "new float[]{0.0f}",
+    "-1",
+    "1"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "int",
+    "float[]",
+    "int",
+    "int"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

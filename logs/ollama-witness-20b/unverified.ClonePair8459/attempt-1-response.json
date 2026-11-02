@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical observable behavior for all deterministic, bounded inputs: they return the same Double value (or null) for any given String argument. No distinguishing test case can be constructed that satisfies the constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 847,
+  "eval_count": 491,
+  "total_duration": 4008532400,
+  "load_duration": 2037200
+}

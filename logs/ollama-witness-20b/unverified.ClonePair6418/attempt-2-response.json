@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"In method1 the high bit of the byte at offset+3 contributes to bit 24 of the result, whereas in method2 it contributes to bit 31 via the sign‑extension logic. Thus the two methods return different long values for the same input.\",\"arguments_java\":[\"new byte[]{0,0,0,(byte)0x80,0,0,0,0}\",\"0\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1401,
+  "eval_count": 538,
+  "total_duration": 4396171300,
+  "load_duration": 13296700
+}

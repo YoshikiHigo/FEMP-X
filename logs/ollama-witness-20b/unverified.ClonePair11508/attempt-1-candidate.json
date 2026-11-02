@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return true for exactly the same set of characters (digits 0–9, letters A–F, a–f) and false for all others. No input can distinguish their behavior."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods return the same string for every possible char input; the only difference is the implementation detail of string creation, which does not affect observable behavior. No deterministic, bounded input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1005,
+  "eval_count": 412,
+  "total_duration": 3483832400,
+  "load_duration": 2560500
+}

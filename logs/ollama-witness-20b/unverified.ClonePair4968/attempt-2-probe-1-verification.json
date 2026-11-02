@@ -1,0 +1,64 @@
+{
+  "key": "unverified.ClonePair4968",
+  "stable": true,
+  "differenceType": "exception",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(123)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.Properties{String(aw==)->String(IDEyMyA=)},String(aw==),Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.Properties{String(aw==)->String(IDEyMyA=)},String(aw==),Integer(0)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NumberFormatException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.Properties{String(aw==)->String(IDEyMyA=)},String(aw==),Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.Properties{String(aw==)->String(IDEyMyA=)},String(aw==),Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(123)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.Properties{String(aw==)->String(IDEyMyA=)},String(aw==),Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.Properties{String(aw==)->String(IDEyMyA=)},String(aw==),Integer(0)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NumberFormatException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.Properties{String(aw==)->String(IDEyMyA=)},String(aw==),Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.Properties{String(aw==)->String(IDEyMyA=)},String(aw==),Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 trims the property value before parsing, so a value with leading/trailing spaces is parsed successfully; method2 does not trim, causing a NumberFormatException.",
+    "arguments_java": [
+      "props(\"k\",\" 123 \")",
+      "\"k\"",
+      "0"
+    ],
+    "parameter_types": [
+      "java.util.Properties",
+      "java.lang.String",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 150.916
+}

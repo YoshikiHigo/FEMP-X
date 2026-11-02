@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic: they return false when array lengths differ, otherwise compare each element and return true only if all elements match. No input can cause a differing return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 966,
+  "eval_count": 94,
+  "total_duration": 996438500,
+  "load_duration": 5692000
+}

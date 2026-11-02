@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit big‑endian integer from the first four bytes of the array. For any byte array of length ≥4 the two loops perform identical bitwise operations, and for shorter arrays both throw the same ArrayIndexOutOfBoundsException. No input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

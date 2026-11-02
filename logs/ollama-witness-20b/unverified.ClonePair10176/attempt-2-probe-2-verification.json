@@ -1,0 +1,65 @@
+{
+  "key": "unverified.ClonePair10176",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),String(),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),String(),null]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),String(),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),String(),null]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "no_termination",
+    "reason": "When the search string is empty, method1 immediately returns the original string because it checks for a zero‑length search string and skips the loop. Method2, however, does not treat an empty search string specially; it enters a loop that never advances the search index, causing an infinite loop. The two methods therefore exhibit different termination behaviour for the same input.",
+    "arguments_java": [
+      "\"abc\"",
+      "\"\"",
+      "null"
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": "In method2, searchLen is 0, so foundIdx = str.indexOf(search, searchIdx) returns searchIdx. The code then sets searchIdx = foundIdx + searchLen, which leaves searchIdx unchanged. The loop condition searchIdx < strLen remains true forever, producing an infinite loop. Method1 detects the empty search string at the start and returns the original string without entering the loop."
+  },
+  "remainingSeconds": 117.026
+}

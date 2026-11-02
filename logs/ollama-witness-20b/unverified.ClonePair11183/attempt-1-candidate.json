@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both method1 and method2 return true for all alphabetic characters (a–z, A–Z) and false otherwise. For any single char input, their behavior is identical; no concrete separating input exists."
+}

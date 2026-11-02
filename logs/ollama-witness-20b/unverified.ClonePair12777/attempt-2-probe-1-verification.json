@@ -1,0 +1,65 @@
+{
+  "key": "unverified.ClonePair12777",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YmI=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWFhYQ==),String(YWE=),String(Yg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWFhYQ==),String(YWE=),String(Yg==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YmI=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWFhYQ==),String(YWE=),String(Yg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWFhYQ==),String(YWE=),String(Yg==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YmI=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWFhYQ==),String(YWE=),String(Yg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWFhYQ==),String(YWE=),String(Yg==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YmI=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWFhYQ==),String(YWE=),String(Yg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWFhYQ==),String(YWE=),String(Yg==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 performs non‑overlapping replacements: \"aaaa\" → \"baaa\" → \"bab\"; method2 replaces every occurrence (including overlapping) producing \"bb\".",
+    "arguments_java": [
+      "\"aaaa\"",
+      "\"aa\"",
+      "\"b\""
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 126.44
+}

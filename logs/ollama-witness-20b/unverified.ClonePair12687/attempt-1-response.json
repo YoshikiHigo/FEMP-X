@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs: they return the same Class object for each primitive type name, return null for unmatched names, and throw a NullPointerException when the argument is null. No deterministic, bounded input can distinguish their outputs or side effects.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 984,
+  "eval_count": 211,
+  "total_duration": 1725046200,
+  "load_duration": 2037800
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform the same linear search over the array and return the same index or -1; no input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1123,
+  "eval_count": 50,
+  "total_duration": 769007300,
+  "load_duration": 8287500
+}

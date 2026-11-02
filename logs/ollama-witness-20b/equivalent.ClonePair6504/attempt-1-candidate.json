@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return 0.0 for null, non‑Number non‑String, or unparsable strings; they both return the numeric value for Number instances; and they both parse non‑empty strings via Double.parseDouble. No concrete input can distinguish their return values, side effects, or exception behavior."
+}

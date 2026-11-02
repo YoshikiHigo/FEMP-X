@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte extraction using bitwise operations; the unsigned versus signed right shift does not affect the low 8 bits that are masked out. No input can cause a difference in return value, side effect, exception, or non‑termination."
+}

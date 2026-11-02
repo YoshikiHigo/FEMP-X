@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit integer from four consecutive bytes: method1 reverses the order into a temporary array and then accumulates with left shifts, while method2 performs the same accumulation directly with left shifts and masking. For any byte array and any valid start/offset, the resulting int is identical. No input can distinguish the two implementations."
+}

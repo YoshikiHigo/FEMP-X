@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same integer for every possible char input; they are functionally equivalent for all inputs."
+}

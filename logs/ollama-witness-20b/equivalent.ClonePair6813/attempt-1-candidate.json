@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible inputs. Both create a Calendar set to the input Date and compare it to a Calendar initialized to the current time (either via a new Date() or directly via Calendar.getInstance()). Since both use the same current time source and perform identical field comparisons, no input can produce a differing outcome."
+}

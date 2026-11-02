@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of an integer array in identical ways; for any input (including empty or null arrays) they either return the same value or throw the same exception type at the same point. No concrete input can distinguish their behavior."
+}

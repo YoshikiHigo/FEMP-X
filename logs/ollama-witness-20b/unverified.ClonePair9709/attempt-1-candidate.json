@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical character array equality checks; no input can distinguish their behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the minimum of three integers using <= in method1 and < in method2. For all possible integer inputs, the result is identical: ties are resolved in the same way, yielding the same value. No concrete input distinguishes their behavior."
+}

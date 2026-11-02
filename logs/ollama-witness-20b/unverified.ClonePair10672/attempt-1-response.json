@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods evaluate the same character ranges; exhaustive reasoning shows no input causes differing return values, side effects, or exceptions.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 847,
+  "eval_count": 524,
+  "total_duration": 4040905000,
+  "load_duration": 14342900
+}

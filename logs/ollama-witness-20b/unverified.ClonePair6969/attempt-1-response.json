@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical big‑endian conversion of four bytes from the supplied array at the given offset. For any valid input (non‑null array with at least four bytes starting at the offset) they compute the same integer. For invalid inputs (null array or insufficient length, or negative offset) both throw the same exception types (NullPointerException or ArrayIndexOutOfBoundsException). No deterministic, bounded input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1234,
+  "eval_count": 266,
+  "total_duration": 2416705000,
+  "load_duration": 2932700
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No concrete input can make method1 and method2 behave differently while receiving the same arguments and initial state. The logic of both methods is equivalent for all possible String and boolean inputs."
+}

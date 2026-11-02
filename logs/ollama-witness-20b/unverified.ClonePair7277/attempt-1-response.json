@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical 32‑bit unsigned conversion of four consecutive bytes starting at the given index. For any valid input array and index, they compute the same integer value and throw the same exceptions. No deterministic, bounded input can be constructed that causes one method to return a different value, throw a different exception, or terminate differently than the other.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1324,
+  "eval_count": 983,
+  "total_duration": 7890951400,
+  "load_duration": 5525300
+}

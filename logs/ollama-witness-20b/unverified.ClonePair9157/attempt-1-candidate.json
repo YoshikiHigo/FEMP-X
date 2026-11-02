@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks on the input byte; no input can cause differing return values, side effects, or exceptions."
+}

@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair7615",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 requires both apple.equals(orange) and orange.equals(apple) to be true, while method2 only requires obj1.equals(obj2). By creating two objects where the first object's equals method returns true for the second object but the second object's equals method returns false for the first object, method1 will return false and method2 will return true.",
+    "arguments_java": [
+      "new Object(){\n    Object other;\n    @Override public boolean equals(Object o){\n        return o==other;\n    }\n}",
+      "new Object(){\n    @Override public boolean equals(Object o){\n        return false;\n    }\n}"
+    ],
+    "parameter_types": [
+      "Object",
+      "Object"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 131.166
+}

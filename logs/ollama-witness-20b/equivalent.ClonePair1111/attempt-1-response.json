@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods produce identical hexadecimal string representations for all possible byte array inputs, including edge cases such as negative byte values, zero-length arrays, and null inputs (which both throw NullPointerException). No deterministic input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1000,
+  "eval_count": 543,
+  "total_duration": 4491546300,
+  "load_duration": 5600100
+}

@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns an empty string when the input string has length 1 and its sole character equals the given character, whereas method2 returns the original string unchanged in that case.",
+  "arguments_java": [
+    "\"a\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

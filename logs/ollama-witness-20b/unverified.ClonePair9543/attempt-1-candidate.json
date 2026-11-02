@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they iterate over the array and return false if any element is not strictly greater than its predecessor, otherwise true. No input can distinguish their behavior."
+}

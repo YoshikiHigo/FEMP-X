@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical control flow and return values for all possible inputs; no concrete separating test can be constructed."
+}

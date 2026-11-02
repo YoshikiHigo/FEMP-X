@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods implement identical logic for all possible byte[] inputs; no concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1246,
+  "eval_count": 50,
+  "total_duration": 780401700,
+  "load_duration": 8193700
+}

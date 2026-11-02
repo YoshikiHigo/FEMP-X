@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks: they compare array references, handle nulls, compare lengths, take the absolute value of epsilon (method1 only after a negative check, which has no effect when epsilon is NaN or Infinity), and iterate over elements comparing absolute differences to epsilon. For all deterministic, bounded inputs—including edge cases such as NaN, Infinity, zero-length arrays, and nulls—their control flow and return values coincide. No concrete separating input can be constructed without violating the constraints."
+}

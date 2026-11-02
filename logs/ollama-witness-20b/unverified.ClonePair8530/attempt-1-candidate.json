@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 uses the Double(String) constructor which does not trim whitespace, so a string like \" 1.0\" causes a NumberFormatException and returns null. method2 trims the string before parsing, successfully returning 1.0. Both methods receive the same input and initial state.",
+  "arguments_java": [
+    "\" 1.0\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

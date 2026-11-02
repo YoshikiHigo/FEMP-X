@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair7567",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(1000),Date(1500)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(1000),Date(1500)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(1000),Date(1500)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(1000),Date(1500)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(1000),Date(1500)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(1000),Date(1500)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(1000),Date(1500)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(1000),Date(1500)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 uses Object.equals which compares Date objects down to the millisecond, whereas method2 compares the two Date objects after truncating to whole seconds (by dividing getTime() by 1000). For two Date instances that differ by less than one second, method1 returns false while method2 returns true.",
+    "arguments_java": [
+      "new Date(1000L)",
+      "new Date(1500L)"
+    ],
+    "parameter_types": [
+      "Object",
+      "Object"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 159.045
+}

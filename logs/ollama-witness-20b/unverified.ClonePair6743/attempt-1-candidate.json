@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte-to-long conversion on the first eight elements of the input array. They both throw the same exceptions (ArrayIndexOutOfBoundsException for arrays shorter than 8 elements, NullPointerException for null input) and produce the same result for any valid input. No deterministic, bounded input can distinguish their behaviors."
+}

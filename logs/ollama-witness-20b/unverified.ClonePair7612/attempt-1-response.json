@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 requires both equals and reverse equals to be true, while method2 only requires o1.equals(o2). Using an asymmetric equals implementation for the first argument causes method1 to return false and method2 to return true.\",\"arguments_java\":[\"new Object(){public boolean equals(Object o){return true;}}\",\"new Object()\"],\"parameter_types\":[\"Object\",\"Object\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 864,
+  "eval_count": 402,
+  "total_duration": 3401488500,
+  "load_duration": 4608400
+}

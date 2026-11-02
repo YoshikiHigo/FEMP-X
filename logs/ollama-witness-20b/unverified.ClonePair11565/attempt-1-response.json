@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, the only pathological case is when the target/oldstr argument is the empty string, which causes both methods to enter an infinite loop. No input leads to a differing return value, side effect, exception, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1307,
+  "eval_count": 706,
+  "total_duration": 5765638300,
+  "load_duration": 8793800
+}

@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns true because the two objects have the same hashCode and different classes, while method2 returns false because Integer.equals(Long) is false.",
+  "arguments_java": [
+    "Integer.valueOf(7)",
+    "Long.valueOf(7)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

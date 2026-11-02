@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the ordinal suffix for an integer in exactly the same way for all possible int inputs; exhaustive reasoning shows no input leads to differing return values, side effects, or exceptions."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical parsing of the string into a Long using the same Long.valueOf and Long constructor semantics, handling null, empty, and invalid inputs in the same way. No input can distinguish their return values, side effects, exceptions, or termination behavior."
+}

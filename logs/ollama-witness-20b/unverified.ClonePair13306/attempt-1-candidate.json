@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs; any difference would arise only from identical exception conditions (e.g., null or odd-length strings), so no concrete separating test case exists."
+}

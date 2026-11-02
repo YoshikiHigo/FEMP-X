@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all deterministic, bounded inputs. Both construct a string by iterating over the collection, inserting the provided delimiter/separator between elements, and handling nulls and empty collections in the same way. No input can cause a difference in return value, side effects, or exception type."
+}

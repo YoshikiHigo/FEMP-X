@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs: they return the maximum element of a non‑empty array, and both throw the same exception (ArrayIndexOutOfBoundsException for empty arrays, NullPointerException for null) for invalid inputs. No concrete input can distinguish them."
+}

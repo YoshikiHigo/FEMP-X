@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return the substring between the first occurrence of the leading string and the first occurrence of the trailing string that follows it, or null if either string is not found. No input can cause a difference in return value, side effects, or exception type."
+}

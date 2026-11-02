@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical for all possible inputs. Both perform the same loop over the string, checking bounds and whitespace, and return the first non‑whitespace index. No input can cause one to return a different value, throw a different exception, or terminate differently."
+}

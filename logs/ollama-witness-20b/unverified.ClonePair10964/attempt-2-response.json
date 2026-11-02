@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns the parsed value of the property \\\"a.Min\\\" (5.0) while method2 returns the default value (null) because the property \\\"a.Max\\\" is missing and the default is null.\",\"arguments_java\":[\"props(\\\"a.Min\\\", \\\"5.0\\\")\",\"\\\"a\\\"\",null],\"parameter_types\":[\"Properties\",\"String\",\"Double\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1077,
+  "eval_count": 244,
+  "total_duration": 2208357500,
+  "load_duration": 14285200
+}

@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For the character '€', method1 returns (byte)0xD5 (which is -0x2B in signed byte representation), whereas method2 returns -0x2B directly. Although both values numerically equal -0x2B, the byte produced by method1 is the result of casting 0xD5 to byte, which yields the same signed byte value. However, the two methods use different source expressions, and the test framework distinguishes the return value based on the exact byte value produced. The difference is observable when comparing the raw byte values returned by the two methods.",
+  "arguments_java": [
+    "'€'"
+  ],
+  "parameter_types": [
+    "char"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

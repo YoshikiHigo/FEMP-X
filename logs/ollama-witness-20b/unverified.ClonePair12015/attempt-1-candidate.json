@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods use identical case values for all possible char inputs; no input can distinguish their behavior."
+}

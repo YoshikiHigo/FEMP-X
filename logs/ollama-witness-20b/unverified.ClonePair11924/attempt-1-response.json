@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of the two methods, no concrete input can be constructed that causes a difference in return value, side effect, exception, or non‑termination. Both methods handle all edge cases (nulls, empty strings, null replacement strings, etc.) in a way that yields identical results for any identical inputs. Therefore, no separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1339,
+  "eval_count": 630,
+  "total_duration": 5213588800,
+  "load_duration": 10818500
+}

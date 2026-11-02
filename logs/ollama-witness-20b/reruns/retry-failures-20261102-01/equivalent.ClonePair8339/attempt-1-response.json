@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For input 32, method1 returns 6 while method2 returns 1.\",\"arguments_java\":[\"32\"],\"parameter_types\":[\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 2067,
+  "eval_count": 528,
+  "total_duration": 4666749200,
+  "load_duration": 13856700
+}

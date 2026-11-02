@@ -1,0 +1,63 @@
+{
+  "key": "unverified.ClonePair7181",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(67305985)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(67305985)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(67305985)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(67305985)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 interprets the 4 bytes starting at the given offset as a little‑endian 32‑bit unsigned integer, while method2 interprets the same 4 bytes as a big‑endian 32‑bit unsigned integer. For the byte sequence {1,2,3,4} at offset 0, method1 returns 0x04030201 (67305985) whereas method2 returns 0x01020304 (16909060).",
+    "arguments_java": [
+      "new byte[]{1,2,3,4}",
+      "0"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "int"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 137.661
+}

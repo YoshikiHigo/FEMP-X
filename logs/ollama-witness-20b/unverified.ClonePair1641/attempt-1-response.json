@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical logic for all possible inputs: they return null for null, return the same Integer instance for Integer inputs, convert any Number to an Integer via intValue(), and parse the string representation of any other object. The use of Integer.valueOf versus new Integer does not affect observable behavior because Integer.valueOf caches only small values and new Integer always creates a distinct object with the same value, which is still equal. No input can cause a difference in return value, side effects, exceptions, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1160,
+  "eval_count": 367,
+  "total_duration": 3264910500,
+  "load_duration": 9934600
+}

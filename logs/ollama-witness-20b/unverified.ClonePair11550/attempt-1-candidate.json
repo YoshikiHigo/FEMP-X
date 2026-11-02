@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For i=21, method1 returns \"21st\" while method2 returns \"21th\".",
+  "arguments_java": [
+    "21"
+  ],
+  "parameter_types": [
+    "int"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns true when the two objects are equal according to their equals() implementation, regardless of class. method2 additionally requires the two objects to be of the same runtime class. The java.util.Date and java.sql.Date classes are distinct but their equals() method considers them equal if they represent the same instant. Thus method1((Date)0, (java.sql.Date)0) returns true, whereas method2 returns false.\",\"arguments_java\":[\"new java.util.Date(0L)\",\"new java.sql.Date(0L)\"],\"parameter_types\":[\"Object\",\"Object\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 903,
+  "eval_count": 350,
+  "total_duration": 3036542900,
+  "load_duration": 9420600
+}

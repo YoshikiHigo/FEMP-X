@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair7976",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(),null]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(),null]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "When the first argument is the empty string and the second argument is null, method1 returns false (\"\".equals(null) is false) whereas method2 returns true (empty string is treated as \"empty\" and null as \"empty\").",
+    "arguments_java": [
+      "\"\"",
+      "null"
+    ],
+    "parameter_types": [
+      "String",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 163.841
+}

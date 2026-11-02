@@ -1,0 +1,63 @@
+{
+  "key": "unverified.ClonePair609",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1],byte[][]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1],byte[][]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1],byte[][]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1],byte[][]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1],byte[][]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1],byte[][]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1],byte[][]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1],byte[][]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 returns false when the two arrays have different lengths, while method2 throws an ArithmeticException due to a modulo‑by‑zero when the second array is empty.",
+    "arguments_java": [
+      "new byte[]{1}",
+      "new byte[]{}"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "byte[]"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 165.853
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks on the input byte arrays; for any given pair of arrays they will either both return true, both return false, or both throw a NullPointerException when either argument is null. No concrete input can distinguish their behavior."
+}

@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 first checks that the two arguments are of the same runtime class before delegating to equals, whereas method2 skips this class check.  By supplying an ArrayList and a LinkedList that contain the same elements, method1 will return false (because the classes differ) while method2 will return true (because the ArrayList’s equals method compares the elements and finds them equal).",
+  "arguments_java": [
+    "new ArrayList<>(list(1))",
+    "new LinkedList<>(list(1))"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

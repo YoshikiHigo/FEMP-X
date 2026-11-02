@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte‑to‑double conversion using the same loop logic and shift calculations. They will throw the same exceptions (e.g., ArrayIndexOutOfBoundsException or NullPointerException) for any input that causes an error, and produce the same result for all valid inputs. No concrete separating input exists."
+}

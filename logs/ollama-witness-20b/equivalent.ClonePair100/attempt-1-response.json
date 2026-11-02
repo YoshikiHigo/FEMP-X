@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are identical in logic; they compute the same value and return the same result for any input. No concrete input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1410,
+  "eval_count": 98,
+  "total_duration": 1288773000,
+  "load_duration": 7008400
+}

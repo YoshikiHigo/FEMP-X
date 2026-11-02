@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks: they return true only when both arguments are null or when both are non‑null and represent the same instant in time. The logic paths for all combinations of null and non‑null arguments produce the same boolean result, so no concrete input can distinguish the two methods."
+}

@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 rejects octets with leading zeros such as \"01\" because it treats a zero value followed by another digit as invalid, whereas method2 accepts them and parses them as integers.",
+  "arguments_java": [
+    "\"01.02.03.04\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they check if the input string starts with the pattern, then take a substring starting at pat.length()+1 and trim it. The only difference is that method1 assigns the trimmed substring to a local variable before returning, while method2 reassigns the parameter variable. This does not affect the observable behavior for any input that does not cause an exception. Therefore, no concrete separating input exists for the allowed difference types."
+}

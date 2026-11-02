@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical column‑major to 2‑D array conversion when the same dimensions are supplied. For any array of length nrow*ncol (or w*h) and identical nrow==w, ncol==h, both methods produce the same 2‑D array. No input can cause a return value, side effect, exception, or non‑termination difference under the given constraints."
+}

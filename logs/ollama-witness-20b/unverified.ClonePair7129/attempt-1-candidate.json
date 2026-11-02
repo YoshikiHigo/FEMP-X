@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are structurally identical; for any integer inputs the computed differences and all conditional branches evaluate the same, yielding identical return values. No input can distinguish them."
+}

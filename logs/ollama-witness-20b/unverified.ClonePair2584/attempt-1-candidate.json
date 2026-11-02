@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑wise equality checks on the two byte arrays. For any pair of non‑null byte arrays of equal length, they return true iff all corresponding elements are equal; otherwise they return false. The only difference is the order of the null‑check, which leads to the same NullPointerException in both cases. No input can produce a differing return value, side effect, exception type, or non‑termination."
+}

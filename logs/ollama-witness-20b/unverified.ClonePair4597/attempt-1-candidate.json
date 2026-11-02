@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the minimum of a double array in identical ways. They both access the first element before the loop and then compare each subsequent element to the current minimum. For any non‑null array (including empty arrays, which cause the same ArrayIndexOutOfBoundsException in both methods) the control flow and resulting value are the same. No input can cause one method to return a different value, throw a different exception type, or exhibit non‑termination while the other behaves differently."
+}

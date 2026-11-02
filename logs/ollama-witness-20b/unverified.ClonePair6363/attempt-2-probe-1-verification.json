@@ -1,0 +1,63 @@
+{
+  "key": "unverified.ClonePair6363",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(506097522914230656)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-128, 1, 2, 3, 4, 5, 6, 7],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-128, 1, 2, 3, 4, 5, 6, 7],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(506097522914230656)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-128, 1, 2, 3, 4, 5, 6, 7],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-128, 1, 2, 3, 4, 5, 6, 7],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(506097522914230656)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-128, 1, 2, 3, 4, 5, 6, 7],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-128, 1, 2, 3, 4, 5, 6, 7],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(506097522914230656)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-128, 1, 2, 3, 4, 5, 6, 7],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-128, 1, 2, 3, 4, 5, 6, 7],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 treats the 8 bytes as a big‑endian signed 64‑bit value, propagating the sign bit of each byte into the result, while method2 treats the 8 bytes as a little‑endian unsigned 64‑bit value. With a buffer containing both positive and negative byte values the two results will differ.",
+    "arguments_java": [
+      "new byte[]{(byte)0x80,(byte)0x01,(byte)0x02,(byte)0x03,(byte)0x04,(byte)0x05,(byte)0x06,(byte)0x07}",
+      "0"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "int"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 162.938
+}

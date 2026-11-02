@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns true only when the two objects are either the same reference, have the same class and equal hashCodes. method2 returns true when the first object equals the second according to Object.equals. By creating two distinct classes java.util.Date and java.sql.Date that represent the same point in time, method1 will return false (different classes) while method2 will return true (equals returns true).\",\"arguments_java\":[\"new java.util.Date(1000L)\",\"new java.sql.Date(1000L)\"],\"parameter_types\":[\"Object\",\"Object\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1125,
+  "eval_count": 333,
+  "total_duration": 2834120000,
+  "load_duration": 9858900
+}

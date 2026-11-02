@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 throws NumberFormatException when the system property value is a non‑numeric string, whereas method2 catches all Exceptions and returns the supplied default value.\",\"arguments_java\":[\"\\\"java.version\\\"\",\"5\"],\"parameter_types\":[\"String\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1251,
+  "eval_count": 192,
+  "total_duration": 1791377700,
+  "load_duration": 3523600
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 throws StringIndexOutOfBoundsException when the replacement string length causes the tail substring to exceed the remaining string length, whereas method2 correctly handles the remaining characters and returns a string.\",\"arguments_java\":[\"\\\"aaa\\\"\",\"\\\"aa\\\"\",\"\\\"b\\\"\"],\"parameter_types\":[\"String\",\"String\",\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1312,
+  "eval_count": 344,
+  "total_duration": 2785899700,
+  "load_duration": 3851400
+}

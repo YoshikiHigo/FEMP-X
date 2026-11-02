@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, when the marker string is empty, both methods enter an infinite loop, and when the marker is non‑empty they perform the same replacement logic. No input can cause one method to terminate while the other does not, nor can one produce a different return value or side effect under the same initial state.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1180,
+  "eval_count": 468,
+  "total_duration": 3963741500,
+  "load_duration": 3605600
+}

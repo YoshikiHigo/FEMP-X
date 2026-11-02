@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For the input \"1.2.3.4.\", method1 parses the four numeric parts and returns a byte array of length 4, whereas method2 splits the string into five parts (the trailing empty part after the final dot) and therefore returns null.",
+  "arguments_java": [
+    "\"1.2.3.4.\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

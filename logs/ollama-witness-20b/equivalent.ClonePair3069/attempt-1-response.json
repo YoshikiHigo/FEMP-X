@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic: a reverse linear search returning the index of the target byte or -1. No input can cause differing return values, side effects, exceptions, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1118,
+  "eval_count": 69,
+  "total_duration": 991597800,
+  "load_duration": 2531500
+}

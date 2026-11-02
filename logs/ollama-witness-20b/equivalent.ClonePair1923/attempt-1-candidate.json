@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical bitwise operations and produce the same Base64 encoding for all possible byte array inputs. No concrete input can be found that distinguishes their return values, side effects, or exception behavior."
+}

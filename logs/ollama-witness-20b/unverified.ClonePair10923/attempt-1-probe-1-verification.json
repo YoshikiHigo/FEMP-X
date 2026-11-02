@@ -1,0 +1,64 @@
+{
+  "key": "unverified.ClonePair10923",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(Zm8=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9v),Integer(2),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9v),Integer(2),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(Zm8=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9v),Integer(2),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9v),Integer(2),null]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(Zm8=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9v),Integer(2),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9v),Integer(2),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(Zm8=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9v),Integer(2),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9v),Integer(2),null]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 appends the elipsis only when it is non‑null, whereas method2 appends the suffix only when it is non‑null.  With elipsis==null and suffix==\"bar\" the two methods produce different strings.",
+    "arguments_java": [
+      "\"foo\"",
+      "2",
+      "null"
+    ],
+    "parameter_types": [
+      "String",
+      "int",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 111.353
+}

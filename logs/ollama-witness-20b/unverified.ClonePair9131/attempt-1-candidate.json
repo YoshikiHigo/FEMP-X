@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both throw the same exceptions for null or out‑of‑bounds indices, and for any valid string and start index they return the first non‑whitespace position (or the original index if none). No concrete input can distinguish them."
+}

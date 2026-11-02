@@ -1,0 +1,65 @@
+{
+  "key": "unverified.ClonePair12170",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(2)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YVxi),Integer(0),Character(98)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YVxi),Integer(0),Character(98)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YVxi),Integer(0),Character(98)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YVxi),Integer(0),Character(98)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(2)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YVxi),Integer(0),Character(98)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YVxi),Integer(0),Character(98)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YVxi),Integer(0),Character(98)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YVxi),Integer(0),Character(98)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns the index of the first occurrence of the target character starting from startIndex, ignoring escape characters. method2 treats a preceding backslash as an escape and therefore does not count the escaped target character. For the input string \"a\\\\b\" (which contains a literal backslash followed by 'b'), startIndex 0, and target character 'b', method1 returns 2 while method2 returns -1.",
+    "arguments_java": [
+      "\"a\\\\b\"",
+      "0",
+      "'b'"
+    ],
+    "parameter_types": [
+      "String",
+      "int",
+      "char"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 123.572
+}

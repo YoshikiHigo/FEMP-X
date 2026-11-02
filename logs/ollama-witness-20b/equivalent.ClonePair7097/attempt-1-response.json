@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the two hexadecimal characters of the input byte in the same way; for every possible byte value the outputs are identical and neither method throws an exception or terminates nondeterministically. No concrete input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1933,
+  "eval_count": 153,
+  "total_duration": 1644646000,
+  "load_duration": 6184900
+}

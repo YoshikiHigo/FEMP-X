@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the minimum of the input array using the same comparison logic (method1 uses <, method2 uses <= but the effect is identical for all finite integer arrays). No deterministic input can produce a differing return value, side effect, exception type, or non‑termination between the two methods."
+}

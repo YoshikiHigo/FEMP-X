@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods return true exactly when the two input strings are both null or equal. No input can make them behave differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1172,
+  "eval_count": 342,
+  "total_duration": 3014006000,
+  "load_duration": 8240500
+}

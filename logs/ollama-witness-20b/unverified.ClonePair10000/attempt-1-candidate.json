@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods return the same boolean value for every possible char input; no concrete input can distinguish them."
+}

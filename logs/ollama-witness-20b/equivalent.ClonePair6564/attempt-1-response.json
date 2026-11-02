@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform the same dot‑product computation; with any finite float arrays they produce identical results, and the only edge case (null arrays) is handled identically by both. No concrete input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1115,
+  "eval_count": 68,
+  "total_duration": 981636100,
+  "load_duration": 3149100
+}

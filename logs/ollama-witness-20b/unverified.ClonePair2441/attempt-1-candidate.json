@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For input byte[]{-1,-1,-1,-1}, method1 computes 0 while method2 overflows to -16777261.",
+  "arguments_java": [
+    "new byte[]{-1,-1,-1,-1}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false
+}

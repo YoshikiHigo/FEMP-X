@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no concrete input can be constructed that leads to a distinguishable behavior (different return value, side effect, exception, or non‑termination) while satisfying all constraints. Both methods handle nulls, empty strings, and normal replacements in a way that produces identical results for every possible deterministic, bounded input. Therefore, no separating test case exists."
+}

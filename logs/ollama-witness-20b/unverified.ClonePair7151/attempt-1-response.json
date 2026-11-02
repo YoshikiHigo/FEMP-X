@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets the four bytes starting at offset as a little‑endian 32‑bit integer, while method2 interprets them as a big‑endian integer. For the byte array {1,2,3,4} and offset 0, method1 returns 0x04030201 (67305985), whereas method2 returns 0x04030201 shifted left by 8 bits and then ORed with the bytes in reverse order, yielding 0x4040201 (67224065).\",\"arguments_java\":[\"new byte[]{1,2,3,4}\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1244,
+  "eval_count": 562,
+  "total_duration": 4733303600,
+  "load_duration": 5395100
+}

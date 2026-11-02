@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same computation: they iterate over the array and return the maximum value. No input can distinguish their behavior."
+}

@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 casts Math.sqrt(number) to int, truncating the value to Integer.MAX_VALUE (2147483647) when the true sqrt exceeds that. For a number whose true sqrt is 2147483648, method1 loops only up to 2147483647 and therefore never finds the divisor 2147483648, incorrectly reporting the number as prime. method2 uses a long sqrt and correctly detects the composite. The number 4611686018427387904L (2147483648^2) is such a case.",
+  "arguments_java": [
+    "4611686018427387904L"
+  ],
+  "parameter_types": [
+    "long"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns null when the requested key is missing, regardless of the default value, while method2 returns the default value (or the minimum of the default and the \\\"key.Max\\\" value) when the key is missing but a \\\"key.Max\\\" entry exists.\",\"arguments_java\":[\"props(\\\"k.Max\\\", \\\"5.0\\\")\"],\"parameter_types\":[\"Properties\",\"String\",\"Double\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 949,
+  "eval_count": 398,
+  "total_duration": 3166141500,
+  "load_duration": 16006400
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 returns the original string when width is negative and string length is less than width, while method2 attempts to take a substring with a negative end index and throws a StringIndexOutOfBoundsException.\",\"arguments_java\":[\"\\\"foo\\\"\"],\"parameter_types\":[\"String\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1133,
+  "eval_count": 271,
+  "total_duration": 2204476700,
+  "load_duration": 2240600
+}

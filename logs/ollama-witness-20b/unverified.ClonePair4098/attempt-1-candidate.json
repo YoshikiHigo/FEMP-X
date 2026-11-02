@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical control flow and return logic for all possible inputs that avoid null array references. No concrete input can be constructed that causes one method to return a different value, throw an exception, or exhibit a side‑effect that the other does not, given the constraints of the problem statement."
+}

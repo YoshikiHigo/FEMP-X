@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks on the byte arrays: they return true only when both arrays are non‑null, have the same length, and contain the same bytes in the same order. All branches and return values match for every possible input, so no concrete separating test case exists."
+}

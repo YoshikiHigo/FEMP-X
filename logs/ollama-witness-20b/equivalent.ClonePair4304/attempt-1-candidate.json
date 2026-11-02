@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical arithmetic and conditional logic for all finite double inputs, including edge cases involving zero, negative zero, infinities, and NaN. No input can produce a differing return value, side effect, exception, or non‑termination."
+}

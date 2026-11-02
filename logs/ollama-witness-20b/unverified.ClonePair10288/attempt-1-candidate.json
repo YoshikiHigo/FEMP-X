@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical parsing of a non‑null string using Integer.parseInt and Integer.valueOf, which have the same semantics for all valid inputs. No deterministic, bounded input can produce a different return value, side effect, exception type, or non‑termination between the two methods."
+}

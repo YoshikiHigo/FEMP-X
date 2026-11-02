@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 throws NullPointerException when array contains a null element and the searched element is non‑null, whereas method2 safely skips null entries and returns -1.",
+  "arguments_java": [
+    "new String[]{\"a\", null, \"b\"}",
+    "\"a\""
+  ],
+  "parameter_types": [
+    "String[]",
+    "String"
+  ],
+  "void_return": false
+}

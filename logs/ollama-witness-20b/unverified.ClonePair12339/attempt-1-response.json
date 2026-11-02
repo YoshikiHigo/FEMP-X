@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic; for any deterministic, bounded input the behaviors (return value, side effects, exceptions) are the same. No concrete separating test case can be constructed without violating the constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1041,
+  "eval_count": 152,
+  "total_duration": 1274811200,
+  "load_duration": 6116400
+}

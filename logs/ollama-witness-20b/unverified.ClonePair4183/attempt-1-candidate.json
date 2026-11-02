@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical arithmetic and control flow for all finite float inputs; no deterministic separating input can be constructed."
+}

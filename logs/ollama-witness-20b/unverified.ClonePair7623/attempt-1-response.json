@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 uses equals to determine equality, while method2 additionally requires the hashCodes to match. The custom class BadHash overrides equals to consider two instances equal when their value fields are equal, but overrides hashCode to return a constant that differs from the value. Thus two BadHash(1) instances are equal according to equals, so method1 returns true, but their hashCodes differ, so method2 returns false.\",\"arguments_java\":[\"new BadHash(1)\",\"new BadHash(1)\"],\"parameter_types\":[\"Object\",\"Object\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 894,
+  "eval_count": 314,
+  "total_duration": 2694493500,
+  "load_duration": 2589000
+}

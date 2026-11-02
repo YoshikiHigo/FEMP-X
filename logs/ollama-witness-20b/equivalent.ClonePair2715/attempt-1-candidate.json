@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same element-wise comparison of two boolean arrays up to the given length; they have identical control flow and return the same boolean value for any input. No concrete input can distinguish their behavior."
+}

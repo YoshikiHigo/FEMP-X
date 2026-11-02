@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all deterministic, bounded inputs. Both perform the same substring replacement logic, handling nulls, empty strings, and non‑existent substrings in the same way, and neither introduces side effects or non‑termination beyond the cases already covered by the existing tests.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1364,
+  "eval_count": 591,
+  "total_duration": 4725119800,
+  "load_duration": 3206500
+}

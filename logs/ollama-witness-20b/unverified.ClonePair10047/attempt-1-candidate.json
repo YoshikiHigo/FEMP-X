@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return true exactly for the ASCII alphabetic characters A–Z and a–z, and false for all other characters. No input can cause one method to return a different value, throw an exception, or exhibit any other distinguishable behavior."
+}

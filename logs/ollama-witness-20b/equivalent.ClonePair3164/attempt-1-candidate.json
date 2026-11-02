@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the minimum of the array in the same way; for any input array (including null, empty, or containing NaN) they either throw the same exception or return the same value. No concrete input can distinguish their behavior."
+}

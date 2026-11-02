@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they return true iff the two char arrays are non‑null, have equal lengths, and contain identical characters. They both throw NullPointerException when either argument is null, and otherwise produce the same boolean result. No concrete input can distinguish them."
+}

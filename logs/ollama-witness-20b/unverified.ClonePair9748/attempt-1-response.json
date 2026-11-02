@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 implements wildcard matching with '?' and '*', so pattern \\\"*\\\" matches any string including \\\"a\\\" and returns true, whereas method2 checks strict equality and returns false for different arrays.\",\"arguments_java\":[\"\\\"a\\\".toCharArray()\",\"\\\"*\\\".toCharArray()\"],\"parameter_types\":[\"char[]\",\"char[]\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1139,
+  "eval_count": 192,
+  "total_duration": 1819199700,
+  "load_duration": 2861100
+}

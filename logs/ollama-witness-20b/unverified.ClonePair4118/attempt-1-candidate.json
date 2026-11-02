@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs. Both perform the same null checks, length comparison, and element-wise equality checks, and they both return the same result for every combination of null, empty, or non-empty String arrays. No concrete input can distinguish their outputs or side effects."
+}

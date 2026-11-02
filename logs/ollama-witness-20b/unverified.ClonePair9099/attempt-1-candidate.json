@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical range‑normalization for all finite double values and exhibit the same non‑terminating behavior for infinite inputs. No deterministic, bounded input can produce a differing return value, side effect, exception, or termination status between method1 and method2."
+}

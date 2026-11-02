@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical computations on the same 4-byte slice of the array; no input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1233,
+  "eval_count": 64,
+  "total_duration": 801605500,
+  "load_duration": 2060400
+}

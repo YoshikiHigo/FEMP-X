@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 interprets each byte as a signed 7‑bit value and then, if the most significant byte (buffer[7]) is negative, it adds Long.MIN_VALUE to the accumulated value. method2 simply treats all bytes as unsigned and accumulates them in little‑endian order, never applying the sign‑bit flags or the Long.MIN_VALUE adjustment. With a buffer that contains a negative byte at position 7, the two methods produce different long results.",
+  "arguments_java": [
+    "new byte[]{1,2,3,4,5,6,7,(byte)-128}",
+    "0"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "int"
+  ],
+  "void_return": false
+}

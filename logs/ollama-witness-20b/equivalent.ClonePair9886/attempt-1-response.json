@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible inputs: they compute the same result array length, perform the same bounds checks, and propagate the same exceptions (NegativeArraySizeException or NullPointerException) under equivalent conditions. No concrete input can distinguish their outputs or side effects.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 876,
+  "eval_count": 453,
+  "total_duration": 3814762900,
+  "load_duration": 3798500
+}

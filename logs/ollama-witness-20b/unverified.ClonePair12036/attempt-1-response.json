@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 replaces occurrences of mark with toMark even when toMark is null, resulting in the string \\\"null\\\" inserted; method2 returns the original string unchanged when newS is null.\",\"arguments_java\":[\"\\\"abc\\\"\"],\"parameter_types\":[\"String\",\"String\",\"String\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1149,
+  "eval_count": 316,
+  "total_duration": 2547634600,
+  "load_duration": 2086800
+}

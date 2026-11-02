@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 calls Double.parseDouble on the raw string, which does not ignore trailing whitespace. The input \"1.0E400 \" contains a trailing space, so Double.parseDouble throws a NumberFormatException and method1 returns null. method2 trims the string before constructing a Double; the trimmed string \"1.0E400\" is a valid numeric literal that overflows to Infinity, so method2 returns Double.POSITIVE_INFINITY.",
+  "arguments_java": [
+    "\"1.0E400 \""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For input byte[]{1,2,3,4} method1 interprets the array as a little‑endian 32‑bit integer: 1 + 2<<8 + 3<<16 + 4<<24 = 67305985. method2 performs a different accumulation: it processes the bytes in reverse order, adds each as an unsigned value, multiplies by 256 after each step, and finally adds the first byte. This yields 263554*256+1 = 674,  ...  which is not equal to 67305985, so the return values differ.\",\"arguments_java\":[\"new byte[]{1,2,3,4}\"],\"parameter_types\":[\"byte[]\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1260,
+  "eval_count": 551,
+  "total_duration": 4477021700,
+  "load_duration": 2646000
+}

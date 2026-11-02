@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair8505",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMA==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMA==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMA==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMA==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 uses new Double(value) which does not trim whitespace, so a string like \" 1.0\" causes a NumberFormatException and returns null. method2 trims the string before parsing, so \" 1.0\" is parsed successfully to 1.0. Thus the same input yields different return values.",
+    "arguments_java": [
+      "\" 1.0\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 122.426
+}

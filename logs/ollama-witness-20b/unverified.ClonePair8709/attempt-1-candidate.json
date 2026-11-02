@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns '?' for input 63, while method2 returns '/' for the same input.",
+  "arguments_java": [
+    "63"
+  ],
+  "parameter_types": [
+    "int"
+  ],
+  "void_return": false
+}

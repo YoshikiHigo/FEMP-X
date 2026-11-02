@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte‑array equality checks and produce the same return value, side effects, and exception behavior for all possible inputs. No concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1196,
+  "eval_count": 63,
+  "total_duration": 811235900,
+  "load_duration": 2723700
+}

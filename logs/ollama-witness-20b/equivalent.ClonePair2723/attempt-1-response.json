@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally identical; all code paths and exception handling are the same, so no concrete input can distinguish their outputs.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 2339,
+  "eval_count": 109,
+  "total_duration": 1452637500,
+  "load_duration": 2066000
+}

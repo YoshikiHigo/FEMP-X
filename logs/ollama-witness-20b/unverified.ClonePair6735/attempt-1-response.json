@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical bit‑wise construction of a long from the first eight bytes of the array. For any byte array of length ≥8 they compute the same value; for shorter arrays or null they both throw the same ArrayIndexOutOfBoundsException or NullPointerException. No deterministic input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 926,
+  "eval_count": 244,
+  "total_duration": 2220443500,
+  "load_duration": 3154200
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The logical conditions in method1 and method2 are equivalent for all integer inputs; no input can distinguish their return values."
+}

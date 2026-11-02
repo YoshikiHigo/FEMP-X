@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they read the first element of the array, then iterate over the remaining elements comparing each to the current minimum and updating it if smaller. For any non‑null array (including empty arrays), both methods either throw the same ArrayIndexOutOfBoundsException (when length is 0) or return the same minimum value. No input can cause one method to behave differently from the other."
+}

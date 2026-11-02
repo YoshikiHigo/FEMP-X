@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs. Both perform the same bounds checks and iterate over the array in the same way, returning the same index or -1. No input can cause one method to return a different value, throw a different exception, or terminate differently."
+}

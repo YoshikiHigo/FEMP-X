@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return a Float parsed from the string when the string is a valid representation of a float, and they return null otherwise. No input can cause one method to return a non-null value while the other returns null, nor can one method throw an exception that the other does not. Thus no concrete separating test case exists."
+}

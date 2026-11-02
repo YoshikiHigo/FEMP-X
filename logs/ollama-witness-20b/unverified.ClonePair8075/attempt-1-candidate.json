@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all possible inputs: they either return a numeric wrapper (Integer for strings ending with 'I', Float for strings ending with 'F') or null, and any other input causes the same exception or null result. No concrete input can make one method return a value while the other returns a different value, throws a different exception, or terminates differently."
+}

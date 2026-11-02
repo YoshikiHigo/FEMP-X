@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of an integer array using equivalent logic; the only difference is the comparison operator (>\nvs >=), which does not affect the returned value for any finite input. No input can produce a differing result, side‑effect, or exception between the two methods."
+}

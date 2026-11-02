@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 assembles the 8 bytes in big‑endian order (most significant byte first), while method2 assembles them in little‑endian order (least significant byte first). With the same 8‑byte array the numeric values differ.\",\"arguments_java\":[\"new byte[]{0,1,2,3,4,5,6,7}\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1011,
+  "eval_count": 681,
+  "total_duration": 5525692400,
+  "load_duration": 4264500
+}

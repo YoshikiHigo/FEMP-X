@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte‑to‑long conversion logic; for any valid or invalid input they produce the same result, throw the same exceptions, and have no differing side effects. No concrete separating input exists."
+}

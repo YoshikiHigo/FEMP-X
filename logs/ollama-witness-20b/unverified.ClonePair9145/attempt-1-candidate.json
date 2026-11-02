@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all deterministic, bounded inputs. Both iterate from the given index until a whitespace or the end of the string is reached, and both throw the same exception (StringIndexOutOfBoundsException) when the index is out of bounds. No input can produce a differing return value, side effect, exception type, or non‑termination between the two implementations."
+}

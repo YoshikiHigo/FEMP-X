@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For input n = 3, method1 follows the path where n > 0x00000001 but not > 0x00000003, returning 2. method2 follows the nested if‑else chain that reaches the else clause of the 0x4 check and returns 3. Thus the two methods produce different return values for the same input.",
+  "arguments_java": [
+    "3"
+  ],
+  "parameter_types": [
+    "int"
+  ],
+  "void_return": false
+}

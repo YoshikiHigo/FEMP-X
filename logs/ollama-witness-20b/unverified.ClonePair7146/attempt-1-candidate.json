@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte extraction and bit‑shifting; for any byte array and offset they produce the same integer or throw the same exception. No concrete input can distinguish their behavior."
+}

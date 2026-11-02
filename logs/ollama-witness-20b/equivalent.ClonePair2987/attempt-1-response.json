@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. They both use StringTokenizer with the same separator, handle null or empty prop identically, trim tokens, filter out empty tokens, and convert the resulting collection to a String array in the same way. No input can cause one method to return a different value, throw a different exception, or exhibit non‑termination while the other behaves differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1185,
+  "eval_count": 188,
+  "total_duration": 1951675500,
+  "load_duration": 11115000
+}

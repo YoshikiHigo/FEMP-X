@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair13380",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][1, 2, 3, 4]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MS4yLjMuNC4=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MS4yLjMuNC4=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "null",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MS4yLjMuNC4=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MS4yLjMuNC4=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][1, 2, 3, 4]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MS4yLjMuNC4=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MS4yLjMuNC4=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "null",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MS4yLjMuNC4=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MS4yLjMuNC4=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For the input \"1.2.3.4.\", method1 parses the four numeric parts and returns a byte array of length 4, whereas method2 splits the string into five parts (the trailing empty part after the final dot) and therefore returns null.",
+    "arguments_java": [
+      "\"1.2.3.4.\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 126.405
+}

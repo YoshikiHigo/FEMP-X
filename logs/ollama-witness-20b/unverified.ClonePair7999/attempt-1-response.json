@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical arithmetic and conditional logic on the same set of double parameters. No input can cause one to return a different value, throw an exception, or exhibit a side‑effect that the other does not. Therefore no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1583,
+  "eval_count": 84,
+  "total_duration": 1214053400,
+  "load_duration": 3076200
+}

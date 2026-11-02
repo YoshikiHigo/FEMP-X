@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are byte‑for‑byte identical; no input can produce a differing result, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1113,
+  "eval_count": 54,
+  "total_duration": 771989500,
+  "load_duration": 3388600
+}

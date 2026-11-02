@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical byte‑to‑long conversions over the same 8‑byte window. For any byte array and offset/index pair that does not trigger an ArrayIndexOutOfBoundsException or NullPointerException, both methods compute the same 64‑bit value. When an exception is thrown, both methods throw the same type of exception under the same conditions. No deterministic, bounded input can produce a differing return value, side effect, or exception type.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1007,
+  "eval_count": 469,
+  "total_duration": 3993095800,
+  "load_duration": 2995900
+}

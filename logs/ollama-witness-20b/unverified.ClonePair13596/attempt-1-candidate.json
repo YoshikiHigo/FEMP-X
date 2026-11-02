@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for all possible char inputs; they return the same value for every character, so no concrete separating input exists."
+}

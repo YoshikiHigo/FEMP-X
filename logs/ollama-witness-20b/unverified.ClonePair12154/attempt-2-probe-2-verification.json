@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair12154",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IyB0ZXN0IGRvIA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IyB0ZXN0IGRvIA==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IyB0ZXN0IGRvIA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IyB0ZXN0IGRvIA==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IyB0ZXN0IGRvIA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IyB0ZXN0IGRvIA==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IyB0ZXN0IGRvIA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IyB0ZXN0IGRvIA==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns false because the input string has length 10 and does not match the required 9‑character pattern, whereas method2 returns true because the string contains a ‘#’ that is not part of a ‘#{’ sequence and is followed by the literal substring \" do \".",
+    "arguments_java": [
+      "\"# test do \""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 93.706
+}

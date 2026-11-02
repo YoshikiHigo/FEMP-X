@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all possible byte values (0x00 to 0xFF), both methods produce identical two‑character hexadecimal strings for each input byte. No input can be constructed that leads to a differing return value, side effect, exception, or non‑termination."
+}

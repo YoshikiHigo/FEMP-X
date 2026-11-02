@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical two-byte little-endian extraction; no input causes differing observable behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1148,
+  "eval_count": 443,
+  "total_duration": 3505645300,
+  "load_duration": 3068600
+}

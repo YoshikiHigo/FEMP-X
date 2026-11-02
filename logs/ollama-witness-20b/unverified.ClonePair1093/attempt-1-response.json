@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical element-wise comparison of two byte arrays; the loop bounds and conditions are equivalent after the initial length check, so no input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1171,
+  "eval_count": 102,
+  "total_duration": 1193740700,
+  "load_duration": 16625700
+}

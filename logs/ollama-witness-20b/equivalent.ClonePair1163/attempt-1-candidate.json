@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical results for all possible byte array inputs, including null, empty, and all byte values. No distinguishing behavior was found."
+}

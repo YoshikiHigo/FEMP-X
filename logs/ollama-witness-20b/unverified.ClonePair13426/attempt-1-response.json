@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical two‑character hexadecimal decoding and produce the same byte array for all valid inputs, including edge cases such as empty strings, null, odd lengths, and non‑hex characters. No deterministic input can be constructed that causes one method to return a different value, throw a different exception type, or exhibit non‑termination while the other behaves differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 977,
+  "eval_count": 420,
+  "total_duration": 3564295600,
+  "load_duration": 2036900
+}

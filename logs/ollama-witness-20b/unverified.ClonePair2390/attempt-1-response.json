@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical element‑wise comparison of the two byte arrays. For any pair of non‑null byte arrays, they return the same boolean value, throw the same exception (NullPointerException when either argument is null), and have no side effects. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1181,
+  "eval_count": 89,
+  "total_duration": 1084282600,
+  "load_duration": 10158900
+}

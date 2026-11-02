@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 interprets each byte as signed and propagates the sign bit into the resulting long, whereas method2 treats all bytes as unsigned and simply concatenates them. For an input where a byte other than the most‑significant one is negative, method1 will set the corresponding high‑order bit in the result, but method2 will not. Thus the two methods produce different long values.",
+  "arguments_java": [
+    "new byte[]{0, -1, 0, 0, 0, 0, 0, 0}",
+    "0"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "int"
+  ],
+  "void_return": false
+}

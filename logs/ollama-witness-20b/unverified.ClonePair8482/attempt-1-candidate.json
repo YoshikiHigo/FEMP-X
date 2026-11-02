@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are equivalent for all possible String inputs: both return null for null or empty strings, and for any non‑empty string they both delegate to the standard Double parsing routines, which throw NumberFormatException on invalid input. Since method1 catches all Exceptions and method2 only catches NumberFormatException, but Double.parseDouble only throws NumberFormatException, no input can cause a difference in behavior."
+}

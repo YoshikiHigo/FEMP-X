@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets the 4‑byte array as an unsigned 32‑bit little‑endian integer, while method2 multiplies by 256 after adding each byte, causing the second byte (bytes[2]) to be weighted by 16777216 instead of 65536. For the input {1, -1, 0, 0} method1 returns 33554431, whereas method2 returns 859,? (a different value).\",\"arguments_java\":[\"new byte[]{1, -1, 0, 0}\"],\"parameter_types\":[\"byte[]\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1601,
+  "eval_count": 1009,
+  "total_duration": 7938221900,
+  "load_duration": 20287300
+}

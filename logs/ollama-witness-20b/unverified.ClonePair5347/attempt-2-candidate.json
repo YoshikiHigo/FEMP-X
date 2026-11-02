@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all integer inputs, both methods implement the same leap‑year logic. The bitwise test for divisibility by 4 behaves identically to the modulo test for all signed 32‑bit integers, and the subsequent checks for 100‑ and 400‑year divisibility are equivalent. No concrete input can be found that causes the two methods to produce different results."
+}

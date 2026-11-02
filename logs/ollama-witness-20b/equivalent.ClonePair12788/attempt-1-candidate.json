@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible String inputs, including null. Both return true iff the first ':' character occurs before any '/', '?', or '#' characters. No input can cause a divergence in return value, side effect, exception type, or non‑termination."
+}

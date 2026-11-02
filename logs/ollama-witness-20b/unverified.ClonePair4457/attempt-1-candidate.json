@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum element of a non‑null array in the same way; they both access array[0] without bounds checking and will throw the same ArrayIndexOutOfBoundsException for an empty array or the same NullPointerException for a null array. No input can make one method behave differently from the other."
+}

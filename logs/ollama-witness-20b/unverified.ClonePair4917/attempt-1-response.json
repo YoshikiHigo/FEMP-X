@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally identical; all control flow and arithmetic expressions are the same, so no concrete input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 2420,
+  "eval_count": 51,
+  "total_duration": 1051161000,
+  "load_duration": 10253100
+}

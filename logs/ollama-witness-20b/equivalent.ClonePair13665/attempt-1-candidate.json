@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they split the input string into two‑character substrings (or character pairs) and parse each as a hexadecimal byte. For all valid inputs—including null, empty, even‑length, odd‑length, and strings containing any characters—both methods either throw the same exception (NullPointerException or NumberFormatException) or return the same byte array. No deterministic, bounded input can cause one method to behave differently from the other."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same ceil‑division logic for all integer inputs, including negative values and the zero‑divisor case, so no concrete input can distinguish their return values, side effects, or exception behavior."
+}

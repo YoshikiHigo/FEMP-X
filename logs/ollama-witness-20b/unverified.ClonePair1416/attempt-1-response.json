@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods implement identical logic for all possible byte[] inputs; no input can cause a differing return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1312,
+  "eval_count": 61,
+  "total_duration": 870658500,
+  "load_duration": 2538600
+}

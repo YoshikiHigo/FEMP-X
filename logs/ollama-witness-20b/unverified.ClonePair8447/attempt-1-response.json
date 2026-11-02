@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 does not trim the input string before parsing, so a string containing leading or trailing whitespace that is otherwise a valid double causes Double.parseDouble to throw a NumberFormatException and method1 returns null. method2 trims the string before parsing, so the same input is parsed successfully and returns a Double value.\",\"arguments_java\":[\"\\\" 1\\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 856,
+  "eval_count": 278,
+  "total_duration": 2428934100,
+  "load_duration": 4652400
+}

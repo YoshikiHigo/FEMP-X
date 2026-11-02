@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same unsigned 32‑bit value from a 4‑byte array; exhaustive reasoning shows no input can produce a differing return value, side effect, or exception."
+}

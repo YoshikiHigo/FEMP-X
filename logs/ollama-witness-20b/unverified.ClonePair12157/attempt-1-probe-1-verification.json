@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair12157",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9vLmNvbmY=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9vLmNvbmY=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9vLmNvbmY=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9vLmNvbmY=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9vLmNvbmY=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9vLmNvbmY=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9vLmNvbmY=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9vLmNvbmY=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1(\"foo.conf\") returns false because the input length is not 9 and does not satisfy the pattern checks, whereas method2(\"foo.conf\") returns true because the file extension \"conf\" is detected (case‑insensitive). Both methods receive the same input string \"foo.conf\" and start from the same initial state, so the differing return values constitute a concrete distinguishing test.",
+    "arguments_java": [
+      "\"foo.conf\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 97.654
+}

@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair12210",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MTIzNDU2Nzg=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MTIzNDU2Nzg=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MTIzNDU2Nzg=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MTIzNDU2Nzg=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MTIzNDU2Nzg=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MTIzNDU2Nzg=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MTIzNDU2Nzg=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MTIzNDU2Nzg=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 expects a 9‑character string and returns false for any string of length 8, whereas method2 expects an 8‑character string and returns true for a string of digits of length 8. Using the same input \"12345678\" demonstrates the differing return values.",
+    "arguments_java": [
+      "\"12345678\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 126.373
+}

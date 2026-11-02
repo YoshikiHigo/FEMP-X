@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair7133",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(-1)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(-1)]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(-1)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(-1)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 with a negative offset returns 0 because the loop condition i<offset+4 is false, while method2 with a negative start index attempts to access arr[-1] and throws ArrayIndexOutOfBoundsException.",
+    "arguments_java": [
+      "new byte[]{1,2,3,4}",
+      "-1"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 169.634
+}

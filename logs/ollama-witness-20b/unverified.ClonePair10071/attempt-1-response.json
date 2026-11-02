@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical summation over the specified byte range; no input causes a differing return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1115,
+  "eval_count": 392,
+  "total_duration": 3123002300,
+  "load_duration": 2563000
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets the byte slice in reverse order while method2 interprets it in forward order, producing different long values for the same input.\",\"arguments_java\":[\"new byte[]{1,2,3}\"],\"parameter_types\":[\"byte[]\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1283,
+  "eval_count": 391,
+  "total_duration": 3137032300,
+  "load_duration": 2883100
+}

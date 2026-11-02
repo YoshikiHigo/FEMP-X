@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the arithmetic mean of the elements in the ArrayList in the same way. They handle null, empty, and non‑empty lists identically, performing the same summation and division. No input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

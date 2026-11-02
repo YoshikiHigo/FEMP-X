@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of the array in the same way for all possible inputs. They both throw ArrayIndexOutOfBoundsException on empty arrays and propagate the same exception on null arrays. For any non‑empty array the loop bounds and updates are equivalent, yielding identical results. No input can distinguish the two methods."
+}

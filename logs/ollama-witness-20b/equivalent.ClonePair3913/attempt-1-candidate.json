@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they retrieve a property value by key and return the parsed double if present, otherwise return the default value. No input can cause a differing return value, side effect, exception, or non‑termination."
+}

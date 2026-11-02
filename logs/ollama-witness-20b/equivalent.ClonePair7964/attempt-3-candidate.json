@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the control flow and edge cases for both methods, no concrete input can be constructed that leads to a differing observable behavior (return value, exception, side‑effect, or non‑termination) while keeping the same initial state and arguments. All examined scenarios either produce identical results or cause the same exception. Therefore, no separating test case exists for these two methods."
+}

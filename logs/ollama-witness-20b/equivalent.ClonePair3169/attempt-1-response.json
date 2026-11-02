@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods behave identically for all possible Object inputs: they return the unboxed value of an Integer or Long, and throw the same exceptions for null or incompatible types. No concrete input can distinguish their outputs or side effects.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 953,
+  "eval_count": 430,
+  "total_duration": 3604535600,
+  "load_duration": 3175100
+}

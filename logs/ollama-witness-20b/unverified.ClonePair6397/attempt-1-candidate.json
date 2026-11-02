@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the same 64‑bit value for any byte array of length at least 8 and any offset/idx. They are equivalent for all deterministic inputs, so no concrete separating test exists."
+}

@@ -1,0 +1,16 @@
+{
+  "found": true,
+  "difference_type": "no_termination",
+  "reason": "method1 returns an empty string when the input string is empty and the substring to replace is non‑empty, while method2 enters an infinite loop because it repeatedly searches for an empty oldString.",
+  "arguments_java": [
+    "\"\"",
+    "\"a\"",
+    "\"b\""
+  ],
+  "parameter_types": [
+    "String",
+    "String",
+    "String"
+  ],
+  "void_return": false
+}

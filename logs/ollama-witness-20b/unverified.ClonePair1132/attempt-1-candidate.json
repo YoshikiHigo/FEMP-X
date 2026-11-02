@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element-wise comparisons of the two byte arrays; no input can cause one to return a different value, throw an exception, or exhibit non-termination while the other behaves differently."
+}

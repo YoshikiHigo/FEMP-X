@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same element‑wise dot product; no input can cause a differing return value, side effect, exception, or non‑termination."
+}

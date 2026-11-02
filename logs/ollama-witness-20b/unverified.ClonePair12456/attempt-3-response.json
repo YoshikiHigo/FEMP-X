@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of the control flow and string manipulation logic in both methods, no input can be constructed that leads to a differing observable behavior (return value, side effect, exception, or non‑termination). Both methods handle all edge cases—null arguments, empty strings, overlapping matches, and varying replacement lengths—in a manner that yields identical results for any deterministic, bounded input. Therefore, no separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1521,
+  "eval_count": 1365,
+  "total_duration": 10789629500,
+  "load_duration": 13865300
+}

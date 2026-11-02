@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical replacement logic for all deterministic, bounded inputs. No input can be constructed that causes one method to return a different value, throw a different exception, or terminate differently while the other behaves otherwise.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 991,
+  "eval_count": 217,
+  "total_duration": 1777500000,
+  "load_duration": 21267400
+}

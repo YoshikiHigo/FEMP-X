@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no deterministic input can be constructed that causes a difference in return value, side effect, exception, or non‑termination. Both methods perform equivalent sequential replacements over the entire input string, handling nulls, empty arrays, and empty patterns in the same way. Therefore, no separating test case exists."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For a negative byte value, method1 interprets the byte as signed when promoted to int, producing the high nibble from the sign‑extended value, whereas method2 treats the byte as unsigned.  For the byte value 0x80 (decimal –128), method1 returns \\\"e0\\\" while method2 returns \\\"80\\\".\",\"arguments_java\":[\"(byte)-128\"],\"parameter_types\":[\"byte[]\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1219,
+  "eval_count": 949,
+  "total_duration": 7629166700,
+  "load_duration": 5463600
+}

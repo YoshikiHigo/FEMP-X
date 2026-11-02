@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical observable behavior for all possible String inputs: they both return a Long value when the input is a valid decimal representation of a long, and they both return null when the input is null or cannot be parsed. No difference in return value, side effect, exception type, or termination can be demonstrated with deterministic, bounded inputs."
+}

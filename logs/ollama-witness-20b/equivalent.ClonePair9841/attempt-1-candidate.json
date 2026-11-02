@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs. Both perform the same bounds checks and delegate to System.arraycopy with equivalent arguments, so no concrete separating input exists."
+}

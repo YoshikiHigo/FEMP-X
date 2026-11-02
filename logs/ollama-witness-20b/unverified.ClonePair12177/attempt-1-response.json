@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns false because the input string does not have length 9 and does not satisfy the pattern checks, while method2 returns true because the checksum computed from the bytes before the '*' marker equals the hexadecimal string following the marker.\",\"arguments_java\":[\"\\\"$12345678*0\\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1203,
+  "eval_count": 589,
+  "total_duration": 4864267300,
+  "load_duration": 7971300
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis, the two methods compute the same logical condition on the year, month, and day components of the input Date objects. Both handle null inputs identically, and for any pair of non‑null Date instances, the comparisons performed by Calendar and by the deprecated Date getters yield the same boolean result. No deterministic, bounded input can be constructed that causes one method to return true while the other returns false, or to exhibit any other observable difference. Therefore, no concrete separating test case exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical 4‑byte big‑endian extraction; for any valid input they return the same int, and for invalid inputs they throw the same exception types. No deterministic separating input exists."
+}

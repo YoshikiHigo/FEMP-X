@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both throw the same exceptions for null or out‑of‑bounds indices, and return the same value for all valid inputs. No concrete separating test case can be constructed within the allowed constraints."
+}

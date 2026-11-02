@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element-wise equality checks and terminate with the same boolean result for all possible byte array inputs. No concrete input can distinguish their behavior."
+}

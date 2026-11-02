@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible byte[] inputs. Both iterate over the length of the first array and compare corresponding elements of the two arrays, returning false on the first mismatch and true otherwise. They both throw the same exception (NullPointerException) when either argument is null, and they preserve input state. No concrete input can distinguish their behavior."
+}

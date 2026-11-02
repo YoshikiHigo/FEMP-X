@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive reasoning over all possible byte array inputs, the two methods exhibit identical behavior for return values, side effects, exceptions, and termination. No concrete separating test case can be constructed that satisfies the constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1297,
+  "eval_count": 648,
+  "total_duration": 5361480000,
+  "load_duration": 2570500
+}

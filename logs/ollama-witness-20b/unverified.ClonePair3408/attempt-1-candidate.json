@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all deterministic, bounded String inputs: they return the same Float value (or null) and have no observable side effects. No concrete separating input can be constructed under the given constraints."
+}

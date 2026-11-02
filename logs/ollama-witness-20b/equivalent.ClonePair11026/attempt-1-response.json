@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all integer inputs; both return true iff the column argument is 0, 1, or 2, and false otherwise. No deterministic, bounded input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 857,
+  "eval_count": 98,
+  "total_duration": 1126211700,
+  "load_duration": 17734400
+}

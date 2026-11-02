@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods evaluate equality of two Date objects in exactly the same way for all possible inputs. They return true iff both arguments are null or both are non‑null and represent the same instant. No input can cause one method to return a different value, throw an exception, or exhibit non‑termination."
+}

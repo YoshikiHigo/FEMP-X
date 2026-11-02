@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all valid inputs: they return true iff the given StringBuffer ends with the specified suffix, and both throw a NullPointerException when the buffer is null. No deterministic, bounded input can distinguish their return values, side effects, or exception types."
+}

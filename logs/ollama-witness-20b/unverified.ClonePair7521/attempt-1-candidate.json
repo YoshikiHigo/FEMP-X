@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logical checks for nulls and equality. For any pair of inputs, they either return the same boolean value or throw the same exception. No input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical bit‑wise construction of a 4‑byte integer from the same byte array slice. For any valid input (including edge cases such as empty arrays, null arrays, or offsets that cause an ArrayIndexOutOfBoundsException), the two methods either return the same integer value or throw the same exception type. No deterministic, bounded input can produce a differing return value, side effect, or exception class, and neither method has a non‑terminating path under any legal input. Therefore, no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1245,
+  "eval_count": 240,
+  "total_duration": 2140759700,
+  "load_duration": 6221700
+}

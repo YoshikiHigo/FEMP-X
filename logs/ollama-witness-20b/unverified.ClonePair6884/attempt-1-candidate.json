@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all possible integer triples, method1 and method2 produce identical results for every input. No concrete separating test case exists."
+}

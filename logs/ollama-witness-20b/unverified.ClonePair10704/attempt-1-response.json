@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods evaluate the same character ranges (digits, uppercase, lowercase) and return identical boolean values for every possible char input. No deterministic, bounded input can distinguish their behaviors.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 867,
+  "eval_count": 630,
+  "total_duration": 4837239300,
+  "load_duration": 8655700
+}

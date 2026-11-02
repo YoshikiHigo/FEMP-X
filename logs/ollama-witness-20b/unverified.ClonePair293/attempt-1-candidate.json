@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: they compare the lengths of the two byte arrays and then compare each element in order. There is no input that will cause one method to behave differently from the other. Both methods return the same boolean value for any pair of byte arrays, throw the same exception (NullPointerException when either argument is null), and have no side effects. Therefore no concrete separating test case exists."
+}

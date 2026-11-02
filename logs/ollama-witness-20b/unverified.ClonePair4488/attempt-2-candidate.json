@@ -1,0 +1,15 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 returns false for a pattern consisting solely of '*' characters, while method2 attempts to push more than 100 indices onto its fixed-size stack array, causing an ArrayIndexOutOfBoundsException.",
+  "arguments_java": [
+    "\"**********\" + \"**********\" + \"**********\" + \"**********\" + \"**********\" + \"**********\" + \"**********\" + \"**********\" + \"**********\" + \"**********\" + \"*\"",
+    "\"\""
+  ],
+  "parameter_types": [
+    "String",
+    "String"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

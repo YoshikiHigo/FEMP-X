@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement the standard leap‑year test and are mathematically equivalent for all 32‑bit integer inputs. No concrete input can be found that causes them to return different values, throw different exceptions, or exhibit side‑effects. Therefore no separating test case exists."
+}

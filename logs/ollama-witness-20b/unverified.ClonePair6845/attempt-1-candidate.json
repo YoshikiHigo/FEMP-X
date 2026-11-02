@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the minimum of three integers using equivalent comparison logic; exhaustive reasoning shows no input leads to differing return values, side effects, or exceptions."
+}

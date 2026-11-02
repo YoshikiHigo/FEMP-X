@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical lexicographic comparison logic for int arrays; no input can cause differing return values, side effects, or exceptions beyond the shared null‑pointer behavior."
+}

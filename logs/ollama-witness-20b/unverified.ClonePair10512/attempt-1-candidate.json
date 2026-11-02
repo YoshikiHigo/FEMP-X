@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical observable behavior for all possible String inputs: they return an Integer equal to the parsed value when the input is a valid integer string, and null otherwise. The only internal difference is that method1 always creates a new Integer instance while method2 may reuse cached instances, but this difference is not observable through the method’s return value or side effects, and therefore no concrete separating input can be constructed under the given constraints."
+}

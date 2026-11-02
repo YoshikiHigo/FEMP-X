@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return true iff both arguments are null or both are non‑null and equal according to String.equals (which is equivalent to compareTo==0). No input can distinguish the two implementations."
+}

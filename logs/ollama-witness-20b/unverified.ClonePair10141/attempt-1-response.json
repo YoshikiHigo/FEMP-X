@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 replaces each non‑overlapping occurrence of target with replacement, while method2 skips overlapping occurrences because it advances the search index by replacementLength instead of targetLength. For source=\\\"aaaa\\\", target=\\\"aa\\\", replacement=\\\"aaa\\\", method1 produces \\\"aaaaaa\\\" (length 6) and method2 produces \\\"aaaaaaa\\\" (length 7).\",\"arguments_java\":[\"\\\"aaaa\\\"\"],\"parameter_types\":[\"String\",\"String\",\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1318,
+  "eval_count": 1425,
+  "total_duration": 11045119300,
+  "load_duration": 9614100
+}

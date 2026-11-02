@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks: they both handle nulls, compare lengths, and compare each element. The only difference is that method2 first checks reference equality, but this does not change the outcome for any input. No input can make one method return a different value, throw an exception, or terminate differently."
+}

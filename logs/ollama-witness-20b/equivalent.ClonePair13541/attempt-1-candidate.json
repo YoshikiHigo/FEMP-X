@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they allocate a byte array of length s.length()/2, iterate over the string two characters at a time, parse each pair as a hexadecimal integer, cast to byte, and store it. For any non‑null input string (including empty strings) the resulting byte arrays are byte‑wise identical, and for a null input both methods throw a NullPointerException at the same point. No deterministic input can produce a differing return value, side effect, exception type, or non‑termination."
+}

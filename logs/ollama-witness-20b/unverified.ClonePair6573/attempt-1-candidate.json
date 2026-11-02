@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; they perform the same loop over the arrays and compute the dot product. No input can cause a difference in return value, side effects, or exceptions."
+}

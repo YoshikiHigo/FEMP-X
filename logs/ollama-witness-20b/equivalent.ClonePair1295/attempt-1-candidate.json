@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods produce identical results for all possible byte array inputs, including edge cases such as odd-length arrays, null inputs, and byte values that are negative. Both methods compute the same 16‑bit character values and throw the same exceptions in the same situations. No deterministic, bounded input can be constructed that would cause a difference in return value, side effect, exception type, or non‑termination."
+}

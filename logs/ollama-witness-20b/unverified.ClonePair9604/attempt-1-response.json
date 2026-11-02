@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical checks and return the same boolean value for all possible char[] inputs. No input can cause a difference in return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 940,
+  "eval_count": 115,
+  "total_duration": 973273400,
+  "load_duration": 2044700
+}

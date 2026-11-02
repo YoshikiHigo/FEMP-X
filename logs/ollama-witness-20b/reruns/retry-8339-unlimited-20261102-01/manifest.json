@@ -1,0 +1,18 @@
+{
+  "createdAt": "2026-11-02T02:36:17.547Z",
+  "model": "gpt-oss:20b",
+  "budgetMs": null,
+  "authorization": "User explicitly requested rerunning this remaining deadline pair without a time limit.",
+  "rerunOf": "logs/ollama-witness-20b/reruns/retry-failures-20261102-01/manifest.json",
+  "targets": [
+    {
+      "package": "equivalent",
+      "id": 8339,
+      "key": "equivalent.ClonePair8339",
+      "source": "src/main/java/equivalent/ClonePair8339.java",
+      "test": "src/test/java/equivalent/ClonePair8339NoDifferenceTest.java",
+      "sourceHash": "b5b70e8daae23aa287b5bb784d8739392b458d94e4facb45d03ef55d94fa3a9e",
+      "testHash": "ce6221fb3d938c2590de80c84225aa92510199dae6a6ff49083769da10f32383"
+    }
+  ]
+}

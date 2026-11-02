@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of a double array in identical ways. For all possible inputs—including empty arrays, null arrays, and arrays with any number of elements—both methods either return the same value or throw the same exception type. No deterministic, bounded input can distinguish their behavior."
+}

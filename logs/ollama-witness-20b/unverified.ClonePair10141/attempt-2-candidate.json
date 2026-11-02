@@ -1,0 +1,17 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 replaces each non‑overlapping occurrence of the target in the original string, while method2 performs replacements on the evolving StringBuffer and may create additional occurrences of the target in the updated string. For source=\"aaaa\", target=\"aa\", replacement=\"aaa\" method1 yields \"aaaaaa\" (6 chars) whereas method2 yields \"aaaaaaa\" (7 chars).",
+  "arguments_java": [
+    "\"aaaa\"",
+    "\"aa\"",
+    "\"aaa\""
+  ],
+  "parameter_types": [
+    "String",
+    "String",
+    "String"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

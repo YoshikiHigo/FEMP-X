@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two implementations, no input can be constructed that causes one method to return a non‑null byte array while the other returns null, throws an exception, or behaves otherwise differently. Both methods perform equivalent validation of an IPv4 dotted decimal string and produce identical results for all deterministic, bounded inputs. Therefore, no concrete separating test case exists."
+}

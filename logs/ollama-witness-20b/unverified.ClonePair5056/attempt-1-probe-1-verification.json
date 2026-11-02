@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair5056",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(-1)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(-1)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(-1)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(-1)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For a negative year such as -1, method1 returns false because -1 % 4 != 0, whereas method2 incorrectly treats -1 as divisible by 4 using bitwise AND and returns true.",
+    "arguments_java": [
+      "-1"
+    ],
+    "parameter_types": [
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 162.281
+}

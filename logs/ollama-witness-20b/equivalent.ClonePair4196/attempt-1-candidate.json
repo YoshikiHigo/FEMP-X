@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical clamping logic; for any float input and bounds, they return the same value. No distinguishing behavior exists."
+}

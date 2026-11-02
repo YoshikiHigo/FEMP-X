@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same value for every possible integer input; there is no input that distinguishes their behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical control flow and return values for all possible combinations of null and non‑null integer arrays with any lengths and contents. No input can distinguish their behavior."
+}

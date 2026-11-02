@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all possible byte[] inputs; they perform identical null checks, length checks, and element-wise comparisons, returning the same boolean value for every input.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 931,
+  "eval_count": 80,
+  "total_duration": 886994500,
+  "load_duration": 2780700
+}

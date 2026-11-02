@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they return the original array when the index is out of bounds, otherwise they return a new array with the element at the specified index removed. No difference in return value, side effects, exceptions, or termination can be demonstrated with deterministic, bounded inputs."
+}

@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair13282",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "null",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MDEuMDIuMDMuMDQ=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MDEuMDIuMDMuMDQ=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][1, 2, 3, 4]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MDEuMDIuMDMuMDQ=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MDEuMDIuMDMuMDQ=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "null",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MDEuMDIuMDMuMDQ=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MDEuMDIuMDMuMDQ=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][1, 2, 3, 4]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MDEuMDIuMDMuMDQ=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MDEuMDIuMDMuMDQ=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 rejects octets with leading zeros such as \"01\" because it treats a zero value followed by another digit as invalid, whereas method2 accepts them and parses them as integers.",
+    "arguments_java": [
+      "\"01.02.03.04\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 124.406
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no deterministic input can be constructed that causes one method to return a different value, throw a different exception, exhibit a side‑effect, or terminate differently while the other behaves equivalently. Both methods perform identical string replacement logic for all valid inputs, including edge cases such as empty strings, null arguments, and overlapping patterns. Therefore, no concrete separating test case exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logical checks on the byte arrays. Both compare reference equality, nullity, length, and element-wise equality using either an early return or a cumulative XOR. For any deterministic, bounded input, both methods will produce the same boolean result, throw the same exceptions (none in this case), and have no side effects. Therefore, no concrete separating test case exists."
+}

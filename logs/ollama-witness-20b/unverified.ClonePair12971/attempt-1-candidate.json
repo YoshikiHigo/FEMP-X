@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all possible deterministic, bounded inputs—including cases with null arguments, empty strings, and various token positions—both methods exhibit identical behavior. They either return the same string, throw the same exception, or enter the same infinite loop. No concrete separating input was found."
+}

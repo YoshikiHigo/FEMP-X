@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic: they return true if the character is a whitespace character (' ', '\\\\n', '\\\\t', '\\\\r') and false otherwise. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 754,
+  "eval_count": 68,
+  "total_duration": 629789300,
+  "load_duration": 6761200
+}

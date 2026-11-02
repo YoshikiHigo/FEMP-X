@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible byte[] inputs, including nulls, empty arrays, and arrays of equal or differing lengths. No deterministic, bounded input can cause one method to return a different value, throw a different exception, or exhibit a side effect that the other method does not. Therefore, a concrete separating test case cannot be constructed.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1306,
+  "eval_count": 299,
+  "total_duration": 2682242900,
+  "load_duration": 8473300
+}

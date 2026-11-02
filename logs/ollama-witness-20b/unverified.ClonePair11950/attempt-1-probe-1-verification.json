@@ -1,0 +1,65 @@
+{
+  "key": "unverified.ClonePair11950",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "TIMEOUT",
+        "valueSnapshot": null,
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "<snapshot-skipped-after-timeout>"
+      },
+      {
+        "status": "TIMEOUT",
+        "valueSnapshot": null,
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "<snapshot-skipped-after-timeout>"
+      }
+    ],
+    [
+      {
+        "status": "TIMEOUT",
+        "valueSnapshot": null,
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "<snapshot-skipped-after-timeout>"
+      },
+      {
+        "status": "TIMEOUT",
+        "valueSnapshot": null,
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "<snapshot-skipped-after-timeout>"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "no_termination",
+    "reason": "When oldPattern is the empty string, method1 enters an infinite loop because the pattern length is zero and the search index never advances. In contrast, method2 advances the search position by the length of toMark on each iteration, eventually causing indexOf to return -1 and terminating the loop. Thus, for the same input, method1 does not terminate while method2 does.",
+    "arguments_java": [
+      "\"abc\"",
+      "\"\"",
+      "\"x\""
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": "method1: index=inString.indexOf(\"\",0) returns 0; pos remains 0; loop repeats forever. method2: p starts 0, each iteration p+=toMark.length() (1), eventually p>length and indexOf(\"\",p) returns -1, loop exits."
+  },
+  "remainingSeconds": 109.634
+}

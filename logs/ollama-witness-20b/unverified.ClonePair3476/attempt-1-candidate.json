@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element-wise equality checks on integer arrays, handling nulls and length mismatches in the same way. No deterministic input can cause one to return a different result or exhibit a different side effect."
+}

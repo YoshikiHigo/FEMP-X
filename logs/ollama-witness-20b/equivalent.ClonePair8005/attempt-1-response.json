@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive reasoning, both methods produce identical results for all possible byte[] inputs, including null, empty, and non‑multiple‑of‑4 lengths. No concrete separating input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1455,
+  "eval_count": 358,
+  "total_duration": 3245975200,
+  "load_duration": 7386500
+}

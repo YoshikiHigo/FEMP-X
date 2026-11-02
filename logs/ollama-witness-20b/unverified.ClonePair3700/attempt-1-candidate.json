@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null checks and compare the two strings for equality using either equals() or compareTo() == 0. For any pair of input strings (including nulls), the control flow and return values are the same. No input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

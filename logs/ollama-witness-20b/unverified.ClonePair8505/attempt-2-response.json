@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods use Java's Double parsing which accepts any Unicode whitespace around the numeric literal. The only difference is that method2 trims the string before parsing, but Double(String) already ignores surrounding whitespace. Therefore, for any input that is not null or empty, both methods return the same Double value or null. No concrete input can distinguish their behavior under the allowed differences.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 957,
+  "eval_count": 305,
+  "total_duration": 2582915600,
+  "load_duration": 2206100
+}

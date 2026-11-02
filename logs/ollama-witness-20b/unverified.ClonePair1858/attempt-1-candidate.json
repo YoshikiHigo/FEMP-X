@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null checks, length checks, and element-wise comparisons in the same order, yielding the same boolean result for any pair of byte arrays. No input can distinguish their behavior."
+}

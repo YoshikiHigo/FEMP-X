@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical logic for all int inputs; modulo operations in Java behave consistently for positive and negative values, so no input can distinguish their outputs."
+}

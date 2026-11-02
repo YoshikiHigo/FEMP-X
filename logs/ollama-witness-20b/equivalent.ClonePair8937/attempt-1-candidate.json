@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic for all deterministic, bounded inputs; no concrete separating test case was identified."
+}

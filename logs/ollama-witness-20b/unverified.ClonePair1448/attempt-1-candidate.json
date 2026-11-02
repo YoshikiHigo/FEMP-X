@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "All possible byte values produce identical two‑character hexadecimal strings in both methods; no input distinguishes the return values, side effects, or exception behavior."
+}

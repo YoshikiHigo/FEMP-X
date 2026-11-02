@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible byte[] inputs and initial states. Both handle nulls, reference equality, length checks, and element-wise comparison in the same way, yielding the same return value, side effects, and exception behavior for every input. No concrete separating test case exists."
+}

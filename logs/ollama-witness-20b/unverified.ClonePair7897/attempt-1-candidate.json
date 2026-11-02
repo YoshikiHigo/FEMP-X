@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the Euclidean algorithm for computing the greatest common divisor. For all integer inputs (including negative values, zeros, and equal values), the control flow and arithmetic operations in method1 and method2 produce identical results. No input can be found that causes a difference in return value, side effects, exceptions, or non‑termination."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical operations: they both iterate over the string, subtract the corresponding character from the array, and return the same values or throw the same exceptions. No deterministic input can cause one method to behave differently from the other under the given constraints."
+}

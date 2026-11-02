@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They handle null collections, empty collections, single-element collections, and collections with multiple elements in the same way, and they both throw a NullPointerException when the separator is null. No concrete input can distinguish their outputs or side effects."
+}

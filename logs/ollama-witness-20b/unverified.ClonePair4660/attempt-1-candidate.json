@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same leap‑year logic; for any integer input they return the same boolean value. No side effects or exceptions are present, and the code paths are identical. Therefore no concrete separating test case exists."
+}

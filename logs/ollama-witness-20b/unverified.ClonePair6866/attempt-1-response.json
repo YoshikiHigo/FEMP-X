@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical little‑endian conversion of four bytes; for any byte array and offset that does not cause an exception, they produce the same integer result. No input can distinguish them without invoking undefined behavior or external side effects.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1261,
+  "eval_count": 144,
+  "total_duration": 1596812500,
+  "load_duration": 14026100
+}

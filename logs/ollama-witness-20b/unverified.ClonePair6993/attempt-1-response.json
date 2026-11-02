@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the same 32‑bit integer from four consecutive bytes starting at the given offset. For any valid byte array and offset within bounds, the bitwise operations performed are equivalent. For out‑of‑bounds or null inputs, both methods throw the same ArrayIndexOutOfBoundsException or NullPointerException. No deterministic input can produce a differing return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1245,
+  "eval_count": 195,
+  "total_duration": 1946365000,
+  "load_duration": 9790300
+}

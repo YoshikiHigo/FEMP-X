@@ -1,0 +1,63 @@
+{
+  "key": "unverified.ClonePair5582",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(-5),Integer(3)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(-5),Integer(3)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(-5),Integer(3)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(-5),Integer(3)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(-5),Integer(3)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(-5),Integer(3)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(-5),Integer(3)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(-5),Integer(3)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 normalizes a negative remainder by adding a positive divisor, whereas method2 normalizes a negative remainder by adding a negative divisor, producing different results when the divisor is positive in method1 and negative in method2.",
+    "arguments_java": [
+      "-5",
+      "3"
+    ],
+    "parameter_types": [
+      "int",
+      "int"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 162.911
+}

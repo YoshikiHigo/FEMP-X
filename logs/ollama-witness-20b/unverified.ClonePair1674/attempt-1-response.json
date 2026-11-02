@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible byte[] inputs and initial states; no concrete separating test case can be constructed.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1238,
+  "eval_count": 269,
+  "total_duration": 2423084300,
+  "load_duration": 15613100
+}

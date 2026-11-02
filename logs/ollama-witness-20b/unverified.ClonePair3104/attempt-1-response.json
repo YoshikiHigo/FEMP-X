@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all possible byte[] inputs. Both return false for any array whose length is not exactly 8, and for arrays of length 8 they compare the same sequence of bytes using equivalent byte literals. They also both throw a NullPointerException when passed a null reference. No deterministic, bounded input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1202,
+  "eval_count": 267,
+  "total_duration": 2411715000,
+  "load_duration": 6918400
+}

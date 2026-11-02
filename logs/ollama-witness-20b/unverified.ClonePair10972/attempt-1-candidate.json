@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce the same byte value for every possible char input; method1 returns 0x00 for all non-matching cases and method2 returns 0, which is identical. No distinguishing input exists."
+}

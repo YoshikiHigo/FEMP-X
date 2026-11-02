@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of both methods, they produce identical outputs for all possible inputs of type String and boolean. No concrete separating input was found.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1476,
+  "eval_count": 479,
+  "total_duration": 4103204800,
+  "load_duration": 7818900
+}

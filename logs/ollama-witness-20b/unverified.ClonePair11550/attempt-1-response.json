@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For i=21, method1 returns \\\"21st\\\" while method2 returns \\\"21th\\\".\",\"arguments_java\":[\"21\"],\"parameter_types\":[\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1081,
+  "eval_count": 260,
+  "total_duration": 2138352400,
+  "load_duration": 2905900
+}

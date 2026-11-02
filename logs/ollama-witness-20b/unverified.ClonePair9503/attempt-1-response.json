@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the maximum of the input array in identical ways; no input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 978,
+  "eval_count": 49,
+  "total_duration": 474613700,
+  "load_duration": 7169200
+}

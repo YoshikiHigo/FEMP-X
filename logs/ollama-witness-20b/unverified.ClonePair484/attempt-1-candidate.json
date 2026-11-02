@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null checks, length checks, and element-wise comparisons. For any pair of byte arrays (including nulls and empty arrays), the logical flow and return values of method1 and method2 are equivalent. No input can distinguish their behavior."
+}

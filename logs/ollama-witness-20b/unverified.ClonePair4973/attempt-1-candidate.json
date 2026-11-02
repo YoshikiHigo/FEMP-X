@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods contain identical logic paths for all possible inputs; no deterministic input can cause differing behavior."
+}

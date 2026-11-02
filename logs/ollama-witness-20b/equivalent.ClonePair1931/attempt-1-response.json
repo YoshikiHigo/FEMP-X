@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical hexadecimal conversion for all byte values; no input can produce a differing return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1071,
+  "eval_count": 2381,
+  "total_duration": 18545637600,
+  "load_duration": 5440900
+}

@@ -1,0 +1,15 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 evaluates both sides of the equality check, so if one side returns true and the other false the overall result is false. method2 only evaluates the first equals call when the objects are not the same reference, so it can return true even if the reverse equality check would fail. Using an empty list and a subclass of ArrayList that overrides equals to always return false demonstrates this asymmetry.",
+  "arguments_java": [
+    "java.util.Collections.emptyList()",
+    "new java.util.ArrayList(){ public boolean equals(Object o){ return false; } }"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

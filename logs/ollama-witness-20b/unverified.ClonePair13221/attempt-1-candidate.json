@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform equivalent checks: they compare the same year and the same day-of-year (which uniquely determines month and day-of-month). For any pair of Calendar instances (including nulls, which cause the same NullPointerException in both methods), the outcomes are identical. No deterministic input can distinguish them."
+}

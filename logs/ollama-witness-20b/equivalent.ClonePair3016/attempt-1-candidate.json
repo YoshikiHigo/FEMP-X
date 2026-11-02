@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null checks and delegate to String.split with the same arguments; no input can cause differing behavior."
+}

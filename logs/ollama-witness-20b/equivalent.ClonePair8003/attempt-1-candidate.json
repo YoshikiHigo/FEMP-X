@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They produce the same results for any byte array whose length is a multiple of four, and both throw an ArrayIndexOutOfBoundsException when the length is not a multiple of four. No distinguishing input can be constructed that satisfies the constraints of the task."
+}

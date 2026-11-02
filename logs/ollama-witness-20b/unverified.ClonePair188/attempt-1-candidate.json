@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible byte[] inputs. Method1 checks for nulls, length equality, and element-wise equality, while Method2 first checks reference equality (which implies all other checks would succeed if true). Since a reference equality implies identical contents, no input can cause differing return values, side effects, or exceptions. Therefore no concrete separating test case exists."
+}

@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 converts each byte to its two‑digit hexadecimal representation, while method2 maps the byte value to a two‑character string using a different base‑16 encoding scheme. For the byte value –1 (255 unsigned), method1 returns \"ff\" whereas method2 returns \"gf\".",
+  "arguments_java": [
+    "new byte[]{(byte)-1}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte range checks and return the same computed value for any input byte. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 876,
+  "eval_count": 52,
+  "total_duration": 714950400,
+  "load_duration": 12069200
+}

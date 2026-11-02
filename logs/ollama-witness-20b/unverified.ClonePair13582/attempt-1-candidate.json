@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same value for every possible char input; no concrete separating input exists."
+}

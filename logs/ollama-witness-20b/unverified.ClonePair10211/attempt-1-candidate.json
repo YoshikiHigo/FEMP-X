@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return the parsed Integer when the input is a valid decimal representation, and return null otherwise (including for null or malformed inputs). No distinguishing input exists under the allowed criteria."
+}

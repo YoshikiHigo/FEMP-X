@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte extraction and array indexing for all possible inputs; no concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1374,
+  "eval_count": 420,
+  "total_duration": 3594422200,
+  "load_duration": 3277400
+}

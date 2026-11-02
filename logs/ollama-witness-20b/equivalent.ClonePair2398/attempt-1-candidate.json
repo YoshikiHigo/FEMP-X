@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical bit‑wise operations on a 4‑byte array; for any byte value the signed promotion and subsequent masking in method1 yields the same result as the explicit masking in method2. No input can produce a differing return value, side effect, exception, or non‑termination."
+}

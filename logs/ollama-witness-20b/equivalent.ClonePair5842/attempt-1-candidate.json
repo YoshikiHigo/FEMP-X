@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical byte‑array slice comparisons; for all deterministic, bounded inputs they produce the same return value, throw the same exceptions, and terminate. No concrete separating input can be constructed without violating the constraints."
+}

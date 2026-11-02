@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same loop over the string and return the same index; no input can distinguish their behavior."
+}

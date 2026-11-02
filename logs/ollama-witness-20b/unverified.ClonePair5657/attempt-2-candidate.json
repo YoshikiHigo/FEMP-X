@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the control flow and return conditions of both methods, no input can produce differing observable behavior. Both methods handle all combinations of null and non‑null arguments, and the early reference equality check in method1 is matched by the null check in method2. Therefore, no concrete separating test case exists."
+}

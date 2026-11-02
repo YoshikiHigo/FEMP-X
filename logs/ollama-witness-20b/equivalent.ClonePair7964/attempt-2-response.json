@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns -1 for an empty pattern, while method2 returns the fromIndex value when the pattern is empty.\",\"arguments_java\":[\"\\\"abc\\\"\",\"\\\"\\\"\",\"1\"],\"parameter_types\":[\"String\",\"String\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1586,
+  "eval_count": 827,
+  "total_duration": 6602271600,
+  "load_duration": 2574700
+}

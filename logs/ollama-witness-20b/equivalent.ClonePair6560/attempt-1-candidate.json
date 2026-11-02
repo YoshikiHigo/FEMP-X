@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: they retrieve the array from the map, check for null or empty, and return the first element or null. No input can cause a difference in return value, side effects, or exceptions."
+}

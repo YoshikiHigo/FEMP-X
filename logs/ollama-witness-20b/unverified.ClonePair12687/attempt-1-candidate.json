@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return the same Class object for each primitive type name, return null for unmatched names, and throw a NullPointerException when the argument is null. No deterministic, bounded input can distinguish their outputs or side effects."
+}

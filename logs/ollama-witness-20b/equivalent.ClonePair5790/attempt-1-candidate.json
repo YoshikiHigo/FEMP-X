@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they allocate a char array of length 'length', iterate from 0 to length-1, and set each element to '1' or '0' based on the corresponding boolean value at index offset + i. For all valid inputs (including null arrays, negative offsets, negative lengths, and zero lengths), both methods either throw the same exception or return the same string. No deterministic, bounded input can produce a differing return value, side effect, exception type, or non‑termination between the two methods."
+}

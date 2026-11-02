@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods delegate to the same underlying parsing logic (Double.parseDouble / Double.valueOf), which accepts the same set of inputs and produces identical results for all deterministic, bounded String values. No concrete input can be constructed that causes one method to return a different value, throw an exception, or exhibit non‑termination while the other behaves differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1064,
+  "eval_count": 351,
+  "total_duration": 3014912600,
+  "load_duration": 5587800
+}

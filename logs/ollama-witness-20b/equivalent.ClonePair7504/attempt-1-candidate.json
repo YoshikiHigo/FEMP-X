@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; the only difference is the negated condition in method2, which yields the same result for all inputs. No concrete input can distinguish them."
+}

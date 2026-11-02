@@ -1,0 +1,60 @@
+{
+  "key": "equivalent.ClonePair8631",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Character(97)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Character(97)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Character(97)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Character(97)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns a cached Character instance via autoboxing of the first character of the string, whereas method2 explicitly creates a new Character object with the same value. For a non‑empty string such as \"a\", the two methods return equal Character objects (equals() returns true) but the returned objects are not the same reference. This difference can be observed by comparing the object identities of the results.",
+    "arguments_java": [
+      "\"a\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 161.094
+}

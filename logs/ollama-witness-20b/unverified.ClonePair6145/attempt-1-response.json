@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets two bytes per output element, while method2 interprets three bytes per output element. With the same input buffer and out_len=1, the computed float values differ.\",\"arguments_java\":[\"new byte[]{1,2,3}\"],\"parameter_types\":[\"byte[]\",\"int\",\"float[]\",\"int\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1623,
+  "eval_count": 316,
+  "total_duration": 2906561600,
+  "load_duration": 2550700
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For a two‑byte input where both bytes are 0xFF (i.e. -1 in signed byte), method1 encodes the second 6‑bit group using the value of the first byte’s lower two bits (3) shifted left by 4, then adds the upper 4 bits of the second byte. This yields the character ‘f’. Method2, however, uses the standard Base64 table and produces ‘/’ for that position. Thus the outputs differ: method1 returns \\\"/f8=\\\" while method2 returns \\\"//8=\\\".\",\"arguments_java\":[\"new byte[]{(byte)-1,(byte)-1}\"],\"parameter_types\":[\"byte[]\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1702,
+  "eval_count": 1394,
+  "total_duration": 11095345200,
+  "load_duration": 3848000
+}

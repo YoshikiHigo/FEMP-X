@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks for alphanumeric characters; no input can distinguish their behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: they check for nulls, compare lengths, and then element‑wise equality. For any byte[] inputs, both return the same boolean value, modify no state, and never throw. No concrete separating input exists."
+}

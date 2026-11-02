@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical linear scans over the provided array using the same bounds. For any given input (including null arrays, empty arrays, or arrays shorter than the specified size), both methods either return the first matching index or -1, and they both throw the same ArrayIndexOutOfBoundsException or NullPointerException under identical circumstances. No deterministic, bounded input can produce a differing observable behavior between method1 and method2."
+}

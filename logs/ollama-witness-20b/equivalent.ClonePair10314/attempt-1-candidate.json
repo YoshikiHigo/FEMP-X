@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform exactly the same operations; the only difference is the placement of braces, which does not affect behavior. No input can distinguish them."
+}

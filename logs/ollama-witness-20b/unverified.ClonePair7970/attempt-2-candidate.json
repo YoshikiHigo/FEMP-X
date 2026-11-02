@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs. Method1 explicitly returns true when the second argument is an empty string, but method2’s use of str.indexOf(searchStr) >= 0 also yields true for an empty search string (indexOf returns 0). For null arguments both methods return false, and for any non‑empty search string the result depends solely on the presence of the substring, which is the same in both methods. Therefore no concrete input can distinguish the two methods."
+}

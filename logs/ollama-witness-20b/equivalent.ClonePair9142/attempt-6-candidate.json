@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all integer inputs, both methods produce identical results for every possible 32‑bit signed integer. No concrete input can be found that distinguishes their return values, side effects, or termination behavior."
+}

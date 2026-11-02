@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical logic: they iterate from the given index while the character is whitespace, then return the index. For any input—including null strings, negative indices, or indices beyond the string length—both methods throw the same exception (NullPointerException or StringIndexOutOfBoundsException) or return the same value. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1033,
+  "eval_count": 154,
+  "total_duration": 1304692400,
+  "load_duration": 20522300
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for comparing byte arrays; they return the same boolean value for all possible inputs, throw the same exception (NullPointerException) when either argument is null, and do not produce any side effects. No concrete separating test case exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical forward and reverse scans of the CharSequence, incrementing a counter when the character matches. They both throw a NullPointerException when the input CharSequence is null and otherwise return the same count. No input can distinguish their behavior."
+}

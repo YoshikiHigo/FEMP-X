@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods evaluate the same set of conditions for all integer inputs; exhaustive reasoning shows they return identical results for every possible int value. No concrete input can distinguish them."
+}

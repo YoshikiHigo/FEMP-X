@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical computations: they initialize a variable with the first array element and then iterate over the array to find the minimum value. For any input array (including null, empty, or non‑empty), both methods either throw the same exception (NullPointerException for null) or return the same minimum value. No distinguishing input exists."
+}

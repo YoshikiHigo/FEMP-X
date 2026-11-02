@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no input can be constructed that causes them to behave differently. Both methods handle null, empty, whitespace, numeric, NaN, Infinity, and malformed strings in the same way: they either return a Double parsed from the string or null if parsing fails. Therefore, no concrete separating test case exists."
+}

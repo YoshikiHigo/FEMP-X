@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement the same primality test logic and return identical results for all deterministic, bounded long inputs. No concrete separating input was identified.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 950,
+  "eval_count": 2798,
+  "total_duration": 21282366100,
+  "load_duration": 5241600
+}

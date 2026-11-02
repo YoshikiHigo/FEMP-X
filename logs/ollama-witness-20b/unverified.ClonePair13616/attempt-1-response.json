@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical operations on the input string: they allocate a byte array of length string.length()/2, iterate over the string two characters at a time, parse each pair as a hexadecimal integer, cast to byte, and store it. Both methods return the same byte array for any non‑null input, and both throw a NullPointerException for a null input. No deterministic, bounded input can cause one method to behave differently from the other.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 980,
+  "eval_count": 130,
+  "total_duration": 1090158600,
+  "load_duration": 3132200
+}

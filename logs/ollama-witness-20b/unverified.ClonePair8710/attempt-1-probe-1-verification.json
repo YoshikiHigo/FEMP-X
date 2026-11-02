@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair8710",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Character(122)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(51)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(51)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Character(122)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(51)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(51)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Character(122)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(51)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(51)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Character(122)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(51)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(51)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns '?' for input 51 because the condition >51 && <62 is false (51 is not greater than 51), whereas method2 returns 'z' for input 51 because the condition 26 <= sixBit <= 51 is true.",
+    "arguments_java": [
+      "51"
+    ],
+    "parameter_types": [
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 149.881
+}

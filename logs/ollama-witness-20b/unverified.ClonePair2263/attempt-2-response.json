@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all possible byte[] inputs. Both handle nulls, length mismatches, and element comparisons in the same way, and neither mutates its arguments or produces side effects. No concrete input can distinguish their return values, exceptions, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1448,
+  "eval_count": 266,
+  "total_duration": 2351102100,
+  "load_duration": 2548400
+}

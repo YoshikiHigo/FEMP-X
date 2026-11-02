@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The behavior of method1 and method2 depends on the current date obtained via new Date() inside each method. Since the current date is not controllable in the test environment, there is no deterministic input that can guarantee a difference in return value, side effect, exception, or non‑termination for all possible executions. Therefore, no concrete separating test case can be provided."
+}

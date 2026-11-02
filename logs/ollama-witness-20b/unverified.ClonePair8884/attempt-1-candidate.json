@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte copying without any differing side effects or exception handling; for all deterministic, bounded inputs they produce the same result or throw the same exception."
+}

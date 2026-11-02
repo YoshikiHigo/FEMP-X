@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair8975",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(65535)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(65535)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(65535)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(65535)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(65535)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(65535)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(65535)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(65535)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns true for the character '\\uFFFF' (0xFFFF) because it satisfies the final condition (c <= 0x10FFFF). method2 does not include this value in any of its true ranges and therefore returns false.",
+    "arguments_java": [
+      "'\\uFFFF'"
+    ],
+    "parameter_types": [
+      "char"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 151.877
+}

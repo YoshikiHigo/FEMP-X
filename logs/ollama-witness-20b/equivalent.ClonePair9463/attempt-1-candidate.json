@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same formatted date string for any Calendar instance (including null, which throws the same NullPointerException). No deterministic input can produce a differing return value, side effect, exception type, or non‑termination."
+}

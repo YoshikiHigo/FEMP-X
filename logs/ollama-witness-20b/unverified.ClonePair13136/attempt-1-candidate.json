@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They perform the same substring replacement logic, handling nulls and empty strings in the same way, and neither introduces a side‑effect or differing return value that can be triggered by a concrete test case."
+}

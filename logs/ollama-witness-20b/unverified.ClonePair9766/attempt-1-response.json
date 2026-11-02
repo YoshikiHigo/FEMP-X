@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible inputs: they both return the first index at or after the given start index that is not a whitespace character, or the length of the string if none exists. They both throw the same exceptions (StringIndexOutOfBoundsException for negative indices or indices beyond the string length, and NullPointerException if the string is null). No concrete input can distinguish their outputs or side effects.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1059,
+  "eval_count": 319,
+  "total_duration": 2554384000,
+  "load_duration": 17181200
+}

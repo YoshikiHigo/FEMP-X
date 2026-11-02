@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After careful analysis of both method implementations, they produce identical boolean results for every possible char input. The guard ordering in method1 ultimately yields the same set of true ranges as the switch/default logic in method2. No deterministic, bounded input can distinguish their outputs, so no separating test case exists."
+}

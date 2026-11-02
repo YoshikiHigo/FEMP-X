@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same logic: they iterate from the given index while the character at that index is whitespace, incrementing the index until a non‑whitespace character or the end of the string is reached. For any input string and integer index, the returned value will be identical. No input can distinguish the two implementations."
+}

@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "When the first argument is null and the second is non‑null, method1 returns -1 while method2 returns 0 because method2 treats two null references as equal before checking for nullness of the first argument.",
+  "arguments_java": [
+    "null",
+    "Integer.valueOf(1)"
+  ],
+  "parameter_types": [
+    "Integer",
+    "Integer"
+  ],
+  "void_return": false
+}

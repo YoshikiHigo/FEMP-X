@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same Class object for every possible String input (including null and empty string). No input can produce a differing return value, side effect, exception, or non‑termination."
+}

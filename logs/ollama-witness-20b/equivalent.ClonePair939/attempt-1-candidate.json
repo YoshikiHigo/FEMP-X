@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, both exhibit identical behavior for all possible inputs and initial states. They both iterate until the first zero byte is encountered (or throw the same ArrayIndexOutBoundsException when no zero is present or the input is null). No concrete input can be constructed that causes one method to return a different value, throw a different exception, or exhibit non‑termination while the other behaves differently."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods interpret the 8 bytes starting at the given offset as a little‑endian 64‑bit value and perform identical bounds checking and exception handling. No input can cause one method to return a different value, throw a different exception, or terminate differently than the other."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return null for null or unparsable strings, and return the parsed Long value otherwise. No deterministic input can distinguish them."
+}

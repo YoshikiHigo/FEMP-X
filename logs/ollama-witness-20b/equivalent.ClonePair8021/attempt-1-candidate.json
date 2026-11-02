@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical results for all deterministic, bounded inputs. They both iterate over the collection, concatenate elements with commas, and handle empty or null collections in the same way. No input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical string replacement logic using StringBuilder versus StringBuffer, which only differs in thread safety. No input can cause a difference in return value, side effect, exception, or termination under the constraints of the test harness."
+}

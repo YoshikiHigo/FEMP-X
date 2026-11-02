@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair8709",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Character(47)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(63)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(63)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Character(47)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(63)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(63)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Character(47)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(63)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(63)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Character(47)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(63)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(63)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns '?' for input 63, while method2 returns '/' for the same input.",
+    "arguments_java": [
+      "63"
+    ],
+    "parameter_types": [
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 157.87
+}

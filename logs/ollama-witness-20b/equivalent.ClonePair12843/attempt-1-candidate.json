@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical operations: both cast the byte to an int (implicitly in the second method) and mask with 0xff. They behave the same for all valid inputs, including null or empty arrays, and produce the same result or exception."
+}

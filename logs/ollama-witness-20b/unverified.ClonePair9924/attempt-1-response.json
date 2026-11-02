@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte‑to‑int conversion logic; for any byte array, offset, and length the same sequence of array accesses and arithmetic is executed. No input can cause one method to return a different value, throw a different exception type, or terminate differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1272,
+  "eval_count": 344,
+  "total_duration": 2792464600,
+  "load_duration": 23388500
+}

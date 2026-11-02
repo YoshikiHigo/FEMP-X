@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical operations: they allocate a new array of the specified length and copy a segment from the source array starting at the given offset. For any valid input (including null arrays, negative offsets, or lengths that exceed the source bounds), both methods either throw the same exception or return the same result. No concrete input can distinguish their behavior."
+}

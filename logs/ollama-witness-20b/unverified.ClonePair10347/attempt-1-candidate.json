@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods delegate to Integer.parseInt and Integer.valueOf(String), which are functionally equivalent for all valid String inputs. They perform identical null/empty checks, trim the string, and parse the integer using the same underlying logic. Consequently, no deterministic, bounded input can distinguish their return values, side effects, or exception behavior."
+}

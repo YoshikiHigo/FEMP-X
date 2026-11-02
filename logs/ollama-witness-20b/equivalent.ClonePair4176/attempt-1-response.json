@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical arithmetic and conditional logic on the same float inputs; exhaustive reasoning shows no input can produce differing return values, side effects, or exceptions.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1511,
+  "eval_count": 199,
+  "total_duration": 2051760300,
+  "load_duration": 11284600
+}

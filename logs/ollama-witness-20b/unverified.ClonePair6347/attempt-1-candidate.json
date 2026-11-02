@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "Both methods interpret the 8 bytes starting at the given offset, but method1 assembles them in big‑endian order while method2 assembles them in little‑endian order. For the byte array {1,2,3,4,5,6,7,8} with offset 0, method1 returns 0x0102030405060708L (281474976710656L + … + 8), whereas method2 returns 0x0807060504030201L (1152921504606846976L + … + 1).",
+  "arguments_java": [
+    "new byte[]{1,2,3,4,5,6,7,8}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false
+}

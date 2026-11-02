@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No concrete input can be found that causes method1 and method2 to behave differently under the allowed difference categories. All examined edge cases (null arguments, empty strings, replacements that produce empty results, etc.) result in identical behavior or both methods throwing the same exception. Therefore, no separating test case exists."
+}

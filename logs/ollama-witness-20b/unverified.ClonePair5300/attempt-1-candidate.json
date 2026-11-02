@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs: they skip leading whitespace characters and return the first non‑whitespace index (or the array length if all remaining characters are whitespace). For any other input (null array, negative index, or index beyond the array bounds) both methods throw a NullPointerException or ArrayIndexOutOfBoundsException in the same manner. No concrete separating test case can be constructed under the given constraints."
+}

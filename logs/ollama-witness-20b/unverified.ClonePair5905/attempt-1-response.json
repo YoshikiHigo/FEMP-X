@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic for all possible String inputs; no input can distinguish their return values, side effects, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 899,
+  "eval_count": 58,
+  "total_duration": 914604600,
+  "load_duration": 25452500
+}

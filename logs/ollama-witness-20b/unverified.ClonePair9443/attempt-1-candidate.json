@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical maximum‑finding logic and exhibit the same behavior for all possible inputs, including empty and null arrays. No input can distinguish their return values, side effects, exceptions, or termination."
+}

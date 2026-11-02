@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "For all integer inputs where the divisor is non‑zero, both methods compute the smallest multiple of the second argument that is greater than or equal to the first argument. The arithmetic performed in each method is equivalent for positive, negative, and zero values of the first argument, and both throw an ArithmeticException when the second argument is zero. No input can be found that causes a differing return value, side effect, exception type, or non‑termination."
+}

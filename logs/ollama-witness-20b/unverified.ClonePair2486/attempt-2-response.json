@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the same 32‑bit integer from a 4‑byte array in big‑endian order; no input can produce a different result, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1435,
+  "eval_count": 236,
+  "total_duration": 2117397500,
+  "load_duration": 2548500
+}

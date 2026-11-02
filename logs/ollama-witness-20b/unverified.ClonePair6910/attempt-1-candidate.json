@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical max‑selection logic for all integer triples; exhaustive reasoning shows no input yields differing results."
+}

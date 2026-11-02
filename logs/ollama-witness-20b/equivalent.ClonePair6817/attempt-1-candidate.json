@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 compares the day of week (getDay) of the input date with the day of week of today, whereas method2 compares the day of month (getDate) of the input date with the day of month of today. For a date whose day of week is not equal to its day of month, the two methods return different boolean values.",
+  "arguments_java": [
+    "date(1690233600000L)"
+  ],
+  "parameter_types": [
+    "java.util.Date"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

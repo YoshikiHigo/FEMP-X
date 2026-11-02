@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods evaluate the same character ranges; exhaustive reasoning shows no input causes differing return values, side effects, or exceptions."
+}

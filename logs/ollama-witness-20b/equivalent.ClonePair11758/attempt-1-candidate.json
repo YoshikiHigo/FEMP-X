@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform equivalent checks for all possible String inputs: they both return false for null, trim whitespace, and then compare the trimmed string to \"true\", \"yes\", or \"1\" in a case‑insensitive manner. No deterministic, bounded input can cause one method to return a different value or throw an exception while the other does not."
+}

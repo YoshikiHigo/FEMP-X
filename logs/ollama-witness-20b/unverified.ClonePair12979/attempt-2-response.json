@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of the control flow and edge cases for both methods, no input can be constructed that causes a difference in return value, side effects, exception type, or non‑termination while keeping all three arguments identical and non‑null. The two implementations are functionally equivalent for all valid inputs.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1380,
+  "eval_count": 1110,
+  "total_duration": 8883122100,
+  "load_duration": 14882400
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the control flow and edge cases for both methods, no input can be constructed that causes a difference in return value, side effects, exception type, or non‑termination while keeping all three arguments identical and non‑null. The two implementations are functionally equivalent for all valid inputs."
+}

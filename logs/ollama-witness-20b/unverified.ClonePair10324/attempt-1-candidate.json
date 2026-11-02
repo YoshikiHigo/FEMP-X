@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods behave identically for all possible String inputs: both return null for null, empty, or non‑numeric strings, and both return the parsed Integer for valid numeric strings. No concrete input can distinguish them."
+}

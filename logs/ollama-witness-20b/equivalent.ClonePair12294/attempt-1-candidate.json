@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all sign and overflow combinations for 64‑bit signed integers, both methods produce identical results for every possible pair of inputs. No concrete input can be constructed that distinguishes the two implementations under the allowed difference categories."
+}

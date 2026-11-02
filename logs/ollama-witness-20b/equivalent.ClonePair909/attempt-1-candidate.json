@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical bounds checks and element comparisons; for any deterministic, bounded input they produce the same return value, throw the same exception type, and terminate normally. No concrete distinguishing test case exists."
+}

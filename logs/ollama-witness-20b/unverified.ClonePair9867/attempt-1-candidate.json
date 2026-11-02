@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum element of an int array in the same way. For any non‑null array, they initialize the maximum to the first element and then iterate over all elements, updating the maximum when a larger value is found. The enhanced‑for loop in method2 also visits the first element again, but since the comparison is strictly greater, it does not change the result. For a null array both methods throw a NullPointerException, and for an empty array both throw an ArrayIndexOutOfBoundsException. Thus there is no input that distinguishes the two methods."
+}

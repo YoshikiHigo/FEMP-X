@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both method1 and method2 contain identical logic and produce the same boolean result for any integer input. No distinguishing test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 810,
+  "eval_count": 51,
+  "total_duration": 772925700,
+  "load_duration": 8293100
+}

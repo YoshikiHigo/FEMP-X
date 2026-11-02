@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. The only pathological case is when the pattern string is empty, which causes an infinite loop in both methods. No input leads to a return value, side effect, exception, or non‑termination that distinguishes the two implementations."
+}

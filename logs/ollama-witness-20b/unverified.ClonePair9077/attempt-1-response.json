@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all deterministic, bounded inputs. Both iterate from the given offset/index until the end of the string or until a whitespace character is encountered, returning the index at which the loop terminates. They both throw a StringIndexOutOfBoundsException for negative or out‑of‑range indices, and return the original offset/index when it is beyond the string length. No input can cause one method to return a different value, throw a different exception type, or exhibit non‑termination while the other does not.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1059,
+  "eval_count": 358,
+  "total_duration": 3221486400,
+  "load_duration": 2529700
+}

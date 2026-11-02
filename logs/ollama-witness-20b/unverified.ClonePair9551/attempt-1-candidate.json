@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical computations on the Calendar instance (using the same field constants and formatting logic). For any non‑null Calendar input they produce the same string, and for a null input both throw a NullPointerException. No deterministic, bounded input can distinguish their behaviors."
+}

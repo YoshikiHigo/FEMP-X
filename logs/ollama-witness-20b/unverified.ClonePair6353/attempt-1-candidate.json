@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 8‑byte big‑endian value from the byte array and behave identically for all valid inputs. No deterministic input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

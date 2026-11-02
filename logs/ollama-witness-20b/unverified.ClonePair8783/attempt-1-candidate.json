@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical subarray copying; they have the same behavior for all valid inputs and throw the same exception for null or out‑of‑bounds indices. No concrete separating input exists."
+}

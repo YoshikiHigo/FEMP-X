@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit signed integer from the four bytes; no input can make them diverge."
+}

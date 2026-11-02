@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical computations and return the same value for all possible inputs. The conditional in method1 that checks `(bytes[pos + 7] & 0xff) < 0` is always false for unsigned byte values, so it has no effect. Consequently, no concrete input can distinguish the two methods."
+}

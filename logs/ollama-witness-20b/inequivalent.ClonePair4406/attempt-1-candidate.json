@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same boolean value for all possible non‑null char[] inputs (and both throw NullPointerException on null), so no concrete separating input exists."
+}

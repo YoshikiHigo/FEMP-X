@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After careful analysis of the control flow and braces in both methods, they produce identical results for all possible byte[] inputs (including nulls, empty arrays, arrays of equal or different lengths, and arrays with equal or differing contents). No input leads to a different return value, side effect, exception, or non‑termination. Therefore, no separating test case exists."
+}

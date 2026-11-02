@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are identical in behavior; the only difference is the generic type parameter on the local Vector in method2, which does not affect runtime semantics. No concrete input can distinguish their return values, side effects, or exception behavior."
+}

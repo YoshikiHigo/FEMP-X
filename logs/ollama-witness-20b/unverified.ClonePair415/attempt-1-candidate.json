@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible byte[] inputs; the loop condition i != a.length behaves the same as i < a.length for all finite array lengths, and no other differences (return value, side effects, exceptions, or non‑termination) arise."
+}

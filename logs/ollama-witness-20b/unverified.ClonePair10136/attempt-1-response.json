@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of both methods, all control paths produce identical results for every possible input respecting the method signatures and preconditions. No concrete separating test case can be constructed that distinguishes their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1336,
+  "eval_count": 602,
+  "total_duration": 5037877200,
+  "load_duration": 13131600
+}

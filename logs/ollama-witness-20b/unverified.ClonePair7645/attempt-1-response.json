@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 checks class equality and returns false for objects of different classes even if equals() returns true; method2 ignores class and relies solely on equals(), so for a java.util.Date and a java.sql.Date with the same time value method1 returns false while method2 returns true.\",\"arguments_java\":[\"new java.util.Date(1000)\",\"new java.sql.Date(1000)\"],\"parameter_types\":[\"Object\",\"Object\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 930,
+  "eval_count": 750,
+  "total_duration": 6036846000,
+  "load_duration": 11155900
+}

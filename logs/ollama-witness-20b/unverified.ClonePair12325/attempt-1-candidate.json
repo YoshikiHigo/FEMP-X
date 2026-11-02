@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They perform the same string replacement logic, handle nulls and empty strings in the same way, and any potential infinite loop (e.g., when the search string is empty) occurs in both methods. No input can cause one method to return a different value, throw a different exception, or terminate differently than the other."
+}

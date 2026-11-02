@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logical checks on the byte arrays: they first compare lengths, then compare each element in order (method1 forwards, method2 backwards). They both throw a NullPointerException when either argument is null, and they both preserve the input arrays. No deterministic, bounded input can cause one method to return a different value, throw a different exception, or exhibit a side‑effect that the other does not. Therefore, no concrete separating test case exists."
+}

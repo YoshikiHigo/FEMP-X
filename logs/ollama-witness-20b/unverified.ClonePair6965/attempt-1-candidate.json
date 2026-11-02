@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; the only difference is whitespace and formatting. No input can distinguish their behavior."
+}

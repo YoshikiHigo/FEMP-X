@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 overwrites the Result flag on each iteration, so a later matching pair can reset a previous mismatch to true. method2 correctly returns false on the first mismatch and never changes the result. For the input arrays [1,2] and [2,2] method1 returns true while method2 returns false.",
+  "arguments_java": [
+    "new byte[]{1,2}",
+    "new byte[]{2,2}"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "byte[]"
+  ],
+  "void_return": false
+}

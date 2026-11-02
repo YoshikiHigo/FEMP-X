@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the control flow and boundary conditions of both methods, no input can be constructed that causes a divergence in return value, side effects, exceptions, or termination behavior. The two implementations are logically equivalent for all long inputs."
+}

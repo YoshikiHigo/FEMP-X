@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they compare array lengths and element-wise equality, and both throw a NullPointerException when either argument is null. No input can cause one method to return a different value, throw a different exception type, or exhibit non‑termination."
+}

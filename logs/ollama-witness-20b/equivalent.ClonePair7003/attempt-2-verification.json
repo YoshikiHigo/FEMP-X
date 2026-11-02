@@ -1,0 +1,62 @@
+{
+  "key": "equivalent.ClonePair7003",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(16909060)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(16909060)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(16909060)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(16909060)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 constructs the 32‑bit integer by reading the four bytes in reverse order (starting from the byte at offset+3 and moving backwards), whereas method2 reads the four bytes in forward order (starting from the byte at offset). With a buffer of length 4 and offset 0, method1 returns 0x04030201 while method2 returns 0x01020304.",
+    "arguments_java": [
+      "new byte[]{1,2,3,4}",
+      "0"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 144.36
+}

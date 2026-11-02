@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 compares the doubleValue of the two Number objects, while method2 compares their floatValue. For a Double value 0.1 and a Float value 0.1f, the doubleValues are 0.1 and 0.10000000149011612 respectively, which are not equal, so method1 returns false. The floatValues are both 0.1f, so method2 returns true.",
+  "arguments_java": [
+    "Double.valueOf(0.1)",
+    "Float.valueOf(0.1f)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

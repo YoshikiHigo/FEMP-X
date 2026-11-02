@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte-to-long conversions over eight bytes; they handle null and out-of-bounds indices in the same way, and no input can cause one to return a different value, throw a different exception, or terminate differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 995,
+  "eval_count": 202,
+  "total_duration": 1939596000,
+  "load_duration": 2690600
+}

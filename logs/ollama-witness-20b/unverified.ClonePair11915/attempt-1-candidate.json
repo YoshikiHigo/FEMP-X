@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods evaluate the same set of character ranges in a way that yields identical boolean results for all possible char inputs. The order of the conditional checks does not affect the outcome, so no concrete input can distinguish their behavior."
+}

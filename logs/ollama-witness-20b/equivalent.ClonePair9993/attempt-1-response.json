@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"No concrete input can distinguish the two methods; they behave identically for all possible BitSet arguments, including nulls and empty sets.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1275,
+  "eval_count": 341,
+  "total_duration": 3168329500,
+  "load_duration": 18481200
+}

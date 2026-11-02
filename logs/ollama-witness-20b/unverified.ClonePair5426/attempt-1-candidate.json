@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For year 200, method1 returns true (200 is divisible by 4 but not by 100), whereas method2 returns false (it detects the 100‑divisible case after the 4‑divisible check).",
+  "arguments_java": [
+    "200"
+  ],
+  "parameter_types": [
+    "int"
+  ],
+  "void_return": false
+}

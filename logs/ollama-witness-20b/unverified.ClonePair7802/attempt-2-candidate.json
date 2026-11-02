@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible Object inputs. Both perform null checks, then compare the objects for equality, with method2 adding an explicit reference equality shortcut that does not change the outcome. No input can cause a difference in return value, side effects, exceptions, or termination."
+}

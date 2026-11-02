@@ -1,0 +1,65 @@
+{
+  "key": "unverified.ClonePair12181",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(2)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YXtifWM=),Integer(0),Character(98)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YXtifWM=),Integer(0),Character(98)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YXtifWM=),Integer(0),Character(98)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YXtifWM=),Integer(0),Character(98)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(2)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YXtifWM=),Integer(0),Character(98)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YXtifWM=),Integer(0),Character(98)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YXtifWM=),Integer(0),Character(98)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YXtifWM=),Integer(0),Character(98)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns the index of the first occurrence of quoteChar after start, treating backslash as an escape but ignoring braces. method2 returns the index of the first occurrence of match when not inside any braces (level==0) and not escaped; it ignores matches that occur while level>0. For data=\"a{b}c\", start=0, quoteChar='b', method1 finds the character 'b' at index 2, whereas method2 ignores that occurrence because it is inside braces and returns -1. Thus the two methods produce different return values for the same input.",
+    "arguments_java": [
+      "\"a{b}c\"",
+      "0",
+      "'b'"
+    ],
+    "parameter_types": [
+      "String",
+      "int",
+      "char"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 116.615
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical checks for null, length, and element equality. They return the same boolean value for all possible byte[] inputs, including cases where the arrays are the same reference or have identical contents. No distinguishing input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 950,
+  "eval_count": 178,
+  "total_duration": 1826192700,
+  "load_duration": 17343500
+}

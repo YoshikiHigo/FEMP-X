@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. They either return the original string or prepend the pad character the same number of times, and both throw the same exceptions under equivalent conditions. No concrete separating test case can be constructed within the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1226,
+  "eval_count": 356,
+  "total_duration": 3184194500,
+  "load_duration": 5132800
+}

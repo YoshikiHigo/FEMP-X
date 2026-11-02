@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs. Both return null when the input string is null, return the original string when its length is less than or equal to the specified maximum, and otherwise return the substring of length maximum concatenated with the provided suffix (or nothing if the suffix is null). No input can cause one method to return a different value, throw a different exception, or exhibit a side‑effect that the other does not. Therefore no concrete separating test case exists."
+}

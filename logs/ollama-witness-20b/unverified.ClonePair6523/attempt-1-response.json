@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 uses signed right shift (>>), so for a negative integer the high byte (bits 24‑31) is sign‑extended to 0xFF. method2 uses unsigned right shift (>>>), so the high byte is zeroed to 0x00. With input array containing a negative value and len=4, the two methods produce different byte arrays.\",\"arguments_java\":[\"new int[]{-1}\"],\"parameter_types\":[\"int[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1237,
+  "eval_count": 289,
+  "total_duration": 2631292000,
+  "load_duration": 4222100
+}

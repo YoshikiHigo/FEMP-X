@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑wise comparisons of two int[][] arrays. They both iterate over the same indices, use the same equality checks, and return the same boolean value. No input can cause one method to behave differently from the other."
+}

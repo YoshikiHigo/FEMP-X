@@ -1,0 +1,63 @@
+{
+  "key": "unverified.ClonePair7418",
+  "stable": true,
+  "differenceType": "exception",
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NullPointerException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUA3NjRjMTJiNg==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUA3NjRjMTJiNg==),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUA3NjRjMTJiNg==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUA3NjRjMTJiNg==),null]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NullPointerException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUA3NjRjMTJiNg==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUA3NjRjMTJiNg==),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUA3NjRjMTJiNg==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUA3NjRjMTJiNg==),null]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 calls o1.equals(o2) when o1 is a custom object whose equals throws NullPointerException for a null argument, while method2 guards against a null second argument and therefore does not invoke equals and returns false instead.",
+    "arguments_java": [
+      "new Object(){public boolean equals(Object o){if(o==null){throw new NullPointerException();}return super.equals(o);}}",
+      "null"
+    ],
+    "parameter_types": [
+      "Object",
+      "Object"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 159.927
+}

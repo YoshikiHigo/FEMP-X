@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are mathematically equivalent for all double inputs, including special values such as NaN and infinities. No concrete input can produce a differing return value, side effect, exception, or non‑termination."
+}

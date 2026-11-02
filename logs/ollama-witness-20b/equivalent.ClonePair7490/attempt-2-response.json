@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive reasoning over all 65536 possible char values, both methods produce identical strings for every input. No concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1282,
+  "eval_count": 461,
+  "total_duration": 3848210200,
+  "load_duration": 4079600
+}

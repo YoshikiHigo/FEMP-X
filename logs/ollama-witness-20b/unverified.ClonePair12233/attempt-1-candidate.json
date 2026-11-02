@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns false for any string whose length is not 9, while method2 returns true for any string ending with \".dat\". The string \"abcd.dat\" satisfies the latter condition but not the former, so the methods return different boolean values.",
+  "arguments_java": [
+    "\"abcd.dat\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

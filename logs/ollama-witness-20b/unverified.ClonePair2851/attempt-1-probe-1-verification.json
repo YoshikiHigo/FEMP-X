@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair2851",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1],null]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1],null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1],null]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1],null]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1],null]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1],null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1],null]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1],null]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 throws a NullPointerException when the first array is non‑null and the second array is null, because it attempts to access arrayTwo.length. method2 correctly returns false for this input.",
+    "arguments_java": [
+      "new byte[]{1}",
+      "null"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "byte[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 164.539
+}

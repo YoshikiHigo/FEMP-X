@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same loop and return the same index; the extra semicolon in method2 is a no‑op and does not affect behavior."
+}

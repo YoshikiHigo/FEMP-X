@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair12177",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(JDEyMzQ1Njc4KjA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(JDEyMzQ1Njc4KjA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(JDEyMzQ1Njc4KjA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(JDEyMzQ1Njc4KjA=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(JDEyMzQ1Njc4KjA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(JDEyMzQ1Njc4KjA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(JDEyMzQ1Njc4KjA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(JDEyMzQ1Njc4KjA=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns false because the input string does not have length 9 and does not satisfy the pattern checks, while method2 returns true because the checksum computed from the bytes before the '*' marker equals the hexadecimal string following the marker.",
+    "arguments_java": [
+      "\"$12345678*0\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 140.816
+}

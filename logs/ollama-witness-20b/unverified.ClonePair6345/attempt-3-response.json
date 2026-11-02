@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets the 8 bytes as an unsigned 64‑bit value, so the most significant byte (offset+7) contributes to the sign bit of the resulting long. method2 masks each byte to 0x7f, then restores the sign bit for every byte that was negative. For the most significant byte it additionally adds Long.MIN_VALUE, effectively setting two high bits. Thus, when the most significant byte is negative (e.g. 0x80) the two methods produce different long values.\",\"arguments_java\":[\"new byte[]{0,0,0,0,0,0,0,(byte)0x80}\",\"0\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1575,
+  "eval_count": 1439,
+  "total_duration": 11335377400,
+  "load_duration": 2561300
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are semantically identical; the only difference is the placement of braces around the do-while loop, which does not affect the behavior. No deterministic input can distinguish them."
+}

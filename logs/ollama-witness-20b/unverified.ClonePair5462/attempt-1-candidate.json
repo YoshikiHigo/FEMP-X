@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement the same leap‑year logic and return the same boolean for every integer input. No deterministic, bounded input can produce a differing return value, side effect, exception, or non‑termination."
+}

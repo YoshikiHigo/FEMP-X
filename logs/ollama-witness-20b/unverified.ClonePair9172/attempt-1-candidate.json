@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods evaluate the same conditions in different order, yielding identical boolean results for all possible char inputs. No distinguishing input exists."
+}

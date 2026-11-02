@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical checks for whitespace characters; no input can cause differing behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 758,
+  "eval_count": 56,
+  "total_duration": 518178300,
+  "load_duration": 2054900
+}

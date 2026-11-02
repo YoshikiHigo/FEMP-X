@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all possible byte[] inputs; no concrete separating test can be constructed."
+}

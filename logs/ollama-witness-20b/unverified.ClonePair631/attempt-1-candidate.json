@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for comparing byte arrays. For any non‑null input arrays of equal length, they iterate element‑by‑element and return true only if all elements match; otherwise they return false. For arrays of differing lengths they immediately return false. When either argument is null both methods throw a NullPointerException. Since the control flow, side effects, and return values are identical for all possible deterministic inputs, no concrete separating test case can be constructed."
+}

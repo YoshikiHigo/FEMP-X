@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same value for all possible String inputs; method1 returns null on null or parsing failure, and method2 also returns null in those cases. No input can distinguish their return values, side effects, or exception behavior."
+}

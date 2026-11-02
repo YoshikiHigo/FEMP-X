@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible byte[] inputs. Both correctly handle nulls, compare lengths, and compare element-wise. No input can cause one to return a different value, throw an exception, or exhibit a side‑effect that the other does not. Therefore no concrete separating test case exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible String inputs: they both return null for null or empty strings, and for non‑empty strings they both attempt Integer.valueOf and return the parsed Integer or null if a NumberFormatException is thrown. No input can produce a differing return value, side effect, exception, or non‑termination."
+}

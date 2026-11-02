@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods implement identical logical checks for alphabetic ASCII characters; no input can distinguish their outputs.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 738,
+  "eval_count": 185,
+  "total_duration": 1780713200,
+  "load_duration": 2112400
+}

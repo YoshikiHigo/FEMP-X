@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical equality checks for byte arrays; exhaustive reasoning shows no input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1498,
+  "eval_count": 296,
+  "total_duration": 2585039800,
+  "load_duration": 4204500
+}

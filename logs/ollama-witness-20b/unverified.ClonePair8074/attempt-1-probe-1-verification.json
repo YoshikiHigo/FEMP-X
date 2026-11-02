@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair8074",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(12.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MTJE)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MTJE)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "null",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MTJE)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MTJE)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(12.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MTJE)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MTJE)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "null",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MTJE)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MTJE)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns a Double when the input string ends with 'D' and the preceding substring parses as a number, whereas method2 returns null for the same input because it only returns a Float when the string ends with 'F'. Using the input \"12D\" causes method1 to return a Double(12.0) and method2 to return null, distinguishing the two methods.",
+    "arguments_java": [
+      "\"12D\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 168.093
+}

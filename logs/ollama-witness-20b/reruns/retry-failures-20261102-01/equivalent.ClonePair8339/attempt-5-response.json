@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For input 256, method1 returns 9 while method2 returns 2 due to different nesting of if/else statements.\",\"arguments_java\":[\"256\"],\"parameter_types\":[\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 2247,
+  "eval_count": 1847,
+  "total_duration": 14632346000,
+  "load_duration": 11634100
+}

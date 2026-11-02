@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return true for all alphabetic characters (A-Z and a-z) and false otherwise; no input can distinguish their behavior."
+}

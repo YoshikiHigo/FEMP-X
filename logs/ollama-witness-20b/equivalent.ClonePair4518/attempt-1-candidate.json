@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same leap‑year logic for all int values; no input can cause one to return a different value, throw an exception, or exhibit a side effect. The expressions are algebraically equivalent, and there is no scenario involving overflow or special int values that would break the equivalence."
+}

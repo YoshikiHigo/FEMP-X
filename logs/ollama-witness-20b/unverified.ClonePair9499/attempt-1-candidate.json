@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they initialize max to the first element of the array and then iterate to find the maximum. For any valid non‑empty array, they return the same value. For empty arrays or null, both throw ArrayIndexOutOfBoundsException or NullPointerException respectively, again behaving identically. No deterministic input can distinguish them."
+}

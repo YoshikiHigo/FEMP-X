@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical little-endian 32-bit integer extraction from a byte array; for all valid inputs they produce the same result and throw the same exceptions for invalid inputs. No concrete separating test case exists."
+}

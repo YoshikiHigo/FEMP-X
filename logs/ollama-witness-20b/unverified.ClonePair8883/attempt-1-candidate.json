@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte copying; for any valid or invalid inputs (including null array or negative length) they exhibit the same behavior (either throwing the same exception or returning the same array). No concrete separating input exists."
+}

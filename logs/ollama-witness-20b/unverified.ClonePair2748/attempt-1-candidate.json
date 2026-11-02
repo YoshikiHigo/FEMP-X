@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return 0.0 for null, empty, or whitespace-only strings, and otherwise return the parsed double value. The exception handling paths also coincide because Double.parseDouble only throws NumberFormatException, which is caught by both methods. No input can cause one method to throw an exception while the other returns normally, nor can it produce differing return values or side effects. Therefore, no concrete separating test case exists."
+}

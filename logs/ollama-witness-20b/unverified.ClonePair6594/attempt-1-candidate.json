@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns false when both arguments are null (it catches a NullPointerException and falls through to return false), whereas method2 returns true when both arguments are null (the first null check returns b==null).",
+  "arguments_java": [
+    "null",
+    "null"
+  ],
+  "parameter_types": [
+    "long[]",
+    "long[]"
+  ],
+  "void_return": false
+}

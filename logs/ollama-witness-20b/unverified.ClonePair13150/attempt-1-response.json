@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs: they throw the same exception types on null or odd-length strings, and produce identical byte arrays for even-length inputs. No concrete separating test case can be constructed under the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1028,
+  "eval_count": 364,
+  "total_duration": 3183810300,
+  "load_duration": 7111900
+}

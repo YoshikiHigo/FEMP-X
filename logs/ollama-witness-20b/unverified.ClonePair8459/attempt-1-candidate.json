@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical observable behavior for all deterministic, bounded inputs: they return the same Double value (or null) for any given String argument. No distinguishing test case can be constructed that satisfies the constraints."
+}

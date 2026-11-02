@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 checks that the two objects are of the same runtime class before delegating to equals, whereas method2 only checks for nullity and then calls equals unconditionally.  In the test below we create two distinct classes, A and B, that are considered equal by their equals implementations (they compare an internal integer value).  Because A and B are different classes, method1 returns false while method2 returns true.",
+  "arguments_java": [
+    "new A(5)",
+    "new B(5)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same prefix check on byte arrays; they have identical control flow, return values, and side‑effects for all possible inputs. No concrete input can distinguish them."
+}

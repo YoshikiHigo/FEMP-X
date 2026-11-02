@@ -1,0 +1,184 @@
+{
+  "runId": "retry-8339-unlimited-20261102-01",
+  "model": "gpt-oss:20b",
+  "budgetMs": null,
+  "generationRequestTimeoutMs": null,
+  "completed": 1,
+  "counts": {
+    "not_found": 1,
+    "found": 0,
+    "time_limit": 0,
+    "environment_error": 0
+  },
+  "combinedLatestCounts": {
+    "found": 175,
+    "not_found": 7327,
+    "time_limit": 0,
+    "environment_error": 0
+  },
+  "totalLatest": 7502,
+  "uniqueLatestKeys": 7502,
+  "remainingUnresolved": [],
+  "elapsedSeconds": 56.28,
+  "generationAttempts": 4,
+  "initialDiscoveryRequestAndSettingsUnchanged": true,
+  "sourceUnchanged": true,
+  "noDifferenceTestUnchanged": true,
+  "independentVerifications": [
+    {
+      "attempt": 1,
+      "candidate": [
+        "32"
+      ],
+      "stable": true,
+      "differenceType": null,
+      "outcomes": [
+        [
+          {
+            "status": "OK",
+            "valueSnapshot": "Integer(6)",
+            "exceptionClass": null,
+            "stdout": "",
+            "stderr": "",
+            "originalInputsSnapshot": "java.lang.Object[][Integer(32)]",
+            "inputAfterSnapshot": "java.lang.Object[][Integer(32)]"
+          },
+          {
+            "status": "OK",
+            "valueSnapshot": "Integer(6)",
+            "exceptionClass": null,
+            "stdout": "",
+            "stderr": "",
+            "originalInputsSnapshot": "java.lang.Object[][Integer(32)]",
+            "inputAfterSnapshot": "java.lang.Object[][Integer(32)]"
+          }
+        ],
+        [
+          {
+            "status": "OK",
+            "valueSnapshot": "Integer(6)",
+            "exceptionClass": null,
+            "stdout": "",
+            "stderr": "",
+            "originalInputsSnapshot": "java.lang.Object[][Integer(32)]",
+            "inputAfterSnapshot": "java.lang.Object[][Integer(32)]"
+          },
+          {
+            "status": "OK",
+            "valueSnapshot": "Integer(6)",
+            "exceptionClass": null,
+            "stdout": "",
+            "stderr": "",
+            "originalInputsSnapshot": "java.lang.Object[][Integer(32)]",
+            "inputAfterSnapshot": "java.lang.Object[][Integer(32)]"
+          }
+        ]
+      ]
+    },
+    {
+      "attempt": 2,
+      "candidate": [
+        "63"
+      ],
+      "stable": true,
+      "differenceType": null,
+      "outcomes": [
+        [
+          {
+            "status": "OK",
+            "valueSnapshot": "Integer(6)",
+            "exceptionClass": null,
+            "stdout": "",
+            "stderr": "",
+            "originalInputsSnapshot": "java.lang.Object[][Integer(63)]",
+            "inputAfterSnapshot": "java.lang.Object[][Integer(63)]"
+          },
+          {
+            "status": "OK",
+            "valueSnapshot": "Integer(6)",
+            "exceptionClass": null,
+            "stdout": "",
+            "stderr": "",
+            "originalInputsSnapshot": "java.lang.Object[][Integer(63)]",
+            "inputAfterSnapshot": "java.lang.Object[][Integer(63)]"
+          }
+        ],
+        [
+          {
+            "status": "OK",
+            "valueSnapshot": "Integer(6)",
+            "exceptionClass": null,
+            "stdout": "",
+            "stderr": "",
+            "originalInputsSnapshot": "java.lang.Object[][Integer(63)]",
+            "inputAfterSnapshot": "java.lang.Object[][Integer(63)]"
+          },
+          {
+            "status": "OK",
+            "valueSnapshot": "Integer(6)",
+            "exceptionClass": null,
+            "stdout": "",
+            "stderr": "",
+            "originalInputsSnapshot": "java.lang.Object[][Integer(63)]",
+            "inputAfterSnapshot": "java.lang.Object[][Integer(63)]"
+          }
+        ]
+      ]
+    },
+    {
+      "attempt": 3,
+      "candidate": [
+        "256"
+      ],
+      "stable": true,
+      "differenceType": null,
+      "outcomes": [
+        [
+          {
+            "status": "OK",
+            "valueSnapshot": "Integer(9)",
+            "exceptionClass": null,
+            "stdout": "",
+            "stderr": "",
+            "originalInputsSnapshot": "java.lang.Object[][Integer(256)]",
+            "inputAfterSnapshot": "java.lang.Object[][Integer(256)]"
+          },
+          {
+            "status": "OK",
+            "valueSnapshot": "Integer(9)",
+            "exceptionClass": null,
+            "stdout": "",
+            "stderr": "",
+            "originalInputsSnapshot": "java.lang.Object[][Integer(256)]",
+            "inputAfterSnapshot": "java.lang.Object[][Integer(256)]"
+          }
+        ],
+        [
+          {
+            "status": "OK",
+            "valueSnapshot": "Integer(9)",
+            "exceptionClass": null,
+            "stdout": "",
+            "stderr": "",
+            "originalInputsSnapshot": "java.lang.Object[][Integer(256)]",
+            "inputAfterSnapshot": "java.lang.Object[][Integer(256)]"
+          },
+          {
+            "status": "OK",
+            "valueSnapshot": "Integer(9)",
+            "exceptionClass": null,
+            "stdout": "",
+            "stderr": "",
+            "originalInputsSnapshot": "java.lang.Object[][Integer(256)]",
+            "inputAfterSnapshot": "java.lang.Object[][Integer(256)]"
+          }
+        ]
+      ]
+    }
+  ],
+  "currentPresent": false,
+  "prefetchPresent": false,
+  "batchLockPresent": false,
+  "createdAt": "2026-11-02T02:37:39.170Z",
+  "note": "Model returned found:false after 3 independently rejected candidates. Independent execution covered only the 3 proposed inputs, each method twice in fresh JVMs. The model response claim of exhaustive full 32-bit testing is unsupported and is not endorsed or used as evidence. not_found is not proof of equivalence. Previous logs remain intact."
+}

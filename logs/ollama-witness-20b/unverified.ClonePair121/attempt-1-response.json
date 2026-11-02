@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical arithmetic and control flow for all possible double inputs. No deterministic input can produce a differing return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1050,
+  "eval_count": 886,
+  "total_duration": 7200946600,
+  "load_duration": 8035600
+}

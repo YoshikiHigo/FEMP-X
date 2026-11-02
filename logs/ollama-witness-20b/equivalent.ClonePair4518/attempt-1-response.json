@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement the same leap‑year logic for all int values; no input can cause one to return a different value, throw an exception, or exhibit a side effect. The expressions are algebraically equivalent, and there is no scenario involving overflow or special int values that would break the equivalence.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 790,
+  "eval_count": 121,
+  "total_duration": 1217325600,
+  "load_duration": 9381000
+}

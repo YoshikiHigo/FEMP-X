@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they return the original string when the requested length is less than or equal to the string’s length, otherwise they prepend the required number of the specified character. They handle null strings identically (throwing a NullPointerException when attempting to compute length, or returning the string “null” when padding is applied). No input can distinguish the two implementations."
+}

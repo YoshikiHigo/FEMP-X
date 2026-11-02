@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical control flow for all possible byte values; no input can distinguish their return values, side effects, or exception behavior."
+}

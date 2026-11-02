@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over the leap‑year logic in both methods, no input value causes a divergence in return value, side effect, exception, or non‑termination. The two implementations are functionally equivalent for all integer inputs."
+}

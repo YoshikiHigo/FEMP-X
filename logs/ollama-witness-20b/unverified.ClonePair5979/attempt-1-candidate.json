@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded String inputs. They both return 0 for null, empty, or whitespace-only strings, and otherwise return Float.parseFloat of the input, catching any parsing exception and returning 0. No input can cause one method to return a different value, throw an exception, or terminate non‑normally compared to the other."
+}

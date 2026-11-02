@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical checks on the same Calendar instances derived from the input Date and the current system time. For any non‑null Date argument, they compare the year, month, and day fields of the input date with those of the current date using the same default time zone and locale. The only exception case is a null argument, which causes a NullPointerException in both methods at the same point. No input can cause one method to return true while the other returns false, or to throw a different exception type or terminate differently. Therefore, no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 930,
+  "eval_count": 256,
+  "total_duration": 2245939900,
+  "load_duration": 18549800
+}

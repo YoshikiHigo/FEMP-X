@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical arithmetic; the only syntactic difference is the placement of the cast to long, which does not affect the result for any int input. No concrete input can distinguish their behavior."
+}

@@ -1,0 +1,63 @@
+{
+  "key": "unverified.ClonePair5724",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(CQ==),Boolean(true)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(CQ==),Boolean(true)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(CQ==),Boolean(true)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(CQ==),Boolean(true)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(CQ==),Boolean(true)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(CQ==),Boolean(true)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(CQ==),Boolean(true)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(CQ==),Boolean(true)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 trims the string and then checks if it is empty, so a string consisting solely of a tab character is considered empty after trimming and returns true. method2, however, checks each character against the space character without trimming; a tab character (code point 9) is not greater than space (32), so the loop does not trigger a return false and the method ultimately returns false.",
+    "arguments_java": [
+      "\"\\t\"",
+      "true"
+    ],
+    "parameter_types": [
+      "String",
+      "boolean"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 163.165
+}

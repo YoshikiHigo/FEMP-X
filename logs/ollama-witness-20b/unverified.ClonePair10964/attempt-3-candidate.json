@@ -1,0 +1,16 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns the maximum of the value for key.Min and the default, while method2 returns the minimum of the value for key.Max and the default. With a default less than key.Min, method1 yields key.Min, whereas method2 yields the default.",
+  "arguments_java": [
+    "props(\"k.Min\",\"5\",\"k.Max\",\"10\")",
+    "\"k\"",
+    "Double.valueOf(3.0)"
+  ],
+  "parameter_types": [
+    "Properties",
+    "String",
+    "Double"
+  ],
+  "void_return": false
+}

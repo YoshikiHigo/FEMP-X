@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical 4‑byte unsigned conversion; no input can make them diverge in return value, exception type, or side effects.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1207,
+  "eval_count": 499,
+  "total_duration": 4157525100,
+  "load_duration": 2492400
+}

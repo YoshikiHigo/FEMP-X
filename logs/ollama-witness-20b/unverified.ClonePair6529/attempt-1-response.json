@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte extraction using masking, and the only difference is the use of unsigned versus signed right shift, which does not affect the masked 8‑bit results. For all valid inputs (including edge cases such as null, negative lengths, and non‑multiple‑of‑4 lengths) the methods exhibit the same behavior, so no concrete separating test case can be constructed.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1238,
+  "eval_count": 279,
+  "total_duration": 2449554400,
+  "load_duration": 2322100
+}

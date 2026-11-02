@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical dot‑product computations on the two input arrays. They have the same loop bounds, multiplication and accumulation logic, and return the same double value for any pair of arrays (including null or empty arrays). No input can produce a differing result, side effect, exception, or non‑termination."
+}

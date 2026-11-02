@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same leap‑year logic and produce identical results for all integer inputs, including negative values and edge cases such as Integer.MIN_VALUE. No concrete input can distinguish their return values, side effects, or termination behavior."
+}

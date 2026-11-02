@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical bounds-checked copying of a byte slice; they throw the same exceptions for null or out-of-bounds inputs and return the same byte array contents for all valid inputs. No concrete input can distinguish their behavior."
+}

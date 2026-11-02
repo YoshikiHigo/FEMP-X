@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical unsigned byte aggregation; for all deterministic, bounded inputs they produce the same result or throw the same exception. No concrete separating input exists."
+}

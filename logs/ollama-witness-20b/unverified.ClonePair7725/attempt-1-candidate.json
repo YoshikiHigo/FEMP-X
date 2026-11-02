@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are logically equivalent for all possible inputs. Both return true only when the two arguments are either both null or both non‑null and equal according to Object.equals. No input can cause a different return value, side effect, exception type, or non‑termination."
+}

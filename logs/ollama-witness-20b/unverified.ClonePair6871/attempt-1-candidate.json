@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte‑to‑int conversion. For any byte array and integer offset that does not trigger an exception, the two implementations compute the same 32‑bit little‑endian value. They also throw the same exceptions (NullPointerException for a null array, ArrayIndexOutOfBoundsException for an invalid offset). No deterministic, bounded input can distinguish their behavior."
+}

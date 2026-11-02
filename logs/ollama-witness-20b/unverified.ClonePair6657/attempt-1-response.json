@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical logic: they retrieve a value from the map, cast it to String, and return the default if the result is null. No input can cause differing behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1115,
+  "eval_count": 61,
+  "total_duration": 931816600,
+  "load_duration": 8265600
+}

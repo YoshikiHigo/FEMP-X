@@ -1,0 +1,60 @@
+{
+  "key": "equivalent.ClonePair8339",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(9)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(256)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(256)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(9)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(256)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(256)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(9)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(256)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(256)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(9)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(256)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(256)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For input 256, method1 returns 9 while method2 returns 2 due to different nesting of if/else statements.",
+    "arguments_java": [
+      "256"
+    ],
+    "parameter_types": [
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 38.892
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all finite, deterministic inputs. The only pathological case is when the search string \\\"from\\\"/\\\"original\\\" is the empty string, which causes an infinite loop in both methods. No input leads to a difference in return value, side effect, exception type, or termination status.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1155,
+  "eval_count": 661,
+  "total_duration": 5209660800,
+  "load_duration": 18400100
+}

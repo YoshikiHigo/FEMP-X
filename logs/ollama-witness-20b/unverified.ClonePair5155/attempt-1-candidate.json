@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks on the input arrays: they first compare reference equality, then null checks, then length equality, and finally element-wise equality. No input can cause one method to return a different value, throw an exception, or exhibit a side effect that the other does not. Therefore, no concrete separating test case exists."
+}

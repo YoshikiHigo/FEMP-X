@@ -1,0 +1,65 @@
+{
+  "key": "unverified.ClonePair10141",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJh)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJhYmE=),String(YWJh),String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJhYmE=),String(YWJh),String(YQ==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJh)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJhYmE=),String(YWJh),String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJhYmE=),String(YWJh),String(YQ==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJh)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJhYmE=),String(YWJh),String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJhYmE=),String(YWJh),String(YQ==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJh)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJhYmE=),String(YWJh),String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJhYmE=),String(YWJh),String(YQ==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 performs replacements on the original string, treating each occurrence of the target as it appears in the original text. method2 performs replacements on a mutable StringBuffer and after each replacement it continues searching from the end of the inserted replacement. This can cause a target that was created by a previous replacement to be matched again. For source=\"ababa\", target=\"aba\", replacement=\"a\", method1 returns \"aba\" while method2 returns \"aa\".",
+    "arguments_java": [
+      "\"ababa\"",
+      "\"aba\"",
+      "\"a\""
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 83.738
+}

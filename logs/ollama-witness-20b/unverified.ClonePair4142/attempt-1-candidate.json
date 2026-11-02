@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "no_termination",
+  "reason": "method1 uses list.size() in the loop condition, and the supplied list’s size() method returns an increasing value on each call (1 + counter++). As i increments, size() keeps returning a larger number, so the condition i < list.size() is always true and the loop never terminates. method2 allocates the array once using size() and then iterates with an Iterator that is independent of size(); the iterator is constructed to iterate over a single element, so method2 terminates normally and returns a one‑element array.",
+  "arguments_java": [
+    "new java.util.AbstractList<String>(){int counter=0;public int size(){return 1+counter++;}public String get(int i){return \"x\";}public java.util.Iterator<String> iterator(){return java.util.Collections.singletonList(\"x\").iterator();}}"
+  ],
+  "parameter_types": [
+    "java.util.List"
+  ],
+  "void_return": false,
+  "nontermination_evidence": "size() grows on each call, so i < size() always holds; loop never ends."
+}

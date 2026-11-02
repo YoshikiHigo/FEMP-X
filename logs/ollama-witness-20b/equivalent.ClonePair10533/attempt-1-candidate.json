@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return null for null or empty (after trimming) strings, and otherwise return Integer.valueOf(src). No input can cause a different return value, side effect, exception type, or non‑termination between the two methods."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the control flow and string handling in both methods, no deterministic, bounded input can be constructed that causes the two methods to exhibit a distinguishable behavior in terms of return value, side effect, exception type, or termination. All examined edge cases (null inputs, empty strings, overlapping substrings, etc.) either lead to identical outcomes or to identical non‑termination behavior. Therefore, no concrete separating test case exists for this clone pair."
+}

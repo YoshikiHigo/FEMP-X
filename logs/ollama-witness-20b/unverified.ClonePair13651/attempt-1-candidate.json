@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical hex parsing and byte conversion; they handle null and odd-length strings in the same way, and produce the same byte array for all valid inputs. No input can distinguish their behaviors."
+}

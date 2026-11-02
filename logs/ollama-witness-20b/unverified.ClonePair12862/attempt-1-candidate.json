@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods behave identically for all possible inputs: they both return the original string when it is null or its length is less than or equal to the specified maximum length, and they both return a substring of length MaxLength/MaxLength when the string is longer. No input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

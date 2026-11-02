@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical operations: they allocate a new array of length (end-begin) or (toIndex-fromIndex) and, if that length is non‑negative, copy the corresponding slice of the input array using System.arraycopy. Both methods throw the same exceptions (NegativeArraySizeException when the length is negative, ArrayIndexOutOfBoundsException or NullPointerException when the indices or the source array are invalid). No deterministic, bounded input can cause one method to behave differently from the other.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1252,
+  "eval_count": 286,
+  "total_duration": 2555998400,
+  "load_duration": 2564900
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the same sum for all possible long inputs; no input can produce a differing result.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1149,
+  "eval_count": 545,
+  "total_duration": 4330691800,
+  "load_duration": 8869400
+}

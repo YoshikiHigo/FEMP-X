@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible byte[] inputs. Both perform the same sequence of checks—handling nulls, comparing lengths, and element-wise equality—and return the same boolean value in every case. No input can cause one method to return a different value, throw a different exception, or exhibit a side effect that the other does not. Therefore, no concrete separating test case exists."
+}

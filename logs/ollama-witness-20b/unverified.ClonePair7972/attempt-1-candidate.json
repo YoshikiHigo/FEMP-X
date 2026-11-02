@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are mathematically equivalent for all integer inputs except the case where the divisor/len is zero, in which both throw an ArithmeticException. No concrete separating input exists that yields a different return value, side effect, exception type, or non-termination."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical binary search logic and produce the same result for all possible integer inputs and array states. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1212,
+  "eval_count": 58,
+  "total_duration": 823733500,
+  "load_duration": 2550100
+}

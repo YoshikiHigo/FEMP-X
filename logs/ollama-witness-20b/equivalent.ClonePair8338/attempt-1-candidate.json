@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical computations: they sum the first 'e' elements of the array and divide by 'e'. For any input where 'e' is non‑negative and the array has at least 'e' elements, both methods return the same value. When 'e' is zero, both methods throw an ArithmeticException due to division by zero. No input can distinguish their behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are logically equivalent for all integer inputs; the boundary checks in method1 (<26, <52, <62) correspond exactly to the <= checks in method2 (<=25, <=51, <=61). No input can produce a different return value, side effect, exception, or non‑termination."
+}

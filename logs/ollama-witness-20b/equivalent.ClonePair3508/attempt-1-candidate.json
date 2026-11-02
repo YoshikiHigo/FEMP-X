@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all deterministic, bounded inputs. Both iterate over the range [0,size) and access the same table elements; any out‑of‑bounds or null conditions cause exceptions in both methods. No input can produce a difference in return value, side effect, exception type, or non‑termination."
+}

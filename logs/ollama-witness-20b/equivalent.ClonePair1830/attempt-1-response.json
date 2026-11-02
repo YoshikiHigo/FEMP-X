@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods produce identical results for all deterministic, bounded inputs; no observable difference in return value, side effects, or exceptions can be guaranteed without relying on non-deterministic factors such as memory availability.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 866,
+  "eval_count": 351,
+  "total_duration": 3036617100,
+  "load_duration": 5168900
+}

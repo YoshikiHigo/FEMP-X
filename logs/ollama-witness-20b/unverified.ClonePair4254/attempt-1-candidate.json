@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the control flow and arithmetic in both methods, no input can be constructed that leads to a differing return value, side effect, exception, or non‑termination. The two implementations are functionally equivalent for all possible float inputs."
+}

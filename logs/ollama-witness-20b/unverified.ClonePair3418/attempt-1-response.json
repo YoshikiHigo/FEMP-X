@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs: they return a Float parsed from the string when the string represents a valid floating‑point number, and they return null otherwise (including when the input is null). No deterministic, bounded input can distinguish the two implementations.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 755,
+  "eval_count": 257,
+  "total_duration": 2284545800,
+  "load_duration": 5923800
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No concrete input can distinguish the two methods; for all integer arguments the return values, side effects, and exception behavior of method1 and method2 are identical."
+}

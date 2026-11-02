@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return the original string when either argument is null or when the suffix does not match the end of the string, and they both return the substring without the suffix when it does match. No concrete input can distinguish their return values, side effects, or exception behavior."
+}

@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 checks that the two objects are of the same runtime class before delegating to equals, whereas method2 only checks that the first object is non‑null and that equals returns true.  By supplying two distinct classes that override equals to compare only a shared field, method1 will return false (class mismatch) while method2 will return true (equals succeeds).",
+  "arguments_java": [
+    "new A(5)",
+    "new B(5)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

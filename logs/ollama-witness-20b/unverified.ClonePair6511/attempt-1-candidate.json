@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; the only difference is the placement of parentheses around the boolean expressions, which does not affect evaluation order or outcome. No input can produce a differing return value, side effect, exception, or non‑termination."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods contain identical conditional logic and return values for all possible integer inputs; no concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 4013,
+  "eval_count": 286,
+  "total_duration": 2962171600,
+  "load_duration": 2722100
+}

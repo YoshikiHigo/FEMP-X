@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the two‑digit hexadecimal representation of the input byte in exactly the same way. For any byte value the high nibble and low nibble are extracted and converted to the corresponding character '0'–'9' or 'A'–'F'. No input can cause a different return value, side effect, exception, or non‑termination."
+}

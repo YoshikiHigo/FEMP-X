@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair8541",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "null",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IA==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "null",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IA==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "null",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IA==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "null",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IA==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For the input string containing only a space character, method1 parses the string using Double.parseDouble, which accepts surrounding whitespace and returns 0.0. Method2 first checks if the trimmed string is empty; since \" \" trims to \"\", it returns null without attempting to parse. Thus the two methods produce different return values for the same input.",
+    "arguments_java": [
+      "\" \""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 131.469
+}

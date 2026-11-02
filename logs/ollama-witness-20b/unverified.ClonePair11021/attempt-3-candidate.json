@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, they exhibit identical behavior for all possible inputs: both return the original string when the pattern is null or empty, and otherwise perform the same replacement logic, appending the literal string \"null\" when the replacement argument is null. No concrete input distinguishes their outputs, side effects, or termination behavior."
+}

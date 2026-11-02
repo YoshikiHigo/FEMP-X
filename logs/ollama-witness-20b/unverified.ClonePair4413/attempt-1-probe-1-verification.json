@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair4413",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(4611686018427387841)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(4611686018427387841)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(4611686018427387841)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(4611686018427387841)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(4611686018427387841)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(4611686018427387841)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(4611686018427387841)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(4611686018427387841)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 incorrectly treats the composite number 4611686018427387841 (2147483649^2) as prime because its smallest prime factor 2147483649 exceeds Integer.MAX_VALUE and is therefore not examined in the int‑based loop. method2 correctly detects the divisor using long arithmetic and returns false.",
+    "arguments_java": [
+      "4611686018427387841L"
+    ],
+    "parameter_types": [
+      "long"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 159.198
+}

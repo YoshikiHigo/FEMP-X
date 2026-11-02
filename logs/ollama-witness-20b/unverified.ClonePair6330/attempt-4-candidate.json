@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "For any byte array and any offset, method1 and method2 compute the same 64‑bit value: both take the eight bytes starting at the given offset, place the byte at offset+7 in the most significant position and the byte at offset in the least significant position. Thus no input can distinguish the two methods."
+}

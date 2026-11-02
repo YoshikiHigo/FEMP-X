@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the same big‑endian integer from a 4‑byte array and exhibit identical behavior for all valid inputs, null, and empty arrays. No deterministic input can produce a differing return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1211,
+  "eval_count": 542,
+  "total_duration": 4500243100,
+  "load_duration": 4128700
+}

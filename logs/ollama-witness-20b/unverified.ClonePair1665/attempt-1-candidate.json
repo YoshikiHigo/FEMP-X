@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical logic for comparing byte arrays. For any pair of byte arrays (including nulls), they return the same boolean value, perform no side effects, and never throw exceptions. Therefore no concrete input can distinguish their behavior."
+}

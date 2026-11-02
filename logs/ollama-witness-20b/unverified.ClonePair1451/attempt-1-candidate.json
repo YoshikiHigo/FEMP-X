@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical outputs for all possible byte array inputs; exhaustive reasoning shows no distinguishing case."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns false for any string not exactly 9 characters long and matching a specific pattern; method2 returns true when the string length is greater than 2 and starts and ends with a single quote. The string \\\"'abc'\\\" satisfies the latter condition but not the former, so the methods return different boolean values.\",\"arguments_java\":[\"\\\"'abc'\\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1089,
+  "eval_count": 211,
+  "total_duration": 2066786600,
+  "load_duration": 7362900
+}

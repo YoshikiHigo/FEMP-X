@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical clamping of an int to the short range; for any int input they return the same short value. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1017,
+  "eval_count": 69,
+  "total_duration": 863777400,
+  "load_duration": 4435400
+}

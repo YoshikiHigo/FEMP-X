@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all valid inputs. In method1, the constructor new StringBuffer(ch) does not append the character; it only sets the buffer capacity. Consequently, both methods prepend exactly (length - str.length()) copies of the padding character and then append the original string. For null strings both methods throw a NullPointerException. No input can distinguish the two implementations."
+}

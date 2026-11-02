@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible inputs: they both return true iff the two arguments are either both null or non‑null arrays containing the same sequence of characters. No input can cause one method to return a different value, throw an exception, mutate its arguments, or terminate abnormally compared to the other.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 955,
+  "eval_count": 329,
+  "total_duration": 2599342300,
+  "load_duration": 2044600
+}

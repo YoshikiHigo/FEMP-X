@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns true for two distinct AtomicInteger objects with the same value because it compares class and hashCode; method2 returns false because it uses equals, which is reference‑based for AtomicInteger.\",\"arguments_java\":[\"new java.util.concurrent.atomic.AtomicInteger(5)\",\"new java.util.concurrent.atomic.AtomicInteger(5)\"],\"parameter_types\":[\"Object\",\"Object\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 912,
+  "eval_count": 625,
+  "total_duration": 5009144600,
+  "load_duration": 9943500
+}

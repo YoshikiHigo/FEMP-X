@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 requires both equals checks to be true, while method2 only checks obj1.equals(obj2). Using an asymmetric equals object (a custom Object that returns true when compared to a String) and a String, method1 returns false and method2 returns true.\",\"arguments_java\":[\"new Object(){public boolean equals(Object o){return o instanceof String;}}\",\"new String(\\\"test\\\")\"],\"parameter_types\":[\"Object\",\"Object\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1080,
+  "eval_count": 1306,
+  "total_duration": 10121802500,
+  "load_duration": 7443400
+}

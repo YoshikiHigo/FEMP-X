@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks and string manipulations; for any input they produce the same result, so no concrete separating test case exists."
+}

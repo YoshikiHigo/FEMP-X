@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, the only pathological case is when the replacement word is the empty string, which causes an infinite loop in both methods. No input can make one method terminate or return a different value while the other does not.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1099,
+  "eval_count": 569,
+  "total_duration": 4735593900,
+  "load_duration": 7755800
+}

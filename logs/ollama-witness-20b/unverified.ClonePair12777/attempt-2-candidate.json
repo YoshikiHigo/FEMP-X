@@ -1,0 +1,17 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 performs non‑overlapping replacements: \"aaaa\" → \"baaa\" → \"bab\"; method2 replaces every occurrence (including overlapping) producing \"bb\".",
+  "arguments_java": [
+    "\"aaaa\"",
+    "\"aa\"",
+    "\"b\""
+  ],
+  "parameter_types": [
+    "String",
+    "String",
+    "String"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical observable behavior for all possible inputs: they both return the same string value (or null) and have no side effects. No concrete separating test case can be constructed under the given constraints."
+}

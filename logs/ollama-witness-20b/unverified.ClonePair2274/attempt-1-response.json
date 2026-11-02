@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical bit‑wise reconstruction of a 32‑bit integer from a 4‑byte array. For any byte array of length 4 they produce the same result, and for arrays of other lengths they both throw the same exception (ArrayIndexOutOfBoundsException or NullPointerException). No deterministic input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1206,
+  "eval_count": 107,
+  "total_duration": 1206860400,
+  "load_duration": 2551200
+}

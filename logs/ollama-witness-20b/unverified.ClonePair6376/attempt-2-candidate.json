@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the same value for every possible byte array and offset.  Method1 accumulates the bytes in order arr[ofs+i] shifted by 8*i, while Method2 accumulates the bytes in reverse order arr[ofs+7-i] but shifts left each iteration.  After the loop, Method2’s result is == sum_{j=0}^{7} arr[ofs+j] << (8*j), which is identical to Method1’s accumulation.  Therefore no input can distinguish the two methods."
+}

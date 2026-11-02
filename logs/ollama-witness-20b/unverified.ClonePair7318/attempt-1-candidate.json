@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical operations on a Vector of Double objects: they both iterate over all elements, sum them, and divide by the size. They handle null vectors, empty vectors, and null elements in the same way, producing the same result (or exception). No deterministic input can distinguish their behavior."
+}

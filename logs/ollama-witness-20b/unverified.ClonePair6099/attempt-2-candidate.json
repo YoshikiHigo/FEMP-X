@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logical checks on the input arrays; no deterministic input can cause one to return a different value or exhibit a side effect while the other does not."
+}

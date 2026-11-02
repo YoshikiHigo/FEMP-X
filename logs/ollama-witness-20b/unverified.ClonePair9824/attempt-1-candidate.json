@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of an int array in identical ways; for all possible int[] inputs (including null and empty arrays) they exhibit the same behavior (either returning the maximum or throwing ArrayIndexOutOfBoundsException). No concrete input distinguishes them."
+}

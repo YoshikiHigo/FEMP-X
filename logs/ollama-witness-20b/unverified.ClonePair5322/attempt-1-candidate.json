@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical integer ceil‑division logic; for any pair of integers (items, itemsPerPage) the two implementations produce the same result or throw the same exception (e.g., division by zero). No input can distinguish them."
+}

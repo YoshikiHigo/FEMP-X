@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally identical; they perform the same null check and attempt to parse the string into a Double, returning null on NumberFormatException. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 754,
+  "eval_count": 63,
+  "total_duration": 737527000,
+  "load_duration": 6791600
+}

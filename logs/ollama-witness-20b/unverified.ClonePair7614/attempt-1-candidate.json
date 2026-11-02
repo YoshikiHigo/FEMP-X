@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 requires symmetry of equals; method2 only checks a.equals(b). Using a java.sql.Date and a java.util.Date with the same epoch time makes a.equals(b) true but b.equals(a) false, so method1 returns false while method2 returns true.",
+  "arguments_java": [
+    "new java.sql.Date(0L)",
+    "new java.util.Date(0L)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

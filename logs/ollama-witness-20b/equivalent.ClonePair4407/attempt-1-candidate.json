@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all possible long inputs, both methods exhibit identical control flow and return values for every case. No input can be constructed that causes a divergence in return value, side effect, exception, or non‑termination."
+}

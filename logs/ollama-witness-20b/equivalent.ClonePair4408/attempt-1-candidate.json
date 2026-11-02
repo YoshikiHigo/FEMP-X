@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same deterministic primality test logic for all 64‑bit signed integers. For every possible input the control flow, loop bounds, and return conditions are equivalent, so no concrete separating input exists."
+}

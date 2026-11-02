@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical character mapping; no input can distinguish their behavior."
+}

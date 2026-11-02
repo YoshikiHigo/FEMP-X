@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. The only apparent difference is the use of StringBuilder versus StringBuffer, which does not affect the observable return value or side effects. No input can cause one method to terminate while the other does not, nor can it produce a different return value or exception. Therefore, no concrete separating test case exists."
+}

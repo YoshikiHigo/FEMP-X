@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all valid and invalid inputs: they both read the first element, iterate over the array (method1 includes the first element again, but the comparison is the same), and return the maximum. For empty or null arrays both throw the same exception. No concrete input can distinguish their behavior."
+}

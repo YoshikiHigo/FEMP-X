@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they either return the same byte array for even-length hex strings, or both throw the same exception (StringIndexOutOfBoundsException) for odd-length strings. No concrete input can distinguish their outputs or side effects."
+}

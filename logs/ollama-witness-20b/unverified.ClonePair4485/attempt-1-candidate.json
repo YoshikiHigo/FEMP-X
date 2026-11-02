@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical computations: they initialize the maximum to the first element of the array and then iterate over all elements (including the first again in method1) to update the maximum. For any valid input array (non‑null, length ≥ 1) both methods return the same value. For empty arrays or null inputs they both throw the same ArrayIndexOutOfBoundsException or NullPointerException respectively. No deterministic, bounded input can distinguish their behavior."
+}

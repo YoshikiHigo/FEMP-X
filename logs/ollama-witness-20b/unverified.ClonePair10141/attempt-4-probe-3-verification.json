@@ -1,0 +1,65 @@
+{
+  "key": "unverified.ClonePair10141",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJhYg==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJjYWJj),String(YmM=),String(Yg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJjYWJj),String(YmM=),String(Yg==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJhYg==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJjYWJj),String(YmM=),String(Yg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJjYWJj),String(YmM=),String(Yg==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJhYg==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJjYWJj),String(YmM=),String(Yg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJjYWJj),String(YmM=),String(Yg==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJhYg==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJjYWJj),String(YmM=),String(Yg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJjYWJj),String(YmM=),String(Yg==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "In method1 the search for the target string is performed on the original input string, so each replacement is based on the original positions and the algorithm never re‑examines text that has been altered by a previous replacement. In method2 the search is performed on the mutable StringBuffer after each replacement, and the next search starts after the inserted replacement. This causes the algorithm to find a target that was created by a previous replacement, leading to an extra replacement. For the input source=\"abcabc\", target=\"bc\", replacement=\"b\", method1 returns \"abab\" while method2 returns \"ababb\".",
+    "arguments_java": [
+      "\"abcabc\"",
+      "\"bc\"",
+      "\"b\""
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 58.54
+}

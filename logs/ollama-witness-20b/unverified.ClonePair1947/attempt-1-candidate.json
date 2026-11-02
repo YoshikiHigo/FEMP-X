@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null checks, length checks, and element-wise comparisons on the byte arrays. For any deterministic input, they produce the same boolean result, mutate no state, and terminate normally. No concrete separating test case exists."
+}

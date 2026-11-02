@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 uses a fixed-size stack of 100 entries and pushes two indices for each '*' in the pattern. A pattern containing 51 consecutive '*' characters causes method1 to attempt to write beyond the stack bounds, throwing an ArrayIndexOutOfBoundsException. method2 does not use such a stack and correctly returns true for a pattern of only '*' characters matching an empty input.",
+  "arguments_java": [
+    "\"*******************************\"",
+    "\"\""
+  ],
+  "parameter_types": [
+    "String",
+    "String"
+  ],
+  "void_return": false
+}

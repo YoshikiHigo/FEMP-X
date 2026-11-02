@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are logically equivalent for all possible String inputs; no deterministic, bounded input can cause one to return a different value or throw an exception while the other does not."
+}

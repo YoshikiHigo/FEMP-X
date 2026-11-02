@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of a float array in identical ways; they behave the same for all valid inputs, including empty arrays (both throw ArrayIndexOutOfBoundsException) and null arrays (both throw NullPointerException). No concrete input can distinguish their return values, side effects, or exception types."
+}

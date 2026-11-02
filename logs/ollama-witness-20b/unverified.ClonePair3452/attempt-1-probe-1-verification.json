@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair3452",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Float(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MS4w)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MS4w)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Float(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MS4w)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MS4w)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Float(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MS4w)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MS4w)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Float(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MS4w)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MS4w)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "Both methods parse the same string into a Float, but Float.parseFloat returns a new Float object each time, whereas Float.valueOf may return a cached Float instance for certain values. Thus, for the same input the returned Float objects are equal in value but not the same reference, allowing a test to distinguish them.",
+    "arguments_java": [
+      "\"1.0\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 156.429
+}

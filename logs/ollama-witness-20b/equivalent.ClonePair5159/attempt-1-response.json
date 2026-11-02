@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical element-wise comparisons of two double arrays; they return the same boolean for all possible inputs, including nulls and empty arrays. No distinguishing input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 970,
+  "eval_count": 64,
+  "total_duration": 928295500,
+  "load_duration": 2528400
+}

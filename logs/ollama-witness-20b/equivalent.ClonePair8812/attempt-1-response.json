@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform the same digit‑scanning loop and return the same index; no input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1086,
+  "eval_count": 48,
+  "total_duration": 716314000,
+  "load_duration": 3242200
+}

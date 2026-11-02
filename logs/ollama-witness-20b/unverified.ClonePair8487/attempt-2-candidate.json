@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no input can be constructed that causes a differing observable behavior. Both methods return null for null or empty strings, parse valid numeric strings (including those with leading/trailing whitespace) to the same Double value, and return null for any non‑numeric string. Therefore, no concrete separating test case exists."
+}

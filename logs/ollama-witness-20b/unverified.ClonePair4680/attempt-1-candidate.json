@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "All tested inputs produce identical results for both methods; no concrete separating input was found."
+}

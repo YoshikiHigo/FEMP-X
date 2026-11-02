@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic: they return false when either argument is null, otherwise they return whether the second string occurs in the first. No input can cause a differing return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 834,
+  "eval_count": 75,
+  "total_duration": 908280900,
+  "load_duration": 6558000
+}

@@ -1,0 +1,63 @@
+{
+  "key": "unverified.ClonePair6345",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-9223372036854775808)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -128],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -128],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-9223372036854775808)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -128],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -128],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-9223372036854775808)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -128],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -128],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-9223372036854775808)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -128],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -128],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 interprets the 8 bytes as an unsigned 64‑bit value, so the most significant byte (offset+7) contributes to the sign bit of the resulting long. method2 masks each byte to 0x7f, then restores the sign bit for every byte that was negative. For the most significant byte it additionally adds Long.MIN_VALUE, effectively setting two high bits. Thus, when the most significant byte is negative (e.g. 0x80) the two methods produce different long values.",
+    "arguments_java": [
+      "new byte[]{0,0,0,0,0,0,0,(byte)0x80}",
+      "0"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "int"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 136.89
+}

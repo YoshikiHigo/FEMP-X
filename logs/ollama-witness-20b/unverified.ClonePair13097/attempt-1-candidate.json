@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, when the search string is empty they both enter an infinite loop, and when any argument is null they both throw a NullPointerException. No input can cause one method to return a different value, throw a different exception type, or terminate differently while the other behaves otherwise."
+}

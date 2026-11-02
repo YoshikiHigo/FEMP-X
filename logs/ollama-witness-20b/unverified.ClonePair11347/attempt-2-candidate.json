@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are logically equivalent for all possible Integer inputs, including nulls. No deterministic difference in return value, side effect, exception, or termination can be observed."
+}

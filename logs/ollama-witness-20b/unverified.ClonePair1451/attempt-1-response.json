@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods produce identical outputs for all possible byte array inputs; exhaustive reasoning shows no distinguishing case.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1301,
+  "eval_count": 954,
+  "total_duration": 7716646800,
+  "load_duration": 3528700
+}

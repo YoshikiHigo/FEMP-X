@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they shift the accumulated integer left by 8 bits and then combine the next byte using either bitwise OR or addition. Since the masked byte is always in the range 0–255, adding it to a value whose lower 8 bits are zero cannot produce a carry into higher bits. Therefore, for any byte array and offset, the two methods return the same int value. No concrete separating input exists."
+}

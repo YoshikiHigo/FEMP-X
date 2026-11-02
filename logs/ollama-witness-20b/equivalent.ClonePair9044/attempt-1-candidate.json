@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical transformations on the input; no input can produce a differing return value, side effect, exception, or non‑termination."
+}

@@ -1,0 +1,15 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 interprets the 4 bytes starting at the given offset as a little‑endian unsigned integer, while method2 interprets them as a big‑endian unsigned integer. For the byte array {1,2,3,4} and offset 0, method1 returns 1 + 2*256 + 3*256^2 + 4*256^3 = 67310985, whereas method2 returns ((1<<24)|(2<<16)|(3<<8)|4) = 67305985. The two results differ by 50000.",
+  "arguments_java": [
+    "new byte[]{1,2,3,4}",
+    "0"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "int"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

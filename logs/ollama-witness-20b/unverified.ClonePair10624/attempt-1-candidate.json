@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no deterministic input can be constructed that causes a differing observable behavior (return value, side effect, exception type, or non‑termination) while keeping the same initial state for both methods. All edge cases (null arguments, empty strings, longer search strings, etc.) produce identical outcomes for both methods."
+}

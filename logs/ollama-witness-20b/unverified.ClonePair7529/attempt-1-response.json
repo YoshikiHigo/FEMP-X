@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical logic on the same inputs; no deterministic input can cause one to return a different value, throw a different exception, or exhibit non‑termination while the other behaves otherwise.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1674,
+  "eval_count": 204,
+  "total_duration": 1970845100,
+  "load_duration": 2054100
+}

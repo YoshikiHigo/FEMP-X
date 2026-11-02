@@ -1,0 +1,64 @@
+{
+  "key": "unverified.ClonePair10645",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.OutOfMemoryError",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==),String(),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==),String(),null]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.OutOfMemoryError",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==),String(),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==),String(),null]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.OutOfMemoryError",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==),String(),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==),String(),null]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.OutOfMemoryError",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==),String(),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==),String(),null]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 treats a null replacement string as the literal \"null\" and returns a string, whereas method2 calls StringBuffer.append(Object) with a null argument, which throws a NullPointerException.",
+    "arguments_java": [
+      "\"a\"",
+      "\"\"",
+      "null"
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 140.273
+}

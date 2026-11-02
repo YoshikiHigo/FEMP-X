@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compare the same year, month (adjusted by +1 on both sides), and day fields of the two Date objects. For any pair of dates, method1 and method2 return the same boolean value, so no concrete separating input exists."
+}

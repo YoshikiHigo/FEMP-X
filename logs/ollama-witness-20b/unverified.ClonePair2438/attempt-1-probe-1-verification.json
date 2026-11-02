@@ -1,0 +1,61 @@
+{
+  "key": "unverified.ClonePair2438",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-16777216)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-16777216)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-16777216)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-16777216)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For a byte array whose fourth element is negative, method1 interprets the byte as a signed value for the most significant word, while method2 masks it to an unsigned 0–255 value. This causes the two methods to produce different 32‑bit integers.",
+    "arguments_java": [
+      "new byte[]{0,0,0,-1}"
+    ],
+    "parameter_types": [
+      "byte[]"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 161.567
+}

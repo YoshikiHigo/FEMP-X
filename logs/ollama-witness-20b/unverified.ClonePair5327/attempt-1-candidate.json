@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same leap‑year logic; exhaustive reasoning shows that for every integer input the return values coincide. No concrete input can be found that distinguishes them."
+}

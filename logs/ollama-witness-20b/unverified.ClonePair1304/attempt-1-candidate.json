@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible byte[] inputs; no input can cause a difference in return value, side effects, exceptions, or termination."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 adds 0x7FFFFFFF to the scaled float value before writing its 4 bytes, whereas method2 writes the raw scaled value. With a non‑zero input float, the byte sequences produced by the two methods differ, so the returned byte arrays are not equal.\",\"arguments_java\":[\"new float[]{1.0f}\",\"0\",\"1\",\"new byte[4]\",\"0\"],\"parameter_types\":[\"float[]\",\"int\",\"int\",\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1624,
+  "eval_count": 253,
+  "total_duration": 2480271400,
+  "load_duration": 18301100
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all possible String inputs; Integer.parseInt only throws NumberFormatException (or returns a value), so the broader catch in method1 does not change the outcome. No deterministic input can distinguish them."
+}

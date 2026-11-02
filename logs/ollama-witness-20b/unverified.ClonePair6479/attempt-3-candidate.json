@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical transformations on any 8‑byte slice of a byte array. Both interpret each byte as unsigned 8‑bit values, reconstruct a little‑endian 64‑bit long, and propagate the sign bit in the same way. For all valid inputs (including null or out‑of‑bounds cases) they either return the same value or throw the same exception. No concrete input can distinguish their behavior."
+}

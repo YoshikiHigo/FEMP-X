@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, all possible combinations of null, empty, equal, and unequal boolean arrays produce identical return values. No input leads to a difference in return value, side effects, exceptions, or non‑termination. Therefore, no concrete separating test case exists."
+}

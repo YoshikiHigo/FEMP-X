@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all possible Object[] inputs; no concrete separating input can be constructed that causes differing return values, side effects, exceptions, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1017,
+  "eval_count": 563,
+  "total_duration": 4622293900,
+  "load_duration": 3297300
+}

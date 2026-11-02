@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement the same deterministic primality test logic for all 64‑bit signed integers. For every possible input the control flow, loop bounds, and return conditions are equivalent, so no concrete separating input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 945,
+  "eval_count": 208,
+  "total_duration": 1941704600,
+  "load_duration": 23615800
+}

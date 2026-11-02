@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical character‑by‑character processing over the same index range and produce the same string for all valid inputs. No input can cause one to return a different value, throw a different exception, or terminate differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1406,
+  "eval_count": 329,
+  "total_duration": 2883644100,
+  "load_duration": 10117500
+}

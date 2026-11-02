@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns false because the two X instances have the same class but different hashCodes, while method2 returns true because X.equals always returns true.\",\"arguments_java\":[\"new X(0)\",\"new X(1)\"],\"parameter_types\":[\"Object\",\"Object\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1048,
+  "eval_count": 360,
+  "total_duration": 2996134200,
+  "load_duration": 4567100
+}

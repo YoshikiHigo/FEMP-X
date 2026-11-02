@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the same 64‑bit value from the byte array starting at the given offset. They perform identical bounds checks and produce identical results for all valid inputs, and both throw ArrayIndexOutOfBoundsException for out‑of‑range offsets. No deterministic, bounded input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1030,
+  "eval_count": 260,
+  "total_duration": 2382161500,
+  "load_duration": 24309900
+}

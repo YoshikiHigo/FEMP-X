@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no deterministic, bounded input can be constructed that causes them to exhibit different return values, side effects, exception types, or non‑termination. Both methods perform identical string replacement logic and behave identically for all valid inputs, including edge cases such as empty strings, null arguments (which both throw the same NullPointerException), and overlapping patterns. Therefore, no concrete separating test case exists."
+}

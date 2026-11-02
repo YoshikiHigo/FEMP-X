@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 parses each octet and casts to byte without range checking, so \"256.0.0.1\" yields a byte array. method2 checks that each octet is between 0 and 255 inclusive; since 256 is out of range it returns null.",
+  "arguments_java": [
+    "\"256.0.0.1\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

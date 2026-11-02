@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the dot product of two double arrays in the same way; for any input arrays of equal length (or null handling), they produce identical results. No distinguishing input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1131,
+  "eval_count": 66,
+  "total_duration": 867880800,
+  "load_duration": 8029500
+}

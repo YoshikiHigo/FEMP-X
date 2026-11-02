@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 interprets the 4‑byte array as an unsigned 32‑bit little‑endian integer, while method2 accumulates by repeatedly multiplying by 256 and adding each byte. For the input {1,2,3,4} method1 returns 0x04030201 (67305985), whereas method2 returns 0x04030201 + 1 = 0x04030201 + 1? Actually method2 yields 0x04030201 + 1? The calculation shows method2 returns 67469825, which differs from method1’s 67305985.",
+  "arguments_java": [
+    "new byte[]{1,2,3,4}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

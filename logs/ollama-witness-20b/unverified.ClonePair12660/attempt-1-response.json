@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 compares lower‑cased strings, method2 compares upper‑cased strings. For the Turkish dotless‑i character (\\\\u0131) the default locale maps it to 'I' when upper‑cased but leaves it unchanged when lower‑cased. Thus method1 returns false while method2 returns true.\",\"arguments_java\":[\"\\\"\\\\u0131\\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 892,
+  "eval_count": 638,
+  "total_duration": 4918436200,
+  "load_duration": 5833400
+}

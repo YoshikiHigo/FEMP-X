@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compare the same components of the dates (year, month, day) using equivalent logic. No input can cause one to return true while the other returns false, nor can one throw an exception that the other does not. Therefore, no concrete separating test case exists."
+}

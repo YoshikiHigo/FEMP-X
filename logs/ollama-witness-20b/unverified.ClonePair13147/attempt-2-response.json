@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. For any non‑null string, they either both parse the string into the same byte array or both throw a StringIndexOutOfBoundsException when the input length is odd. For a null input, both throw a NullPointerException. No input can cause one method to succeed while the other fails, or produce a different result. Therefore no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1188,
+  "eval_count": 234,
+  "total_duration": 2216104300,
+  "load_duration": 3140800
+}

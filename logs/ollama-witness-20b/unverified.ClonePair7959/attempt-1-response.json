@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs under the allowed difference categories. No concrete input can be constructed that causes one method to return a different value, throw a different exception type, exhibit a distinct side‑effect, or terminate differently while satisfying the constraints of the problem statement.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1157,
+  "eval_count": 307,
+  "total_duration": 2792240700,
+  "load_duration": 4339600
+}

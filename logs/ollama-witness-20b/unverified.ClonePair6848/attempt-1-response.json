@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods compute the minimum of the three arguments; for all integer inputs they produce identical results. No concrete separating input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1127,
+  "eval_count": 474,
+  "total_duration": 3945765200,
+  "load_duration": 7383600
+}

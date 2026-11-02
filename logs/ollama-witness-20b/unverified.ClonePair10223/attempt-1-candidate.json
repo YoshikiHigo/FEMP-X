@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same Integer value (or null) for all possible String inputs; they handle null and NumberFormatException identically, so no concrete separating input exists."
+}

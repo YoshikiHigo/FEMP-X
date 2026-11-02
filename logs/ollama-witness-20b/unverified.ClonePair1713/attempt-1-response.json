@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all possible byte[] inputs; no input can cause a difference in return value, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1235,
+  "eval_count": 239,
+  "total_duration": 2227972900,
+  "load_duration": 5715900
+}

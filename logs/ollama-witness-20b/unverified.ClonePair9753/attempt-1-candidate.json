@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 implements a simple wildcard pattern matcher that treats '?' as a single-character wildcard and '*' as a multi-character wildcard, whereas method2 simply checks for exact equality of the two character arrays. For the input str = ['a'] and pat = ['?'], method1 returns true (the '?' matches the single character 'a'), while method2 returns false (the arrays are not identical).",
+  "arguments_java": [
+    "new char[]{'a'}",
+    "new char[]{'?' }"
+  ],
+  "parameter_types": [
+    "char[]",
+    "char[]"
+  ],
+  "void_return": false
+}

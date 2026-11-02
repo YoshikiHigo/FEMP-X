@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible inputs. Both handle null, Float, other Number types, and non-Number objects in the same way, producing equivalent Float objects or throwing equivalent exceptions. No deterministic, bounded input can distinguish their outputs or side effects.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1053,
+  "eval_count": 495,
+  "total_duration": 4210118300,
+  "load_duration": 3163500
+}

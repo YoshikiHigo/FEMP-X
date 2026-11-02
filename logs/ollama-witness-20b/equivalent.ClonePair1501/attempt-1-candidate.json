@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible byte[] inputs: they both iterate from the start, stop at the first zero byte (or return immediately in method2), and return the same string. No input can produce a differing return value, side effect, exception type, or non‑termination."
+}

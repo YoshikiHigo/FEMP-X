@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit integer from the first four bytes of the input array. For any byte array of length at least four they produce identical results, and for shorter arrays they both throw the same exception types. No deterministic, bounded input can distinguish the two methods."
+}

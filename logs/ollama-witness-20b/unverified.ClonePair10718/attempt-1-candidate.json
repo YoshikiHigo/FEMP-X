@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for determining whether a character is alphanumeric. They perform the same range checks and return the same boolean value for any input character. No input can produce a differing return value, side effect, exception, or non‑termination."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same computation: they iterate over the input array to find the maximum element. The implementations are identical in logic and structure, so no input can distinguish their behavior."
+}

@@ -1,0 +1,61 @@
+{
+  "key": "unverified.ClonePair2628",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-16777216)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-16777216)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-16777216)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-16777216)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 interprets each byte as unsigned and combines them in little‑endian order, while method2 multiplies the accumulator by 256 after adding each byte. With a negative byte at index 3 the two methods produce different results: method1 yields 0, method2 yields –16777216.",
+    "arguments_java": [
+      "new byte[]{0,0,0,-1}"
+    ],
+    "parameter_types": [
+      "byte[]"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 88.583
+}

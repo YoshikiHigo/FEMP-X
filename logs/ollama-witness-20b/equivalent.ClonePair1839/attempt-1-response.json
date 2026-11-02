@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical iteration and string concatenation; no input can produce differing return values, side effects, or exceptions.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 866,
+  "eval_count": 57,
+  "total_duration": 855459300,
+  "load_duration": 4222800
+}

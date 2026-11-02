@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods evaluate the same boolean expression due to operator precedence; no input can distinguish them."
+}

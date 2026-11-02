@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑by‑element equality checks on the two boolean arrays; no input can cause differing return values, side effects, exceptions, or non‑termination."
+}

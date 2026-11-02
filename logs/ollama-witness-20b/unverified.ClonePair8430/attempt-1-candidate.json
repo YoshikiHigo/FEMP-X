@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning, the two methods behave identically for all possible inputs. No concrete separating test case can be constructed that satisfies the constraints."
+}

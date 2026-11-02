@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they iterate from the given index, checking each character against the charset using indexOf, and return the count of consecutive matching characters. The only difference in the source code is the use of \"i++\" versus \"++i\", which does not affect the outcome. Therefore, no concrete input can distinguish the two methods."
+}

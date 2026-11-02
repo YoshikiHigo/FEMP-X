@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they search for the character '&' in the input string and return the following character if found, otherwise return 0. No input can cause a difference in return value, side effects, or exceptions."
+}

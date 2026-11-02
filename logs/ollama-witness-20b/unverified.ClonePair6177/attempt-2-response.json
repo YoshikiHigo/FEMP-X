@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For an input byte sequence that produces an integer x in the range 0x800000–0xFFFFFF, method1 subtracts 0x7FFFFF while method2 subtracts 0x1000000, yielding different scaled float results.\",\"arguments_java\":[\"new byte[]{0x00,0x00,0x80}\",\"0\",\"new float[]{0.0f}\",\"0\",\"1\"],\"parameter_types\":[\"byte[]\",\"int\",\"float[]\",\"int\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1742,
+  "eval_count": 550,
+  "total_duration": 4481902000,
+  "load_duration": 5496300
+}

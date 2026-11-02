@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte extraction and array indexing for all possible inputs; no concrete input can distinguish their behavior."
+}

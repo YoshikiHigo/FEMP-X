@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 throws NumberFormatException when the system property value is not a valid integer, whereas method2 catches the exception and returns the supplied default value.",
+  "arguments_java": [
+    "\"java.version\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

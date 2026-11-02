@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same bounds for the first loop using the minimum of the two array lengths; the subsequent loop is identical. No input can cause a difference in return value, side effect, exception, or termination."
+}

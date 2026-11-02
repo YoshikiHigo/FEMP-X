@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 writes one byte per input float, method2 writes three bytes per input float, so with the same input the returned byte array contains different contents.\",\"arguments_java\":[\"new float[]{0.0f}\",\"0\",\"1\",\"new byte[3]\",\"0\"],\"parameter_types\":[\"float[]\",\"int\",\"int\",\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1565,
+  "eval_count": 289,
+  "total_duration": 2648848200,
+  "load_duration": 3290700
+}

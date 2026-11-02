@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the dot product of two double arrays in exactly the same way. They both iterate over the length of the first array and multiply corresponding elements of the two arrays. The only potential differences are the same null‑pointer checks and the same out‑of‑bounds behavior when the arrays have different lengths. No input can cause one method to behave differently from the other."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical conversions of a hex string to a byte array. They handle the same edge cases (null, odd length, non‑hex characters) in the same way, and the byte value computation is equivalent for all valid inputs. No concrete input can be found that distinguishes their return values, side effects, or exception behavior."
+}

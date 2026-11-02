@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no deterministic input can produce a differing observable behavior. Both methods return the same result (a Double or null) for every possible String input, as they both ultimately rely on Double.valueOf with the same string (method2 trims but Double.valueOf itself ignores surrounding whitespace). Therefore, no concrete separating test case exists."
+}

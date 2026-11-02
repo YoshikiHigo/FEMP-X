@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical bit‑shifting and masking operations; the only syntactic difference is the placement of parentheses, which does not affect evaluation order due to Java operator precedence. Consequently, for any input array and length, the two methods produce the same byte array or throw the same exception. No concrete separating test case exists."
+}

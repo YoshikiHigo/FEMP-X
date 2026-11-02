@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 uses Double.parseDouble which does not accept leading/trailing whitespace, so it throws NumberFormatException and returns null. method2 trims the string before parsing, so \" 1\" is parsed successfully to 1.0.",
+  "arguments_java": [
+    "\" 1\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

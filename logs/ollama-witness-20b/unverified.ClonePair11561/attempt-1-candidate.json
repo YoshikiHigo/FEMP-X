@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all finite, deterministic inputs. The only pathological case is when the target/find string is empty, in which case both methods enter an infinite loop. No input causes one method to terminate while the other does not, nor does any input produce differing return values, side effects, or exceptions. Therefore, no concrete separating test case exists."
+}

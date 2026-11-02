@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair12184",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(J2FiYyc=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(J2FiYyc=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(J2FiYyc=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(J2FiYyc=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(J2FiYyc=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(J2FiYyc=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(J2FiYyc=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(J2FiYyc=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns false for any string not exactly 9 characters long and matching a specific pattern; method2 returns true when the string length is greater than 2 and starts and ends with a single quote. The string \"'abc'\" satisfies the latter condition but not the former, so the methods return different boolean values.",
+    "arguments_java": [
+      "\"'abc'\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 124.596
+}

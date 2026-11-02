@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded String inputs. They both return 0 for null, empty, or whitespace-only strings, and otherwise return Float.parseFloat of the input, catching any parsing exception and returning 0. No input can cause one method to return a different value, throw an exception, or terminate non‑normally compared to the other.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 811,
+  "eval_count": 379,
+  "total_duration": 3318780100,
+  "load_duration": 5943800
+}

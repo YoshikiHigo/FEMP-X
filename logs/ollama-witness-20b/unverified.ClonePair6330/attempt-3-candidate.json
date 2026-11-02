@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 accesses bytes data[offset+i] for i=7..0, so with offset=0 and a byte array of length 8 it reads indices 0..7 safely and returns a long. method2 accesses in[idx+i] for i=0..7, so with idx=1 it attempts to read indices 1..8; index 8 is out of bounds and throws ArrayIndexOutOfBoundsException. Thus the same input causes method1 to return normally while method2 throws.",
+  "arguments_java": [
+    "new byte[]{1,2,3,4,5,6,7,8}",
+    "0"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "int"
+  ],
+  "void_return": false
+}

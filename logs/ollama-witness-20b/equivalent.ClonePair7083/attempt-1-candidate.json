@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs. Both handle null, Float, other Number types, and non-Number objects in the same way, producing equivalent Float objects or throwing equivalent exceptions. No deterministic, bounded input can distinguish their outputs or side effects."
+}

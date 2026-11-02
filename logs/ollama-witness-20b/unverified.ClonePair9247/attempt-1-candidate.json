@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical string replacement logic; for all deterministic, bounded inputs they produce the same return value, throw the same exceptions, and terminate in the same manner. No concrete separating input can be constructed under the given constraints."
+}

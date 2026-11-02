@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of all possible inputs, method1 and method2 exhibit identical behavior for every combination of String and boolean arguments. No concrete separating test case can be constructed that distinguishes the two methods under the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 887,
+  "eval_count": 466,
+  "total_duration": 3916952200,
+  "load_duration": 2035000
+}

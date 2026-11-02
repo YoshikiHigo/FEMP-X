@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible byte[] inputs. Both handle nulls, reference equality, length checks, and element-wise comparison in the same way, and both return false when a NullPointerException occurs during length or element access. No concrete input can distinguish their return values, side effects, exceptions, or termination behavior."
+}

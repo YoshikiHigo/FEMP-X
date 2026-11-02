@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the same 16‑bit value for all possible byte[] inputs and offsets. Both treat the first byte as unsigned and combine it with the second byte in little‑endian order; the second method’s sign‑extension of the high byte does not affect the low 16 bits that are returned as a short. Therefore no concrete input can distinguish their return values, side effects, or exception behavior."
+}

@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 correctly returns true for a pattern of 101 '*' characters and a single-character input, while method2 attempts to push 202 indices onto a fixed-size stack of length 100, causing an ArrayIndexOutOfBoundsException. Both methods receive the same arguments and initial state, but the latter throws an exception while the former returns normally.",
+  "arguments_java": [
+    "\"*\".repeat(101)",
+    "\"a\""
+  ],
+  "parameter_types": [
+    "String",
+    "String"
+  ],
+  "void_return": false
+}

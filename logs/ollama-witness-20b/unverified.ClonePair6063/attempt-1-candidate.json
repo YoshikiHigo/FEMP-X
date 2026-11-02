@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical element‑wise equality checks; for any deterministic, bounded input the control flow and return values coincide. No input can cause one method to return true while the other returns false, nor can one terminate while the other throws an exception or loops indefinitely. Hence no separating test case exists."
+}

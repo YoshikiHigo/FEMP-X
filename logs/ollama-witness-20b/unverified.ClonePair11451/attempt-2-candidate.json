@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the same long value for all possible inputs. Both interpret the specified byte slice in opposite traversal directions but compensate with opposite shift directions, yielding identical results. No deterministic, bounded input can produce a differing return value, side effect, exception, or non‑termination."
+}

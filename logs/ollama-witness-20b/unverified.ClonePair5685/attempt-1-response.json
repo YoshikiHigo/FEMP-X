@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all integer inputs; they return true for the same set of character codes (space, newline, carriage return, tab) and false otherwise. No deterministic, bounded input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 755,
+  "eval_count": 152,
+  "total_duration": 1523346500,
+  "load_duration": 15560700
+}

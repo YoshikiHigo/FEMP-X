@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods produce identical results for all possible inputs. Both create an array of the requested size, copy up to the smaller of the requested size and the input array length, and leave any remaining slots initialized to zero. They both throw the same exceptions (NegativeArraySizeException for negative sizes, NullPointerException for null input arrays) under the same conditions. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1212,
+  "eval_count": 680,
+  "total_duration": 5637692400,
+  "load_duration": 5009700
+}

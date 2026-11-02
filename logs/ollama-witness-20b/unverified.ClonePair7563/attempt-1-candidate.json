@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No concrete deterministic input can be constructed with the standard library classes that causes method1 to return true while method2 returns false, because method2 only adds a class‑type check that is redundant for all built‑in types whose equals implementation already respects class identity. Without defining custom classes, a separating input cannot be produced."
+}

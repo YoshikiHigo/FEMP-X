@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the minimum of a non‑empty int array by iterating over all elements. The only difference is that method1 starts the loop at index 1 while method2 starts at index 0, but the initial value is set to a[0] in both cases. For any valid input array (non‑null, length ≥ 1) the two methods produce identical results. For empty or null arrays both throw the same exception types. Therefore no concrete input can distinguish the two methods."
+}

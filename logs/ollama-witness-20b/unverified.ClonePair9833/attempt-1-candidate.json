@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null‑check and element‑wise comparison logic; no input can cause differing return values, side effects, or exceptions."
+}

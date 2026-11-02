@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical bitwise operations on the same 4-byte slice of the array; no input can cause differing return values, side effects, or exceptions."
+}

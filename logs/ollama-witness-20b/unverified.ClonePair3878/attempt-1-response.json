@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the same dot product of two double arrays. They handle null and empty arrays identically, iterate over the same range, and perform the same arithmetic operations. No input can cause a difference in return value, side effects, exceptions, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1141,
+  "eval_count": 84,
+  "total_duration": 1137504700,
+  "load_duration": 5353400
+}

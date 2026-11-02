@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the control flow and return conditions of both methods, no deterministic input can be constructed that causes one method to return a different value, throw an exception, or exhibit a side‑effect while the other behaves identically. All branches that could potentially diverge either guard against the same conditions or produce the same observable outcome. Therefore, no concrete separating test case exists for the given implementation."
+}

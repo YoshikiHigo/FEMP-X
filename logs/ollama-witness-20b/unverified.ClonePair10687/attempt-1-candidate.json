@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 propagates NumberFormatException when the system property value is non‑numeric, whereas method2 catches the exception and returns the supplied default value.",
+  "arguments_java": [
+    "(String) (System.setProperty(\"testProp\",\"abc\") == null ? \"testProp\" : \"testProp\")",
+    "-1"
+  ],
+  "parameter_types": [
+    "String",
+    "int"
+  ],
+  "void_return": false
+}

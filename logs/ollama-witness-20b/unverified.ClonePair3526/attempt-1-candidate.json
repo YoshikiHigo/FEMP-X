@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null checks and delegate to String.compareTo on the same casted arguments. For any pair of inputs that are either null or instances of String (or its subclasses), the control flow and return values coincide exactly. No input can cause one method to return a different value, throw a different exception type, or exhibit non‑termination while the other behaves differently. Therefore, no concrete separating test case exists for these two methods."
+}

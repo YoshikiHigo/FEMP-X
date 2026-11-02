@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no deterministic input can be constructed that causes them to behave differently in terms of return value, side effects, exception type, or termination. Both methods perform identical substring replacement logic for all possible string inputs, including edge cases such as null, empty strings, and strings where the search pattern is not present. Therefore, no concrete separating test case exists."
+}

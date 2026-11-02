@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns true for candidate 1 (since it treats 1 as a prime), while method2 returns false because it explicitly checks n<=2 and returns n==2.\",\"arguments_java\":[\"1\"],\"parameter_types\":[\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 903,
+  "eval_count": 431,
+  "total_duration": 3554157300,
+  "load_duration": 22626800
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible byte[] inputs. Both check length equality, then compare elements in the same order (method1 forwards, method2 backwards). The early reference equality check in method2 does not change the outcome because the forward comparison in method1 would also yield true for identical references. Thus no concrete input can distinguish the two methods."
+}

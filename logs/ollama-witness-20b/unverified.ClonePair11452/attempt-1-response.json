@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical bit‑wise reconstruction of a long from a byte array. For any valid input (including edge cases such as empty arrays, negative lengths, or null arrays) both methods either return the same value or throw the same exception. No deterministic, bounded input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1268,
+  "eval_count": 479,
+  "total_duration": 4030047200,
+  "load_duration": 4278800
+}

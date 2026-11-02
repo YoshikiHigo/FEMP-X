@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair8490",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMCA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMCA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMCA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMCA=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMCA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMCA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMCA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMCA=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 trims the input before parsing, so a string containing leading/trailing whitespace such as \" 1.0 \" is parsed successfully and returns a Double(1.0). method2 does not trim; it attempts to parse the raw string and throws NumberFormatException, causing the method to return null. Thus the same input yields different return values.",
+    "arguments_java": [
+      "\" 1.0 \""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 160.132
+}

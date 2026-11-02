@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logical checks: they return true only when the two array references are equal or when both are non‑null, have the same length, and contain equal elements in the same order. The forward and backward loops are equivalent in effect, and all other branches match. No deterministic input can cause one method to return a different value, throw an exception, or terminate differently than the other."
+}

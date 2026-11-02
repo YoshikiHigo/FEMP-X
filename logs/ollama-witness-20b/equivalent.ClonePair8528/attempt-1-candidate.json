@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same value for all possible String inputs (including null, valid numeric strings, and invalid strings). They both catch NumberFormatException and return null in that case, and they both return null when the input is null. No deterministic, bounded input can distinguish their behavior."
+}

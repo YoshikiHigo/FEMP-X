@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair7606",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(0),Date(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(0),Date(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(0),Date(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(0),Date(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(0),Date(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(0),Date(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(0),Date(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(0),Date(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns true when the two objects are of different classes but their equals methods are mutually symmetric; method2 returns false because it requires the two objects to be of the same runtime class.",
+    "arguments_java": [
+      "new java.util.Date(0L)",
+      "new java.sql.Date(0L)"
+    ],
+    "parameter_types": [
+      "Object",
+      "Object"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 149.94
+}

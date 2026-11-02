@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs: they return true iff the first array is a prefix of the second, and they throw the same exceptions (NullPointerException or ArrayIndexOutOfBoundsException) under the same conditions. No concrete separating input exists."
+}

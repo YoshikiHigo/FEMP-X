@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same logic: they iterate from the given offset/startFrom index and return the first index of a non‑whitespace character, or -1 if none is found. No input can cause one to behave differently from the other."
+}

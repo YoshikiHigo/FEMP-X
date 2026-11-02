@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical hex-to-byte conversion logic; exhaustive analysis of edge cases (negative indices, overflow, null strings, empty arrays, etc.) shows no distinguishing behavior in return value, side effects, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1731,
+  "eval_count": 665,
+  "total_duration": 5571311500,
+  "load_duration": 7203300
+}

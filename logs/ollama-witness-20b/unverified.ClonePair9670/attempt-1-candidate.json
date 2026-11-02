@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods behave identically for all possible int[] inputs, including empty arrays, null references, and arrays containing any integer values. No concrete input can distinguish their return values, side effects, or exception behavior."
+}

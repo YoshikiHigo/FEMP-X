@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical two-byte extraction with identical masking and shifting; no deterministic input causes differing return values, side effects, or exceptions."
+}

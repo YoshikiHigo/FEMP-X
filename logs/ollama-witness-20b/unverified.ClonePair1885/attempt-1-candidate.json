@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all byte values (0–255) and the handling of negative bytes, both methods produce identical hexadecimal string representations. No input leads to a differing return value, side effect, exception, or non‑termination."
+}

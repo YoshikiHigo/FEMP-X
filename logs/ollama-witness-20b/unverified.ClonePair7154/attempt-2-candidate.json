@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they return 0 when the array is too short or null, and otherwise read four consecutive bytes starting at the given index. For any index that causes a bounds violation, both methods throw an ArrayIndexOutOfBoundsException. No input can make one method return a value while the other throws, or vice versa. Therefore no concrete separating test case exists."
+}

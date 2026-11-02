@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations on the same inputs; exhaustive reasoning shows no input can cause one to behave differently from the other under the allowed difference types."
+}

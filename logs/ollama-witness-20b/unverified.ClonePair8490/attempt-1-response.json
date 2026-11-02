@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 trims the input before parsing, so a string containing leading/trailing whitespace such as \\\" 1.0 \\\" is parsed successfully and returns a Double(1.0). method2 does not trim; it attempts to parse the raw string and throws NumberFormatException, causing the method to return null. Thus the same input yields different return values.\",\"arguments_java\":[\"\\\" 1.0 \\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 754,
+  "eval_count": 206,
+  "total_duration": 1833719800,
+  "load_duration": 2649600
+}

@@ -1,0 +1,20 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 writes one byte per input element, while method2 writes three bytes per input element. With an output buffer that can hold only two bytes, method1 completes normally and returns the buffer, whereas method2 attempts to write three bytes and throws an ArrayIndexOutOfBoundsException.",
+  "arguments_java": [
+    "new float[]{1.0f}",
+    "0",
+    "1",
+    "new byte[]{0,0}",
+    "0"
+  ],
+  "parameter_types": [
+    "float[]",
+    "int",
+    "int",
+    "byte[]",
+    "int"
+  ],
+  "void_return": false
+}

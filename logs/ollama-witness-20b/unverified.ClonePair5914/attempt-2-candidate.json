@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No concrete separating input can be constructed within the allowed expression constraints that would cause method1 and method2 to behave differently. The only distinguishing scenario requires both arguments to be the same reference that throws in compareTo, but creating a shared instance deterministically in a single expression is not possible with the provided helpers and restrictions."
+}

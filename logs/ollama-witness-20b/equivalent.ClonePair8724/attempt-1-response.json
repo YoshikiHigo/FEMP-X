@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible String inputs and defaultValue values. Both parse the string when it is non‑null and non‑empty, and in all other cases return the defaultValue. No input can cause a different return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1128,
+  "eval_count": 304,
+  "total_duration": 2730616000,
+  "load_duration": 4411500
+}

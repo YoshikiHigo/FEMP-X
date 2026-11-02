@@ -1,0 +1,64 @@
+{
+  "key": "unverified.ClonePair11981",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJhYWJhYQ==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJhYmE=),String(YWI=),String(YWJh)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJhYmE=),String(YWI=),String(YWJh)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJhYWJhYQ==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJhYmE=),String(YWI=),String(YWJh)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJhYmE=),String(YWI=),String(YWJh)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJhYWJhYQ==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJhYmE=),String(YWI=),String(YWJh)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJhYmE=),String(YWI=),String(YWJh)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJhYWJhYQ==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJhYmE=),String(YWI=),String(YWJh)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJhYmE=),String(YWI=),String(YWJh)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "In method1 every occurrence of the key is replaced with the value, while method2 uses the length of the key to advance the search index but replaces the key with the value. When the value is longer than the key, the replacement in method2 shifts the remaining text to the right, causing the next search to start at a position that skips an overlapping occurrence. For the input text=\"ababa\", key=\"ab\", value=\"aba\", method1 replaces the two non‑overlapping \"ab\" substrings and returns \"abaaba\", whereas method2 replaces the first \"ab\", then continues searching from the end of the inserted value, which causes the second original \"ab\" to be matched again and results in \"abaabaa\".",
+    "arguments_java": [
+      "\"ababa\"",
+      "\"ab\"",
+      "\"aba\""
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 101.617
+}

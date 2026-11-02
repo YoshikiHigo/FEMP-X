@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both prepend the specified character until the resulting string reaches the desired length, and they both return the original string when the desired length is less than or equal to the original length. No input can produce a difference in return value, side effect, exception type, or non‑termination."
+}

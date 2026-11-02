@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive comparison of all control paths, both methods perform identical operations on the input arrays for every possible combination of arguments. No distinguishing behavior (different return value, side effect, exception, or non‑termination) was found for any concrete, deterministic input that can be constructed within the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 2624,
+  "eval_count": 472,
+  "total_duration": 4222810700,
+  "load_duration": 5399500
+}

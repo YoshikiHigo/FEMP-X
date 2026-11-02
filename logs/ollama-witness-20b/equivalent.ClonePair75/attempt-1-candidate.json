@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; they perform the same loop and return the same results for all possible inputs, including null and out-of-bounds indices. No concrete test case can distinguish them."
+}

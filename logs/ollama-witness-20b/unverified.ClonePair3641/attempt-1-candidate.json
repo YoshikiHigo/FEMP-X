@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return true only when the two array references are equal, and otherwise return false. No input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

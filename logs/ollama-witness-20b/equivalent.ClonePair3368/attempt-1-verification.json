@@ -1,0 +1,62 @@
+{
+  "key": "equivalent.ClonePair3368",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][1, 2],int[][1]]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][1, 2],int[][1]]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][1, 2],int[][1]]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][1, 2],int[][1]]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][1, 2],int[][1]]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][1, 2],int[][1]]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][1, 2],int[][1]]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][1, 2],int[][1]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 throws ArrayIndexOutOfBoundsException when pattern1 is longer than pattern2, while method2 returns false.",
+    "arguments_java": [
+      "new int[]{1,2}",
+      "new int[]{1}"
+    ],
+    "parameter_types": [
+      "int[]",
+      "int[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 164.134
+}

@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "Both methods perform Base64 encoding but they compute the first two 6‑bit groups differently when the input length is 1. For the single byte 0xFF, method1 produces the characters ‘/’ and ‘w’ (derived from the raw 6‑bit values 63 and 48), whereas method2 produces ‘Q’ and ‘A’ (derived from the shifted value 1024). Thus the returned strings differ: \"/w==\" vs \"QA==\".",
+  "arguments_java": [
+    "new byte[]{(byte)255}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

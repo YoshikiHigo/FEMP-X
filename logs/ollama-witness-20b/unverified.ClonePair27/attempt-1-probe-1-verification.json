@@ -1,0 +1,61 @@
+{
+  "key": "unverified.ClonePair27",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(42)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(NDI=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(NDI=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(42)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(NDI=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(NDI=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(42)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(NDI=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(NDI=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(42)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(NDI=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(NDI=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "side_effect",
+    "reason": "method1 uses Long.valueOf which caches Long objects for values in the range -128 to 127, so repeated calls with the same input return the same Long instance. method2 uses Long.parseLong which returns a primitive long that is then autoboxed into a new Long object each time, so repeated calls return distinct instances.",
+    "arguments_java": [
+      "\"42\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 156.508
+}

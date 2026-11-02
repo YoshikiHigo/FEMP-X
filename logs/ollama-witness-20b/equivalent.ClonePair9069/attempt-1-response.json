@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible inputs: they compute the maximum element of the supplied int array, throwing the same exceptions (ArrayIndexOutOfBoundsException for empty arrays and NullPointerException for null arrays). No input can distinguish their return values, side effects, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1005,
+  "eval_count": 141,
+  "total_duration": 1546243000,
+  "load_duration": 2188300
+}

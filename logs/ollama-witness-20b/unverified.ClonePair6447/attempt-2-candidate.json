@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 converts each float to a 32‑bit int and writes its four little‑endian bytes into out_buff, while method2 multiplies each float by 127.0f and writes only the low 8 bits. With the same input the resulting byte arrays differ in length and content.",
+  "arguments_java": [
+    "new float[]{1.0f,2.0f}",
+    "0",
+    "2",
+    "new byte[8]",
+    "0"
+  ],
+  "parameter_types": [
+    "float[]",
+    "int",
+    "int",
+    "byte[]",
+    "int"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

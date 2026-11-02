@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive reasoning over all integer inputs, method1 and method2 produce identical results (or identical exceptions) for every possible pair of arguments. No concrete separating input can be found.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1133,
+  "eval_count": 1108,
+  "total_duration": 8824656000,
+  "load_duration": 24448800
+}

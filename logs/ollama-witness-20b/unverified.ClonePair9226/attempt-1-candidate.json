@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical string replacement logic and handle all edge cases (null inputs, empty strings, overlapping patterns) in the same way. No deterministic input can produce a differing return value, side effect, exception type, or non‑termination between the two implementations."
+}

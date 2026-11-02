@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the two hexadecimal digits of a byte in the same way for all possible byte values; exhaustive reasoning shows no input leads to a differing return value, side effect, exception, or non‑termination."
+}

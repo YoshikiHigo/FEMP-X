@@ -1,0 +1,64 @@
+{
+  "key": "unverified.ClonePair13502",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJjWA==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(WA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),String(),String(WA==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJjWA==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(WA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),String(),String(WA==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJjWA==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(WA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),String(),String(WA==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJjWA==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(WA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),String(),String(WA==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "When the replacement target string is empty, method1 appends the replacement only once at the end of the original string, whereas method2 appends the replacement between two copies of the original string, producing a longer result.",
+    "arguments_java": [
+      "\"abc\"",
+      "\"\"",
+      "\"X\""
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 156.87
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of the control flow and side‑effects of both methods, no deterministic, bounded input can be constructed that causes one method to terminate with a different return value, throw a different exception, or exhibit a side‑effect while the other behaves differently. All candidate inputs either lead to identical behavior or to shared non‑termination, which is not an acceptable distinguishing difference under the given rules.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1675,
+  "eval_count": 417,
+  "total_duration": 3545975800,
+  "load_duration": 22310500
+}

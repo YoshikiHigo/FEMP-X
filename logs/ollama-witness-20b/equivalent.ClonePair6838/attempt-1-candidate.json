@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the Euclidean algorithm for computing the greatest common divisor of two positive integers. For all inputs where m>0 and n>0, method1 decrements the candidate divisor until it divides both numbers, while method2 applies the classic Euclidean remainder loop. The two algorithms produce identical results for all such inputs, and the existing test already covers the non‑positive case. No deterministic, bounded input can be found that causes a difference in return value, side effect, exception, or non‑termination between the two methods."
+}

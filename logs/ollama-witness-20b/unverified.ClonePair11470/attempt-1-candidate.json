@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all edge cases, the two methods behave identically for every possible input that satisfies the preconditions. No concrete separating input can be constructed that would cause a difference in return value, side effects, exception behavior, or non‑termination."
+}

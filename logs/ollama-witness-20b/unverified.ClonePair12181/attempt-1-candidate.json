@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns the index of the first occurrence of quoteChar after start, ignoring braces and only treating backslash as escape. method2 returns the index of the first occurrence of match when not inside any braces (level==0) and not escaped; it ignores matches that occur while level>0. With data=\"a{b}c\", start=0, quoteChar='x', method1 finds the character 'b' at index 2 (since quoteChar is not found, it returns the first non-escaped character, which is 'b'), whereas method2 returns -1 because the match 'b' occurs inside braces and is therefore ignored. The two methods therefore produce different return values for the same input.",
+  "arguments_java": [
+    "\"a{b}c\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

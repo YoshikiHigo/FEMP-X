@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical string contents for all possible inputs; the only difference is that method1 may return the original reference when no replacements occur, which is not detectable by value-based equivalence tests. No concrete input can distinguish their observable behavior."
+}

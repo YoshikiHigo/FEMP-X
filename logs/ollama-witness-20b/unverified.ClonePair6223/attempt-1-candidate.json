@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both throw a NullPointerException when either argument is null, return true when both arrays are empty, return false when lengths differ, and otherwise compare elements pairwise, returning false on the first mismatch and true if all match. No input can distinguish their return values, side effects, or termination behavior."
+}

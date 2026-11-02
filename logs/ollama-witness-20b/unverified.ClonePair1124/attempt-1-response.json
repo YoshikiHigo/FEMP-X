@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical logic for all possible byte[] inputs: they check reference equality, nulls, length equality, and element-wise equality. No input can cause a divergence in return value, side effects, or exceptions. Therefore no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1249,
+  "eval_count": 94,
+  "total_duration": 1184494500,
+  "load_duration": 6606200
+}

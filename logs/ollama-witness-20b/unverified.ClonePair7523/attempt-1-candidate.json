@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible inputs. Both perform the same null checks and invoke equals only when both arguments are non‑null, yielding identical return values or exception behavior. No concrete input can distinguish them."
+}

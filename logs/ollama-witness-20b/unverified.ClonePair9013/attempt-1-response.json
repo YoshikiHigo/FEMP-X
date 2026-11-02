@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical operations; the raw type in method2 does not affect the runtime behavior for the given signatures. No input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1438,
+  "eval_count": 87,
+  "total_duration": 850396500,
+  "load_duration": 6476200
+}

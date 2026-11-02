@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical little‑endian conversion of four consecutive bytes starting at the supplied index/offset. For any byte array and integer index/offset that does not cause an exception, both methods compute the same 32‑bit integer. No input can produce a differing return value, side effect, or exception type without invoking the same exception in both methods.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1244,
+  "eval_count": 371,
+  "total_duration": 3248089300,
+  "load_duration": 5686900
+}

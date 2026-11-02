@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. Method1 parses non‑empty strings using the Double constructor and returns null on NumberFormatException, while Method2 trims the string, returns null for null or empty strings, and parses using Double.valueOf, catching any Exception (which in practice is only NumberFormatException). No input can cause one method to return a non‑null Double while the other returns null, nor can one method throw an exception that the other does not. Therefore no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 772,
+  "eval_count": 487,
+  "total_duration": 3762149500,
+  "load_duration": 10717000
+}

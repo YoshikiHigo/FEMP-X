@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all sign and overflow combinations, both methods produce identical results for every possible pair of long inputs. No concrete separating input was found."
+}

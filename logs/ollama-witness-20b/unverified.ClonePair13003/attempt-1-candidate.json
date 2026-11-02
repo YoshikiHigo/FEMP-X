@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are logically equivalent for all long inputs; no input can produce a different return value, side effect, exception, or non‑termination."
+}

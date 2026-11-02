@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible inputs; they both return true iff the two char arrays are non‑null, have the same length, and contain identical characters. No input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

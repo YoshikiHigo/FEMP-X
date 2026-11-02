@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical byte‑to‑int conversions using the same arithmetic and bit‑shifting logic. For any byte array and integer index/offset that does not cause an exception, both compute the same 32‑bit value. For inputs that cause an exception (null array or out‑of‑bounds index), both methods throw the same type of exception at the same point. No deterministic, bounded input can distinguish their behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods contain identical conditional logic and produce the same result for any char input; no distinguishing input exists."
+}

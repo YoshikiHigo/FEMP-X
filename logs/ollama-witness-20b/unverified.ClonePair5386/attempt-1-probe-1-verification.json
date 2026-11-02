@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair5386",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][1, 2],Integer(5)]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][1, 2],Integer(5)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][1, 2],Integer(5)]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][1, 2],Integer(5)]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][1, 2],Integer(5)]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][1, 2],Integer(5)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][1, 2],Integer(5)]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][1, 2],Integer(5)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 throws ArrayIndexOutOfBoundsException when the index is greater than the last valid position in the array, while method2 simply skips the non‑existent index and returns the original array unchanged.",
+    "arguments_java": [
+      "new int[]{1,2}",
+      "5"
+    ],
+    "parameter_types": [
+      "int[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 167.034
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all deterministic, bounded inputs: they return 0.0 for null, empty, or whitespace strings, parse and return the numeric value for valid representations, and return 0.0 when a NumberFormatException occurs. No input causes a differing return value, side effect, exception type, or non‑termination."
+}

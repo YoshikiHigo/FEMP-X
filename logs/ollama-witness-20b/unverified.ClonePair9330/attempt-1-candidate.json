@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same boolean value for every possible char input; method1 checks the same character ranges that method2 enumerates explicitly. No input can distinguish their behavior."
+}

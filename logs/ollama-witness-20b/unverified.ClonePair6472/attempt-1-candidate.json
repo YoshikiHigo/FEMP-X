@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "difference_type": "side_effect",
+  "reason": "Both methods return the same out_buff reference, but method1 writes 3 bytes per float while method2 writes 4 bytes. With a single float input and a 4‑byte buffer, method1 leaves the last byte unchanged, whereas method2 overwrites it, producing different buffer contents.",
+  "arguments_java": [
+    "new float[]{0.5f}",
+    "0",
+    "1",
+    "new byte[]{0,0,0,0}",
+    "0"
+  ],
+  "parameter_types": [
+    "float[]",
+    "int",
+    "int",
+    "byte[]",
+    "int"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

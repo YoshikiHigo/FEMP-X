@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs within the constraints of Java array operations; no concrete separating input can be constructed that causes one method to return a different value, throw a different exception type, or exhibit non‑termination while the other behaves differently."
+}

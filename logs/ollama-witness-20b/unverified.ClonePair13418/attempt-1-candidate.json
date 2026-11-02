@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1(\"a\") returns an empty byte array because it truncates the single hex character, whereas method2(\"a\") attempts to take a two‑character substring and throws a StringIndexOutOfBoundsException.",
+  "arguments_java": [
+    "\"a\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

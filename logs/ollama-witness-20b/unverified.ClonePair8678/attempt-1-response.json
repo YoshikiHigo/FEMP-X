@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible inputs and initial states; they both return the first non‑whitespace index or the original index if none exists, and they both throw the same exceptions (NullPointerException or StringIndexOutOfBoundsException) under the same conditions.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1059,
+  "eval_count": 248,
+  "total_duration": 2039872500,
+  "load_duration": 2277200
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte‑to‑int conversion using the same arithmetic and bitwise operations; exhaustive reasoning shows no input can cause a difference in return value, side effects, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1250,
+  "eval_count": 561,
+  "total_duration": 4398188500,
+  "load_duration": 10667000
+}

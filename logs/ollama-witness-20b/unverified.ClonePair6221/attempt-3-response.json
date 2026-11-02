@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are logically equivalent for all possible boolean[] inputs. Both return true only when the two arrays are non‑null, have the same length, and contain identical elements (or are the same reference). In all other cases they return false. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1182,
+  "eval_count": 880,
+  "total_duration": 6917771400,
+  "load_duration": 3253600
+}

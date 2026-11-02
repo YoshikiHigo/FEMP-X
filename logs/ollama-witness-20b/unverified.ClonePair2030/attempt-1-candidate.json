@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 processes only the first four bytes of the array and returns an integer, whereas method2 continues to read bytes until the shift counter j becomes negative. When the input array has more than four elements, method1 returns a value while method2 attempts to access a byte beyond the array bounds and throws an ArrayIndexOutOfBoundsException.",
+  "arguments_java": [
+    "new byte[]{1,2,3,4,5}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

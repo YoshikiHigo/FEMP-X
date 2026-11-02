@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logical comparisons on their respective integer arguments; for any given set of four integers, both methods return the same boolean value. No input can distinguish their behavior."
+}

@@ -1,0 +1,20 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 writes a single byte into out_buff[0] and returns normally, while method2 attempts to write three bytes starting at out_offset=0 into an out_buff of length 1, causing an ArrayIndexOutOfBoundsException.",
+  "arguments_java": [
+    "new float[]{1.0f}",
+    "0",
+    "1",
+    "new byte[1]",
+    "0"
+  ],
+  "parameter_types": [
+    "float[]",
+    "int",
+    "int",
+    "byte[]",
+    "int"
+  ],
+  "void_return": false
+}

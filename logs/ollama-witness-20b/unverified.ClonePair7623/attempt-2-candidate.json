@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "Both objects are instances of the same anonymous class that overrides equals to always return true but assigns a different hashCode value to each instance. method1 uses equals and therefore returns true for the pair. method2 additionally requires that the hashCodes be equal; because the two instances have different hashCodes, method2 returns false.",
+  "arguments_java": [
+    "new Object(){int v=1; public boolean equals(Object o){return true;} public int hashCode(){return v;}}",
+    "new Object(){int v=2; public boolean equals(Object o){return true;} public int hashCode(){return v;}}"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs. Both handle nulls, Booleans, and Comparable objects in the same way, and any case that would cause a ClassCastException or NullPointerException does so in both methods. No concrete input can distinguish their outputs or side effects."
+}

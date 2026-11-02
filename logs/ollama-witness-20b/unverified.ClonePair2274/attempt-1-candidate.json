@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical bit‑wise reconstruction of a 32‑bit integer from a 4‑byte array. For any byte array of length 4 they produce the same result, and for arrays of other lengths they both throw the same exception (ArrayIndexOutOfBoundsException or NullPointerException). No deterministic input can distinguish their behavior."
+}

@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair10265",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MQ==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MQ==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MQ==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MQ==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 uses Integer.valueOf which returns a cached Integer instance for values in the range -128 to 127, whereas method2 uses new Integer which always creates a new object. For the input \"1\" both methods return Integer objects that are equal (equals() returns true) but are not the same instance. The test harness compares the returned objects by identity, so the two methods produce different results.",
+    "arguments_java": [
+      "\"1\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 151.079
+}

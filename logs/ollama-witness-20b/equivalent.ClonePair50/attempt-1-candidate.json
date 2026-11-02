@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return the parsed Long value or null for null/invalid inputs, and neither method mutates arguments, produces output, throws exceptions, or fails to terminate."
+}

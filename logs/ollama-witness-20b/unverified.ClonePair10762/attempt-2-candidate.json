@@ -1,0 +1,15 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 catches NumberFormatException and returns the default value, whereas method2 propagates the exception when the property value is a non‑numeric string.",
+  "arguments_java": [
+    "\"java.version\"",
+    "-1"
+  ],
+  "parameter_types": [
+    "String",
+    "int"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

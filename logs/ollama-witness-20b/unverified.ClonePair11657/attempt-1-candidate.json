@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both perform a straightforward replace operation, handling nulls by throwing the same NullPointerException, and they both loop infinitely when the search string is empty. No concrete input can distinguish their return values, side effects, or termination characteristics."
+}

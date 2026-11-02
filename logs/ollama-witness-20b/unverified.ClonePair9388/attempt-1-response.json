@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform equivalent range normalization for all finite double inputs; the only non‑terminating cases are for infinite values, and both methods loop indefinitely in those cases. No concrete input distinguishes the two methods.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 991,
+  "eval_count": 360,
+  "total_duration": 2879054900,
+  "load_duration": 16088500
+}

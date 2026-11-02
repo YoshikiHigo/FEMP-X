@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit integer from the first four bytes of the input array. They access the same indices (0..3) in opposite order but the bit‑shifts produce identical results for any byte array of length ≥4. For shorter arrays both throw ArrayIndexOutOfBoundsException, and for null input both throw NullPointerException. No deterministic input can produce a differing return value, exception type, side effect, or non‑termination."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same little‑endian 32‑bit integer from a 4‑byte array; exhaustive reasoning shows no input can produce a different return value, exception type, or side effect. Therefore no separating test case exists."
+}

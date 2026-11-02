@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical checks in the same order (null handling, reference equality, length comparison, and element-wise comparison). No input can cause one to return a different value, throw a different exception, or exhibit non‑termination while the other behaves differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1276,
+  "eval_count": 132,
+  "total_duration": 1427992500,
+  "load_duration": 24477400
+}

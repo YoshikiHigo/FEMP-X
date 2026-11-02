@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit little‑endian integer from the first four bytes of the array. For any byte value, the sign extension performed by the left shift in method2 is masked away by the subsequent bitwise AND with the appropriate 0xFF<<i*8 mask, yielding the same result as method1’s explicit masking. No input can cause a differing return value, side effect, exception type, or non‑termination."
+}

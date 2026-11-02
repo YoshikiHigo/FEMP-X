@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical element‑wise comparisons of the two byte arrays. For any pair of inputs (including nulls, empty arrays, arrays of equal or unequal length, and arrays with differing contents) both methods either return the same boolean value or throw the same exception type (NullPointerException or ArrayIndexOutOfBoundsException). No input can cause one method to return a different value or throw a different exception than the other."
+}

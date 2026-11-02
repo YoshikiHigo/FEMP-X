@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all possible String inputs, including null. Both return true iff the first ':' character occurs before any '/', '?', or '#' characters. No input can cause a divergence in return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 854,
+  "eval_count": 607,
+  "total_duration": 4975189900,
+  "load_duration": 3773500
+}

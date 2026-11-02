@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair3858",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][double[][1.0, 2.0],double[][]]",
+        "inputAfterSnapshot": "java.lang.Object[][double[][1.0, 2.0],double[][]]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][double[][1.0, 2.0],double[][]]",
+        "inputAfterSnapshot": "java.lang.Object[][double[][1.0, 2.0],double[][]]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][double[][1.0, 2.0],double[][]]",
+        "inputAfterSnapshot": "java.lang.Object[][double[][1.0, 2.0],double[][]]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][double[][1.0, 2.0],double[][]]",
+        "inputAfterSnapshot": "java.lang.Object[][double[][1.0, 2.0],double[][]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 accesses b[i] for i in 0..a.length-1 without checking b length, causing ArrayIndexOutOfBoundsException when b is empty; method2 checks ovx.length and returns 0 for empty ovx, so with a non‑empty array and an empty second array method1 throws while method2 returns 0.",
+    "arguments_java": [
+      "new double[]{1.0,2.0}",
+      "new double[]{}"
+    ],
+    "parameter_types": [
+      "double[]",
+      "double[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 165.084
+}

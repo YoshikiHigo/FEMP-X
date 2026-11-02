@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, all control‑flow paths, side‑effects, and return values are identical for any valid input. The only differences are cosmetic (extra semicolons) and do not affect observable behavior. No concrete input can be constructed that causes method1 and method2 to diverge in return value, side‑effects, exception type, or non‑termination."
+}

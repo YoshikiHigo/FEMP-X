@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods evaluate the same boolean expression; no input can distinguish their outputs.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 805,
+  "eval_count": 104,
+  "total_duration": 1207056500,
+  "load_duration": 2706200
+}

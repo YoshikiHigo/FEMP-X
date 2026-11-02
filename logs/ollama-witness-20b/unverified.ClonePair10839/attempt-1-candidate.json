@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they return the supplied default value when the system property is null or cannot be parsed as an integer, and otherwise return the parsed integer. No input can cause a difference in return value, side effects, or termination."
+}

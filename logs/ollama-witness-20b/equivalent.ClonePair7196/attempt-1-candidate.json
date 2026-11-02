@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they handle nulls in the same way and delegate to compareTo only when both arguments are non‑null. No input can produce a differing return value, side effect, exception, or non‑termination."
+}

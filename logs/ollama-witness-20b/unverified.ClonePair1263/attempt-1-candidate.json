@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks: they handle nulls, compare lengths, and compare each element (method1 forwards, method2 backwards). For all possible byte[] inputs—including null, empty, and non-empty arrays—both methods return the same boolean value, have no side effects, and terminate normally. No concrete input can distinguish their behavior."
+}

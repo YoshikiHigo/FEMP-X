@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no deterministic input can produce a difference in return value, side effects, exception behavior, or non‑termination. Both methods handle all edge cases identically for the same arguments, so a concrete separating test case cannot be constructed."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical big‑endian extraction of four bytes from the supplied array. For any valid or invalid offset the same exception (ArrayIndexOutOfBoundsException or NullPointerException) is thrown by both implementations, and the returned integer value is computed in the same way. No deterministic input can distinguish their behavior."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of all control‑flow paths, both methods produce identical results for every possible pair of byte[] inputs (including nulls, empty arrays, and arrays of any length). No input can cause one method to return a different value, throw an exception, or exhibit a side effect that the other does not. Therefore, no separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1491,
+  "eval_count": 516,
+  "total_duration": 4340720600,
+  "load_duration": 21790800
+}

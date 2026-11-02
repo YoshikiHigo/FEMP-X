@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 sign‑extends the first byte when assigning it to a long, whereas method2 masks each byte to 0xFF before shifting. For a byte array whose first element is negative (e.g. (byte)0xFF), the two methods produce different long values.",
+  "arguments_java": [
+    "new byte[]{(byte)0xFF,0,0,0,0,0,0,0}",
+    "0"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "int"
+  ],
+  "void_return": false
+}

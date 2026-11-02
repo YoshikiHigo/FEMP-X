@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods return the same integer for every possible char input; they are functionally equivalent for all inputs.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 992,
+  "eval_count": 643,
+  "total_duration": 4977204400,
+  "load_duration": 4343900
+}

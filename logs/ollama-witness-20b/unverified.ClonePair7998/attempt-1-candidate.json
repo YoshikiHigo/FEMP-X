@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical arithmetic and control flow on the same double inputs; no deterministic input can cause a difference in return value, side effect, exception, or non-termination."
+}

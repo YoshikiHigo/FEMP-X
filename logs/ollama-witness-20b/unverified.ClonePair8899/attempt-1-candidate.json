@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same string for all integer inputs 0–11 and null for any other integer. No deterministic difference in return value, side effect, exception, or termination can be observed with any finite, bounded input."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all valid inputs: they both return the index of the first non‑whitespace character starting from the given index, or -1 if none exists. They also throw the same exceptions (e.g., NPE for null, StringIndexOutOfBoundsException for out‑of‑range indices). No concrete input can distinguish them."
+}

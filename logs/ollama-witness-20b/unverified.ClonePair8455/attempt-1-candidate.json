@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return a Double when the input is a valid numeric string, and return null for null, empty, or non‑numeric strings. No deterministic input can distinguish their outputs or side effects."
+}

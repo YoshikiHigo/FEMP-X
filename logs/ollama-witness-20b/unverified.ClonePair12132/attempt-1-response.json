@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods return true for the same set of characters (' ', '\\\\t', '\\\\r', '\\\\n') and false otherwise; no input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 754,
+  "eval_count": 80,
+  "total_duration": 685737500,
+  "load_duration": 3091700
+}

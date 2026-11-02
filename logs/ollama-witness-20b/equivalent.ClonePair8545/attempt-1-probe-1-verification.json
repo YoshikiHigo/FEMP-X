@@ -1,0 +1,60 @@
+{
+  "key": "equivalent.ClonePair8545",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMA==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMA==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMA==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMA==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 passes the original string to Double.valueOf, which throws NumberFormatException for strings with leading/trailing whitespace, causing method1 to return null. method2 trims the string before parsing, successfully converting \" 1.0\" to 1.0. Thus the same input yields different return values.",
+    "arguments_java": [
+      "\" 1.0\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 164.277
+}

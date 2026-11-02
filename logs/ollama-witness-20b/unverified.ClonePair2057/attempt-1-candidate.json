@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible byte[] inputs. Both return false when either argument is null, return false when lengths differ, and otherwise compare each element sequentially, returning true only if all elements match. No input can cause a divergence in return value, side effects, or exception type."
+}

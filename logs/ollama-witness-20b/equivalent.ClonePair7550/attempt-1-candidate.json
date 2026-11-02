@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all integer ranges, both methods produce identical return values for every possible int input. No concrete separating input exists."
+}

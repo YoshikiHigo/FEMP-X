@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair12535",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEyMyA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEyMyA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEyMyA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEyMyA=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEyMyA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEyMyA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEyMyA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEyMyA=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 trims the input before checking that all characters are digits, so a string that contains leading/trailing whitespace but only digits inside will be considered a valid digit string. method2 does not trim, so the same string will contain whitespace characters that are not digits and will cause the method to return false. The two methods therefore return different boolean values for the same input.",
+    "arguments_java": [
+      "\" 123 \""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 101.607
+}

@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 interprets the 8 bytes starting at offset as a big‑endian 64‑bit value, while method2 interprets them as a little‑endian value. For the byte array {1,2,3,4,5,6,7,8} at offset 0, method1 returns 0x0102030405060708L whereas method2 returns 0x0807060504030201L, so the return values differ.",
+  "arguments_java": [
+    "new byte[]{1,2,3,4,5,6,7,8}",
+    "0"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "int"
+  ],
+  "void_return": false
+}

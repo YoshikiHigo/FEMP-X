@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible String inputs, including nulls, empty strings, and strings of any length. No input can produce a differing return value, side effect, exception, or non‑termination."
+}

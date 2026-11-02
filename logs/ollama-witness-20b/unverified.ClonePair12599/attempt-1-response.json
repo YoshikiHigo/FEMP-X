@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. They both throw the same exceptions for null or out‑of‑range widths, and produce the same padded or truncated strings for all valid widths. No concrete input can be constructed that distinguishes their return values, side effects, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1140,
+  "eval_count": 282,
+  "total_duration": 2566108900,
+  "load_duration": 2084800
+}

@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 interprets each byte as an unsigned value, while method2 masks each byte to 7 bits and then restores the sign bit via OR operations. For a byte value 0x80 (negative), method1 returns 0x80 for that byte, whereas method2 returns 0x00 for that byte and sets the corresponding sign bit. With all eight bytes equal to 0x80, method1 yields 0x8080808080808080, but method2 yields 0x0808080808080800.",
+  "arguments_java": [
+    "new byte[]{(byte)0x80,(byte)0x80,(byte)0x80,(byte)0x80,(byte)0x80,(byte)0x80,(byte)0x80,(byte)0x80}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

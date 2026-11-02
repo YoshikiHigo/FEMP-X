@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical checks for nulls, reference equality, length equality, and element-wise comparison. No input can cause one to return a different value, throw an exception, or exhibit non-termination while the other behaves differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1284,
+  "eval_count": 243,
+  "total_duration": 2339305200,
+  "load_duration": 2272800
+}

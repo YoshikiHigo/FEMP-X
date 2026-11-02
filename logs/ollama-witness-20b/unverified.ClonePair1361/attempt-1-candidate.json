@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element-wise comparison of two byte arrays; the loop conditions i != arr1.length and i < array1.length are equivalent for all finite-length arrays. No input can cause a difference in return value, side effects, exception type, or non‑termination."
+}

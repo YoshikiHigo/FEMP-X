@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks on the input byte arrays: they handle nulls, compare lengths, and element-wise equality. For any deterministic, bounded input, both methods return the same boolean value, throw the same exceptions (none in this case), and have no side effects. No concrete separating test case exists."
+}

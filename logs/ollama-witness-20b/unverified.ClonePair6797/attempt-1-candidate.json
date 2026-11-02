@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of three integer arguments; for all possible integer inputs they return the same value. No distinguishing input exists."
+}

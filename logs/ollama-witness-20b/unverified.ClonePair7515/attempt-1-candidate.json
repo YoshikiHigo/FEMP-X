@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods evaluate all possible combinations of null and non‑null arguments in the same way: they both return true only when both arguments are null or when both are non‑null and equal, and return false otherwise. No input can cause a divergence in return value, side effect, exception, or termination."
+}

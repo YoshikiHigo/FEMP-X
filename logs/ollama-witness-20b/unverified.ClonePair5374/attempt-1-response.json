@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical primality checks for all integer inputs; exhaustive reasoning shows no input causes differing return values, side effects, or exceptions.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 881,
+  "eval_count": 1689,
+  "total_duration": 12940733000,
+  "load_duration": 6566000
+}

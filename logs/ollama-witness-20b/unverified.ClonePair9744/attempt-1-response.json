@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 implements a simple wildcard matcher where '?' matches any single character, so method1(\\\"a\\\", \\\"?\\\") returns true. method2 performs a strict element‑by‑element equality check; \\\"a\\\" and \\\"?\\\" are not equal, so method2(\\\"a\\\", \\\"?\\\") returns false.\",\"arguments_java\":[\"new char[]{'a'}\",\"new char[]{'?'}\"],\"parameter_types\":[\"char[]\",\"char[]\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1134,
+  "eval_count": 718,
+  "total_duration": 5679528700,
+  "load_duration": 3049900
+}

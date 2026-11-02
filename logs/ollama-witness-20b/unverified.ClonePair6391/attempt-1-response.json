@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical unsigned byte-to-long conversion over an 8‑byte window; they produce the same result for all valid inputs and throw the same exceptions for invalid inputs. No deterministic, bounded input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1035,
+  "eval_count": 172,
+  "total_duration": 1634783000,
+  "load_duration": 2355800
+}

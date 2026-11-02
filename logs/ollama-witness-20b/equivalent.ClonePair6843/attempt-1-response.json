@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods compute the minimum of three integers using <= in method1 and < in method2. For all possible integer inputs, the result is identical: ties are resolved in the same way, yielding the same value. No concrete input distinguishes their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1139,
+  "eval_count": 854,
+  "total_duration": 6999848700,
+  "load_duration": 21702800
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte‑to‑long conversion for arrays of length at least 8 and throw the same exceptions for shorter or null arrays. No deterministic input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 917,
+  "eval_count": 183,
+  "total_duration": 1813095600,
+  "load_duration": 2043800
+}

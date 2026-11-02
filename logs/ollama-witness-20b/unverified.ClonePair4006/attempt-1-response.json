@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all double inputs; no concrete separating input can be found.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1318,
+  "eval_count": 640,
+  "total_duration": 5101047400,
+  "load_duration": 7782700
+}

@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair6045",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Object[][String(eA==)],java.lang.String[][String(eA==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Object[][String(eA==)],java.lang.String[][String(eA==)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Object[][String(eA==)],java.lang.String[][String(eA==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Object[][String(eA==)],java.lang.String[][String(eA==)]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Object[][String(eA==)],java.lang.String[][String(eA==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Object[][String(eA==)],java.lang.String[][String(eA==)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Object[][String(eA==)],java.lang.String[][String(eA==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Object[][String(eA==)],java.lang.String[][String(eA==)]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 compares only length and element equality, ignoring the runtime class of the arrays. Therefore it returns true for an Object[] and a String[] of the same length whose elements are equal. method2 checks that the two arrays have the same runtime class; the differing classes cause it to return false.",
+    "arguments_java": [
+      "new Object[]{\"x\"}",
+      "new String[]{\"x\"}"
+    ],
+    "parameter_types": [
+      "Object[]",
+      "Object[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 140.104
+}

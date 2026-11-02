@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the same little‑endian long value for any byte array and index. No input can distinguish them."
+}

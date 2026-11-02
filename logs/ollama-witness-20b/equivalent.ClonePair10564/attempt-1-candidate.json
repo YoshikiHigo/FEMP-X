@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform exactly the same operations on the input array; they copy, sort, and compute the median in identical ways. No input can cause a difference in return value, side effects, or exception behavior."
+}

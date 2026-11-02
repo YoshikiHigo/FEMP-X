@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They perform the same substring replacement logic, handle nulls in the same way (throwing NPE), and both enter an infinite loop when the search string is empty. No concrete input can distinguish their return values, side effects, exceptions, or termination properties."
+}

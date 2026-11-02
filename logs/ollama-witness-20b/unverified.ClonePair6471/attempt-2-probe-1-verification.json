@@ -1,0 +1,69 @@
+{
+  "key": "unverified.ClonePair6471",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][1, 0, -128]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][-1.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][-1.0],Integer(0),Integer(1),byte[][1, 0, -128],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][0, 0, 0]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][-1.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][-1.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][1, 0, -128]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][-1.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][-1.0],Integer(0),Integer(1),byte[][1, 0, -128],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][0, 0, 0]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][-1.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][-1.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 adds 0x1000000 to negative x, method2 adds 0x7FFFFF regardless of sign, producing different byte sequences for the same input",
+    "arguments_java": [
+      "new float[]{-1.0f}",
+      "0",
+      "1",
+      "new byte[3]",
+      "0"
+    ],
+    "parameter_types": [
+      "float[]",
+      "int",
+      "int",
+      "byte[]",
+      "int"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 151.493
+}

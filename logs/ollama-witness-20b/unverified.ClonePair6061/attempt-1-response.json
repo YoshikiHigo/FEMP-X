@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive comparison of the control flow and conditions in both methods, no input can cause a divergence in return value, side effects, or termination behavior. Both methods evaluate equality of two Object[] arrays in exactly the same way, handling nulls and element comparisons identically. Therefore, no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1040,
+  "eval_count": 471,
+  "total_duration": 4009187300,
+  "load_duration": 4616700
+}

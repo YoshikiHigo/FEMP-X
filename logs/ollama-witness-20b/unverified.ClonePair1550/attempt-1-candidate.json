@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same logic: they determine whether the two collections share at least one element by iterating over the smaller collection and checking membership in the larger one. The control flow, loop structure, and return value are equivalent for all possible inputs, including nulls (which both throw NullPointerException) and non-null collections. No input can cause one method to return a different boolean, throw a different exception type, or exhibit non‑termination while the other behaves differently."
+}

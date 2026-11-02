@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks on the two input arrays; they return the same boolean value for any pair of String[] arguments, including null arrays. No distinguishing input exists."
+}

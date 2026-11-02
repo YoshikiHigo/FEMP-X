@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible inputs under the constraints of the problem. Both return false when either argument is null, and both return true only when the key/columnName equals an element of the array. No input can cause one method to return true while the other returns false, nor can one method throw an exception that the other does not. Therefore no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 884,
+  "eval_count": 327,
+  "total_duration": 2842411300,
+  "load_duration": 21019500
+}

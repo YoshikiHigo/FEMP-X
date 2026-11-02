@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical binary search logic and return the same index for any input array and key. No input can distinguish their behaviors."
+}

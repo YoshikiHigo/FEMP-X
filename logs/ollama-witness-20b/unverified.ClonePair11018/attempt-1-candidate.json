@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return true for all alphabetic characters (A–Z and a–z) and false for all other characters. The switch in method1 covers exactly the same set of characters as the range checks in method2, and there is no case where one method would return true while the other returns false. Therefore no concrete separating input exists."
+}

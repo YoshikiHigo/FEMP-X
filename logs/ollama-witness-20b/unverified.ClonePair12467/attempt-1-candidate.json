@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They handle nulls, empty strings, and replacements consistently, and any pathological case (e.g., empty search string) leads to the same infinite loop in both implementations. No concrete separating input can be constructed without invoking undefined or non‑terminating behavior that is common to both."
+}

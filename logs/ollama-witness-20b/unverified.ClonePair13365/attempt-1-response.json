@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical logic: they return null if either argument is null, otherwise they compare the two dates using either compareTo or getTime and return the later date. No input can cause a differing return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1075,
+  "eval_count": 87,
+  "total_duration": 823325200,
+  "load_duration": 3710700
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑wise dot product calculations on the two float arrays; they have the same loop bounds, arithmetic, and return value. No input can cause a difference in return value, side effects, or exception behavior."
+}

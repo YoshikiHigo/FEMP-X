@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; the only difference is that the catch parameter in method2 is declared final, which does not affect the observable behavior. No input can distinguish them."
+}

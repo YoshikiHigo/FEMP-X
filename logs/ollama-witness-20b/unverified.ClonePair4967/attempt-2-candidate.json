@@ -1,0 +1,16 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 trims the property value before parsing, so a value with surrounding whitespace (e.g., \"  42  \") is parsed successfully to 42. method2 passes the raw string to Integer.valueOf, which does not trim and throws NumberFormatException for such input. Thus the same input causes method1 to return 42 while method2 throws an exception.",
+  "arguments_java": [
+    "props(\"name\",\"  42  \")",
+    "\"name\"",
+    "42"
+  ],
+  "parameter_types": [
+    "java.util.Properties",
+    "java.lang.String",
+    "int"
+  ],
+  "void_return": false
+}

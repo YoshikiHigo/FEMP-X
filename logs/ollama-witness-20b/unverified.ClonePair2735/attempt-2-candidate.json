@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning, both methods exhibit identical behavior for all possible byte[] inputs: they return true iff both arguments are non‑null, equal length, and contain identical elements; otherwise they return false. No input leads to a different return value, side effect, exception, or non‑termination. Therefore no concrete separating test case exists."
+}

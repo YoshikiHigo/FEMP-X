@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs: they return 0.0 for null or empty strings, and otherwise parse the string using Double.valueOf or new Double, which throw the same NumberFormatException for invalid inputs. No deterministic, bounded input can distinguish their return values, side effects, or exception types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1067,
+  "eval_count": 286,
+  "total_duration": 2507199000,
+  "load_duration": 7307400
+}

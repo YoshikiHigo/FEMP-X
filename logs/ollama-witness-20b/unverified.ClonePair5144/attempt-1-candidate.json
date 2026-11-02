@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical control flow and return logic for all possible double[] inputs, including nulls, equal references, differing lengths, and element-wise comparisons. No deterministic input can produce a differing outcome."
+}

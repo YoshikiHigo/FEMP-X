@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, all possible deterministic, bounded inputs produce identical behavior. Both methods handle nulls, empty strings, and overlapping tokens in the same way, and any pathological case (such as an empty token) causes both to enter an infinite loop rather than diverging. No concrete separating input was found."
+}

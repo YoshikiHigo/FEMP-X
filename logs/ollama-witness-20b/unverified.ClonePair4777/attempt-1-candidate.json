@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both compute the same padding when the input string is shorter than the specified size, and otherwise return the original string. No input causes one method to throw an exception, return a different value, or terminate non‑normally while the other does not."
+}

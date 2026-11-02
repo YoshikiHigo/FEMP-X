@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. No concrete separating test case can be constructed that distinguishes them under the given constraints."
+}

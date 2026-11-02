@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods use identical logic (StringTokenizer and a Vector) and handle all edge cases (null, empty string, delimiters) in the same way. No deterministic input can produce a differing result.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 826,
+  "eval_count": 285,
+  "total_duration": 2496039600,
+  "load_duration": 4416800
+}

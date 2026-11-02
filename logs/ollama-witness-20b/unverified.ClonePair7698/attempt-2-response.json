@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns true when two distinct String objects have the same hashCode and class, while method2 returns false because it relies on equals. The pair new String(\\\"FB\\\") and new String(\\\"Ea\\\") both hash to 2236 but are not equal.\",\"arguments_java\":[\"new String(\\\"FB\\\")\",\"new String(\\\"Ea\\\")\"],\"parameter_types\":[\"Object\",\"Object\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1075,
+  "eval_count": 139,
+  "total_duration": 1401899000,
+  "load_duration": 3740100
+}

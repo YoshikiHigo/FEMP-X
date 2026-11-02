@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods behave identically for all valid inputs: they either return the same byte array for even‑length hex strings or throw the same StringIndexOutOfBoundsException for odd‑length strings, and they both throw NullPointerException when the argument is null. No deterministic, bounded input can distinguish their return value, side effects, or exception type.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1028,
+  "eval_count": 230,
+  "total_duration": 1908010800,
+  "load_duration": 17761800
+}

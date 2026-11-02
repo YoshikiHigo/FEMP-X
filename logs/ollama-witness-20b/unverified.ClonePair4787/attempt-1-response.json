@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the minimum of a double array in the same way; for all valid inputs (including empty or null arrays) they exhibit identical behavior (either returning the same value or throwing the same exception). No concrete input distinguishes them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1012,
+  "eval_count": 151,
+  "total_duration": 1534285600,
+  "load_duration": 2558300
+}

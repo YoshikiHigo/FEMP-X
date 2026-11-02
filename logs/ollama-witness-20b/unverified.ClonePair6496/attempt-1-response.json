@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 writes 3 bytes (0x07,0xFF,0xFF) into out_buff[0..2] and leaves out_buff[3] unchanged, while method2 writes 4 bytes (0x07,0xFF,0xFF,0xFF) into out_buff[0..3]; thus the returned byte arrays differ.\",\"arguments_java\":[\"new float[]{1.0f}\"],\"parameter_types\":[\"float[]\",\"int\",\"int\",\"byte[]\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1618,
+  "eval_count": 401,
+  "total_duration": 3545816400,
+  "load_duration": 2487100
+}

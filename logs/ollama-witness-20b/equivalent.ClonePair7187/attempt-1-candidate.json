@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are identical in logic; the only difference is parentheses around the same expression, which does not affect the result. No input can distinguish their behavior."
+}

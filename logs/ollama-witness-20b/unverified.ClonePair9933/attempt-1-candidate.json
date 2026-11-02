@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the same 8‑bit unsigned value from the byte array using equivalent arithmetic. For all valid inputs (including null, negative lengths, and out‑of‑bounds indices) they either return the same result or throw the same exception. No concrete input can distinguish their behavior."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods are functionally identical; the only difference is the use of the final keyword on local variables, which does not affect runtime behavior. No input can distinguish their return values, side effects, exceptions, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1155,
+  "eval_count": 85,
+  "total_duration": 1135332300,
+  "load_duration": 19232800
+}

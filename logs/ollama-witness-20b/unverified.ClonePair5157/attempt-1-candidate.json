@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑by‑element comparisons and return the same boolean value for all possible inputs, including null and empty arrays. No distinguishing behavior exists."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical unsigned 32‑bit little‑endian conversion; for all possible byte arrays and offsets they produce the same int result or throw the same exception. No concrete input distinguishes them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1322,
+  "eval_count": 532,
+  "total_duration": 4470154000,
+  "load_duration": 10501200
+}

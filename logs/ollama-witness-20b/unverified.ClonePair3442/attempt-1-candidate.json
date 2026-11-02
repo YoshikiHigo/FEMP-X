@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods delegate to Float.parseFloat/Float.valueOf which exhibit identical behavior for all valid and invalid string inputs, including null handling. No deterministic input can distinguish their outputs or side effects."
+}

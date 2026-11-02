@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical computations: they initialize a variable to the first element of the array and then iterate over the array (method1 via index, method2 via enhanced for) updating the variable only when a larger value is found. For all possible inputs—including empty arrays, null arrays, arrays containing NaN, positive, negative, or infinite values—the resulting behavior (return value or exception type) is the same. No concrete input can distinguish the two methods."
+}

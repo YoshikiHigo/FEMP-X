@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all possible inputs. Both perform the same null checks and invoke equals only when both arguments are non‑null, yielding identical return values or exception behavior. No concrete input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 882,
+  "eval_count": 349,
+  "total_duration": 3034022500,
+  "load_duration": 2126700
+}

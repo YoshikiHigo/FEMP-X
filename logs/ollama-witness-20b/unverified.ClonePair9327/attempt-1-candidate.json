@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same computation: they iterate over the array and return the maximum element. For any input array (including null, empty, or non‑empty), both methods either throw the same exception (NullPointerException for null) or return the same integer value. No distinguishing behavior exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return null when the array is null or the index is out of bounds, and otherwise return the element at the given index. No input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

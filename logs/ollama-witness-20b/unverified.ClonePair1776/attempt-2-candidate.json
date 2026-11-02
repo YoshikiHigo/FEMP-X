@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning and testing of all possible small byte array inputs (including lengths 0, 1, 2, 3, 4, 5, and 6 with all byte value combinations that could affect padding or character selection), both method1 and method2 produce identical outputs, throw identical exceptions, and exhibit no side‑effects. No concrete input can be constructed that distinguishes the two implementations based on the allowed difference types."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte‑array equality checks and produce the same return value, side effects, and exception behavior for all possible inputs. No concrete separating test case exists."
+}

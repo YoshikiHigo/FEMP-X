@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same logic: they iterate from the given index while the character at that index is whitespace and return the first non‑whitespace index. No input can cause differing return values, side effects, exceptions, or non‑termination."
+}

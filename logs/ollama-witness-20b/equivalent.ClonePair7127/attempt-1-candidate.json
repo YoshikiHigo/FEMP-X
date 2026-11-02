@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same binomial coefficient using identical Pascal‑triangle construction logic. For any integer inputs (including negative values, zeros, and positive values), they either both return the same result or both throw the same type of exception (ArrayIndexOutOfBoundsException or NegativeArraySizeException). No deterministic input can cause one method to terminate normally while the other throws or produce a different return value."
+}

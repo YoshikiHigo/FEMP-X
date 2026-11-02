@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all possible Date inputs; any difference in returned object identity is not observable by value-based comparison, and no other side effects or exceptions distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1091,
+  "eval_count": 463,
+  "total_duration": 3731378700,
+  "load_duration": 12608300
+}

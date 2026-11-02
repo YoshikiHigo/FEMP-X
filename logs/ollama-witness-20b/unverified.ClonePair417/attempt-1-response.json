@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical checks for equality of two byte arrays. They handle reference equality, nulls, length comparison, and element-wise comparison in the same logical order, yielding the same boolean result for any pair of byte[] inputs. No input can distinguish their behaviors.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1300,
+  "eval_count": 328,
+  "total_duration": 3011052100,
+  "load_duration": 3080300
+}

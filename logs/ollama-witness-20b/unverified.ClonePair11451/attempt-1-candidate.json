@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 interprets the byte slice in reverse order while method2 interprets it in forward order, producing different long values for the same input.",
+  "arguments_java": [
+    "new byte[]{1,2,3}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

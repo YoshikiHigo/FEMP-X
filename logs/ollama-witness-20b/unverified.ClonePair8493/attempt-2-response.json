@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of the two methods, no deterministic input can be constructed that causes them to behave differently. Both methods trim the input (method1 explicitly, method2 implicitly via Double.valueOf which accepts all Unicode whitespace), both catch the same set of parsing failures (NumberFormatException), and both return null in those cases. Consequently, no concrete separating test case exists for this clone pair.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 937,
+  "eval_count": 432,
+  "total_duration": 3550007300,
+  "load_duration": 2041000
+}

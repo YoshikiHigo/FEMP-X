@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 throws a RuntimeException when the two arguments are the same instance because its equals method throws on reflexive comparison; method2 returns true before calling equals, so it does not throw.\",\"arguments_java\":[\"new BadEquals()\"],\"parameter_types\":[\"Object\",\"Object\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 869,
+  "eval_count": 697,
+  "total_duration": 5735995100,
+  "load_duration": 4215400
+}

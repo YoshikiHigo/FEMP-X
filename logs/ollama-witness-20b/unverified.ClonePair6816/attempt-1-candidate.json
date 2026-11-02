@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for all integer inputs; exhaustive reasoning shows they always return the same value for any combination of left, above, upperLeft (or a, b, c). No input can distinguish them."
+}

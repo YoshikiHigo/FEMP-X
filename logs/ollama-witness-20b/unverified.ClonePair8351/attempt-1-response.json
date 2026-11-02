@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods return true exactly when both arguments are non‑null and their trimmed lengths are greater than zero; otherwise they return false. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 853,
+  "eval_count": 120,
+  "total_duration": 1180300700,
+  "load_duration": 2036500
+}

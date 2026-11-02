@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 returns false when the first argument is null and the second is non‑null, while method2 throws a NullPointerException because it attempts to access val1.length when val1 is null.\",\"arguments_java\":[\"null\",\"new byte[]{1}\"],\"parameter_types\":[\"byte[]\",\"byte[]\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1268,
+  "eval_count": 301,
+  "total_duration": 2699972800,
+  "load_duration": 7390500
+}

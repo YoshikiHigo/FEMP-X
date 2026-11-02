@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte extraction from the array; for any valid input (including null or insufficient length) they either return the same integer or throw the same exception. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1236,
+  "eval_count": 313,
+  "total_duration": 2692024800,
+  "load_duration": 2567300
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the same 32‑bit value for any byte array and offset that allows four valid indices; no input can make them behave differently without causing an exception in both."
+}

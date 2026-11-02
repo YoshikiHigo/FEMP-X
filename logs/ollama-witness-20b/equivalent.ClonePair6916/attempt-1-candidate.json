@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical conditional checks and return the same string for any integer input; no input can distinguish their behavior."
+}

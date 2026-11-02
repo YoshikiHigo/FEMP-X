@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "For a negative width, method1 attempts to take a substring with a negative end index, which throws a StringIndexOutOfBoundsException. Method2, on the other hand, creates a char array of size n (which is negative), causing a NegativeArraySizeException. Thus the two methods throw different exception classes for the same input.",
+  "arguments_java": [
+    "\"a\"",
+    "-1"
+  ],
+  "parameter_types": [
+    "String",
+    "int"
+  ],
+  "void_return": false
+}

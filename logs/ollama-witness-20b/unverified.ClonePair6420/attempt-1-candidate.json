@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte‑to‑long conversion using the same loop structure and bit‑shifting logic. For any valid or invalid input (including null, negative offset, or insufficient array length), they either produce the same long value or throw the same exception type. No concrete input can distinguish their behavior."
+}

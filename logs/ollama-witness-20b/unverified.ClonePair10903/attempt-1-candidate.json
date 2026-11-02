@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods read the same system property and the test framework prohibits modifying system properties. Without setting a property to a non‑numeric value, the two methods cannot be distinguished by return value, side effect, exception, or non‑termination. Therefore no concrete separating input can be constructed under the given constraints."
+}

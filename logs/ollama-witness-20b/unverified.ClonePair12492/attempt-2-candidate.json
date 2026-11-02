@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical digit checks on the original string; the only difference is that method1 trims the input only to test for blankness, which does not affect the subsequent digit loop. Consequently, for any input that is non‑null and non‑empty, both methods return the same boolean value. No concrete input can distinguish their behaviors."
+}

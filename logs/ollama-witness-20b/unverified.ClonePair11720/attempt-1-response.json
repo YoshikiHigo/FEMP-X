@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of the control flow and return conditions in both methods, no input can be constructed that causes the two methods to produce different results, throw different exceptions, or exhibit non‑termination. The behaviors are equivalent for all possible combinations of the three string arguments.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1230,
+  "eval_count": 287,
+  "total_duration": 2359803300,
+  "load_duration": 4412900
+}

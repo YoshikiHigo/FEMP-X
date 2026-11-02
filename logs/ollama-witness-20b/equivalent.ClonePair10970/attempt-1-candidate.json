@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same byte value for every possible char input; method1 handles '0'-'9' and 'a'-'f' explicitly and defaults to 0, while method2 handles the same ranges via numeric cases and also defaults to 0 for all other chars. No input can distinguish their behavior."
+}

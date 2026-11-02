@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all possible int[] inputs; no concrete input can distinguish their behaviors.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 937,
+  "eval_count": 303,
+  "total_duration": 2603198200,
+  "load_duration": 11434200
+}

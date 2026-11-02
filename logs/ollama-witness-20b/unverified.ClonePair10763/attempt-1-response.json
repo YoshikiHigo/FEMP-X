@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all possible inputs: they both return the default value when the system property is absent or cannot be parsed as an integer, and otherwise return the parsed integer. No deterministic, bounded input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1100,
+  "eval_count": 288,
+  "total_duration": 2675010500,
+  "load_duration": 4650600
+}

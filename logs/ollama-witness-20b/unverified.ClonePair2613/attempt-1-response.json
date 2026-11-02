@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive reasoning over all possible byte[] inputs—including nulls, empty arrays, arrays of equal and unequal lengths, and arrays with matching or differing contents—both method1 and method2 produce identical boolean results, handle nulls consistently, and do not exhibit any side effects or non-termination. No concrete separating input can be constructed that would distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1290,
+  "eval_count": 248,
+  "total_duration": 2230288000,
+  "load_duration": 15711600
+}

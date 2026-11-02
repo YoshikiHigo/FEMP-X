@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte-by-byte comparisons of the specified array slices; no input can cause differing behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1182,
+  "eval_count": 51,
+  "total_duration": 866382100,
+  "load_duration": 8535200
+}

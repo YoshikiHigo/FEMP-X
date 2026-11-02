@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; they perform the same null checks and class equality comparison in the same order. No input can distinguish their behavior."
+}

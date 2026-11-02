@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods compute the same 32‑bit big‑endian integer from the first four bytes of the array. For any byte array of length ≥4 they produce identical results, and for shorter arrays both throw ArrayIndexOutOfBoundsException. No input can distinguish their return values, side effects, or exception types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1222,
+  "eval_count": 596,
+  "total_duration": 4915632600,
+  "load_duration": 2559300
+}

@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 requires both equals and reverse equals to be true, while method2 only requires o1.equals(o2). Using an asymmetric equals implementation for the first argument causes method1 to return false and method2 to return true.",
+  "arguments_java": [
+    "new Object(){public boolean equals(Object o){return true;}}",
+    "new Object()"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

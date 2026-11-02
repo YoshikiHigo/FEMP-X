@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical iteration over the collection, allocating an array of the same size and copying each element in the same order. No input can cause one to return a different array, throw a different exception, or terminate differently."
+}

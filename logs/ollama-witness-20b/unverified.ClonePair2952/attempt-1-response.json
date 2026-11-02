@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical checks and use equivalent parsing calls; no input can cause differing return values, side effects, or exceptions.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1053,
+  "eval_count": 53,
+  "total_duration": 812682300,
+  "load_duration": 5635500
+}

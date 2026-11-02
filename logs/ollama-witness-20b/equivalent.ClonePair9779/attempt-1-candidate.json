@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No concrete separating input can be expressed with the allowed Java expressions that creates the same non‑null array reference for both arguments. The only distinguishing case is when both parameters refer to the exact same array instance, which cannot be produced by a single Java expression under the given constraints."
+}

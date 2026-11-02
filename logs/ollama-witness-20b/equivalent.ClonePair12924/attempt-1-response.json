@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are byte‑for‑byte identical; they perform the same arithmetic and control flow for any input, so no concrete separating test can be constructed.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1326,
+  "eval_count": 57,
+  "total_duration": 825892100,
+  "load_duration": 19892700
+}

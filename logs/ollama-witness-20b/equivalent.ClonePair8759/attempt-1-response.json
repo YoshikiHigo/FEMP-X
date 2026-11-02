@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical logic: they return the original array when its length equals the requested size, otherwise they allocate a new array of the requested size and copy the first size elements using System.arraycopy. For any valid input (including null or size larger than the array length), both methods exhibit the same behavior—either returning the same array reference, a new array with the same contents, or throwing the same exception. No concrete input can distinguish their return values, side effects, or exception types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1132,
+  "eval_count": 171,
+  "total_duration": 1629110500,
+  "load_duration": 12130300
+}

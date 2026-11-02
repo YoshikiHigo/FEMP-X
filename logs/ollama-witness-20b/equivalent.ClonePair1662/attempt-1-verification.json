@@ -1,0 +1,60 @@
+{
+  "key": "equivalent.ClonePair1662",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NumberFormatException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Object(amF2YS5sYW5nLk9iamVjdEAxOGI0YWFjMg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Object(amF2YS5sYW5nLk9iamVjdEAxOGI0YWFjMg==)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NumberFormatException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Object(amF2YS5sYW5nLk9iamVjdEAxOGI0YWFjMg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Object(amF2YS5sYW5nLk9iamVjdEAxOGI0YWFjMg==)]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NumberFormatException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Object(amF2YS5sYW5nLk9iamVjdEAxOGI0YWFjMg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Object(amF2YS5sYW5nLk9iamVjdEAxOGI0YWFjMg==)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NumberFormatException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Object(amF2YS5sYW5nLk9iamVjdEAxOGI0YWFjMg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Object(amF2YS5sYW5nLk9iamVjdEAxOGI0YWFjMg==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 returns an Integer constructed from the object's toString(), while method2 attempts to parse that string as an int and throws NumberFormatException for non‑numeric strings.",
+    "arguments_java": [
+      "new Object()"
+    ],
+    "parameter_types": [
+      "Object"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 151.54
+}

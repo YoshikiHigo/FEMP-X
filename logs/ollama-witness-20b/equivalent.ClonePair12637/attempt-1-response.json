@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods contain identical logic; the only difference is formatting (braces). No input can distinguish their return values, side effects, exceptions, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 917,
+  "eval_count": 63,
+  "total_duration": 862519900,
+  "load_duration": 12400900
+}

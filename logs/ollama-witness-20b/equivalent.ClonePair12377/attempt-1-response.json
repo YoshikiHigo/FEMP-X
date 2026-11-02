@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical character replacements for all possible inputs; no distinguishing behavior was found.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1264,
+  "eval_count": 253,
+  "total_duration": 2342949600,
+  "load_duration": 22541200
+}

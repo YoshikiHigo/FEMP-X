@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: they compare the first subarray of the target array with the prefix array and return true if all corresponding bytes match, otherwise false. For any given pair of byte arrays, both methods will either return the same boolean value or throw the same exception (NullPointerException when either argument is null). No input can distinguish their behavior."
+}

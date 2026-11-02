@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null checks and compare the year, month, and date components of the two Date objects using the same deprecated getters. For any pair of Date instances (including nulls), the logical flow and return value of method1 and method2 are equivalent. No deterministic input can cause one method to return a different value or exhibit a side‑effect that the other does not."
+}

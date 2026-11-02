@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical binary search logic and behave the same for all possible inputs, including empty, null, sorted, unsorted, and duplicate-containing arrays. No deterministic input can cause a divergence in return value, side effects, or exception type."
+}

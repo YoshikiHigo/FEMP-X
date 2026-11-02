@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they initialize a variable with the first element of the array and then iterate through the remaining elements, updating the variable if a larger value is found. For any non‑null array, the result is the maximum element. For a null array both methods throw a NullPointerException. For an empty array both methods throw an ArrayIndexOutOfBoundsException. Thus there is no input that distinguishes the two methods."
+}

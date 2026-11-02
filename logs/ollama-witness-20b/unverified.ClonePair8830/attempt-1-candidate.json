@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the mid index using equivalent arithmetic ((low+high)/2 and (low+high)>>1) for all non‑negative low and high values. Since low starts at 0 and high is a.length-1 (or -1 for empty array), the sum low+high is always non‑negative, making the two expressions identical. Consequently, for any valid input array and key, method1 and method2 return the same result, and no distinguishing test case exists."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible inputs: they throw the same exceptions for null or empty arrays, and for non‑empty arrays they compute the maximum in the same way. No deterministic, bounded input can distinguish their return values, side effects, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 974,
+  "eval_count": 288,
+  "total_duration": 2462224000,
+  "load_duration": 9554600
+}

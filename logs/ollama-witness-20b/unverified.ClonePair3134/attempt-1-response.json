@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the maximum of a float array in identical ways; they either return the same value or throw the same exception for all possible inputs.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 995,
+  "eval_count": 283,
+  "total_duration": 2454954400,
+  "load_duration": 4329500
+}

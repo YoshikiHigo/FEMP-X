@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte-to-long conversion on the first eight elements of the input array. They both throw the same exceptions (ArrayIndexOutOfBoundsException for arrays shorter than 8 elements, NullPointerException for null input) and produce the same result for any valid input. No deterministic, bounded input can distinguish their behaviors.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 925,
+  "eval_count": 150,
+  "total_duration": 1445633300,
+  "load_duration": 2558200
+}

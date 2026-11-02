@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods return true for the characters '0' through '9' and false for all other characters; no input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 921,
+  "eval_count": 68,
+  "total_duration": 614765600,
+  "load_duration": 7402200
+}

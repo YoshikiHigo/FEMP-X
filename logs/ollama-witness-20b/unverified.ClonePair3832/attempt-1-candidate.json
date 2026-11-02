@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑wise multiplication and summation; they behave the same for all valid inputs, including null arrays where both throw a NullPointerException. No concrete separating input exists."
+}

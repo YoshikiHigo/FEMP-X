@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, all control paths that could be exercised with deterministic, bounded inputs produce identical results. Both methods guard against nulls and empty strings in the same way, and their replacement logic behaves equivalently for all possible string inputs. No concrete input can be constructed that leads to a different return value, side effect, exception, or non‑termination. Therefore, no separating test case exists."
+}

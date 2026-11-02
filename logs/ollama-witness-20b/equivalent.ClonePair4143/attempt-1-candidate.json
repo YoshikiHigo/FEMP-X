@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they allocate a String array of the list's size, iterate over the list, and copy each element into the array. For any non‑null List input, the resulting arrays are equal element‑wise. For a null input, both methods throw a NullPointerException at the same point. No input can cause a difference in return value, side effects, or termination."
+}

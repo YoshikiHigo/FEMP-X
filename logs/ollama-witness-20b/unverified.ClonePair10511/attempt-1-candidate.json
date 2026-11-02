@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs: they return the same Integer value (or null) for any given String. The only observable difference is object identity when parsing values within the Integer cache range, but the test framework does not inspect identity, only value equality. Therefore no concrete separating input exists under the allowed constraints."
+}

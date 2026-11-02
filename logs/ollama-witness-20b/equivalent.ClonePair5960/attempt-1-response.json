@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical element-wise comparisons; no deterministic input can cause one to return a different value, throw a different exception, or exhibit non-termination while the other does not.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1469,
+  "eval_count": 505,
+  "total_duration": 4262445800,
+  "load_duration": 9850200
+}

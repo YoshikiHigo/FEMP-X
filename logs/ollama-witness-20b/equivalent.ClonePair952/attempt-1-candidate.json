@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are byte‑by‑byte identical; they compute the same value for any input. No concrete separating test exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are byte‑for‑byte identical; they will always produce the same return value, side effects, and exception behavior for any input."
+}

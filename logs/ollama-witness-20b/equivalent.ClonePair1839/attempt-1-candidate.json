@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical iteration and string concatenation; no input can produce differing return values, side effects, or exceptions."
+}

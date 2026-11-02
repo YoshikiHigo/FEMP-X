@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same primality test logic and produce identical results for all possible long inputs. No concrete input can be found that distinguishes their return values, side effects, exceptions, or termination behavior."
+}

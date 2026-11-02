@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; they perform the same byte‑array transformations and produce the same result for any input. No concrete separating test case can be constructed that distinguishes them within the allowed constraints."
+}

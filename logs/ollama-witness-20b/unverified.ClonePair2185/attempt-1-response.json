@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 returns false when the first array is non‑null and the second array is null, whereas method2 dereferences the second array inside a length comparison and throws a NullPointerException.\",\"arguments_java\":[\"new byte[]{1}\"],\"parameter_types\":[\"byte[]\",\"byte[]\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1306,
+  "eval_count": 613,
+  "total_duration": 5054785000,
+  "load_duration": 2595400
+}

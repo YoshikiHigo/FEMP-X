@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit integer from the first four bytes of the array. For each index i the value contributed by that byte is (bytes[i] & 0xFF) << (i*8). Method1 converts negative bytes to unsigned only for i<3, but method2 does the same conversion for all indices. For i=3, method1 sign‑extends the byte, while method2 masks it to unsigned; however the resulting 32‑bit pattern is identical because 0xFF000000 as a signed int equals –16777216. Since the addition and bitwise OR of non‑overlapping 8‑bit fields produce the same result, no input can distinguish the two methods. Therefore no concrete separating test case exists."
+}

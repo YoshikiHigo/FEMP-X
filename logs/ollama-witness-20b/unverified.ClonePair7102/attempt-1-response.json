@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical byte‑to‑int conversion: both read four consecutive bytes, mask each with 0xFF, and assemble them into a 32‑bit integer in big‑endian order. They behave the same for all valid inputs, including edge cases such as null arrays or out‑of‑bounds offsets, where both throw the same exception types. No deterministic, bounded input can distinguish their return values, side effects, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1252,
+  "eval_count": 281,
+  "total_duration": 2595257400,
+  "load_duration": 2040700
+}

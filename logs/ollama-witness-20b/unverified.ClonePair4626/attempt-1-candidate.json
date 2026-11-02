@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the minimum of the array in the same way; they throw the same exceptions for empty or null arrays and return identical results for all other inputs. No deterministic, bounded input can distinguish their behavior."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs: they return true iff the first array is a prefix of the second, and they throw the same exceptions (NullPointerException or ArrayIndexOutOfBoundsException) under the same conditions. No concrete separating input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1166,
+  "eval_count": 372,
+  "total_duration": 3264203000,
+  "load_duration": 4696100
+}

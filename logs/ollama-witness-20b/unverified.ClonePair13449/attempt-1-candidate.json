@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical byte arrays for all valid String inputs, including edge cases such as null, empty, odd-length, and values that require sign conversion. No concrete separating input exists."
+}

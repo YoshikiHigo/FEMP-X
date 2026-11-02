@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they return null for a null input, attempt to parse the string using either the Integer constructor or Integer.valueOf, and return null if a NumberFormatException is thrown. For any valid integer string they return an Integer equal to the parsed value, and for any invalid string they return null. No input can cause a difference in return value, exception type, side‑effect, or termination behavior."
+}

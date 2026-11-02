@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns a.equals(b) which is true for an asymmetric equals implementation, while method2 requires both a.equals(b) and b.equals(a) to be true, yielding false.\",\"arguments_java\":[\"new Object[]{new A(5), new B(5)}\"],\"parameter_types\":[\"Object\",\"Object\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 888,
+  "eval_count": 530,
+  "total_duration": 4389918100,
+  "load_duration": 3610300
+}

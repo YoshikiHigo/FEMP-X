@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two binary search implementations, no input can be constructed that causes them to produce different return values, throw different exceptions, or exhibit non‑termination while receiving identical arguments and initial state. Both methods perform the same comparisons and return the same index or the same negative insertion point for all possible inputs. Therefore, no concrete separating test case exists."
+}

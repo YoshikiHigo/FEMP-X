@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 parses the raw string and returns null for leading/trailing whitespace, while method2 trims the string before parsing, yielding a non‑null Double.",
+  "arguments_java": [
+    "\" 1\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

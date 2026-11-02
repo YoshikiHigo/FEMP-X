@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical big-endian conversion of 8 bytes; for any valid byte array and offset they produce the same long value, and for invalid inputs they both throw the same exception types. No concrete input distinguishes their behavior."
+}

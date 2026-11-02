@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible inputs: they return null for a null argument, and for non‑null byte arrays they both attempt to read indices 0 and 1, throwing ArrayIndexOutOfBoundsException when the array length is less than 2, and otherwise computing the same short value. No deterministic, bounded input can distinguish their return values, side effects, or exception types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1314,
+  "eval_count": 198,
+  "total_duration": 1806327900,
+  "load_duration": 3935400
+}

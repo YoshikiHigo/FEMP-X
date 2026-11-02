@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They perform the same null checks, loop bounds, and character index lookups, and therefore no concrete separating test case can be constructed."
+}

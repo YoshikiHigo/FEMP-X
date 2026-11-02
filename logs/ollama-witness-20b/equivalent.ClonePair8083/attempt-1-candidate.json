@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic: they return the input string if the integer is greater than or equal to the string length, otherwise they return the first len characters followed by \"...\". No input can cause a difference in return value, side effect, exception, or non‑termination."
+}

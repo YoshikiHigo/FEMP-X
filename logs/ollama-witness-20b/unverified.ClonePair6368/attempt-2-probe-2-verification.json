@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair6368",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(255)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, 0, 0, 0, 0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, 0, 0, 0, 0, 0, 0, 0],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(255)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, 0, 0, 0, 0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, 0, 0, 0, 0, 0, 0, 0],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(255)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, 0, 0, 0, 0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, 0, 0, 0, 0, 0, 0, 0],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(255)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, 0, 0, 0, 0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, 0, 0, 0, 0, 0, 0, 0],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 masks each byte with 0x7f, preserving only the lower 7 bits, and then sets the high bit of the corresponding byte position if the original byte was negative. method2 simply zero‑extends the full byte value and places it in the low 8 bits of the result. With a byte that has its high bit set and at least one of the lower 7 bits non‑zero (e.g., 0xFF), method1 will produce a value with that byte’s lower 7 bits (0x7F) and the high bit set, whereas method2 will produce a value with the full byte (0xFF). Thus the two methods return different 64‑bit values for the same input.\n",
+    "arguments_java": [
+      "new byte[]{(byte)0xFF,0,0,0,0,0,0,0}",
+      "0"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 147.84
+}

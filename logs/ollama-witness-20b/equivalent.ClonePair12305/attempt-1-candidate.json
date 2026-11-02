@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic: they return true if any element in the array matches the given string (case‑sensitive or case‑insensitive based on the flag), otherwise false. No input can cause differing behavior."
+}

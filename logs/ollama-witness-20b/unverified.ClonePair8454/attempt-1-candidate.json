@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return null for null or empty strings, and for any non‑empty string they attempt to parse it as a double, returning a Double object on success or null on failure. No input can cause one method to return a non‑null value while the other returns null, nor can one method throw an exception that the other does not. Therefore no concrete separating test case exists."
+}

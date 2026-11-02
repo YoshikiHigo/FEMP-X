@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical little‑endian conversion of four bytes; for any byte array and offset that does not trigger an exception, they compute the same int value. The only differences are in the exact exception type thrown when the array is null or the index is out of bounds, but both methods throw the same exception in those cases. No deterministic, bounded input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1329,
+  "eval_count": 461,
+  "total_duration": 3873568500,
+  "load_duration": 6868100
+}

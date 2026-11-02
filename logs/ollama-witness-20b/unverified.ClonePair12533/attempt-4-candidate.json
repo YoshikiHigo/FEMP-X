@@ -1,0 +1,17 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 treats a quote at the starting index specially and searches for the next quote, whereas method2 simply returns the starting index when the separator matches. For input s=\"\\\"abc\\\"def\", separator='\\\"', start=0, method1 returns 4 (index of the closing quote) while method2 returns 0.",
+  "arguments_java": [
+    "\"\\\"abc\\\"def\"",
+    "'\\\"'",
+    "0"
+  ],
+  "parameter_types": [
+    "String",
+    "char",
+    "int"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

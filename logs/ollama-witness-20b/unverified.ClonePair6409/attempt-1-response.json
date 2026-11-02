@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte extraction logic; for any valid byte array and offset within bounds they compute the same 64‑bit value. For out‑of‑bounds or null inputs both throw the same exception types (ArrayIndexOutOfBoundsException or NullPointerException). No deterministic input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1013,
+  "eval_count": 166,
+  "total_duration": 1620611400,
+  "load_duration": 2060800
+}

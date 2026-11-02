@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, when the oldString is empty both methods enter an infinite loop, and when any argument is null both methods throw a NullPointerException at the same point. No input can be constructed that causes one method to return a different value, throw a different exception type, or terminate while the other does not."
+}

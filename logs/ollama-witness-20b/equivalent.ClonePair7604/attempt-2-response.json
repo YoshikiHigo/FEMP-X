@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"No concrete separating input can be constructed using only the provided imports and helper methods that would cause method1 and method2 to behave differently. The only source of difference is the asymmetric equals check in method1, but standard library classes available in the test environment do not provide an asymmetric equals implementation that can be instantiated without defining new classes. Therefore, a valid separating test case cannot be produced with the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1088,
+  "eval_count": 526,
+  "total_duration": 4425957800,
+  "load_duration": 13870300
+}

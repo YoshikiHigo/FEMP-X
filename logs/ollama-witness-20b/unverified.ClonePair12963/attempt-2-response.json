@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For input Integer.MIN_VALUE the two methods behave differently. In method1 the first comparison assigns m=MAX and the second comparison is not evaluated because of short‑circuiting, so the method returns MAX. In method2 the second branch is taken and the method returns MIN.\",\"arguments_java\":[\"-2147483648L\"],\"parameter_types\":[\"long\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1220,
+  "eval_count": 533,
+  "total_duration": 4372259200,
+  "load_duration": 5045400
+}

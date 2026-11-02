@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical logic: they return null for a null input or when Integer.valueOf throws NumberFormatException, and otherwise return the parsed Integer. No input can cause a different return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 765,
+  "eval_count": 106,
+  "total_duration": 1171747300,
+  "load_duration": 2569100
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are logically equivalent for all possible inputs and initial states. Both perform the same null checks and equality comparison, and any exception thrown by the equals method propagates identically in both implementations. No deterministic, bounded input can distinguish their behaviors."
+}

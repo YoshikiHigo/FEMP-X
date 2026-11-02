@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible byte[] inputs. Both perform the same sequence of checks: they first compare references, then handle nulls and length mismatches, and finally compare array contents element‑by‑element. No input can cause one method to return a different value, throw an exception, or exhibit a side effect that the other does not.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1245,
+  "eval_count": 385,
+  "total_duration": 3248886700,
+  "load_duration": 23400800
+}

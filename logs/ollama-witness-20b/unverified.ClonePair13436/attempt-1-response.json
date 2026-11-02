@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte conversion logic for all valid inputs (including empty, null, and odd-length strings). No input can cause a difference in return value, side effects, or exception type between method1 and method2.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1011,
+  "eval_count": 233,
+  "total_duration": 1883274000,
+  "load_duration": 7573300
+}

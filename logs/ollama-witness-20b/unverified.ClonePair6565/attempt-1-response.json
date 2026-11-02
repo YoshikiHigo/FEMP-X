@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical element‑wise dot product loops and return the same float value for any pair of float arrays of equal length. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1113,
+  "eval_count": 58,
+  "total_duration": 761684200,
+  "load_duration": 2903900
+}

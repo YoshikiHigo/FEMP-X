@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair6369",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-72057594037927936)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, 0, 0, 0, 0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, 0, 0, 0, 0, 0, 0, 0],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-72057594037927936)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, 0, 0, 0, 0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, 0, 0, 0, 0, 0, 0, 0],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-72057594037927936)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, 0, 0, 0, 0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, 0, 0, 0, 0, 0, 0, 0],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-72057594037927936)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, 0, 0, 0, 0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, 0, 0, 0, 0, 0, 0, 0],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 preserves the sign of the first byte, while method2 treats all bytes as unsigned. With a negative first byte the two methods produce different long values.",
+    "arguments_java": [
+      "new byte[]{(byte)-1,0,0,0,0,0,0,0}",
+      "0"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 156.945
+}

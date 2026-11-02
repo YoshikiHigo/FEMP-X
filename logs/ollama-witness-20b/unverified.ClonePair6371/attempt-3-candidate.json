@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical bit‑assembly of an 8‑byte sequence: method1 sign‑extends the first byte but subsequent left shifts discard the sign bits, yielding the same unsigned 64‑bit value that method2 constructs by masking each byte. For any byte array of length ≥ offset+8, the two methods return the same long. For shorter arrays both throw ArrayIndexOutOfBoundsException. No input can distinguish their behavior."
+}

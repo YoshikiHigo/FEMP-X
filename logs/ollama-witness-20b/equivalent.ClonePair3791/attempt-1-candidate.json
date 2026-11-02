@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same character for all possible byte inputs; no distinguishing input exists."
+}

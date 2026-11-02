@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both method1 and method2 implement identical logic for all possible char inputs; no input can distinguish their return values, side effects, exceptions, or termination behavior."
+}

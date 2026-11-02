@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical mappings from hexadecimal characters to their numeric values; for any input character, the returned byte value is the same. No input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1306,
+  "eval_count": 104,
+  "total_duration": 1310912300,
+  "load_duration": 2044000
+}

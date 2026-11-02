@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical byte-to-long conversions; for any byte array and integer offset that does not trigger an exception, both compute the same 64‑bit value. They also throw the same exceptions for out‑of‑bounds or null inputs. No deterministic, bounded input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1002,
+  "eval_count": 317,
+  "total_duration": 2783652600,
+  "load_duration": 6890400
+}

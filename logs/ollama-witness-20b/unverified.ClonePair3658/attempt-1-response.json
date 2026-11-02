@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of all control paths, both methods produce identical results for every possible input within the defined parameter types and constraints. No concrete separating input was found.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1440,
+  "eval_count": 1205,
+  "total_duration": 9519806200,
+  "load_duration": 6714300
+}

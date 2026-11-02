@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "method1 and method2 are functionally equivalent for all byte[] inputs; no input can distinguish their return values, side effects, or exception behavior."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets the 3 bytes as big‑endian, subtracts 0x7FFFFF and normalises, yielding a positive value close to 1.0. method2 interprets the same 3 bytes as little‑endian, then if the unsigned value exceeds 0x7FFFFF it subtracts 0x1000000, producing a negative value close to 0.0. Thus the returned float array differs.\",\"arguments_java\":[\"new byte[]{(byte)0xFF,(byte)0xFF,(byte)0xFF}\"],\"parameter_types\":[\"byte[]\",\"int\",\"float[]\",\"int\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1645,
+  "eval_count": 490,
+  "total_duration": 4214178800,
+  "load_duration": 10352700
+}

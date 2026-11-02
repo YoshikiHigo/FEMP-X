@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑wise comparison of the two byte arrays. For any pair of non‑null arrays of equal length the loop body compares the same indices and returns the same boolean value. For arrays of different lengths both methods immediately return false. The only difference is the variable names used inside the loop, which does not affect the outcome. Therefore no concrete input can distinguish the two methods."
+}

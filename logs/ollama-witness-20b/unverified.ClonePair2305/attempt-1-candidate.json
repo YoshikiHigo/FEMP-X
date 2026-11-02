@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: they compare array lengths and then element-wise equality. No input can cause a differing return value, side effect, exception type, or non‑termination."
+}

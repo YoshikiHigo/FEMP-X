@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs. Both perform null checks and delegate to Object.equals in the same manner, with method1 adding a redundant Integer instanceof check that does not alter the outcome. No concrete input can distinguish their return values, side effects, exceptions, or termination behavior."
+}

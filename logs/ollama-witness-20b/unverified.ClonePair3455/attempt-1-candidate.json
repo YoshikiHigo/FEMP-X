@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs. They return the same boolean value for every pair of int[] arguments, and neither method mutates its arguments or produces side effects. No distinguishing input exists."
+}

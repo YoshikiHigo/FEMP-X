@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical results for all possible long inputs; the conditional checks differ only in boundary inclusivity, but the outcomes coincide for the boundary values."
+}

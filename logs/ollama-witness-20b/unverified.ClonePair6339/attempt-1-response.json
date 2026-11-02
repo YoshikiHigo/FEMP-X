@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte-to-long conversion; no input distinguishes them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1054,
+  "eval_count": 1800,
+  "total_duration": 14044465200,
+  "load_duration": 3157100
+}

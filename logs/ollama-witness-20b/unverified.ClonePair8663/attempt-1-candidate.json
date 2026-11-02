@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks on a 16‑bit char value. The ranges 0x10000–0x10FFFF are unreachable for a char, so both methods return the same result for every possible input. No concrete separating input exists."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical element‑wise identity checks on the two arrays; no input can cause one to return a different value, throw an exception, or terminate differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 892,
+  "eval_count": 67,
+  "total_duration": 611607300,
+  "load_duration": 7246700
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive reasoning, both methods exhibit identical behavior for all possible inputs: they either return the same 32‑bit little‑endian value or throw the same exception (ArrayIndexOutBounds or NullPointer). No concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1479,
+  "eval_count": 395,
+  "total_duration": 3275477300,
+  "load_duration": 15703300
+}

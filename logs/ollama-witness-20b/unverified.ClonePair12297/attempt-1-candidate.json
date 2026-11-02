@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same sum for all possible long inputs; no input can produce a differing result."
+}

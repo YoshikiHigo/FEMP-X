@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical bounds checks and loop logic; for any deterministic, bounded input they produce the same result. No concrete separating test case can be constructed without invoking undefined behavior such as overflow or null references, which would cause the same exception in both methods."
+}

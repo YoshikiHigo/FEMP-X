@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the same result for all possible CharSequence inputs, including null, empty, and non-empty strings. They both return the index of the first differing character or the length of the shorter sequence when all characters match. No input can cause a difference in return value, side effects, exceptions, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1096,
+  "eval_count": 133,
+  "total_duration": 1169055800,
+  "load_duration": 8613400
+}

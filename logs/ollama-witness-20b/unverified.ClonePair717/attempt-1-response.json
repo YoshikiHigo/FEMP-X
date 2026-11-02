@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical null checks, length checks, and element-wise comparisons on the input byte arrays. They have the same control flow, return types, and do not modify the inputs or produce side effects. No deterministic input can cause one method to return a different value, throw a different exception, or exhibit non‑termination while the other behaves differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1265,
+  "eval_count": 132,
+  "total_duration": 1364224900,
+  "load_duration": 2623500
+}

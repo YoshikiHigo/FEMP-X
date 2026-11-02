@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no deterministic input can be constructed that causes a difference in return value, side effect, exception type, or non‑termination. Both methods exhibit identical behavior for all valid inputs, including edge cases such as null arguments, empty strings, and empty replacement strings. Therefore, no concrete separating test case exists."
+}

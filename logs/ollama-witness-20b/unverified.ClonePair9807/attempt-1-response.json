@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all deterministic, bounded inputs. Both perform the same null checks, handle null replacements by assigning an empty string, and iterate over occurrences of the search string using indexOf in the same manner. The only pathological case is when the search string is empty, which causes an infinite loop in both methods. No input can distinguish their return values, side effects, exceptions, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1292,
+  "eval_count": 552,
+  "total_duration": 4376180000,
+  "load_duration": 19804100
+}

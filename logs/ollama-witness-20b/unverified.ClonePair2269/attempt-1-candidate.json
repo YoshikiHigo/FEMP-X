@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same unsigned 32‑bit integer from the first four bytes of the array. For any valid 4‑byte input they produce identical results, and for shorter inputs both throw the same ArrayIndexOutOfBoundsException. No input can distinguish their return values, side effects, or exception types."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all valid inputs: they both return true iff the two arrays are non‑null, have the same length, and contain identical elements in the same order. For any null input both methods throw a NullPointerException, and for any differing lengths both return false. No deterministic, bounded input can distinguish their behavior."
+}

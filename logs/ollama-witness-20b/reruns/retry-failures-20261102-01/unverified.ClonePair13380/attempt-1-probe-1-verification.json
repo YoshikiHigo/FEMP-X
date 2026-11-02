@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair13380",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NullPointerException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null]",
+        "inputAfterSnapshot": "java.lang.Object[][null]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NullPointerException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null]",
+        "inputAfterSnapshot": "java.lang.Object[][null]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NullPointerException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null]",
+        "inputAfterSnapshot": "java.lang.Object[][null]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NullPointerException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null]",
+        "inputAfterSnapshot": "java.lang.Object[][null]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 catches any Exception (including NullPointerException) and returns null, whereas method2 does not catch the NullPointerException thrown by addr.split when addr is null, so it propagates the exception.",
+    "arguments_java": [
+      "null"
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 141.338
+}

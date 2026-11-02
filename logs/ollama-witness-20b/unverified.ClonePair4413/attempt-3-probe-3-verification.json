@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair4413",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(4611686020574871552)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(4611686020574871552)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(4611686020574871552)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(4611686020574871552)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(4611686020574871552)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(4611686020574871552)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(4611686020574871552)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(4611686020574871552)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 casts the square root of the input to an int. For the composite number 4611686020574871552L (2^31·(2^31+1)), the true square root is 2147483648.5, which exceeds Integer.MAX_VALUE. The cast yields Integer.MAX_VALUE, so the for‑loop in method1 never tests the divisor 2147483648 and incorrectly returns true. method2 uses long arithmetic for the square root and correctly detects the divisor 2147483648, returning false.",
+    "arguments_java": [
+      "4611686020574871552L"
+    ],
+    "parameter_types": [
+      "long"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 117.476
+}

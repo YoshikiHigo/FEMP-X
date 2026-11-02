@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair7625",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,Integer(7)]",
+        "inputAfterSnapshot": "java.lang.Object[][null,Integer(7)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,Integer(7)]",
+        "inputAfterSnapshot": "java.lang.Object[][null,Integer(7)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,Integer(7)]",
+        "inputAfterSnapshot": "java.lang.Object[][null,Integer(7)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,Integer(7)]",
+        "inputAfterSnapshot": "java.lang.Object[][null,Integer(7)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns false when one argument is null and the other is non‑null, whereas method2 returns true in that case.",
+    "arguments_java": [
+      "null",
+      "Integer.valueOf(7)"
+    ],
+    "parameter_types": [
+      "Object",
+      "Object"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 155.277
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same boolean value for any char input; the order of checks does not affect the outcome. No concrete separating input exists."
+}

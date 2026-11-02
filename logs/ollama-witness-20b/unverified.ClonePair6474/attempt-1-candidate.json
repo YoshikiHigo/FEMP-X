@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For an input float value that causes the intermediate integer x to be negative, method1 normalises x to an unsigned 24‑bit value before writing the bytes in little‑endian order, whereas method2 simply adds 0x7FFFFF and writes the result in big‑endian order. The resulting byte arrays differ.",
+  "arguments_java": [
+    "new float[]{-1.0f}"
+  ],
+  "parameter_types": [
+    "float[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all possible byte array inputs, the two methods exhibit identical behavior. Both perform element‑wise comparison using the same ordering (signed comparison with special handling for negative vs non‑negative bytes, which effectively matches unsigned ordering) and produce the same result for all length combinations, including empty and null arrays. No concrete input can be found that distinguishes their return values, side effects, exceptions, or termination behavior."
+}

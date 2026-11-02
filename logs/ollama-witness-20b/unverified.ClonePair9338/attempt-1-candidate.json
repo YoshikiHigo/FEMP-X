@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods evaluate the same condition for all possible char inputs; no input can cause a difference in return value, side effect, exception, or non‑termination."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all deterministic, bounded inputs. Both return null when the input string is null, return the original string when its length is less than or equal to the specified limit, and otherwise return the substring up to the limit concatenated with the supplied suffix. No input can cause one method to return a different value, throw a different exception, or exhibit non‑termination while the other behaves differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1170,
+  "eval_count": 324,
+  "total_duration": 2878795400,
+  "load_duration": 9928700
+}

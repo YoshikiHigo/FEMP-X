@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive reasoning over all edge cases involving negative, zero, and extreme long values, both methods perform identical arithmetic and produce the same result or throw the same exception. No concrete input distinguishes them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1131,
+  "eval_count": 1033,
+  "total_duration": 8212757900,
+  "load_duration": 3057200
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, the only potential divergence—handling an empty replaceFrom string—leads to an infinite loop in both methods, not a distinguishable return value or side effect. No finite, deterministic input can produce a differing observable outcome between method1 and method2.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1297,
+  "eval_count": 461,
+  "total_duration": 3652642200,
+  "load_duration": 2715300
+}

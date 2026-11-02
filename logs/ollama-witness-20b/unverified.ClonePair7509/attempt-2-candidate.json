@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No concrete, deterministic input using only standard Java types can produce an asymmetric equals result between two arguments. All standard types either have symmetric equals or return false in both directions. Therefore, a separating test case cannot be constructed within the given constraints."
+}

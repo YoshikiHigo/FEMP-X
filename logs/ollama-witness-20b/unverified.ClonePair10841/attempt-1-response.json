@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods behave identically for all possible inputs: Integer.parseInt only throws NumberFormatException, which is caught by both catch blocks. No input can cause a different return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1099,
+  "eval_count": 255,
+  "total_duration": 2065490200,
+  "load_duration": 4083900
+}

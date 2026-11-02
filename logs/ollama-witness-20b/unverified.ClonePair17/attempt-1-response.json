@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical parsing of the string into a Long using the same Long.valueOf and Long constructor semantics, handling null, empty, and invalid inputs in the same way. No input can distinguish their return values, side effects, exceptions, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 874,
+  "eval_count": 129,
+  "total_duration": 1374130100,
+  "load_duration": 9015200
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks for whether the StringBuilder ends with the given terminator string. They return the same boolean value for all inputs, throw the same NullPointerException when the terminator is null, and have no other side effects or non‑termination behavior. No deterministic input can distinguish their outputs."
+}

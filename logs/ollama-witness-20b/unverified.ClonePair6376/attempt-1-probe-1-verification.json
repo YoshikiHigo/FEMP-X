@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair6376",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(650777868590383874)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 1, 2, 3, 4, 5, 6, 7, 8, 9],Integer(2)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 1, 2, 3, 4, 5, 6, 7, 8, 9],Integer(2)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(650777868590383874)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 1, 2, 3, 4, 5, 6, 7, 8, 9],Integer(2)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 1, 2, 3, 4, 5, 6, 7, 8, 9],Integer(2)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(650777868590383874)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 1, 2, 3, 4, 5, 6, 7, 8, 9],Integer(2)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 1, 2, 3, 4, 5, 6, 7, 8, 9],Integer(2)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(650777868590383874)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 1, 2, 3, 4, 5, 6, 7, 8, 9],Integer(2)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 1, 2, 3, 4, 5, 6, 7, 8, 9],Integer(2)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 interprets the 8 bytes starting at the given offset in little‑endian order, while method2 interprets the 8 bytes ending at the given offset in big‑endian order. With a non‑zero offset the two byte sequences are reversed, producing different long values.",
+    "arguments_java": [
+      "new byte[]{0,1,2,3,4,5,6,7,8,9}",
+      "2"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 164.669
+}

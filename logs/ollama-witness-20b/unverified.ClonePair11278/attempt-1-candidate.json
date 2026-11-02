@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic: they return true for characters '0' through '9' and false otherwise. No input can distinguish their behavior."
+}

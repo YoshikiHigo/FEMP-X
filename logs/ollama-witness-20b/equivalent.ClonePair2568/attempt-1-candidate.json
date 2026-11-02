@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they return true iff the two byte arrays are non‑null, have equal lengths, and contain the same bytes. Any case that causes a NullPointerException in one method also causes it in the other, and the return values for all valid inputs match exactly. No concrete separating input exists."
+}

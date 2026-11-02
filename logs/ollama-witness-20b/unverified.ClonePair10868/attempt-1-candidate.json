@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same boolean value for every possible char input; no distinguishing behavior (return value, side effect, exception, or non‑termination) can be observed with deterministic, bounded inputs."
+}

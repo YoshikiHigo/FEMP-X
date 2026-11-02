@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same ordinal suffix logic for all integer inputs; exhaustive reasoning shows no input produces differing return values, side effects, or exceptions."
+}

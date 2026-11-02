@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns false because int.class.isInstance(Integer) is false, whereas method2 returns true by treating Integer as a valid instance of int.class via the special Integer.TYPE check.",
+  "arguments_java": [
+    "new Class[]{int.class}",
+    "new Object[]{5}"
+  ],
+  "parameter_types": [
+    "Class[]",
+    "Object[]"
+  ],
+  "void_return": false
+}

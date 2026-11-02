@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs: they return a Double object representing the parsed value when the input is a valid numeric string, and return null otherwise. No input causes a divergence in return value, side effects, or exception handling.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 846,
+  "eval_count": 359,
+  "total_duration": 3086421200,
+  "load_duration": 13173900
+}

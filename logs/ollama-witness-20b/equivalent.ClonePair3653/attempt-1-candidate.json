@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both method1 and method2 perform identical comparisons of the two Integer arguments and return the same integer result for all possible inputs. No input can distinguish their behavior."
+}

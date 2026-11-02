@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 requires both a.equals(b) and b.equals(a) to be true, whereas method2 only requires a.equals(b). By creating two anonymous classes where the first’s equals method returns true when compared to the second, but the second’s equals method always returns false, method1 will return false while method2 will return true.",
+  "arguments_java": [
+    "new Object(){\n    @Override\n    public boolean equals(Object o){\n        return o instanceof Object && o.getClass().getName().equals(\"unverified.ClonePair7613$2\");\n    }\n}",
+    "new Object(){\n    @Override\n    public boolean equals(Object o){\n        return false;\n    }\n}"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

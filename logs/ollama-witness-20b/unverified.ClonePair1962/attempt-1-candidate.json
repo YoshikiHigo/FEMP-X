@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible byte[] inputs: they both return true iff the inputs are both null or both non‑null and contain the same sequence of bytes, and false otherwise. No input can cause one method to return a different value, throw a different exception, or exhibit a side effect that the other does not. Hence no concrete separating test case exists."
+}

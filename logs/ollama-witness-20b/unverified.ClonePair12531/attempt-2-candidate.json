@@ -1,0 +1,17 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 searches for the first occurrence of the separator character starting at the given index, so with a string that begins with a quote and the separator set to a quote, it returns the index of that first quote (0). method2 treats a quote at the starting index specially: it returns the index of the next quote instead of the current one, so it returns 3 for the same input.",
+  "arguments_java": [
+    "\"\\\"a\\\"b\"",
+    "'\\\"'",
+    "0"
+  ],
+  "parameter_types": [
+    "String",
+    "char",
+    "int"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

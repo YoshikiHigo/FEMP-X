@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs: they return null for null or non‑numeric strings, and return the same Long value for valid numeric strings. No input can cause one method to return a value while the other returns null, nor can one method throw an exception that the other does not. Therefore, no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 875,
+  "eval_count": 195,
+  "total_duration": 1905948500,
+  "load_duration": 2563300
+}

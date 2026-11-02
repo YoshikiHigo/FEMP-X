@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods format a Calendar instance into the same string representation (YYYY-MM-DD) and exhibit identical behavior for all valid Calendar inputs, including null, which causes a NullPointerException in both cases. No deterministic input can distinguish their outputs or side effects.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1060,
+  "eval_count": 116,
+  "total_duration": 1018139900,
+  "load_duration": 2029500
+}

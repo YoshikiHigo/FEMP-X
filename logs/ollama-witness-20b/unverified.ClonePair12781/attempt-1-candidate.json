@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For n=12, method1 returns \"12nd\" while method2 returns \"12th\" due to the special handling of 12 in method1 and the exclusion condition in method2.",
+  "arguments_java": [
+    "12"
+  ],
+  "parameter_types": [
+    "int"
+  ],
+  "void_return": false
+}

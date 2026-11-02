@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical character range checks; no input can distinguish their behavior."
+}

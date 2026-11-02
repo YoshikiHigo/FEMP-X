@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally identical; for any input that causes one to return a value, the other returns the same value, and for any input that causes one to throw an exception (e.g., null arguments), the other throws the same type of exception. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1040,
+  "eval_count": 247,
+  "total_duration": 2315238200,
+  "load_duration": 2046400
+}

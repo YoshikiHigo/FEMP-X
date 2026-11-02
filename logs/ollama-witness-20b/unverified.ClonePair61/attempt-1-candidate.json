@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods produce identical results for all deterministic, bounded inputs and exhibit the same exception behavior. No concrete separating test case can be constructed within the given constraints."
+}

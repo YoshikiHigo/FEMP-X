@@ -1,0 +1,69 @@
+{
+  "key": "unverified.ClonePair6496",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][63, -1, -1, 0]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][63, -1, -1, 0],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][64, 0, 0, 0]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][64, 0, 0, 0],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][63, -1, -1, 0]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][63, -1, -1, 0],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][64, 0, 0, 0]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][64, 0, 0, 0],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 scales the input float by 0x7FFFFF and writes the lower 3 bytes of the resulting 24‑bit integer, while method2 scales by 0x7FFFFFFF and writes the full 32‑bit integer. With the same input the byte arrays produced by the two methods differ.",
+    "arguments_java": [
+      "new float[]{0.5f}",
+      "0",
+      "1",
+      "new byte[4]",
+      "0"
+    ],
+    "parameter_types": [
+      "float[]",
+      "int",
+      "int",
+      "byte[]",
+      "int"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 161.016
+}

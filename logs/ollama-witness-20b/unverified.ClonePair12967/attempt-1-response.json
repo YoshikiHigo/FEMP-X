@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For l = Integer.MIN_VALUE, method1 evaluates the first condition (l < Integer.MAX_VALUE) as true, setting m to Integer.MAX_VALUE, then the second condition (l > Integer.MIN_VALUE) as false, so it returns m = Integer.MAX_VALUE. method2 directly returns Integer.MIN_VALUE for l <= Integer.MIN_VALUE. Thus the return values differ.\",\"arguments_java\":[\"Integer.MIN_VALUE\"],\"parameter_types\":[\"long\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 978,
+  "eval_count": 335,
+  "total_duration": 2647154600,
+  "load_duration": 4755300
+}

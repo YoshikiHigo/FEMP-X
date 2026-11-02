@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of the two methods, all possible deterministic inputs that respect the allowed difference types (return value, side effect, exception, non-termination) produce identical observable behavior. No concrete separating test case can be constructed without violating the constraints or relying on non-deterministic factors.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1366,
+  "eval_count": 470,
+  "total_duration": 3739550000,
+  "load_duration": 2036200
+}

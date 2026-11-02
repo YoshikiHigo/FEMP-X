@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible Double inputs; no concrete separating test case can be constructed."
+}

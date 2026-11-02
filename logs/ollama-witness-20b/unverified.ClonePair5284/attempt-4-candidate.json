@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the control flow and behavior of both methods for all possible combinations of pattern and input strings—including edge cases such as empty strings, strings containing only wildcards, and strings with leading, trailing, or consecutive wildcards—no input was found that causes the two methods to diverge in return value, side effects, exception type, or termination behavior. Both methods exhibit identical semantics for all deterministic, bounded inputs, and any previously suggested separating cases were shown to terminate normally with the same result. Therefore, no concrete separating test case exists."
+}

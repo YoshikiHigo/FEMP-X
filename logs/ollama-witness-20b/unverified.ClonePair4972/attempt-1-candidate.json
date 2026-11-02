@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all possible inputs: they return the same value when the property is present, and when it is absent they both return the integer argument supplied to the call. Since the arguments to method1 and method2 are required to be the same in a test, no input can make one return a different value or throw a different exception than the other."
+}

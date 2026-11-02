@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 throws a NullPointerException when the replacement argument is null and the target string occurs in the source, whereas method2 appends the string \\\"null\\\" and returns a normal String.\",\"arguments_java\":[\"\\\"a\\\"\"],\"parameter_types\":[\"String\",\"String\",\"String\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1285,
+  "eval_count": 196,
+  "total_duration": 1655806100,
+  "load_duration": 5978100
+}

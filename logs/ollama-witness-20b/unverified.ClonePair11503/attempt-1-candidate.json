@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both perform a straightforward replace of all occurrences of the substring 'from' with 'to', handling nulls and empty strings in the same way. No input can be constructed that causes one method to return a different value, throw a different exception, or terminate differently while the other behaves otherwise."
+}

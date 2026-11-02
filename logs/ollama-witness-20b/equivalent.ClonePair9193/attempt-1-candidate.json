@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical linear scans and return the same index or -1; no input can distinguish them."
+}

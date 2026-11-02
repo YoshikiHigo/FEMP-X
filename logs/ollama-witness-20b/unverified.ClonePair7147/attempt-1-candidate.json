@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical operations on the byte array: they both read four consecutive bytes starting at the given offset, mask each byte to its unsigned value, shift it appropriately, and combine the results with bitwise OR. For any valid input (including edge cases such as empty arrays, null arrays, or offsets that cause an ArrayIndexOutOfBoundsException), both methods exhibit the same behavior, either returning the same integer value or throwing the same exception. No concrete input can distinguish their outputs or side effects."
+}

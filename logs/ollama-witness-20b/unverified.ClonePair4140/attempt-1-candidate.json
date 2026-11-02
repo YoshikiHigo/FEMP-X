@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they create a new String array of the same length as the input list and copy each element in order. For any non‑null list, the resulting arrays are equal element‑by‑element. For a null list both methods throw a NullPointerException at the same point. No input can cause a difference in return value, side effects, exception type, or non‑termination."
+}

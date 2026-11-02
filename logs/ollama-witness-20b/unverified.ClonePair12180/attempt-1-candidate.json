@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns the index of the first unescaped occurrence of the target character regardless of braces, while method2 only returns a match when the level of nested braces is zero. In the string \"a{c}d\" with start index 0 and target character 'c', method1 finds the 'c' inside the braces at index 2, whereas method2 ignores it because the level is 1 and ultimately returns -1.",
+  "arguments_java": [
+    "\"a{c}d\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

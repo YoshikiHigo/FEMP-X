@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 trims the input string before parsing, so a string with leading/trailing whitespace that represents a valid number (e.g., \" 1\") is parsed successfully and returns a Double. method2 does not trim, so Double.parseDouble(\" 1\") throws NumberFormatException and the method returns null. Both methods receive the same input and initial state.",
+  "arguments_java": [
+    "\" 1\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 trims the input string before checking digits, so a string that contains leading or trailing whitespace but only digits otherwise is considered a digit string. method2 does not trim, so the same string is rejected because the whitespace character is not a digit.\",\"arguments_java\":[\"\\\" 1\\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 826,
+  "eval_count": 229,
+  "total_duration": 2004347700,
+  "load_duration": 2046700
+}

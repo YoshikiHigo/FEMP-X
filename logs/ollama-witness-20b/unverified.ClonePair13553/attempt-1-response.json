@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical operations on the same input; no deterministic, bounded input can produce a differing return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 996,
+  "eval_count": 207,
+  "total_duration": 1678971400,
+  "load_duration": 15474800
+}

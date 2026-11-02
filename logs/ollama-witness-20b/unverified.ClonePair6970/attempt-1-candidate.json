@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are logically equivalent for all integer inputs; exhaustive case analysis shows no input can produce a differing return value, side effect, exception, or non‑termination."
+}

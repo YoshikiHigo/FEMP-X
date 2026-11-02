@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "Both methods compare two Date objects. method1 compares only the epoch seconds (getTime()/1000), so two dates that differ by less than one second but share the same second value are considered equal. method2 uses Date.equals, which compares the full millisecond value, so such dates are not equal. Thus, for date(1000L) and date(1500L) method1 returns true while method2 returns false.",
+  "arguments_java": [
+    "date(1000L)",
+    "date(1500L)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

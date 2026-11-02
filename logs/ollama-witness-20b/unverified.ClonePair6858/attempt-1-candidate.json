@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the minimum of three integers with identical tie-breaking logic; exhaustive reasoning shows no input yields differing results."
+}

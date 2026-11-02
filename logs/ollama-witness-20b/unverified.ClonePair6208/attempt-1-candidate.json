@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible boolean[] inputs; no concrete separating test case exists."
+}

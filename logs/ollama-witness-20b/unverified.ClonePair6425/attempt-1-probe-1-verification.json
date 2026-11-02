@@ -1,0 +1,69 @@
+{
+  "key": "unverified.ClonePair6425",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][127, -1]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][127, -1],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][127, 0]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][127, 0],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][127, -1]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][127, -1],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][127, 0]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][127, 0],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 writes two bytes per float (high and low of the 16‑bit integer representation of the scaled float), while method2 writes only one byte per float (the low byte of the scaled float). With a single float input, the returned byte arrays differ in length and content.",
+    "arguments_java": [
+      "new float[]{1.0f}",
+      "0",
+      "1",
+      "new byte[]{0,0}",
+      "0"
+    ],
+    "parameter_types": [
+      "float[]",
+      "int",
+      "int",
+      "byte[]",
+      "int"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 167.743
+}

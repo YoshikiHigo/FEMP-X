@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are semantically equivalent for all possible inputs. Both retrieve the value from the map, check for null and instance of Number, and return the intValue() or 0 otherwise. No input can cause a different return value, side effect, exception, or non-termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 848,
+  "eval_count": 163,
+  "total_duration": 1612303100,
+  "load_duration": 2233900
+}

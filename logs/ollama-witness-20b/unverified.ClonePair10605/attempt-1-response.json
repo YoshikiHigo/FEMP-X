@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible inputs: they either return the first non‑whitespace index or throw the same exception (NullPointerException or StringIndexOutOfBoundsException) under the same conditions. No concrete input can distinguish their return values, side effects, or exception types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1054,
+  "eval_count": 338,
+  "total_duration": 2717380400,
+  "load_duration": 6845900
+}

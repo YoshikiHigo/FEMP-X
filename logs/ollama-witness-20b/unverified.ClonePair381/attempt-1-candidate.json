@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible byte[] inputs. Both correctly handle nulls, reference equality, length checks, and element-wise comparison, yielding the same boolean result in every case. No concrete separating input can be constructed."
+}

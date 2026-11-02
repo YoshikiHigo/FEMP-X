@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical bitwise operations on non-overlapping byte ranges; addition and bitwise OR yield the same 32‑bit result for all valid inputs. No concrete separating input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1229,
+  "eval_count": 676,
+  "total_duration": 5571376200,
+  "load_duration": 16462400
+}

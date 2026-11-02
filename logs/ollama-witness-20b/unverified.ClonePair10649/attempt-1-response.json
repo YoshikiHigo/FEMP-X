@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, the only pathological case is when the token/substring is the empty string, in which case both methods enter an infinite loop. No input causes one method to terminate while the other does not, nor do they differ in return value, side effects, or exception type for any valid input.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1305,
+  "eval_count": 543,
+  "total_duration": 4546949500,
+  "load_duration": 7116500
+}

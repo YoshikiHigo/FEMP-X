@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte-wise comparisons over the first 16 indices of the input arrays. For any pair of byte arrays of length at least 16, they return the same boolean value and throw the same ArrayIndexOutOfBoundsException when the arrays are shorter than 16. No deterministic input can cause a divergence in return value, side effect, exception type, or non-termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 905,
+  "eval_count": 134,
+  "total_duration": 1499312100,
+  "load_duration": 7065100
+}

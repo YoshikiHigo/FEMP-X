@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical byte-to-long conversions. For any byte array and integer index/offset, both methods either return the same 64‑bit value or throw the same exception type (ArrayIndexOutOfBoundsException or NullPointerException). No deterministic input can produce a differing return value, side effect, or exception class."
+}

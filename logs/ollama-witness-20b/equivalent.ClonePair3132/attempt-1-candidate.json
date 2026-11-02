@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of a float array in a mathematically equivalent way. For any finite array (including empty, null, or containing NaN/Infinity), both methods either throw the same exception or return the same value. No deterministic, bounded input can distinguish their behavior."
+}

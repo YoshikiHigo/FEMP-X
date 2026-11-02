@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair7695",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUBjMzg3ZjQ0),unverified.OllamaWitnessProbe$2(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMkA2NTllMGJmZA==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 checks class equality and hashCode, so two distinct anonymous classes with identical equals() but different hashCodes will cause method1 to return false while method2 returns true.",
+    "arguments_java": [
+      "new Object(){public boolean equals(Object o){return true;}}",
+      "new Object(){public boolean equals(Object o){return true;}}"
+    ],
+    "parameter_types": [
+      "Object",
+      "Object"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 160.674
+}

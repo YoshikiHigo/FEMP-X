@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical arithmetic operations on the same inputs. All control‑flow branches and expressions match exactly, so no deterministic input can produce a different result, exception, or side effect.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1321,
+  "eval_count": 383,
+  "total_duration": 3267414200,
+  "load_duration": 2569200
+}

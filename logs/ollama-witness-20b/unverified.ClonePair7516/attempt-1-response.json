@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 uses Date.equals which compares milliseconds, so two Date objects differing by less than a second are not equal; method2 compares only whole seconds, so it considers them equal.\",\"arguments_java\":[\"new Date(1000L)\",\"new Date(1500L)\"],\"parameter_types\":[\"Object\",\"Object\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 955,
+  "eval_count": 402,
+  "total_duration": 3451791600,
+  "load_duration": 19862700
+}

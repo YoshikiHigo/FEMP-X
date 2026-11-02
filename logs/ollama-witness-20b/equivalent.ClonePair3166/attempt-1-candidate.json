@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same logic: they check if the argument is an instance of Number and return its longValue(), otherwise they parse the argument’s toString() as a long. No input can cause a different return value, side effect, exception type, or non‑termination."
+}

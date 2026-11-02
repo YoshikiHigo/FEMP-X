@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte-to-hex conversion and separator handling; no deterministic input can produce differing return values, side effects, or exceptions.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1196,
+  "eval_count": 130,
+  "total_duration": 1376974500,
+  "load_duration": 5613900
+}

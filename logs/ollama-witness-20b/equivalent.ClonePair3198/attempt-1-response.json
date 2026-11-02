@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical lexicographic comparison of two char arrays; for all deterministic, bounded inputs they produce the same result, throw the same exceptions, and terminate. No concrete separating input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1204,
+  "eval_count": 157,
+  "total_duration": 1752098400,
+  "load_duration": 3068600
+}

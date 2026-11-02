@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Unable to construct a single Java expression that supplies the same non‑null array reference for both parameters without using external variables or helper methods. The required separating input would be two arguments that are the exact same array instance, e.g. `Object[] a = new Object[]{1}; subject.method1(a,a)` vs `subject.method2(a,a)`, but such a construction cannot be expressed as a pure expression in the `arguments_java` field under the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 997,
+  "eval_count": 1267,
+  "total_duration": 10050009500,
+  "load_duration": 2670000
+}

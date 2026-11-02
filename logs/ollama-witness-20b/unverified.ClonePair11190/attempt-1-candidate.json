@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for counting non‑overlapping occurrences of a substring. The only difference is the order of null/empty checks, which does not affect the result for any input. No deterministic input can distinguish their outputs, side effects, or termination behavior."
+}

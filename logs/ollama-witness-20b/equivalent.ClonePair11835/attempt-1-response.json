@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible inputs: they either truncate, pad with spaces, or throw the same exceptions. No concrete input can distinguish their outputs or side effects.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1162,
+  "eval_count": 187,
+  "total_duration": 1894932000,
+  "load_duration": 5446900
+}

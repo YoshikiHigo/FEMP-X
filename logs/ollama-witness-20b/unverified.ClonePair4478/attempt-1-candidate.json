@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both read the first element, iterate over the array, compare with >, and return the maximum. Edge cases such as empty arrays, null arrays, single-element arrays, NaN, and Infinity produce the same result or the same exception type. No concrete input can distinguish the two methods."
+}

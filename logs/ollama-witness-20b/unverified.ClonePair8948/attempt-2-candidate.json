@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No deterministic, self‑contained input can be constructed that guarantees a system property with a negative integer value without modifying the JVM state. Therefore a concrete separating test case cannot be provided."
+}

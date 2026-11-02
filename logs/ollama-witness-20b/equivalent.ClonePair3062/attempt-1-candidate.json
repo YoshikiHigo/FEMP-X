@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; they perform the same null/empty check and parse the string with Double.parseDouble. No input can cause a difference in return value, side effect, exception type, or termination."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same logic: they compare two integer arrays element‑by‑element and count mismatches, returning -1 if the lengths differ. No input can cause a different return value, side effect, exception, or non‑termination."
+}

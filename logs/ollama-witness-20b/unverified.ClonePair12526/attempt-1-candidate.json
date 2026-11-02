@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all edge cases involving null inputs, empty strings, overlapping patterns, and the behavior of Java's String.indexOf and substring methods, both method1 and method2 exhibit identical return values, side effects, and termination behavior for any deterministic, bounded input. No concrete separating input was found."
+}

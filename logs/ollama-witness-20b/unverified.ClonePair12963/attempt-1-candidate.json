@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For input 2147483647L, method1 evaluates the condition l < Integer.MAX_VALUE && l > Integer.MIN_VALUE. The first part is false (since l == Integer.MAX_VALUE), so the whole condition is false and the method returns the value of m, which after the assignments is Integer.MIN_VALUE. method2, however, first checks if x >= Integer.MAX_VALUE and returns Integer.MAX_VALUE in that case. Thus the two methods return different integers for the same input.",
+  "arguments_java": [
+    "2147483647L"
+  ],
+  "parameter_types": [
+    "long"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all possible String inputs: they return null for null or non‑numeric strings and return the parsed Float value otherwise. No input can produce a different return value, side effect, exception type, or non‑termination."
+}

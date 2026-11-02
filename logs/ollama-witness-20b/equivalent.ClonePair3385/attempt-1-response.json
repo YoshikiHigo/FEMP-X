@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible inputs: they return true iff both arrays are null or both are non‑null, equal length, and contain identical elements. No input distinguishes their return values, side effects, exceptions, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 966,
+  "eval_count": 274,
+  "total_duration": 2484965900,
+  "load_duration": 4233800
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit unsigned value from four consecutive bytes and behave identically for all valid inputs. They both throw the same exceptions (ArrayIndexOutOfBoundsException or NullPointerException) under the same conditions, and there is no input that causes one to terminate normally while the other does not or produces a different return value."
+}

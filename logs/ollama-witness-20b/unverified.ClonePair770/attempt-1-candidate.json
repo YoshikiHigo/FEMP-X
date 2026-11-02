@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; they perform the same null checks, length checks, and element-wise comparison. No input can cause differing behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit integer for any byte array of length ≥4, and both throw the same exception (ArrayIndexOutOfBoundsException or NullPointerException) for shorter or null arrays. No input can distinguish their observable behavior."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 treats null and empty string as equal, while method2 treats them as different. For input (null, \\\"\\\"), method1 returns true, method2 returns false.\",\"arguments_java\":[\"null\",\"\\\"\\\"\"],\"parameter_types\":[\"String\",\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 881,
+  "eval_count": 340,
+  "total_duration": 2840762400,
+  "load_duration": 2553100
+}

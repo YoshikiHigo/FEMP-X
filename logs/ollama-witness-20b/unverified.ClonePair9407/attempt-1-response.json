@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical operations: they compute the minimum element of the input array using the same loop structure and comparison logic. No input can cause one method to return a different value, throw a different exception, or exhibit a side‑effect that the other does not. Therefore, no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 976,
+  "eval_count": 87,
+  "total_duration": 784549700,
+  "load_duration": 16657300
+}

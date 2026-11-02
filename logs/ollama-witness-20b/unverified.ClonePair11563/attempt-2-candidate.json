@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of both methods, all possible deterministic bounded inputs produce identical behavior. Both methods handle null inputs, non‑matching targets, matching targets, and empty targets in the same way (including the infinite loop for an empty target). No input causes a difference in return value, side effect, exception, or termination. Therefore no separating test case exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of the input array in the same way. They both access the first element unconditionally, so they throw a NullPointerException on a null array and an ArrayIndexOutOfBoundsException on an empty array. For any non‑empty array they perform identical comparisons and return the same value. No input can distinguish the two methods."
+}

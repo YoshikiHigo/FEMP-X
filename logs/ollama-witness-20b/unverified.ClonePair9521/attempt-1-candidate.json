@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the minimum element of the array in the same way; for any input array (including null, empty, or non‑empty) they produce identical results, have no side effects, and terminate normally. No concrete separating input exists."
+}

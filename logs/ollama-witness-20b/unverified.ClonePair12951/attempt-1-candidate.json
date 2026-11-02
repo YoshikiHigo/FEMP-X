@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical string replacement logic for all deterministic, bounded inputs. No input causes a differing return value, side effect, exception type, or non‑termination that distinguishes the two implementations."
+}

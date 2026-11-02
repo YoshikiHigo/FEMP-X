@@ -1,0 +1,68 @@
+{
+  "key": "unverified.ClonePair6492",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-1, -1, -1, -2]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][-1, -1, -1, -2],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][127, -1, -1, -1]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][127, -1, -1, -1],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-1, -1, -1, -2]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][-1, -1, -1, -2],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][127, -1, -1, -1]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][127, -1, -1, -1],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 adds 0x7FFFFFFF to the scaled float value before writing its 4 bytes, whereas method2 writes the raw scaled value. With a non‑zero input float, the byte sequences produced by the two methods differ, so the returned byte arrays are not equal.",
+    "arguments_java": [
+      "new float[]{1.0f}",
+      "0",
+      "1",
+      "new byte[4]",
+      "0"
+    ],
+    "parameter_types": [
+      "float[]",
+      "int",
+      "int",
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 169.025
+}

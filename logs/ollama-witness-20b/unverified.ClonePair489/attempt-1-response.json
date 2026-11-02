@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical control flow and return logic for all possible byte[] inputs; no concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1312,
+  "eval_count": 193,
+  "total_duration": 1840645600,
+  "load_duration": 17674100
+}

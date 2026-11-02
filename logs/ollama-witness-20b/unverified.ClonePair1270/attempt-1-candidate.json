@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical hexadecimal string representations for all possible byte array inputs; no concrete separating input exists."
+}

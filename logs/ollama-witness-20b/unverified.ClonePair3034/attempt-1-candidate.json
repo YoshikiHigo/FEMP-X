@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible byte[] inputs, including edge cases such as empty arrays, unequal lengths, and null references. No concrete input can distinguish their return values, side effects, or exception outcomes."
+}

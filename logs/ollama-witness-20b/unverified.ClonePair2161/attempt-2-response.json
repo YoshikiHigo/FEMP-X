@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods interpret the byte array as a big‑endian 32‑bit integer; for every possible 4‑byte input they compute the same value. No input can produce a differing return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1448,
+  "eval_count": 208,
+  "total_duration": 1936751900,
+  "load_duration": 5170100
+}

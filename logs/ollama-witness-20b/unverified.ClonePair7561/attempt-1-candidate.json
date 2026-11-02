@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns true when the first argument’s equals method returns true for the second argument, regardless of symmetry. method2 requires both equals calls to return true, so it fails when the second argument’s equals is not symmetric.",
+  "arguments_java": [
+    "new unverified.ClonePair7561Test.A(1)",
+    "new unverified.ClonePair7561Test.B(1)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

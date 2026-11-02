@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all deterministic, bounded inputs. Both compute the dot product over the length of the first array, return 0.0 for empty first arrays, and throw a NullPointerException when either input array is null. No input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

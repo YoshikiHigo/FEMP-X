@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all valid inputs. They both return the index of the first delimiter character found at or after the given start position, or -1 if none is found. They both throw a NullPointerException when the input string is null, and they both handle negative start positions in the same way (by iterating from the negative index, which effectively starts at the beginning of the string). No input can cause one method to return a different value, throw a different exception type, or exhibit non‑termination while the other behaves differently."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical tokenization using StringTokenizer; for any non‑null, non‑empty input string and any separator string, they produce the same array of tokens. No input can cause a difference in return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1134,
+  "eval_count": 231,
+  "total_duration": 2143509600,
+  "load_duration": 4440700
+}

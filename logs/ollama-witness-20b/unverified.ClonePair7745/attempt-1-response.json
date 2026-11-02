@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 compares Date objects by epoch seconds, while method2 uses equals. For two Date instances that differ in milliseconds but share the same epoch second, method1 returns true and method2 returns false.\",\"arguments_java\":[\"date(1000L)\",\"date(1500L)\"],\"parameter_types\":[\"Object\",\"Object\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 937,
+  "eval_count": 251,
+  "total_duration": 2209405100,
+  "load_duration": 2134300
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logical checks: they return true only when both arrays are non‑null, have equal length, and contain the same bytes (checked in reverse order in method1 and forward order in method2). All edge cases (nulls, length mismatch, byte differences) are handled equivalently, so no concrete input can distinguish their return values, side effects, or exception behavior."
+}

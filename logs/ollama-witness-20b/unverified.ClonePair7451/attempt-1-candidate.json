@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They either return the original string or prepend the pad character the same number of times, and both throw the same exceptions under equivalent conditions. No concrete separating test case can be constructed within the given constraints."
+}

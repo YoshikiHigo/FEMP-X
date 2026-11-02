@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are logically equivalent for all integer inputs; no concrete separating input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 813,
+  "eval_count": 480,
+  "total_duration": 3824946000,
+  "load_duration": 5428900
+}

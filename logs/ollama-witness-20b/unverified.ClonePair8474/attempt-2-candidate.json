@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, all possible inputs that can be supplied to both methods produce identical results. Both methods return null for null, empty, or non‑numeric strings, and both return a Double for any string that represents a valid floating‑point number (including those with surrounding whitespace). No input can be constructed that causes one method to return a value while the other returns null, throws an exception, or behaves otherwise differently. Therefore, no concrete separating test case exists for this pair."
+}

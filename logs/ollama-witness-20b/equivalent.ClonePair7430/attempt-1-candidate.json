@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks: they return true if the two references are the same, false if either is null, and otherwise compare the runtime classes of the objects. No input can cause a differing return value, side effect, exception, or non‑termination."
+}

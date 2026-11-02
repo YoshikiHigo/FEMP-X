@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical computations: they initialize a variable with the first array element and iterate through the rest, updating the variable when a larger value is found. For any input array (including null or empty), both methods exhibit the same behavior—throwing the same exception or returning the same maximum value. No concrete input can distinguish their outputs or side effects."
+}

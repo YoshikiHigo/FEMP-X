@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns the original array when the index is the last element, whereas method2 always creates a new array and copies all elements except the one at the given index. For input a = {\"x\",\"y\"} and pos = 1, method1 returns the same array instance that was passed in, while method2 returns a new array containing only \"x\".",
+  "arguments_java": [
+    "new String[]{\"x\",\"y\"}"
+  ],
+  "parameter_types": [
+    "String[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

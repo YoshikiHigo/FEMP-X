@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the same value for all possible byte[] inputs of length at least 4, and they throw the same exceptions for inputs of length less than 4. No concrete separating input exists."
+}

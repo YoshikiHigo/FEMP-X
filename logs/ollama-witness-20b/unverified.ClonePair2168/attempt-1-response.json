@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical logic: they compare the first subarray against the prefix of the first array and return the same boolean value or throw the same exception when a null argument is passed. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1164,
+  "eval_count": 69,
+  "total_duration": 961201800,
+  "load_duration": 18283400
+}

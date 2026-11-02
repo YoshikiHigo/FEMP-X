@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all possible deterministic inputs, both methods produce identical results for every valid byte array and offset. The only differences arise from the same exception types (ArrayIndexOutOfBoundsException, NullPointerException) under identical failure conditions, which do not constitute a separating behavior. Therefore no concrete separating test case exists."
+}

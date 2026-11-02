@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical two-byte extraction with identical masking and shifting; no deterministic input causes differing return values, side effects, or exceptions.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1335,
+  "eval_count": 562,
+  "total_duration": 4641403000,
+  "load_duration": 2127500
+}

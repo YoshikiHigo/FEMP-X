@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same string for every possible char input; the only difference is the implementation detail of string creation, which does not affect observable behavior. No deterministic, bounded input can distinguish them."
+}

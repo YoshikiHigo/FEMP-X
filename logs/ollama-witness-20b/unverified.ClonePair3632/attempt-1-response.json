@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical element‑wise comparisons and exhibit the same behaviour for all possible inputs, including nulls and arrays of differing lengths. No concrete input can distinguish their return values, side effects, or exception types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1006,
+  "eval_count": 172,
+  "total_duration": 1687195400,
+  "load_duration": 4913300
+}

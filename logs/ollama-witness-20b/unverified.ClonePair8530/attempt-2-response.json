@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods use Java's Double parsing facilities that accept the same set of valid numeric string representations (including surrounding whitespace). For any input string, null, empty, or malformed, both methods return null; for any valid numeric string, both return the corresponding Double value. No deterministic, bounded input can produce a differing observable outcome between method1 and method2.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 944,
+  "eval_count": 279,
+  "total_duration": 2552871800,
+  "load_duration": 2730700
+}

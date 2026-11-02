@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; they perform the same null check and attempt to parse the string into a Double, returning null on NumberFormatException. No input can distinguish their behavior."
+}

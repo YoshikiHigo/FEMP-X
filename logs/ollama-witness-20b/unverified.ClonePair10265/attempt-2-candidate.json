@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both method1 and method2 exhibit identical behavior for all possible String inputs: they return null for null or empty strings, and otherwise both construct an Integer from the string, throwing NumberFormatException for non‑numeric inputs. No input can cause a difference in return value, exception type, side effect, or termination."
+}

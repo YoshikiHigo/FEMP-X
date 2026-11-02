@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic: they return true iff both arguments are null or both are non‑null and equal. No input can distinguish their behavior."
+}

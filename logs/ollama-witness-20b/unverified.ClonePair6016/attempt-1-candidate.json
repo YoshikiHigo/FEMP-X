@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical reference equality checks for each array element; no input can cause differing outcomes."
+}

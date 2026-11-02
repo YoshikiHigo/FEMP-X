@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the same unsigned 32‑bit integer from a 4‑byte array. For any 4‑byte input they produce identical results, and for inputs shorter than 4 bytes both throw the same ArrayIndexOutOfBoundsException. No input can distinguish the two methods.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1343,
+  "eval_count": 572,
+  "total_duration": 4674373200,
+  "load_duration": 3234100
+}

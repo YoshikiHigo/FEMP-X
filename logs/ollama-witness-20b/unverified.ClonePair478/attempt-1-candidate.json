@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical logic for all possible byte[] inputs; no input can cause a divergence in return value, side effects, exception type, or termination."
+}

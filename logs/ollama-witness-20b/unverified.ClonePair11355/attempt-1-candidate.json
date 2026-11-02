@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both throw NullPointerException when source or from is null, return the original source when no replacement occurs, and both enter an infinite loop when the replacement pattern 'from' is the empty string. No input can distinguish their return values, side effects, exceptions, or termination properties."
+}

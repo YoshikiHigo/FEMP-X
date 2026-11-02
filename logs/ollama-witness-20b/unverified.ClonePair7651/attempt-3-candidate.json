@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 checks that the two objects are of the same runtime class before delegating to equals.  method2 only checks that the first object is non‑null and that equals returns true.  By creating a java.util.Date and a java.sql.Date that represent the same instant, method1 will return false (class mismatch) while method2 will return true (equals succeeds).",
+  "arguments_java": [
+    "new java.util.Date(1000L)",
+    "new java.sql.Date(1000L)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally identical; they perform the same checks and return the same boolean values for all possible inputs. No concrete separating input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 887,
+  "eval_count": 59,
+  "total_duration": 781547900,
+  "load_duration": 4704200
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical element‑wise equality checks on the two input arrays. For any pair of non‑null arrays of equal length, both methods iterate over all indices and return false on the first mismatch, otherwise true. For null inputs both methods throw a NullPointerException at the same point. No deterministic input can cause one method to return a different value, throw a different exception type, or exhibit non‑termination while the other behaves differently."
+}

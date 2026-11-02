@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical logic: they both retrieve a system property, check for null, attempt to parse it as an integer, and return the default value on failure or null. No input can cause a differing return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1098,
+  "eval_count": 110,
+  "total_duration": 981612000,
+  "load_duration": 10394500
+}

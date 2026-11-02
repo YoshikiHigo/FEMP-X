@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 writes one byte per input element, method2 writes three bytes per input element, producing different output buffers for the same input.\",\"arguments_java\":[\"new float[]{1.0f}\",\"0\",\"1\",\"new byte[3]\",\"0\"],\"parameter_types\":[\"float[]\",\"int\",\"int\",\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1640,
+  "eval_count": 252,
+  "total_duration": 2154466900,
+  "load_duration": 14917800
+}

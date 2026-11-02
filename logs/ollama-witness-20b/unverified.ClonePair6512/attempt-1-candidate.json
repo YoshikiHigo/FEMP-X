@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical bitwise operations on the same byte array slice: both compute a long by shifting each byte and combining the results using either bitwise OR or addition. Since the shifts produce non‑overlapping bit positions, the OR and addition yield the same value for all possible inputs, and no input can distinguish the two methods."
+}

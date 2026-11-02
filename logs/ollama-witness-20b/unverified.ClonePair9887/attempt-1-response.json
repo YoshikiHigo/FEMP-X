@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. They either return the same sliced array or throw the same exception types under equivalent conditions. No concrete separating test case can be constructed without violating the constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 868,
+  "eval_count": 341,
+  "total_duration": 2700375300,
+  "load_duration": 12076500
+}

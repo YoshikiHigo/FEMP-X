@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical byte‑by‑byte comparisons of the specified slices of the two arrays. They handle all edge cases (null arrays, negative lengths, out‑of‑bounds indices) in the same way, so no concrete input can distinguish their behavior."
+}

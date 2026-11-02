@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns false when both arguments are non‑null and not equal according to Object.equals. method2 treats Date arguments specially: if both are Date instances it compares their epoch seconds (time/1000). Thus two Date objects that differ by less than one second will make method1 return false but method2 return true.",
+  "arguments_java": [
+    "new Date(1000L)",
+    "new Date(1500L)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

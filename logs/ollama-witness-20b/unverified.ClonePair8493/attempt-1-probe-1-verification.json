@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair8493",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMCA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMCA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMCA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMCA=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMCA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMCA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuMCA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuMCA=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 trims the input string before parsing, so \" 1.0 \" is parsed as 1.0 and returned. method2 does not trim; Double.valueOf(\" 1.0 \") throws NumberFormatException, which is caught and results in null. Thus the same input yields different return values.",
+    "arguments_java": [
+      "\" 1.0 \""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 159.801
+}

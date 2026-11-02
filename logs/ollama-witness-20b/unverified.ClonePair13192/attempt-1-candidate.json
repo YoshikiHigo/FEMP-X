@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical conversions: they parse each two‑character hex pair, convert it to an int, and cast to a byte. The only difference is that method1 explicitly subtracts 256 for values >=128, which is equivalent to the cast performed by method2’s byteValue(). For all valid inputs (including null, empty, odd length, or non‑hex characters) both methods throw the same exceptions or return the same byte arrays. No deterministic input can distinguish their behavior."
+}

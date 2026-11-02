@@ -1,0 +1,63 @@
+{
+  "key": "unverified.ClonePair5661",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(ICAg),Boolean(true)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(ICAg),Boolean(true)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(ICAg),Boolean(true)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(ICAg),Boolean(true)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(ICAg),Boolean(true)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(ICAg),Boolean(true)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(ICAg),Boolean(true)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(ICAg),Boolean(true)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For a non‑null, non‑empty string that becomes empty after trimming, method1 returns true when trimWhitespaces is true, whereas method2 returns false when consider_trim is false. The two methods receive the same argument values but interpret the boolean flag differently.",
+    "arguments_java": [
+      "\"   \"",
+      "true"
+    ],
+    "parameter_types": [
+      "String",
+      "boolean"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 153.929
+}

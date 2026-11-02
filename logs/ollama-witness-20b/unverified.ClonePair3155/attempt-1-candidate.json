@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they initialize the minimum to the first element and then iterate over the array (method1 includes the first element in the loop, method2 starts from the second). For an empty array both throw ArrayIndexOutOfBoundsException, and for any non‑empty array they return the same minimum value. No input can distinguish the two methods."
+}

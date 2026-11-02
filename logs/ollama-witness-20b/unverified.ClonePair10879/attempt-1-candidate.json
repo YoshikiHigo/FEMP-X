@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the control flow and string handling in both methods, no input can be constructed that leads to a differing return value, side effect, exception, or non‑termination. Both methods behave identically for all possible combinations of the three string parameters."
+}

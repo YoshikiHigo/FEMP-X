@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; they perform the same loop over the string using the same conditions and return the same index. No deterministic, bounded input can cause one to return a different value, throw a different exception, or terminate differently than the other."
+}

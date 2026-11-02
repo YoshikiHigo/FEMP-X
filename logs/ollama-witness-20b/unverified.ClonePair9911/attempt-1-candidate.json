@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they either return the same subarray, or throw the same exception type (ArrayIndexOutOfBoundsException, NullPointerException, or NegativeArraySizeException) under the same conditions. No concrete input can distinguish their outputs or side effects."
+}

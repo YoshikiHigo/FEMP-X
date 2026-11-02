@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are mathematically equivalent for all integer inputs; any division‑by‑zero exception occurs in both methods under the same conditions, and otherwise they produce identical results. No concrete separating input exists."
+}

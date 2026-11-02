@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods use Java's Double parsing facilities that accept the same set of valid numeric string representations (including surrounding whitespace). For any input string, null, empty, or malformed, both methods return null; for any valid numeric string, both return the corresponding Double value. No deterministic, bounded input can produce a differing observable outcome between method1 and method2."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs. For null input, both throw NullPointerException on the length() call. For negative width, both invoke substring(0,width) which throws StringIndexOutOfBoundsException. For non‑negative width, the logic for equal, greater, or lesser length cases produces the same result string. No input can distinguish the two methods."
+}

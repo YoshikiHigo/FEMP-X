@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 throws NumberFormatException when the system property value is a non‑numeric string, whereas method2 catches all Exceptions and returns the supplied default value.",
+  "arguments_java": [
+    "\"java.version\"",
+    "5"
+  ],
+  "parameter_types": [
+    "String",
+    "int"
+  ],
+  "void_return": false
+}

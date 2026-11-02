@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1(\\\" 1 \\\") throws NumberFormatException and returns null, while method2(\\\" 1 \\\") trims the string to \\\"1\\\" and returns Double.valueOf(\\\"1\\\") = 1.0\",\"arguments_java\":[\"\\\" 1 \\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 858,
+  "eval_count": 384,
+  "total_duration": 2979962300,
+  "load_duration": 2720700
+}

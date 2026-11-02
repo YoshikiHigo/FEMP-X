@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical operations on the same slice of the byte array: they both read four consecutive bytes starting at the given offset (or start index) and combine them into an int in big‑endian order. For any valid input (non‑null array with length ≥ offset+4) they produce the same result, and for any invalid input they both throw an ArrayIndexOutOfBoundsException. No deterministic, bounded input can distinguish their behavior."
+}

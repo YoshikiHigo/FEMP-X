@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For input 32, method1 follows the path where n>0x0000000f but n<=0x0000001f, returning 6. method2 follows the nested if chain: num<0x10000 && num<0x100 && num<0x10 is false, so it executes the else that returns 2. Thus the return values differ.\",\"arguments_java\":[\"32\"],\"parameter_types\":[\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 2067,
+  "eval_count": 751,
+  "total_duration": 6065926400,
+  "load_duration": 4014700
+}

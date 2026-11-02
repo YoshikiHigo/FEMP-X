@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical null checks and parse the string using Integer(String). They return the same Integer object or null for any input, so no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 754,
+  "eval_count": 59,
+  "total_duration": 532732700,
+  "load_duration": 12054400
+}

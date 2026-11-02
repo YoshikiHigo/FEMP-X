@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return null for null or non‑numeric strings (including the empty string) and return the Integer value of a valid numeric string. No deterministic, bounded input can distinguish them."
+}

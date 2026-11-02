@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical logic; the only difference is the use of a raw List versus a generic List, which does not affect the runtime behavior for the given inputs. No concrete input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1458,
+  "eval_count": 83,
+  "total_duration": 1077598400,
+  "load_duration": 11132300
+}

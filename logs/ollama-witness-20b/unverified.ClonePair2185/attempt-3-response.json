@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 compares all elements and returns false when any element differs; method2 only checks length when arrayOne is non‑null and never compares elements, so it returns true for equal lengths regardless of content.\",\"arguments_java\":[\"new byte[]{1,2}\",\"new byte[]{2,1}\"],\"parameter_types\":[\"byte[]\",\"byte[]\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1474,
+  "eval_count": 390,
+  "total_duration": 3210548300,
+  "load_duration": 2835400
+}

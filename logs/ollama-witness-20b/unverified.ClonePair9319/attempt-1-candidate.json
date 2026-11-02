@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the minimum of the array in the same way for all possible inputs (including empty and null arrays). No input can cause a different return value, side effect, exception type, or non‑termination."
+}

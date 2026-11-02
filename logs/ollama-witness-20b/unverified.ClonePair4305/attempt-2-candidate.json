@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 compares the actual year, month, and day of the two Date objects using Calendar, while method2 uses the deprecated Date.getYear(), getMonth(), and getDate() methods. For dates that fall in 1899 and 1900, the Calendar year is 1899 or 1900, but Date.getYear() returns the year minus 1900, so 1899 becomes –1 and 1900 becomes 0. Thus, two dates that have the same month and day but different years across the 1900 boundary will be considered equal by method2 but not by method1. Using the pair 1899‑01‑01 and 1900‑01‑01 demonstrates this difference.",
+  "arguments_java": [
+    "date(-2208902400000L)",
+    "date(-2208988800000L)"
+  ],
+  "parameter_types": [
+    "java.util.Date",
+    "java.util.Date"
+  ],
+  "void_return": false
+}

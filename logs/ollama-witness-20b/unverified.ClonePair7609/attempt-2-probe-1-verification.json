@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair7609",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(1000),Date(1500)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(1000),Date(1500)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(1000),Date(1500)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(1000),Date(1500)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(1000),Date(1500)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(1000),Date(1500)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(1000),Date(1500)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(1000),Date(1500)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 compares the two objects with equals, so two Date instances that differ by less than a second are not equal. method2 treats Date specially: it compares the epoch time divided by 1000, so two Date objects that fall in the same second are considered equal. Thus for Date(1000) and Date(1500) method1 returns false while method2 returns true.",
+    "arguments_java": [
+      "date(1000)",
+      "date(1500)"
+    ],
+    "parameter_types": [
+      "Object",
+      "Object"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 134.626
+}

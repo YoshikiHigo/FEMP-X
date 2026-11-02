@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic: they iterate from the given start index to the end of the array, returning the first index where the byte is zero, or -1 if none is found. For any input (including null, empty arrays, negative or out‑of‑range start indices), both methods exhibit the same behavior (either the same return value or the same exception type). No concrete input can distinguish them."
+}

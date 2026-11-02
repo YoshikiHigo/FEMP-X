@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical iteration and string concatenation; for any List<String> input they produce the same result, have no side effects, and throw the same exception (NullPointerException when the list is null). No concrete separating input exists."
+}

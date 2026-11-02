@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they throw the same exception for null or empty arrays, and return the maximum value for non‑empty arrays. No concrete separating input exists."
+}

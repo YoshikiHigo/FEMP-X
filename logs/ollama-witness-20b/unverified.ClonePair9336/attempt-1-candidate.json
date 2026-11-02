@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same boolean value for every possible char input; method2 covers all cases that method1 accepts and no additional ones, and defaults to false otherwise. No concrete separating input exists."
+}

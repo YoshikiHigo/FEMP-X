@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair9744",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][char[][a],char[][?]]",
+        "inputAfterSnapshot": "java.lang.Object[][char[][a],char[][?]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][char[][a],char[][?]]",
+        "inputAfterSnapshot": "java.lang.Object[][char[][a],char[][?]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][char[][a],char[][?]]",
+        "inputAfterSnapshot": "java.lang.Object[][char[][a],char[][?]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][char[][a],char[][?]]",
+        "inputAfterSnapshot": "java.lang.Object[][char[][a],char[][?]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 implements a simple wildcard matcher where '?' matches any single character, so method1(\"a\", \"?\") returns true. method2 performs a strict element‑by‑element equality check; \"a\" and \"?\" are not equal, so method2(\"a\", \"?\") returns false.",
+    "arguments_java": [
+      "new char[]{'a'}",
+      "new char[]{'?'}"
+    ],
+    "parameter_types": [
+      "char[]",
+      "char[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 153.307
+}

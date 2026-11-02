@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all control‑flow paths, both methods return the same boolean value for every possible pair of byte[] inputs. No input can cause one method to throw an exception, return a different value, or exhibit a side effect that the other does not. Therefore, no separating test case exists."
+}

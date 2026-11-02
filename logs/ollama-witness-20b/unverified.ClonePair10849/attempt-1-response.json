@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical whitespace skipping logic; for any valid input (including null, negative indices, or indices beyond string length) they either return the same index or throw the same NullPointerException. No concrete input can distinguish their behaviors.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1043,
+  "eval_count": 142,
+  "total_duration": 1232129200,
+  "load_duration": 16578500
+}

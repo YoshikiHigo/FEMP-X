@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They either return the same index or throw the same exception type under the same conditions; no concrete separating test case exists."
+}

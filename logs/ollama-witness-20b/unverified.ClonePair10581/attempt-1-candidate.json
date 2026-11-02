@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical results for all finite double inputs and exhibit the same looping behavior for special values such as NaN, Infinity, and -Infinity. No concrete input can distinguish their outputs or side‑effects."
+}

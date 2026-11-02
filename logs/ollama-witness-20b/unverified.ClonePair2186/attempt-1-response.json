@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive reasoning over all possible byte array inputs—including nulls, empty arrays, equal and unequal lengths, and cyclic XOR behavior—both methods produce identical boolean results for every input. No deterministic, bounded input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1305,
+  "eval_count": 410,
+  "total_duration": 3554936400,
+  "load_duration": 7115900
+}

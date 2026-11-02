@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets the first byte as a signed value (ret starts as data[offset] which is sign‑extended to a long), whereas method2 treats all bytes as unsigned (word starts at 0 and each byte is masked with 0xff before being added). With a first byte of 0xFF the two methods produce different long results: method1 yields a negative value (−72057594037927936L) while method2 yields a positive value (18374686479671623680L).\",\"arguments_java\":[\"new byte[]{(byte)0xFF,0,0,0,0,0,0,0}\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1000,
+  "eval_count": 814,
+  "total_duration": 6546104300,
+  "load_duration": 2107800
+}

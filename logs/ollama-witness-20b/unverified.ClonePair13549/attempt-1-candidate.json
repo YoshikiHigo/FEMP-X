@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they parse each two‑character hexadecimal pair of the input string into a byte. For any valid input (including empty or null strings), they produce the same byte array and throw the same exceptions (e.g., NullPointerException for null input, StringIndexOutOfBoundsException for odd‑length strings). No deterministic, bounded input can distinguish their behavior."
+}

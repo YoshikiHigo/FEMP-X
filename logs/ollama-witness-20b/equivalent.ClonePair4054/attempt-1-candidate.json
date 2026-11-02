@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they scan for a '&' character, skip it, then return the next character lowercased if it is not another '&', otherwise continue scanning. For any input string (including null), both methods return the same character or '\\0'. No input can cause a difference in return value, side effects, exceptions, or termination."
+}

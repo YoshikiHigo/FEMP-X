@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair4144",
+  "stable": true,
+  "differenceType": "exception",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "java.lang.String[][String(eA==)]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1[String(eA==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1[String(eA==)]]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.IllegalStateException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1[String(eA==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1[String(eA==)]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "java.lang.String[][String(eA==)]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1[String(eA==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1[String(eA==)]]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.IllegalStateException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1[String(eA==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1[String(eA==)]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 iterates over the list using its iterator, which succeeds and returns the element \"x\". method2 accesses the element via list.get(0), which throws an IllegalStateException(\"boom\"). Both methods receive the same input and initial state, but only method2 fails.",
+    "arguments_java": [
+      "new java.util.AbstractList<String>(){public int size(){return 1;}public String get(int i){throw new IllegalStateException(\"boom\");}public java.util.Iterator<String> iterator(){return new java.util.Iterator<String>(){private boolean hasNext=true;public boolean hasNext(){boolean r=hasNext;hasNext=false;return r;}public String next(){return \"x\";}public void remove(){}};} }"
+    ],
+    "parameter_types": [
+      "java.util.List"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 80.623
+}

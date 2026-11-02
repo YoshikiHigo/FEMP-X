@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the control flow and character handling in both methods, no input can produce a differing observable outcome. The termination conditions, status transitions, and character checks are functionally equivalent for all possible String inputs and integer positions. Therefore, no concrete separating test case exists."
+}

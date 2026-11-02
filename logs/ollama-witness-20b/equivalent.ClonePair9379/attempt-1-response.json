@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of all control‑flow paths, both methods compute identical results for every possible combination of arguments that avoid runtime errors. No deterministic input can produce a differing return value, side effect, exception type, or non‑termination between method1 and method2.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1813,
+  "eval_count": 546,
+  "total_duration": 4725659800,
+  "load_duration": 5535200
+}

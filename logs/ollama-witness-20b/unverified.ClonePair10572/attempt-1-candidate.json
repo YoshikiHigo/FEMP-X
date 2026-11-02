@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for determining whether a character is a hexadecimal digit; no input can distinguish their return values, side effects, or exception behavior."
+}

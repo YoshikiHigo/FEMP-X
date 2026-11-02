@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; they perform the same null check and parse the string with Integer.parseInt, returning null on any exception. No input can distinguish their behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; all control‑flow branches and operations match exactly, so no concrete input can distinguish their behavior."
+}

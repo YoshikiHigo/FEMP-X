@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns Integer.MIN_VALUE for any long > Integer.MAX_VALUE, whereas method2 returns Integer.MAX_VALUE for such inputs.\",\"arguments_java\":[\"2147483648L\"],\"parameter_types\":[\"long\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1001,
+  "eval_count": 227,
+  "total_duration": 2146279500,
+  "load_duration": 2042400
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of the control flow and edge cases for both methods, no deterministic, bounded input can be constructed that causes one method to return a different value, throw a different exception, exhibit a side effect, or terminate differently while the other behaves equivalently. All examined corner cases (empty strings, null inputs, overlapping patterns, and varying lengths) result in identical behavior or identical infinite loops. Therefore, no separating test case exists for this clone pair.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1474,
+  "eval_count": 565,
+  "total_duration": 4593163900,
+  "load_duration": 4070800
+}

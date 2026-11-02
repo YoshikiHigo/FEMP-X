@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the control flow and edge cases for both methods, no concrete input can be constructed that leads to a differing observable behavior (return value, exception type, side effect, or non‑termination). The two implementations are functionally equivalent for all valid inputs within the specified constraints."
+}

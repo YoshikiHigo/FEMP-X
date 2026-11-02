@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 writes 3 bytes per float and will succeed with a 2‑byte output buffer, whereas method2 writes 4 bytes per float and will throw an ArrayIndexOutOfBoundsException when the output buffer is too small.\",\"arguments_java\":[\"new float[]{0.5f}\",\"0\",\"1\",\"new byte[2]\",\"0\"],\"parameter_types\":[\"float[]\",\"int\",\"int\",\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1619,
+  "eval_count": 266,
+  "total_duration": 2258670400,
+  "load_duration": 8872600
+}

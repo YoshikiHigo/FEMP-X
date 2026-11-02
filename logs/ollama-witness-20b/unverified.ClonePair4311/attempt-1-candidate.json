@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same month and year using the same underlying time zone logic; no input can make them diverge."
+}

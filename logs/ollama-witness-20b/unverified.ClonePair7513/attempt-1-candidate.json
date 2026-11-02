@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 uses equals to determine equality, while method2 additionally requires the hashCodes of the two objects to match.  By providing two instances of a class that overrides equals to always return true but supplies different hashCode values, method1 will return true whereas method2 will return false.",
+  "arguments_java": [
+    "new BadHash(1)",
+    "new BadHash(2)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

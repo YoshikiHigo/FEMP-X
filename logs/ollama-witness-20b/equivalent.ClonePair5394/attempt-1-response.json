@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the same remainder for all integer inputs; no input causes a differing return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1086,
+  "eval_count": 438,
+  "total_duration": 3762851400,
+  "load_duration": 2561300
+}

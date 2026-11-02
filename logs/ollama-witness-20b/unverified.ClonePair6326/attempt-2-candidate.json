@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods reconstruct the 8‑byte value starting at the given offset in exactly the same way: method1 treats each byte as unsigned and concatenates them, while method2 masks each byte with 0x7F and then restores the sign bit if the original byte was negative.  This combination of masking and bit‑setting reproduces the original byte value, so the two methods produce identical results for every possible input that does not trigger an ArrayIndexOutOfBoundsException.  No deterministic, bounded input can distinguish their return values, side effects, or termination behavior."
+}

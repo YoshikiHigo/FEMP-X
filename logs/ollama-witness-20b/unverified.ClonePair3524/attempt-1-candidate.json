@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are logically equivalent for all inputs that can be cast to String. They perform the same null checks and delegate to String.compareTo in identical circumstances. No concrete input can produce a differing return value, side effect, exception type, or non‑termination."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"Both methods return an Integer object for a valid numeric string, but method1 always creates a new Integer instance via the constructor, whereas method2 returns an Integer that may be cached by the JVM when autoboxing the primitive int returned by Integer.parseInt. For the input \\\"1\\\" the two methods return equal values (1) but distinct objects. This difference can be observed by comparing the returned references with ==.\",\"arguments_java\":[\"\\\"1\\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 752,
+  "eval_count": 527,
+  "total_duration": 4107346700,
+  "load_duration": 19368400
+}

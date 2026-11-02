@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same mapping from an integer to a Base64 character using equivalent conditional logic; exhaustive examination of all integer ranges shows identical outputs for every possible input."
+}

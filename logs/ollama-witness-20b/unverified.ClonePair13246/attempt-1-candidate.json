@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks and delegate to Integer.parseInt and Integer.valueOf respectively, which behave the same for all valid and invalid decimal strings. No deterministic input can cause one to return a different value, throw a different exception type, or exhibit non‑termination while the other does not."
+}

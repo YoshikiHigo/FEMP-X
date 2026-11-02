@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"side_effect\",\"reason\":\"Both methods return the same byte array reference, but method1 writes the bytes in little‑endian order (low, mid, high) while method2 writes them in big‑endian order (high, mid, low). With the same input and initial state the contents of the array differ.\",\"arguments_java\":[\"new float[]{1.0f}\",\"0\",\"1\",\"new byte[3]\",\"0\"],\"parameter_types\":[\"float[]\",\"int\",\"int\",\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1621,
+  "eval_count": 400,
+  "total_duration": 3532145600,
+  "load_duration": 4425000
+}

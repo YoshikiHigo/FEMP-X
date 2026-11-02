@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical logic; for any integer inputs they compute the same value and exhibit no side effects, exceptions, or non-termination. No concrete separating input exists."
+}

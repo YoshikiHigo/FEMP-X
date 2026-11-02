@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible long inputs; the conditional checks differ only in the use of > vs >= and < vs <=, but the subsequent return values are the same, so no concrete separating input exists."
+}

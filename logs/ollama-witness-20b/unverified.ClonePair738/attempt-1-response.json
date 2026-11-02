@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 compares array contents and returns true for two distinct arrays with identical contents, while method2 only returns true when the two references are identical; thus for two separate byte arrays containing the same bytes, method1 returns true and method2 returns false.\",\"arguments_java\":[\"new byte[]{1,2}\",\"new byte[]{1,2}\"],\"parameter_types\":[\"byte[]\",\"byte[]\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1229,
+  "eval_count": 424,
+  "total_duration": 3587467500,
+  "load_duration": 10345000
+}

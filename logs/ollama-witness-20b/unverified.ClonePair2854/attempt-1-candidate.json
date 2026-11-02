@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 throws a NullPointerException when both arguments are null, whereas method2 correctly returns true for two null byte arrays.",
+  "arguments_java": [
+    "null",
+    "null"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "byte[]"
+  ],
+  "void_return": false
+}

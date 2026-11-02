@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible String inputs. Both return null for null, empty, or non‑parseable strings, and both return a Double instance (including special values like NaN or Infinity) for parseable strings. No deterministic input can produce a differing return value, side effect, exception, or non‑termination."
+}

@@ -1,0 +1,15 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 requires both equals checks to be true, while method2 only checks obj1.equals(obj2). Using asymmetric equals objects X and Y where X.equals(Y) is true but Y.equals(X) is false, method1 returns false and method2 returns true.",
+  "arguments_java": [
+    "new X()",
+    "new Y()"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

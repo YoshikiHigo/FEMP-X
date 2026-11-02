@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they initialize the result with the first element of the array and then iterate from index 1 to the end, updating the result whenever a larger element is found. The code paths, exception handling, and side effects are the same for all possible inputs, including null, empty, or non‑empty arrays. Therefore no concrete input can distinguish the two methods."
+}

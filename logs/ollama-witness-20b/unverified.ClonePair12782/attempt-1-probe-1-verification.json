@@ -1,0 +1,65 @@
+{
+  "key": "unverified.ClonePair12782",
+  "stable": true,
+  "differenceType": "no_termination",
+  "outcomes": [
+    [
+      {
+        "status": "TIMEOUT",
+        "valueSnapshot": null,
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "<snapshot-skipped-after-timeout>"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.OutOfMemoryError",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]"
+      }
+    ],
+    [
+      {
+        "status": "TIMEOUT",
+        "valueSnapshot": null,
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "<snapshot-skipped-after-timeout>"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.OutOfMemoryError",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "no_termination",
+    "reason": "method2 enters an infinite loop when the oldSub argument is the empty string, because it repeatedly finds the empty substring at the same index and never advances the search pointer. method1 handles the empty oldSub case by inserting the newSub at each position and then advancing the index, so it terminates normally.",
+    "arguments_java": [
+      "\"abc\"",
+      "\"\"",
+      "\"x\""
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": "In method2, y = s.indexOf(\"\",0) returns 0. The loop condition while (x <= y) with x initialized to 0 and y = 0 causes the body to execute. Inside the loop, x is set to y + length(oldSub) = 0 + 0 = 0, and y is recomputed as s.indexOf(\"\",x) which again returns 0. Thus x and y never change, so the loop never terminates."
+  },
+  "remainingSeconds": 133.962
+}

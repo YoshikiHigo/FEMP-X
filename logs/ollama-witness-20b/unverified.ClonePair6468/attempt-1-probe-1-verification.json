@@ -1,0 +1,68 @@
+{
+  "key": "unverified.ClonePair6468",
+  "stable": true,
+  "differenceType": "exception",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][127]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][127],Integer(0)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][127],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][127]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][127],Integer(0)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][127],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 writes a single byte into out_buff[0] and returns normally, while method2 attempts to write four bytes (x >>> 24, x >>> 16, x >>> 8, x) into out_buff starting at index 0. With out_buff of length 1, method2 throws an ArrayIndexOutOfBoundsException, whereas method1 completes successfully.",
+    "arguments_java": [
+      "new float[]{0.0f}",
+      "0",
+      "1",
+      "new byte[1]",
+      "0"
+    ],
+    "parameter_types": [
+      "float[]",
+      "int",
+      "int",
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 159.803
+}

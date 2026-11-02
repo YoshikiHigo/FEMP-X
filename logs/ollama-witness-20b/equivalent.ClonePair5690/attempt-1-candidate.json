@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same Gregorian leap‑year rule for all integer inputs; exhaustive reasoning shows no input yields differing return values, side effects, or exceptions."
+}

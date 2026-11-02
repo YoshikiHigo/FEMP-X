@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic on the same inputs; no deterministic input can cause one to return a different value, throw a different exception, or exhibit non‑termination while the other behaves otherwise."
+}

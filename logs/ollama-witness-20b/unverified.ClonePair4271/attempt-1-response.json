@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 uses Calendar which compares the full year value (1900), while method2 uses Date.getYear() which returns the year minus 1900 (0 for 1900). Thus for a date in the year 1900 the two methods return different results.\",\"arguments_java\":[\"date(-2208988800000L)\"],\"parameter_types\":[\"Date\",\"Date\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 980,
+  "eval_count": 461,
+  "total_duration": 3850745200,
+  "load_duration": 2554000
+}

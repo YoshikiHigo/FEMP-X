@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical element‑by‑element comparisons of two byte arrays. For any pair of non‑null arrays the control flow, loop bounds, and return values are the same, and both methods throw a NullPointerException when either argument is null. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1166,
+  "eval_count": 121,
+  "total_duration": 1384159800,
+  "load_duration": 2054100
+}

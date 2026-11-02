@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they iterate over the provided Collection (or throw a NullPointerException if the collection is null) and concatenate the elements separated by the given delimiter/separator. No input can cause one method to behave differently from the other under the allowed difference categories."
+}

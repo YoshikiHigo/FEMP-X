@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods return the same value for all possible String inputs (including null, valid numeric strings, and invalid strings). They both catch NumberFormatException and return null in that case, and they both return null when the input is null. No deterministic, bounded input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 865,
+  "eval_count": 492,
+  "total_duration": 4056631300,
+  "load_duration": 2064200
+}

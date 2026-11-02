@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 trims the value and treats empty strings as missing, returning the defaultValue; method2 returns the raw value without trimming, so an empty string is returned instead of the default.\",\"arguments_java\":[\"map(\\\"k\\\", \\\"\\\")\"],\"parameter_types\":[\"Map\",\"String\",\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1127,
+  "eval_count": 168,
+  "total_duration": 1757770900,
+  "load_duration": 2581100
+}

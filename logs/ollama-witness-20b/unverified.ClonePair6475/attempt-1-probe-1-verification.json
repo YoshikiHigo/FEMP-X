@@ -1,0 +1,68 @@
+{
+  "key": "unverified.ClonePair6475",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-1, -1, 127]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][-1, -1, 127],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][127, -1, -1]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][127, -1, -1],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-1, -1, 127]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][-1, -1, 127],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][127, -1, -1]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][127, -1, -1],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "side_effect",
+    "reason": "Both methods return the same byte array reference, but method1 writes the bytes in little‑endian order (low, mid, high) while method2 writes them in big‑endian order (high, mid, low). With the same input and initial state the contents of the array differ.",
+    "arguments_java": [
+      "new float[]{1.0f}",
+      "0",
+      "1",
+      "new byte[3]",
+      "0"
+    ],
+    "parameter_types": [
+      "float[]",
+      "int",
+      "int",
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 165.251
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 4‑byte big‑endian integer from the byte array. For any valid input (array non‑null and of length at least offset+4) they produce identical results. For invalid inputs (null array, negative offset, or insufficient length) both throw the same type of exception (NullPointerException or ArrayIndexOutOfBoundsException). No deterministic, bounded input can distinguish their behavior."
+}

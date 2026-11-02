@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods contain identical conditional logic and return values for all possible integer inputs; no concrete input can distinguish their behavior."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods behave identically for all possible inputs: they both remove a leading run of the specified character only when the first character matches that character, otherwise they return the original string unchanged. No concrete input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1178,
+  "eval_count": 355,
+  "total_duration": 3163552300,
+  "load_duration": 7061500
+}

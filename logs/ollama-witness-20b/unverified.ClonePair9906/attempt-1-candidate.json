@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 copies the array when the skip index is outside the bounds of the array, while method2 attempts to write past the end of the result array and throws an ArrayIndexOutOfBoundsException.",
+  "arguments_java": [
+    "new String[]{\"a\",\"b\",\"c\"}"
+  ],
+  "parameter_types": [
+    "String[]"
+  ],
+  "void_return": false
+}

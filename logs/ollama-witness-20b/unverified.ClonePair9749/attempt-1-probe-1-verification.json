@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair9749",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][char[][a],char[][?]]",
+        "inputAfterSnapshot": "java.lang.Object[][char[][a],char[][?]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][char[][a],char[][?]]",
+        "inputAfterSnapshot": "java.lang.Object[][char[][a],char[][?]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][char[][a],char[][?]]",
+        "inputAfterSnapshot": "java.lang.Object[][char[][a],char[][?]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][char[][a],char[][?]]",
+        "inputAfterSnapshot": "java.lang.Object[][char[][a],char[][?]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 implements wildcard pattern matching where '?' matches any single character and '*' matches any sequence, while method2 checks for exact equality of the two character arrays. For the input str = {'a'} and pat = {'?'}, method1 returns true (the '?' matches 'a'), whereas method2 returns false (the arrays are not identical).",
+    "arguments_java": [
+      "new char[]{'a'}",
+      "new char[]{'?'}"
+    ],
+    "parameter_types": [
+      "char[]",
+      "char[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 127.711
+}

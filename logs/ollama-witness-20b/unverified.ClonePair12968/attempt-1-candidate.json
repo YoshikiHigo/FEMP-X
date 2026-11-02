@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For any long value less than Integer.MAX_VALUE, method1 assigns m = Integer.MAX_VALUE in the first condition and never changes it, then returns m. Thus method1 always returns Integer.MAX_VALUE for all inputs that satisfy l < Integer.MAX_VALUE (which includes all negative values). In contrast, method2 explicitly checks for values below Integer.MIN_VALUE and returns Integer.MIN_VALUE in that case. Therefore, for a negative input such as -10L, method1 returns 2147483647 while method2 returns -2147483648.",
+  "arguments_java": [
+    "-10L"
+  ],
+  "parameter_types": [
+    "long"
+  ],
+  "void_return": false
+}

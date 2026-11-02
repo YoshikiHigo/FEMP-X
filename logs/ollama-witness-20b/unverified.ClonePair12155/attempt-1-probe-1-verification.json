@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair12155",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MTI3LjAuKi4x)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MTI3LjAuKi4x)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MTI3LjAuKi4x)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MTI3LjAuKi4x)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MTI3LjAuKi4x)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MTI3LjAuKi4x)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MTI3LjAuKi4x)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MTI3LjAuKi4x)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns false for any string that is not a 9‑character code matching its strict pattern; method2 returns true for the IP‑style string \"127.0.*.1\" because it starts with \"127\", has four parts, and the second part \"0\" and third part \"*\" are acceptable. The last part \"1\" is a valid number. Thus the same input yields different boolean results.",
+    "arguments_java": [
+      "\"127.0.*.1\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 111.015
+}

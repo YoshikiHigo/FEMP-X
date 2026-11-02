@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning, both methods evaluate the same leap‑year rules for all integer inputs. No concrete input can distinguish their return values, side effects, or termination behavior."
+}

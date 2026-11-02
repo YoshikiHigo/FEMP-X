@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null checks and return the same boolean expression; no input can distinguish their behavior."
+}

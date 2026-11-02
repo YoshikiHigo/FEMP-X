@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte-to-char conversion with the same array bounds checks; they throw the same exceptions for null or negative length inputs and produce identical character arrays for all valid inputs.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1129,
+  "eval_count": 95,
+  "total_duration": 1161094700,
+  "load_duration": 3242600
+}

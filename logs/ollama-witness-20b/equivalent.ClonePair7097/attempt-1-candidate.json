@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the two hexadecimal characters of the input byte in the same way; for every possible byte value the outputs are identical and neither method throws an exception or terminates nondeterministically. No concrete input can distinguish them."
+}

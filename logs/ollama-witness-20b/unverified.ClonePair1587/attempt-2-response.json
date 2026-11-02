@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical element‑wise equality checks with the same loop bounds and guard conditions. For any pair of byte arrays, they return the same boolean value, throw the same exception on null inputs, and have no side effects. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1399,
+  "eval_count": 270,
+  "total_duration": 2423740200,
+  "load_duration": 2888600
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 constructs a 64‑bit big‑endian value by shifting left 8 bits before adding each byte, so the first byte occupies bits 56–63. method2 shifts after ORing, so the first byte occupies bits 48–55. For an array where the first byte is non‑zero, the two results differ.\",\"arguments_java\":[\"new byte[]{1,0,0,0,0,0,0,0}\"],\"parameter_types\":[\"byte[]\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 931,
+  "eval_count": 639,
+  "total_duration": 5164920600,
+  "load_duration": 19530100
+}

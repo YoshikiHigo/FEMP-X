@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 throws ArrayIndexOutOfBoundsException when start > array.length, while method2 throws NegativeArraySizeException because it allocates a byte array of negative size.\",\"arguments_java\":[\"new byte[]{1}\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1142,
+  "eval_count": 310,
+  "total_duration": 2814479300,
+  "load_duration": 3136700
+}

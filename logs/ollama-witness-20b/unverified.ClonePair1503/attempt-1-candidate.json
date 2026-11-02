@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks for nullity, length, class equality (which is always true for byte[]), and element-wise equality. For any deterministic, bounded byte[] inputs, both methods return the same boolean value and exhibit no side effects. No concrete separating input exists."
+}

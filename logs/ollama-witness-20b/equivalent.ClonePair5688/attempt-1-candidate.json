@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute base^exponent using the same arithmetic and control flow for all integer inputs; no input causes a differing return value, side effect, exception, or non‑termination."
+}

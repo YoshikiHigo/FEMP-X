@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the two hexadecimal digits of the input byte in the same way and always return a two‑character string. The only place where method1 could return null is the default case of the switch, but that case is unreachable because the halfbyte value is always masked to 0x0F. Therefore no concrete input can distinguish the two methods."
+}

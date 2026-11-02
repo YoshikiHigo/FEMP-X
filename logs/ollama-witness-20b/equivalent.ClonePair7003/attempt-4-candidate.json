@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning, the two methods compute identical results for all possible byte arrays and offsets. method1 reads four bytes in reverse order but assembles them in little‑endian form, which is equivalent to reading the same four bytes in forward order and assembling them in big‑endian form. This equivalence holds regardless of array length (including lengths <4, where modulo arithmetic causes repeated indices) and for all integer offsets. Therefore no concrete separating input exists."
+}

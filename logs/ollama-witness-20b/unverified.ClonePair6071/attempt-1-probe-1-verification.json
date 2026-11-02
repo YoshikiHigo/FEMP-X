@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair6071",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Integer[][Integer(1),Integer(2)],java.lang.Number[][Integer(1),Integer(2)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Integer[][Integer(1),Integer(2)],java.lang.Number[][Integer(1),Integer(2)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Integer[][Integer(1),Integer(2)],java.lang.Number[][Integer(1),Integer(2)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Integer[][Integer(1),Integer(2)],java.lang.Number[][Integer(1),Integer(2)]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Integer[][Integer(1),Integer(2)],java.lang.Number[][Integer(1),Integer(2)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Integer[][Integer(1),Integer(2)],java.lang.Number[][Integer(1),Integer(2)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Integer[][Integer(1),Integer(2)],java.lang.Number[][Integer(1),Integer(2)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Integer[][Integer(1),Integer(2)],java.lang.Number[][Integer(1),Integer(2)]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 checks that the two arrays are of the same runtime class; method2 does not.  When the two arrays have the same length and contain equal elements but are of different concrete array types, method1 returns false while method2 returns true.",
+    "arguments_java": [
+      "new Integer[]{1,2}",
+      "new Number[]{1,2}"
+    ],
+    "parameter_types": [
+      "Object[]",
+      "Object[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 163.653
+}

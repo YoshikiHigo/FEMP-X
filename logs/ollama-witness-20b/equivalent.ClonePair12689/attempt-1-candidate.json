@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical logic for all possible String inputs; they return the same Class object or null for every input. No input can distinguish their behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical 4‑byte big‑endian conversion; for any valid input they produce the same result, and for invalid inputs they both throw the same exception types. No concrete separating input exists."
+}

@@ -1,0 +1,64 @@
+{
+  "key": "unverified.ClonePair8391",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][65],byte[][97],Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][65],byte[][97],Integer(1)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][65],byte[][97],Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][65],byte[][97],Integer(1)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][65],byte[][97],Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][65],byte[][97],Integer(1)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][65],byte[][97],Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][65],byte[][97],Integer(1)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 lowercases any byte >= 'A' before comparison, so an uppercase byte in s1 will be converted to lowercase and may match a lowercase byte in s2, whereas method2 compares the raw bytes directly. For input s1 = { 'A' }, s2 = { 'a' }, n = 1, method1 returns true while method2 returns false.",
+    "arguments_java": [
+      "new byte[]{(byte)'A'}",
+      "new byte[]{(byte)'a'}",
+      "1"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 161.09
+}

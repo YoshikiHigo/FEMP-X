@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical binary search logic; for all deterministic, bounded inputs the return value, side effects, and termination behavior coincide."
+}

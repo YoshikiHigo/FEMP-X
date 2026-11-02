@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same ceiling division for all integer inputs, handling zero divisor/rowSize identically. No deterministic input distinguishes their return values, side effects, or termination behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑wise equality checks with the same loop bounds and guard conditions. For any pair of byte arrays, they return the same boolean value, throw the same exception on null inputs, and have no side effects. No concrete input can distinguish their behavior."
+}

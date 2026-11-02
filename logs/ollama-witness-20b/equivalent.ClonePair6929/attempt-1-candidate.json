@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit unsigned integer from four consecutive bytes, handling signedness identically via (256+byte) in method1 and &0xff in method2. They throw the same exceptions (ArrayIndexOutOfBoundsException or NullPointerException) under identical conditions, and no input can cause a differing return value, side effect, or non‑termination."
+}

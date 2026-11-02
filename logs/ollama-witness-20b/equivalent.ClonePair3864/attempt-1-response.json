@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform the same computation: they iterate over the common prefix of the two strings, compute the minimum of 4 and the prefix length, multiply by 0.1 and by (1 - commonality). No input can cause a different return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1282,
+  "eval_count": 88,
+  "total_duration": 1021311900,
+  "load_duration": 2584100
+}

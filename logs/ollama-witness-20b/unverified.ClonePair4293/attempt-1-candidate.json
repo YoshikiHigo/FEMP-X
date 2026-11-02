@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compare the same calendar components (year and day-of-year for method1, year/month/day-of-month for method2). For any pair of Date objects, the logical conditions for returning true coincide. No deterministic, bounded input can produce a differing outcome between the two methods."
+}

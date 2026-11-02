@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of both implementations, no deterministic input can produce a differing return value, side effect, exception type, or non‑termination. Both methods perform identical two‑nibble hexadecimal conversion for every byte, handling negative values via masking in the same way. Therefore no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1245,
+  "eval_count": 355,
+  "total_duration": 3076725200,
+  "load_duration": 10515800
+}

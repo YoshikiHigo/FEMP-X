@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible byte[] inputs: they both return true if and only if both arguments are null or both are non‑null arrays of equal length containing identical byte values, and false otherwise. No input can cause a different return value, side effect, exception, or non‑termination."
+}

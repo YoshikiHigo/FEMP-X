@@ -1,0 +1,107 @@
+{
+  "createdAt": "2026-11-02T02:26:42.546Z",
+  "model": "gpt-oss:20b",
+  "budgetMs": 180000,
+  "rerunOf": "logs/ollama-witness-20b/manifest.json",
+  "targets": [
+    {
+      "package": "equivalent",
+      "id": 7923,
+      "key": "equivalent.ClonePair7923",
+      "source": "src/main/java/equivalent/ClonePair7923.java",
+      "test": "src/test/java/equivalent/ClonePair7923NoDifferenceTest.java",
+      "sourceHash": "489dbd6d51acefbe38141573b9d345fcc9aa685172b11c6a4847355242b74480",
+      "testHash": "ac84f1d24935c18ba487f2c6f318a87a6d69711ce136d3e95b76c4854a3f5a8f"
+    },
+    {
+      "package": "equivalent",
+      "id": 8339,
+      "key": "equivalent.ClonePair8339",
+      "source": "src/main/java/equivalent/ClonePair8339.java",
+      "test": "src/test/java/equivalent/ClonePair8339NoDifferenceTest.java",
+      "sourceHash": "b5b70e8daae23aa287b5bb784d8739392b458d94e4facb45d03ef55d94fa3a9e",
+      "testHash": "ce6221fb3d938c2590de80c84225aa92510199dae6a6ff49083769da10f32383"
+    },
+    {
+      "package": "unverified",
+      "id": 4697,
+      "key": "unverified.ClonePair4697",
+      "source": "src/main/java/unverified/ClonePair4697.java",
+      "test": "src/test/java/unverified/ClonePair4697NoDifferenceTest.java",
+      "sourceHash": "e759f3aa53d4b81ca6bb2deca17744d97839eefcfa3afce9021c8da0666f5359",
+      "testHash": "981769c7d4740f9c0729c37068c66e3f0e6dfe8924383c3d7883b71c7bc8a202"
+    },
+    {
+      "package": "unverified",
+      "id": 5637,
+      "key": "unverified.ClonePair5637",
+      "source": "src/main/java/unverified/ClonePair5637.java",
+      "test": "src/test/java/unverified/ClonePair5637NoDifferenceTest.java",
+      "sourceHash": "b9eddb27a23d9739bbcf30d1e9096f3727e192b49f67a3b405a37a61691f8fbc",
+      "testHash": "5df67ab16e947c060d5c093797b99ab1b0674f3708ea499fe23e751c55516d81"
+    },
+    {
+      "package": "unverified",
+      "id": 6485,
+      "key": "unverified.ClonePair6485",
+      "source": "src/main/java/unverified/ClonePair6485.java",
+      "test": "src/test/java/unverified/ClonePair6485NoDifferenceTest.java",
+      "sourceHash": "6bd3014f016dfb2b21783034f0e47f3d1a0bdc48903409936b501c9dcdae755e",
+      "testHash": "12b91affab4da77f9440db1cbc4cd23f89c8f1f78bdf22add9cb50740bc5917c"
+    },
+    {
+      "package": "unverified",
+      "id": 10141,
+      "key": "unverified.ClonePair10141",
+      "source": "src/main/java/unverified/ClonePair10141.java",
+      "test": "src/test/java/unverified/ClonePair10141NoDifferenceTest.java",
+      "sourceHash": "c38fdef8eba6cd5a993cbc3703f9c98863c3c53ddaa04b402eb106d8ff520bf6",
+      "testHash": "08be0ae886b682235462d68b4a2df1022edc19ecd4f8066c4b575de934cbb397"
+    },
+    {
+      "package": "unverified",
+      "id": 11755,
+      "key": "unverified.ClonePair11755",
+      "source": "src/main/java/unverified/ClonePair11755.java",
+      "test": "src/test/java/unverified/ClonePair11755NoDifferenceTest.java",
+      "sourceHash": "b0d19078728d49ec9a40ebcb7b883d53bd978140f92dc226a8e2d6cb80b3e645",
+      "testHash": "ffadbe34155d5aaecb84bf6173ff903b618ea8e8de4254bfd2285e1ac48e2dd5"
+    },
+    {
+      "package": "unverified",
+      "id": 11981,
+      "key": "unverified.ClonePair11981",
+      "source": "src/main/java/unverified/ClonePair11981.java",
+      "test": "src/test/java/unverified/ClonePair11981NoDifferenceTest.java",
+      "sourceHash": "f594b4f1bded9af599116523a3502c31e670680fbc0238a07e42fa54a00ab16f",
+      "testHash": "db5b657d5a81f4b7e470e7c87609b731e248ba2ead520da98a96759c97d5fddb"
+    },
+    {
+      "package": "unverified",
+      "id": 12036,
+      "key": "unverified.ClonePair12036",
+      "source": "src/main/java/unverified/ClonePair12036.java",
+      "test": "src/test/java/unverified/ClonePair12036NoDifferenceTest.java",
+      "sourceHash": "5e21215ca62e4a537134f2b4a44cf374dfe3e75d4eb37e9ae4ff74d52d337a61",
+      "testHash": "136b9383e279a7fdb772aed3ba6ba746e50e8324004e488af970bd1fab9e91cf"
+    },
+    {
+      "package": "unverified",
+      "id": 13375,
+      "key": "unverified.ClonePair13375",
+      "source": "src/main/java/unverified/ClonePair13375.java",
+      "test": "src/test/java/unverified/ClonePair13375NoDifferenceTest.java",
+      "sourceHash": "a6a4ddac08e8c93e62f4bca92acaefcf7f8afde7a5d26e9c68f52220005ec30f",
+      "testHash": "a9dabc4ee63d532cc7acb2f1e077dda040e0366021755f52bbfd939f019781ca"
+    },
+    {
+      "package": "unverified",
+      "id": 13380,
+      "key": "unverified.ClonePair13380",
+      "source": "src/main/java/unverified/ClonePair13380.java",
+      "test": "src/test/java/unverified/ClonePair13380NoDifferenceTest.java",
+      "sourceHash": "b155a4346c36462b667c7940a97bf16ed49f47f75de234f841d8d9222c023c4b",
+      "testHash": "9af75080e6878d76a4c37957a3677b849baeebff60f4db69b77556745cf2b48f"
+    }
+  ]
+}

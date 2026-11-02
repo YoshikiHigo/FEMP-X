@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null checks, length checks, and element-wise comparisons on the input byte arrays. They neither mutate the inputs nor produce side effects, and they do not throw exceptions for any valid input. No deterministic input can cause one method to return a different value, throw an exception, or exhibit non‑termination while the other behaves differently."
+}

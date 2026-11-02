@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic: they iterate from the given index while the character at that position is whitespace, using the same bounds check and character access. For any valid or invalid input (including null, negative, or out‑of‑bounds indices), both methods exhibit the same behavior (either returning the same index or throwing the same exception). No concrete input can distinguish them."
+}

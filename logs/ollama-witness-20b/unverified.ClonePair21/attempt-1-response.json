@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods use the same parsing logic (Long.valueOf and new Long) which are equivalent for all String inputs; no input can distinguish their return values, side effects, or exceptions.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 868,
+  "eval_count": 63,
+  "total_duration": 865828500,
+  "load_duration": 8841800
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both throw a StringIndexOutOfBoundsException when the index is negative or beyond the string length, and otherwise return the first non‑whitespace index or the original index if none is found. No concrete input can distinguish their return values, side effects, or exception types."
+}

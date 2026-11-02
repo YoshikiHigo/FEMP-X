@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical operations for all possible inputs: they both sort the array and compute the median in the same way. For empty arrays both throw ArrayIndexOutOfBoundsException, for null both throw NullPointerException, and for any non-empty array the computed value is the same. No concrete input can distinguish their behavior."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical checks on the year, month, and day of month of the input Date against the current date. They both use Calendar.getInstance() with the default time zone and locale, and both throw a NullPointerException when the input is null. No deterministic input can cause one method to return true while the other returns false, or to exhibit any other observable difference such as side effects or exceptions.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 916,
+  "eval_count": 287,
+  "total_duration": 2633424300,
+  "load_duration": 6036400
+}

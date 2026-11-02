@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all valid inputs and identical failure modes for invalid inputs (null strings or out‑of‑bounds indices). No concrete input can distinguish their return values, side effects, or exception types."
+}

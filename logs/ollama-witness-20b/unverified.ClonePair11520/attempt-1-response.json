@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 replaces non-overlapping occurrences of oldString, while method2 replaces overlapping occurrences. For inputString=\\\"aaa\\\", oldString=\\\"aa\\\", newString=\\\"b\\\", method1 returns \\\"ba\\\" (first \\\"aa\\\" replaced, then remaining \\\"a\\\" appended). method2 returns \\\"bba\\\" (first \\\"aa\\\" replaced, then the next overlapping \\\"aa\\\" starting at index 1 replaced, finally the last \\\"a\\\" appended).\",\"arguments_java\":[\"\\\"aaa\\\"\"],\"parameter_types\":[\"String\",\"String\",\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1305,
+  "eval_count": 735,
+  "total_duration": 5750760400,
+  "load_duration": 6555300
+}

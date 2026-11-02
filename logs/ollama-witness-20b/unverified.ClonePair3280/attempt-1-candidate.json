@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible int[] inputs. They return true only when the two arrays are either both null or non‑null with equal length and identical contents. In all other cases they return false, and neither method has any side effects or non‑termination. Therefore no concrete separating test case exists."
+}

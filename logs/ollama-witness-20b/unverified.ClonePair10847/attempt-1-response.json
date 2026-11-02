@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical logic: they iterate from the given index while the character at that index is whitespace, stopping when a non‑whitespace character or the end of the string is reached. For any valid input (including null, negative indices, or indices beyond the string length), both methods throw the same exception or return the same value. No deterministic, bounded input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1049,
+  "eval_count": 238,
+  "total_duration": 1943370300,
+  "load_duration": 12708000
+}

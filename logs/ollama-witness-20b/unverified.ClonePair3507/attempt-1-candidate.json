@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks: they first handle nulls, then compare lengths, and finally compare elements in order (method1 forwards, method2 backwards). For any pair of int[] inputs, both methods return the same boolean value. No input can cause a difference in return value, side effect, exception, or non‑termination."
+}

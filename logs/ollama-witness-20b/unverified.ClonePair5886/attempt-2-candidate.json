@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return true exactly when the two input strings are both null or equal. No input can make them behave differently."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element-wise equality checks; no input can distinguish their behavior."
+}

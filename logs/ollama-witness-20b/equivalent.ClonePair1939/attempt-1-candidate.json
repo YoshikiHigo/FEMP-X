@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical null checks, length checks, and element‑wise comparisons for all possible byte array inputs. No input can cause a different return value, side effect, exception, or non‑termination between method1 and method2."
+}

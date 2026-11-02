@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods contain identical logic; they produce the same result for any input, including nulls, empty strings, and all other cases. No concrete separating input exists."
+}

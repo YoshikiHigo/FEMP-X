@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical checks and return the same boolean value for any pair of char arrays, including nulls and empty arrays. No input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 963,
+  "eval_count": 56,
+  "total_duration": 550024100,
+  "load_duration": 9934900
+}

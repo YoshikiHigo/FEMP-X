@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical bit‑wise conversions of the first four bytes of the array into an int. For any byte array of length ≥4 they produce the same result, and for shorter arrays both throw ArrayIndexOutOfBoundsException. For a null array both throw NullPointerException. No deterministic input can distinguish their return values, side effects, or exception types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1203,
+  "eval_count": 364,
+  "total_duration": 3072539200,
+  "load_duration": 2554700
+}

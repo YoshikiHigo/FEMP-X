@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs and character values. They handle null, empty, and non‑empty strings in the same way, returning either the original string or the string without its last character when that character matches the supplied char. No distinguishing input exists."
+}

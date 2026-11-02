@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs: they return null for null input, parse the string into a Long for valid numeric representations, and throw java.lang.NumberFormatException for invalid representations. No deterministic difference in return value, side effect, exception type, or termination can be observed.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 908,
+  "eval_count": 117,
+  "total_duration": 1211226500,
+  "load_duration": 5708400
+}

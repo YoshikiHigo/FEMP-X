@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no concrete input can be constructed that causes one method to behave differently from the other under the allowed difference categories. Both methods compute identical array lengths, perform identical bounds checks via System.arraycopy, and exhibit the same exception behavior for all valid and invalid inputs. Therefore, no separating test case exists."
+}

@@ -1,0 +1,16 @@
+{
+  "key": "equivalent.ClonePair8034",
+  "candidate": "attempt-1-candidate.json",
+  "issue": "Generic invocation support cloned String[] into Object[], causing ClassCastException before either subject method was entered.",
+  "invalidProbeOutcome": {
+    "bothMethods": "java.lang.ClassCastException",
+    "stableAcrossTwoFreshJvmRepeats": true,
+    "inputSnapshot": "java.lang.Object[][java.lang.Object[][String(YQ==),null,String(Yg==)],String(YQ==)]"
+  },
+  "remedy": "Verifier now uses existing AliasAware invocation support to preserve actual input types; each final-test invocation constructs its own fresh equivalent input. LLM prompt and generation settings unchanged.",
+  "correctedOutcome": {
+    "bothMethods": "normal Integer(0)",
+    "stableAcrossTwoFreshJvmRepeats": true
+  },
+  "audit": "No retained earlier verification report contains ClassCastException. The first invalid probe report for this pair was superseded by the corrected probe before unique probe-run paths were added; this note retains its diagnostic result."
+}

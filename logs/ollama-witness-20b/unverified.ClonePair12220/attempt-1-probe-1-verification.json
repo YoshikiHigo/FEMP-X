@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair12220",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTEyMzQ1Njc4)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTEyMzQ1Njc4)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTEyMzQ1Njc4)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTEyMzQ1Njc4)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTEyMzQ1Njc4)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTEyMzQ1Njc4)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTEyMzQ1Njc4)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTEyMzQ1Njc4)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 validates a 9‑character code with a checksum; the string \"A12345678\" satisfies method2’s digit‑only rule and starts with 'A', so method2 returns true. For method1 the checksum calculation does not match the last digit, so it returns false.",
+    "arguments_java": [
+      "\"A12345678\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 124.71
+}

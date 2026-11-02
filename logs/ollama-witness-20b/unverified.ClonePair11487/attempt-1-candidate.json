@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no input can be constructed that causes a difference in return value, side effect, exception, or non‑termination. The logic of both methods is equivalent for all possible inputs within the constraints of the problem statement."
+}

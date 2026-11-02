@@ -1,0 +1,60 @@
+{
+  "key": "equivalent.ClonePair8479",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEg)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEg)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEg)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEg)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEg)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEg)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEg)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEg)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 uses Double.parseDouble which does not trim whitespace; it throws NumberFormatException for a string containing leading/trailing spaces, causing method1 to return null. method2 trims the string before constructing a Double, so \" 1 \" is parsed successfully and returns 1.0.",
+    "arguments_java": [
+      "\" 1 \""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 163.513
+}

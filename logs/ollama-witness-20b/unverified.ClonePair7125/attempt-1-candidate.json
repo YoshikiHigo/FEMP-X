@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for converting a byte to its two‑character hexadecimal representation. For every possible byte value, the high and low nibbles are computed and mapped to the same character set ('0'–'9', 'A'–'F'). No input can cause a divergence in return value, side effect, exception, or non‑termination."
+}

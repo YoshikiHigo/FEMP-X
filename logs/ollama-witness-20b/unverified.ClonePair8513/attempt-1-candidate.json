@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 does not trim the input string, so \" 1.0 \" causes a NumberFormatException and returns null, whereas method2 trims the input before parsing, successfully returning 1.0.",
+  "arguments_java": [
+    "\" 1.0 \""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

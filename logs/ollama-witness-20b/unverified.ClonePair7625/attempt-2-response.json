@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are logically equivalent for all possible inputs. Both return true only when the arguments are both null or both non‑null and equal; otherwise they return false. No input can cause a difference in return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1072,
+  "eval_count": 451,
+  "total_duration": 3827711600,
+  "load_duration": 3236700
+}

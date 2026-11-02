@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all deterministic, bounded inputs: they both compare the elements of the first array against the second array up to the length of the first array, returning true if all matched and false otherwise, and both throw the same exceptions (NullPointerException or ArrayIndexOutOfBoundsException) under the same conditions. No concrete input can be constructed that causes a divergence in return value, side effect, exception type, or non‑termination."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two implementations, no input can be found that causes them to behave differently. Both methods correctly determine primality for all long values, handling negative numbers, zero, one, two, three, even numbers, multiples of three, and all other cases via the same mathematical checks. Therefore, no concrete separating test case exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, the only pathological case is when the substring to replace is the empty string, which causes both methods to enter an infinite loop. No input exists that causes one method to terminate or produce a different result while the other does not."
+}

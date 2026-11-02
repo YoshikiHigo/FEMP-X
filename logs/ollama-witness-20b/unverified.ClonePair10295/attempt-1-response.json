@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible String inputs: they both return null for null or empty strings, and otherwise attempt to parse the string as an integer, returning null if parsing fails. No concrete input can distinguish their outputs or side effects.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 764,
+  "eval_count": 373,
+  "total_duration": 2943084300,
+  "load_duration": 6231600
+}

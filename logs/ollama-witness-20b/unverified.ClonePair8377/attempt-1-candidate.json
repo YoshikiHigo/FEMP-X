@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic and behave the same for all possible inputs, including null, negative, and large indices. No concrete input can distinguish their return values, side effects, or exception behavior."
+}

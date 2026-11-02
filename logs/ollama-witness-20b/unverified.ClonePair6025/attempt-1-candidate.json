@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑wise reference equality checks; the additional null checks in method1 are redundant and do not alter the outcome for any possible input."
+}

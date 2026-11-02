@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same leap‑year logic; exhaustive testing of all integer inputs shows no case where the return values differ. The bit‑wise check in method2 is equivalent to the modulo check in method1, and the subsequent logic matches exactly the standard algorithm. Therefore no concrete separating input exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte‑to‑int conversion using the same 4‑byte window; they exhibit the same return value, side effects, and exception behavior for all possible inputs. No concrete input can distinguish them."
+}

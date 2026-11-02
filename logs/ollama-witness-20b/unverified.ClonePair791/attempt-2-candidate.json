@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all possible combinations of null and non‑null byte arrays, including identical references, differing lengths, and element differences, both methods exhibit identical control flow and return values. No input can produce a differing return value, side effect, exception, or non‑termination. Therefore, no separating test case exists."
+}

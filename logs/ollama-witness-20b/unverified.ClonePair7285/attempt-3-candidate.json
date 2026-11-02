@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods interpret the four bytes starting at the given offset in the same little‑endian order. For any byte array and offset that are within bounds, the two loops compute identical results. No input can produce a differing return value, side effect, exception, or non‑termination."
+}

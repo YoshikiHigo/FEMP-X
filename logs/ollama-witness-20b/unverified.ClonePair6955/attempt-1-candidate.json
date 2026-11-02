@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same loop and return the same index; the only syntactic difference is an empty statement versus a semicolon, which has no semantic effect. No input can cause a difference in return value, side effects, exceptions, or termination."
+}

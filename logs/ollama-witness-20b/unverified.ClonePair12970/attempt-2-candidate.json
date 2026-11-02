@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all long inputs. In method1 the variable m is assigned to Integer.MAX_VALUE during the first comparison and to Integer.MIN_VALUE during the second comparison; if the long value lies outside the int range, the corresponding assignment wins and the method returns that boundary value. If the long value is within the int range, both comparisons succeed and the method returns the cast value. Method2 explicitly checks the same boundaries and returns the same results. Therefore no concrete input can distinguish the two methods."
+}

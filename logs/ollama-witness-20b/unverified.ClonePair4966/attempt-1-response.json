@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 trims the property value before parsing, so a value with surrounding whitespace is parsed successfully, whereas method2 does not trim and throws NumberFormatException.\",\"arguments_java\":[\"props(\\\"x\\\",\\\" 42 \\\")\"],\"parameter_types\":[\"Properties\",\"String\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 898,
+  "eval_count": 316,
+  "total_duration": 2640586600,
+  "load_duration": 10642100
+}

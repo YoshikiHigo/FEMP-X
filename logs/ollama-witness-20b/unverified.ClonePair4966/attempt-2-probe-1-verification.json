@@ -1,0 +1,64 @@
+{
+  "key": "unverified.ClonePair4966",
+  "stable": true,
+  "differenceType": "exception",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(42)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.Properties{String(eA==)->String(ICA0MiAg)},String(eA==),Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.Properties{String(eA==)->String(ICA0MiAg)},String(eA==),Integer(0)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NumberFormatException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.Properties{String(eA==)->String(ICA0MiAg)},String(eA==),Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.Properties{String(eA==)->String(ICA0MiAg)},String(eA==),Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(42)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.Properties{String(eA==)->String(ICA0MiAg)},String(eA==),Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.Properties{String(eA==)->String(ICA0MiAg)},String(eA==),Integer(0)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NumberFormatException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.Properties{String(eA==)->String(ICA0MiAg)},String(eA==),Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.Properties{String(eA==)->String(ICA0MiAg)},String(eA==),Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 trims the property value before parsing, so a value with surrounding whitespace is parsed successfully, whereas method2 does not trim and throws NumberFormatException.",
+    "arguments_java": [
+      "props(\"x\", \"  42  \")",
+      "\"x\"",
+      "0"
+    ],
+    "parameter_types": [
+      "java.util.Properties",
+      "java.lang.String",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 154.131
+}

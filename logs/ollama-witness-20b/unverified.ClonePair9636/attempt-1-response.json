@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible inputs: they both return true iff the two char arrays are the same reference or contain the same sequence of characters, and false otherwise. No input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 996,
+  "eval_count": 292,
+  "total_duration": 2340999100,
+  "load_duration": 11555500
+}

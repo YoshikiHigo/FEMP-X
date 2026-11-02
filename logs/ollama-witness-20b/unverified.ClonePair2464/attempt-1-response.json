@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"When both arguments are null, method1 returns true (explicit check), whereas method2 evaluates `more` as false and returns false.\",\"arguments_java\":[\"null\",\"null\"],\"parameter_types\":[\"byte[]\",\"byte[]\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1279,
+  "eval_count": 481,
+  "total_duration": 3973488600,
+  "load_duration": 2622100
+}

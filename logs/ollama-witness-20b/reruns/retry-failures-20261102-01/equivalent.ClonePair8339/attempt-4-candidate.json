@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For input 256, method1 returns 13 while method2 returns 2.",
+  "arguments_java": [
+    "256"
+  ],
+  "parameter_types": [
+    "int"
+  ],
+  "void_return": false
+}

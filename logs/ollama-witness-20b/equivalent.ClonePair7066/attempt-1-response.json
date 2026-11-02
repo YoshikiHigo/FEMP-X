@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns -1 when the first byte is zero because it subtracts one from the offset difference, while method2 returns 0 in the same situation.\",\"arguments_java\":[\"new byte[]{0}\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 921,
+  "eval_count": 346,
+  "total_duration": 2934015100,
+  "load_duration": 3079300
+}

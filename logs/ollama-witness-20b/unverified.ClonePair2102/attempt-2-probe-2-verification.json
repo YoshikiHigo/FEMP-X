@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair2102",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-16580095)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, -1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, -1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-16580095)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, -1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, -1]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-16580095)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, -1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, -1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-16580095)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, -1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, -1]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 treats all bytes as unsigned (b & 0xff) and builds a little‑endian integer, while method2 treats the most significant byte (index 3) as signed. For the input byte[]{1,2,3,-1}, method1 interprets the last byte as 255 and returns 0xFF030201 (4,278,387,201), whereas method2 keeps the signed value –1 and returns –16,580,095.",
+    "arguments_java": [
+      "new byte[]{1,2,3,-1}"
+    ],
+    "parameter_types": [
+      "byte[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 146.379
+}

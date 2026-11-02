@@ -1,0 +1,62 @@
+{
+  "key": "equivalent.ClonePair8766",
+  "stable": true,
+  "differenceType": "exception",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[java.lang.Object(amF2YS5sYW5nLk9iamVjdEBjMzg3ZjQ0)],java.lang.Object(amF2YS5sYW5nLk9iamVjdEA2NTllMGJmZA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[java.lang.Object(amF2YS5sYW5nLk9iamVjdEAyNTAzZGJkMw==)],java.lang.Object(amF2YS5sYW5nLk9iamVjdEA2NTllMGJmZA==)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.UnsupportedOperationException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[java.lang.Object(amF2YS5sYW5nLk9iamVjdEBjMzg3ZjQ0)],java.lang.Object(amF2YS5sYW5nLk9iamVjdEA2NTllMGJmZA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[java.lang.Object(amF2YS5sYW5nLk9iamVjdEA0YjY3Y2Y0ZA==)],java.lang.Object(amF2YS5sYW5nLk9iamVjdEA2NTllMGJmZA==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[java.lang.Object(amF2YS5sYW5nLk9iamVjdEBjMzg3ZjQ0)],java.lang.Object(amF2YS5sYW5nLk9iamVjdEA2NTllMGJmZA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[java.lang.Object(amF2YS5sYW5nLk9iamVjdEAyNTAzZGJkMw==)],java.lang.Object(amF2YS5sYW5nLk9iamVjdEA2NTllMGJmZA==)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.UnsupportedOperationException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[java.lang.Object(amF2YS5sYW5nLk9iamVjdEBjMzg3ZjQ0)],java.lang.Object(amF2YS5sYW5nLk9iamVjdEA2NTllMGJmZA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[java.lang.Object(amF2YS5sYW5nLk9iamVjdEA0YjY3Y2Y0ZA==)],java.lang.Object(amF2YS5sYW5nLk9iamVjdEA2NTllMGJmZA==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 iterates using the list’s iterator, which can return elements without invoking get(). method2 accesses elements via list.get(i), which throws UnsupportedOperationException for the custom list. The same input list and object produce a normal return for method1 and an exception for method2.",
+    "arguments_java": [
+      "new java.util.AbstractList(){\n    public Object get(int i){throw new UnsupportedOperationException();}\n    public int size(){return 1;}\n    public java.util.Iterator iterator(){\n        return new java.util.Iterator(){\n            Object e = new Object();\n            boolean has = true;\n            public boolean hasNext(){return has;}\n            public Object next(){has = false; return e;}\n        };\n    }\n}",
+      "new Object()"
+    ],
+    "parameter_types": [
+      "java.util.List",
+      "java.lang.Object"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 120.285
+}

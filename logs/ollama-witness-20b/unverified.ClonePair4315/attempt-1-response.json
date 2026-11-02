@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical null checks and compare the year, month, and date components of the two Date objects using the same deprecated getters. For any pair of Date instances (including nulls), the logical flow and return value of method1 and method2 are equivalent. No deterministic input can cause one method to return a different value or exhibit a side‑effect that the other does not.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 954,
+  "eval_count": 161,
+  "total_duration": 1519399600,
+  "load_duration": 4556400
+}

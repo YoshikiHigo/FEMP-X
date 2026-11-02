@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods execute the same loop that increments i until i reaches s.length(); the loop condition is always true, so both return the same value for any input. No distinguishing behavior exists."
+}

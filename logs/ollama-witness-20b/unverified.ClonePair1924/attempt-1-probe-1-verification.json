@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair1924",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(L3dBPQ==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, 0]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, 0]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(L3dBPQ==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, 0]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, 0]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(L3dBPQ==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, 0]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, 0]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(L3dBPQ==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, 0]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, 0]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "In method1 the expression for dest[didx+1] is ((data[sidx + 1] >>> 4) & 017) | ((data[sidx] << 4) & 077). In method2 the same expression is parsed as (data[sidx + 1] >>> 4) & 017 | (data[sidx] << 4) & 077 due to operator precedence (| has higher precedence than &). For the input byte array { (byte)0xFF, (byte)0x00 } the two expressions evaluate to 48 and 0 respectively, producing different Base64 strings. The rest of the algorithm is identical, so the only observable difference is the return value.",
+    "arguments_java": [
+      "new byte[]{(byte)0xFF,(byte)0x00}"
+    ],
+    "parameter_types": [
+      "byte[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 151.56
+}

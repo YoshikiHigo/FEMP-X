@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 returns false when the first argument is null and the second is non‑null, whereas method2 attempts to evaluate val1.length and throws a NullPointerException.",
+  "arguments_java": [
+    "null",
+    "new byte[]{1}"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "byte[]"
+  ],
+  "void_return": false
+}

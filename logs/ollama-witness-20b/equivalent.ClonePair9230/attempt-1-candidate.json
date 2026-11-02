@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic and behave the same for all valid inputs, including edge cases such as null strings, negative start indices, and empty delimiter strings. No concrete input can distinguish their return values, side effects, or exception behavior."
+}

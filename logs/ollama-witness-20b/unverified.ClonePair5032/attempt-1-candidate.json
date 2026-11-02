@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement the same leap‑year logic for all int inputs; exhaustive reasoning shows no input can cause one to return true while the other returns false, nor can one throw an exception while the other does not. Therefore no concrete separating test case exists."
+}

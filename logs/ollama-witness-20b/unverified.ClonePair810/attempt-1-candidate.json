@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null checks, length checks, and element-wise comparisons, and neither mutates inputs or has divergent control flow that would produce a different return value, exception, or non-termination for any deterministic, bounded byte[] inputs."
+}

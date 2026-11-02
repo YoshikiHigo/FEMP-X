@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are byte‑for‑byte identical; for any input that terminates normally they produce the same result, and for inputs that cause an exception (e.g., null) they throw the same exception type. No concrete separating test can be constructed."
+}

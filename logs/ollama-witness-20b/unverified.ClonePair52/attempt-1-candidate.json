@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods delegate to Long.parseLong and Long.valueOf respectively, which behave identically for all valid and invalid string inputs. No deterministic input can produce a different return value, side effect, exception type, or non‑termination between the two methods."
+}

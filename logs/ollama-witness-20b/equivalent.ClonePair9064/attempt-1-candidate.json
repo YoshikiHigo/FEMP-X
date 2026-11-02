@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No concrete input distinguishes the two methods; they behave identically for all valid String arguments, and both throw NullPointerException when either argument is null."
+}

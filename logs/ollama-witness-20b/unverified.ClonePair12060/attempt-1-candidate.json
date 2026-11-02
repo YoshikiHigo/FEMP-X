@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical string replacement logic for all tested inputs, including edge cases such as nulls, empty strings, and overlapping occurrences. No concrete input has been found that causes a difference in return value, side effects, exceptions, or termination behavior."
+}

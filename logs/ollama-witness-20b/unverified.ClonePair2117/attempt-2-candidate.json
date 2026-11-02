@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the byte‑shifting logic in both methods, they produce identical 32‑bit integer results for all possible byte[] inputs of length at least four. The only operations that differ are the explicit masking in method1 versus the masking after sign‑extended shifts in method2, which yield the same value for every byte value. No input can cause a divergence in return value, side effect, exception type, or non‑termination. Therefore, no concrete separating test case exists."
+}

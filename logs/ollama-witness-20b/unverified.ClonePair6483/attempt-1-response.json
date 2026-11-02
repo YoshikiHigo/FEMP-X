@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For a negative input float, method1 adds 0x7FFFFF to the signed int conversion, while method2 adds 0x1000000 only if the int is negative. This yields different byte encodings.\",\"arguments_java\":[\"new float[]{-1.0f}\"],\"parameter_types\":[\"float[]\",\"int\",\"int\",\"byte[]\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1613,
+  "eval_count": 351,
+  "total_duration": 3154584200,
+  "load_duration": 9309300
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all possible combinations of null and non‑null arguments, the two methods exhibit identical control flow and return values for every input. No concrete separating test case can be constructed that satisfies the constraints."
+}

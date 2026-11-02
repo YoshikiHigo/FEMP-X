@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both initialize the maximum from the first element and then iterate over the same range of indices (method1: 1..num-1, method2: 0..size-1). For any input where the array is non-null and the size/num parameters are within the array bounds, both methods compute the same maximum. When the array is null or the size/num exceeds the array length, both methods throw an ArrayIndexOutOfBoundsException (or NullPointerException) at the same point. No input can cause one method to terminate normally while the other throws an exception, nor can one produce a different return value. Therefore no concrete separating test case exists.}"
+}

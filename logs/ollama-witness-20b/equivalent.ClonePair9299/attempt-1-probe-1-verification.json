@@ -1,0 +1,60 @@
+{
+  "key": "equivalent.ClonePair9299",
+  "stable": true,
+  "differenceType": "exception",
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.util.NoSuchElementException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[String(YQ==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[String(YQ==)]]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NullPointerException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[String(YQ==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[String(YQ==)]]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.util.NoSuchElementException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[String(YQ==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[String(YQ==)]]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NullPointerException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[String(YQ==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[String(YQ==)]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 calls iterator.next() collection.size() times, which exceeds the actual number of elements in a collection that reports a larger size than it contains, causing a NoSuchElementException. method2 stops when the iterator has no more elements and therefore returns normally.",
+    "arguments_java": [
+      "new java.util.AbstractCollection<String>(){public java.util.Iterator<String> iterator(){return java.util.List.of(\"a\").iterator();}public int size(){return 2;}}"
+    ],
+    "parameter_types": [
+      "java.util.Collection"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 154.028
+}

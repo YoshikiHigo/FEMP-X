@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical operations; the only syntactic difference is inserting a character versus inserting the string \\\"0\\\", which results in the same string content. No input can produce a differing observable behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1810,
+  "eval_count": 501,
+  "total_duration": 4149428400,
+  "load_duration": 11422100
+}

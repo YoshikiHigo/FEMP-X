@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair8541",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEg)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEg)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEg)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEg)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEg)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEg)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEg)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEg)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1(\" 1 \") throws NumberFormatException and returns null, while method2(\" 1 \") trims the string to \"1\" and returns Double.valueOf(\"1\") = 1.0",
+    "arguments_java": [
+      "\" 1 \""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 160.37
+}

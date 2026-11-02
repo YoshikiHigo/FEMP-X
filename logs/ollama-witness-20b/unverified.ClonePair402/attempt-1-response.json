@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns true when the two arguments refer to the same array instance, whereas method2 returns false unless both arguments are null. Passing the same non‑null array instance as both parameters causes method1 to return true and method2 to return false.\",\"arguments_java\":[\"new byte[]{1,2}\"],\"parameter_types\":[\"byte[]\",\"byte[]\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1275,
+  "eval_count": 190,
+  "total_duration": 1828761400,
+  "load_duration": 2561200
+}

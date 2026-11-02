@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the control flow, both methods produce identical results for all possible combinations of the three String arguments. No concrete input can be constructed that leads to a differing return value, side effect, exception, or non‑termination while keeping the same initial state for both methods."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return the original array when the lengths match, otherwise they allocate a new array of the requested size and copy the first 'size' elements. Both methods throw the same exceptions (NullPointerException or ArrayIndexOutOfBoundsException) under the same conditions. No concrete input can distinguish their outputs or side effects."
+}

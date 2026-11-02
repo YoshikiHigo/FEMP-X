@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical observable behavior for all deterministic, bounded inputs: they return the same string value (or null) and throw the same exception type under equivalent failure conditions. No distinguishing test case can be constructed without relying on non‑observable differences such as object identity, which the test harness does not consider."
+}

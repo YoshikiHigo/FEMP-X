@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical byte‑array equality checks. For all possible byte[] inputs—including null, empty, and non‑empty arrays—their control flow and return values coincide. No input can cause one method to return a different value, throw an exception, or terminate differently than the other.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1229,
+  "eval_count": 183,
+  "total_duration": 1770768700,
+  "load_duration": 6016100
+}

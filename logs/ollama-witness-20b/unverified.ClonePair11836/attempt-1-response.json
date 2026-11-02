@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. They both return the same string for any non‑null input, throw the same exception types for null or out‑of‑bounds widths, and have no side effects or non‑termination paths that differ. No concrete separating test case can be constructed under the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1132,
+  "eval_count": 342,
+  "total_duration": 2745687100,
+  "load_duration": 3258100
+}

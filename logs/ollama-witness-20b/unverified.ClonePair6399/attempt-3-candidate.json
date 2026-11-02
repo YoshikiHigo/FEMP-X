@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After careful analysis, both methods produce identical results for all possible byte arrays and offsets. The masking and sign‑bit restoration logic in method2 exactly reproduces the unsigned concatenation performed by method1. No deterministic, bounded input can distinguish the two implementations."
+}

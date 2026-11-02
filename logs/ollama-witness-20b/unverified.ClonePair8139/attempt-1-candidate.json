@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of a long array in identical ways; they throw the same exceptions for null or empty inputs and return the same value for all valid inputs. No concrete separating input exists."
+}

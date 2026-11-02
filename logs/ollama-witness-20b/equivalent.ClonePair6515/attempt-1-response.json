@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 uses unsigned right shift (>>>), method2 uses signed right shift (>>). For negative input values the high‑order bits differ, producing different byte arrays.\",\"arguments_java\":[\"new int[]{-1}\"],\"parameter_types\":[\"int[]\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1293,
+  "eval_count": 383,
+  "total_duration": 3359964500,
+  "load_duration": 3453400
+}

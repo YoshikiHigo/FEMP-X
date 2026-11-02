@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of both methods, all possible inputs (including null, empty strings, various lengths, and padding directions) produce identical results. No concrete separating test case was identified.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1432,
+  "eval_count": 1036,
+  "total_duration": 8294184800,
+  "load_duration": 9200100
+}

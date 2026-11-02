@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the same value for every possible int input; their conditional checks are equivalent in effect, so no concrete input can distinguish them."
+}

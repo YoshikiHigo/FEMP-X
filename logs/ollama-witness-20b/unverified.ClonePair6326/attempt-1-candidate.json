@@ -1,0 +1,15 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "Both methods interpret the 8 bytes starting at the given offset, but method1 treats each byte as an unsigned 8‑bit value and simply concatenates them, while method2 masks each byte with 0x7F and then restores the sign bit if the original byte was negative.  For an input where all eight bytes are 0xFF (i.e., (byte)-1), method1 produces 0xFFFFFFFFFFFFFFFFL, whereas method2 produces 0xFF7F7F7F7F7F7F7FL.  The two results are therefore different.",
+  "arguments_java": [
+    "new byte[]{(byte)-1,(byte)-1,(byte)-1,(byte)-1,(byte)-1,(byte)-1,(byte)-1,(byte)-1}",
+    "0"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "int"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

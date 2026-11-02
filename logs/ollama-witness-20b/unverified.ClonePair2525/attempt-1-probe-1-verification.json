@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair2525",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(67305985)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(67305985)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(67305985)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(67305985)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 interprets the 4‑byte array as a little‑endian 32‑bit integer, while method2 performs a different accumulation that yields a different result for the same input. For the input {1,2,3,4} method1 returns 67305985 (0x04030201) whereas method2 returns 67469825 (0x04030201 with an extra 256×256×256 offset).",
+    "arguments_java": [
+      "new byte[]{1,2,3,4}"
+    ],
+    "parameter_types": [
+      "byte[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 165.261
+}

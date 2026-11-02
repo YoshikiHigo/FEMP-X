@@ -1,0 +1,61 @@
+{
+  "key": "unverified.ClonePair1566",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(RkY=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(RkY=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(RkY=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(RkY=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For a negative byte value, method1 correctly converts the signed byte to its unsigned hexadecimal representation (\"FF\"), whereas method2 incorrectly interprets the signed byte as a negative value during bit‑shifting, producing the string \"5F\".",
+    "arguments_java": [
+      "new byte[]{-1}"
+    ],
+    "parameter_types": [
+      "byte[]"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 152.706
+}

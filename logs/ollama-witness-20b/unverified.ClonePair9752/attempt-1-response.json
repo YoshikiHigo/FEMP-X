@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical logic: they iterate from the given start index until a non‑whitespace character or the end of the string is reached, then return the index. For all deterministic, bounded inputs—including null strings, negative indices, and indices beyond the string length—the two methods exhibit the same return value, side effects, and exception behavior. No concrete input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1042,
+  "eval_count": 274,
+  "total_duration": 2477952700,
+  "load_duration": 2037100
+}

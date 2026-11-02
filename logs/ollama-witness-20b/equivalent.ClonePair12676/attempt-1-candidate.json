@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all possible deterministic inputs, both methods exhibit identical behavior for every combination of String and char arguments. They both trim leading and trailing occurrences of the specified character, return the original string when no trimming occurs, and return an empty string when the entire string consists of the character to be trimmed. No input can produce a difference in return value, side effects, exceptions, or non‑termination."
+}

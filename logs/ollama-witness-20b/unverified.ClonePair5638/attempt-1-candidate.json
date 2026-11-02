@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all integer inputs, both methods exhibit identical logical behavior for every possible int value. No concrete separating input can be constructed that causes one method to return a different value, throw an exception, or exhibit a side effect while the other does not."
+}

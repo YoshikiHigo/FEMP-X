@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For the surrogate code point 0xD800, method1 returns true because it falls into the range 0xE000–0xFFFD after the false check for <0xE000, whereas method2 returns false since the default case only accepts ranges 0x20–0xD7FF, 0xE000–0xFFFD, and 0x10000–0x10FFFF, and 0xD800 is not in any of these ranges.\",\"arguments_java\":[\"'\\\\uD800'\"],\"parameter_types\":[\"char\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 945,
+  "eval_count": 606,
+  "total_duration": 4681476300,
+  "load_duration": 11064200
+}

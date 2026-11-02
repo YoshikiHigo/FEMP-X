@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same formatted time string for any non‑null Calendar instance and both throw a NullPointerException when the argument is null. No input can produce a different return value, side effect, exception type, or non‑termination."
+}

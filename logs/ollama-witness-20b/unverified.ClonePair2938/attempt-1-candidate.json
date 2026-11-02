@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logical checks on the input byte arrays. They return the same boolean value for all possible byte array inputs, including empty arrays, arrays of equal length with identical or differing contents, and they both throw a NullPointerException when either argument is null. No input can cause a divergence in return value, side effect, exception type, or non‑termination."
+}

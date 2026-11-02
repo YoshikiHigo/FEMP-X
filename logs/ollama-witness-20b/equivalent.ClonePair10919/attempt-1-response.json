@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are identical in logic; exhaustive analysis of all possible char values shows no input that causes differing return values, side effects, exceptions, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 2626,
+  "eval_count": 94,
+  "total_duration": 1343552700,
+  "load_duration": 8962200
+}

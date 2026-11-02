@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte conversion logic: they parse each two‑character hex substring, cast the resulting int to a byte, and store it in an array of length no.length()/2. The only potential difference would be in handling of odd‑length strings or null inputs, but both methods throw the same StringIndexOutOfBoundsException or NullPointerException in those cases. No deterministic, bounded input can cause one method to return a different value, throw a different exception type, or terminate differently. Therefore, no concrete separating test case exists."
+}

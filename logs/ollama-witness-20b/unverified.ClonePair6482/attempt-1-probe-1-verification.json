@@ -1,0 +1,68 @@
+{
+  "key": "unverified.ClonePair6482",
+  "stable": true,
+  "differenceType": "exception",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-1, -1, 127]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][-1, -1, 127],Integer(0)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][127, -1, -1],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-1, -1, 127]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][-1, -1, 127],Integer(0)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][127, -1, -1],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 writes 3 bytes per float, method2 writes 4 bytes per float. With a 3‑byte output buffer, method1 completes normally while method2 throws an ArrayIndexOutOfBoundsException when it attempts to write the fourth byte.",
+    "arguments_java": [
+      "new float[]{0.0f}",
+      "0",
+      "1",
+      "new byte[3]",
+      "0"
+    ],
+    "parameter_types": [
+      "float[]",
+      "int",
+      "int",
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 164.151
+}

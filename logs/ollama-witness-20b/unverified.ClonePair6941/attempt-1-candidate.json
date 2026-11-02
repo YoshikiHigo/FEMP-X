@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical unsigned 4‑byte to int conversion. For any non‑null byte array of length ≥4 and any valid offset, they compute the same result. For shorter arrays or null arrays both throw the same exception. No deterministic input distinguishes them."
+}

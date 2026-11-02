@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same Class object for all possible String inputs (including null, which throws NPE in both cases). The use of intern() and == in method2 does not change the outcome compared to the equals() checks in method1, so no concrete separating input exists."
+}

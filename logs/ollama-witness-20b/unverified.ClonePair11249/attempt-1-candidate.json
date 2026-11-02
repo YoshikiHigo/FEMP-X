@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for finding the last occurrence of a substring. For all possible inputs—including empty strings, null values, and substrings longer than the base string—their return values, side effects, and termination behavior are the same. No concrete input can distinguish them."
+}

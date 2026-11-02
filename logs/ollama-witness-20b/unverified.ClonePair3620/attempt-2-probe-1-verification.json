@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair3620",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Ny0x),String(Ny0y)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Ny0x),String(Ny0y)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Ny0x),String(Ny0y)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Ny0x),String(Ny0y)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Ny0x),String(Ny0y)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Ny0x),String(Ny0y)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Ny0x),String(Ny0y)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Ny0x),String(Ny0y)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 attempts to parse the entire strings as integers; the strings \"7-1\" and \"7-2\" cannot be parsed, so it falls back to compareTo and returns a negative value because \"7-1\" is lexicographically less than \"7-2\". method2 trims the strings at the first hyphen, yielding \"7\" and \"7\", which are equal, so it returns 0.",
+    "arguments_java": [
+      "\"7-1\"",
+      "\"7-2\""
+    ],
+    "parameter_types": [
+      "Object",
+      "Object"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 140.132
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return a Character object with the same value for any input string (or null). They have identical side‑effects, exception behavior, and termination characteristics. The only distinction is that method1 may return a cached Character instance via autoboxing while method2 always creates a new Character object, but this difference in object identity is not observable through the allowed difference types (return_value, side_effect, exception, no_termination) under the verification protocol. Therefore no concrete separating test case exists."
+}

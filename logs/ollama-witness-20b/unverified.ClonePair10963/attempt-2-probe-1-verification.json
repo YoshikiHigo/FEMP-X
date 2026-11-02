@@ -1,0 +1,64 @@
+{
+  "key": "unverified.ClonePair10963",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(10.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.Properties{String(Zm9vLk1heA==)->String(NS4w)},String(Zm9v),Double(10.0)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.Properties{String(Zm9vLk1heA==)->String(NS4w)},String(Zm9v),Double(10.0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(5.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.Properties{String(Zm9vLk1heA==)->String(NS4w)},String(Zm9v),Double(10.0)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.Properties{String(Zm9vLk1heA==)->String(NS4w)},String(Zm9v),Double(10.0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(10.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.Properties{String(Zm9vLk1heA==)->String(NS4w)},String(Zm9v),Double(10.0)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.Properties{String(Zm9vLk1heA==)->String(NS4w)},String(Zm9v),Double(10.0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(5.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.Properties{String(Zm9vLk1heA==)->String(NS4w)},String(Zm9v),Double(10.0)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.Properties{String(Zm9vLk1heA==)->String(NS4w)},String(Zm9v),Double(10.0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns the default value when the key is missing, while method2 returns the minimum of the Max value and the default value. With key \"foo\" absent and \"foo.Max\" present as 5.0, and defaultValue 10.0, method1 returns 10.0 and method2 returns 5.0.",
+    "arguments_java": [
+      "props(\"foo.Max\",\"5.0\")",
+      "\"foo\"",
+      "Double.valueOf(10.0)"
+    ],
+    "parameter_types": [
+      "Properties",
+      "String",
+      "Double"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 127.731
+}

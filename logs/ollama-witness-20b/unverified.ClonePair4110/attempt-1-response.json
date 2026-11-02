@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. They both return true iff the two input arrays are non‑null, have the same length, and all corresponding elements are equal. No input can cause one method to return a different value, throw a different exception, or terminate differently than the other.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 933,
+  "eval_count": 202,
+  "total_duration": 1789530300,
+  "load_duration": 5587400
+}

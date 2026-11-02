@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical character-by-character comparisons of the first argument against the second argument up to the length of the second argument. They both return true when the second argument is empty, return false when any character differs, and both throw the same exceptions (NullPointerException if either argument is null, or StringIndexOutOfBoundsException if the first argument is shorter than the second). No deterministic input can cause one method to behave differently from the other."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods delegate to the same underlying parsing logic (Long.valueOf and Long.parseLong are equivalent for all valid and invalid inputs). No input can produce a different return value, side effect, exception type, or non‑termination between the two methods."
+}

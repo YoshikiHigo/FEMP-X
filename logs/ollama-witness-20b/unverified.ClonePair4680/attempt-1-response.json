@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"All tested inputs produce identical results for both methods; no concrete separating input was found.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 882,
+  "eval_count": 632,
+  "total_duration": 5123924100,
+  "load_duration": 5880900
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible byte array inputs, including nulls and arrays of differing lengths. Both methods return false immediately upon detecting a length mismatch or a byte mismatch, and otherwise return true. No observable difference in return value, side effects, exceptions, or termination can be produced with deterministic, bounded inputs."
+}

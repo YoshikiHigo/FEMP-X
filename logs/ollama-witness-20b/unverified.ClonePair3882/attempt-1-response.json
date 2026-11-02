@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical dot‑product computation and exhibit the same behaviour for all possible inputs, including null arrays and arrays of differing lengths. No concrete input can distinguish their return values, side effects, or exception types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1134,
+  "eval_count": 144,
+  "total_duration": 1505165900,
+  "load_duration": 4684400
+}

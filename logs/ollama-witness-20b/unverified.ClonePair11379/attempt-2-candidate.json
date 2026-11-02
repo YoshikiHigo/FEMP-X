@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, all possible combinations of the four parameters that satisfy the guard conditions lead to identical behavior. The only differences in the guard clauses are that method1 allows a null replacement while method2 allows a null with, but both return the original text in those cases. No input can cause one method to return a different string, throw an exception, or terminate non‑normally compared to the other. Therefore no concrete separating test case exists."
+}

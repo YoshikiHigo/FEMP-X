@@ -1,0 +1,64 @@
+{
+  "key": "unverified.ClonePair11942",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWFhYQ==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWFh),String(YWE=),String(YWFh)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWFh),String(YWE=),String(YWFh)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWFhYQ==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWFh),String(YWE=),String(YWFh)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWFh),String(YWE=),String(YWFh)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWFhYQ==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWFh),String(YWE=),String(YWFh)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWFh),String(YWE=),String(YWFh)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWFhYQ==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWFh),String(YWE=),String(YWFh)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWFh),String(YWE=),String(YWFh)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 replaces each non‑overlapping occurrence of proc with trocar, advancing the search index by the length of trocar. method2 advances the search index by the length of the search string, so when the replacement is longer than the search string, method1 can perform additional replacements that method2 cannot. For ent=\"aaa\", proc=\"aa\", strocar=\"aaa\", method1 returns \"aaaaaa\" while method2 returns \"aaaa\".",
+    "arguments_java": [
+      "\"aaa\"",
+      "\"aa\"",
+      "\"aaa\""
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 146.931
+}

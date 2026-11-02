@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical logic for all possible inputs: they both return true iff both arrays are null or both are non‑null, equal length, and contain the same characters. No input can cause a different return value, side effect, exception, or non‑termination."
+}

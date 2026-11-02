@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs, including null arrays and arrays of any length. They both throw a NullPointerException when either argument is null, and otherwise return true iff the arrays have equal length and all corresponding elements are equal. No concrete input can distinguish their outputs or side effects."
+}

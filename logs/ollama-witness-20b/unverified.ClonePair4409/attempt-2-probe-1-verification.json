@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair4409",
+  "stable": true,
+  "differenceType": "no_termination",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(4611686018427387904)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(4611686018427387904)]"
+      },
+      {
+        "status": "TIMEOUT",
+        "valueSnapshot": null,
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(4611686018427387904)]",
+        "inputAfterSnapshot": "<snapshot-skipped-after-timeout>"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(4611686018427387904)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(4611686018427387904)]"
+      },
+      {
+        "status": "TIMEOUT",
+        "valueSnapshot": null,
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(4611686018427387904)]",
+        "inputAfterSnapshot": "<snapshot-skipped-after-timeout>"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 incorrectly treats the composite number 4611686018427387904L (which is 2147483648^2) as prime due to truncating sqrt to int, while method2 correctly returns false.",
+    "arguments_java": [
+      "4611686018427387904L"
+    ],
+    "parameter_types": [
+      "long"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 91.359
+}

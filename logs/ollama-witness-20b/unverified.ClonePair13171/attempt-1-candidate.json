@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compare the same logical date components (year, month, day). For any pair of Calendar instances, if the year and day-of-year are equal, then the year, month, and date fields must also be equal, and vice versa. Therefore, no input can cause the methods to return different results or exhibit different side effects."
+}

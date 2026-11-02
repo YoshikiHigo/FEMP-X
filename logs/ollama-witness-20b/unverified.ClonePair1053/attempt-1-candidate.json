@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, all possible deterministic inputs that satisfy the constraints produce identical return values, side effects, and exception behavior. No concrete separating test case can be constructed without violating the problem constraints."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods compare the same set of integer values (0x20, 0x09, 0x0d, 0x0a). For any int input, both methods return identical results; no input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 753,
+  "eval_count": 164,
+  "total_duration": 1508975600,
+  "load_duration": 15109300
+}

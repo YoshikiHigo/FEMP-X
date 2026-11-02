@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No concrete input can be found that distinguishes the two methods under the allowed differences; the methods behave identically for all deterministic, bounded inputs."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally identical; they use the same constants and control flow. The only syntactic difference is the array creation syntax (array literal vs. new double[]{...}), which does not affect runtime behavior. Therefore no concrete input can distinguish method1 from method2.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1904,
+  "eval_count": 98,
+  "total_duration": 968067500,
+  "load_duration": 5147000
+}

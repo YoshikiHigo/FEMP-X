@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 accesses array indices 6..0 when offset is -1, which is valid for an array of length 7, whereas method2 accesses indices -1..6, causing an ArrayIndexOutOfBoundsException. Thus the two methods behave differently for the same input.",
+  "arguments_java": [
+    "new byte[]{1,2,3,4,5,6,7}",
+    "-1"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "int"
+  ],
+  "void_return": false
+}

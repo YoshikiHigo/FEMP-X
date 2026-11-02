@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all valid inputs, including edge cases such as null, empty arrays, single-element arrays, and arrays containing NaN or infinite values. No input can be constructed that causes one method to return a different index, throw a different exception type, or exhibit non-termination while the other behaves differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 909,
+  "eval_count": 249,
+  "total_duration": 2354336400,
+  "load_duration": 12465000
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical bounds checks and element comparisons; no input can cause one to return a different value, throw a different exception, or terminate differently under the given constraints."
+}

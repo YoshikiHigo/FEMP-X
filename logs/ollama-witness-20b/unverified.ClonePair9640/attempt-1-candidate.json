@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for comparing two char arrays; no input can cause differing return values, side effects, exceptions, or non‑termination."
+}

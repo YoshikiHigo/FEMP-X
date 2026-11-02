@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all edge cases involving negative, zero, and extreme long values, both methods perform identical arithmetic and produce the same result or throw the same exception. No concrete input distinguishes them."
+}

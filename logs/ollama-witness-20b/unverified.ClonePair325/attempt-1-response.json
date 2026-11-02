@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible byte[] inputs: they return true iff the arrays have equal length and identical contents, and both throw NullPointerException when either argument is null. No deterministic, bounded input can distinguish their return values, side effects, or exception types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1199,
+  "eval_count": 198,
+  "total_duration": 1870096200,
+  "load_duration": 4458100
+}

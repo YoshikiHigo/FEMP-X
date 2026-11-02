@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte extraction and accumulation; for any valid or invalid input they throw the same exceptions or return the same value. No concrete input can distinguish their behavior."
+}

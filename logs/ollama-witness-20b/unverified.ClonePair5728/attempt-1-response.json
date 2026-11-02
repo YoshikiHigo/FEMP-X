@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement the standard leap‑year rule and produce identical boolean results for all integer inputs, including negative values and zero. No input can distinguish their outputs.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 846,
+  "eval_count": 415,
+  "total_duration": 3463223000,
+  "load_duration": 2393100
+}

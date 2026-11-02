@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"Both methods implement Base64 encoding but compute the first 6‑bit group differently for a single byte input. For the byte 0xFF, method1 produces the characters ‘/’ and ‘w’ (derived from the raw 6‑bit values 63 and 48) followed by padding, yielding \\\"/w==\\\". Method2 shifts the byte left by 16 bits before extracting groups, resulting in the characters ‘A’, ‘F’, ‘9’ and padding, yielding \\\"AF9=\\\". Thus the returned strings differ.\",\"arguments_java\":[\"new byte[]{(byte)255}\"],\"parameter_types\":[\"byte[]\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1800,
+  "eval_count": 1454,
+  "total_duration": 11610900800,
+  "load_duration": 4675800
+}

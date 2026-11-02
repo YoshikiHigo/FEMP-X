@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are byte‑for‑byte identical; for any input that does not trigger a runtime exception (e.g., null arguments), they produce the same result. No deterministic, bounded input can distinguish their behavior."
+}

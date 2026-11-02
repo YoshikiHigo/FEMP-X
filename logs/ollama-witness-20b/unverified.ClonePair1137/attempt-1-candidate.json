@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks on the byte arrays: they first test reference equality, then nullity, then length equality, and finally element-wise equality. All control paths and return values match exactly for any possible input, so no concrete separating test case exists."
+}

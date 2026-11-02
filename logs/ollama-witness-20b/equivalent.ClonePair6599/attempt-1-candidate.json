@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element-wise equality checks on two long arrays, handling nulls and length mismatches in the same way. No input can cause a return value, side effect, exception, or non‑termination difference between method1 and method2."
+}

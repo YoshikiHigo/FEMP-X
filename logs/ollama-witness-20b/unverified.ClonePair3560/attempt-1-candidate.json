@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 trims the input string before parsing, so a string with surrounding whitespace such as \" 1.0 \" is parsed successfully and returns 1.0. method2 does not trim; Double.valueOf(\" 1.0 \") throws NumberFormatException, the catch block is empty, and the method falls through to return null.",
+  "arguments_java": [
+    "\" 1.0 \""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

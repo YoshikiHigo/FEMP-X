@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical bit‑shifting and byte‑masking in a loop; with the same arguments they always produce the same integer result and have no side effects.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1239,
+  "eval_count": 63,
+  "total_duration": 638813600,
+  "load_duration": 3407100
+}

@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For a byte array whose fourth element is negative, method1 interprets the byte as a signed value for the most significant word, while method2 masks it to an unsigned 0–255 value. This causes the two methods to produce different 32‑bit integers.",
+  "arguments_java": [
+    "new byte[]{0,0,0,-1}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

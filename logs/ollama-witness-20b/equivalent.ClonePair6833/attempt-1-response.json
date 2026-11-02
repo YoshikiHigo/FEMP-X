@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods are byte‑for‑byte identical; they perform the same loop and return the same sum for any input. No concrete separating input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1389,
+  "eval_count": 55,
+  "total_duration": 789524900,
+  "load_duration": 11928500
+}

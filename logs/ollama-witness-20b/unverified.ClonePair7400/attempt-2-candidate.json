@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns true when the first argument’s equals method returns true for the second argument, while method2 requires symmetry of equals. The first argument is an anonymous object whose equals method returns true for any java.util.regex.Pattern instance. The second argument is a Pattern instance. Thus method1 returns true, but method2 returns false because Pattern.equals(anonymous) is false.",
+  "arguments_java": [
+    "new Object(){ public boolean equals(Object o){ return o instanceof java.util.regex.Pattern; } }",
+    "java.util.regex.Pattern.compile(\"a\")"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑by‑element comparisons of two byte arrays. They handle equal lengths, mismatched lengths, and null inputs in the same way, producing the same boolean result or the same NullPointerException. No deterministic, bounded input can distinguish their behavior."
+}

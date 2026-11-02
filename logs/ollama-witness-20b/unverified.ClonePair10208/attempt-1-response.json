@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods return null for any non‑numeric string or null input, and Integer.parseInt only throws NumberFormatException, which is caught by both. No input can produce a different return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 746,
+  "eval_count": 404,
+  "total_duration": 3160911900,
+  "load_duration": 4499500
+}

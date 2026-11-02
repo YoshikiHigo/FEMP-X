@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair4339",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(-62135802000000),Date(-62167424400000)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(-62135802000000),Date(-62167424400000)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(-62135802000000),Date(-62167424400000)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(-62135802000000),Date(-62167424400000)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(-62135802000000),Date(-62167424400000)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(-62135802000000),Date(-62167424400000)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(-62135802000000),Date(-62167424400000)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(-62135802000000),Date(-62167424400000)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 compares ERA, YEAR and DAY_OF_YEAR, while method2 compares YEAR, MONTH and DAY_OF_MONTH. For dates that are on the same calendar day but in different eras (e.g., 1 Jan 1 AD vs 1 Jan 1 BC) method1 returns false (eras differ) whereas method2 returns true (year, month and day match).",
+    "arguments_java": [
+      "new GregorianCalendar(1, Calendar.JANUARY, 1).getTime()",
+      "new GregorianCalendar(0, Calendar.JANUARY, 1).getTime()"
+    ],
+    "parameter_types": [
+      "java.util.Date",
+      "java.util.Date"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 153.336
+}

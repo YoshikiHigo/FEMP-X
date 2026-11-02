@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, all possible inputs (including null, empty arrays, and various index values) lead to identical behavior: either both return the same array, both throw the same exception type, or both terminate normally. No concrete separating input was found that distinguishes method1 and method2."
+}

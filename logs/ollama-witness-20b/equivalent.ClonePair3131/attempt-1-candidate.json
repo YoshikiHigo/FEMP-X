@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are byte‑code identical; no input can distinguish their behavior."
+}

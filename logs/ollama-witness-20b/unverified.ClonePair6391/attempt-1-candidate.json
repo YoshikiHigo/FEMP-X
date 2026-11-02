@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical unsigned byte-to-long conversion over an 8‑byte window; they produce the same result for all valid inputs and throw the same exceptions for invalid inputs. No deterministic, bounded input can distinguish them."
+}

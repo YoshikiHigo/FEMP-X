@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two implementations, every possible byte pattern and offset leads to identical 64‑bit results. Both methods construct the same 8‑byte value: each byte is masked with 0x7F, the high bit is set separately when the original byte is negative, and for the most significant byte a final Long.MIN_VALUE addition restores the high bit. This reproduces exactly the unsigned byte value that method2 simply concatenates. No input can produce a differing return value, side‑effect, exception, or non‑termination. Therefore no separating test case exists."
+}

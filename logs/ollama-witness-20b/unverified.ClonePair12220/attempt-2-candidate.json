@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 validates a 9‑character code with a checksum; the string \"A00000000\" satisfies all of method1’s constraints and its checksum matches the last digit, so method1 returns true. method2 requires every character to be a digit, but the first character is 'A', which fails the digit check, so method2 returns false.",
+  "arguments_java": [
+    "\"A00000000\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

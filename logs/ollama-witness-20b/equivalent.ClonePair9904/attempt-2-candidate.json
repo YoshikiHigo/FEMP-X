@@ -1,0 +1,15 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "When the index refers to the last element of the array, method1 returns the original array instance (since it skips the removal logic), whereas method2 always creates a new array and copies all elements except the one at the given index. For input a = {\"x\",\"y\"} and pos = 1, method1 returns the same array instance that was passed in, while method2 returns a new array containing only \"x\".",
+  "arguments_java": [
+    "new String[]{\"x\",\"y\"}",
+    "1"
+  ],
+  "parameter_types": [
+    "String[]",
+    "int"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

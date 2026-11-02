@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "All execution paths of method1 and method2 produce identical string results for every integer input; no distinguishing input exists."
+}

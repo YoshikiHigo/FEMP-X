@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods process the same four bytes (indices 0..3) in the same order regardless of array length, and they throw identical exceptions for shorter arrays. No deterministic input can produce a differing return value, side effect, exception type, or non‑termination between the two methods."
+}

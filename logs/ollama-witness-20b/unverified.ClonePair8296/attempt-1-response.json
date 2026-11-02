@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the common prefix of two strings in the same way; for all deterministic, bounded inputs they produce identical results or throw the same exception. No concrete separating input was found.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1160,
+  "eval_count": 282,
+  "total_duration": 2569485200,
+  "load_duration": 5027900
+}

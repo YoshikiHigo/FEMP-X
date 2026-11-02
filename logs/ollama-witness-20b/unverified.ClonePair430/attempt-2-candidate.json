@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible byte[] inputs: they return true only when the arrays are non‑null, of equal length, and contain identical elements; otherwise they return false. The loop in method2 is guarded by the length equality flag, preventing any out‑of‑bounds access. Therefore no concrete input can distinguish the two methods."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑wise comparison of two int arrays; they return the same boolean for all possible inputs, including nulls and empty arrays. No concrete separating input exists."
+}

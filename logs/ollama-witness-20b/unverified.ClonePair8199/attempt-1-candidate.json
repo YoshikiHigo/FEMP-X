@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible String inputs: they both return true when both arguments are null, false when exactly one is null, and otherwise return true iff the strings are equal. No concrete input can distinguish them."
+}

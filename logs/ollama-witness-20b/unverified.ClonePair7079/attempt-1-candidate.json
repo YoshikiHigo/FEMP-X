@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical 4‑byte little‑endian extraction from the same byte array starting at the given offset. For any valid input (array length ≥ offset+4) they compute the same integer, and for any invalid input (array null or offset out of bounds) they both throw the same exception. No deterministic, bounded input can distinguish their behavior."
+}

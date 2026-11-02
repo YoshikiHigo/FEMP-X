@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 64‑bit value for any 8 bytes starting at the given offset. The seemingly different loop directions result in identical little‑endian accumulation, so no input can distinguish their return values, side effects, or termination."
+}

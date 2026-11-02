@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the arithmetic mean of the input array in exactly the same way; they handle empty arrays and null inputs identically and perform the same summation and division. No input can distinguish their behavior."
+}

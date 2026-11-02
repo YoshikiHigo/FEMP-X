@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all integer inputs, both methods produce identical boolean results for every possible year value. No concrete separating test case can be constructed that distinguishes their behavior under the allowed differences."
+}

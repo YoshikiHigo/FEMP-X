@@ -1,0 +1,17 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "In method1, the second argument is the pattern to search for and the third argument is the replacement string. When the replacement string is null, the method appends the literal string \"null\" for each match. In method2, the second argument is the pattern to search for and the third argument is the string to replace matches with. If the replacement string (third argument) is null, the method still performs the replacement, appending the literal string \"null\". However, if the second argument (the pattern) is null or empty, method2 returns the original string immediately. By providing a non‑empty pattern and a null replacement string, method1 removes the pattern and inserts \"null\", whereas method2 simply returns the original string unchanged. Thus the return values differ.",
+  "arguments_java": [
+    "\"abc\"",
+    "\"a\"",
+    "null"
+  ],
+  "parameter_types": [
+    "String",
+    "String",
+    "String"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical null checks and parse the string using Integer.valueOf and Integer.parseInt, which are equivalent for all inputs. No input can cause a difference in return value, side effects, exceptions, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 775,
+  "eval_count": 77,
+  "total_duration": 669157900,
+  "load_duration": 15690200
+}

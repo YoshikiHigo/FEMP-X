@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic: they return true if the character is a digit '0'–'9', otherwise false. No input can cause a differing return value, side effect, exception, or non‑termination."
+}

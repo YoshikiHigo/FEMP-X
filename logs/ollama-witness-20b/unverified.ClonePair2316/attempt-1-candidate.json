@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the same 32‑bit integer from the first four bytes of the input array. For any array of length ≥4 they produce identical results, and for shorter arrays both throw ArrayIndexOutOfBoundsException. No input can distinguish the two methods under the allowed criteria."
+}

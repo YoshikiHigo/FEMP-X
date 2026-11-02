@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte‑to‑long conversion using the same loop/while structure and identical shift logic. For any byte array and offset that is within bounds, they compute the same 64‑bit value. For out‑of‑bounds or null inputs, both throw the same exception types (ArrayIndexOutOfBoundsException or NullPointerException). No deterministic input can cause one method to return a different value, throw a different exception, or terminate differently."
+}

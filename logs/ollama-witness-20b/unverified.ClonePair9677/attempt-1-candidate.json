@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return true iff the two arrays are either both null or both non‑null, of equal length, and contain the same characters in the same order. No input can cause a divergence in return value, side effect, exception, or non‑termination."
+}

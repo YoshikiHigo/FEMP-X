@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical observable behavior for all possible String inputs: they return null for null or empty strings, return an Integer equal to the parsed value for numeric strings, and throw NumberFormatException for non‑numeric strings. The only difference is that method1 always allocates a new Integer object while method2 may return a cached instance for small values, but this difference is not observable through the return value or side effects allowed by the test harness."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 attempts to parse the string as is; leading/trailing whitespace causes NumberFormatException and returns null. method2 trims the string before parsing, so \\\" 1.0\\\" is parsed successfully and returns 1.0.\",\"arguments_java\":[\"\\\" 1.0\\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 758,
+  "eval_count": 383,
+  "total_duration": 3250832100,
+  "load_duration": 23004900
+}

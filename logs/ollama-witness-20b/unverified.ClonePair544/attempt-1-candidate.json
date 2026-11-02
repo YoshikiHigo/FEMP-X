@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logical checks on the byte arrays; the only difference is the direction of iteration, which does not affect the outcome for any finite input. No concrete input can distinguish their return values, side effects, or exception behavior."
+}

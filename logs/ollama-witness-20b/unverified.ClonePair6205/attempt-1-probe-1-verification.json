@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair6205",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][boolean[][true, false],boolean[][false, true]]",
+        "inputAfterSnapshot": "java.lang.Object[][boolean[][true, false],boolean[][false, true]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][boolean[][true, false],boolean[][false, true]]",
+        "inputAfterSnapshot": "java.lang.Object[][boolean[][true, false],boolean[][false, true]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][boolean[][true, false],boolean[][false, true]]",
+        "inputAfterSnapshot": "java.lang.Object[][boolean[][true, false],boolean[][false, true]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][boolean[][true, false],boolean[][false, true]]",
+        "inputAfterSnapshot": "java.lang.Object[][boolean[][true, false],boolean[][false, true]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 compares element‑wise and returns false when any element differs; method2 only checks for null and length equality and never compares elements, so it returns true for any two non‑null arrays of the same length regardless of contents.",
+    "arguments_java": [
+      "new boolean[]{true,false}",
+      "new boolean[]{false,true}"
+    ],
+    "parameter_types": [
+      "boolean[]",
+      "boolean[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 166.354
+}

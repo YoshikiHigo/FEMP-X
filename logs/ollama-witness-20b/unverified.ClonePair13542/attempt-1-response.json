@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both method1 and method2 perform identical operations: they allocate a byte array of length s.length()/2, parse each two-character hex substring, cast to byte, and store it. No input can cause differing return values, side effects, exceptions, or non-termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 980,
+  "eval_count": 80,
+  "total_duration": 1029084500,
+  "load_duration": 4371500
+}

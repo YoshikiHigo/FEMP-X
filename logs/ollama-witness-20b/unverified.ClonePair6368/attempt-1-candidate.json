@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 interprets each byte as a signed 7‑bit value and propagates the sign bit to the corresponding high bit of the 64‑bit result, whereas method2 simply zero‑extends each byte and places it in the low 8 bits of the result. With a byte that has its high bit set in a position other than the least‑significant byte, the two methods produce different 64‑bit values.",
+  "arguments_java": [
+    "new byte[]{0,0,0,0,0,0,0,(byte)0x80}",
+    "0"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "int"
+  ],
+  "void_return": false
+}

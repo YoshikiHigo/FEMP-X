@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair7656",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.ArrayList[Integer(1)],java.util.LinkedList[Integer(1)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.ArrayList[Integer(1)],java.util.LinkedList[Integer(1)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.ArrayList[Integer(1)],java.util.LinkedList[Integer(1)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.ArrayList[Integer(1)],java.util.LinkedList[Integer(1)]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.ArrayList[Integer(1)],java.util.LinkedList[Integer(1)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.ArrayList[Integer(1)],java.util.LinkedList[Integer(1)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.ArrayList[Integer(1)],java.util.LinkedList[Integer(1)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.ArrayList[Integer(1)],java.util.LinkedList[Integer(1)]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 first checks that the two arguments are of the same runtime class before delegating to equals, whereas method2 skips this class check.  By supplying an ArrayList and a LinkedList that contain the same elements, method1 will return false (because the classes differ) while method2 will return true (because the ArrayList’s equals method compares the elements and finds them equal).",
+    "arguments_java": [
+      "new ArrayList<>(list(1))",
+      "new LinkedList<>(list(1))"
+    ],
+    "parameter_types": [
+      "Object",
+      "Object"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 154.002
+}

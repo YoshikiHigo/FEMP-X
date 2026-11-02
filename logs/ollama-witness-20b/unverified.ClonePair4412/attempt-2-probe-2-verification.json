@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair4412",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(9)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(9)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(9)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(9)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(9)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(9)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(9)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(9)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 incorrectly returns true for 9L because it only tests divisors 5 and above, while method2 correctly detects 9 as composite and returns false.",
+    "arguments_java": [
+      "9L"
+    ],
+    "parameter_types": [
+      "long"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 144.726
+}

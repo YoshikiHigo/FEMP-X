@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair6949",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(66051)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 1, 2, 3],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 1, 2, 3],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(66051)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 1, 2, 3],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 1, 2, 3],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(66051)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 1, 2, 3],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 1, 2, 3],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(66051)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 1, 2, 3],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 1, 2, 3],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 accesses one byte beyond the 4‑byte window (indexIni is incremented after each read), causing an ArrayIndexOutOfBoundsException when the array length equals offset+4, whereas method2 only reads the four bytes starting at offset and completes normally.",
+    "arguments_java": [
+      "new byte[]{0,1,2,3}",
+      "0"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 164.933
+}

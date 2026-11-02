@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, the only potential divergence occurs when the replacement string 'from' is empty, which causes both methods to enter an infinite loop. No other input combination leads to a difference in return value, side effects, or exception type."
+}

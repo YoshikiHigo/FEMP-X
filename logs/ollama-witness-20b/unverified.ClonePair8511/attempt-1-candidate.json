@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return a Double parsed from the string when the string represents a valid double, and otherwise return null. No input can distinguish them."
+}

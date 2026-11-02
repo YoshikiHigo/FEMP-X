@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 writes 3 little‑endian bytes of the value (int)(in*0x7FFFFF)+0x7FFFFF, while method2 writes 4 big‑endian bytes of (int)(in*0x7FFFFFFF). With the same input the resulting byte arrays differ.\",\"arguments_java\":[\"new float[]{1.0f}\",\"0\",\"1\",\"new byte[4]\",\"0\"],\"parameter_types\":[\"float[]\",\"int\",\"int\",\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1610,
+  "eval_count": 522,
+  "total_duration": 4433082600,
+  "load_duration": 9398400
+}

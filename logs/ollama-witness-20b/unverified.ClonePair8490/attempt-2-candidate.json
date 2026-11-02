@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods parse the input string using Double(String), which internally accepts surrounding whitespace. Therefore, for any non‑null string that represents a valid double (including those with leading/trailing spaces), both methods return the same Double value. For all other inputs (null, empty, or non‑numeric strings), both methods return null. No deterministic, bounded input can produce a differing return value, side effect, exception, or non‑termination between the two methods."
+}

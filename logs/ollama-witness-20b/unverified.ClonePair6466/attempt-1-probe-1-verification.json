@@ -1,0 +1,68 @@
+{
+  "key": "unverified.ClonePair6466",
+  "stable": true,
+  "differenceType": "exception",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-66]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][-66],Integer(0)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][-2],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-66]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][-66],Integer(0)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][-2],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 writes a single byte into out_buff and returns normally, while method2 attempts to write three bytes per input element, causing an ArrayIndexOutOfBoundsException when out_buff has insufficient space.",
+    "arguments_java": [
+      "new float[]{0.5f}",
+      "0",
+      "1",
+      "new byte[1]",
+      "0"
+    ],
+    "parameter_types": [
+      "float[]",
+      "int",
+      "int",
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 168.093
+}

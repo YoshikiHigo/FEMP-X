@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible byte array inputs. They both return the same boolean value, produce no side effects, and throw the same exception (NullPointerException) when either argument is null. No concrete input can distinguish their behavior."
+}

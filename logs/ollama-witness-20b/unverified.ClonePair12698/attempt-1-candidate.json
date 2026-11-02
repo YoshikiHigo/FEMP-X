@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs. Both check for null arguments, return the original string when the second argument is null, and otherwise return the original string if it does not end with the second argument or the substring without the suffix if it does. No input can cause a different return value, side effect, exception, or non‑termination."
+}

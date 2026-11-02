@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods format a Calendar instance into the same string representation (YYYY-MM-DD) and exhibit identical behavior for all valid Calendar inputs, including null, which causes a NullPointerException in both cases. No deterministic input can distinguish their outputs or side effects."
+}

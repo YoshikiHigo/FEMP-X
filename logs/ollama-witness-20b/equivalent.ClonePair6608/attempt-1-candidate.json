@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical arithmetic: they compute the next multiple of the second argument (or return the first argument if already a multiple). For all integer inputs—including negative values, zero, and cases that trigger ArithmeticException due to a divisor of zero—the behaviors coincide exactly. No concrete input can distinguish the two methods under the allowed difference types."
+}

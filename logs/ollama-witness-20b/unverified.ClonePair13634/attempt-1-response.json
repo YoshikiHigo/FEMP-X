@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical parsing of the input string into a byte array. For any valid or invalid input, they either produce the same byte array or throw the same NumberFormatException. No input can cause a difference in return value, side effects, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1015,
+  "eval_count": 359,
+  "total_duration": 2866124600,
+  "load_duration": 13097800
+}

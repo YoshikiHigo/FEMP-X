@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods evaluate the same set of integer ranges and special cases; exhaustive reasoning shows no input can produce differing outputs.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 920,
+  "eval_count": 601,
+  "total_duration": 4934874400,
+  "load_duration": 2562300
+}

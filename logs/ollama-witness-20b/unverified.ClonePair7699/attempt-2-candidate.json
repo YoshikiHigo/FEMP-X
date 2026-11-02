@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No concrete separating input can be constructed with the available standard Java types that satisfies the required conditions. All standard classes that provide a non‑identity equals implementation also produce a hashCode that is consistent with equals, so method1 and method2 will return the same result for every pair of arguments that can be expressed using the allowed helpers and literals."
+}

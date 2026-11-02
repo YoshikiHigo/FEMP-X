@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they throw the same exception (ArrayIndexOutOfBoundsException for empty arrays, NullPointerException for null arrays) and return the same value for non-empty arrays. No concrete input distinguishes them."
+}

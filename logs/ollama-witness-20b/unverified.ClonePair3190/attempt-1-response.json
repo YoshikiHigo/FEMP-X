@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical computations and return the same string content for all deterministic inputs. The only difference is that method2 constructs a new String object for the fallback case, but the resulting string value is identical, so no observable difference exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1815,
+  "eval_count": 304,
+  "total_duration": 2705490000,
+  "load_duration": 6287900
+}

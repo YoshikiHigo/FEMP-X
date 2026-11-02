@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 returns true when both arguments are the same reference, even if the class’s equals method throws an exception; method2 calls equals on the same reference and therefore propagates the exception.\",\"arguments_java\":[\"new BadEquals()\"],\"parameter_types\":[\"Object\",\"Object\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 919,
+  "eval_count": 665,
+  "total_duration": 5408127200,
+  "load_duration": 2388200
+}

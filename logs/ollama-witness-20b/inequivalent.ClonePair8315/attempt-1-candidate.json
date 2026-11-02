@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they compute the maximum element of the array (or varargs). They both throw the same exceptions (ArrayIndexOutOfBoundsException for empty arrays, NullPointerException for null inputs) and otherwise return the same value. No concrete input can distinguish them."
+}

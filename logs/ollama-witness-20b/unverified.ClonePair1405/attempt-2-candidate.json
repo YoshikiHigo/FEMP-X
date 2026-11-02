@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑wise equality checks: method1 returns false on the first differing byte, while method2 accumulates the bitwise OR of all per‑byte XORs and returns false if any byte differs. For all possible byte arrays of equal length, the two methods produce the same boolean result, so no concrete separating input exists."
+}

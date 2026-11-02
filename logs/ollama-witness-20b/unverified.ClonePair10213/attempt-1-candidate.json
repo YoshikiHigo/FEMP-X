@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical observable behavior for all possible String inputs under the given constraints. No deterministic, bounded input can produce a differing return value, side effect, exception, or non‑termination."
+}

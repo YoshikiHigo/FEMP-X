@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 8‑byte big‑endian value from the buffer; for any byte array and start/offset they produce identical results, and no input causes a different return value, side effect, exception, or non‑termination."
+}

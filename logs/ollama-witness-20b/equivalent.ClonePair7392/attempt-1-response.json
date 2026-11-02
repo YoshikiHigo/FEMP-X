@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of all code paths, both methods behave identically for every possible input within the defined constraints. No concrete separating test case can be constructed that distinguishes their return values, side effects, exceptions, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1321,
+  "eval_count": 455,
+  "total_duration": 3801874300,
+  "load_duration": 2561900
+}

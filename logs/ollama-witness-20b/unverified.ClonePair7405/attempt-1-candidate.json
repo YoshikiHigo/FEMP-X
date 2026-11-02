@@ -1,0 +1,15 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 uses o1.equals(o2) for non‑Integer objects, which returns false for two distinct instances of a class that overrides equals to always return false. method2, however, compares hashCode and class equality; if both instances have the same hashCode and belong to the same class, it returns true. Thus the two methods produce different boolean results for the same inputs.",
+  "arguments_java": [
+    "new Bad()",
+    "new Bad()"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

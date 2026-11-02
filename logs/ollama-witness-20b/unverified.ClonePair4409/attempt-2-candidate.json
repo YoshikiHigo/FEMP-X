@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 incorrectly treats the composite number 4611686018427387904L (which is 2147483648^2) as prime due to truncating sqrt to int, while method2 correctly returns false.",
+  "arguments_java": [
+    "4611686018427387904L"
+  ],
+  "parameter_types": [
+    "long"
+  ],
+  "void_return": false
+}

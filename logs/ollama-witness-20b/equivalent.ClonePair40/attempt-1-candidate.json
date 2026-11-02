@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical parsing of a String into a Long using the same radix and throw the same exceptions for all valid and invalid inputs. No deterministic difference in return value, side effects, or termination can be observed with any finite, deterministic input."
+}

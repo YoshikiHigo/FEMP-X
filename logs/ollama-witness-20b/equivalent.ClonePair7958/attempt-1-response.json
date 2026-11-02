@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 returns null when the input string is null and the requested size is negative, whereas method2 throws a NullPointerException because it attempts to construct a StringBuffer with a null argument.\",\"arguments_java\":[\"null\",\"null\",\"-1\"],\"parameter_types\":[\"String\",\"String\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1188,
+  "eval_count": 364,
+  "total_duration": 3205159600,
+  "load_duration": 2231600
+}

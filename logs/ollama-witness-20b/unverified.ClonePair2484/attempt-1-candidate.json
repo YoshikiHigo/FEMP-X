@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit integer from a 4‑byte array and exhibit identical behavior for all valid inputs, including identical exception types for null or empty arrays. No concrete input can distinguish their return values, side effects, or exception outcomes."
+}

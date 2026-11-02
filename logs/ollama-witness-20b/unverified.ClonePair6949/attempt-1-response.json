@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 accesses one byte beyond the 4‑byte window (indexIni is incremented after each read), causing an ArrayIndexOutOfBoundsException when the array length equals offset+4, whereas method2 only reads the four bytes starting at offset and completes normally.\",\"arguments_java\":[\"new byte[]{0,1,2,3}\",\"0\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1425,
+  "eval_count": 690,
+  "total_duration": 5706001400,
+  "load_duration": 1652400
+}

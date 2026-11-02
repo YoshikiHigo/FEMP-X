@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical bounds checks and element-wise comparisons; with any deterministic, bounded input they produce the same boolean result. No input can cause one to return true while the other returns false, nor can one throw an exception that the other does not. Thus no concrete separating test case exists."
+}

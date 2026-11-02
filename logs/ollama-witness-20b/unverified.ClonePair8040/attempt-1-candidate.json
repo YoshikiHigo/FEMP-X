@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 safely handles null elements in the array by checking src[i]!=null before compareTo, returning -1 when no match is found. method2 calls str.equals(array[i]) which throws a NullPointerException when array[i] is null, even though the search string is non‑null.",
+  "arguments_java": [
+    "new String[]{null}",
+    "\"a\""
+  ],
+  "parameter_types": [
+    "String[]",
+    "String"
+  ],
+  "void_return": false
+}

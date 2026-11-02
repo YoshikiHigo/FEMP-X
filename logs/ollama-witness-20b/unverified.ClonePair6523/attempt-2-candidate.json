@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical byte extraction for all 32‑bit integers. Both use the same masking with 0xff after shifting, and the only difference is the use of signed (>>) versus unsigned (>>>) shifts. For any 32‑bit value, shifting right by 8, 16, or 24 bits and then masking with 0xff yields the same low byte regardless of sign extension, because the mask discards any sign‑extended bits. Therefore, for every possible input array and length, method1 and method2 produce byte arrays that are byte‑by‑byte identical. No concrete separating test case exists."
+}

@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair6418",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-72057594037927936)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -1],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -1],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-72057594037927936)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -1],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -1],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-72057594037927936)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -1],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -1],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(-72057594037927936)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -1],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, 0, 0, 0, 0, -1],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "In method1 the most‑significant byte contributes (b & 0xff) << 56. For a negative byte (high bit set) this yields 0xFF00000000000000. In method2 the byte is first masked to 0x7f, then the sign bit is added via a separate flag, and finally Long.MIN_VALUE is added if the byte is negative. This double‑adds the high bit, producing 0xFF80000000000000, which is different from method1’s result. Thus the two methods return different longs for the same input.",
+    "arguments_java": [
+      "new byte[]{0,0,0,0,0,0,0,(byte)-1}",
+      "0"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 129.468
+}

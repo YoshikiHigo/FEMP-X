@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return null for null, empty, or whitespace‑only strings; otherwise they attempt to parse the string using Double.parseDouble or Double.valueOf, both of which accept the same set of numeric representations (including leading/trailing whitespace, NaN, Infinity, etc.). In every case where parsing succeeds, both methods return the same Double value; where parsing fails, both return null. No input can produce a differing return value, side effect, exception, or non‑termination."
+}

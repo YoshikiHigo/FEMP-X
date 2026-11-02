@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods use Java's standard parsing routines that accept the same set of inputs. For any non‑null string, method1 calls Double.parseDouble, which trims surrounding whitespace internally, while method2 explicitly trims the string before calling Double.valueOf. Since both parsing functions accept the same characters and both return null when parsing fails, there is no input that causes a different observable outcome. Therefore no concrete separating test case exists for this clone pair."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible inputs: they both initialize a minimum value from the first array element and then iterate over the remaining elements (method1 includes the first element in the loop but the comparison is false, so the result is unchanged). They both throw the same exceptions for null or empty arrays. No concrete separating input exists."
+}

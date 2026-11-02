@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for all possible long inputs; no input can distinguish their return values, side effects, or termination behavior."
+}

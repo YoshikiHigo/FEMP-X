@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"All conditional ranges in method1 and method2 evaluate identically for any 16‑bit char value; the final range check is unreachable for char values, and no other side‑effects or exceptions differ. No concrete input can distinguish the two methods.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1464,
+  "eval_count": 235,
+  "total_duration": 2135681100,
+  "load_duration": 6175800
+}

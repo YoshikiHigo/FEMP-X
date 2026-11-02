@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they initialize the maximum with the first element and then iterate over all elements, updating the maximum when a larger value is found. For all possible inputs—including empty arrays, null arrays, arrays containing NaN, positive, negative, or infinite values—the behavior (return value or exception) is the same for method1 and method2. No concrete separating input exists."
+}

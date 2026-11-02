@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they check if args.length > pos and return args[pos] or the default value. For any input, including null or empty arrays, the behavior (including exceptions) is the same. No concrete separating input exists."
+}

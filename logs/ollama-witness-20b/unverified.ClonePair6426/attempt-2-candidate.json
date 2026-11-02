@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 writes two bytes representing the 16‑bit PCM value of 0.5f (63, -1), whereas method2 writes a single byte 190, so the returned byte arrays differ.",
+  "arguments_java": [
+    "new float[]{0.5f}",
+    "0",
+    "1",
+    "new byte[2]",
+    "0"
+  ],
+  "parameter_types": [
+    "float[]",
+    "int",
+    "int",
+    "byte[]",
+    "int"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

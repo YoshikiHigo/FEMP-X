@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations on the input string: they parse each two‑character hexadecimal pair, cast the resulting integer to a byte, and store it in an array of the same length. For all valid inputs (including empty, null, odd‑length, or non‑hex characters), both methods either return the same byte array or throw the same exception. No deterministic, bounded input can produce a different return value, side effect, exception type, or non‑termination between the two methods."
+}

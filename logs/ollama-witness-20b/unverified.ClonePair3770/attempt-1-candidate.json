@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive comparison of all control paths, both methods perform identical operations on the input arrays for every possible combination of arguments. No distinguishing behavior (different return value, side effect, exception, or non‑termination) was found for any concrete, deterministic input that can be constructed within the given constraints."
+}

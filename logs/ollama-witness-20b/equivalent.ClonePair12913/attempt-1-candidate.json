@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform equivalent range checks using Date comparison; for any non‑null input they return the same boolean value, and for null inputs both throw a NullPointerException. No concrete separating input exists."
+}

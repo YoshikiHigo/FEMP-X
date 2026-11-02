@@ -1,0 +1,16 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 lowercases any byte >= 'A' before comparison, so an uppercase byte in s1 will be converted to lowercase and may match a lowercase byte in s2, whereas method2 compares the raw bytes directly. For input s1 = { 'A' }, s2 = { 'a' }, n = 1, method1 returns true while method2 returns false.",
+  "arguments_java": [
+    "new byte[]{(byte)'A'}",
+    "new byte[]{(byte)'a'}",
+    "1"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "byte[]",
+    "int"
+  ],
+  "void_return": false
+}

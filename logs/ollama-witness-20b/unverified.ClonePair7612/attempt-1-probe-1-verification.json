@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair7612",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUA3NjRjMTJiNg==),java.lang.Object(amF2YS5sYW5nLk9iamVjdEA3M2QxNmU5Mw==)]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUA3NjRjMTJiNg==),java.lang.Object(amF2YS5sYW5nLk9iamVjdEA3M2QxNmU5Mw==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUA3NjRjMTJiNg==),java.lang.Object(amF2YS5sYW5nLk9iamVjdEA3M2QxNmU5Mw==)]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUA3NjRjMTJiNg==),java.lang.Object(amF2YS5sYW5nLk9iamVjdEA3M2QxNmU5Mw==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUA3NjRjMTJiNg==),java.lang.Object(amF2YS5sYW5nLk9iamVjdEA3M2QxNmU5Mw==)]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUA3NjRjMTJiNg==),java.lang.Object(amF2YS5sYW5nLk9iamVjdEA3M2QxNmU5Mw==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUA3NjRjMTJiNg==),java.lang.Object(amF2YS5sYW5nLk9iamVjdEA3M2QxNmU5Mw==)]",
+        "inputAfterSnapshot": "java.lang.Object[][unverified.OllamaWitnessProbe$1(dW52ZXJpZmllZC5PbGxhbWFXaXRuZXNzUHJvYmUkMUA3NjRjMTJiNg==),java.lang.Object(amF2YS5sYW5nLk9iamVjdEA3M2QxNmU5Mw==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 requires both equals and reverse equals to be true, while method2 only requires o1.equals(o2). Using an asymmetric equals implementation for the first argument causes method1 to return false and method2 to return true.",
+    "arguments_java": [
+      "new Object(){public boolean equals(Object o){return true;}}",
+      "new Object()"
+    ],
+    "parameter_types": [
+      "Object",
+      "Object"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 161.001
+}

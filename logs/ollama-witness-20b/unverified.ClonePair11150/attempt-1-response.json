@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all valid inputs. In particular, when the search string is empty, both methods enter an infinite loop; when the search string is non‑empty, they perform the same replacements using equivalent mutable string builders. No input can cause one method to terminate or produce a different result while the other does not.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1237,
+  "eval_count": 441,
+  "total_duration": 3531239300,
+  "load_duration": 11643800
+}

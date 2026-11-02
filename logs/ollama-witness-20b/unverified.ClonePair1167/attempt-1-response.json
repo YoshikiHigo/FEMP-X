@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical two‑digit uppercase hexadecimal conversion for every byte value; exhaustive reasoning shows no input can produce a differing return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1224,
+  "eval_count": 209,
+  "total_duration": 2125422200,
+  "load_duration": 5716300
+}

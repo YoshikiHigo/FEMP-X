@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 rejects octets with leading zeros such as \\\"01\\\" because it treats a zero value followed by another digit as invalid, whereas method2 accepts them and parses them as integers.\",\"arguments_java\":[\"\\\"01.02.03.04\\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1179,
+  "eval_count": 264,
+  "total_duration": 2515301000,
+  "load_duration": 18620200
+}

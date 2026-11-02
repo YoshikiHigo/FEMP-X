@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical for all possible inputs. Both compute the length of the input string, then increment the index while it is within bounds and the character at that index is whitespace. They both return the resulting index. No input can cause one method to behave differently from the other, so no concrete separating test case exists."
+}

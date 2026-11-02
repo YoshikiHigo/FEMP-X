@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, they both perform a straightforward replace of all non‑empty occurrences of the search string with the replacement string, and they both throw a NullPointerException when the source/destination argument is null. The only pathological case is when the search string is the empty string, in which case both methods enter an infinite loop. No input can cause one method to terminate or produce a different result while the other does not."
+}

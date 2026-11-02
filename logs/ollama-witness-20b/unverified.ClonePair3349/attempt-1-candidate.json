@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return true iff the two int arrays are non‑null, have the same length, and contain the same elements in the same order. Any input that causes a NullPointerException in one method will also cause a NullPointerException in the other, and all other inputs produce the same boolean result. No concrete separating input can be constructed under the given constraints."
+}

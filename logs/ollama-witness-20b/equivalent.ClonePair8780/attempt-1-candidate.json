@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical computations on the Calendar fields and produce the same result for all possible Calendar inputs, including null where both throw a NullPointerException. No distinguishing input exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return true for the same set of characters (' ', '\\t', '\\r', '\\n') and false otherwise; no input can distinguish their behavior."
+}

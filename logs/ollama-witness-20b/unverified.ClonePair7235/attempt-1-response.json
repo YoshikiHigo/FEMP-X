@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical little‑endian reconstruction of a 4‑byte sequence; for any byte array and offset that does not trigger an exception, the computed int value is the same. No input can cause one method to return a different value, throw a different exception type, or exhibit non‑termination while the other behaves differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1231,
+  "eval_count": 266,
+  "total_duration": 2447079200,
+  "load_duration": 6343100
+}

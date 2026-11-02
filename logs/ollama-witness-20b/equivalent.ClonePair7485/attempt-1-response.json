@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical arithmetic and rounding for all possible double inputs; no input can distinguish their return values, side effects, or exceptions.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1196,
+  "eval_count": 188,
+  "total_duration": 1875660700,
+  "load_duration": 5476600
+}

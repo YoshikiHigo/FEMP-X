@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods contain identical logic and will produce the same result for any byte array inputs. No concrete separating input exists."
+}

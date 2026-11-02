@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair8475",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.5)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuNSA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuNSA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.5)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuNSA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuNSA=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.5)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuNSA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuNSA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.5)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEuNSA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEuNSA=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 parses the string directly with Double.parseDouble, which does not trim whitespace and throws NumberFormatException for \" 1.5 \". The exception is caught and null is returned. method2 trims the string before parsing; \" 1.5 \" becomes \"1.5\", which parses successfully to 1.5. Thus method1 returns null while method2 returns 1.5 for the same input.",
+    "arguments_java": [
+      "\" 1.5 \""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 163.886
+}

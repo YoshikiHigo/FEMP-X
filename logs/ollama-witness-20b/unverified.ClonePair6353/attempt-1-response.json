@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the same 8‑byte big‑endian value from the byte array and behave identically for all valid inputs. No deterministic input can cause a difference in return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1013,
+  "eval_count": 152,
+  "total_duration": 1439617300,
+  "load_duration": 2678900
+}

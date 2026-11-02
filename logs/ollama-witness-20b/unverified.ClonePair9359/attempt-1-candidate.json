@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum element of the array in the same way. For any non‑null array, method1 initializes the result to sn[0] and then iterates from i=0, while method2 initializes max to vet[0] and iterates from i=1. The comparison logic is identical, and the initial value is the same element. For empty arrays or null, both throw ArrayIndexOutOfBoundsException. Therefore no concrete input distinguishes the two methods."
+}

@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair12458",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),Integer(1)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),Integer(1)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),Integer(1)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),Integer(1)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 pads only up to len - s.length(), so when len < s.length() it returns s unchanged. method2 pads from s.length() up to n, so when n > s.length() it adds spaces. With s=\"abc\", len=1, n=1 both return \"abc\". With the same input but n=5, method1 still returns \"abc\" while method2 returns \"abc  \". Thus the same arguments produce different return values.",
+    "arguments_java": [
+      "\"abc\"",
+      "1"
+    ],
+    "parameter_types": [
+      "String",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 150.104
+}

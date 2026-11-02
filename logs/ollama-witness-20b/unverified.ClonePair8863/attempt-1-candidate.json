@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations on the varargs array: they access the first element and iterate through the rest to find the maximum. For any non‑null array, the logic and control flow are the same, and for null or empty arrays both throw a NullPointerException or ArrayIndexOutOfBoundsException in the same way. No deterministic input can distinguish the two methods."
+}

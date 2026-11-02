@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They either return the same sliced array or throw the same exception types under equivalent conditions. No concrete separating test case can be constructed without violating the constraints."
+}

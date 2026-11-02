@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, when the pattern string is empty, both methods enter an infinite loop due to the same logic (regionMatches with length 0 always succeeds and the index calculation causes the loop counter to stay at 0). For all other cases, the methods perform the same string replacement or return the original string, and they both throw NullPointerException when any argument is null. No concrete input can distinguish the two implementations."
+}

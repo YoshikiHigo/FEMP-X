@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical substring search logic; exhaustive reasoning shows no input distinguishes their return values, side effects, or exception behavior."
+}

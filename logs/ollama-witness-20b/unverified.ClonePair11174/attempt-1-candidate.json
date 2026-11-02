@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They handle nulls, empty strings, and normal replacements in the same way, and any pathological cases (such as empty search strings) lead to the same infinite loop in both implementations. No concrete input can be constructed that causes one method to terminate or produce a different result while the other does not."
+}

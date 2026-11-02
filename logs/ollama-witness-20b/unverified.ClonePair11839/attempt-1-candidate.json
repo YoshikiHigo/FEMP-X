@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both throw the same exceptions for null or negative widths, and produce the same padded or truncated strings for all other cases. No concrete input can distinguish their return values, side effects, or termination characteristics."
+}

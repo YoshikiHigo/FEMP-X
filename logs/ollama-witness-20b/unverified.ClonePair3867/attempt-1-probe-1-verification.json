@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair3867",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(0.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][double[][],null]",
+        "inputAfterSnapshot": "java.lang.Object[][double[][],null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(0.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][double[][],null]",
+        "inputAfterSnapshot": "java.lang.Object[][double[][],null]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(0.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][double[][],null]",
+        "inputAfterSnapshot": "java.lang.Object[][double[][],null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(0.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][double[][],null]",
+        "inputAfterSnapshot": "java.lang.Object[][double[][],null]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 returns 0.0 when the first argument is an empty array and the second argument is null, whereas method2 throws a NullPointerException because it attempts to access ovx.length on a null reference.",
+    "arguments_java": [
+      "new double[]{}",
+      "null"
+    ],
+    "parameter_types": [
+      "double[]",
+      "double[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 161.438
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally identical; they perform the same length check and element-wise comparison and return the same boolean value for any byte array inputs. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1185,
+  "eval_count": 65,
+  "total_duration": 906179000,
+  "load_duration": 3241000
+}

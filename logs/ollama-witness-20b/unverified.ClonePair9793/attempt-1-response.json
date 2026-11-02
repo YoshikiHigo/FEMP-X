@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic: they advance the index past leading whitespace characters. For any input string (including null) and any integer index, the two methods either return the same index or throw the same exception. No deterministic, bounded input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1045,
+  "eval_count": 177,
+  "total_duration": 1479125200,
+  "load_duration": 5595800
+}

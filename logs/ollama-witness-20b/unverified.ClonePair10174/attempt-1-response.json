@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical null checks and delegate to Integer.valueOf(String) (via parseInt and then valueOf(int)), which produce the same Integer objects for all valid inputs and throw the same exceptions for invalid inputs. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 757,
+  "eval_count": 299,
+  "total_duration": 2372306800,
+  "load_duration": 15217400
+}

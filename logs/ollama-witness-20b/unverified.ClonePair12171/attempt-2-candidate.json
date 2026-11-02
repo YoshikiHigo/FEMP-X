@@ -1,0 +1,16 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns the index of the first occurrence of the target character starting from startIndex, while method2 treats a backslash as an escape and skips the following character. With the input string \"\\\\a\", startIndex 0 and quoteChar 'a', method1 finds the 'a' at index 1, but method2 skips the escaped 'a' and returns -1.",
+  "arguments_java": [
+    "\"\\\\a\"",
+    "0",
+    "'a'"
+  ],
+  "parameter_types": [
+    "String",
+    "int",
+    "char"
+  ],
+  "void_return": false
+}

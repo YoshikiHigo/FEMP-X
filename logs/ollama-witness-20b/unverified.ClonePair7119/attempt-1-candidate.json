@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical bit‑shifting and addition operations on the same four bytes; for any byte array and offset they produce the same integer result. No input can distinguish them."
+}

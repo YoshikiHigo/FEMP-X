@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all valid inputs: they either return the same string or throw the same type of exception under the same conditions. No concrete input can distinguish their return values, side effects, or termination characteristics.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1158,
+  "eval_count": 599,
+  "total_duration": 4930033700,
+  "load_duration": 20784900
+}

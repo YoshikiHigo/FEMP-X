@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical observable behavior for all possible inputs: they both return the same string value (or null) and have no side effects. No concrete separating test case can be constructed under the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1199,
+  "eval_count": 334,
+  "total_duration": 2942145400,
+  "load_duration": 4003100
+}

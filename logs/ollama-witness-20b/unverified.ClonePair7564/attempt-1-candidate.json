@@ -1,0 +1,15 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 uses equals to compare the two objects, while method2 only compares class and hashCode.  The test objects below override equals to compare a single integer field but provide a hashCode implementation that deliberately returns a different value for equal objects.  Consequently, method1 returns true (the objects are equal) whereas method2 returns false (their hashCodes differ).",
+  "arguments_java": [
+    "new TestObj(42)",
+    "new TestObj(42)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

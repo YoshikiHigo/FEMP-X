@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical string replacement logic and handle all inputs in the same way; no concrete input can distinguish their behavior."
+}

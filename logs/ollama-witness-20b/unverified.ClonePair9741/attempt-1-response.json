@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical range‑normalisation for all finite double inputs, and they both enter the same infinite loop for ±Infinity or NaN. No concrete input can be found that distinguishes their return values, side effects, or termination behaviour.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 996,
+  "eval_count": 617,
+  "total_duration": 4841507400,
+  "load_duration": 2045200
+}

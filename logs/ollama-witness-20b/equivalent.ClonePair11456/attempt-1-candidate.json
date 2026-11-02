@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical bit‑shifting and OR operations over the same byte range; for every possible input (including null, empty arrays, negative sizes, and out‑of‑bounds indices) they either produce the same result or throw the same exception. No concrete input can distinguish their behavior."
+}

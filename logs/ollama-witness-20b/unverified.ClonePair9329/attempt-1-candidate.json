@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same linear scan to find the maximum value in the array; they have identical logic, variable names, and loop structure. No input can cause differing return values, side effects, or exceptions beyond those already covered by the existing tests."
+}

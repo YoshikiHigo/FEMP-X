@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic: they return false when array lengths differ, otherwise compare each element and return true only if all elements match. No input can cause a differing return value, side effect, exception, or non‑termination."
+}

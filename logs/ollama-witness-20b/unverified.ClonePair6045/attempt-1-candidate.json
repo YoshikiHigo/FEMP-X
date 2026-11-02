@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 compares only length and element equality, ignoring array runtime type, so it returns true for an Object[] and a String[] of the same length with equal elements. method2 checks that the two arrays have the same runtime class; the differing classes cause it to return false.",
+  "arguments_java": [
+    "new Object[]{new Object[]{\"x\"}}",
+    "new String[]{\"x\"}"
+  ],
+  "parameter_types": [
+    "Object[]",
+    "Object[]"
+  ],
+  "void_return": false
+}

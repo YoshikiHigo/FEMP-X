@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair2911",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 1],byte[][1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 1],byte[][1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 1],byte[][1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 1],byte[][1]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 1],byte[][1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 1],byte[][1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 1],byte[][1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 1],byte[][1]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 compares bytes cyclically and returns true when the first array is a repetition of the second array, even if lengths differ. method2 requires equal lengths and therefore returns false for such inputs.",
+    "arguments_java": [
+      "new byte[]{1,1}",
+      "new byte[]{1}"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "byte[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 166.554
+}

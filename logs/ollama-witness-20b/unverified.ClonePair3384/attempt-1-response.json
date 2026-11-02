@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible inputs: they return false when the lengths differ, return false upon the first mismatch, and return true only when all corresponding elements are equal. No input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 969,
+  "eval_count": 158,
+  "total_duration": 1577533000,
+  "load_duration": 2548800
+}

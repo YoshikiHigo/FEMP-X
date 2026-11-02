@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the maximum of a non‑null, non‑empty double array in exactly the same way; no input can cause one to return a different value, throw a different exception, or terminate differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 989,
+  "eval_count": 185,
+  "total_duration": 1753803800,
+  "load_duration": 2662200
+}

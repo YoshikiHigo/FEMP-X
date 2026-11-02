@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte‑array slice comparisons; for all deterministic, bounded inputs they produce the same result (including exceptions). No concrete separating input was found."
+}

@@ -1,0 +1,60 @@
+{
+  "key": "equivalent.ClonePair8339",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(6)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(32)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(32)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(6)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(32)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(32)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(6)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(32)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(32)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(6)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(32)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(32)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For input 32, method1 returns 6 while method2 returns 1.",
+    "arguments_java": [
+      "32"
+    ],
+    "parameter_types": [
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 112.586
+}

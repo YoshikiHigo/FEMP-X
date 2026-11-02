@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both iterate from the given offset until a non‑whitespace character is found or the end of the string is reached, and they both throw the same exceptions (StringIndexOutOfBoundsException or NullPointerException) under the same conditions. No concrete input can be constructed that causes one method to return a different value, throw a different exception type, or terminate differently than the other."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 returns 0 when both arguments are the same reference, even if that reference’s compareTo throws an exception. method2 calls compareTo on the arguments when both are non‑null, so it propagates the exception.\",\"arguments_java\":[\"new Comparable[]{new Comparable(){public int compareTo(Object o){throw new RuntimeException();}}}[0]\",\"new Comparable[]{new Comparable(){public int compareTo(Object o){throw new RuntimeException();}}}[0]\"],\"parameter_types\":[\"Comparable\",\"Comparable\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1102,
+  "eval_count": 703,
+  "total_duration": 5669489600,
+  "load_duration": 2059700
+}

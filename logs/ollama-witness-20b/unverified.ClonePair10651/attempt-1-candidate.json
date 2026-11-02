@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, when the substring to replace is empty, both methods enter an infinite loop due to the same logic of repeatedly matching an empty pattern and not advancing the input string. For all other cases, the replacement logic in method1 and method2 produces the same result. No concrete separating input can be constructed that satisfies the constraints of the task."
+}

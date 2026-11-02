@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods evaluate the same set of conditions on the input character and return the same boolean value for any possible char input. No input can cause one method to return true while the other returns false, or to throw an exception, or to exhibit any other differing behavior. Therefore, no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 759,
+  "eval_count": 110,
+  "total_duration": 899780100,
+  "load_duration": 2036900
+}

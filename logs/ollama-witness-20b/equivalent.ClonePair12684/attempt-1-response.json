@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical equality checks for all possible input strings and return the same Class objects or null. No input can cause a difference in return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1000,
+  "eval_count": 212,
+  "total_duration": 2016679900,
+  "load_duration": 3373500
+}

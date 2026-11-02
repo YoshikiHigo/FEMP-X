@@ -1,0 +1,16 @@
+{
+  "found": true,
+  "difference_type": "no_termination",
+  "reason": "When the search string is empty, method1 enters an infinite loop because indexOf(\"\",0) always returns 0 and the loop never advances the search index. Method2 handles the empty search string by inserting the replacement string at the beginning and then advancing the search index by the length of the replacement, eventually terminating. Thus the same inputs produce a non‑terminating execution for method1 and a normal return for method2.",
+  "arguments_java": [
+    "\"abc\"",
+    "\"\"",
+    "\"x\""
+  ],
+  "parameter_types": [
+    "String",
+    "String",
+    "String"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical equality checks for all possible input strings and return the same Class objects or null. No input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the same 32‑bit unsigned value from four consecutive bytes and behave identically for all valid inputs. They both throw the same exceptions (ArrayIndexOutOfBoundsException or NullPointerException) under the same conditions, and there is no input that causes one to terminate normally while the other does not or produces a different return value.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1408,
+  "eval_count": 343,
+  "total_duration": 3011673200,
+  "load_duration": 2913200
+}

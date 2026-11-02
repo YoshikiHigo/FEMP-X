@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; they use the same constants and control flow. The only syntactic difference is the array creation syntax (array literal vs. new double[]{...}), which does not affect runtime behavior. Therefore no concrete input can distinguish method1 from method2."
+}

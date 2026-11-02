@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 catches NumberFormatException and returns the default value, whereas method2 propagates the exception when the property value is not a valid integer.\",\"arguments_java\":[\"\\\"k\\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1081,
+  "eval_count": 201,
+  "total_duration": 1641559200,
+  "load_duration": 2037700
+}

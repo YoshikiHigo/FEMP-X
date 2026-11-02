@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 uses signed right shift (>>), which propagates the sign bit when shifting a negative int. method2 uses unsigned right shift (>>>), which does not propagate the sign bit. For a negative input value, the three most significant bytes produced by method1 will differ from those produced by method2, resulting in different byte arrays.\",\"arguments_java\":[\"new int[]{-1}\"],\"parameter_types\":[\"int[]\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1240,
+  "eval_count": 226,
+  "total_duration": 2134414300,
+  "load_duration": 4650600
+}

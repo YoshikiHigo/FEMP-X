@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute base^exponent using the same arithmetic and control flow for all integer inputs; no input causes a differing return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1096,
+  "eval_count": 532,
+  "total_duration": 4512287500,
+  "load_duration": 3401800
+}

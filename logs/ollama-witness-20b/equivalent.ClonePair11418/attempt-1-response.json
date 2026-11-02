@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods contain identical control flow and operations; for any input that does not cause an exception, they produce the same result. For inputs that cause an exception (e.g., null header or out‑of‑bounds indices), both methods throw the same type of exception. No distinguishing input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1422,
+  "eval_count": 218,
+  "total_duration": 2018337100,
+  "load_duration": 15721600
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all possible String inputs. method1 returns null for null or any string that cannot be parsed by Double.valueOf, and otherwise returns the parsed Double. method2 first checks for null or a string that is empty after trim, returning null in those cases; otherwise it attempts to parse the original string with Double.valueOf, catching any Exception but still returning the parsed Double or null if parsing failed. Since Double.valueOf accepts the same set of strings as method1 (including those with surrounding whitespace) and both methods return null for unparsable strings, there is no input that distinguishes their return values, side effects, or termination behavior. Therefore no concrete separating test case exists.}"
+}

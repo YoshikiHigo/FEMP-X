@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair8009",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Class[][java.lang.Class(aW50)],java.lang.Object[][Integer(5)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Class[][java.lang.Class(aW50)],java.lang.Object[][Integer(5)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Class[][java.lang.Class(aW50)],java.lang.Object[][Integer(5)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Class[][java.lang.Class(aW50)],java.lang.Object[][Integer(5)]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Class[][java.lang.Class(aW50)],java.lang.Object[][Integer(5)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Class[][java.lang.Class(aW50)],java.lang.Object[][Integer(5)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Class[][java.lang.Class(aW50)],java.lang.Object[][Integer(5)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Class[][java.lang.Class(aW50)],java.lang.Object[][Integer(5)]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns false because int.class.isInstance(Integer) is false, whereas method2 returns true by treating Integer as a valid instance of int.class via the special Integer.TYPE check.",
+    "arguments_java": [
+      "new Class[]{int.class}",
+      "new Object[]{5}"
+    ],
+    "parameter_types": [
+      "Class[]",
+      "Object[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 161.934
+}

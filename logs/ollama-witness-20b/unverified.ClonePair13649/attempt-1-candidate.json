@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of both methods, they produce identical results for all valid inputs and throw the same exceptions for invalid inputs. No concrete separating input was found."
+}

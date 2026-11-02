@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair6719",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(72057594037927936)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 0, 0, 0, 0, 0, 0, 0]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 0, 0, 0, 0, 0, 0, 0]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(72057594037927936)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 0, 0, 0, 0, 0, 0, 0]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 0, 0, 0, 0, 0, 0, 0]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(72057594037927936)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 0, 0, 0, 0, 0, 0, 0]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 0, 0, 0, 0, 0, 0, 0]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(72057594037927936)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 0, 0, 0, 0, 0, 0, 0]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 0, 0, 0, 0, 0, 0, 0]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 constructs a 64‑bit big‑endian value by shifting left 8 bits before adding each byte, so the first byte occupies bits 56–63. method2 shifts after ORing, so the first byte occupies bits 48–55. For an array where the first byte is non‑zero, the two results differ.",
+    "arguments_java": [
+      "new byte[]{1,0,0,0,0,0,0,0}"
+    ],
+    "parameter_types": [
+      "byte[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 166.097
+}

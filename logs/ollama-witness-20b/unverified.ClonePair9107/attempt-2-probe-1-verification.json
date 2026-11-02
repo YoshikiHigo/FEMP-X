@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair9107",
+  "stable": true,
+  "differenceType": "exception",
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NumberFormatException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NumberFormatException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 throws NumberFormatException when the system property value is not a valid integer, whereas method2 catches the exception and returns the default value.",
+    "arguments_java": [
+      "\"java.version\"",
+      "0"
+    ],
+    "parameter_types": [
+      "String",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 142.312
+}

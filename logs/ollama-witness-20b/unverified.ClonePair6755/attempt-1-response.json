@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical operations: they iterate over the input byte array, skip bytes with values 9,10,13,32 (tab, newline, carriage return, space), copy the remaining bytes into a new array, and return that array. For any non‑null input, both methods produce the same output array. For a null input, both throw a NullPointerException. No deterministic, bounded input can distinguish their behaviors.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1145,
+  "eval_count": 175,
+  "total_duration": 1686618800,
+  "load_duration": 11826900
+}

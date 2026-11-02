@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical logical checks on the input byte arrays: they handle nulls, compare lengths, and compare each element in order (method1 iterates backwards, method2 forwards). For any deterministic, bounded input, both methods will return the same boolean value, throw the same exception type (none), and have no side effects. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1261,
+  "eval_count": 129,
+  "total_duration": 1372859400,
+  "load_duration": 4856400
+}

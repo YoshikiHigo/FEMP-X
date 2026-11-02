@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return null for null or any string that causes Integer.parseInt or new Integer(String) to throw a NumberFormatException, and otherwise return the parsed integer. No input can distinguish their return values, side effects, or exception handling."
+}

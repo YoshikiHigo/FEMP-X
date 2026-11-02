@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform the same null check and attempt to construct a Long from the string, returning null on NumberFormatException. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 873,
+  "eval_count": 56,
+  "total_duration": 859957200,
+  "load_duration": 2558100
+}

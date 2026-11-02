@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the minimum of a float array in identical ways; they handle empty, null, and non-empty arrays the same, so no concrete input distinguishes them."
+}

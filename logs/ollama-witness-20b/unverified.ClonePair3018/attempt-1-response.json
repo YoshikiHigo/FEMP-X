@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic for comparing two byte arrays: they return false if either array is null, return false if lengths differ, and otherwise compare element by element, returning true only if all elements match. No input can cause a differing return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1266,
+  "eval_count": 100,
+  "total_duration": 1133312100,
+  "load_duration": 8185400
+}

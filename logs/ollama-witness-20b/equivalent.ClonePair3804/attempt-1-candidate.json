@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic on the input Locale; the only difference is the initial capacity of the ArrayList, which does not affect the returned list contents. Therefore, for any valid Locale (including null), the two methods produce the same result, and no concrete separating input can be found."
+}

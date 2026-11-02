@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns true when the two objects are equal but of different classes, because it only checks equals. method2 additionally checks that the runtime classes are identical before calling equals, so it returns false for such a pair.",
+  "arguments_java": [
+    "new java.util.Date(0L)",
+    "new java.sql.Date(0L)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both method1 and method2 implement the same leap year check logic; they return identical boolean results for all integer inputs and have no side effects or exceptions."
+}

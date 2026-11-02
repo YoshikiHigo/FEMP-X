@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return true when the two arguments are the same reference (including both null), return false when one is null and the other is not, return false when lengths differ, and otherwise compare elements pairwise. No input can distinguish their return values, side effects, or termination."
+}

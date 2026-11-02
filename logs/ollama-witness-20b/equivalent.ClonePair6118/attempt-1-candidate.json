@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical computations for all possible float[] inputs, including null, insufficient length, NaN, Infinity, and any finite non‑zero length. The conditional checks are equivalent for all reachable values of len, so no concrete separating input exists."
+}

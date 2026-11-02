@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible int[] inputs, including nulls, empty arrays, and arrays of equal or unequal lengths. They both return true only when the arrays are non-null, of equal length, and contain identical elements at every index, and they both throw a NullPointerException when either argument is null. No concrete input can distinguish their outputs or side effects."
+}

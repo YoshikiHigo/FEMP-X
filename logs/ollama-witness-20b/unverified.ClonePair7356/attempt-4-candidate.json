@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods interpret the 4 bytes starting at the given index as a little‑endian 32‑bit signed integer. For any byte array and offset, the two implementations produce identical results, so no concrete separating input exists."
+}

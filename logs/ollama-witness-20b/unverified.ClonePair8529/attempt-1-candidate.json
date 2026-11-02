@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 attempts to construct a Double directly from the string, which throws NumberFormatException for strings containing leading/trailing whitespace such as \" 1.0\"; the exception is caught and null is returned. method2 trims the string first, so \" 1.0\" becomes \"1.0\" and Double.valueOf succeeds, returning a Double(1.0). Thus the same input yields null from method1 and 1.0 from method2.",
+  "arguments_java": [
+    "\" 1.0\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

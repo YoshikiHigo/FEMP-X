@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 uses an iterator that throws a RuntimeException on next(), whereas method2 accesses elements via get(i) which succeeds.\",\"arguments_java\":[\"new java.util.AbstractList<String>(){public int size(){return 1;}public String get(int i){return \\\"x\\\";}public java.util.Iterator<String> iterator(){return new java.util.Iterator<String>(){public boolean hasNext(){return true;}public String next(){throw new RuntimeException(\\\"boom\\\");}public void remove(){}};}}\"],\"parameter_types\":[\"java.util.List\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1016,
+  "eval_count": 439,
+  "total_duration": 3522619600,
+  "load_duration": 6310300
+}

@@ -1,0 +1,64 @@
+{
+  "key": "unverified.ClonePair10597",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String()",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(),String(YQ==),String(Yg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(),String(YQ==),String(Yg==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String()",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(),String(YQ==),String(Yg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(),String(YQ==),String(Yg==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String()",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(),String(YQ==),String(Yg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(),String(YQ==),String(Yg==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String()",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(),String(YQ==),String(Yg==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(),String(YQ==),String(Yg==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "no_termination",
+    "reason": "method1 returns an empty string when the input string is empty and the substring to replace is non‑empty, while method2 enters an infinite loop because it repeatedly searches for an empty oldString.",
+    "arguments_java": [
+      "\"\"",
+      "\"a\"",
+      "\"b\""
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 145.78
+}

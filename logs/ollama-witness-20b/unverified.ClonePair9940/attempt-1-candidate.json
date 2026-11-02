@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible char inputs; method1 returns true for the same set of characters as method2 and false otherwise. No concrete input can distinguish their behavior."
+}

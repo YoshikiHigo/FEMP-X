@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they iterate from the given index, break when a character from the charset is found, and return the distance. The only difference is the increment style (++i vs i++), which does not affect the outcome. Therefore no concrete input can distinguish their behavior."
+}

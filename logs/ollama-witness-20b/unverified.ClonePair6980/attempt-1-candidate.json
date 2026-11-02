@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte extraction and conversion; for any valid or invalid input they either return the same integer or throw the same exception type. No concrete separating input exists."
+}

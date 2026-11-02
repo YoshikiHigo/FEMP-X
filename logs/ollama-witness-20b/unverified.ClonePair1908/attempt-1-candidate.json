@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible byte[] inputs. Both check reference equality first, then handle nulls symmetrically, compare lengths, and finally compare contents element‑wise using either a direct comparison loop (method1) or an XOR accumulation (method2). For any pair of arrays the outcome (true/false) and side effects are the same, so no concrete separating test case exists."
+}

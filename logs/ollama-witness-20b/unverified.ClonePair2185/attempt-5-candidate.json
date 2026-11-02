@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible byte[] inputs. Both correctly handle nulls, length mismatches, and element-wise comparison, producing identical boolean results without side effects or exceptions."
+}

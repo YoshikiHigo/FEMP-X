@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs. Both return true when the two references are equal (including the case where both are null), return false when one is null and the other is not, and otherwise compare lengths and element-wise equality. No input can cause a divergence in return value, side effects, exceptions, or non‑termination."
+}

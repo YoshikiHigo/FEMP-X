@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"Both methods write the same 32‑bit integer value derived from the float 1.0f, but method1 writes it in little‑endian order while method2 writes it in big‑endian order. Thus the returned byte arrays differ.\",\"arguments_java\":[\"new float[]{1.0f}\",\"0\",\"1\",\"new byte[4]\",\"0\"],\"parameter_types\":[\"float[]\",\"int\",\"int\",\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1615,
+  "eval_count": 348,
+  "total_duration": 3116337100,
+  "load_duration": 6054800
+}

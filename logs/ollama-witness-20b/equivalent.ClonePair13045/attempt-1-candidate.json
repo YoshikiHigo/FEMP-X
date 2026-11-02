@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical computations: they iterate over the first up to 12 characters of the input string, accumulate a base‑37 hash, then strip trailing factors of 37. The only syntactic difference is the use of a while‑loop versus a for‑loop for the stripping step, which does not affect the result. No input can cause a difference in return value, side effects, or termination behavior."
+}

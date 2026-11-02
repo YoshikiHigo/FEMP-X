@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are byte‑for‑byte identical; they perform the same bit‑wise operations and array accesses on the same inputs. No deterministic input can produce a different return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 977,
+  "eval_count": 72,
+  "total_duration": 916092500,
+  "load_duration": 3581400
+}

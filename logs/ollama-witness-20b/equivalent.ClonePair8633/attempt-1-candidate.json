@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical clamping of an int to the short range; for any int input they return the same short value. No input can distinguish their behavior."
+}

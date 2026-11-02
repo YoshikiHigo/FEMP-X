@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they parse each two‑character hex substring of the input string into a byte and store it in a new array. For any input string (including null, empty, or any even‑length hex string), both methods produce the same byte array and exhibit the same side effects and exception behavior. No concrete input can distinguish them."
+}

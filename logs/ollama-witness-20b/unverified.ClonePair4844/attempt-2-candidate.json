@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical transformations for all possible char inputs. For any character outside the ASCII uppercase range 'A'–'Z', neither method alters the value, and for characters within that range both compute the same lowercase result using equivalent arithmetic. Therefore no concrete input can distinguish their behaviors."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the same 64‑bit value for all possible byte[] and offset inputs. Both construct the unsigned 7‑byte value from the lower 7 bits of each byte, then set the sign bit (bit 63) when the corresponding byte is negative. In method1 this is done by OR‑ing the appropriate mask; in method2 it is done by adding Long.MIN_VALUE. Since the initial value has bit 63 cleared, adding Long.MIN_VALUE is equivalent to OR‑ing that bit, and no other bits are affected. Therefore no concrete input can distinguish the two methods."
+}

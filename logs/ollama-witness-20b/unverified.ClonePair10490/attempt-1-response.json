@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods delegate to the same underlying parsing logic (Integer.parseInt via the Integer constructor) and handle null, empty, whitespace, and overflow cases identically. No deterministic input can produce a differing return value, side effect, exception type, or non‑termination between method1 and method2.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 759,
+  "eval_count": 259,
+  "total_duration": 2047980400,
+  "load_duration": 7346500
+}

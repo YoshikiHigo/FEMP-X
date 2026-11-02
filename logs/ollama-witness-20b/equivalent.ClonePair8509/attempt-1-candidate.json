@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible String inputs: they both return null for null or non‑numeric strings and return the parsed Double for numeric strings. No input can distinguish them."
+}

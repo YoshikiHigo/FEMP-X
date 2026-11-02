@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible byte[] inputs. Both perform null checks, length checks, and element-wise equality comparisons (method1 forwards, method2 backwards). They return the same boolean value for every input pair, and neither method mutates its arguments, throws exceptions, or has non‑terminating behavior. No concrete input can distinguish them."
+}

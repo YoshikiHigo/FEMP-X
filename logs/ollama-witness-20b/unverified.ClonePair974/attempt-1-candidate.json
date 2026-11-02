@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null checks, length comparisons, and element-wise equality checks on the input byte arrays. They neither mutate the inputs nor produce side effects, and they never throw exceptions for any valid byte[] inputs. Therefore, no concrete input can distinguish their behavior."
+}

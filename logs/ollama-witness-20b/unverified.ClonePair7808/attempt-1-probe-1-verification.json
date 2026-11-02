@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair7808",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(10)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(97)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(97)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(10)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(97)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(97)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(10)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(97)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(97)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(10)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(97)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(97)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For input 97 (character 'a'), method1 returns 0 while method2 returns 10.",
+    "arguments_java": [
+      "97"
+    ],
+    "parameter_types": [
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 162.722
+}

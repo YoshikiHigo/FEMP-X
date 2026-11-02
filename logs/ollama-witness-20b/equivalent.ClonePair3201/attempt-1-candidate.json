@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they iterate over the byte array, convert each byte to a two‑digit hexadecimal string (adding a leading zero for values < 16), and optionally insert the separator between elements. The code paths, variable names, and control flow are equivalent, so no input can distinguish their return values, side effects, or exception behavior."
+}

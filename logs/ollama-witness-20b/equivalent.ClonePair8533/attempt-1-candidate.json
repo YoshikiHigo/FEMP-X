@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks on the input string and delegate to Double.valueOf in the same circumstances. They return the same value or null for all possible String inputs, and neither mutates the argument or produces side effects. No concrete input can distinguish their behavior."
+}

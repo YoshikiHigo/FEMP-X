@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical bounds‑checked byte comparisons; for any deterministic, bounded input they either return the same boolean value or throw the same exception. No concrete separating test case exists."
+}

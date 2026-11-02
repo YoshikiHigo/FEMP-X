@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"method1 and method2 are equivalent for all String inputs; both perform null checks and compare string content using compareTo==0 and equals, which yield identical results for all possible String arguments.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 884,
+  "eval_count": 247,
+  "total_duration": 2201518000,
+  "load_duration": 6049600
+}

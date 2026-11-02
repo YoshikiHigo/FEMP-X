@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical logic for all deterministic, bounded inputs. No input can cause a difference in return value, side effects, or exception type beyond the shared NullPointerException when the hex string is null. No non‑termination scenario exists either.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1702,
+  "eval_count": 420,
+  "total_duration": 3662525300,
+  "load_duration": 22263900
+}

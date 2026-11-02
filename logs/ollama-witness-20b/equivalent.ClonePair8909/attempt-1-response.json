@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods implement identical logic; for any Object value and boolean isRemoveEmptyStrings, they return the same result. No input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 892,
+  "eval_count": 71,
+  "total_duration": 944423600,
+  "load_duration": 19646200
+}

@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 accesses list.get(0) which throws a RuntimeException, whereas method2 iterates over the list and returns the element without throwing.",
+  "arguments_java": [
+    "new java.util.AbstractList<String>(){public String get(int i){throw new RuntimeException(\"get\");}public int size(){return 1;}public java.util.Iterator<String> iterator(){return new java.util.Iterator<String>(){boolean has=true;public boolean hasNext(){return has;}public String next(){has=false;return \"x\";}public void remove(){}};} }",
+    "\\'\\0'"
+  ],
+  "parameter_types": [
+    "java.util.List",
+    "char"
+  ],
+  "void_return": false
+}

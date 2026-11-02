@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible inputs. Both perform the same bounds checks and delegate to System.arraycopy with equivalent arguments, so no concrete separating input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 901,
+  "eval_count": 298,
+  "total_duration": 2630502700,
+  "load_duration": 4611700
+}

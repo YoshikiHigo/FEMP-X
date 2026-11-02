@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte extraction from a byte array starting at the given offset. For all valid inputs (non‑null array with at least four bytes from the offset) they compute the same 32‑bit integer. For invalid inputs they both throw the same type of exception (ArrayIndexOutOfBoundsException or NullPointerException). No deterministic, bounded input can distinguish their behavior."
+}

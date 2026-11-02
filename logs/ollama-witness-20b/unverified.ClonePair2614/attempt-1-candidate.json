@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same boolean for all possible byte[] inputs, including nulls, empty arrays, equal and unequal contents, and differing lengths. No input can cause a differing return value, side effect, exception type, or non‑termination."
+}

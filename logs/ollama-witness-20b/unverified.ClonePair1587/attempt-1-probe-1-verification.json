@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair1587",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2],byte[][3, 2]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2],byte[][3, 2]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2],byte[][3, 2]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2],byte[][3, 2]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2],byte[][3, 2]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2],byte[][3, 2]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2],byte[][3, 2]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2],byte[][3, 2]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns false when any byte differs, while method2 overwrites the result on each iteration and returns the comparison of the last pair. For input arrays of equal length where all bytes match except the last, method1 returns false but method2 returns true.",
+    "arguments_java": [
+      "new byte[]{1,2}",
+      "new byte[]{3,2}"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "byte[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 159.479
+}

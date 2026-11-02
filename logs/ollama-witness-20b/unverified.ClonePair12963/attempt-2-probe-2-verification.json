@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair12963",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-2147483648)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(-2147483648)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(-2147483648)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-2147483648)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(-2147483648)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(-2147483648)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-2147483648)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(-2147483648)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(-2147483648)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-2147483648)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(-2147483648)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(-2147483648)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For input Integer.MIN_VALUE the two methods behave differently. In method1 the first comparison assigns m=MAX and the second comparison is not evaluated because of short‑circuiting, so the method returns MAX. In method2 the second branch is taken and the method returns MIN.",
+    "arguments_java": [
+      "-2147483648L"
+    ],
+    "parameter_types": [
+      "long"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 141.713
+}

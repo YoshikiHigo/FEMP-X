@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical operations: they iterate over the byte array, convert each byte to a two‑digit hexadecimal string (adding a leading zero for values < 16), and optionally insert the separator between elements. The code paths, variable names, and control flow are equivalent, so no input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1196,
+  "eval_count": 101,
+  "total_duration": 1154771600,
+  "load_duration": 7436400
+}

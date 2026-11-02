@@ -1,0 +1,63 @@
+{
+  "key": "unverified.ClonePair7735",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(1000),Date(1500)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(1000),Date(1500)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(1000),Date(1500)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(1000),Date(1500)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(1000),Date(1500)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(1000),Date(1500)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(1000),Date(1500)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(1000),Date(1500)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 compares Date values by truncating to seconds, while method2 uses Date.equals which compares milliseconds. For two Date objects that differ only in milliseconds but fall within the same second, method1 returns true whereas method2 returns false.",
+    "arguments_java": [
+      "date(1000L)",
+      "date(1500L)"
+    ],
+    "parameter_types": [
+      "Object",
+      "Object"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 157.581
+}

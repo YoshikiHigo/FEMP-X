@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of all possible combinations of null and non‑null boolean arrays, including equal references, differing lengths, and differing element values, both methods exhibit identical control flow and return values. No concrete input can be constructed that causes a divergence in return value, side effect, exception, or non‑termination between method1 and method2.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1204,
+  "eval_count": 748,
+  "total_duration": 6011862400,
+  "load_duration": 2649900
+}

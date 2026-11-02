@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks and return the same boolean value for any pair of short arrays. No input can distinguish their behavior."
+}

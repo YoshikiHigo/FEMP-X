@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all deterministic, bounded inputs. Both split the input string by the token in the same way, handling edge cases (empty strings, nulls, tokens not present, etc.) identically. No concrete input can be constructed that causes one method to return a different result, throw a different exception type, or terminate differently while the other behaves otherwise.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1222,
+  "eval_count": 773,
+  "total_duration": 6387222000,
+  "load_duration": 2022800
+}

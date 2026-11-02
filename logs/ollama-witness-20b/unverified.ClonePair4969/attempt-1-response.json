@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical logic: they retrieve a property value from the given Properties object and return either the parsed integer or the default value. The only potential exception is a NullPointerException when the Properties argument is null, which occurs in the same way for both methods. No input can cause one method to behave differently from the other.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 886,
+  "eval_count": 128,
+  "total_duration": 1341270400,
+  "load_duration": 5782700
+}

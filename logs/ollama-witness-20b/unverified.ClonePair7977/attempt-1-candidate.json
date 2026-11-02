@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For inputs a=\"\" and b=null, method1 returns false (since a is not null and a.equals(b) is false), whereas method2 returns true (x is not null, y is null, and x.length()==0 triggers a true return).",
+  "arguments_java": [
+    "\"\"",
+    "null"
+  ],
+  "parameter_types": [
+    "String",
+    "String"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all valid inputs; they both interpret the 8 bytes starting at the given offset as a little‑endian signed 64‑bit value. No deterministic, bounded input can produce a differing return value, side effect, exception type, or non‑termination."
+}

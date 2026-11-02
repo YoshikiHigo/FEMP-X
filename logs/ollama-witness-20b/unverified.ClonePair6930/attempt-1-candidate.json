@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical 4‑byte unsigned integer extraction from a byte array starting at the given offset. They both throw the same exceptions (ArrayIndexOutOfBoundsException or NullPointerException) under the same conditions, and produce the same integer result for all valid inputs. No concrete input can distinguish their behavior."
+}

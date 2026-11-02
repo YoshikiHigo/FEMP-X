@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all possible combinations of null and non‑null values for the two string parameters, both methods exhibit identical behavior for every input. No concrete input can be constructed that causes a divergence in return value, side effect, exception, or termination."
+}

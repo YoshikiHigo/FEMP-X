@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical arithmetic transformations for all double inputs. Both normalize the angle by repeatedly adding or subtracting 360 until the result lies within the inclusive range [-180, 180]. No input can cause a divergence in return value, side effect, exception, or non‑termination."
+}

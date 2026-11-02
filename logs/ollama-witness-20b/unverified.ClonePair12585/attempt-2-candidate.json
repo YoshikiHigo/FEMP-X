@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "When the second argument is negative, method1 attempts to create a char array of negative length, throwing NegativeArraySizeException, whereas method2 clamps the padding to zero and returns normally.",
+  "arguments_java": [
+    "\"abc\"",
+    "-1"
+  ],
+  "parameter_types": [
+    "String",
+    "int"
+  ],
+  "void_return": false
+}

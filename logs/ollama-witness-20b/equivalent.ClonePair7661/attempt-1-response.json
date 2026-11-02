@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible String inputs: they both return a Byte parsed from the string when it represents a valid byte value, and they both return null for null inputs or for strings that cannot be parsed as a byte. No concrete input can distinguish their outputs or side effects.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 754,
+  "eval_count": 165,
+  "total_duration": 1682204200,
+  "load_duration": 3307400
+}

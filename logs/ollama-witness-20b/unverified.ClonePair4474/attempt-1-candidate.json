@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of the array in the same way; for any input array (including empty, null, or non‑empty) they either throw the same exception or return the same value. No distinguishing behavior can be observed with deterministic, bounded inputs."
+}

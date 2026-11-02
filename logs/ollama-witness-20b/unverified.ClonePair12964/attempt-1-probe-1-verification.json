@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair12964",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(2147483647)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(2147483648)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(2147483648)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(2147483647)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(2147483648)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(2147483648)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(2147483647)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(2147483648)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(2147483648)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(2147483647)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(2147483648)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(2147483648)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns Integer.MIN_VALUE for any long outside the range (Integer.MIN_VALUE, Integer.MAX_VALUE), whereas method2 returns Integer.MAX_VALUE for longs greater than Integer.MAX_VALUE and Integer.MIN_VALUE for longs less than Integer.MIN_VALUE. Thus for a long value greater than Integer.MAX_VALUE, the two methods produce different results.",
+    "arguments_java": [
+      "2147483648L"
+    ],
+    "parameter_types": [
+      "long"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 111.656
+}

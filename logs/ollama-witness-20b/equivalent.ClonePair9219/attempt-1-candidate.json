@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte-to-char conversion with the same array bounds checks; they throw the same exceptions for null or negative length inputs and produce identical character arrays for all valid inputs."
+}

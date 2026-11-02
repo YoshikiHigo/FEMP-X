@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair2185",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2],byte[][2, 1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2],byte[][2, 1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2],byte[][2, 1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2],byte[][2, 1]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2],byte[][2, 1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2],byte[][2, 1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2],byte[][2, 1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2],byte[][2, 1]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 compares all elements and returns false when any element differs; method2 only checks length when arrayOne is non‑null and never compares elements, so it returns true for equal lengths regardless of content.",
+    "arguments_java": [
+      "new byte[]{1,2}",
+      "new byte[]{2,1}"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "byte[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 143.737
+}

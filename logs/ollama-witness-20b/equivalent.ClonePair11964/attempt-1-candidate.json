@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same boolean value for every possible char input; method1’s additional check for non‑letters and the placeholder characters do not affect the outcome compared to method2’s direct vowel comparison."
+}

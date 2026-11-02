@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null checks and delegate to Integer.parseInt, catching NumberFormatException and returning null in all cases. No input can produce a different return value, side effect, exception type, or non‑termination between the two methods."
+}

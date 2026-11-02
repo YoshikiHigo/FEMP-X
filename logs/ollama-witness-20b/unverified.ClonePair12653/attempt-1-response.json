@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive reasoning, the two methods behave identically for all possible inputs within the constraints of the problem. No concrete separating test case can be constructed that distinguishes their return values, side effects, exceptions, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1164,
+  "eval_count": 634,
+  "total_duration": 4965227700,
+  "load_duration": 4829800
+}

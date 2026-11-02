@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs: they throw the same exceptions for null, odd-length, or non-hex inputs, and return the same byte arrays for even-length valid hex strings. No concrete input can be constructed that causes one method to succeed while the other fails or produces a different result."
+}

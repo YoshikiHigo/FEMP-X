@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 compares the first array cyclically against the second array, so if the first array consists of repeated copies of the second array it returns true even when the lengths differ. method2 requires the lengths to be equal, so it will return false for the same inputs.",
+  "arguments_java": [
+    "new byte[]{1,1}",
+    "new byte[]{1}"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "byte[]"
+  ],
+  "void_return": false
+}

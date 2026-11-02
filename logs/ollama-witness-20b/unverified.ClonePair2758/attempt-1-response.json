@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform the same comparison logic and return the same result for all possible byte array inputs. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1180,
+  "eval_count": 51,
+  "total_duration": 788628600,
+  "load_duration": 2794800
+}

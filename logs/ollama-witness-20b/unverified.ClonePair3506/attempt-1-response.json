@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible inputs. Both methods return true when the two array references are equal (including the case where both are null), and return false otherwise. No input can cause one method to return a different value, throw an exception, or exhibit non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 966,
+  "eval_count": 362,
+  "total_duration": 2939788200,
+  "load_duration": 5194700
+}

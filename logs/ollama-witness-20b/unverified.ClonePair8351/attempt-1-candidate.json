@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return true exactly when both arguments are non‑null and their trimmed lengths are greater than zero; otherwise they return false. No input can distinguish their behavior."
+}

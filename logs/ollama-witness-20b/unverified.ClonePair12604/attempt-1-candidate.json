@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they either return the original string, a truncated substring, or a padded string. Edge cases such as null input, negative width, or width larger than the string length result in the same exceptions or outputs in both methods. No concrete input can distinguish their return values, side effects, or termination behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all possible String inputs; method1 catches all Exceptions while method2 catches only NumberFormatException, but Integer.parseInt only throws NumberFormatException when parsing fails, and both return null in that case. No input can distinguish the two methods."
+}

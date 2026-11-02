@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical lexicographic comparison of byte arrays; no deterministic input can produce a differing result, side‑effect, or exception.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1193,
+  "eval_count": 161,
+  "total_duration": 1606063700,
+  "load_duration": 5370500
+}

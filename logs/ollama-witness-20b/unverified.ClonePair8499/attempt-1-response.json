@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 trims the input before parsing, so \\\" 1.0\\\" is parsed as 1.0, whereas method2 does not trim and throws NumberFormatException, resulting in null.\",\"arguments_java\":[\"\\\" 1.0\\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 755,
+  "eval_count": 174,
+  "total_duration": 1742279600,
+  "load_duration": 3393300
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For a non‑null, non‑empty string that becomes empty after trimming, method1 returns true when trimWhitespaces is true, whereas method2 returns false when consider_trim is false. The two methods receive the same argument values but interpret the boolean flag differently.\",\"arguments_java\":[\"\\\"   \\\"\",\"true\"],\"parameter_types\":[\"String\",\"boolean\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 869,
+  "eval_count": 489,
+  "total_duration": 4213305800,
+  "load_duration": 3310800
+}

@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair8474",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEg)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEg)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEg)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEg)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEg)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEg)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDEg)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDEg)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 parses the string directly and throws NumberFormatException for strings containing leading or trailing whitespace, whereas method2 trims only for the empty‑check and then uses Double.valueOf, which accepts surrounding whitespace and returns a valid Double. Thus for an input like \" 1 \" method1 returns null while method2 returns 1.0.",
+    "arguments_java": [
+      "\" 1 \""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 159.198
+}

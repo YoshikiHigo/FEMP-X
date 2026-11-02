@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 interprets the 8 bytes starting at offset in reverse order (big‑endian from offset+7 down to offset), while method2 interprets them in natural order (little‑endian from offset up). For a non‑symmetric byte array the resulting 64‑bit values differ.",
+  "arguments_java": [
+    "new byte[]{1,2,3,4,5,6,7,8}",
+    "0"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "int"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible String inputs: they both return null when the argument is null, and otherwise both delegate to Long parsing logic that throws NumberFormatException for the same set of malformed inputs. No deterministic, bounded input can distinguish their return values, side effects, or exception types."
+}

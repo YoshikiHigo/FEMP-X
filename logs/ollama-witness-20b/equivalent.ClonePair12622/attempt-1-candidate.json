@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the longest common prefix of the two input strings. For any pair of non‑null strings, they return the same result; for null inputs both throw a NullPointerException. No deterministic input can distinguish their behavior."
+}

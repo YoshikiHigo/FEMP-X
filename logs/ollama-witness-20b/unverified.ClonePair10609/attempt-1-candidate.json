@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no deterministic input can be constructed that causes one method to produce a different return value, side effect, exception type, or non‑termination while the other behaves differently. Both methods exhibit identical behavior for all possible combinations of the three String arguments, including nulls, empty strings, and strings of arbitrary length. Therefore, no concrete separating test case exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, when the substring to replace is the empty string, both methods enter an infinite loop due to the way they handle the index updates. For all other inputs, the methods produce the same output or throw the same exceptions. No concrete separating test case can be constructed that distinguishes the two implementations under the given constraints."
+}

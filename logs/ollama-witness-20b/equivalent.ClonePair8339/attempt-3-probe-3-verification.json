@@ -1,0 +1,60 @@
+{
+  "key": "equivalent.ClonePair8339",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(3)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(4)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(4)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(3)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(4)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(4)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(3)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(4)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(4)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(3)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(4)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(4)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For input 4, method1 returns 4 while method2 returns 3 due to different branching for values between 4 and 7.",
+    "arguments_java": [
+      "4"
+    ],
+    "parameter_types": [
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 122.952
+}

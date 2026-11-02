@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical bounds‑checked byte‑array comparisons; for any valid input (including edge cases such as empty arrays, null arrays, or negative offsets) they either return the same boolean value or throw the same exception. No concrete input can distinguish their behavior."
+}

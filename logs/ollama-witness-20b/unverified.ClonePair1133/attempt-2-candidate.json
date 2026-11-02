@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for converting a byte array to a lowercase hexadecimal string. For every possible byte value (including negative values, which are treated as unsigned), the two methods produce the same two-character hex representation. No input can cause a difference in return value, side effects, exception type, or non‑termination."
+}

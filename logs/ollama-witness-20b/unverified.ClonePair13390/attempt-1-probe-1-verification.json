@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair13390",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][1, 2, 3, 4]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MS4yLjMuNC41)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MS4yLjMuNC41)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "null",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MS4yLjMuNC41)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MS4yLjMuNC41)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][1, 2, 3, 4]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MS4yLjMuNC41)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MS4yLjMuNC41)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "null",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MS4yLjMuNC41)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MS4yLjMuNC41)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 parses only the first four octets of an IPv4 address string and returns a byte[4] even if the string contains more than four parts, whereas method2 validates that the address has exactly four octets and returns null for any string with more or fewer parts. Thus for the input \"1.2.3.4.5\", method1 returns a non‑null byte array while method2 returns null.",
+    "arguments_java": [
+      "\"1.2.3.4.5\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 153.879
+}

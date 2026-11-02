@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 requires both equals and symmetric, while method2 only checks obj1.equals(obj2). Using two custom classes where a.equals(b) is true but b.equals(a) is false causes method1 to return false and method2 to return true.",
+  "arguments_java": [
+    "new unverified.ClonePair7615TestHelper.A()",
+    "new unverified.ClonePair7615TestHelper.B()"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

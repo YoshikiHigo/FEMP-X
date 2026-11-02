@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are mathematically equivalent for all double inputs; the only structural difference is the use of <= versus < in the comparison, but the resulting expression in both branches is identical, so no concrete input can produce a differing return value, side effect, exception, or non‑termination."
+}

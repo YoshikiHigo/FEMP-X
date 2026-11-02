@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 checks class equality and hashCode, so two distinct anonymous classes with identical equals() but different hashCodes will cause method1 to return false while method2 returns true.\",\"arguments_java\":[\"new Object(){public boolean equals(Object o){return true;}}\",\"new Object(){public boolean equals(Object o){return true;}}\"],\"parameter_types\":[\"Object\",\"Object\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 871,
+  "eval_count": 444,
+  "total_duration": 3547201300,
+  "load_duration": 2774000
+}

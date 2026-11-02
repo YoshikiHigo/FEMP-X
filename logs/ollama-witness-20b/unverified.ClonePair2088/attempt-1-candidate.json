@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same prefix check on byte arrays; they are functionally equivalent for all inputs."
+}

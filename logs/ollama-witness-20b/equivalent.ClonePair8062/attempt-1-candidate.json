@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations on the input byte array, adjusting length to even, computing available capacity, and constructing a StringBuffer of the same length. The loop logic and character extraction are the same, so for any deterministic, bounded input the outputs and side effects will match. No distinguishing input exists."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally identical; they compute the same expression using the same control flow and constants. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1192,
+  "eval_count": 53,
+  "total_duration": 889267700,
+  "load_duration": 9030400
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are identical in logic; the only difference is the use of StringBuffer versus StringBuilder, which does not affect return value, side effects, or exceptions for any deterministic input. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1544,
+  "eval_count": 93,
+  "total_duration": 1209826000,
+  "load_duration": 3170500
+}

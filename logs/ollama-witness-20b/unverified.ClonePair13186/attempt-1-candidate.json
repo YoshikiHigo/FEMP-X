@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compare the same logical date components (year, month, day) albeit via different Calendar fields. For any pair of Calendar instances that are non‑null, the conditions in method1 and method2 are equivalent: if the year, month and day of month are equal, then the year and day‑of‑year are also equal, and vice versa. No deterministic, bounded input can cause one method to return true while the other returns false, nor can one method terminate differently or throw a different exception under the same inputs. Therefore no concrete separating test case exists."
+}

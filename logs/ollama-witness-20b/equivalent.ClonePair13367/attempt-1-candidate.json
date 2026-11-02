@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same Date value for all possible inputs; the only difference is which Date instance is returned when the two dates are equal, but this difference is not observable by the test harness because it compares returned values using equals, not identity. No input can produce a distinguishable observable effect (return value, side effect, exception, or non‑termination)."
+}

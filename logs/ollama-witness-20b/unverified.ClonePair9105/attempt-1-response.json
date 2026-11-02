@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"No deterministic, bounded input can be constructed that causes method1 and method2 to behave differently under the constraints. Both methods read the same system property; the only distinguishing case is when the property value is the empty string, which would trigger a NumberFormatException in method1 but return the default in method2. However, there is no guaranteed system property that is set to the empty string, and the test framework forbids modifying system properties or relying on external state. Therefore, no concrete separating test case can be provided.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1051,
+  "eval_count": 434,
+  "total_duration": 3646350600,
+  "load_duration": 2555200
+}

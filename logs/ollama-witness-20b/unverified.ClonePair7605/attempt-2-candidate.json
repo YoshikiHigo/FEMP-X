@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No concrete separating input can be constructed with the allowed Java expressions that satisfies the constraints of both methods. The only way to create asymmetric equality is by using a custom class with overridden equals, but the problem statement forbids defining new types. Anonymous subclasses would produce distinct runtime classes, causing method2 to reject them on the class‑equality check. Therefore, within the permitted expression set, the two methods behave equivalently for all inputs."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical element‑wise equality checks; the only difference is the loop direction, which does not affect the result for any deterministic input. No concrete input can distinguish their behavior."
+}

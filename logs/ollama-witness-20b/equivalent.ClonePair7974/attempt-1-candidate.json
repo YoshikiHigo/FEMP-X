@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 throws NullPointerException when the second argument is null and the first argument is non‑empty, whereas method2 returns false in that case.",
+  "arguments_java": [
+    "\"a\"",
+    "null"
+  ],
+  "parameter_types": [
+    "String",
+    "String"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs: they return null for null or empty lists, otherwise concatenate the list elements (casting each to String) separated by the given delimiter. No input can cause one method to return a different value, throw a different exception type, mutate arguments, or terminate non‑normally.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1037,
+  "eval_count": 197,
+  "total_duration": 1859245800,
+  "load_duration": 4800500
+}

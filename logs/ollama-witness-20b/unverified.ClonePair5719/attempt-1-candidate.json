@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same leap‑year logic for all 32‑bit signed integers; no input can cause one to return a different value, throw an exception, or exhibit a side effect that the other does not."
+}

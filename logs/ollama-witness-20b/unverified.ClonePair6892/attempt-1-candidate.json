@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same min logic for all integer inputs; the strict (<) versus non‑strict (<=) comparisons yield identical results for every possible triple of int values. No concrete input can be found that distinguishes their return values, side effects, exceptions, or termination behavior."
+}

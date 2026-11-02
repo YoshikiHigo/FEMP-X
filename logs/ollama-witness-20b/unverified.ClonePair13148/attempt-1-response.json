@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 throws StringIndexOutOfBoundsException for odd-length input \\\"0\\\" because it attempts to substring two characters, while method2 truncates the odd character and returns an empty byte array without throwing.\",\"arguments_java\":[\"\\\"0\\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1036,
+  "eval_count": 208,
+  "total_duration": 2021484000,
+  "load_duration": 8569800
+}

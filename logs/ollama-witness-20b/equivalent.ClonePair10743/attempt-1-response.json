@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are identical in logic; the only syntactic difference is parentheses placement in the while condition, which does not affect evaluation order or outcome. No input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1192,
+  "eval_count": 142,
+  "total_duration": 1478100300,
+  "load_duration": 4685000
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑by‑element comparisons of the two input arrays. They both iterate over the length of the first array, compare corresponding elements, and return false on the first mismatch, otherwise true. Neither method contains any additional logic, side‑effects, or exception handling that would distinguish their behavior for any deterministic, bounded input. Therefore no concrete separating test case exists."
+}

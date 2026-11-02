@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logical checks on the byte arrays; one iterates forward and the other backward, but the outcome is the same for all possible inputs. No concrete input can distinguish their return values, side effects, or exception behavior."
+}

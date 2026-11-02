@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks and comparisons on the input objects. Both return false when either argument is null or not an instance of Number, and otherwise compare the doubleValue of the two Number instances using the same '<' operator. No input can cause one method to return a different value, throw an exception, or exhibit a side‑effect that the other does not. Therefore, no concrete separating test case exists."
+}

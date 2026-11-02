@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical lexicographic comparison of byte arrays; for all possible inputs (including nulls, empty arrays, and arrays of any length and content) they produce the same return value or throw the same exception. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1225,
+  "eval_count": 202,
+  "total_duration": 1938053900,
+  "load_duration": 5743900
+}

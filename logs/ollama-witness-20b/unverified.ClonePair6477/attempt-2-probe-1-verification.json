@@ -1,0 +1,69 @@
+{
+  "key": "unverified.ClonePair6477",
+  "stable": true,
+  "differenceType": "exception",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][0, 0, 0]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][0, 0, 0]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.ArrayIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.0],Integer(0),Integer(1),byte[][0, 0, 0],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 multiplies the input float by 0x7FFFFF and writes only three bytes per element, so with an output buffer of length 3 it finishes normally. method2 multiplies by 0x7FFFFFFF and writes four bytes per element; with the same 3‑byte buffer it attempts to write a fourth byte and throws an ArrayIndexOutOfBoundsException.",
+    "arguments_java": [
+      "new float[]{0.0f}",
+      "0",
+      "1",
+      "new byte[3]",
+      "0"
+    ],
+    "parameter_types": [
+      "float[]",
+      "int",
+      "int",
+      "byte[]",
+      "int"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 152.289
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"Both methods parse the same string into a Float, but Float.parseFloat returns a new Float object each time, whereas Float.valueOf may return a cached Float instance for certain values. Thus, for the same input the returned Float objects are equal in value but not the same reference, allowing a test to distinguish them.\",\"arguments_java\":[\"\\\"1.0\\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 752,
+  "eval_count": 549,
+  "total_duration": 4347387200,
+  "load_duration": 6522600
+}

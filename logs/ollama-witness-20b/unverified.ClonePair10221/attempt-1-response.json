@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs: they return an Integer parsed from the string when the string represents a valid 32‑bit signed decimal integer, and they return null otherwise (including for null input). No input can distinguish the two implementations.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 751,
+  "eval_count": 343,
+  "total_duration": 2676159800,
+  "load_duration": 2574900
+}

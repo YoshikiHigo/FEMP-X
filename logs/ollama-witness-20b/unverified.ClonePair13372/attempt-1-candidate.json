@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible Date inputs; any difference in returned object identity is not observable by value-based comparison, and no other side effects or exceptions distinguish them."
+}

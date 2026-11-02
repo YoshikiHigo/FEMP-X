@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 requires both equals calls to return true (symmetric equality), whereas method2 only requires a single equals call. Using two instances of a class with asymmetric equals (a.equals(b) true but b.equals(a) false) makes method1 return false while method2 returns true.",
+  "arguments_java": [
+    "new Asymmetric(1)",
+    "new Asymmetric(2)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

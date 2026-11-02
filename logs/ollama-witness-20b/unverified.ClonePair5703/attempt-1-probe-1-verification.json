@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair5703",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(1200)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(1200)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(1200)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(1200)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(1200)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(1200)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(1200)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(1200)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For a year that is a multiple of 100 but not 400, method1 returns true while method2 returns false. Example: year = 1200. method1: 1200/100 = 12 (divisible by 4) and remainder 0 (divisible by 4) → true. method2: 1200%4==0 && 1200%100!=0 is false, and 1200%400==0 is false → false.",
+    "arguments_java": [
+      "1200"
+    ],
+    "parameter_types": [
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 164.426
+}

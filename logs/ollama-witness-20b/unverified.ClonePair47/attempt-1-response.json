@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs: they return a Long parsed from the string when the string is a valid decimal representation, and return null otherwise. No input can cause a difference in return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 866,
+  "eval_count": 178,
+  "total_duration": 1693874000,
+  "load_duration": 9335800
+}

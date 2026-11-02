@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit integer from a 4‑byte array using identical byte‑order logic; no input can produce differing return values, side effects, or exception types."
+}

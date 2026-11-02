@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform an element-wise equality check of two integer arrays, iterating over the arrays in opposite directions. For all possible inputs—including null arrays, arrays of equal length with identical or differing elements, and arrays of unequal length—their return values are identical. No input can be constructed that causes one method to return a different value, throw an exception, or exhibit non‑termination while the other behaves differently."
+}

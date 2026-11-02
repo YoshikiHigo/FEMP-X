@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical UTF‑8 byte length calculations over the same range of a char array. For any valid or invalid inputs (including null, negative offsets, or lengths beyond the array bounds), both methods either compute the same result or throw the same type of exception (ArrayIndexOutOfBoundsException or NullPointerException). No concrete input can distinguish their behavior."
+}

@@ -1,0 +1,15 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 treats both bytes as unsigned before combining, while method2 only treats the first byte as unsigned. With a negative second byte the two methods produce different short results.",
+  "arguments_java": [
+    "new byte[]{(byte)-1,(byte)-2}",
+    "0"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "int"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

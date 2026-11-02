@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible boolean[] inputs, including nulls and equal arrays. No concrete input can distinguish them."
+}

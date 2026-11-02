@@ -1,0 +1,63 @@
+{
+  "key": "unverified.ClonePair6363",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(32896)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-128, -128, 0, 0, 0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-128, -128, 0, 0, 0, 0, 0, 0],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(32896)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-128, -128, 0, 0, 0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-128, -128, 0, 0, 0, 0, 0, 0],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(32896)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-128, -128, 0, 0, 0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-128, -128, 0, 0, 0, 0, 0, 0],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(32896)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-128, -128, 0, 0, 0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-128, -128, 0, 0, 0, 0, 0, 0],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 interprets each byte as a signed value, propagating the sign bit of every negative byte into the resulting 64‑bit value, whereas method2 treats the 8 bytes as an unsigned little‑endian integer. With two negative bytes the two results differ.",
+    "arguments_java": [
+      "new byte[]{(byte)0x80,(byte)0x80,0,0,0,0,0,0}",
+      "0"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "int"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 146.64
+}

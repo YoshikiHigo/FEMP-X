@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical computations for all double inputs; no distinguishing input exists."
+}

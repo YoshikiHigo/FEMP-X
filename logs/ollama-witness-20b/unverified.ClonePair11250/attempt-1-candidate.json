@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for finding the last index of a substring. They handle null inputs, empty strings, and all other cases in the same way, so no concrete input can distinguish their behaviors."
+}

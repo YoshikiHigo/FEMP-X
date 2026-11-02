@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical byte-to-integer conversion logic for all valid inputs, including edge cases such as null arrays, negative lengths, and out-of-bounds indices. Both methods compute the same result or throw the same exception under the same conditions, so no concrete separating input exists."
+}

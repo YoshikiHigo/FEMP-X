@@ -1,0 +1,62 @@
+{
+  "key": "equivalent.ClonePair10143",
+  "stable": true,
+  "differenceType": "exception",
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.RuntimeException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[String(eA==)],Character(97)]",
+        "inputAfterSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[String(eA==)],Character(97)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(eA==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[String(eA==)],Character(97)]",
+        "inputAfterSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[String(eA==)],Character(97)]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.RuntimeException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[String(eA==)],Character(97)]",
+        "inputAfterSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[String(eA==)],Character(97)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(eA==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[String(eA==)],Character(97)]",
+        "inputAfterSnapshot": "java.lang.Object[][equivalent.OllamaWitnessProbe$1[String(eA==)],Character(97)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 calls list.size() which throws a RuntimeException, causing method1 to terminate with an exception. method2 does not call size(); it obtains an iterator from the list and iterates over it, which succeeds and returns a string. Thus the two methods behave differently on the same input.",
+    "arguments_java": [
+      "new java.util.AbstractList<String>(){public String get(int i){return \"x\";}public int size(){throw new RuntimeException(\"size\");}public java.util.Iterator<String> iterator(){return new java.util.Iterator<String>(){boolean has=true;public boolean hasNext(){return has;}public String next(){has=false;return \"x\";}public void remove(){}};} }",
+      "'a'"
+    ],
+    "parameter_types": [
+      "java.util.List",
+      "char"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 70.904
+}

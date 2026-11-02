@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. They both perform a straightforward token replacement using StringBuffer, handling nulls, empty tokens, and non‑existent tokens in the same way. No input can cause one method to return a different value, throw a different exception, mutate arguments, or terminate differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1165,
+  "eval_count": 466,
+  "total_duration": 3950960000,
+  "load_duration": 2119300
+}

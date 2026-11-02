@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical casts and comparisons; for any input that does not cause a ClassCastException or NullPointerException, they return the same value. No deterministic, bounded input can distinguish their behavior."
+}

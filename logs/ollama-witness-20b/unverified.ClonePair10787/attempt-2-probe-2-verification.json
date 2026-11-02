@@ -1,0 +1,61 @@
+{
+  "key": "unverified.ClonePair10787",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(48)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(48)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(48)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(48)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(48)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(48)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(48)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(48)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For the character '0', method1 evaluates the digit range check and returns true, while method2 evaluates the compound condition and returns false. Thus the two methods produce different boolean results for the same input.",
+    "arguments_java": [
+      "'0'"
+    ],
+    "parameter_types": [
+      "char"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 121.814
+}

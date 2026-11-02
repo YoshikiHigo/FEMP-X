@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible inputs: they both count the number of non‑zero bytes starting at the given index, handling out‑of‑bounds and null inputs in the same way. No concrete input can distinguish their return values, side effects, or exception types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1117,
+  "eval_count": 321,
+  "total_duration": 2977262500,
+  "load_duration": 4266100
+}

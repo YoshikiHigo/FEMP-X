@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both throw a NullPointerException when the input array is null, return the original array when minCapacity is less than or equal to the array’s length, and otherwise create a new array of the same size and copy all existing elements. No input can distinguish their return values, side effects, or exception types."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same loop and return the same value for any input; no distinguishing behavior exists."
+}

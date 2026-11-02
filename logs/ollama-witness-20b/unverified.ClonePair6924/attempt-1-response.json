@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform the same loop and return the same index; the extra semicolon in method2 is a no‑op and does not affect behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1065,
+  "eval_count": 63,
+  "total_duration": 903606100,
+  "load_duration": 9688200
+}

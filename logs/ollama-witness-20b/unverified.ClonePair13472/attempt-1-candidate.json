@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations on the same input: they parse each two‑character hex pair into a byte and store it in an array of length length/2. The only differences in implementation (use of &0xFF vs. direct cast, substring vs. charAt concatenation) produce the same result for all valid inputs, and both throw the same exceptions for invalid inputs. No deterministic, bounded input can distinguish the two methods."
+}

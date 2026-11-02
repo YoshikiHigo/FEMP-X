@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns true when the two objects are of different classes but their equals methods are mutually symmetric; method2 returns false because it requires the two objects to be of the same runtime class.",
+  "arguments_java": [
+    "new X(1)",
+    "new Y(1)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

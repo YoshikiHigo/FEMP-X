@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both throw the same exceptions for null arguments, return the same results for all non‑null strings, and both enter an infinite loop when the replacement string is empty. No concrete separating input can be constructed within the allowed constraints."
+}

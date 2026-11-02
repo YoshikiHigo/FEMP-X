@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 returns false when one argument is null and the other is non‑null, whereas method2 evaluates the loop condition using val1.length, which throws a NullPointerException when val1 is null and val2 is non‑null.",
+  "arguments_java": [
+    "null",
+    "new byte[]{1}"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "byte[]"
+  ],
+  "void_return": false
+}

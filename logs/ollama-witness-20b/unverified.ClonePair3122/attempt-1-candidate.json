@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null‑check and comparison logic on the two Integer arguments; the unreachable return -2 in method1 does not affect any execution path. No deterministic input can produce a differing observable behavior between the two methods."
+}

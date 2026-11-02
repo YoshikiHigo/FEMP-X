@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of the input array using the same comparison logic (method1 uses >, method2 uses >= but starts from the first element). For any non‑empty int array the returned value is identical, and for an empty array both throw ArrayIndexOutOfBoundsException. No deterministic, bounded input can distinguish their behavior."
+}

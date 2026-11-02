@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑wise comparison of the two byte arrays. The forward and reverse loop orders do not affect the outcome, and no side effects or exceptions are introduced. Therefore no concrete input can distinguish their behavior."
+}

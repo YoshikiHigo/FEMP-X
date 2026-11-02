@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the minimum element of the array in exactly the same way; no input can distinguish their behavior."
+}

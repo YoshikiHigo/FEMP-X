@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two implementations, all control paths produce identical results for every possible double input. The handling of NaN, infinities, normal numbers, and the special case of -0.0 is the same in both methods, and the string construction logic yields the same output. No concrete input can be found that distinguishes method1 and method2."
+}

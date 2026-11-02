@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for all possible char inputs; they return the same boolean value for any character, and neither mutates arguments, throws exceptions, or has non-terminating behavior. No concrete input can distinguish them."
+}

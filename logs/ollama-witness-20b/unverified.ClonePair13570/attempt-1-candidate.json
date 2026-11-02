@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical switch logic and return the same integer for any char input; no distinguishing behavior exists."
+}

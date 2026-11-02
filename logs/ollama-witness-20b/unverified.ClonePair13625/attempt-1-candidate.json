@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they allocate a byte array of length string.length()/2, iterate over the string two characters at a time, parse each pair as a hexadecimal integer, cast to byte, and store it. No input can cause different return values, side effects, exceptions, or non‑termination."
+}

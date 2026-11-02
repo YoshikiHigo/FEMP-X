@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same result for all possible inputs; the logic in the loop is equivalent (the negated XOR in method1 is the same as the XOR in method2). No input can produce a different return value, side effect, exception type, or non‑termination."
+}

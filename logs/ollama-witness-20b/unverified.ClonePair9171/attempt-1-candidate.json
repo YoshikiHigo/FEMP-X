@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for all possible String inputs; no concrete input distinguishes their behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform exactly the same logic: they compare the first N bytes of the first array to the second array, where N is the length of the second array. For any given pair of byte arrays, both methods will return the same boolean value, throw the same exception (NullPointerException when either argument is null), and have no side effects. Therefore, no concrete separating input exists."
+}

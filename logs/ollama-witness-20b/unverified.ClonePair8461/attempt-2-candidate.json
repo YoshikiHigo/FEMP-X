@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no deterministic input can be constructed that causes them to behave differently. Both methods return a Double parsed from the string when the string is non‑null, non‑empty, and represents a valid double value (including any leading or trailing whitespace). In all other cases they return null. Therefore, no concrete separating test case exists."
+}

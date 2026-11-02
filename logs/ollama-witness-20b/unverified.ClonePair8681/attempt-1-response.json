@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. They both skip leading whitespace using equivalent loop constructs and produce the same return value or throw the same exception types under identical conditions. No concrete separating input can be constructed that distinguishes method1 from method2.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1049,
+  "eval_count": 350,
+  "total_duration": 2821442700,
+  "load_duration": 9401700
+}

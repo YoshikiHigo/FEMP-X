@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible inputs of type int[][]. No input can cause a divergence in return value, side effects, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 947,
+  "eval_count": 340,
+  "total_duration": 2859714300,
+  "load_duration": 4778400
+}

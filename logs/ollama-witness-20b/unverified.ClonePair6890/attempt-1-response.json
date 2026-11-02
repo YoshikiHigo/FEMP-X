@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods compute the same 32‑bit value for any byte array and offset that allows four valid indices; no input can make them behave differently without causing an exception in both.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1228,
+  "eval_count": 948,
+  "total_duration": 7539635900,
+  "load_duration": 3219200
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic: they return true for the characters ' ', '\\\\n', '\\\\t', and '\\\\r', and false for all other characters. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 756,
+  "eval_count": 332,
+  "total_duration": 2609308000,
+  "load_duration": 6982300
+}

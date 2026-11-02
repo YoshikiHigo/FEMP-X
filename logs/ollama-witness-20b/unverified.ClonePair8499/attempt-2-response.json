@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods behave identically for all possible String inputs: they return null for null or any string that causes Double(String) to throw an exception, and otherwise return the Double value parsed from the string. No input can produce a differing return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 921,
+  "eval_count": 261,
+  "total_duration": 2261649000,
+  "load_duration": 2569400
+}

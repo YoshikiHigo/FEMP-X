@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs (including null, empty, and non-empty arrays). No deterministic, bounded input can distinguish them."
+}

@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair6418",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(2147483648)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, -128, 0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, -128, 0, 0, 0, 0],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(2147483648)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, -128, 0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, -128, 0, 0, 0, 0],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(2147483648)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, -128, 0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, -128, 0, 0, 0, 0],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(2147483648)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, -128, 0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, -128, 0, 0, 0, 0],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "In method1 the high bit of the byte at offset+3 contributes to bit 24 of the result, whereas in method2 it contributes to bit 31 via the sign‑extension logic. Thus the two methods return different long values for the same input.",
+    "arguments_java": [
+      "new byte[]{0,0,0,(byte)0x80,0,0,0,0}",
+      "0"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 155.098
+}

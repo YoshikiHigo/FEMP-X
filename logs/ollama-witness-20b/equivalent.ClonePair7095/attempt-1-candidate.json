@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte‑to‑int conversion for any valid byte array and offset; no input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

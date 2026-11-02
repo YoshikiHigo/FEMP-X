@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit integer from four consecutive bytes starting at the given offset. The local variable `shift` in `method2` is assigned but never used in a way that affects the result, so the two methods are functionally equivalent for all inputs."
+}

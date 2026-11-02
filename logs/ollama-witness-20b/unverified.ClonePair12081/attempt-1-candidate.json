@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, the only pathological case is when the replace/ pattern argument is the empty string, which causes an infinite loop in both methods. No input can distinguish the two implementations without invoking undefined or non‑terminating behavior."
+}

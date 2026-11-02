@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all inputs that can be represented as an Object. The only apparent difference is that method1 trims the string before parsing, but Java's Double.valueOf(String) already accepts leading and trailing whitespace, so both methods parse the same set of strings and return the same results. No input can distinguish the two methods."
+}

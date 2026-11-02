@@ -1,0 +1,61 @@
+{
+  "key": "unverified.ClonePair12156",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTEyMzQ1Njcy)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTEyMzQ1Njcy)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTEyMzQ1Njcy)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTEyMzQ1Njcy)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTEyMzQ1Njcy)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTEyMzQ1Njcy)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTEyMzQ1Njcy)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTEyMzQ1Njcy)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns true for the 9‑character string \"A12345672\" because it satisfies all its validation rules and the computed check digit matches the last character. method2, however, contains no logic that can ever return true and always returns false. Thus the same input produces different boolean results.",
+    "arguments_java": [
+      "\"A12345672\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 130.603
+}

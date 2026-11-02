@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical 4‑byte little‑endian extraction from a byte array. For any non‑null array and integer index, they either return the same integer or throw the same exception (ArrayIndexOutOfBoundsException or NullPointerException). No deterministic input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1249,
+  "eval_count": 473,
+  "total_duration": 4032595200,
+  "load_duration": 4883400
+}

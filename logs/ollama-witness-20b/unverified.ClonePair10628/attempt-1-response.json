@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs: they either return the same string, throw the same exception, or enter the same infinite loop when the 'before'/'substring1' argument is the empty string. No concrete separating input was identified.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1303,
+  "eval_count": 487,
+  "total_duration": 4249377000,
+  "load_duration": 4119400
+}

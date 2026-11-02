@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for comparing two int arrays. They both return false when the arrays have different lengths, and otherwise iterate element‑by‑element, returning false on the first mismatch and true only if all elements match. No input (including null arrays, empty arrays, or arrays of any length) causes one method to return a different value, throw a different exception, or terminate non‑normally. Therefore no concrete separating test case exists."
+}

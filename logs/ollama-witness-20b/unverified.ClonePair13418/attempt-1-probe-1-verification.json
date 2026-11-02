@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair13418",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.StringIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.StringIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==)]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.StringIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.StringIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1(\"a\") returns an empty byte array because it truncates the single hex character, whereas method2(\"a\") attempts to take a two‑character substring and throws a StringIndexOutOfBoundsException.",
+    "arguments_java": [
+      "\"a\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 139.192
+}

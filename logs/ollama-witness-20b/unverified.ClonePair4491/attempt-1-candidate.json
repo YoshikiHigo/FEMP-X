@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the arithmetic mean of the finite, non‑NaN elements of a double array. They handle empty arrays, arrays containing only NaN/Infinity, and normal numeric values in the same way: they return NaN when no valid elements are present and otherwise return the sum divided by the count. No input can cause one method to throw an exception, return a different numeric value, or terminate differently while the other behaves equivalently."
+}

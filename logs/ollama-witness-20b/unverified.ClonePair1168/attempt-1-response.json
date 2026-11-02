@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of all possible byte values, both methods produce identical outputs for every input array. No input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1195,
+  "eval_count": 1181,
+  "total_duration": 9398549700,
+  "load_duration": 9064500
+}

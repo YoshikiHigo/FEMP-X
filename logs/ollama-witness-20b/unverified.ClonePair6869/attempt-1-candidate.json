@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical byte‑to‑int conversions for all valid inputs. They both iterate over four bytes starting at the given offset, mask each byte with 0xff, shift it by 8*i, and combine the results with addition or bitwise OR. For any array length that allows four valid accesses, both methods produce the same integer value. For any offset that causes an out‑of‑bounds access, both methods throw an ArrayIndexOutOfBoundsException. For a null array, both throw a NullPointerException. No input can cause one method to terminate normally while the other throws, nor can one produce a different return value. Therefore no concrete separating test case exists.}"
+}

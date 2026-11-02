@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical operations: they parse the same substring using Integer.valueOf versus Integer.parseInt, which produce the same int value, and they assign it to sent_id[0] in the same way. No input can cause one method to return a different value, throw a different exception type, or exhibit a different side effect while the other behaves differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1334,
+  "eval_count": 293,
+  "total_duration": 2595383300,
+  "load_duration": 4500500
+}

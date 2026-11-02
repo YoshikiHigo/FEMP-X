@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 compares Calendar.MONTH + 1 with Calendar.MONTH, which can never be equal, so method1 always returns false for non‑null dates. method2 compares Calendar.MONTH with Calendar.MONTH and DAY_OF_MONTH with DAY_OF_MONTH, correctly detecting equal dates and returning true. Thus for any pair of equal non‑null Date objects the two methods return different boolean values.",
+  "arguments_java": [
+    "date(0L)",
+    "date(0L)"
+  ],
+  "parameter_types": [
+    "java.util.Date",
+    "java.util.Date"
+  ],
+  "void_return": false
+}

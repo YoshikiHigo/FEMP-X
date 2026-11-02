@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 replaces all non‑overlapping occurrences of \\\"aa\\\" in \\\"aaaa\\\" producing \\\"xx\\\", whereas method2 incorrectly leaves the trailing \\\"aa\\\" unprocessed, yielding \\\"xaa\\\".\",\"arguments_java\":[\"\\\"aaaa\\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1183,
+  "eval_count": 416,
+  "total_duration": 3340588300,
+  "load_duration": 4106500
+}

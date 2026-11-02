@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for counting non‑overlapping occurrences of a substring. For all deterministic, bounded inputs (including null, empty strings, and arbitrary non‑empty strings), they produce the same return value, exhibit no side effects, and terminate normally. No concrete input can be constructed that distinguishes their behavior."
+}

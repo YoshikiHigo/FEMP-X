@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair12584",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),Integer(-1)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),Integer(-1)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),Integer(-1)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),Integer(-1)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 throws NegativeArraySizeException when a_normLength is negative, while method2 simply returns the original string without throwing an exception.",
+    "arguments_java": [
+      "\"abc\"",
+      "-1"
+    ],
+    "parameter_types": [
+      "String",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 145.485
+}

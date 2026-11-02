@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible byte[] inputs; the null checks are logically identical, so no concrete separating input exists."
+}

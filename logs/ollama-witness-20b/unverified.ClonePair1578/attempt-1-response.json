@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of the byte-to-string conversion logic in both methods, they produce identical two-character hexadecimal representations for every possible byte value. No input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1241,
+  "eval_count": 760,
+  "total_duration": 6269031100,
+  "load_duration": 2623900
+}

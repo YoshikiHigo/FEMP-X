@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical big-endian conversion of an 8-byte array; no input can produce a differing return value, side effect, exception type, or non-termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 938,
+  "eval_count": 868,
+  "total_duration": 6925557900,
+  "load_duration": 2579300
+}

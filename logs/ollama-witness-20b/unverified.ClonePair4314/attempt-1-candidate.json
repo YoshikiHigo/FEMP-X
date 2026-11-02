@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compare the same calendar components (era, year, and day of year) using equivalent values derived from the Date objects. For any pair of Date instances, method1 and method2 will produce identical boolean results, so no concrete separating input exists."
+}

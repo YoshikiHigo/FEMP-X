@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible byte[] inputs; no distinguishing return value, side effect, exception, or non‑termination can be observed with deterministic, bounded inputs."
+}

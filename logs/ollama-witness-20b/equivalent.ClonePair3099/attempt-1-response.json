@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible String inputs: they both return 0.0 for null or empty/whitespace strings and otherwise delegate to the standard Java parsing routines, which throw the same NumberFormatException for invalid numeric representations. No deterministic, bounded input can distinguish their outputs or side effects.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 879,
+  "eval_count": 445,
+  "total_duration": 3759244700,
+  "load_duration": 17391900
+}

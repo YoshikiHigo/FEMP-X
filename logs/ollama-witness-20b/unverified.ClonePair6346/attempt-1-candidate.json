@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all integer combinations, both methods exhibit identical behavior for every possible input: they compute the same non‑negative remainder (or zero) and throw the same ArithmeticException when the divisor is zero. No concrete separating input exists."
+}

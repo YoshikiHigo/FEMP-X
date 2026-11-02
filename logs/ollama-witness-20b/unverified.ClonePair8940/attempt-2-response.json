@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods behave identically for all inputs that can be supplied without modifying system properties or environment. The only potential difference is that method1 returns the default value when the parsed integer is negative, whereas method2 returns the parsed negative value. However, to trigger this behavior one would need to set a system property to a negative integer value before invoking the methods. Since the test framework prohibits setting system properties or relying on external state in the input expressions, no concrete separating input can be constructed. Therefore, no distinguishing test case exists under the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1214,
+  "eval_count": 205,
+  "total_duration": 1724351600,
+  "load_duration": 17011800
+}

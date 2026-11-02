@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods return true for all alphabetic characters (both uppercase and lowercase) and false otherwise. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1252,
+  "eval_count": 550,
+  "total_duration": 4375464500,
+  "load_duration": 8669000
+}

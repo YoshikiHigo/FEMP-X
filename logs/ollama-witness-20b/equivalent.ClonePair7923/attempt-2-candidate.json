@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "Both methods call Calendar.get(Calendar.DAY_OF_WEEK). method1 calls get only once, so it receives the first value returned by the overridden get method. method2 calls get twice: it first evaluates the left side of the ||; if that is false it evaluates the right side, calling get a second time. By making the overridden get return a different value on the second call, the two methods can diverge. In the supplied Calendar subclass the first call returns MONDAY (false), the second call returns SATURDAY (true). Thus method1 returns false while method2 returns true.",
+  "arguments_java": [
+    "new GregorianCalendar(2020, Calendar.JANUARY, 1) { int counter = 0; @Override public int get(int field) { if (field == Calendar.DAY_OF_WEEK) { counter++; return counter == 1 ? Calendar.MONDAY : Calendar.SATURDAY; } return super.get(field); } }"
+  ],
+  "parameter_types": [
+    "java.util.Calendar"
+  ],
+  "void_return": false
+}

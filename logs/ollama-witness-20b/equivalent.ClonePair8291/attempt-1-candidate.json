@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all possible long inputs, both methods produce identical string representations for every value of time. The arithmetic and formatting logic in method1 and method2 are equivalent, handling negative values, zero, and positive values in the same way. No concrete input can be found that distinguishes the two methods."
+}

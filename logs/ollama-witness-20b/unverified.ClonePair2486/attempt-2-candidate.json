@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit integer from a 4‑byte array in big‑endian order; no input can produce a different result, exception type, or non‑termination."
+}

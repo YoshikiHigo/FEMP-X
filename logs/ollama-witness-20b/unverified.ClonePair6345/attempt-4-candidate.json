@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning, the two methods compute the same 64‑bit value for every possible byte array and offset. No input can produce a differing return value, side effect, exception, or non‑termination."
+}

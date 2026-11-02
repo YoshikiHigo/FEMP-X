@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 writes a single byte into out_buff and returns normally, while method2 attempts to write three bytes per input element, causing an ArrayIndexOutOfBoundsException when out_buff has insufficient space.\",\"arguments_java\":[\"new float[]{0.5f}\",\"0\",\"1\",\"new byte[1]\",\"0\"],\"parameter_types\":[\"float[]\",\"int\",\"int\",\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1557,
+  "eval_count": 300,
+  "total_duration": 2837444400,
+  "load_duration": 3136500
+}

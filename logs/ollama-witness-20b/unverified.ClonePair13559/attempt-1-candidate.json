@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Unable to construct a deterministic input that causes method1 and method2 to behave differently under the allowed difference types."
+}

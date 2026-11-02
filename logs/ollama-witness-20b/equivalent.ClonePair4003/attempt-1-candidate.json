@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical arithmetic operations on the same inputs. All control‑flow branches and expressions match exactly, so no deterministic input can produce a different result, exception, or side effect."
+}

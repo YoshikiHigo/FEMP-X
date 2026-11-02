@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the control flow and arithmetic in both methods, no input value can be found that causes one method to return a different value, throw an exception, or exhibit a side effect while the other behaves differently. All tested edge cases (negative numbers, zero, multiples of 4, 100, and 400) produce identical results for both methods. Therefore, no concrete separating test case exists for the given implementation."
+}

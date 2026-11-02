@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets the first byte as the high byte and the second as the low byte, while method2 interprets the first byte as the low byte and the second as the high byte. With the same input byte array, the computed integer x differs, leading to different float results in the output buffer.\",\"arguments_java\":[\"new byte[]{0x01,0x02}\",\"0\",\"new float[]{0.0f,0.0f}\",\"0\",\"1\"],\"parameter_types\":[\"byte[]\",\"int\",\"float[]\",\"int\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1669,
+  "eval_count": 312,
+  "total_duration": 2718536900,
+  "load_duration": 8246200
+}

@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 checks that the two objects have the same runtime class before delegating to equals, whereas method2 only checks that equals returns true.  For two different collection implementations that contain the same elements, equals() returns true but the classes differ, so method1 returns false while method2 returns true.",
+  "arguments_java": [
+    "new ArrayList<>(list(1,2))",
+    "new LinkedList<>(list(1,2))"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

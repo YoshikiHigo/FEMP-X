@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no deterministic, bounded input can be constructed that causes one method to terminate while the other does not, or that produces differing return values or side effects. Both methods exhibit identical behavior for all possible combinations of non‑null and null arguments, and when the key/needle is the empty string they both enter an infinite loop. Therefore, no concrete separating test case exists."
+}

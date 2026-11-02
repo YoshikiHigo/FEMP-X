@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible CharSequence inputs. Both methods first check reference equality, then compare lengths, and finally compare characters in order. They both throw a NullPointerException when either argument is null and the other is non‑null, and they both return true only when the two references are equal or when the sequences have the same length and identical characters. No input can cause a divergence in return value, side effect, exception type, or termination."
+}

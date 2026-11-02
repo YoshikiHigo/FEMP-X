@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No concrete input can be found that distinguishes the two methods under the allowed differences. Both methods behave identically for all valid inputs, including edge cases involving nulls, empty strings, and replacement values. The existing tests already cover representative equivalent paths, and analysis shows that any potential divergence (such as infinite loops when the target string is empty) occurs in both methods simultaneously. Therefore, no separating test case exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical range checks on the input character; for any char value they return the same boolean result. No input can cause a differing return value, side effect, exception, or non‑termination."
+}

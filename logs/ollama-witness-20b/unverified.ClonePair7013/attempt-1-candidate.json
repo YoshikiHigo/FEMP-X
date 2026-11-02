@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the minimum of the three integer arguments; exhaustive reasoning shows they are functionally equivalent for all integer inputs."
+}

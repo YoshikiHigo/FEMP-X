@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"When both arguments are null, method1 returns false (due to the null check) while method2 returns true (the default result is not altered because the null‑null case falls through the conditional blocks).\",\"arguments_java\":[\"null\",\"null\"],\"parameter_types\":[\"boolean[]\",\"boolean[]\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 983,
+  "eval_count": 521,
+  "total_duration": 4392311200,
+  "load_duration": 3792700
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logical checks on the byte arrays. Both handle nulls, length mismatches, and element-wise equality in the same way, and there is no input that causes one to return a different value, throw an exception, or exhibit a side‑effect that the other does not. Therefore no concrete separating test case can be constructed."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both throw a NullPointerException when the substring argument is null, return the original string when the substring is not found, and perform the same replacement logic for any non-null substring. Edge cases such as an empty substring lead to an infinite loop in both methods, not a distinguishing behavior. No concrete input can be constructed that causes one method to return a different value, throw a different exception type, or terminate differently while the other does not."
+}

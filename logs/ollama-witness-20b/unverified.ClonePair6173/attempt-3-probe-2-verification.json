@@ -1,0 +1,69 @@
+{
+  "key": "unverified.ClonePair6173",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "float[][1.5378E-5]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-128, 0, -128],Integer(0),float[][0.0],Integer(0),Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-128, 0, -128],Integer(0),float[][1.5378E-5],Integer(0),Integer(1)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "float[][-0.99998486]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-128, 0, -128],Integer(0),float[][0.0],Integer(0),Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-128, 0, -128],Integer(0),float[][-0.99998486],Integer(0),Integer(1)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "float[][1.5378E-5]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-128, 0, -128],Integer(0),float[][0.0],Integer(0),Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-128, 0, -128],Integer(0),float[][1.5378E-5],Integer(0),Integer(1)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "float[][-0.99998486]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-128, 0, -128],Integer(0),float[][0.0],Integer(0),Integer(1)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-128, 0, -128],Integer(0),float[][-0.99998486],Integer(0),Integer(1)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 subtracts 0x7FFFFF unconditionally, producing a positive 24‑bit value, while method2 subtracts 0x1000000 only when the 24‑bit value exceeds 0x7FFFFF, producing a negative value. With the byte array {0x80,0x00,0x80} both methods interpret the same 24‑bit value 0x800080, but method1 yields a positive float after scaling and method2 yields a negative float after scaling.",
+    "arguments_java": [
+      "new byte[]{(byte)0x80,(byte)0x00,(byte)0x80}",
+      "0",
+      "new float[]{0.0f}",
+      "0",
+      "1"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "int",
+      "float[]",
+      "int",
+      "int"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 122.055
+}

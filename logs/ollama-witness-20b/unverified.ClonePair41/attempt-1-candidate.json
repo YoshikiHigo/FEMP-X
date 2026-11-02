@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return null for null, otherwise they parse the string into a Long using the same underlying Long.valueOf logic (via Long.valueOf or new Long). No input can distinguish return value, side effects, exceptions, or termination."
+}

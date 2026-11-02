@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same clamping logic on the input double; no input can cause a difference in return value, side effects, or exceptions."
+}

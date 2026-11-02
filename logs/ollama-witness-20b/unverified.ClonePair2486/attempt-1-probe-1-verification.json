@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair2486",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(16909060)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(16909060)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(16909060)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(16909060)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 interprets the byte array in big‑endian order (arr[0] is the most significant byte), while method2 interprets it in little‑endian order (data[3] is the most significant byte). For the input {1,2,3,4} the two methods produce different 32‑bit integers.",
+    "arguments_java": [
+      "new byte[]{1,2,3,4}"
+    ],
+    "parameter_types": [
+      "byte[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 161.198
+}

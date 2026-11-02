@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic: they return true if any element in the array matches the given string (case‑sensitive or case‑insensitive based on the flag), otherwise false. No input can cause differing behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 933,
+  "eval_count": 74,
+  "total_duration": 985895200,
+  "load_duration": 7696700
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 64‑bit value from the eight bytes starting at the given offset. The first method masks each byte with 0x7f and then restores the sign bit if the original byte was negative, which is equivalent to simply interpreting the byte as unsigned (b & 0xff). The second method does exactly that by copying the eight bytes and OR‑ing each byte shifted into place. For any byte value, the two computations produce identical results, and both methods throw the same exceptions for out‑of‑range offsets or null arrays. No deterministic input can distinguish their behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic: they advance the index past leading whitespace characters. For any input string (including null) and any integer index, the two methods either return the same index or throw the same exception. No deterministic, bounded input can distinguish their behavior."
+}

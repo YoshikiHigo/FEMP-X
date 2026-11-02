@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "When the system property is set to a non‑numeric string, method1 attempts to parse it with Integer.parseInt and propagates the resulting NumberFormatException, whereas method2 catches that exception and simply returns the supplied default value.",
+  "arguments_java": [
+    "\"abc\"",
+    "-1"
+  ],
+  "parameter_types": [
+    "String",
+    "int"
+  ],
+  "void_return": false
+}

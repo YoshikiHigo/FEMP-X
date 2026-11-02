@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods produce identical results for all integer inputs. Each conditional branch in method1 corresponds exactly to a branch in method2, and the default cases return the same character ('?') for all values outside the 0–63 range. No input can distinguish their outputs, side effects, or termination behavior."
+}

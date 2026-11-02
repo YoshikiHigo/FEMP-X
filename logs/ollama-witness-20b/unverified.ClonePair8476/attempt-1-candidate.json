@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same value (or null) for all possible String inputs and have no observable side effects. No concrete input can distinguish their behavior."
+}

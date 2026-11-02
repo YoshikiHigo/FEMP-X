@@ -1,0 +1,20 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 writes one byte per input float, method2 writes three bytes per input float, so with the same input the returned byte array contains different contents.",
+  "arguments_java": [
+    "new float[]{0.0f}",
+    "0",
+    "1",
+    "new byte[3]",
+    "0"
+  ],
+  "parameter_types": [
+    "float[]",
+    "int",
+    "int",
+    "byte[]",
+    "int"
+  ],
+  "void_return": false
+}

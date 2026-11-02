@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical arithmetic on the two bytes at the specified offset, handling negative values in the same way and casting the result to short. They throw the same exceptions for out‑of‑bounds or null inputs, and there is no scenario where one method would produce a different return value, side effect, or termination behavior than the other for any deterministic, bounded input."
+}

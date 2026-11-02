@@ -1,0 +1,64 @@
+{
+  "key": "unverified.ClonePair9215",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YW51bGxj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(Yg==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),String(Yg==),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YW51bGxj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(Yg==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),String(Yg==),null]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YW51bGxj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(Yg==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),String(Yg==),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YW51bGxj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(Yg==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),String(Yg==),null]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 replaces occurrences of str1 with the string \"null\" when newString is null, producing a valid String result, whereas method2 attempts to append a null reference to a StringBuffer, which throws a NullPointerException.",
+    "arguments_java": [
+      "\"abc\"",
+      "\"b\"",
+      "null"
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 158.971
+}

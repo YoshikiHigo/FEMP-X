@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair3839",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NullPointerException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][double[][1.0],null]",
+        "inputAfterSnapshot": "java.lang.Object[][double[][1.0],null]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NullPointerException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][double[][1.0],null]",
+        "inputAfterSnapshot": "java.lang.Object[][double[][1.0],null]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NullPointerException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][double[][1.0],null]",
+        "inputAfterSnapshot": "java.lang.Object[][double[][1.0],null]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NullPointerException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][double[][1.0],null]",
+        "inputAfterSnapshot": "java.lang.Object[][double[][1.0],null]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 accesses b[i] for each element of a, causing a NullPointerException when b is null, while method2 immediately returns 0.0 when ovx.length <= 0, so it does not attempt to access ovy and therefore does not throw.",
+    "arguments_java": [
+      "new double[]{1.0}",
+      "null"
+    ],
+    "parameter_types": [
+      "double[]",
+      "double[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 166.316
+}

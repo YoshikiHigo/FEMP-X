@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the two‑character hexadecimal representation of the input byte. For every possible byte value the logic in method1 and method2 produces the same two‑digit hex string, so no concrete separating input exists."
+}

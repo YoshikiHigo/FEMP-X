@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all integer combinations, both methods compute the minimum of the three arguments. No input can produce a differing return value, side effect, exception, or non‑termination."
+}

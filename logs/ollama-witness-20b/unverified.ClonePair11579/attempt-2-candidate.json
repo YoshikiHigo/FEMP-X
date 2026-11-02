@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no deterministic input can be constructed that causes them to behave differently in terms of return value, side effects, exceptions, or termination. Both methods handle all edge cases (nulls, empty strings, overlapping replacements, etc.) in the same way, and any potential divergence (such as infinite loops when the target string is empty) occurs in both methods simultaneously. Therefore, no separating test case exists."
+}

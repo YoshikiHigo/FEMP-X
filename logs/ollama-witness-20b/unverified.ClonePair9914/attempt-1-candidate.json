@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 throws ArrayIndexOutOfBoundsException when stripCount is negative, while method2 throws IndexOutOfBoundsException for the same input.",
+  "arguments_java": [
+    "new String[]{\"a\"}",
+    "-1"
+  ],
+  "parameter_types": [
+    "String[]",
+    "int"
+  ],
+  "void_return": false
+}

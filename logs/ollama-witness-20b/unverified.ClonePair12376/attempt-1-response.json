@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible inputs; no concrete separating test case can be constructed.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1188,
+  "eval_count": 359,
+  "total_duration": 2864754000,
+  "load_duration": 5265100
+}

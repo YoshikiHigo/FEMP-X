@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform the same linear scan and return the first matching index or -1; no input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1189,
+  "eval_count": 48,
+  "total_duration": 727822200,
+  "load_duration": 4823700
+}

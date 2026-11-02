@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations on the byte array; the only difference is that method2 casts the byte to an int before comparison, but this does not change the outcome for any byte value. Therefore no concrete input can distinguish their return values, side effects, or exception behavior."
+}

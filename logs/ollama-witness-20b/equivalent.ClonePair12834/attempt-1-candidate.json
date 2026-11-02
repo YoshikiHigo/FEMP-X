@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks on the two input arrays: they compare lengths and then iterate over corresponding elements, calling isAssignableFrom on each pair in the same order. For any deterministic, bounded input—including null arrays, empty arrays, or arrays containing null elements—both methods either return the same boolean value or throw the same exception (NullPointerException). No input can cause one method to return true while the other returns false, or to terminate differently. Therefore, no concrete separating test case exists."
+}

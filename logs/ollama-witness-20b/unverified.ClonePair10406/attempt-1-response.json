@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 uses Integer.valueOf which returns a cached Integer instance for values between -128 and 127, whereas method2 uses new Integer which always creates a new object. For the input \\\"1\\\" both methods return Integer objects that are equal by value but not the same reference, so a test that compares object identity will distinguish them.\",\"arguments_java\":[\"\\\"1\\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 770,
+  "eval_count": 538,
+  "total_duration": 4138302300,
+  "load_duration": 5211400
+}

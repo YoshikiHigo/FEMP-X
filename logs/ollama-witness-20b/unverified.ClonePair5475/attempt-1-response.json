@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement the same leap‑year logic and return identical boolean values for all integer inputs. No concrete input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 825,
+  "eval_count": 58,
+  "total_duration": 833561500,
+  "load_duration": 4433900
+}

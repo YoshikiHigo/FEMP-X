@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same mathematical result for all integer inputs; no concrete separating test can be constructed."
+}

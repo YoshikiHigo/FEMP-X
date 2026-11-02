@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs and initial states; they both return the first non‑whitespace index or the original index if none exists, and they both throw the same exceptions (NullPointerException or StringIndexOutOfBoundsException) under the same conditions."
+}

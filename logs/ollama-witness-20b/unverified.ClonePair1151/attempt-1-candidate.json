@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks: they first test reference equality, then null or length mismatch, and finally compare each byte in order. For any byte array inputs (including empty or null arrays), both methods return the same boolean value, have no side effects, and never throw exceptions. No concrete input can distinguish their behavior."
+}

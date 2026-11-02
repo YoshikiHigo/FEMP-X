@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same logic: they iterate over the string from the given index, skipping whitespace characters, and return the first non‑whitespace index. For any input string (including null) and any integer index, the two methods produce identical results, have no side effects, and terminate normally. No concrete separating input exists."
+}

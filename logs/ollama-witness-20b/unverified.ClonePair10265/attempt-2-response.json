@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both method1 and method2 exhibit identical behavior for all possible String inputs: they return null for null or empty strings, and otherwise both construct an Integer from the string, throwing NumberFormatException for non‑numeric inputs. No input can cause a difference in return value, exception type, side effect, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1005,
+  "eval_count": 151,
+  "total_duration": 1608793100,
+  "load_duration": 3765400
+}

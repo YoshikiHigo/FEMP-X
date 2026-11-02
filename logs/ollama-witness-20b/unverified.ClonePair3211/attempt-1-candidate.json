@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte‑array sub‑sequence comparisons; for any valid input they produce the same boolean result and have the same side‑effects. No concrete separating test case exists."
+}

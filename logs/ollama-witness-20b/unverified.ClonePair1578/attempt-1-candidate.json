@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the byte-to-string conversion logic in both methods, they produce identical two-character hexadecimal representations for every possible byte value. No input can distinguish their return values, side effects, or exception behavior."
+}

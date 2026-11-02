@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible combinations of null and non‑null arguments. No input can distinguish their return values, side effects, or exception behavior."
+}

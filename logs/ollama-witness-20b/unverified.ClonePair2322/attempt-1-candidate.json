@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit integer from the first four bytes of the array. Their loop bounds, byte masking, and shift amounts are equivalent, and they throw the same exceptions for null or too‑short arrays. No deterministic input can produce a differing return value, side effect, exception type, or non‑termination."
+}

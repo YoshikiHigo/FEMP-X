@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical logic using equivalent character range checks; for any char input they produce the same boolean result. No deterministic input can distinguish their behavior."
+}

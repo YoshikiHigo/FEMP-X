@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible byte[] inputs: they both return true if and only if the two arrays are the same reference or have equal non‑null contents of the same length, and they both return false otherwise. No input can cause a differing return value, side effect, exception type, or non‑termination."
+}

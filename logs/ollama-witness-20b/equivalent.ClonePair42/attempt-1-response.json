@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs: they return a Long parsed from the string when the string represents a valid long value, and return null otherwise. No difference in return value, side effects, exceptions, or termination can be demonstrated with deterministic, bounded inputs.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1201,
+  "eval_count": 215,
+  "total_duration": 2121105300,
+  "load_duration": 6842300
+}

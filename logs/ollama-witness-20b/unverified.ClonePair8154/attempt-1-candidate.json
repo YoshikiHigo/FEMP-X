@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible String inputs. Both return true only when the two arguments are non‑null, non‑empty, and equal; otherwise they return false. No input can cause a divergence in return value, side effects, or termination."
+}

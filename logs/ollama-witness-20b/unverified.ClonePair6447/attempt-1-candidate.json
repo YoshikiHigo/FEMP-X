@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 writes four bytes per float, converting the float to a 32‑bit int and storing its little‑endian representation; method2 writes only one byte, storing the low 8 bits of the float multiplied by 127.0f. With the same input the resulting byte arrays differ.",
+  "arguments_java": [
+    "new float[]{1.0f}"
+  ],
+  "parameter_types": [
+    "float[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

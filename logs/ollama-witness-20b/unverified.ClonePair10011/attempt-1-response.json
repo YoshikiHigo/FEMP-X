@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte‑to‑int conversion using the same shift and mask operations. For all possible inputs (including null arrays, negative lengths, and out‑of‑bounds indices) they either produce the same result or throw the same exception. No concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1250,
+  "eval_count": 378,
+  "total_duration": 3041824100,
+  "load_duration": 16656700
+}

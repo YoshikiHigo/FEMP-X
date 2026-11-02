@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair2642",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2],byte[][1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2],byte[][1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2],byte[][1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2],byte[][1]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2],byte[][1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2],byte[][1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2],byte[][1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2],byte[][1]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 returns false when array lengths differ, while method2 throws ArrayIndexOutOfBoundsException because it accesses second[i] beyond its length.",
+    "arguments_java": [
+      "new byte[]{1,2}",
+      "new byte[]{1}"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "byte[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 166.212
+}

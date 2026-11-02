@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods behave identically for all possible String inputs; the null‑check order does not affect the outcome.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 803,
+  "eval_count": 206,
+  "total_duration": 1927181200,
+  "load_duration": 9993400
+}

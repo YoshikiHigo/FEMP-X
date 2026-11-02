@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical little‑endian accumulation of bytes; for any byte array, offset, and length that do not cause an ArrayIndexOutOfBoundsException, they produce the same long value. No input can distinguish their behaviors under the allowed difference types."
+}

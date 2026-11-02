@@ -1,0 +1,61 @@
+{
+  "key": "unverified.ClonePair1813",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(ZmY=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(ZmY=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(ZmY=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(ZmY=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 converts each byte to its two‑digit hexadecimal representation, while method2 maps the byte value to a two‑character string using a different base‑16 encoding scheme. For the byte value –1 (255 unsigned), method1 returns \"ff\" whereas method2 returns \"gf\".",
+    "arguments_java": [
+      "new byte[]{(byte)-1}"
+    ],
+    "parameter_types": [
+      "byte[]"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 166.868
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all possible deterministic inputs, both methods exhibit identical behavior for every combination of non‑null and null arguments, including edge cases such as empty strings, null tokens, and null replacements. No concrete input can be constructed that causes one method to throw an exception, return a different value, or terminate differently while the other behaves otherwise. Therefore, no separating test case exists."
+}

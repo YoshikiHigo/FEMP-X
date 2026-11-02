@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same null check and attempt to construct a Long from the string, returning null on NumberFormatException. No input can distinguish their behavior."
+}

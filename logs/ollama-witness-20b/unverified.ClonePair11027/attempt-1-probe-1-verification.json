@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair11027",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(65)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(65)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(65)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(65)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(65)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(65)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(65)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(65)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns false for uppercase 'A' because it only checks lowercase a-f after converting to lowercase, while method2 returns true for uppercase 'A' as it explicitly checks the range 'A' to 'F'.",
+    "arguments_java": [
+      "'A'"
+    ],
+    "parameter_types": [
+      "char"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 119.972
+}

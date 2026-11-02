@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns the scaled unsigned 32‑bit value, while method2 subtracts 0x7FFFFFFF before scaling, producing a different signed result for non‑zero inputs.\",\"arguments_java\":[\"new byte[]{1,0,0,0}\"],\"parameter_types\":[\"byte[]\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1654,
+  "eval_count": 289,
+  "total_duration": 2749232100,
+  "load_duration": 3165300
+}

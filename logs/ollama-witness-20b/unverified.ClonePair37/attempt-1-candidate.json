@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same Long value or null for all possible String inputs, and they throw the same NumberFormatException for invalid numeric strings. No distinguishing behavior exists for any deterministic, bounded input."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods differ only by an unnecessary null check before the instanceof test for Throwable. Since the instanceof operator already returns false for a null operand, the behavior of both methods is identical for all possible inputs. No concrete input can distinguish them."
+}

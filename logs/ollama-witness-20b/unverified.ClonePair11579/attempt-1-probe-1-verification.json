@@ -1,0 +1,64 @@
+{
+  "key": "unverified.ClonePair11579",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(bnVsbGFiYw==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(eGFiYw==),String(eA==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(eGFiYw==),String(eA==),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(bnVsbGFiYw==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(eGFiYw==),String(eA==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(eGFiYw==),String(eA==),null]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(bnVsbGFiYw==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(eGFiYw==),String(eA==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(eGFiYw==),String(eA==),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(bnVsbGFiYw==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(eGFiYw==),String(eA==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(eGFiYw==),String(eA==),null]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 replaces occurrences of the target string with the literal string \"null\" when the replacement argument is null, whereas method2 attempts to append the null reference to a StringBuffer and throws a NullPointerException.",
+    "arguments_java": [
+      "\"xabc\"",
+      "\"x\"",
+      "null"
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 134.619
+}

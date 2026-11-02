@@ -1,0 +1,65 @@
+{
+  "key": "equivalent.ClonePair7958",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NullPointerException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,null,Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][null,null,Integer(-1)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NullPointerException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,null,Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][null,null,Integer(-1)]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NullPointerException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,null,Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][null,null,Integer(-1)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NullPointerException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,null,Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][null,null,Integer(-1)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 returns null when the input string is null and the requested size is negative, whereas method2 throws a NullPointerException because it attempts to construct a StringBuffer with a null argument.",
+    "arguments_java": [
+      "null",
+      "null",
+      "-1"
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "int"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 167.902
+}

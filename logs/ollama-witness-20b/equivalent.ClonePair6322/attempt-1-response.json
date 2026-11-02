@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 throws ArithmeticException due to overflow when computing Integer.MIN_VALUE / -1, whereas method2 returns 0 for the same inputs.\",\"arguments_java\":[\"Integer.MIN_VALUE\",\"-1\"],\"parameter_types\":[\"int\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1123,
+  "eval_count": 754,
+  "total_duration": 6061505600,
+  "load_duration": 9373100
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same byte‑array to integer conversion; no input can distinguish them."
+}

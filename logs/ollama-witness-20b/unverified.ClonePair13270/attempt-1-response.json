@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical checks and delegate to Integer.parseInt with the same radix; no input can cause differing behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 783,
+  "eval_count": 237,
+  "total_duration": 1890609800,
+  "load_duration": 14791400
+}

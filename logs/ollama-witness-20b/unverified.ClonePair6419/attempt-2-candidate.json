@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods interpret the 8 bytes starting at the given offset in the same little‑endian order, producing identical results for any byte array and offset. No input can distinguish them."
+}

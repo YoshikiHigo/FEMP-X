@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"No concrete separating input can be constructed with the allowed types and helpers that makes method1 and method2 behave differently.  Both methods return the same boolean for all inputs that can be expressed using the standard Java library types and the provided helper functions.  Therefore a distinguishing test case cannot be produced.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1032,
+  "eval_count": 375,
+  "total_duration": 3078230400,
+  "load_duration": 3248100
+}

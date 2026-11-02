@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair12233",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJjZC5kYXQ=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJjZC5kYXQ=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJjZC5kYXQ=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJjZC5kYXQ=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJjZC5kYXQ=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJjZC5kYXQ=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJjZC5kYXQ=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJjZC5kYXQ=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns false for any string whose length is not 9, while method2 returns true for any string ending with \".dat\". The string \"abcd.dat\" satisfies the latter condition but not the former, so the methods return different boolean values.",
+    "arguments_java": [
+      "\"abcd.dat\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 156.977
+}

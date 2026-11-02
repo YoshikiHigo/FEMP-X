@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair6498",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(578437695752307201)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5, 6, 7, 8],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5, 6, 7, 8],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(578437695752307201)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5, 6, 7, 8],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5, 6, 7, 8],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(578437695752307201)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5, 6, 7, 8],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5, 6, 7, 8],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(578437695752307201)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5, 6, 7, 8],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5, 6, 7, 8],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "Both methods interpret the same 8-byte sequence but in opposite byte order. method1 assembles a big‑endian long (most significant byte first), while method2 assembles a little‑endian long (least significant byte first). Thus for the same input array and offset the returned values differ.",
+    "arguments_java": [
+      "new byte[]{1,2,3,4,5,6,7,8}",
+      "0"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 167.114
+}

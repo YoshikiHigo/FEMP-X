@@ -1,0 +1,65 @@
+{
+  "key": "unverified.ClonePair11491",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(Zm9v)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9v),String(bw==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9v),String(bw==),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(Zm9v)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9v),String(bw==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9v),String(bw==),null]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(Zm9v)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9v),String(bw==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9v),String(bw==),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(Zm9v)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(Zm9v),String(bw==),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(Zm9v),String(bw==),null]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 concatenates the string \"null\" when newStr is null, while method2 returns the original target string unchanged because it treats a null newPattern as a no‑op. Using inStr=\"foo\", oldStr=\"o\", newStr=null causes method1 to return \"fnullnull\" and method2 to return \"foo\".",
+    "arguments_java": [
+      "\"foo\"",
+      "\"o\"",
+      "null"
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 135.78
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all integer combinations of x and n, method1 and method2 produce identical results or throw identical ArithmeticExceptions. No concrete separating input exists."
+}

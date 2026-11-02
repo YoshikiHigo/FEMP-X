@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the longest common prefix of the two input strings. For any pair of non‑null strings, they return the same result; for null inputs both throw a NullPointerException. No deterministic input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1207,
+  "eval_count": 354,
+  "total_duration": 3099643900,
+  "load_duration": 8454800
+}

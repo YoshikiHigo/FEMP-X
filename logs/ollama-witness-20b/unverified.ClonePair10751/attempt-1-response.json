@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all valid inputs and produce the same result or exception for every possible argument combination. No deterministic, bounded input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1059,
+  "eval_count": 289,
+  "total_duration": 2323828600,
+  "load_duration": 19406300
+}

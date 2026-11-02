@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair6723",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(72623859790382856)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5, 6, 7, 8]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5, 6, 7, 8]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(72623859790382856)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5, 6, 7, 8]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5, 6, 7, 8]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(72623859790382856)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5, 6, 7, 8]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5, 6, 7, 8]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Long(72623859790382856)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5, 6, 7, 8]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4, 5, 6, 7, 8]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 shifts the value one extra time after processing the 7th byte, so byte[6] is shifted 16 bits instead of 8 bits before the final byte[7] is OR‑ed. method2 shifts each byte correctly according to its position. Using an 8‑byte array demonstrates the differing results.",
+    "arguments_java": [
+      "new byte[]{1,2,3,4,5,6,7,8}"
+    ],
+    "parameter_types": [
+      "byte[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 164.786
+}

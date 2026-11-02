@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the ordinal suffix for any integer in the same way; exhaustive reasoning shows that for all possible int inputs the returned string is identical. No concrete separating input exists."
+}

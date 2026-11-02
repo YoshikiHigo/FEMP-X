@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, all possible combinations of non‑null String arguments lead to identical behavior (including the same exceptions). No concrete input can distinguish method1 and method2 under the allowed difference types."
+}

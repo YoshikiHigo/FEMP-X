@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they allocate a byte array of length no.length()/2, iterate over the input string two characters at a time, parse each pair as a hexadecimal integer, cast to byte, and store it in the array. The two implementations differ only in variable names and minor formatting, but the semantics are the same for all possible inputs, including null, empty, and any valid or invalid hex strings. Therefore no concrete separating input exists."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. They both iterate over the string starting from the given offset, incrementing until a non‑whitespace character is found or the end of the string is reached, and then return the index of that character (or the length of the string if none is found). For negative offsets or null strings both methods throw the same exception. No input can cause one method to return a different value, throw a different exception type, or exhibit non‑termination while the other does not.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1064,
+  "eval_count": 396,
+  "total_duration": 3134446800,
+  "load_duration": 2075700
+}

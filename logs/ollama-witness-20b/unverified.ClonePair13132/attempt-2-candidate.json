@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs: they either return the same byte array for even‑length hex strings, or both throw the same exception (StringIndexOutOfBoundsException for odd lengths, NumberFormatException for invalid hex, or NullPointerException for null). No concrete input can be constructed that causes one method to succeed while the other fails, or to produce different return values or side effects under the given constraints."
+}

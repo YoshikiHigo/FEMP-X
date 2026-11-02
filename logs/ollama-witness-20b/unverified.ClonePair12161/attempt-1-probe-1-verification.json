@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair12161",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJjOyBjaGFyc2V0PVVURi04)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJjOyBjaGFyc2V0PVVURi04)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJjOyBjaGFyc2V0PVVURi04)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJjOyBjaGFyc2V0PVVURi04)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJjOyBjaGFyc2V0PVVURi04)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJjOyBjaGFyc2V0PVVURi04)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJjOyBjaGFyc2V0PVVURi04)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJjOyBjaGFyc2V0PVVURi04)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns false for any string that is not exactly 9 characters long and matching its specific pattern; method2 returns true when the input contains a semicolon followed by optional spaces and the literal \"charset=\". The string \"abc; charset=UTF-8\" satisfies method2’s condition but fails method1’s length and format checks, yielding different boolean results.",
+    "arguments_java": [
+      "\"abc; charset=UTF-8\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 114.688
+}

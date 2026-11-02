@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods delegate to the same underlying parsing logic (Long.parseLong vs new Long(String)), which behave identically for all valid and invalid decimal string inputs, including null, empty, whitespace, and overflow cases. No deterministic input can distinguish their return values, side effects, or exception types."
+}

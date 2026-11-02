@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; the only difference is the placement of parentheses, which does not affect evaluation order or semantics. Therefore no concrete input can distinguish their behavior."
+}

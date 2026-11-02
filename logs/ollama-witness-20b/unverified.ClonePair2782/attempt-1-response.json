@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical element‑wise comparison of the two byte arrays. For any pair of non‑null byte arrays the result is the same (true iff lengths equal and all corresponding elements equal). No input can cause one method to return a different value, throw a different exception, mutate arguments, or diverge in termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1189,
+  "eval_count": 97,
+  "total_duration": 1104319700,
+  "load_duration": 4786500
+}

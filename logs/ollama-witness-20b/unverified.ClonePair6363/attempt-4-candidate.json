@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the same 64‑bit value for every possible byte array and offset. Method1 masks each byte to 0x7f and then restores the sign bit if the original byte was negative, which reconstructs the original byte value. Method2 simply interprets the 8 bytes as an unsigned little‑endian integer. Since both procedures ultimately produce the same 64‑bit value for any input, no concrete separating test case exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the maximum of three integers with identical tie‑breaking logic; exhaustive reasoning shows no input can produce a different result."
+}

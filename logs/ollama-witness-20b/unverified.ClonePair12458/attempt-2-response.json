@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical padding logic for any given String and int arguments; no input can distinguish their return values, side effects, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1314,
+  "eval_count": 85,
+  "total_duration": 982866900,
+  "load_duration": 5585500
+}

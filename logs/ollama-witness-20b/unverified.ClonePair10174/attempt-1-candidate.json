@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null checks and delegate to Integer.valueOf(String) (via parseInt and then valueOf(int)), which produce the same Integer objects for all valid inputs and throw the same exceptions for invalid inputs. No input can distinguish their behavior."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive reasoning over all integer inputs, both methods exhibit identical behavior for every possible input. No distinguishing input was found.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 951,
+  "eval_count": 3903,
+  "total_duration": 30383196100,
+  "load_duration": 2553600
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical logic; for any valid input (including nulls for args or name/arg) they either return the same value or throw the same exception. No concrete separating input exists."
+}

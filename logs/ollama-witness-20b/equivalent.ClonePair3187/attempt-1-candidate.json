@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are semantically equivalent for all possible inputs. Both retrieve the value from the map, check for null and instance of Number, and return the intValue() or 0 otherwise. No input can cause a different return value, side effect, exception, or non-termination."
+}

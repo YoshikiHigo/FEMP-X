@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, the only pathological case is when the target/oldstr argument is the empty string, which causes both methods to enter an infinite loop. No input leads to a differing return value, side effect, exception, or termination behavior."
+}

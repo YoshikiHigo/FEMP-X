@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs: they either return the same string, throw the same exception (NullPointerException when any argument is null), or enter an infinite loop when the replacement substring is empty. No concrete separating input can be constructed that distinguishes method1 and method2 under the allowed difference types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1308,
+  "eval_count": 430,
+  "total_duration": 3408643100,
+  "load_duration": 9122800
+}

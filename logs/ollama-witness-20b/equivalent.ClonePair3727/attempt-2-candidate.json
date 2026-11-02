@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis, no input can be constructed that causes method1 and method2 to produce different results, throw different exceptions, or exhibit non‑termination. Both methods perform identical parsing logic on the same input string, handling null, empty, and malformed cases in the same way. Therefore, no concrete separating test case exists."
+}

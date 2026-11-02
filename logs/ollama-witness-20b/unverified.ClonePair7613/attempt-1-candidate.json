@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 requires both equals checks to succeed, while method2 only checks the first equals. Using asymmetric equals implementations (A.equals(B) true, B.equals(A) false) makes method1 return false and method2 return true.",
+  "arguments_java": [
+    "new A()",
+    "new B()"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they return true iff the two char arrays are non‑null, have equal length, and contain the same characters in the same order. The implementations differ only in loop direction, which does not affect the outcome. No input can cause one method to return a different value, throw a different exception, or terminate differently."
+}

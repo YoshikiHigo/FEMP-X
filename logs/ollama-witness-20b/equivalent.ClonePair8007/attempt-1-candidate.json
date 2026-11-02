@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks on the lengths of the arrays and then iterate over the arrays comparing each element with isInstance. For any given input, they will return the same boolean value, throw the same exceptions (none), and have the same side effects. No concrete input can distinguish their behavior."
+}

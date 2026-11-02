@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 throws NullPointerException when the second argument is null while the first is non‑null; method2 returns false in the same situation.",
+  "arguments_java": [
+    "new int[]{1}",
+    "null"
+  ],
+  "parameter_types": [
+    "int[]",
+    "int[]"
+  ],
+  "void_return": false
+}

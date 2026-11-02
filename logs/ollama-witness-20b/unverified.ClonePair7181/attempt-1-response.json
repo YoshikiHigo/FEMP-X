@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets the 4 bytes starting at the given offset as a little‑endian 32‑bit unsigned integer, while method2 interprets the same 4 bytes as a big‑endian 32‑bit unsigned integer.  For a non‑symmetric byte sequence the two integer values differ.\",\"arguments_java\":[\"new byte[]{1,2,3,4}\"],\"parameter_types\":[\"byte[]\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1334,
+  "eval_count": 2539,
+  "total_duration": 19783671700,
+  "load_duration": 5564400
+}

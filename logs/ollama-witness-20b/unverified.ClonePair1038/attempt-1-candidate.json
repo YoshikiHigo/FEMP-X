@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible byte[] inputs. Both perform a length check, then compare elements either forward (method1) or backward (method2). The only additional check in method2 is a reference equality test, which can only return true when the two arguments are the same array; in that case the forward comparison would also succeed. No input can cause one method to return a different value, throw a different exception, or exhibit non‑termination while the other behaves differently. Therefore no concrete separating test case exists."
+}

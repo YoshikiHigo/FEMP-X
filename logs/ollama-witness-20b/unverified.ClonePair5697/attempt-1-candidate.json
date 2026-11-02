@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same Gregorian leap‑year rule for all integer inputs. The use of division and multiplication in method1 is equivalent to the modulo checks in method2, even for negative values and edge cases such as Integer.MIN_VALUE and Integer.MAX_VALUE. No concrete input can be found that causes a differing return value, side effect, exception, or non‑termination."
+}

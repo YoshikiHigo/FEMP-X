@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns false for any 14‑character string because it requires length 9; method2 returns true for a valid CNPJ of length 14. The input \"11444777000161\" is a known valid CNPJ, so method2 returns true while method1 returns false.",
+  "arguments_java": [
+    "\"11444777000161\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

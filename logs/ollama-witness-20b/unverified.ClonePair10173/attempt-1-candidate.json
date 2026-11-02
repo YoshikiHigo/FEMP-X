@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical operations on the input byte array: they both iterate over the specified range, convert each signed byte to its unsigned 8‑bit value, and accumulate the result by shifting left 8 bits and adding (or OR‑ing) the byte value. For all valid inputs—including edge cases such as empty arrays, negative lengths, null arrays, and out‑of‑bounds indices—both methods exhibit the same control flow and produce the same result or throw the same exception. No deterministic, bounded input can distinguish their behavior."
+}

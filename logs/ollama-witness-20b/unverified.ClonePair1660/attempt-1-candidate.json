@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for comparing two byte arrays. They return true only when both arrays are non‑null, have equal length, and all corresponding elements are equal; otherwise they return false. No input can cause one method to return a different value, throw a different exception, mutate arguments, or exhibit non‑termination."
+}

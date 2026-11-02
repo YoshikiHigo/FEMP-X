@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods implement the same inclusive range check. For all possible combinations of non‑null and null arguments, both methods return the same boolean value or throw the same NullPointerException. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1051,
+  "eval_count": 733,
+  "total_duration": 6000274800,
+  "load_duration": 3374700
+}

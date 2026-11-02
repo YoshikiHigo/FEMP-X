@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods interpret the four bytes starting at the given offset as a big‑endian integer. For any byte array of length at least four and any valid offset, the two loops compute the same 32‑bit value. No input can cause a difference in return value, side effect, exception, or non‑termination."
+}

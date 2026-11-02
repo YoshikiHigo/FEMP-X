@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of the two methods, all control paths produce identical results for any identical inputs. Both methods handle null inputs, lengths relative to the limit/maximumLength, and the optional suffix/ellipsis in the same way. No deterministic, bounded input can cause a difference in return value, side effect, exception type, or non‑termination. Therefore, no separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1401,
+  "eval_count": 501,
+  "total_duration": 4217755300,
+  "load_duration": 3817800
+}

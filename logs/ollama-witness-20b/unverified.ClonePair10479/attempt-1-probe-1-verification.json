@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair10479",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MA==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MA==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MA==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MA==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 creates a brand‑new Integer object via the constructor, whereas method2 uses Integer.valueOf which returns a cached Integer instance for the value 0. Thus for the input \"0\" the two methods return equal Integer objects (equals() returns true) but different object identities. The test harness used in the repository compares the returned objects by identity, so this input exposes a difference.",
+    "arguments_java": [
+      "\"0\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 140.64
+}

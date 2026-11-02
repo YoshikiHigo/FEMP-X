@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all possible inputs: they both return true only when the two boolean arrays are non‑null and have identical lengths and element values, and return false otherwise. No input can cause one method to return a different value, throw a different exception, or exhibit a side effect that the other does not.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 974,
+  "eval_count": 182,
+  "total_duration": 1736499900,
+  "load_duration": 4795300
+}

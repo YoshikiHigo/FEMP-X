@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical element-wise equality checks (method1 iterates from the end, method2 from the beginning). For any byte array inputs, they return the same boolean value, throw the same exceptions, and have no side effects. No concrete input can distinguish their behavior."
+}

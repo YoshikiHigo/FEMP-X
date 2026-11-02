@@ -1,0 +1,65 @@
+{
+  "key": "unverified.ClonePair12176",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(3)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YXtiLmN9ZA==),Integer(0),Character(46)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YXtiLmN9ZA==),Integer(0),Character(46)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YXtiLmN9ZA==),Integer(0),Character(46)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YXtiLmN9ZA==),Integer(0),Character(46)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(3)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YXtiLmN9ZA==),Integer(0),Character(46)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YXtiLmN9ZA==),Integer(0),Character(46)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YXtiLmN9ZA==),Integer(0),Character(46)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YXtiLmN9ZA==),Integer(0),Character(46)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns the index of the first occurrence of the delimiter regardless of braces, while method2 ignores delimiters that appear inside balanced braces and only returns an index when the delimiter is found at level 0. For the input string \"a{b.c}d\", offset 0 and delimiter '.', method1 returns 3 (the position of the '.' inside the braces), whereas method2 returns -1 because the delimiter is inside a brace pair and is therefore ignored.",
+    "arguments_java": [
+      "\"a{b.c}d\"",
+      "0",
+      "'.'"
+    ],
+    "parameter_types": [
+      "String",
+      "int",
+      "char"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 133.655
+}

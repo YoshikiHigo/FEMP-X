@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit the same behavior for all possible inputs: they either return null when any argument is null, perform a correct replacement when the old word is non‑empty, or enter an infinite loop when the old word is the empty string. No input can make one method terminate while the other does not, nor can it produce a different return value or side effect under identical conditions."
+}

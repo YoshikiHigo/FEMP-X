@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical observable behavior for all deterministic, bounded inputs. The only difference is the internal capacity of the returned ArrayList, which is not exposed through the List interface and cannot be distinguished by any legal test according to the constraints. Therefore no concrete separating test case can be constructed."
+}

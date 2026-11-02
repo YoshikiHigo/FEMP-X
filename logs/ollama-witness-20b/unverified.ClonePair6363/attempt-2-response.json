@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 treats the 8 bytes as a big‑endian signed 64‑bit value, propagating the sign bit of each byte into the result, while method2 treats the 8 bytes as a little‑endian unsigned 64‑bit value. With a buffer containing both positive and negative byte values the two results will differ.\",\"arguments_java\":[\"new byte[]{(byte)0x80,(byte)0x01,(byte)0x02,(byte)0x03,(byte)0x04,(byte)0x05,(byte)0x06,(byte)0x07}\",\"0\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1508,
+  "eval_count": 195,
+  "total_duration": 1868246300,
+  "load_duration": 2109000
+}

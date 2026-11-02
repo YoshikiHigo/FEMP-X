@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit integer from four consecutive bytes starting at the given offset. For any valid byte array and offset that does not cause an ArrayIndexOutOfBoundsException or NullPointerException, the two implementations produce identical results. No input can be constructed that satisfies the constraints (same arguments and initial state) and yields a different return value, side effect, exception type, or non‑termination."
+}

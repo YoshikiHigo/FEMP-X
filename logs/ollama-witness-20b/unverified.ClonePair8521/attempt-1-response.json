@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 attempts to parse the string directly; Double.valueOf(\\\" 1.0\\\") throws NumberFormatException and returns null. method2 trims the string first, turning it into \\\"1.0\\\", which Double.valueOf parses successfully to 1.0. Thus the same input yields null from method1 and 1.0 from method2.\",\"arguments_java\":[\"\\\" 1.0\\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 766,
+  "eval_count": 360,
+  "total_duration": 2834780600,
+  "load_duration": 20891200
+}

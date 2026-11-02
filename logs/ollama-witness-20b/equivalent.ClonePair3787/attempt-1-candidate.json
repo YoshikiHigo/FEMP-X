@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For byte value 127, method1 casts to char after masking with 0x00FF, yielding 127 which is >126 so returns '.', whereas method2 casts directly to char, yielding 127 which is within 0x20..0x7e, so returns the character 127.",
+  "arguments_java": [
+    "(byte)127"
+  ],
+  "parameter_types": [
+    "byte"
+  ],
+  "void_return": false
+}

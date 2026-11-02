@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"No deterministic input can be supplied that causes the two methods to behave differently without modifying system properties or the environment. Both methods read the same system property key and either parse its value or return the supplied default. Since the test harness cannot set or modify system properties, there is no concrete argument pair that will trigger a difference in return value, exception, side‑effect, or termination. Therefore a separating test case cannot be constructed under the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1225,
+  "eval_count": 211,
+  "total_duration": 2064073500,
+  "load_duration": 3664000
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null checks, length checks, and element-wise comparisons on the two byte arrays. For any pair of byte arrays (including nulls, empty arrays, or arrays of equal or differing lengths), the control flow and return values of method1 and method2 are the same. No input can produce a differing return value, side effect, exception type, or non‑termination."
+}

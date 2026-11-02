@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all integer inputs; they return true for the same set of character codes (space, newline, carriage return, tab) and false otherwise. No deterministic, bounded input can distinguish their behavior."
+}

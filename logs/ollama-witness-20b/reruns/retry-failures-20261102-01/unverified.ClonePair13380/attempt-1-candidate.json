@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 catches any Exception (including NullPointerException) and returns null, whereas method2 does not catch the NullPointerException thrown by addr.split when addr is null, so it propagates the exception.",
+  "arguments_java": [
+    "null"
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical unsigned big-endian conversion of four bytes starting at the given offset; they throw the same exceptions for null or out-of-bounds inputs and produce the same integer result for all valid inputs. No deterministic, bounded input can distinguish their behavior."
+}

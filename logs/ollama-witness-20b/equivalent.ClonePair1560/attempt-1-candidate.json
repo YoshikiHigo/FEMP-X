@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical results for all possible byte array inputs and throw the same exception (NullPointerException) when given null. No distinguishing behavior exists under the allowed difference types."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical formatting of a Calendar instance (or throw the same NullPointerException when the argument is null). No deterministic, bounded input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

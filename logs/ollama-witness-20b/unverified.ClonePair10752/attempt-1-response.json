@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all valid inputs and identical exception behavior for invalid inputs; no concrete separating test case can be constructed under the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1053,
+  "eval_count": 199,
+  "total_duration": 1655466300,
+  "load_duration": 4802500
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For input character 'g', method1 returns false (not a hex digit) while method2 returns true (uppercased 'G' satisfies the range check).\",\"arguments_java\":[\"'g'\"],\"parameter_types\":[\"char\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 840,
+  "eval_count": 221,
+  "total_duration": 2130047800,
+  "load_duration": 19446200
+}

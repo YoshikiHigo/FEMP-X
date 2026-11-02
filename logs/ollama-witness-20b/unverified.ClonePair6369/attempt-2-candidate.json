@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 preserves the sign of the first byte, while method2 treats all bytes as unsigned. With a negative first byte the two methods produce different long values.",
+  "arguments_java": [
+    "new byte[]{(byte)-1,0,0,0,0,0,0,0}",
+    "0"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "int"
+  ],
+  "void_return": false
+}

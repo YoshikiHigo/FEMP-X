@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible String inputs. Both return true only when the two arguments are non‑null, non‑empty, and equal; otherwise they return false. No input can cause a divergence in return value, side effects, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 870,
+  "eval_count": 354,
+  "total_duration": 3004524700,
+  "load_duration": 8087800
+}

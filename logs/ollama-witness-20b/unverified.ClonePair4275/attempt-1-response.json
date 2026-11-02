@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 uses Calendar which returns the full year (e.g., 1899) while method2 uses the deprecated Date.getYear() which returns the year minus 1900 (e.g., -1 for 1899). For a date that falls before 1900, the two methods will produce different boolean results.\",\"arguments_java\":[\"date(-2208988800001L)\",\"date(-2208988800001L)\"],\"parameter_types\":[\"java.util.Date\",\"java.util.Date\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 960,
+  "eval_count": 383,
+  "total_duration": 3237250400,
+  "load_duration": 11713400
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical checks on the two byte arrays; they return the same boolean for any input and throw the same NullPointerException when either argument is null. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1055,
+  "eval_count": 65,
+  "total_duration": 834300100,
+  "load_duration": 2719900
+}

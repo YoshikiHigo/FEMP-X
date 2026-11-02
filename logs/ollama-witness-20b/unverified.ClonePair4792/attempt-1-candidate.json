@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical maximum‑search logic on the input array. For any non‑null array with at least one element, they initialize the same starting value and iterate over the same indices, updating the same variable under the same condition. For empty or null arrays, both throw the same exception types (ArrayIndexOutOfBoundsException or NullPointerException). No deterministic input can cause a divergence in return value, side effects, or termination behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same integer value for every possible char input; casting a char to int in method2 does not alter the result. No input can distinguish their behaviors."
+}

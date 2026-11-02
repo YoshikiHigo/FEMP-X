@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible inputs. Both perform the same null checks, length checks, and element-wise comparisons (method1 forwards, method2 backwards), and they return the same boolean value for every pair of int[] arguments. No concrete input can distinguish their behavior."
+}

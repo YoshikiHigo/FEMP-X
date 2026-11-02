@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, the only potential divergence—handling an empty replaceFrom string—leads to an infinite loop in both methods, not a distinguishable return value or side effect. No finite, deterministic input can produce a differing observable outcome between method1 and method2."
+}

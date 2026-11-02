@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair10904",
+  "stable": true,
+  "differenceType": "exception",
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NumberFormatException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(5)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(5)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(5)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(5)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(5)]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NumberFormatException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(5)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(5)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(5)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(5)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(5)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 throws NumberFormatException when the system property value is a non‑numeric string, whereas method2 catches all Exceptions and returns the supplied default value.",
+    "arguments_java": [
+      "\"java.version\"",
+      "5"
+    ],
+    "parameter_types": [
+      "String",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 143.167
+}

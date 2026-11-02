@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are logically equivalent for all possible String inputs; no concrete input can distinguish their behavior."
+}

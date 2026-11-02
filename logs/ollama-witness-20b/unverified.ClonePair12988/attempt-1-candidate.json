@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all long inputs; the boundary checks use >/< versus >=/<= but both return the same value at the limits, and otherwise cast the long to int. No input can distinguish their behavior."
+}

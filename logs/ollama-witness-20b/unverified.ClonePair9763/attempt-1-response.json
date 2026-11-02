@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic for comparing two char arrays; no input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 919,
+  "eval_count": 48,
+  "total_duration": 470857100,
+  "load_duration": 22834400
+}

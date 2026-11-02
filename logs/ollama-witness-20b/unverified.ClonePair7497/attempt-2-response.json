@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets the four bytes starting at the given offset as a big‑endian integer (bytes are processed from offset+3 down to offset), whereas method2 interprets them as a little‑endian integer (bytes are processed from offset up to offset+3). For the input byte array {1,2,3,4} and offset 0, method1 returns 0x04030201 (decimal 67372097) while method2 returns 0x01020304 (decimal 16909060).\",\"arguments_java\":[\"new byte[]{1,2,3,4}\",\"0\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1313,
+  "eval_count": 629,
+  "total_duration": 5106691700,
+  "load_duration": 2894200
+}

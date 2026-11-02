@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the minimum of the three integer arguments using equivalent logic; exhaustive reasoning shows no input can produce a differing return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1122,
+  "eval_count": 76,
+  "total_duration": 1051439200,
+  "load_duration": 12032900
+}

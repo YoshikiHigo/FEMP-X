@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; they perform the same null check and string comparisons and return the same Boolean values for any input. No concrete input can distinguish their behavior."
+}

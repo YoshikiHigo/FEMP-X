@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same dot product of two double arrays. They handle null and empty arrays identically, iterate over the same range, and perform the same arithmetic operations. No input can cause a difference in return value, side effects, exceptions, or non‑termination."
+}

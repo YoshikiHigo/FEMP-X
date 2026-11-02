@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return the first index at or after the given offset that is not a whitespace character, or the length of the string if no such character exists. They both throw the same exceptions (e.g., StringIndexOutOfBoundsException for negative or out‑of‑range offsets, NullPointerException for a null string). No deterministic, bounded input can distinguish their return values, side effects, or exception types."
+}

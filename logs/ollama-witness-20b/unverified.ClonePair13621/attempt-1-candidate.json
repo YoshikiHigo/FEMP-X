@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they parse each two‑character hexadecimal substring into an int and cast it to a byte. For all valid inputs (including empty, null, odd length, or containing non‑hex characters) they either produce the same byte array or throw the same exception. No deterministic, bounded input can distinguish their behavior."
+}

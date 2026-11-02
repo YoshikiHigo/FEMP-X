@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit unsigned integer from four consecutive bytes starting at the given offset. The implementation details (handling of signed bytes, use of Math.pow, and bit‑shifting) produce identical results for all valid inputs, and both throw ArrayIndexOutOfBoundsException on the same out‑of‑range inputs. No concrete input can distinguish their behavior."
+}

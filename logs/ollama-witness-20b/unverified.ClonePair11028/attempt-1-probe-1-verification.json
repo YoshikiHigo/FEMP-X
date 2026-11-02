@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair11028",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(103)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(103)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(103)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(103)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(103)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(103)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(103)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(103)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For input character 'g', method1 returns false (not a hex digit) while method2 returns true (uppercased 'G' satisfies the range check).",
+    "arguments_java": [
+      "'g'"
+    ],
+    "parameter_types": [
+      "char"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 132.227
+}

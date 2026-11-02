@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"With a buffer of length 3 the two methods read the four bytes in different orders. method1 accesses indices (offset+3),(offset+2),(offset+1),(offset) modulo 3, yielding the byte sequence 1,3,2,1, which produces the integer 0x01030201 (16974337). method2 accesses indices offset,offset+1,offset+2,offset+3 modulo 3, yielding 1,2,3,1, which produces 0x01020301 (16909057). The inputs are the same and the initial state is identical, so the differing return values constitute a concrete separating case.\",\"arguments_java\":[\"new byte[]{1,2,3}\",\"0\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1444,
+  "eval_count": 1997,
+  "total_duration": 15591917900,
+  "load_duration": 8009100
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical logic for all deterministic, bounded inputs; no concrete separating test case was identified.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1462,
+  "eval_count": 713,
+  "total_duration": 5959029400,
+  "load_duration": 2550600
+}

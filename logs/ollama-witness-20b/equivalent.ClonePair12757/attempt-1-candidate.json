@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 adds 256 to the second byte when it is negative, while method2 does not. With a negative second byte that is not –1, the two methods produce different short results.",
+  "arguments_java": [
+    "new byte[]{-1, -2}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

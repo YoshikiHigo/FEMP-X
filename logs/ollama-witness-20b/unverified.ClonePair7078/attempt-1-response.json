@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical operations: they read four consecutive bytes starting at the given offset (or startPos) and combine them into an int using the same little‑endian packing. For any byte array and any integer offset, both methods either return the same 32‑bit value or throw the same ArrayIndexOutOfBoundsException. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1214,
+  "eval_count": 166,
+  "total_duration": 1701521600,
+  "load_duration": 2049900
+}

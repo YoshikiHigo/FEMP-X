@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs under the allowed differences. No concrete separating test case can be constructed that distinguishes return value, side effect, exception type, or non‑termination between method1 and method2.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 899,
+  "eval_count": 228,
+  "total_duration": 1829761100,
+  "load_duration": 2084900
+}

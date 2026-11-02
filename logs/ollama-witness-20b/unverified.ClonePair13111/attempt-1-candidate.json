@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both perform a straightforward substring replacement: they search for the pattern, replace it with the replacement string, and return the resulting string. Edge cases such as null arguments, empty strings, or patterns that do not occur in the source are handled in the same way in both methods (either by throwing a NullPointerException or by returning the original string). No input can be constructed that causes one method to return a different value, throw a different exception, mutate its arguments, or terminate differently than the other."
+}

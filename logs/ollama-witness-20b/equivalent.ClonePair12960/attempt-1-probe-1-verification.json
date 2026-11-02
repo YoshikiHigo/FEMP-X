@@ -1,0 +1,61 @@
+{
+  "key": "equivalent.ClonePair12960",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(32)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(4294967296)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(4294967296)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(32)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(4294967296)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(4294967296)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(32)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(4294967296)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(4294967296)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(32)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Long(4294967296)]",
+        "inputAfterSnapshot": "java.lang.Object[][Long(4294967296)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For a long value whose low 32 bits are zero and high 32 bits contain a single set bit (e.g. 1L<<32), method1 first detects the zero low part, shifts to the high part, and returns the position of the least‑significant set bit in the high part (32). method2, however, tests the low 32 bits first and, finding them zero, falls through all high‑bit checks and ultimately returns 63. Thus the two methods produce different results for this input.",
+    "arguments_java": [
+      "4294967296L"
+    ],
+    "parameter_types": [
+      "long"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 152.868
+}

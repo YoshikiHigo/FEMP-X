@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 returns false when array lengths differ, while method2 throws ArrayIndexOutOfBoundsException because it accesses second[i] beyond its length.\",\"arguments_java\":[\"new byte[]{1,2}\",\"new byte[]{1}\"],\"parameter_types\":[\"byte[]\",\"byte[]\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1148,
+  "eval_count": 253,
+  "total_duration": 2345909800,
+  "load_duration": 8579200
+}

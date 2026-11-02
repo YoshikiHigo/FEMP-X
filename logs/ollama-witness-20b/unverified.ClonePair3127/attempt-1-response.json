@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical casts and comparisons; for any input that does not cause a ClassCastException or NullPointerException, they return the same value. No deterministic, bounded input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1098,
+  "eval_count": 142,
+  "total_duration": 1388529500,
+  "load_duration": 11181100
+}

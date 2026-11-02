@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks for nullity, reference equality, length equality, and element-wise comparison in reverse order. For any pair of byte arrays (including nulls, empty arrays, and arrays of equal or differing lengths), the control flow and return values coincide. No input can produce a differing return value, side effect, exception type, or non‑termination between the two methods."
+}

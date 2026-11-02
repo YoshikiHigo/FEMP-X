@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning, both methods exhibit identical behavior for all possible inputs: they either return the same 32‑bit little‑endian value or throw the same exception (ArrayIndexOutBounds or NullPointer). No concrete separating test case exists."
+}

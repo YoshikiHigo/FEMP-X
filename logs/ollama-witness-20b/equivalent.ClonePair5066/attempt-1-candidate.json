@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all integer inputs, both methods exhibit identical behavior for every possible input. No distinguishing input was found."
+}

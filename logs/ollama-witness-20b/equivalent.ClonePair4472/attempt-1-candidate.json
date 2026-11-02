@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the same loop bounds and perform identical checks for all possible inputs, including null masks (both throw NPE) and empty or single-element masks. No deterministic, bounded input can produce a differing return value, side effect, exception type, or non‑termination."
+}

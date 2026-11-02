@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same null check and parse the string using Long.valueOf or Long.parseLong, which are equivalent for all valid inputs. They return null on NumberFormatException in the same way. No input can distinguish their behavior."
+}

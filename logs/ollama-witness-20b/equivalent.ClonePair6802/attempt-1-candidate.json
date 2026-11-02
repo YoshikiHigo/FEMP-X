@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical arithmetic: both compute the bitwise complement of each src element, zero‑extend it to 32 bits, add it to a long carry, store the low 32 bits into dest, and shift the carry right by 32. The only difference is the order of casting, which does not affect the result for any int value. Therefore no deterministic input can distinguish the two methods."
+}

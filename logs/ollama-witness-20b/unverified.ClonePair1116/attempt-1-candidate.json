@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logical checks on the byte arrays: they both handle nulls, compare lengths, and then compare each element (method1 does so in reverse order, method2 in forward order). For any pair of byte arrays, both methods return the same boolean value, throw the same exceptions (none), and have no side effects. No concrete input can distinguish their behavior."
+}

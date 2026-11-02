@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods test the same set of characters (space, tab, carriage return, newline) in different orders, so for any single char input they produce identical boolean results. No distinguishing input exists."
+}

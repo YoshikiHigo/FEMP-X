@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both count the number of non‑zero bytes starting at the given index, handling out‑of‑bounds and null inputs in the same way. No concrete input can distinguish their return values, side effects, or exception types."
+}

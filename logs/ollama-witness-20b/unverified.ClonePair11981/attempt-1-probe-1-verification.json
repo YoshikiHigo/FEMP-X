@@ -1,0 +1,64 @@
+{
+  "key": "unverified.ClonePair11981",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWFhYWFh)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWFh),String(YQ==),String(YWE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWFh),String(YQ==),String(YWE=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWFhYWFh)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWFh),String(YQ==),String(YWE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWFh),String(YQ==),String(YWE=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWFhYWFh)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWFh),String(YQ==),String(YWE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWFh),String(YQ==),String(YWE=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWFhYWFh)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWFh),String(YQ==),String(YWE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWFh),String(YQ==),String(YWE=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 replaces every occurrence of oldPattern with newPattern, while method2 incorrectly uses value.length() as the step for the next search, causing it to skip some matches when value is longer than key. For the input text=\"aaa\", key=\"a\", value=\"aa\", method1 returns \"aaaaaa\" (each of the three 'a's is replaced by \"aa\"), whereas method2 returns \"aaaa\" (only the first two 'a's are replaced).",
+    "arguments_java": [
+      "\"aaa\"",
+      "\"a\"",
+      "\"aa\""
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 134.497
+}

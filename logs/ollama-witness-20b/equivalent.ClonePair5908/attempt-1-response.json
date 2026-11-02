@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical control flow and return values for all possible combinations of null and non‑null Comparable arguments. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1092,
+  "eval_count": 300,
+  "total_duration": 2666124500,
+  "load_duration": 2079700
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the same 32‑bit unsigned value from four consecutive bytes starting at the given offset. For any byte array (including null or too short) they throw the same exception, and for all valid inputs they return identical results. No deterministic input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1249,
+  "eval_count": 299,
+  "total_duration": 2716907700,
+  "load_duration": 2726000
+}

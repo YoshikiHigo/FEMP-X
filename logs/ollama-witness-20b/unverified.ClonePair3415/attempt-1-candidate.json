@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks: they first compare reference equality, then null checks, then length equality, and finally element-wise comparison. Method1 iterates forward while method2 iterates backward, but both cover all indices in the same order and return the same boolean result for any pair of int[] inputs. No deterministic input can cause one to return true while the other returns false, nor can one terminate differently. Therefore no concrete separating test case exists."
+}

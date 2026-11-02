@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 initializes max to array[0] and then iterates from index 1, so a NaN at index 0 is overwritten by a subsequent finite value. method2 uses an enhanced for loop that includes the first element; comparisons with NaN always return false, so max remains NaN.",
+  "arguments_java": [
+    "new double[]{Double.NaN, 1.0}"
+  ],
+  "parameter_types": [
+    "double[]"
+  ],
+  "void_return": false
+}

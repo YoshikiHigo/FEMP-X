@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair7648",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(0),Date(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(0),Date(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(0),Date(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(0),Date(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(0),Date(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(0),Date(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Date(0),Date(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][Date(0),Date(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 first checks that the two objects are of the same runtime class before delegating to equals, whereas method2 only checks for nullity and then calls equals unconditionally.  In the test below we create a java.util.Date and a java.sql.Date that represent the same instant.  java.util.Date.equals(java.sql.Date) returns true because it compares the millisecond value, but the two objects are of different classes, so method1 returns false while method2 returns true.",
+    "arguments_java": [
+      "new java.util.Date(0L)",
+      "new java.sql.Date(0L)"
+    ],
+    "parameter_types": [
+      "Object",
+      "Object"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 156.697
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks on the byte arrays: they return true only when both arrays are null or both are non‑null with equal length and identical contents. The forward scan in method1 and the reverse scan in method2 yield the same result for all possible inputs. No input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

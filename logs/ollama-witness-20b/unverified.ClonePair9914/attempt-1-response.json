@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 throws ArrayIndexOutOfBoundsException when stripCount is negative, while method2 throws IndexOutOfBoundsException for the same input.\",\"arguments_java\":[\"new String[]{\\\"a\\\"}\",\"-1\"],\"parameter_types\":[\"String[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 896,
+  "eval_count": 303,
+  "total_duration": 2412555700,
+  "load_duration": 11940800
+}

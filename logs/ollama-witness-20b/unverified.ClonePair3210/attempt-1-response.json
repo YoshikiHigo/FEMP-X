@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical bounds‑checked byte‑array comparisons; for any valid input (including edge cases such as empty arrays, null arrays, or negative offsets) they either return the same boolean value or throw the same exception. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1149,
+  "eval_count": 182,
+  "total_duration": 1781776700,
+  "load_duration": 4707600
+}

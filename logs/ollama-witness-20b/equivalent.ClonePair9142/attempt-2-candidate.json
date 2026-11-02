@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For input 1, method1 returns 0 because the least significant bit is set, while method2 performs a series of left shifts and ends up returning 3. The two methods therefore produce different results for the same input.",
+  "arguments_java": [
+    "1"
+  ],
+  "parameter_types": [
+    "int"
+  ],
+  "void_return": false
+}

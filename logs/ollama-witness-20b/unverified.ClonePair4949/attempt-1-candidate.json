@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the control flow and arithmetic for all integer inputs, both methods produce identical boolean results for every possible int value. No concrete separating input exists."
+}

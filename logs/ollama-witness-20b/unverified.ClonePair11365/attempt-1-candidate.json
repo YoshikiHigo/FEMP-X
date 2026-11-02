@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all finite, deterministic inputs. The only pathological case is when the search string \"from\"/\"original\" is the empty string, which causes an infinite loop in both methods. No input leads to a difference in return value, side effect, exception type, or termination status."
+}

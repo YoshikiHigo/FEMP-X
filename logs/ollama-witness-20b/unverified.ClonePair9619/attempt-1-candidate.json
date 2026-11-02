@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical control flow and return logic for all possible inputs. Both handle nulls, reference equality, length checks, and element-wise comparison in the same way, so no concrete separating test case exists."
+}

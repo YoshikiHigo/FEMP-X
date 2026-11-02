@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical range checks using equivalent numeric bounds; no input can cause differing behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 802,
+  "eval_count": 72,
+  "total_duration": 820466900,
+  "load_duration": 2551500
+}

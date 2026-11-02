@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical hexadecimal conversion logic for all byte values; no input can produce differing outputs, exceptions, or side effects."
+}

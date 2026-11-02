@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They perform the same linear search over the byte array, handling null arrays, negative start indices, and empty arrays in the same way, and both return the first matching index or -1 when no match is found. No input can cause a differing return value, side effect, exception type, or non‑termination between the two methods."
+}

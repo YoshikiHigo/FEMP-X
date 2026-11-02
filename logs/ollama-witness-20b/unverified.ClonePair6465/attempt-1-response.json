@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 writes one byte per input element and succeeds with a single‑byte output buffer, whereas method2 writes three bytes per input element and will throw an ArrayIndexOutOfBoundsException when the output buffer is too small.\",\"arguments_java\":[\"new float[]{0f}\",\"0\",\"1\",\"new byte[]{0}\",\"0\"],\"parameter_types\":[\"float[]\",\"int\",\"int\",\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1557,
+  "eval_count": 317,
+  "total_duration": 2801511200,
+  "load_duration": 2882300
+}

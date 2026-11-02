@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible inputs: they either truncate the string to the desired width, pad it with spaces, or return it unchanged. They both throw the same exceptions for null or negative width values. No concrete input can be found that distinguishes their return values, side effects, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1126,
+  "eval_count": 283,
+  "total_duration": 2305015800,
+  "load_duration": 2662200
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform the same null check and then parse the string using either the Float constructor or Float.valueOf, which are functionally equivalent for all valid inputs. No input can cause a difference in return value, side effects, exceptions, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 755,
+  "eval_count": 87,
+  "total_duration": 955388300,
+  "load_duration": 10094500
+}

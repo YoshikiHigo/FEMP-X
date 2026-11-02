@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for all integer inputs; they return the same string or null for every possible day value. No input can distinguish their behavior."
+}

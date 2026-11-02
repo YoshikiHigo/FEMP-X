@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit big‑endian value from the first four bytes of the array. For any byte[] of length ≥4 they return identical results; for shorter arrays both throw ArrayIndexOutOfBoundsException. No input can distinguish their behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for all long inputs: they return the input cast to int when it lies strictly between Integer.MIN_VALUE and Integer.MAX_VALUE, otherwise they return the nearest bound. Exhaustive reasoning shows no input can produce a differing return value, side effect, exception, or non‑termination. Therefore no concrete separating test case exists."
+}

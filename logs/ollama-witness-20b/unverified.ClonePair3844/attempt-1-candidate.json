@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same dot‑product computation; no input can distinguish them."
+}

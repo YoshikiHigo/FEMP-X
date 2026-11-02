@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are byte‑code identical; they perform the same comparison and return the same value for every integer input. No concrete input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1098,
+  "eval_count": 56,
+  "total_duration": 899241800,
+  "load_duration": 4645300
+}

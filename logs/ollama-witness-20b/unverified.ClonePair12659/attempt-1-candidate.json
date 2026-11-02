@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they throw the same exceptions (NullPointerException for null, NumberFormatException for non‑numeric strings) and return the same integer values (0 for the empty string, the parsed integer otherwise). No concrete input can distinguish them."
+}

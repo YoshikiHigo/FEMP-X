@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods produce identical results for all possible inputs (including empty lists, null lists, and lists containing null or empty strings). No deterministic, bounded input can distinguish their return values, side effects, exception types, or termination behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return null for any input that causes NumberFormatException and return a Double instance for any valid numeric string. No input can distinguish their behavior under the allowed differences."
+}

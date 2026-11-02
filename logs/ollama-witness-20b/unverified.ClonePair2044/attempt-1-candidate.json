@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit integer from the first four bytes of the array; they behave identically for all valid inputs and throw the same exceptions for invalid inputs. No concrete separating test case exists."
+}

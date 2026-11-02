@@ -1,0 +1,61 @@
+{
+  "key": "unverified.ClonePair7517",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(0.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.ArrayList[Double(NaN)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.ArrayList[Double(NaN)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(NaN)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.ArrayList[Double(NaN)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.ArrayList[Double(NaN)]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(0.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.ArrayList[Double(NaN)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.ArrayList[Double(NaN)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(NaN)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.ArrayList[Double(NaN)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.ArrayList[Double(NaN)]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 skips NaN values, so the sum remains 0 and the average of a list containing only NaN is 0.0. method2 sums all values, including NaN, so the sum is NaN and the average is NaN. Thus the two methods return different values for the same input list.",
+    "arguments_java": [
+      "list(Double.NaN)"
+    ],
+    "parameter_types": [
+      "java.util.List"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 167.284
+}

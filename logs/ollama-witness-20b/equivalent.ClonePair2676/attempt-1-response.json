@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally identical; they perform the same string splitting logic with no differing side effects or return values for any deterministic input.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1310,
+  "eval_count": 72,
+  "total_duration": 921942600,
+  "load_duration": 4108900
+}

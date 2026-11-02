@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs. Both perform the same type checks and conversions: they return null for null, return the Long instance directly, convert any Number to a Long via longValue(), and otherwise parse the string representation using Long.parseLong or Long.valueOf, which behave identically. No input can cause a difference in return value, side effects, exceptions, or termination."
+}

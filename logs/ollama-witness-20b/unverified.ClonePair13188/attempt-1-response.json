@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical conversions for all valid inputs; no deterministic difference in return value, side effects, or exceptions can be observed with the same input and initial state.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1028,
+  "eval_count": 293,
+  "total_duration": 2377070700,
+  "load_duration": 2140400
+}

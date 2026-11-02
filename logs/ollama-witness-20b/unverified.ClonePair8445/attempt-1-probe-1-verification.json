@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair8445",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDE=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDE=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDE=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDE=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 parses the raw string and returns null for leading/trailing whitespace, while method2 trims the string before parsing, yielding a non‑null Double.",
+    "arguments_java": [
+      "\" 1\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 158.238
+}

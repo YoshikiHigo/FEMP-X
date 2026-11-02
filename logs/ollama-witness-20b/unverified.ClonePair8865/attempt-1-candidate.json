@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of the input int array in the same way; for all possible inputs (including empty, null, and arrays of any length) they either throw the same exception or return the same value. No concrete separating input exists."
+}

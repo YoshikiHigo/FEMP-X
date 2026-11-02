@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs. They return true only when both arguments are non‑null, of equal length, and contain identical characters; otherwise they return false. No input can produce a different return value, side effect, exception, or non‑termination."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null checks and compare the two strings for equality using either equals() or compareTo() which yields the same result for all String inputs. No input can distinguish their behavior."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical bounds checks and array operations for all possible inputs; no concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1245,
+  "eval_count": 447,
+  "total_duration": 3841725000,
+  "load_duration": 6153700
+}

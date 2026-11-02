@@ -1,0 +1,63 @@
+{
+  "key": "unverified.ClonePair12733",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Short(-257)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, -2],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, -2],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Short(-257)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, -2],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, -2],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Short(-257)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, -2],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, -2],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Short(-257)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][-1, -2],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][-1, -2],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 treats both bytes as unsigned before combining, while method2 only treats the first byte as unsigned. With a negative second byte the two methods produce different short results.",
+    "arguments_java": [
+      "new byte[]{(byte)-1,(byte)-2}",
+      "0"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "int"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 132.294
+}

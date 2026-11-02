@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of all possible integer inputs, the two methods produce identical results or throw identical exceptions for every pair of arguments. No concrete separating input was found.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1121,
+  "eval_count": 749,
+  "total_duration": 5988654900,
+  "load_duration": 9176100
+}

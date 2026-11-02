@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns false because the two X instances have the same class but different hashCodes, while method2 returns true because X.equals always returns true.",
+  "arguments_java": [
+    "new X(0)",
+    "new X(1)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

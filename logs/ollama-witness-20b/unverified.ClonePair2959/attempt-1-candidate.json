@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical control flow and return logic for all possible byte[] inputs, including nulls, empty arrays, and arrays of equal or differing lengths. No concrete input can distinguish their behaviors."
+}

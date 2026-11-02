@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical logic for all possible byte array inputs: they both return true only when both arrays are null or when both are non‑null, of equal length, and contain exactly the same byte values. No input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

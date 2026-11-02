@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods have identical control flow for all possible Map inputs, including null, HashMap, TreeMap, and other SortedMap implementations. Both perform the same type checks and construct the same kind of clone, so no concrete input can distinguish their behavior."
+}

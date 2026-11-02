@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic for comparing two byte arrays; all branches produce the same result for any possible input. No concrete separating input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1265,
+  "eval_count": 99,
+  "total_duration": 1150255900,
+  "load_duration": 6162500
+}

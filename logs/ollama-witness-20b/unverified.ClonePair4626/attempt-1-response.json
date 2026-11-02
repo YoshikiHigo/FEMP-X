@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the minimum of the array in the same way; they throw the same exceptions for empty or null arrays and return identical results for all other inputs. No deterministic, bounded input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1019,
+  "eval_count": 217,
+  "total_duration": 2044123200,
+  "load_duration": 6974900
+}

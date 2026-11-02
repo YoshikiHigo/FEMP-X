@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 64‑bit value from the byte array starting at the given offset. They perform identical bounds checks and produce identical results for all valid inputs, and both throw ArrayIndexOutOfBoundsException for out‑of‑range offsets. No deterministic, bounded input can distinguish their behavior."
+}

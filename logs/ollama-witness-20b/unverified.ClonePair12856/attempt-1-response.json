@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible inputs: they both return the original string when the string is null or its length is not greater than the specified limit, and otherwise both return the substring from 0 to the limit. No input can cause one method to return a different value, throw a different exception, or terminate differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1058,
+  "eval_count": 458,
+  "total_duration": 3603777000,
+  "load_duration": 3770200
+}

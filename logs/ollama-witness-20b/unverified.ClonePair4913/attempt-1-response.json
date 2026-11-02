@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical range normalization; no input causes differing return values, side effects, exceptions, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 997,
+  "eval_count": 503,
+  "total_duration": 4172122800,
+  "load_duration": 2559400
+}

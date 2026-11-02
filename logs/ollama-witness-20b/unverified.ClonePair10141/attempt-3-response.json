@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 performs replacements on the original string, treating each occurrence of the target as it appears in the original text. method2 performs replacements on a mutable StringBuffer and after each replacement it continues searching from the end of the inserted replacement. This can cause a target that was created by a previous replacement to be matched again. For source=\\\"ababa\\\", target=\\\"aba\\\", replacement=\\\"a\\\", method1 returns \\\"aba\\\" while method2 returns \\\"aa\\\".\",\"arguments_java\":[\"\\\"ababa\\\"\",\"\\\"aba\\\"\",\"\\\"a\\\"\"],\"parameter_types\":[\"String\",\"String\",\"String\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1570,
+  "eval_count": 460,
+  "total_duration": 3848204600,
+  "load_duration": 2894100
+}

@@ -1,0 +1,15 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 treats both bytes as unsigned, adding 256 to each negative byte before combining, whereas method2 only treats the first byte as unsigned and leaves the second byte unchanged. With a negative second byte that is not –1, the two methods produce different short results.",
+  "arguments_java": [
+    "new byte[]{-1, -2}",
+    "0"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "int"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

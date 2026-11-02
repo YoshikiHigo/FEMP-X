@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 uses Calendar to compute the actual day-of-year, which normalises invalid dates such as February 29 on a non‑leap year to March 1. method2 uses the deprecated Date.getYear(), getMonth() and getDate() which simply return the supplied year, month and day fields without normalisation. Thus for a date that is syntactically February 29 on a non‑leap year, method1 will return false (because the day‑of‑year is 60 in 2020 but 59 in 2021) while method2 will return true (because it compares the raw month and day values).\",\"arguments_java\":[\"new Date(121,1,29)\",\"new Date(120,1,29)\"],\"parameter_types\":[\"java.util.Date\",\"java.util.Date\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 968,
+  "eval_count": 604,
+  "total_duration": 4813563000,
+  "load_duration": 6298300
+}

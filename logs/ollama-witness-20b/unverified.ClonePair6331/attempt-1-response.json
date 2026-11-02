@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte‑wise reconstruction of an 8‑byte big‑endian long from the same array and offset. For any valid or invalid input (including null or too‑short arrays) they throw the same exception types (NullPointerException or ArrayIndexOutOfBoundsException) and otherwise produce the same result. No deterministic, bounded input can distinguish their behaviors.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 999,
+  "eval_count": 154,
+  "total_duration": 1513330100,
+  "load_duration": 21700100
+}

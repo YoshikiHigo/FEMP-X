@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte‑to‑long conversion: each byte is masked with 0x7f and, if negative, the sign bit is restored, which yields the same 8‑bit value as masking with 0xFF. Consequently, for any byte array and offset that does not trigger an exception, the two methods return the same long. They also throw the same exceptions (ArrayIndexOutOfBoundsException or NullPointerException) under identical conditions. No deterministic, bounded input can distinguish their behaviors.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1324,
+  "eval_count": 462,
+  "total_duration": 4040278100,
+  "load_duration": 7128200
+}

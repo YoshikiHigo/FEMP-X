@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the same 32‑bit value for any byte array and offset that are valid for both. They both read the same four consecutive bytes, combine them in the same big‑endian order, and use identical arithmetic. Therefore no deterministic input can distinguish their return values, side effects, or exception behavior."
+}

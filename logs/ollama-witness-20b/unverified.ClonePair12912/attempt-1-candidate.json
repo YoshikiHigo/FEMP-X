@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks for forbidden characters and handle null inputs in the same way; no input can cause differing behavior."
+}

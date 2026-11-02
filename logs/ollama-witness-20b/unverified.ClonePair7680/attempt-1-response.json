@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all inputs that can be constructed without causing an exception in the equals call. No deterministic, bounded input can be provided that causes method1 to return a value while method2 throws an exception or vice versa, because all standard Java objects either return a boolean from equals or return false without throwing. Therefore, no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 915,
+  "eval_count": 1523,
+  "total_duration": 11786190700,
+  "load_duration": 2915800
+}

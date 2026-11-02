@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs: they return null for odd-length or null inputs, return an empty byte array for the empty string, and parse valid hex pairs identically while returning null on any parsing exception. No concrete input can distinguish their outputs or side effects."
+}

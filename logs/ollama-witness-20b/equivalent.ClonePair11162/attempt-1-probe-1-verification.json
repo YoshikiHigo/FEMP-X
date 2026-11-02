@@ -1,0 +1,62 @@
+{
+  "key": "equivalent.ClonePair11162",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(3)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJjZGU=),String(Y2Rl)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJjZGU=),String(Y2Rl)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(3)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJjZGU=),String(Y2Rl)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJjZGU=),String(Y2Rl)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(3)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJjZGU=),String(Y2Rl)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJjZGU=),String(Y2Rl)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(3)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJjZGU=),String(Y2Rl)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJjZGU=),String(Y2Rl)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns the length of the longest matching suffix, which for s=\"abcde\" and t=\"cde\" is 3. method2 returns s.length() - (i+1) where i ends at 2 (the index of the last matched character in s), yielding 5-3=2. Thus the outputs differ.",
+    "arguments_java": [
+      "\"abcde\"",
+      "\"cde\""
+    ],
+    "parameter_types": [
+      "String",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 163.686
+}

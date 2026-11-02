@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods contain identical logic; no input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 822,
+  "eval_count": 38,
+  "total_duration": 563400700,
+  "load_duration": 6055000
+}

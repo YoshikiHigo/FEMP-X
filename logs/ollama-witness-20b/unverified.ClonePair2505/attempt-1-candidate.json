@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical element-wise comparisons of the input byte arrays; for all deterministic, bounded inputs they return the same boolean value and exhibit the same side effects (none). No concrete separating test case exists."
+}

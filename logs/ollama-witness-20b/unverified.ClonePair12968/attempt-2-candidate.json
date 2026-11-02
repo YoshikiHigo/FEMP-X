@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns Integer.MIN_VALUE for any long value outside the int range, because the second assignment to m sets it to Integer.MIN_VALUE and the method returns m when the condition fails. method2 returns Integer.MAX_VALUE for values greater than Integer.MAX_VALUE. Thus for l = Integer.MAX_VALUE + 1L, method1 returns -2147483648 while method2 returns 2147483647.",
+  "arguments_java": [
+    "2147483648L"
+  ],
+  "parameter_types": [
+    "long"
+  ],
+  "void_return": false
+}

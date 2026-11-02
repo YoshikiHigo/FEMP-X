@@ -1,0 +1,63 @@
+{
+  "key": "unverified.ClonePair6039",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Object[][java.lang.Object(amF2YS5sYW5nLk9iamVjdEAxOGI0YWFjMg==)],java.lang.Object[][null]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Object[][java.lang.Object(amF2YS5sYW5nLk9iamVjdEAxOGI0YWFjMg==)],java.lang.Object[][null]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Object[][java.lang.Object(amF2YS5sYW5nLk9iamVjdEAxOGI0YWFjMg==)],java.lang.Object[][null]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Object[][java.lang.Object(amF2YS5sYW5nLk9iamVjdEAxOGI0YWFjMg==)],java.lang.Object[][null]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Object[][java.lang.Object(amF2YS5sYW5nLk9iamVjdEAxOGI0YWFjMg==)],java.lang.Object[][null]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Object[][java.lang.Object(amF2YS5sYW5nLk9iamVjdEAxOGI0YWFjMg==)],java.lang.Object[][null]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Object[][java.lang.Object(amF2YS5sYW5nLk9iamVjdEAxOGI0YWFjMg==)],java.lang.Object[][null]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Object[][java.lang.Object(amF2YS5sYW5nLk9iamVjdEAxOGI0YWFjMg==)],java.lang.Object[][null]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 returns false when an element of a is non‑null and the corresponding element of b is null, whereas method2 attempts to call equals on the non‑null element with a null argument, causing a NullPointerException.",
+    "arguments_java": [
+      "new Object[]{new Object()}",
+      "new Object[]{null}"
+    ],
+    "parameter_types": [
+      "Object[]",
+      "Object[]"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 161.718
+}

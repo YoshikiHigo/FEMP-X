@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they compute the same result array length, perform the same bounds checks, and propagate the same exceptions (NegativeArraySizeException or NullPointerException) under equivalent conditions. No concrete input can distinguish their outputs or side effects."
+}

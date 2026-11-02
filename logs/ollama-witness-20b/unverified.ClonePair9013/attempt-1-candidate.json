@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations; the raw type in method2 does not affect the runtime behavior for the given signatures. No input can distinguish their return values, side effects, or exception behavior."
+}

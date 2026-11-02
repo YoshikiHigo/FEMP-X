@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs: they compare corresponding elements of the two byte arrays and return true if all matched, false otherwise. If the second array is shorter than the first, both methods throw an ArrayIndexOutOfBoundsException. No input can cause one method to return a different value, throw a different exception type, or exhibit non‑termination while the other behaves differently."
+}

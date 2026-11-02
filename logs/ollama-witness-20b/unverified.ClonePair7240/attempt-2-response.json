@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets the 4 bytes starting at the given offset in little‑endian order, while method2 interprets them in big‑endian order. For the byte sequence {1,2,3,4} the resulting 32‑bit integers are 67305985 (little‑endian) and 16909060 (big‑endian), which are different.\",\"arguments_java\":[\"new byte[]{1,2,3,4}\",\"0\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1439,
+  "eval_count": 538,
+  "total_duration": 4450416700,
+  "load_duration": 2367700
+}

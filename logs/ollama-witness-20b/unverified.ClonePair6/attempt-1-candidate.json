@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible String inputs; they perform identical null/empty checks and delegate to Long.valueOf. No input can distinguish their behavior."
+}

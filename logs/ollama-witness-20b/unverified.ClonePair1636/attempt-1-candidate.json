@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null checks, length comparisons, and element-wise equality checks on the byte arrays. They neither modify the inputs nor produce different return values or side effects for any deterministic, bounded input. No distinguishing test case exists."
+}

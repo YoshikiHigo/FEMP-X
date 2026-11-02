@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets the 4 bytes starting at the given offset as a big‑endian integer, while method2 interprets them as a little‑endian integer. With a byte array that has distinct values in the four positions, the two interpretations produce different 32‑bit results.\",\"arguments_java\":[\"new byte[]{1,2,3,4}\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1231,
+  "eval_count": 263,
+  "total_duration": 2418849200,
+  "load_duration": 2994300
+}

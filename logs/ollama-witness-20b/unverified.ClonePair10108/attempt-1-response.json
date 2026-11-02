@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs: they return null for null, empty, or non‑numeric strings, and return the parsed Integer for valid numeric strings. No input can cause one method to return a non‑null value while the other returns null, nor can one method throw an exception that the other does not. Therefore, no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 753,
+  "eval_count": 371,
+  "total_duration": 2897316700,
+  "load_duration": 9027600
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are logically equivalent for all inputs that are either null or instances of String. They perform identical null checks and delegate to String.compareTo in the same cases, and they throw the same ClassCastException when the arguments are not Strings. No deterministic, bounded input can distinguish their behavior."
+}

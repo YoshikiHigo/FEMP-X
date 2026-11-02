@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are structurally identical; for any integer inputs the computed differences and all conditional branches evaluate the same, yielding identical return values. No input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1921,
+  "eval_count": 164,
+  "total_duration": 1782814600,
+  "load_duration": 4764600
+}

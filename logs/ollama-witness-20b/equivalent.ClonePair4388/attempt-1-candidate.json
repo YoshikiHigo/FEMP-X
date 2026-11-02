@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical comparisons of year, month, and day using Calendar instances. They handle null inputs in the same way (throwing NullPointerException when a null Date is passed to setTime). No deterministic input can cause one method to return a different value, throw a different exception type, or exhibit non‑termination compared to the other."
+}

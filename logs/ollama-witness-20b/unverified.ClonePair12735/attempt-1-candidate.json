@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical unsigned byte-to-short conversion using the same two-byte window; they exhibit the same return values, side effects, and exception behavior for all possible inputs and initial states. No concrete input can distinguish them."
+}

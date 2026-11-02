@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the same 64‑bit value for every possible byte array and offset. Method1 masks each byte with 0x7F and then restores the sign bit if the original byte was negative, which reproduces the original byte value. Method2 simply masks each byte with 0xFF. For all byte values the two operations yield identical results, and the byte order is the same in both methods. Therefore no concrete input can distinguish their behaviours."
+}

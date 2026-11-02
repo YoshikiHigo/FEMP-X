@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same loop and string concatenation; no input can distinguish their behavior."
+}

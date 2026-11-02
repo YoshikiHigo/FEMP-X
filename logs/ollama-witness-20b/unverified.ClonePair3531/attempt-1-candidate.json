@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element-wise comparison of two int arrays; they handle nulls and differing lengths in the same way, returning the same boolean result for any input."
+}

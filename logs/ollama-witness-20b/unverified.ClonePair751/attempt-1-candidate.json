@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: they check for reference equality, nulls, length equality, and element-wise equality in the same order. No input can cause one to return a different value, throw an exception, or exhibit a side effect that the other does not."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods contain identical control flow and state updates; no input can cause a difference in return value, side effects, exception type, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1834,
+  "eval_count": 122,
+  "total_duration": 1489250900,
+  "load_duration": 2749800
+}

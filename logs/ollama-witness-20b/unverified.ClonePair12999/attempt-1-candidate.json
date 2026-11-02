@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical results for all possible long inputs; the comparison operators differ only in boundary handling, but the outcomes coincide for Integer.MIN_VALUE and Integer.MAX_VALUE as well as all other values. No concrete separating input exists."
+}

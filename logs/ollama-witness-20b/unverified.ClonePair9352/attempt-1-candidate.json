@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all control paths, both methods exhibit identical behavior for every possible input within the specified constraints. No concrete separating input can be constructed that would cause a difference in return value, side effects, exception type, or non‑termination."
+}

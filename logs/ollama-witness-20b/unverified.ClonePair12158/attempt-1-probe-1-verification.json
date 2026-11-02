@@ -1,0 +1,61 @@
+{
+  "key": "unverified.ClonePair12158",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTEyMzQ1NjdG)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTEyMzQ1NjdG)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTEyMzQ1NjdG)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTEyMzQ1NjdG)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTEyMzQ1NjdG)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTEyMzQ1NjdG)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTEyMzQ1NjdG)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTEyMzQ1NjdG)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "The input \"A1234567F\" satisfies the pattern and checksum of method1, causing it to return true, while method2 rejects it due to incorrect length, returning false.",
+    "arguments_java": [
+      "\"A1234567F\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 156.545
+}

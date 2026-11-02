@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte‑to‑int conversion: they treat each byte as unsigned by adding 256 to negative values in method1 and by masking with 0xff in method2. For all valid inputs (including null, negative lengths, and out‑of‑bounds indices) the control flow and resulting values are the same, so no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1274,
+  "eval_count": 233,
+  "total_duration": 2253863400,
+  "load_duration": 2599000
+}

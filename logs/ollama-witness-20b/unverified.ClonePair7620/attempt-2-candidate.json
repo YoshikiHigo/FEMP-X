@@ -1,0 +1,15 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 evaluates both sides of the equality check, so if one side returns true and the other false the overall result is false. method2 only evaluates one side (the first equals call) when the objects are not the same reference, so it can return true even if the reverse equality check would fail. Using two custom classes with asymmetric equals demonstrates this.",
+  "arguments_java": [
+    "new A(1)",
+    "new B(1)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

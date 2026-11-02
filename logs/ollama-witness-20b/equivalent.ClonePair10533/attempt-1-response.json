@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs: they return null for null or empty (after trimming) strings, and otherwise return Integer.valueOf(src). No input can cause a different return value, side effect, exception type, or non‑termination between the two methods.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 800,
+  "eval_count": 262,
+  "total_duration": 2411356100,
+  "load_duration": 6298200
+}

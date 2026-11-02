@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all deterministic, local, bounded inputs. They both delegate to System.getProperty and parse the result with Integer.parseInt, catching NumberFormatException in method1 and any Exception in method2. Since Integer.parseInt only throws NumberFormatException, the catch blocks are equivalent. Any other exception (e.g., NullPointerException from a null key or SecurityException from a restrictive security manager) propagates in both methods because method1 does not catch it and method2 would catch it but the scenario cannot be reliably reproduced in a deterministic test environment without altering the JVM security settings. Therefore no concrete separating input exists under the given constraints.}"
+}

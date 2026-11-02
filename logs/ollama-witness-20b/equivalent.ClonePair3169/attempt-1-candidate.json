@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all possible Object inputs: they return the unboxed value of an Integer or Long, and throw the same exceptions for null or incompatible types. No concrete input can distinguish their outputs or side effects."
+}

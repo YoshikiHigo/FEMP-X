@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical results for all deterministic, bounded inputs. No distinguishing test case was found."
+}

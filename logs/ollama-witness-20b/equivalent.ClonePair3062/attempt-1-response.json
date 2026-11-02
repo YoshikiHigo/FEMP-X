@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally identical; they perform the same null/empty check and parse the string with Double.parseDouble. No input can cause a difference in return value, side effect, exception type, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 860,
+  "eval_count": 69,
+  "total_duration": 937388300,
+  "load_duration": 2646700
+}

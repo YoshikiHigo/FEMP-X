@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same modular arithmetic logic for all integer inputs, including handling of negative values and zero divisors. No input can produce a differing return value, side effect, exception type, or non‑termination between method1 and method2."
+}

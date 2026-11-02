@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the maximum of three integers using identical logic; no input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1167,
+  "eval_count": 49,
+  "total_duration": 801202000,
+  "load_duration": 8690300
+}

@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 implements the correct Gregorian leap‑year rule, returning true only for years divisible by 4 but not by 100 unless also divisible by 400. method2 incorrectly returns true for any year divisible by 4, because the second disjunct is redundant. For a year such as 1900, method1 returns false while method2 returns true.",
+  "arguments_java": [
+    "1900"
+  ],
+  "parameter_types": [
+    "int"
+  ],
+  "void_return": false
+}

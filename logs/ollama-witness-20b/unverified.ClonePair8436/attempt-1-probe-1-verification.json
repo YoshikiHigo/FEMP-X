@@ -1,0 +1,61 @@
+{
+  "key": "unverified.ClonePair8436",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDE=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDE=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDE=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Double(1.0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IDE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IDE=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 attempts to parse the raw string \" 1\" using Double.parseDouble, which throws a NumberFormatException because the string contains leading whitespace. The exception is caught and method1 returns null. method2 first trims the string, removing the leading whitespace, resulting in \"1\", which is a valid numeric literal. The constructor Double(\"1\") succeeds and returns the Double value 1.0. Thus, for the same input, method1 returns null while method2 returns 1.0.",
+    "arguments_java": [
+      "\" 1\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 162.061
+}

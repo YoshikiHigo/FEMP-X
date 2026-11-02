@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"No concrete input can be constructed that distinguishes the two methods without modifying system properties or relying on external state. The methods differ only in how they handle negative integer property values, but there is no guaranteed system property that contains a negative integer string. Therefore, a deterministic, local, bounded test case that separates the behaviors cannot be provided.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1309,
+  "eval_count": 237,
+  "total_duration": 2126930500,
+  "load_duration": 10417400
+}

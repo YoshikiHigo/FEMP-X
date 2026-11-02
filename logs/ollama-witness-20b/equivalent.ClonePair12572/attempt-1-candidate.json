@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods contain identical code paths and produce the same result for all possible inputs; no distinguishing input exists."
+}

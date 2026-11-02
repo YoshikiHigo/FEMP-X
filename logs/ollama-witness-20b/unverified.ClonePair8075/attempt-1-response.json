@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods behave identically for all possible inputs: they either return a numeric wrapper (Integer for strings ending with 'I', Float for strings ending with 'F') or null, and any other input causes the same exception or null result. No concrete input can make one method return a value while the other returns a different value, throws a different exception, or terminates differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 874,
+  "eval_count": 256,
+  "total_duration": 2321814700,
+  "load_duration": 10670400
+}

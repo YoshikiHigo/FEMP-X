@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform the same null check and parse the string using Long.valueOf or Long.parseLong, which are equivalent for all valid inputs. They return null on NumberFormatException in the same way. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 870,
+  "eval_count": 74,
+  "total_duration": 889013200,
+  "load_duration": 2333600
+}

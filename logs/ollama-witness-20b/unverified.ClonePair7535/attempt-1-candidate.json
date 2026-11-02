@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks: they first compare object identity, then nullity, and finally compare the runtime classes using either == or equals. Since Class.equals is defined to be equivalent to ==, the two methods produce the same result for all possible inputs. No concrete input can distinguish them."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods interpret the 4 bytes starting at the given index as a little‑endian 32‑bit signed integer. For any byte array and offset, the two implementations produce identical results, so no concrete separating input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1537,
+  "eval_count": 1650,
+  "total_duration": 12824528900,
+  "load_duration": 4527600
+}

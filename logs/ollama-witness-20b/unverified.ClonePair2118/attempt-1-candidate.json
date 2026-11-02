@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same unsigned 32‑bit integer from a 4‑byte array and throw identical exceptions for shorter arrays; exhaustive reasoning shows no input yields a differing return value, side effect, or exception type."
+}

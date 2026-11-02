@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks on the same disjoint ranges of character codes. For every integer input, both methods return the same value, so no concrete separating input exists."
+}

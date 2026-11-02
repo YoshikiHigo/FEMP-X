@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all deterministic, bounded inputs. Both perform null checks and ultimately delegate to the same equals comparison, with no side effects or differing control flow that could produce a distinguishable result."
+}

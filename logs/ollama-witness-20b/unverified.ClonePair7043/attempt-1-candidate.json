@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical little‑endian conversion of four bytes using the same unsigned byte interpretation and the same arithmetic/bit‑wise operations. For any valid input (including edge cases such as null, insufficient length, or negative offsets) they either both throw the same exception or produce the same int result. No deterministic, bounded input can distinguish their behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same arithmetic operations and handle negative remainders identically. For all integer inputs where the divisor is non‑zero, they return the same result. When the divisor is zero, both methods throw an ArithmeticException due to integer division by zero. No input can distinguish their behavior."
+}

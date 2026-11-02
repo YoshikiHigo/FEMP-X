@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally identical; they perform the same byte‑array transformations and produce the same result for any input. No concrete separating test case can be constructed that distinguishes them within the allowed constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1851,
+  "eval_count": 117,
+  "total_duration": 1407488600,
+  "load_duration": 18123100
+}

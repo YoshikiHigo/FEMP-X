@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical two‑character hexadecimal parsing and byte conversion. For all deterministic, bounded inputs—including null, odd‑length strings, non‑hex characters, and values that produce negative bytes—their behaviors (return value, exceptions, and side effects) are the same. No concrete separating input can be constructed without violating the constraints."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they scan forward from the given index until a whitespace or the end of the string is reached, then return the final index. For any valid String input and any integer index (including negative, zero, or beyond the string length), both methods produce the same result. No input can cause one method to throw an exception while the other does not, nor can one terminate while the other does not. Therefore, no concrete separating test case exists."
+}

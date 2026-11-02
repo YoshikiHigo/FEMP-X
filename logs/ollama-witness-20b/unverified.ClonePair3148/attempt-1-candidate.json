@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all possible finite, deterministic inputs—including empty arrays, null, single-element, even-length, and odd-length arrays—the two methods exhibit identical behavior in terms of return value, side effects, exceptions, and termination. No concrete separating test case can be constructed that satisfies the constraints."
+}

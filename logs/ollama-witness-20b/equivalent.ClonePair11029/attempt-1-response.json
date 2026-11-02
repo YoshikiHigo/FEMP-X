@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic: they return false when either argument is null, otherwise they iterate over the array and return true if any element equals the key, otherwise false. No input can cause differing behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 890,
+  "eval_count": 100,
+  "total_duration": 1036687400,
+  "load_duration": 2061800
+}

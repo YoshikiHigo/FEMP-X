@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. In every case where one method returns a value, the other returns the same value; where one throws an exception, the other throws the same type of exception. No input can be constructed that causes a divergence in return value, side effect, exception type, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1273,
+  "eval_count": 398,
+  "total_duration": 3469517200,
+  "load_duration": 20380800
+}

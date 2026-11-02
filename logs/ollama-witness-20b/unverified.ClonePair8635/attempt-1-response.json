@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical bounds checking and casting; no input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 966,
+  "eval_count": 41,
+  "total_duration": 407388500,
+  "load_duration": 12069400
+}

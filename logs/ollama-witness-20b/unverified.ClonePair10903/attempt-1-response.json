@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods read the same system property and the test framework prohibits modifying system properties. Without setting a property to a non‑numeric value, the two methods cannot be distinguished by return value, side effect, exception, or non‑termination. Therefore no concrete separating input can be constructed under the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1080,
+  "eval_count": 296,
+  "total_duration": 2405209600,
+  "load_duration": 20809900
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods contain identical logic and will behave the same for any pair of Class[] inputs, including nulls and empty arrays. No input can cause one method to return a different value, throw a different exception, or exhibit non‑termination while the other does not."
+}

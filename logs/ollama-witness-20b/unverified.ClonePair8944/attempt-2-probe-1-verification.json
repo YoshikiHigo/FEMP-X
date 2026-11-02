@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair8944",
+  "stable": true,
+  "differenceType": "exception",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(-1)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NumberFormatException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(-1)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(-1)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.NumberFormatException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(amF2YS52ZXJzaW9u),Integer(-1)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "For a key that is present but whose value is not a valid integer, method1 catches NumberFormatException and returns the default value, whereas method2 propagates the exception. The system property \"java.version\" is always defined in a standard JVM and its value (e.g., \"17.0.2\") cannot be parsed as an int. Thus method1 returns the supplied default, while method2 throws NumberFormatException.",
+    "arguments_java": [
+      "\"java.version\"",
+      "-1"
+    ],
+    "parameter_types": [
+      "String",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 137.669
+}

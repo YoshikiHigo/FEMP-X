@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are equivalent for all finite, non‑null byte array inputs. No deterministic input can cause one to return a different value, throw a different exception, or terminate differently while the other behaves the same."
+}

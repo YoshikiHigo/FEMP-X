@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods evaluate the same condition on the byte argument; no input can cause one to return true while the other returns false.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 750,
+  "eval_count": 129,
+  "total_duration": 1299202300,
+  "load_duration": 2543700
+}

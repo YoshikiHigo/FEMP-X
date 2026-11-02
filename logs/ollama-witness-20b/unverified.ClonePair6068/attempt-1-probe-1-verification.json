@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair6068",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Integer[][Integer(1),Integer(2)],java.lang.String[][String(MQ==),String(Mg==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Integer[][Integer(1),Integer(2)],java.lang.String[][String(MQ==),String(Mg==)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Integer[][Integer(1),Integer(2)],java.lang.String[][String(MQ==),String(Mg==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Integer[][Integer(1),Integer(2)],java.lang.String[][String(MQ==),String(Mg==)]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Integer[][Integer(1),Integer(2)],java.lang.String[][String(MQ==),String(Mg==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Integer[][Integer(1),Integer(2)],java.lang.String[][String(MQ==),String(Mg==)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.Integer[][Integer(1),Integer(2)],java.lang.String[][String(MQ==),String(Mg==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.Integer[][Integer(1),Integer(2)],java.lang.String[][String(MQ==),String(Mg==)]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 returns false when the two arrays are of different runtime classes (e.g., Integer[] vs String[]), whereas method2 attempts to copy the arrays with System.arraycopy, which throws an ArrayStoreException because the destination array’s component type is not compatible with the source array’s component type.",
+    "arguments_java": [
+      "new Integer[]{1,2}",
+      "new String[]{\"1\",\"2\"}"
+    ],
+    "parameter_types": [
+      "Object[]",
+      "Object[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 161.166
+}

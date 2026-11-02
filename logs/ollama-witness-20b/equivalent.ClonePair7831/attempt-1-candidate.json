@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are byte‑for‑byte identical; they compute the same value, perform the same side‑effects, and terminate under the same conditions. No concrete input can distinguish them."
+}

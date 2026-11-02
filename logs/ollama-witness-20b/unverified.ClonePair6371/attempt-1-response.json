@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets the first byte as a signed value and propagates its sign through the left‑shift operations, whereas method2 masks each byte to unsigned before shifting. With a negative first byte the two computations produce different long values.\",\"arguments_java\":[\"new byte[]{(byte)-1,0,0,0,0,0,0,0}\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1018,
+  "eval_count": 638,
+  "total_duration": 5129623400,
+  "load_duration": 20757300
+}

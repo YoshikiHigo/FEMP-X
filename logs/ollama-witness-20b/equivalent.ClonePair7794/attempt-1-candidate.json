@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are byte‑for‑byte identical; they compute the same float array from the input byte array and return it. No input can cause one to behave differently from the other."
+}

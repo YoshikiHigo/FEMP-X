@@ -1,0 +1,60 @@
+{
+  "key": "equivalent.ClonePair2599",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-16777216)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-16777216)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-16777216)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(-16777216)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][0, 0, 0, -1]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 masks each byte to unsigned before shifting, while method2 only masks bytes 0–2 and leaves byte 3 sign‑extended. For a negative byte at index 3, method1 produces a large positive int, whereas method2 produces a negative int.",
+    "arguments_java": [
+      "new byte[]{0,0,0,-1}"
+    ],
+    "parameter_types": [
+      "byte[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 165.563
+}

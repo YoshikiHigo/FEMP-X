@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. They both throw the same exceptions (NullPointerException when the string is null, StringIndexOutOfBoundsException when the start index is out of bounds) and otherwise return the first non‑whitespace index or the original index if none is found. No input can cause one method to return a different value, throw a different exception, or terminate differently than the other.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1050,
+  "eval_count": 346,
+  "total_duration": 2748285600,
+  "load_duration": 8829100
+}

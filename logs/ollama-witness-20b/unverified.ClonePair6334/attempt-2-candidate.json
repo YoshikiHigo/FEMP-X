@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical bitwise assembly of eight consecutive bytes starting at the given offset. For any byte array (including empty or null) and any integer offset, they either throw the same exception (ArrayIndexOutOfBoundsException or NullPointerException) or return the same 64‑bit value. No deterministic, bounded input can distinguish their behavior."
+}

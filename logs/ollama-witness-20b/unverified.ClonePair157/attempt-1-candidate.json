@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical length checks and element-wise comparisons; for all possible byte array inputs (including null, empty, equal, and unequal arrays) they produce the same return value or throw the same exception. No concrete separating input exists."
+}

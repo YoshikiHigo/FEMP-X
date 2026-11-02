@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods evaluate equality of two strings using the same semantics (null handling, equals vs compareTo). For any pair of input strings, method1 and method2 produce identical boolean results. No concrete separating input exists."
+}

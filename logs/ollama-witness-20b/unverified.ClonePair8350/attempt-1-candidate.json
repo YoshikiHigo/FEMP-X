@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same logic: they iterate from the given index while the character at that index is whitespace and return the first non‑whitespace index. For any String (including null) and any int index, the control flow and return value are identical, so no concrete separating input exists."
+}

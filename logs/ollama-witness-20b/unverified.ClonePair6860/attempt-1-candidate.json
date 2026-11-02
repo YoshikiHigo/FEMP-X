@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical computations; the added parentheses in method2 do not alter the logic or result. No concrete input can distinguish their behavior."
+}

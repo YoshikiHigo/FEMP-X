@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical parsing logic: they check for null, then call Integer.parseInt(value) in method1 and Integer.valueOf(value) in method2. Both functions internally parse the string using the same radix and throw NumberFormatException for the same invalid inputs. The returned Integer objects are equal for all valid inputs, and the exception behavior is identical. No deterministic, bounded input can distinguish the two methods.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 748,
+  "eval_count": 312,
+  "total_duration": 2464202900,
+  "load_duration": 7857900
+}

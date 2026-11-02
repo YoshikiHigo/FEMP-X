@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical conditional logic for all integer inputs; no input causes a differing return value, side effect, exception, or non‑termination."
+}

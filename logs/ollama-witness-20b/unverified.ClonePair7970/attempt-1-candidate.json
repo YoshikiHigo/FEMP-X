@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns true when the second argument is an empty string, whereas method2 returns false in that case.",
+  "arguments_java": [
+    "\"foo\"",
+    "\"\""
+  ],
+  "parameter_types": [
+    "String",
+    "String"
+  ],
+  "void_return": false
+}

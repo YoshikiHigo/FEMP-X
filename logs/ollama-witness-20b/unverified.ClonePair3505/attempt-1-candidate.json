@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑wise equality checks on the two int arrays. They handle nulls, reference equality, length mismatch, and element comparison in the same logical order. No deterministic input can cause one method to return true while the other returns false, or to throw an exception in one but not the other. Therefore, no concrete separating test case exists."
+}

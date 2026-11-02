@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs under the given constraints. No input can cause a difference in return value, side effects, or termination."
+}

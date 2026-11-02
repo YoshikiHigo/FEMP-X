@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return true if and only if the array contains an element equal to the target (or both are null). No input can cause a divergence in return value, side effect, exception, or termination."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods compute the same 16‑bit value from the same two consecutive bytes; their control flow, indexing, and type handling are equivalent for all valid inputs. No deterministic, bounded input can produce a differing return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1169,
+  "eval_count": 497,
+  "total_duration": 3921703800,
+  "load_duration": 12416700
+}

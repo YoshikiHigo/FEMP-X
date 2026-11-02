@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical bitwise operations on non-overlapping byte ranges; addition and bitwise OR yield the same 32‑bit result for all valid inputs. No concrete separating input exists."
+}

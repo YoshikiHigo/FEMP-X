@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs: they both iterate over the second vector, check containment in the first, add missing elements, and return the first vector. Edge cases such as null arguments, empty vectors, or shared references produce the same exceptions or results. No concrete input can be constructed that distinguishes their return values, side effects, or termination characteristics."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No deterministic, local input can distinguish the two methods without modifying global state. The only behavioral difference occurs when a system property is present with a non‑numeric value, causing method1 to throw a NumberFormatException while method2 catches it and returns the default. Since the test harness forbids setting or reading system properties in the input expressions, there is no valid concrete input that can trigger this divergence. Therefore, a separating test case cannot be constructed under the given constraints."
+}

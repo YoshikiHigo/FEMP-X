@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical transformations for all possible char inputs; no concrete separating input exists."
+}

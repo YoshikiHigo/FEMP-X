@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same angle for all real double inputs; exhaustive analysis shows no input yields a differing return value, side effect, exception, or non‑termination."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of both methods, no deterministic input can be constructed that causes a difference in return value, side effects, exception behavior, or non‑termination. The two implementations handle all edge cases (nulls, empty strings, overlapping patterns, etc.) in equivalent ways, and any potential differences (such as string concatenation performance) do not affect observable behavior. Therefore, no concrete separating test case exists."
+}

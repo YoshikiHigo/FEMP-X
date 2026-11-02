@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all valid inputs and produce the same result or exception for every possible argument combination. No deterministic, bounded input can distinguish them."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑wise equality checks for Object[] arguments. The only additional guard in method2 is a class equality check, but for any two Object[] instances that are not of the same runtime class, method1 would already return false due to length or element comparison. No deterministic, bounded input can make method1 return true while method2 returns false, or vice versa. Therefore no concrete separating test case exists."
+}

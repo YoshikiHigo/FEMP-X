@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum of an int array in the same way; they behave identically for all possible inputs, including empty arrays (both throw NPE) and null arrays (both throw NPE). No concrete separating input exists."
+}

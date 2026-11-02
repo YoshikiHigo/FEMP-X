@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: they both retrieve a system property, check for null, attempt to parse it as an integer, and return the default value on failure or null. No input can cause a differing return value, side effect, exception type, or non‑termination."
+}

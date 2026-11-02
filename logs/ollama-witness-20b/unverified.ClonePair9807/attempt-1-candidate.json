@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all deterministic, bounded inputs. Both perform the same null checks, handle null replacements by assigning an empty string, and iterate over occurrences of the search string using indexOf in the same manner. The only pathological case is when the search string is empty, which causes an infinite loop in both methods. No input can distinguish their return values, side effects, exceptions, or termination behavior."
+}

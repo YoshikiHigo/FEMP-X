@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, when the replacement string \"old\" is empty, both methods enter an infinite loop due to the indexOf returning the current position repeatedly; when the source string is null, both throw a NullPointerException; otherwise they perform the same replacement logic. No input can distinguish the return value, side effects, exception type, or termination behavior of the two methods."
+}

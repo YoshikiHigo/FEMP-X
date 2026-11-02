@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return true if and only if the two input strings are exactly equal (including both being null). No input can make method1 return true while method2 returns false or vice versa, so no concrete separating test case exists."
+}

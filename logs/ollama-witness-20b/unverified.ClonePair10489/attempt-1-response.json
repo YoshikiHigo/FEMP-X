@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods delegate to Integer.parseInt and new Integer(String) respectively, which exhibit identical behavior for all valid and invalid input strings. No deterministic input can cause one method to return a value or throw an exception while the other behaves differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 765,
+  "eval_count": 298,
+  "total_duration": 2351589500,
+  "load_duration": 20638400
+}

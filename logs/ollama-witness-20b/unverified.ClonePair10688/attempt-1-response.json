@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical alphanumeric checks; no input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 848,
+  "eval_count": 59,
+  "total_duration": 777075400,
+  "load_duration": 8341100
+}

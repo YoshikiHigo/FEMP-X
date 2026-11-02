@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte extraction; the use of >> versus >>> does not affect the masked 8‑bit results for any 32‑bit int value, so no concrete input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1306,
+  "eval_count": 1015,
+  "total_duration": 8022893200,
+  "load_duration": 7175000
+}

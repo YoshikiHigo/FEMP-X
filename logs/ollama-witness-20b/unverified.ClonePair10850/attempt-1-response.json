@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical whitespace skipping logic on the input string and index; for any valid Java String and integer index, they return the same result. No input can cause one to return a different value, throw a different exception, or exhibit non‑termination while the other behaves normally.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1040,
+  "eval_count": 164,
+  "total_duration": 1370015200,
+  "load_duration": 2128500
+}

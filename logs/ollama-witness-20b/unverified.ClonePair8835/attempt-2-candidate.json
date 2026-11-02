@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical binary search logic. For all possible inputs—including null arrays, empty arrays, and arrays of any length with any short key—their control flow, updates to low/high, and final return expressions produce the same result. No deterministic, bounded input can distinguish the two implementations."
+}

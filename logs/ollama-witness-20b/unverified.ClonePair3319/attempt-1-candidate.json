@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they return true iff the two int arrays have the same length and all corresponding elements are equal. No input can make one method return a different value, throw an exception, or exhibit a side‑effect that the other does not."
+}

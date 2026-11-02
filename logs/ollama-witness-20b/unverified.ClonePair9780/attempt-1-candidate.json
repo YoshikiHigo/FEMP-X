@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks and comparisons in the same order; no input can cause one to return a different value, throw an exception, or exhibit a side‑effect that the other does not. Therefore no concrete separating test case exists."
+}

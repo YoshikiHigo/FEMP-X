@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical computations for all valid inputs (byte arrays of length at least 4). Both convert each byte to an unsigned 8‑bit value, then combine the first four bytes into a 32‑bit unsigned integer in little‑endian order. For any byte array of length <4 or null, both throw the same ArrayIndexOutOfBoundsException or NullPointerException, respectively. No input can produce a differing return value, side effect, exception type, or non‑termination between the two methods.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1110,
+  "eval_count": 566,
+  "total_duration": 4805329400,
+  "load_duration": 4073000
+}

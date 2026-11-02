@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No concrete input can distinguish the two methods under the given constraints. method1 returns true only when the two arguments are the same reference, or they are of the same class and have equal hashCodes. For any two distinct objects of the same class that share a hashCode, the Java contract for equals requires that equals must also return true, so method2 would also return true. Conversely, if equals returns true, the hashCodes are guaranteed to be equal, so method1 would also return true. Therefore, under normal Java behavior and without modifying any classes, the two methods are equivalent for all possible inputs."
+}

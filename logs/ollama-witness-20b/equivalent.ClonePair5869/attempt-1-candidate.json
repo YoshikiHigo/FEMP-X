@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are byte‑for‑byte identical; they perform the same checks, clamp the same way, clone and sort the array, compute the same indices, and return the same arithmetic mean. No input can produce a differing result, side effect, exception, or non‑termination."
+}

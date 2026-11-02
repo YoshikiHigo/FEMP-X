@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible inputs. Both guard against null or empty search strings and null replacement strings, and perform the same replacement logic when all arguments are valid. No input can cause a difference in return value, side effects, exceptions, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1215,
+  "eval_count": 637,
+  "total_duration": 5003504200,
+  "load_duration": 19379800
+}

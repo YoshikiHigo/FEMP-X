@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all possible byte[] inputs, including edge cases such as empty arrays, arrays of different lengths, identical arrays, and null references. No deterministic input can cause one method to return a different value, throw a different exception, or exhibit non‑termination while the other behaves differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1198,
+  "eval_count": 217,
+  "total_duration": 2106518400,
+  "load_duration": 9378800
+}

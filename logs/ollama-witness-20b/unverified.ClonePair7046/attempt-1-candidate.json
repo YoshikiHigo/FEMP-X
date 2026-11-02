@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical computations for all valid inputs: they both interpret four consecutive bytes as a 32‑bit signed integer in little‑endian order. For any byte array and offset/index that does not trigger an exception, both methods produce the same result. They also throw the same type of exception (ArrayIndexOutOfBoundsException or NullPointerException) for out‑of‑bounds or null inputs. No deterministic, bounded input can be constructed that causes a difference in return value, side effect, exception type, or non‑termination."
+}

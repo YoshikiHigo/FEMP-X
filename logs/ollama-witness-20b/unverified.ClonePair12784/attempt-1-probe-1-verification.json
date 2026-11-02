@@ -1,0 +1,65 @@
+{
+  "key": "unverified.ClonePair12784",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "TIMEOUT",
+        "valueSnapshot": null,
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "<snapshot-skipped-after-timeout>"
+      },
+      {
+        "status": "TIMEOUT",
+        "valueSnapshot": null,
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "<snapshot-skipped-after-timeout>"
+      }
+    ],
+    [
+      {
+        "status": "TIMEOUT",
+        "valueSnapshot": null,
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "<snapshot-skipped-after-timeout>"
+      },
+      {
+        "status": "TIMEOUT",
+        "valueSnapshot": null,
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "<snapshot-skipped-after-timeout>"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "no_termination",
+    "reason": "When the replacement substring is the empty string, method1 terminates by repeatedly inserting the new substring at successive positions, while method2 enters an infinite loop because the index of the empty string never advances.",
+    "arguments_java": [
+      "\"abc\"",
+      "\"\"",
+      "\"x\""
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": "method2’s loop condition is while (x <= y) with y = s.indexOf(oldSub,x). For oldSub == \"\", indexOf(\"\",x) returns x, so y never changes and x never increases, causing an infinite loop. method1, however, uses indexOf(\"\",byPassingIndex) which returns byPassingIndex, and after each replacement byPassingIndex is increased by tarLength (1), eventually exceeding the string length and terminating."
+  },
+  "remainingSeconds": 135.473
+}

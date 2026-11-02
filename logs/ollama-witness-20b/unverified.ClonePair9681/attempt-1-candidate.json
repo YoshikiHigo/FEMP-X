@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return true iff the two char arrays are either both null or non‑null and contain the same sequence of characters. No input can cause a divergence in return value, side effect, exception, or termination."
+}

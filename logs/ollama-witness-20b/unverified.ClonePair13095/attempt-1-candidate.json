@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both perform a straightforward replace of non‑empty patterns, propagate null arguments in the same way, and handle empty strings identically. No input can be constructed that causes one method to return a different value, throw a different exception, or terminate differently while the other behaves otherwise."
+}

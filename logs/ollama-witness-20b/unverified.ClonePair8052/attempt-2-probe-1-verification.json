@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair8052",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==),null,String(Yg==)],String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==),null,String(Yg==)],String(YQ==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==),null,String(Yg==)],String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==),null,String(Yg==)],String(YQ==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==),null,String(Yg==)],String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==),null,String(Yg==)],String(YQ==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(0)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==),null,String(Yg==)],String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==),null,String(Yg==)],String(YQ==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 safely skips null array elements and returns the index of the matching element, whereas method2 calls str.equals(array[i]) which throws a NullPointerException when array[i] is null. The test uses a non‑null search string and an array that contains a null element, causing method2 to throw while method1 returns 0.",
+    "arguments_java": [
+      "new String[]{\"a\",null,\"b\"}",
+      "\"a\""
+    ],
+    "parameter_types": [
+      "String[]",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 151.026
+}

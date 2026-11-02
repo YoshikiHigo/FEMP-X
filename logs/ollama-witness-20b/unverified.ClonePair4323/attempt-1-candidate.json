@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for java.util.Date: they return true iff both arguments are null or both are non‑null and represent the same instant (checked via equals in method1 and compareTo in method2). No input can cause a divergence in return value, side‑effect, exception, or termination."
+}

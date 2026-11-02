@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no deterministic input can produce a different observable behavior. Both methods parse the string (or return null) in the same way for all possible String values, including null, empty, whitespace, numeric, and special values such as NaN or Infinity. Therefore, no concrete separating test case exists."
+}

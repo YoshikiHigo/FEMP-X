@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. They both return the common prefix of the two strings, and both throw a NullPointerException when either argument is null. No input can distinguish them within the allowed difference types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1119,
+  "eval_count": 394,
+  "total_duration": 3373269200,
+  "load_duration": 2557800
+}

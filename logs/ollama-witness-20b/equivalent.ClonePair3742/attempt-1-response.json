@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. They perform equivalent element‑wise comparisons and return the same boolean value or throw the same exception types under all possible combinations of array lengths, nulls, and numeric values. No concrete separating test case can be constructed without violating the constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1160,
+  "eval_count": 485,
+  "total_duration": 4093842800,
+  "load_duration": 2564400
+}

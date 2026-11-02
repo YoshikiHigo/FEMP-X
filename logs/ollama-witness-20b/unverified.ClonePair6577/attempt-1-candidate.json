@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical dot‑product computations; they use the same loop bounds, arithmetic, and return the same float value for any pair of non‑null float arrays. They also both throw a NullPointerException when the first argument is null, and they do not modify their arguments or produce side effects. Therefore no concrete input can distinguish their behaviours."
+}

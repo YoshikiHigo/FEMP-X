@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods implement identical logic for all possible char inputs; no deterministic input can cause one to return a different value or exhibit a side effect compared to the other.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 848,
+  "eval_count": 103,
+  "total_duration": 885202200,
+  "load_duration": 7538800
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible inputs: they both return true iff the two arrays are the same reference or have equal length and identical characters in the same order, and return false otherwise. No input can distinguish their behavior."
+}

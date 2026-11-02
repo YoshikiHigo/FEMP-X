@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 compares Date values by epoch seconds (getTime()/1000) whereas method2 uses Date.equals which compares full milliseconds. For two Date objects that differ by less than one second, method1 returns false while method2 returns true.",
+  "arguments_java": [
+    "date(1000L)",
+    "date(2000L)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

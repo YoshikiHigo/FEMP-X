@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 compares each element and returns false when any element differs; method2 accumulates XOR of differences and returns true if the XOR of all differences is zero. For arrays of equal length where the XOR of all per‑element differences equals zero, method2 will incorrectly return true while method1 correctly returns false.",
+  "arguments_java": [
+    "new byte[]{1,4}",
+    "new byte[]{2,7}"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "byte[]"
+  ],
+  "void_return": false
+}

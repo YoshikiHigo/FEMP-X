@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical lexicographic comparison of two char arrays; for all deterministic, bounded inputs they produce the same result, throw the same exceptions, and terminate. No concrete separating input exists."
+}

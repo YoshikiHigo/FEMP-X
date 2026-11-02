@@ -1,0 +1,63 @@
+{
+  "key": "unverified.ClonePair9654",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][char[][],char[][*]]",
+        "inputAfterSnapshot": "java.lang.Object[][char[][],char[][*]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][char[][],char[][*]]",
+        "inputAfterSnapshot": "java.lang.Object[][char[][],char[][*]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][char[][],char[][*]]",
+        "inputAfterSnapshot": "java.lang.Object[][char[][],char[][*]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][char[][],char[][*]]",
+        "inputAfterSnapshot": "java.lang.Object[][char[][],char[][*]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 compares lengths and characters literally, so an empty password and a single '*' character are not equal. method2 treats '*' as a wildcard that matches any sequence (including the empty string), so it returns true for the same inputs.",
+    "arguments_java": [
+      "new char[]{}",
+      "new char[]{'*'}"
+    ],
+    "parameter_types": [
+      "char[]",
+      "char[]"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 143.181
+}

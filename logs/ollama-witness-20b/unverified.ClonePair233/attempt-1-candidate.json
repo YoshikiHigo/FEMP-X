@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible byte[] inputs. Both perform the same null checks, length checks, and element-wise comparisons, with method2 using a reference equality shortcut that does not alter the outcome. No input can cause a divergence in return value, side effects, exception type, or non‑termination."
+}

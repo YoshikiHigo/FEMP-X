@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return true for the same set of characters (space, carriage return, line feed, tab) and false for all other characters. No input can distinguish their behavior."
+}

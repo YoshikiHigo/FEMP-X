@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum element of an int array in the same way. For any non‑null array of length ≥1 they return the same value; for empty or null arrays they both throw the same exception. No input can distinguish their behavior."
+}

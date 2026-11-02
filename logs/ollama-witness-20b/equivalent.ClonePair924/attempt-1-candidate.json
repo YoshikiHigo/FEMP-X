@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all valid inputs and error cases. Both convert each byte to a two‑character hexadecimal string, handling negative byte values in the same way, and both throw the same exceptions for out‑of‑bounds or null arguments. No concrete input can distinguish their return values, side effects, or exception behavior."
+}

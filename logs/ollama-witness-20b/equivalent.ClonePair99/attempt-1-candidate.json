@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic for all possible inputs and initial states. Both check for null, test containment, and add if absent, returning the result of add. No input can cause one to behave differently from the other."
+}

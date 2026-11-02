@@ -1,0 +1,65 @@
+{
+  "key": "unverified.ClonePair11755",
+  "stable": true,
+  "differenceType": "no_termination",
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.OutOfMemoryError",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]"
+      },
+      {
+        "status": "TIMEOUT",
+        "valueSnapshot": null,
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "<snapshot-skipped-after-timeout>"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.OutOfMemoryError",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]"
+      },
+      {
+        "status": "TIMEOUT",
+        "valueSnapshot": null,
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),String(),String(eA==)]",
+        "inputAfterSnapshot": "<snapshot-skipped-after-timeout>"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "no_termination",
+    "reason": "method1 enters an infinite loop when the search string is empty because it repeatedly finds the empty string at the same index and never advances the search position, while method2 handles the empty search string correctly and terminates.",
+    "arguments_java": [
+      "\"abc\"",
+      "\"\"",
+      "\"x\""
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": "In method1, startindex = in.indexOf(\"\",0) returns 0. Inside the while loop, currindex is set to startindex (0) and then startindex is recomputed as in.indexOf(\"\",currindex) which again returns 0. Since currindex never increases (find.length() is 0), the loop condition startindex > -1 is always true, causing an infinite loop. Method2, however, sets gofrom to next + lenB (lenB > 0), so the next search starts beyond the current position and the loop eventually terminates."
+  },
+  "remainingSeconds": 120.517
+}

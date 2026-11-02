@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 compares the entire strings and returns false for \\\"foo bar\\\" vs \\\"foo baz\\\" because the characters differ, while method2 splits each string on the first space and compares only the first token; both tokens are \\\"foo\\\", so method2 returns true.\",\"arguments_java\":[\"\\\"foo bar\\\"\",\"\\\"foo baz\\\"\"],\"parameter_types\":[\"String\",\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 943,
+  "eval_count": 374,
+  "total_duration": 3178512300,
+  "load_duration": 2172300
+}

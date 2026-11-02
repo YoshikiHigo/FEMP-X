@@ -1,0 +1,65 @@
+{
+  "key": "unverified.ClonePair10141",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWFhYQ==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWE=),String(YQ==),String(YWE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWE=),String(YQ==),String(YWE=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWFhYQ==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWE=),String(YQ==),String(YWE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWE=),String(YQ==),String(YWE=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWFhYQ==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWE=),String(YQ==),String(YWE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWE=),String(YQ==),String(YWE=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWFhYQ==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWE=),String(YQ==),String(YWE=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWE=),String(YQ==),String(YWE=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "Method1 replaces every occurrence of the target string in the original input string, producing a result that reflects all replacements. Method2 performs replacements on a mutable StringBuffer and then continues searching from the end of the inserted replacement. If the replacement string contains the target string, Method2 will not find the newly created target occurrences, whereas Method1 will. For the input source=\"aa\", target=\"a\", replacement=\"aa\", method1 returns \"aaaa\" while method2 returns \"aa\".",
+    "arguments_java": [
+      "\"aa\"",
+      "\"a\"",
+      "\"aa\""
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 39.045
+}

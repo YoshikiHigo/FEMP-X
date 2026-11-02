@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs: they return 0.0 for null or empty strings, and for any non‑empty string they attempt Double.parseDouble and return 0.0 on failure or the parsed value on success. The exception handling differs only in the caught type (Throwable vs Exception), but Double.parseDouble never throws an Error, so the behavior remains the same. No deterministic, bounded input can distinguish the two methods.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 860,
+  "eval_count": 456,
+  "total_duration": 3955493000,
+  "load_duration": 2049300
+}

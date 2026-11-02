@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they retrieve a property value from the given Properties object and return either the parsed integer or the default value. The only potential exception is a NullPointerException when the Properties argument is null, which occurs in the same way for both methods. No input can cause one method to behave differently from the other."
+}

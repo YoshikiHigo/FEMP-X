@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets the 8 bytes starting at the given offset as a little‑endian 64‑bit value, while method2 interprets them as a big‑endian value. For the input byte array {1,2,3,4,5,6,7,8} and offset 0, method1 returns 0x0807060504030201L whereas method2 returns 0x0102030405060708L, a clear difference in the returned long.\",\"arguments_java\":[\"new byte[]{1,2,3,4,5,6,7,8}\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1043,
+  "eval_count": 747,
+  "total_duration": 6099745900,
+  "load_duration": 3132700
+}

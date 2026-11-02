@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. For any String[] input and int skip, either both return the same array (when skip is a valid index) or both throw an exception (when skip is out of bounds or negative). No concrete separating test case can be constructed without invoking undefined behavior such as timing or external side effects.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 906,
+  "eval_count": 507,
+  "total_duration": 3945219400,
+  "load_duration": 13366500
+}

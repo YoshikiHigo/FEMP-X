@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For the byte value -1 (0xFF), method1 converts each byte to its two‑digit hexadecimal representation, yielding \"ff\". Method2, however, treats negative bytes by adding 256, then maps the high nibble to a letter starting at 'a' for values 160–255. For 0xFF the high nibble is 15, so it produces the letter 'g' (since 'a'+(15-10)= 'g'), and the low nibble 15 becomes 'f', resulting in \"gf\". Thus the two methods return different strings for the same input.",
+  "arguments_java": [
+    "new byte[]{-1}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false
+}

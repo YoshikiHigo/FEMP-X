@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic: they return true if the non‑null array contains an element equal to the argument ignoring case, otherwise false. No input can distinguish their behavior."
+}

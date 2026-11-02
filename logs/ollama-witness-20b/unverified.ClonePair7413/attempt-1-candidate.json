@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are logically equivalent for all possible inputs. Both perform a null check on the first argument, then compare the two arguments using equals in the same way. No input can cause a difference in return value, side effect, exception, or non‑termination."
+}

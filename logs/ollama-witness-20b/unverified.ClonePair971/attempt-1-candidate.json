@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks on the two byte arrays: they return true only when both are null or both are non‑null and have equal lengths with all corresponding elements equal. The control flow and logic are equivalent for all possible inputs, so no concrete separating test case exists."
+}

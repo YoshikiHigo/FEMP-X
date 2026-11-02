@@ -1,0 +1,17 @@
+{
+  "found": true,
+  "difference_type": "no_termination",
+  "reason": "method1 handles an empty \"ori\" (fromText) by inserting the replacement string between every character and at the end of the input, producing a finite result. method2, however, enters an infinite loop when \"fromText\" is empty because the search index never advances (pos2 is unchanged), so the loop never terminates.",
+  "arguments_java": [
+    "\"abc\"",
+    "\"\"",
+    "\"x\""
+  ],
+  "parameter_types": [
+    "String",
+    "String",
+    "String"
+  ],
+  "void_return": false,
+  "nontermination_evidence": "In method2, when fromText is empty, text.indexOf(\"\",pos2) always returns pos2. The code then executes the branch pos>0 (since pos==pos2>0 after the first iteration), appends to the buffer, and sets pos2 = pos + fromText.length() which is pos2 + 0, leaving pos2 unchanged. Consequently the loop condition while(true) never breaks, leading to non‑termination."
+}

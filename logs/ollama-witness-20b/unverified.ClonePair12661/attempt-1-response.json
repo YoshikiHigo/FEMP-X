@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs: they throw a NullPointerException on null, return 0 for the empty string, and for any non‑empty string they both attempt to parse the string as an integer, propagating a NumberFormatException if parsing fails. No deterministic, bounded input can distinguish their return values, side effects, or exception types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 880,
+  "eval_count": 570,
+  "total_duration": 4622283500,
+  "load_duration": 8559700
+}

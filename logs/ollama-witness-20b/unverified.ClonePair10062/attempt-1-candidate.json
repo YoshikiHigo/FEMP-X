@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte-to-int conversion; they behave the same for all valid and invalid inputs (including null arrays and negative lengths). No concrete separating input exists."
+}

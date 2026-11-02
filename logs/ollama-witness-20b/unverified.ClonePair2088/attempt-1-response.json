@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform the same prefix check on byte arrays; they are functionally equivalent for all inputs.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1168,
+  "eval_count": 45,
+  "total_duration": 866001200,
+  "load_duration": 3555800
+}

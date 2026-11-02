@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods contain identical code for all control‑flow branches. For any input array sizes, values, and boff/rowFilter parameters, both methods perform the same assignments to the pix array and return the same boolean value. No observable difference in return value, side effects, or termination behavior can be produced by any deterministic, bounded input."
+}

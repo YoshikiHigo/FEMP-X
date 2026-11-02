@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical operations: they mask the length to an even number, clamp it to the available data, allocate a StringBuffer of half that length, and iterate over the data two bytes at a time to construct characters. For all possible inputs (including null data, negative offsets, and lengths exceeding the array bounds), both methods throw the same exceptions or return the same string. No deterministic, bounded input can be found that distinguishes their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1468,
+  "eval_count": 379,
+  "total_duration": 3279700700,
+  "load_duration": 17366400
+}

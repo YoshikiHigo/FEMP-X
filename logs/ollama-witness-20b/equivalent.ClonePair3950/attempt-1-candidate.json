@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the control flow and array access patterns in both methods, no deterministic input can be constructed that causes one method to exhibit a different observable behavior (return value, exception type, side effect, or non‑termination) than the other. All edge cases (empty arrays, null references, differing lengths) lead to identical outcomes in both implementations."
+}

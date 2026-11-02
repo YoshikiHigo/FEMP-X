@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for all possible char inputs; no input can produce a differing return value, side effect, exception, or non-termination."
+}

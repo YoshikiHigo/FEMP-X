@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all valid inputs: they initialize the maximum with the first element and then iterate over the array comparing each element with the current maximum. For null or empty arrays both throw the same ArrayIndexOutOfBoundsException (or NullPointerException for null). No input can produce a differing return value, side effect, exception type, or non‑termination."
+}

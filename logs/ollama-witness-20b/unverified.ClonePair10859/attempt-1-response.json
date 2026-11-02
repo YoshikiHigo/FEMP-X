@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods return true for the same set of characters (tab, newline, carriage return, space) and false otherwise. No input can cause one method to return a different value, throw an exception, or exhibit a side‑effect that the other does not. Therefore no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 750,
+  "eval_count": 90,
+  "total_duration": 771939400,
+  "load_duration": 11241500
+}

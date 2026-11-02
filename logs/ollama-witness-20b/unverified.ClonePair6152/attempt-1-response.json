@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets the 4 bytes as a big‑endian integer and scales it by 1/0x7FFFFFFF, while method2 interprets the same 4 bytes as a little‑endian integer, subtracts 0x7FFFFFFF, and then scales. For the byte sequence {0x00,0x00,0x00,0x01} the two methods produce different float values (≈1.4e‑9 vs ≈‑0.992).\",\"arguments_java\":[\"new byte[]{0,0,0,1}\"],\"parameter_types\":[\"byte[]\",\"int\",\"float[]\",\"int\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1654,
+  "eval_count": 625,
+  "total_duration": 5381698200,
+  "load_duration": 7349100
+}

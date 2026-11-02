@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair6056",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==)],java.lang.Object[][String(YQ==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==)],java.lang.Object[][String(YQ==)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==)],java.lang.Object[][String(YQ==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==)],java.lang.Object[][String(YQ==)]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==)],java.lang.Object[][String(YQ==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==)],java.lang.Object[][String(YQ==)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==)],java.lang.Object[][String(YQ==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.lang.String[][String(YQ==)],java.lang.Object[][String(YQ==)]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 compares elements only, while method2 also checks that the two arrays are of the same runtime class. Passing a String[] and an Object[] with identical contents causes method1 to return true and method2 to return false.",
+    "arguments_java": [
+      "new String[]{\"a\"}",
+      "new Object[]{\"a\"}"
+    ],
+    "parameter_types": [
+      "Object[]",
+      "Object[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 161.027
+}

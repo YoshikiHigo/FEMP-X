@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair12586",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),Integer(-1)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),Integer(-1)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),Integer(-1)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWJj)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWJj),Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWJj),Integer(-1)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "When the requested length is negative, method1 attempts to create a char array of negative size, throwing a NegativeArraySizeException, whereas method2 simply performs no padding and returns the original string without throwing.",
+    "arguments_java": [
+      "\"abc\"",
+      "-1"
+    ],
+    "parameter_types": [
+      "String",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 160.617
+}

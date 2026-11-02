@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical results for all possible long inputs; the conditional boundaries are equivalent, so no concrete separating input exists."
+}

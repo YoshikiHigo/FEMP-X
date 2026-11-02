@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair7649",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.ArrayList[Integer(1),Integer(2)],java.util.LinkedList[Integer(1),Integer(2)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.ArrayList[Integer(1),Integer(2)],java.util.LinkedList[Integer(1),Integer(2)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.ArrayList[Integer(1),Integer(2)],java.util.LinkedList[Integer(1),Integer(2)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.ArrayList[Integer(1),Integer(2)],java.util.LinkedList[Integer(1),Integer(2)]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.ArrayList[Integer(1),Integer(2)],java.util.LinkedList[Integer(1),Integer(2)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.ArrayList[Integer(1),Integer(2)],java.util.LinkedList[Integer(1),Integer(2)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.ArrayList[Integer(1),Integer(2)],java.util.LinkedList[Integer(1),Integer(2)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.ArrayList[Integer(1),Integer(2)],java.util.LinkedList[Integer(1),Integer(2)]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 checks that the two objects have the same runtime class before delegating to equals, whereas method2 only checks that equals returns true.  For two different collection implementations that contain the same elements, equals() returns true but the classes differ, so method1 returns false while method2 returns true.",
+    "arguments_java": [
+      "new ArrayList<>(list(1,2))",
+      "new LinkedList<>(list(1,2))"
+    ],
+    "parameter_types": [
+      "Object",
+      "Object"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 164.213
+}

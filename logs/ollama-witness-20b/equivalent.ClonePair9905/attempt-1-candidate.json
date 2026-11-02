@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "In method1 the second while loop calls key2.charAt(i) unconditionally. When the last character is removed (e.g., input \"aa\"), i becomes equal to the new length and key2.charAt(i) throws StringIndexOutOfBoundsException. Method2 skips the charAt call after removal, so it terminates normally.",
+  "arguments_java": [
+    "\"aa\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same logic: iterate over the array, check startsWith, split on '=', return second part or null. No input can distinguish them."
+}

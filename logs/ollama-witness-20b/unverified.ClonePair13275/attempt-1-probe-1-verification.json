@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair13275",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "null",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MDEuMi4zLjQ=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MDEuMi4zLjQ=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][1, 2, 3, 4]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MDEuMi4zLjQ=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MDEuMi4zLjQ=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "null",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MDEuMi4zLjQ=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MDEuMi4zLjQ=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][1, 2, 3, 4]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MDEuMi4zLjQ=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MDEuMi4zLjQ=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 rejects IPs with leading zeros in an octet (e.g., \"01\") because it disallows a non‑zero octet that starts with 0, while method2 accepts them and parses the numeric value normally.",
+    "arguments_java": [
+      "\"01.2.3.4\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 158.013
+}

@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair2600",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,byte[][1, 2, 3]]",
+        "inputAfterSnapshot": "java.lang.Object[][null,byte[][1, 2, 3]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,byte[][1, 2, 3]]",
+        "inputAfterSnapshot": "java.lang.Object[][null,byte[][1, 2, 3]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,byte[][1, 2, 3]]",
+        "inputAfterSnapshot": "java.lang.Object[][null,byte[][1, 2, 3]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][null,byte[][1, 2, 3]]",
+        "inputAfterSnapshot": "java.lang.Object[][null,byte[][1, 2, 3]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "When the first argument is null and the second is non‑null, method1 returns false, whereas method2 attempts to evaluate val1.length in the loop condition and throws a NullPointerException.",
+    "arguments_java": [
+      "null",
+      "new byte[]{1,2,3}"
+    ],
+    "parameter_types": [
+      "byte[]",
+      "byte[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 166.275
+}

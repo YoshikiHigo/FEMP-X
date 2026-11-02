@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive reasoning over all deterministic, bounded inputs, both methods exhibit identical behavior. They both throw a NullPointerException when any argument is null, they both perform the same replacement logic for non‑null strings, and they both enter an infinite loop when the token/lookup string is empty. No input can cause one method to return a different value, throw a different exception type, or terminate when the other does not. Therefore, no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1357,
+  "eval_count": 456,
+  "total_duration": 3828481200,
+  "load_duration": 2644900
+}

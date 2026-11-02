@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are identical in logic; the only syntactic difference is parentheses placement in the while condition, which does not affect evaluation order or outcome. No input can distinguish their return values, side effects, or exception behavior."
+}

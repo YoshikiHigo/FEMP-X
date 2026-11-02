@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return the original string when the placeholder is null or not found, they both throw a NullPointerException when the placeholder is null, and they both replace the first occurrence of the placeholder with the replacement string (including when the replacement is null, which results in the literal \"null\" being inserted). No input can distinguish their return values, side effects, or exception types."
+}

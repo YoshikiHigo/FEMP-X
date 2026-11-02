@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same leap‑year logic for all int inputs; no input can cause one to return a different value, throw an exception, or exhibit a side effect. The existing tests already cover representative cases, and exhaustive reasoning shows the two expressions are equivalent for every int value."
+}

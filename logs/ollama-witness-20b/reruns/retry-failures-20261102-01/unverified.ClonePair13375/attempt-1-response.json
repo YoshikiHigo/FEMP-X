@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 parses each octet with Integer.parseInt and casts to byte, so \\\"256.0.0.1\\\" is parsed as 256, cast to byte 0, and returns a byte array. method2 validates each octet is <=255 and returns null for \\\"256.0.0.1\\\".\",\"arguments_java\":[\"\\\"256.0.0.1\\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1194,
+  "eval_count": 215,
+  "total_duration": 1812400600,
+  "load_duration": 7754600
+}

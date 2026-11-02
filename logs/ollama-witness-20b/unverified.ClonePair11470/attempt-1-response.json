@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of all edge cases, the two methods behave identically for every possible input that satisfies the preconditions. No concrete separating input can be constructed that would cause a difference in return value, side effects, exception behavior, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1291,
+  "eval_count": 1309,
+  "total_duration": 10454247700,
+  "load_duration": 2560400
+}

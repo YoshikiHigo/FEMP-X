@@ -1,0 +1,68 @@
+{
+  "key": "unverified.ClonePair6449",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-1, -1, -1, 127]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][-1, -1, -1, 127],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-2, -1, -1, 0]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][-2, -1, -1, 0],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-1, -1, -1, 127]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][-1, -1, -1, 127],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-2, -1, -1, 0]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][1.0],Integer(0),Integer(1),byte[][-2, -1, -1, 0],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 writes 4 bytes per input float, method2 writes only 3 bytes, so the returned byte array contains different contents for the same inputs.",
+    "arguments_java": [
+      "new float[]{1.0f}",
+      "0",
+      "1",
+      "new byte[4]",
+      "0"
+    ],
+    "parameter_types": [
+      "float[]",
+      "int",
+      "int",
+      "byte[]",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 166.605
+}

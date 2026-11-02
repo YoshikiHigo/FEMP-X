@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they check for emptiness, then iterate over the collection, setting a candidate on the first element and returning false if any subsequent element is not the same reference. The auxiliary boolean flag in method2 does not alter the outcome. No input can cause one method to return a different value, throw a different exception, or terminate differently than the other."
+}

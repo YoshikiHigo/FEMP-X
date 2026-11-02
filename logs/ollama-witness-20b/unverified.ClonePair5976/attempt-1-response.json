@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs under the given constraints; no deterministic separating input can be constructed.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 771,
+  "eval_count": 227,
+  "total_duration": 2085566800,
+  "load_duration": 4043200
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement the same primality test logic and produce identical results for all possible long inputs. No concrete input can be found that distinguishes their return values, side effects, exceptions, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 954,
+  "eval_count": 773,
+  "total_duration": 6326200100,
+  "load_duration": 6436000
+}

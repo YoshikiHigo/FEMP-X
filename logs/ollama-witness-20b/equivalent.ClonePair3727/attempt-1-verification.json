@@ -1,0 +1,60 @@
+{
+  "key": "equivalent.ClonePair3727",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "java.util.HashMap{String(IGE=)->String(YiA=)}",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IGE9YiA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IGE9YiA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "java.util.HashMap{String(IGE=)->String(YiA=)}",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IGE9YiA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IGE9YiA=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "java.util.HashMap{String(IGE=)->String(YiA=)}",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IGE9YiA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IGE9YiA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "java.util.HashMap{String(IGE=)->String(YiA=)}",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(IGE9YiA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(IGE9YiA=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 preserves leading/trailing whitespace in keys and values, while method2 trims the entire input string before parsing, resulting in different map entries for inputs that contain surrounding whitespace.",
+    "arguments_java": [
+      "\" a=b \""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 161.048
+}

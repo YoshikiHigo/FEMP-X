@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible int[] inputs, including null, empty, and non‑empty arrays. Both compute the maximum element (or return 0 for an empty array) and neither mutates the input or throws a different exception type. No concrete input can distinguish them."
+}

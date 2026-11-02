@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs under the allowed difference categories. No concrete input can be constructed that causes one method to return a different value, throw a different exception type, exhibit a distinct side‑effect, or terminate differently while satisfying the constraints of the problem statement."
+}

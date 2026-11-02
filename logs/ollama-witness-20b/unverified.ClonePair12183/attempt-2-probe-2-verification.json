@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair12183",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(QTAwMDAwMDAw)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns true for the 9‑character string \"A00000000\" (first character in the allowed set, positions 1‑7 are digits, and the checksum calculation yields 0, matching the last character). method2 requires a 14‑digit numeric string; the same input has length 9, so it immediately returns false.",
+    "arguments_java": [
+      "\"A00000000\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 118.661
+}

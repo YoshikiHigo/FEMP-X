@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit unsigned integer from four consecutive bytes. For any byte value, (byte + 256) & 0xFF equals byte & 0xFF, and the two accumulation strategies (left‑shift vs. multiply‑by‑256) produce identical results. Thus no deterministic input can distinguish the two methods."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical logic for comparing byte arrays: they both return true iff both arrays are null or both non‑null, have the same length, and contain equal elements in the same order. No input can cause one method to return a different value, throw an exception, or exhibit a side effect that the other does not. Therefore no concrete separating test case exists."
+}

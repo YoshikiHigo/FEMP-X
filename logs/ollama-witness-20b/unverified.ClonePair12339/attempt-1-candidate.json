@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic; for any deterministic, bounded input the behaviors (return value, side effects, exceptions) are the same. No concrete separating test case can be constructed without violating the constraints."
+}

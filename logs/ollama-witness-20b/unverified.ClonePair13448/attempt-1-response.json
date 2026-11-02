@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the same signed byte array for any non‑null input string of even length; they behave identically for all deterministic, bounded inputs. No concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1057,
+  "eval_count": 187,
+  "total_duration": 1535338400,
+  "load_duration": 2141000
+}

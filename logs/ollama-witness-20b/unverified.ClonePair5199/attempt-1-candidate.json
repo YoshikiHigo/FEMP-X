@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 skips characters inside quotes, so it does not return the index of a character that appears inside a quoted section. method2 ignores only escaped backslashes and therefore returns the index of the first occurrence of the character regardless of quoting. For the input string \"\\\"a\\\"b\" and the character 'a', method1 returns -1 while method2 returns 1.",
+  "arguments_java": [
+    "\"\\\"a\\\"b\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical checks for forbidden characters and handle null inputs in the same way; no input can cause differing behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1003,
+  "eval_count": 247,
+  "total_duration": 1994342900,
+  "load_duration": 6327700
+}

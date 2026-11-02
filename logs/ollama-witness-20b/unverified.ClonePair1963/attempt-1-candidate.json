@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null checks, length checks, and element-wise comparisons for byte arrays. For all possible inputs (including null, empty, and non-empty arrays), the control flow and return values coincide, and no side effects or exceptions are introduced. Therefore, no concrete separating input exists."
+}

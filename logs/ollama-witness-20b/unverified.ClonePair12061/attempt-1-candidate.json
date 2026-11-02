@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible char inputs; both return true for the same set of alphanumeric characters and false otherwise. No concrete input can distinguish their behaviors."
+}

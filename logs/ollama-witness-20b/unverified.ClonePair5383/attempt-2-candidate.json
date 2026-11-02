@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all valid and invalid inputs: they either return the same shortened array or throw the same type of exception (ArrayIndexOutOfBoundsException, NegativeArraySizeException, or NullPointerException). No input can distinguish their return values, side effects, or exception classes."
+}

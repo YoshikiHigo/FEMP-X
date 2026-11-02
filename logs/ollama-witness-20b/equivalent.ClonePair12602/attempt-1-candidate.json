@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs and char values under the given constraints; no concrete separating input can be constructed."
+}

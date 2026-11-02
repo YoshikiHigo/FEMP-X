@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are equivalent for all possible byte[] inputs. Method1 returns true only when the two arguments are the same reference (including the case where both are null). Method2 returns true when both arguments are null or when they are non‑null arrays with identical contents. Since a reference equality implies identical contents, every case where method1 returns true is also a case where method2 returns true, and vice versa. Therefore no concrete input can distinguish the two methods."
+}

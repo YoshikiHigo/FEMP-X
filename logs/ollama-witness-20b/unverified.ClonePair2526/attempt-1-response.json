@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the same 32‑bit unsigned value from the first four bytes of the array. For any byte array of length at least four, the two implementations produce identical results, and for shorter arrays they both throw the same exception. No deterministic input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1334,
+  "eval_count": 416,
+  "total_duration": 3482865200,
+  "load_duration": 6576700
+}

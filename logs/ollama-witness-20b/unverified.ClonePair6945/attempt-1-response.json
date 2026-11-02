@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical byte‑to‑int conversions for any non‑null byte array and non‑negative offset that allows four bytes to be read. Both use the same arithmetic for signed bytes and will throw the same exceptions (ArrayIndexOutOfBoundsException or NullPointerException) for out‑of‑bounds or null inputs. No deterministic, bounded input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1420,
+  "eval_count": 540,
+  "total_duration": 4405538000,
+  "load_duration": 3521400
+}

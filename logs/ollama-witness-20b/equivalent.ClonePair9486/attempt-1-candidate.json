@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical computations; the only difference is an unused local variable in method2. For all possible inputs (including null, empty, and non‑empty arrays), both methods either return the same value or throw the same exception. No concrete separating input exists."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"No concrete separating input was found; the two methods behave equivalently for all deterministic, bounded inputs.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1153,
+  "eval_count": 895,
+  "total_duration": 6945274500,
+  "load_duration": 14003000
+}

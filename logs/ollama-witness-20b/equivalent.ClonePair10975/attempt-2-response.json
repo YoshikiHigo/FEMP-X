@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"All branches of method1 and method2 produce identical byte values for every possible char input. The only differing source expression for the euro sign evaluates to the same signed byte value, so no observable behavioral difference exists. No concrete separating test case can be constructed.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 3396,
+  "eval_count": 291,
+  "total_duration": 2659164200,
+  "load_duration": 9613700
+}

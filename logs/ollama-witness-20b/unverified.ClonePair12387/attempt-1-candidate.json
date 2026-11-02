@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all edge cases (null inputs, empty strings, patterns longer than the input, overlapping patterns, and the special case of an empty match string), both method1 and method2 exhibit identical behavior: they either return the same string, return the original input when any argument is null, or loop until all non‑overlapping occurrences of the match are replaced. No deterministic, bounded input can be constructed that causes one method to terminate with a different result, throw an exception, or exhibit a side effect that the other does not. Therefore, no concrete separating test case exists for these methods."
+}

@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For input 2, method1 returns 2 while method2 returns 3 due to different branching logic for values between 2 and 3.",
+  "arguments_java": [
+    "2"
+  ],
+  "parameter_types": [
+    "int"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement the same inclusive range check. For all possible combinations of non‑null and null arguments, both methods return the same boolean value or throw the same NullPointerException. No concrete input can distinguish their behavior."
+}

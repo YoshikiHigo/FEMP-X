@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No deterministic input can be constructed that causes method1 and method2 to behave differently under the given constraints. All candidate classes either have identity-based hashCodes (making hashCode equality equivalent to reference equality) or override equals in a way that aligns with hashCode equality, so method1 and method2 produce the same result for all possible inputs."
+}

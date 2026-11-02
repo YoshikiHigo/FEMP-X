@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all possible String inputs: they both return null for null or unparsable strings, and otherwise return the same Double value. No concrete input can distinguish their return values, side effects, or exception behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. For any non‑null string, they either both parse the string into the same byte array (when the length is even and all characters are valid hexadecimal digits) or both throw the same exception (StringIndexOutOfBoundsException for odd lengths, NumberFormatException for non‑hex characters, or NullPointerException for a null argument). No input can cause one method to succeed while the other fails, nor can one produce a different return value or side effect under the same initial state. Therefore no concrete separating test case exists."
+}

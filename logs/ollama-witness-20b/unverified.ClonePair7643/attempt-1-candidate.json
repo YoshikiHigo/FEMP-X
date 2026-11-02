@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 uses equals to compare the two objects, while method2 only checks that the objects are of the same class and have equal hashCodes.  By supplying two distinct instances of a class that overrides hashCode to return a constant value but whose equals method returns false, method1 will return false whereas method2 will return true.",
+  "arguments_java": [
+    "new BadHash(1)",
+    "new BadHash(2)"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

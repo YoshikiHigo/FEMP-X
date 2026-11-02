@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the minimum of a double array in identical ways; they exhibit the same behavior for all possible inputs, including empty arrays and null, so no concrete separating test case exists."
+}

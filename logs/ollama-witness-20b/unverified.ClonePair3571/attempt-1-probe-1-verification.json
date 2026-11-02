@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair3571",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][],null]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][],null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][],null]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][],null]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][],null]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][],null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][],null]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][],null]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 returns true when the first array is empty and the second array is null, while method2 throws a NullPointerException because it attempts to access tuple1.length on a null reference.",
+    "arguments_java": [
+      "new int[]{}",
+      "null"
+    ],
+    "parameter_types": [
+      "int[]",
+      "int[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 157.561
+}

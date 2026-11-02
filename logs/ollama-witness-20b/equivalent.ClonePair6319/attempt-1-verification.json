@@ -1,0 +1,62 @@
+{
+  "key": "equivalent.ClonePair6319",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(17)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][2, 3],int[][4, 5]]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][2, 3],int[][4, 5]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(17)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][2, 3],int[][4, 5]]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][2, 3],int[][4, 5]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(17)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][2, 3],int[][4, 5]]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][2, 3],int[][4, 5]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(17)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][int[][2, 3],int[][4, 5]]",
+        "inputAfterSnapshot": "java.lang.Object[][int[][2, 3],int[][4, 5]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For stateVector=[2,3] and completeVector=[4,5], method1 computes 5 + 4*3 = 17 while method2 computes 4 + 5*3 = 19, yielding different results.",
+    "arguments_java": [
+      "new int[]{2,3}",
+      "new int[]{4,5}"
+    ],
+    "parameter_types": [
+      "int[]",
+      "int[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 162.304
+}

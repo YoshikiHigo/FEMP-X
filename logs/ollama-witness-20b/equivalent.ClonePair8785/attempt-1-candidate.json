@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical arraycopy operations; for any valid or invalid input they either return the same byte array or throw the same exception. No concrete separating input exists."
+}

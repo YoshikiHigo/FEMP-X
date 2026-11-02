@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return true iff the two arrays are non‑null, have the same length, and contain equal elements in the same order. They both throw a NullPointerException when either argument is null, and they both return false otherwise. No deterministic input can produce a differing return value, side effect, exception type, or non‑termination."
+}

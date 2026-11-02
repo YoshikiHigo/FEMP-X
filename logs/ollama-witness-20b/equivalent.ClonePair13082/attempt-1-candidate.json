@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "All possible short inputs produce identical outputs for method1 and method2; no separating input exists."
+}

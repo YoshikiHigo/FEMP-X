@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they return true only when both arrays are non‑null, have equal lengths, and contain identical elements. In all other cases they return false or throw a NullPointerException. No input can distinguish the two methods."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"No deterministic, bounded input can distinguish method1 and method2 because both behave identically for all possible values of the system property that can be observed without modifying the environment. The only difference is that method1 propagates a NumberFormatException when the property value is not a valid integer, but this exception cannot be triggered by supplying a literal argument to the test because the system property value is read from the environment and cannot be set within the test. Therefore, with the constraints that the test must use only literal arguments and must not modify system properties, there is no concrete separating input.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1240,
+  "eval_count": 208,
+  "total_duration": 1691867900,
+  "load_duration": 17554200
+}

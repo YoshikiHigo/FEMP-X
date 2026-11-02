@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return an Integer parsed from the string when the string represents a valid 32‑bit signed decimal integer, and they return null otherwise (including for null input). No input can distinguish the two implementations."
+}

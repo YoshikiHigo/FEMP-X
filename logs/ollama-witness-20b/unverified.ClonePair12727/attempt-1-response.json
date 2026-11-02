@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all valid inputs: they either return the original string or a truncated version ending with \\\"...\\\". For null inputs they both throw a NullPointerException, and for any integer cut‑off value the substring bounds are computed identically. No input can cause one method to return a different value, throw a different exception type, or exhibit non‑termination while the other behaves differently.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1065,
+  "eval_count": 239,
+  "total_duration": 1955281900,
+  "load_duration": 2040300
+}

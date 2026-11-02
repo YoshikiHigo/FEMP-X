@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 writes two bytes per float (high and low of the 16‑bit integer representation of the scaled float), while method2 writes only one byte per float (the low byte of the scaled float). With a single float input, the returned byte arrays differ in length and content.\",\"arguments_java\":[\"new float[]{1.0f}\",\"0\",\"1\",\"new byte[]{0,0}\",\"0\"],\"parameter_types\":[\"float[]\",\"int\",\"int\",\"byte[]\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1529,
+  "eval_count": 350,
+  "total_duration": 3210499800,
+  "load_duration": 2050300
+}

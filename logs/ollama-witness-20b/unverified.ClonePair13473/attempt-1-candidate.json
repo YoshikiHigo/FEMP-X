@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical two‑character hexadecimal parsing and produce the same byte array for all valid inputs, including edge cases such as null or odd‑length strings where both throw the same exception. No concrete input can distinguish their behavior."
+}

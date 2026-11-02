@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods read the same system property and behave identically for all inputs that do not involve setting a non‑numeric system property value. Since the test harness cannot modify system properties, no concrete input can distinguish the two methods. Therefore no separating test case exists."
+}

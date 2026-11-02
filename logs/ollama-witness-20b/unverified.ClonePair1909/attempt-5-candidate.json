@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After careful analysis of the control flow in both methods, they produce identical results for all possible byte[] inputs, including nulls, empty arrays, arrays of equal length with identical or differing contents, and arrays of different lengths. No input leads to a different return value, side effect, exception, or non‑termination. Therefore, no concrete separating test case exists."
+}

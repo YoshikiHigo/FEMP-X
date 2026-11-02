@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical comparisons of the year, month, and day components of the two Date arguments using either Calendar or the deprecated Date getters. For any pair of non‑null Date objects, the two methods will return the same boolean value, and for null arguments both return false. No input can produce a differing observable outcome.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1100,
+  "eval_count": 238,
+  "total_duration": 2174334800,
+  "load_duration": 10559300
+}

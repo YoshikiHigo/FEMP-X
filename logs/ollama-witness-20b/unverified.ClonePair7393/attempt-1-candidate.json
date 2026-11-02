@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods use the same logic with either StringBuilder or StringBuffer, which are functionally equivalent for the operations performed here. No deterministic input can cause a difference in return value, side effects, exceptions, or termination."
+}

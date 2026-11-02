@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they allocate a new byte array of the given length and copy that many bytes from the source array using System.arraycopy. For any input that does not trigger an exception, the resulting byte arrays are byte‑wise equal. For inputs that trigger an exception, both methods throw the same type of exception (NullPointerException when the source array is null, or ArrayIndexOutOfBoundsException when the requested length exceeds the source array length). Therefore, no concrete input can distinguish the two methods."
+}

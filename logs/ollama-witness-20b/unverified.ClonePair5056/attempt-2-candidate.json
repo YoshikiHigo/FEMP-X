@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two implementations, no input can be found that causes method1 and method2 to produce different results. Both methods correctly implement the leap‑year rule for all 32‑bit integer values, including negative years, and the bitwise check in method2 behaves equivalently to the modulo check in method1 for all possible inputs. Therefore, no concrete separating test case exists."
+}

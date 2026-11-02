@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible String inputs. Both return true only when the inputs are both null or when the non‑null strings are equal according to their natural ordering (which is the same as equals for java.lang.String). All other cases return false. No input can cause a difference in return value, side effect, exception type, or non‑termination."
+}

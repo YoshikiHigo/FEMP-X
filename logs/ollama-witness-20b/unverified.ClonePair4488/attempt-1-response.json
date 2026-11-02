@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 returns true for a pattern consisting of 51 consecutive '*' characters and an empty input string, while method2 throws an ArrayIndexOutOfBoundsException because its stack array has size 100 and each '*' consumes two stack slots, exceeding the capacity after 51 stars.\",\"arguments_java\":[\"\\\"***************\\\"\"],\"parameter_types\":[\"String\",\"String\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1829,
+  "eval_count": 987,
+  "total_duration": 7961299300,
+  "load_duration": 2557200
+}

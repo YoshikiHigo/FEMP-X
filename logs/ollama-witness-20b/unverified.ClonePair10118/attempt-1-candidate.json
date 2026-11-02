@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs and initial states. method1 returns Integer.parseInt(source) or null on any exception, while method2 returns Integer.valueOf(value) or null on NumberFormatException; since Integer.valueOf only throws NumberFormatException, the catch clauses are equivalent. No input can produce a differing return value, side effect, exception type, or non‑termination."
+}

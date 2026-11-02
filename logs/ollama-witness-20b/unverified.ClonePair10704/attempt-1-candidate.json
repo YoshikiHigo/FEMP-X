@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods evaluate the same character ranges (digits, uppercase, lowercase) and return identical boolean values for every possible char input. No deterministic, bounded input can distinguish their behaviors."
+}

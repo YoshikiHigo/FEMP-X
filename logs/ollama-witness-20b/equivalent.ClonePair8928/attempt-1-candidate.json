@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical binary search logic using the same parameters; for any deterministic, bounded input the return values, side effects, and termination behavior are indistinguishable. No concrete separating test case can be constructed without violating the constraints."
+}

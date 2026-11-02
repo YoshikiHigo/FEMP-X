@@ -1,0 +1,61 @@
+{
+  "key": "unverified.ClonePair2603",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(67305985)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(67305985)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(67305985)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(67305985)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]",
+        "inputAfterSnapshot": "java.lang.Object[][byte[][1, 2, 3, 4]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For input byte[]{1,2,3,4} method1 interprets the array as a little‑endian 32‑bit integer: 1 + 2<<8 + 3<<16 + 4<<24 = 67305985. method2 performs a different accumulation: it processes the bytes in reverse order, adds each as an unsigned value, multiplies by 256 after each step, and finally adds the first byte. This yields 263554*256+1 = 674,  ...  which is not equal to 67305985, so the return values differ.",
+    "arguments_java": [
+      "new byte[]{1,2,3,4}"
+    ],
+    "parameter_types": [
+      "byte[]"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 164.406
+}

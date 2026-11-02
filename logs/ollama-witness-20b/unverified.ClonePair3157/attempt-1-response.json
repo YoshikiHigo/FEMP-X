@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform the same computation: they iterate over the array and return the minimum value. No input can cause a difference in return value, side effects, exceptions, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 984,
+  "eval_count": 63,
+  "total_duration": 912776900,
+  "load_duration": 7814100
+}

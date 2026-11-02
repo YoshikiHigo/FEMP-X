@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte‑to‑hex conversion using equivalent bit‑masking and character mapping. For any byte array input (including empty, null, or any sequence of bytes), the two methods produce the same string, throw the same exception (NullPointerException for null input), and leave the input unchanged. No deterministic, bounded input can be constructed that causes a divergence in return value, side effect, exception type, or non‑termination."
+}

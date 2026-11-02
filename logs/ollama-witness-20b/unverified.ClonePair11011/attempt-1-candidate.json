@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: they compare characters of the two CharSequence arguments up to the length of the shorter one, returning the difference of the first mismatching characters, or the length difference if all compared characters match. No input can cause a different return value, side effect, exception type, or non‑termination between the two implementations."
+}

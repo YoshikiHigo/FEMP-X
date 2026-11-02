@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible inputs and initial states. They compute the same result, throw the same exceptions under the same conditions, and terminate in the same manner. No concrete separating input can be constructed within the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1046,
+  "eval_count": 168,
+  "total_duration": 1401828500,
+  "load_duration": 15261700
+}

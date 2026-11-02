@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible byte[] inputs, including nulls, empty arrays, equal lengths, and unequal lengths. No deterministic input can produce a differing return value, side effect, exception, or non‑termination."
+}

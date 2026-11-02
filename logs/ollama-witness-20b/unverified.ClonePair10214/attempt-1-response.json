@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs: they return an Integer parsed from the string if it is a valid integer representation, and return null otherwise (including for null input). No input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 750,
+  "eval_count": 401,
+  "total_duration": 3118373200,
+  "load_duration": 2109300
+}

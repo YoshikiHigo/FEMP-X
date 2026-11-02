@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs: they return false when the lengths differ, return false upon the first mismatch, and return true only when all corresponding elements are equal. No input can distinguish them."
+}

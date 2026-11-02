@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logical checks for byte[] arguments. They handle nulls, length, and element equality in the same way, and the class equality check in method2 is redundant for byte[] arrays. No deterministic input can cause a divergence in return value, side effects, or exception behavior."
+}

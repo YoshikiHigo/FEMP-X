@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all possible byte values, both methods produce identical outputs for every input array. No input can distinguish their return values, side effects, or exception behavior."
+}

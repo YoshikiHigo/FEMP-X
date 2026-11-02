@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 throws ArrayIndexOutOfBoundsException when start is negative and the bounds check passes, whereas method2 returns 0 for the same input.",
+  "arguments_java": [
+    "new byte[]{0,1,2,3}",
+    "-1"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "int"
+  ],
+  "void_return": false
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte‑to‑int conversion using the same indices and masking; they throw the same exceptions for out‑of‑bounds or null arrays, and produce the same integer results for all valid inputs. No concrete separating input exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical results for all deterministic, bounded inputs. They handle null, escapeAscii flags, and character ranges in the same way, using equivalent locale-sensitive uppercasing and string construction. No concrete input can be found that distinguishes their behavior."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the two‑digit hexadecimal representation of the input byte in exactly the same way. For any byte value the high nibble and low nibble are extracted and converted to the corresponding character '0'–'9' or 'A'–'F'. No input can cause a different return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1712,
+  "eval_count": 114,
+  "total_duration": 1352818000,
+  "load_duration": 2042000
+}

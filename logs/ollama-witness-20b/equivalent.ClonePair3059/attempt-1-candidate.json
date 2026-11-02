@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods use identical logic (StringTokenizer and a Vector) and handle all edge cases (null, empty string, delimiters) in the same way. No deterministic input can produce a differing result."
+}

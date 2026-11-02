@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are byte‑by‑byte identical; they perform the same arithmetic and control flow for all possible float inputs. No input can produce a different return value, side effect, exception, or non‑termination between method1 and method2."
+}

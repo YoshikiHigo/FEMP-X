@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After careful analysis of the control flow in both methods, all possible combinations of null and non‑null byte arrays lead to identical outcomes: both methods return the same boolean value and neither mutates the inputs or produces side effects. The apparent null‑pointer path in method2 is guarded by the preceding null checks, so no exception is thrown. Therefore no concrete separating test case exists."
+}

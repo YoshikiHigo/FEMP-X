@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods implement the standard leap‑year test and are mathematically equivalent for all 32‑bit integer inputs. No concrete input can be found that causes them to return different values, throw different exceptions, or exhibit side‑effects. Therefore no separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 812,
+  "eval_count": 486,
+  "total_duration": 3974180900,
+  "load_duration": 7246300
+}

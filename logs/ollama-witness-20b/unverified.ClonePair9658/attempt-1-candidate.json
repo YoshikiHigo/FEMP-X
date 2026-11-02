@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logical checks on the input arrays. They both return false if the lengths differ, and if the lengths are equal they compare each element in order, setting a flag to false on the first mismatch (method1 returns immediately, method2 continues the loop but the final result is the same). No input can cause a different return value, side effect, exception type, or non‑termination between the two methods."
+}

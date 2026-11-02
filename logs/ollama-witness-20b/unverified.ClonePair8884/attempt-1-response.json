@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte copying without any differing side effects or exception handling; for all deterministic, bounded inputs they produce the same result or throw the same exception.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1247,
+  "eval_count": 174,
+  "total_duration": 1473588300,
+  "load_duration": 2558200
+}

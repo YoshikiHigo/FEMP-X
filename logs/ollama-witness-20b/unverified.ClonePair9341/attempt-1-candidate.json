@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same range reduction to [-π, π] regardless of input; no input causes a differing return value, side effect, exception, or non‑termination."
+}

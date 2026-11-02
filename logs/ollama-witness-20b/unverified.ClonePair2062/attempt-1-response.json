@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical equality checks on byte arrays; they handle nulls, length mismatches, and element comparisons in equivalent ways, differing only in iteration order, which does not affect the outcome. No deterministic input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1262,
+  "eval_count": 117,
+  "total_duration": 1226357500,
+  "load_duration": 22833800
+}

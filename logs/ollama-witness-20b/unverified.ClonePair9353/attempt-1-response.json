@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical arithmetic transformations on the input double. For any finite double value the sequence of additions or subtractions of 2π will converge to the same result in both methods. For special values such as NaN or ±Infinity the loops terminate immediately (NaN) or loop forever (±Infinity) in both methods as well. No deterministic, bounded input can cause one method to return a different value, throw an exception, or terminate differently than the other.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 990,
+  "eval_count": 262,
+  "total_duration": 2120557300,
+  "load_duration": 17860000
+}

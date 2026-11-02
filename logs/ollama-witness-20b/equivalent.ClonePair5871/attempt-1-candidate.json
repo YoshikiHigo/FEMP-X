@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same Horner evaluation algorithm and exhibit identical behavior for all possible inputs, including edge cases such as empty or null arrays and special double values. No concrete input can be found that distinguishes their return values, side effects, or exception types."
+}

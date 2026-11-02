@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return true iff the two arguments are either both null or refer to the same array instance, and otherwise return false. No input can distinguish their return values, side effects, or exception behavior."
+}

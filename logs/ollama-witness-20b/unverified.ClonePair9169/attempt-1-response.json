@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally identical; they perform the same null/empty checks and count non-overlapping occurrences of the substring. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 911,
+  "eval_count": 62,
+  "total_duration": 567860700,
+  "load_duration": 10114400
+}

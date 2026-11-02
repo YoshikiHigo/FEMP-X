@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they iterate over the second list and add any element not already present in the first list. For any deterministic, bounded input, they produce the same result, mutate the same objects in the same way, and terminate normally. No concrete separating input exists."
+}

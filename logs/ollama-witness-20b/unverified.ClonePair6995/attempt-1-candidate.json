@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the same minimum value for all integer inputs; no concrete separating input exists."
+}

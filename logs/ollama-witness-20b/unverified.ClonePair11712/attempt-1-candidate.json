@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs. Both guard against null or empty search strings and null replacement strings, and perform the same replacement logic when all arguments are valid. No input can cause a difference in return value, side effects, exceptions, or non‑termination."
+}

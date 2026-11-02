@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical bitwise operations and produce the same Base64 encoding for all possible byte array inputs. No concrete input can be found that distinguishes their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1610,
+  "eval_count": 573,
+  "total_duration": 4935560200,
+  "load_duration": 3783600
+}

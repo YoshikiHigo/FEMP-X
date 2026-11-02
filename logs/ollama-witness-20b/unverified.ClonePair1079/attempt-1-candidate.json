@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical length checks and element-wise comparisons; no input can cause differing behavior under the allowed difference types."
+}

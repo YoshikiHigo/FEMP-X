@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible byte[] inputs: they return true iff the arrays are non‑null, have equal length, and contain identical elements in the same order. The early reference equality check in method2 does not alter the outcome, and no side effects or exceptions differ between the two implementations. Therefore no concrete separating test case exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical results for all integer inputs; exhaustive reasoning shows no input causes a differing return value, side effect, exception, or non‑termination."
+}

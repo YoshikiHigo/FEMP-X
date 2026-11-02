@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical; they perform the same string replacement logic with the same control flow and variable usage. No input can produce a differing return value, side effect, exception, or non‑termination."
+}

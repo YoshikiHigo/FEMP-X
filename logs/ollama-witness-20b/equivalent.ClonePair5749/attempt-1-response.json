@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are byte‑by‑byte identical; no input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1213,
+  "eval_count": 41,
+  "total_duration": 681060500,
+  "load_duration": 2981800
+}

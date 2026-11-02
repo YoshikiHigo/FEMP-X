@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 64‑bit big‑endian value from the byte array. For any byte array of length 8, method1 shifts left 8 bits before adding each byte, while method2 ORs the byte and then shifts left 8 bits. The net effect is identical: the first byte ends up in bits 56–63, the second in 48–55, and so on. No input can produce a differing return value, side effect, exception, or non‑termination."
+}

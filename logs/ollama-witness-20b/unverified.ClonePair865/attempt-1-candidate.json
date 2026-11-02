@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: they compare the lengths of the byte arrays and then iterate element‑by‑element, returning false on the first mismatch and true otherwise. No input can cause one method to return a different value, throw a different exception, mutate its arguments, or enter an infinite loop while the other behaves differently."
+}

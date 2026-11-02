@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "Both methods perform Base64 encoding, but they handle padding for a 4‑byte input differently. For the input byte array {0,0,0,0}, method1 encodes the first three bytes correctly and then processes the remaining single byte by setting the last two output characters to '='. The mapping of the second character (c[1]) in the last 3‑byte block differs from the algorithm used in method2, which shifts the single byte left and then extracts two 6‑bit groups. As a result, the two methods produce different Base64 strings for this input.",
+  "arguments_java": [
+    "new byte[]{0,0,0,0}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

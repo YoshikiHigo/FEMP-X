@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the same 32‑bit signed integer from the four bytes; no input can make them diverge.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1290,
+  "eval_count": 2007,
+  "total_duration": 16072291400,
+  "load_duration": 15988100
+}

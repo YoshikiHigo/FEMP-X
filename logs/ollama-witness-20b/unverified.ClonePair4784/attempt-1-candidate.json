@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the minimum of a double array in identical ways. They both read the first element before any bounds checks, and both iterate over the array in the same manner. For any input—including empty arrays, null arrays, arrays containing NaN, or any other double values—both methods either return the same result or throw the same exception. No concrete input can distinguish their behavior."
+}

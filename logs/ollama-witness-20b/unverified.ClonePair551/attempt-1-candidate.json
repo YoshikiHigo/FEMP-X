@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for comparing two byte arrays; all branches produce the same result for any possible input. No concrete separating input exists."
+}

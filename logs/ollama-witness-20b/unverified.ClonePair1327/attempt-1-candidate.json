@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning, both methods produce identical results for all possible byte[] inputs, including edge cases such as negative bytes, empty arrays, and null. No concrete separating test case can be constructed without violating the constraints."
+}

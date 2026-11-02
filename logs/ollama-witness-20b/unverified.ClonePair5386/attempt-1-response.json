@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 throws ArrayIndexOutOfBoundsException when the index is greater than the last valid position in the array, while method2 simply skips the non‑existent index and returns the original array unchanged.\",\"arguments_java\":[\"new int[]{1,2}\",\"5\"],\"parameter_types\":[\"int[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1161,
+  "eval_count": 293,
+  "total_duration": 2615689800,
+  "load_duration": 7630100
+}

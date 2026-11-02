@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods behave identically for all deterministic, bounded inputs: they return 0.0 for null, empty, or whitespace strings, parse and return the numeric value for valid representations, and return 0.0 when a NumberFormatException occurs. No input causes a differing return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1147,
+  "eval_count": 357,
+  "total_duration": 3066337100,
+  "load_duration": 6223700
+}

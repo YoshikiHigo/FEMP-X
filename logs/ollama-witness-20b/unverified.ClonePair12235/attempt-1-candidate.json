@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, the only pathological case is when the replacement word is the empty string, which causes an infinite loop in both methods. No input can make one method terminate or return a different value while the other does not."
+}

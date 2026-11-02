@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 throws NegativeArraySizeException when a_normLength is negative, while method2 simply returns the original string without throwing.\",\"arguments_java\":[\"\\\"a\\\"\"],\"parameter_types\":[\"String\",\"int\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1113,
+  "eval_count": 253,
+  "total_duration": 2288122800,
+  "load_duration": 8876700
+}

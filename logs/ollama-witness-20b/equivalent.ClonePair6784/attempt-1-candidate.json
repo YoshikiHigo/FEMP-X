@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the ordinal suffix using identical logic for all integer inputs. For any int value, the suffix chosen by method1 matches that chosen by method2, and the resulting string concatenation is identical. No input can produce a differing return value, side effect, exception, or non‑termination."
+}

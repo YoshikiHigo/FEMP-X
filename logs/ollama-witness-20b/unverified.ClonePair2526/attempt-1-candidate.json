@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit unsigned value from the first four bytes of the array. For any byte array of length at least four, the two implementations produce identical results, and for shorter arrays they both throw the same exception. No deterministic input can distinguish their behavior."
+}

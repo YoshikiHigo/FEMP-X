@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same logic; no input can distinguish them."
+}

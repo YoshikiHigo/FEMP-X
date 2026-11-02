@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 trims the input before comparison, so the string \"true \" (with a trailing space) is trimmed to \"true\" and matches, returning true. method2 compares the raw string with \"true\" using equalsIgnoreCase, which does not ignore trailing spaces, so the comparison fails and the method returns the default value (false).",
+  "arguments_java": [
+    "\"true \"",
+    "false"
+  ],
+  "parameter_types": [
+    "String",
+    "boolean"
+  ],
+  "void_return": false
+}

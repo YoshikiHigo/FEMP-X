@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical byte extraction for all valid inputs; the signed versus unsigned right shift does not affect the resulting byte values because the mask 0xff removes the sign extension. No input can produce a distinguishable difference in return value, side effect, exception, or non‑termination."
+}

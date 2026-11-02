@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "No concrete separating input was found; the two methods behave identically for all deterministic, bounded inputs under the allowed difference categories."
+}

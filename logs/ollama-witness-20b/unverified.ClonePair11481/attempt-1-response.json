@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of the two methods, no concrete input can be constructed that causes a difference in return value, side effect, exception, or non‑termination. Both methods perform the same string replacement logic for all possible inputs within the allowed constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1513,
+  "eval_count": 2231,
+  "total_duration": 17239859900,
+  "load_duration": 3747200
+}

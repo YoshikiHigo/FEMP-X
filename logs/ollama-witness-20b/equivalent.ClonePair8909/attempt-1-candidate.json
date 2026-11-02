@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical logic; for any Object value and boolean isRemoveEmptyStrings, they return the same result. No input can distinguish them."
+}

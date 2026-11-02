@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods evaluate the same set of characters to true: digits '0'–'9' and hexadecimal letters 'a'–'f' (case‑insensitive). Method1 lowercases any non‑digit before checking the a–f range, while Method2 explicitly checks both lower‑case and upper‑case ranges. For every possible char input, both methods return the same boolean value, so no concrete separating test case exists."
+}

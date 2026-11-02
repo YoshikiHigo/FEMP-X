@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical checks and comparisons; for any valid or null inputs they produce the same result, so no concrete separating test can be constructed."
+}

@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 interprets each byte as unsigned and constructs the 32‑bit value by masking, whereas method2 performs signed left shifts and then conditionally adds a constant only for the lower three bytes. For the input byte array {0,0,-1,0} (bytes[0]=0, bytes[1]=0, bytes[2]=-1, bytes[3]=0) method1 produces 0x00FF0000 (16711680) while method2 produces 0 because the signed shift of -1 into the second byte position yields a negative value that is corrected by adding 16777216, which overflows back to 0. Thus the return values differ.",
+  "arguments_java": [
+    "new byte[]{0,0,(byte)-1,0}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

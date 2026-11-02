@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical length checks and element-wise comparisons; no input can cause differing behavior under the allowed difference types.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1193,
+  "eval_count": 281,
+  "total_duration": 2528354900,
+  "load_duration": 21747800
+}

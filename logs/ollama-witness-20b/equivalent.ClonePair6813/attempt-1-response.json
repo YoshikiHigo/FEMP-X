@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all possible inputs. Both create a Calendar set to the input Date and compare it to a Calendar initialized to the current time (either via a new Date() or directly via Calendar.getInstance()). Since both use the same current time source and perform identical field comparisons, no input can produce a differing outcome.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 935,
+  "eval_count": 359,
+  "total_duration": 3057582000,
+  "load_duration": 3613100
+}

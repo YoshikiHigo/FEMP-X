@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum element of the array in the same way; for all possible int[] inputs (including null, empty, and non‑empty arrays) they exhibit identical behavior. No concrete separating input exists."
+}

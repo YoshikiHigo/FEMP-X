@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are equivalent for all possible inputs; they both compute the maximum element of the array (or throw the same exception for null or empty arrays). No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 976,
+  "eval_count": 170,
+  "total_duration": 1432665400,
+  "load_duration": 13637600
+}

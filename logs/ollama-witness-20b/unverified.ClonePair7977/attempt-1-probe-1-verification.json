@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair7977",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(),null]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(),null]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(),null]",
+        "inputAfterSnapshot": "java.lang.Object[][String(),null]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For inputs a=\"\" and b=null, method1 returns false (since a is not null and a.equals(b) is false), whereas method2 returns true (x is not null, y is null, and x.length()==0 triggers a true return).",
+    "arguments_java": [
+      "\"\"",
+      "null"
+    ],
+    "parameter_types": [
+      "String",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 163.621
+}

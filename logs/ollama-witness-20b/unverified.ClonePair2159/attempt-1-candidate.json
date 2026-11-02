@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the same logic for all possible inputs; no concrete separating input exists."
+}

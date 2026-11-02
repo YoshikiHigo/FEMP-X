@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical operations for all valid inputs. They both create a new array of length vals.length-1, copy the prefix up to idx (if idx>0 for method1, always for method2), and copy the suffix after idx (if idx<newLength). Edge cases such as empty arrays, single-element arrays, or negative indices result in the same behavior (either an empty array or an exception). Therefore no concrete separating input exists."
+}

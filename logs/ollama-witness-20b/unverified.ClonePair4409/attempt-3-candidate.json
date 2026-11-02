@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the control flow and arithmetic in both methods, no input can be constructed that causes a differing observable outcome (return value, exception, side‑effect, or proven non‑termination) while satisfying the constraints of the test harness. Both methods correctly handle all long values within the bounds of the Java language, and any potential discrepancy due to integer truncation of the square root is mitigated by the fact that the truncated bound still covers all possible prime divisors for any long input. Therefore, no concrete separating test case exists."
+}

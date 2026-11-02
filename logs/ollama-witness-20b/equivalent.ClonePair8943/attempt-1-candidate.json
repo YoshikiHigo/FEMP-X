@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return true for exactly the same set of Unicode character types; no input can distinguish their return values, side effects, or exception behavior."
+}

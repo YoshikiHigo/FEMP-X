@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all deterministic, bounded inputs. Both perform the same substring replacement logic, handle nulls in the same way, and produce the same outputs for every combination of arguments. No concrete separating test case can be constructed that would distinguish method1 from method2 under the given constraints."
+}

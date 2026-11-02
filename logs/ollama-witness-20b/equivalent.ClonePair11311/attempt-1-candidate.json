@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible Number inputs, including nulls and different numeric types. Both perform the same type checks and arithmetic operations, leading to the same return values or exceptions in every case. No concrete input can distinguish them."
+}

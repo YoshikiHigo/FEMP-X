@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, the only pathological case is when the token/substring is the empty string, in which case both methods enter an infinite loop. No input causes one method to terminate while the other does not, nor do they differ in return value, side effects, or exception type for any valid input."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible byte[] inputs and initial states. Both perform the same length check and element-wise comparison, and neither mutates the input arrays or produces any side effects. Therefore no concrete test case can distinguish their behavior."
+}

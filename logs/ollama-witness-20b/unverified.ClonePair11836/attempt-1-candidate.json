@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both return the same string for any non‑null input, throw the same exception types for null or out‑of‑bounds widths, and have no side effects or non‑termination paths that differ. No concrete separating test case can be constructed under the given constraints."
+}

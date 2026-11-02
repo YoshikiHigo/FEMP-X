@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs. Both return null when the argument is null, return the original string when it is empty, and otherwise return the string with its last character removed if that character matches the supplied delimiter. No input can produce a differing return value, side effect, exception, or non‑termination."
+}

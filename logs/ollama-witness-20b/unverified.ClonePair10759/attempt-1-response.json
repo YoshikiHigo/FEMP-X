@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic for checking if a character is alphanumeric; no input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 841,
+  "eval_count": 51,
+  "total_duration": 518671100,
+  "load_duration": 22226100
+}

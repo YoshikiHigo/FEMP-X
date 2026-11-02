@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same leap‑year condition for all integer inputs; exhaustive reasoning shows no input produces differing outputs."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs: they return null for null or any string that causes Integer.parseInt or new Integer(String) to throw a NumberFormatException, and otherwise return the parsed integer. No input can distinguish their return values, side effects, or exception handling.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 749,
+  "eval_count": 362,
+  "total_duration": 2840579100,
+  "load_duration": 17179000
+}

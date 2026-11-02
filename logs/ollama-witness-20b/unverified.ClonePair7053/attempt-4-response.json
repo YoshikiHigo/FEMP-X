@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods interpret the four bytes starting at the given offset as a little‑endian unsigned 32‑bit integer. For any valid byte array and offset, they compute the same value. They also throw the same exceptions for out‑of‑bounds or null inputs. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1510,
+  "eval_count": 817,
+  "total_duration": 6476776300,
+  "load_duration": 17587200
+}

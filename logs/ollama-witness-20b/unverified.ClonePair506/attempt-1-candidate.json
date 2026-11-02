@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical null checks, reference equality checks, length checks, and element-wise comparisons in the same order. For all possible byte[] inputs—including nulls, empty arrays, and arrays of any length—their control flow and return values coincide. No input can cause one method to return a different value, throw an exception, or exhibit side effects that the other does not. Therefore, no concrete separating test case exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same length bounds check; no input can distinguish their behavior."
+}

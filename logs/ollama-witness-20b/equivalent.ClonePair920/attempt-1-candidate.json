@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs and initial states. Both iterate over the byte array starting at the given offset, stop at a zero byte or the end of the array, and return the same string. They throw the same exceptions for out‑of‑bounds or null inputs. No deterministic, bounded input can produce a differing return value, side effect, exception type, or non‑termination between the two methods."
+}

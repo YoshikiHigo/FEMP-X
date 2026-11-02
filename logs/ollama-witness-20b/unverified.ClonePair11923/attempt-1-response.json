@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of all control paths, both methods exhibit identical observable behaviors for every possible input. No concrete separating test case can be constructed that distinguishes return values, side effects, or exception behavior between method1 and method2.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1399,
+  "eval_count": 647,
+  "total_duration": 5083421100,
+  "load_duration": 6564400
+}

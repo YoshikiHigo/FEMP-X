@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods access the first element of the array without bounds checking and otherwise perform identical logic. For any non‑null array, they compute the maximum value in the same way, and for a null array they both throw a NullPointerException. No input can cause one method to behave differently from the other."
+}

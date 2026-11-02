@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair12483",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==),java.lang.Object[][String(Yg==),String(YQ==),String(YQ==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==),java.lang.Object[][String(Yg==),String(YQ==),String(YQ==)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(2)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==),java.lang.Object[][String(Yg==),String(YQ==),String(YQ==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==),java.lang.Object[][String(Yg==),String(YQ==),String(YQ==)]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(1)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==),java.lang.Object[][String(Yg==),String(YQ==),String(YQ==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==),java.lang.Object[][String(Yg==),String(YQ==),String(YQ==)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Integer(2)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==),java.lang.Object[][String(Yg==),String(YQ==),String(YQ==)]]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==),java.lang.Object[][String(Yg==),String(YQ==),String(YQ==)]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns the first index of a matching element when scanning from the start, whereas method2 returns the last index when scanning from the end. With duplicate matching elements the two methods produce different results.",
+    "arguments_java": [
+      "\"a\"",
+      "new Object[]{\"b\",\"a\",\"a\"}"
+    ],
+    "parameter_types": [
+      "Object",
+      "Object[]"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 165.102
+}

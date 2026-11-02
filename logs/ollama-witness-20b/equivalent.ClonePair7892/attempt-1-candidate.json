@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all deterministic, bounded inputs. Both return null for a null input string, return an empty array for an empty string, split the string using the supplied delimiter via StringTokenizer, and optionally trim each token. They both throw the same exceptions (NullPointerException when the delimiter is null, IllegalArgumentException when the delimiter is an empty string). No input can produce a differing return value, side effect, exception type, or non‑termination between the two implementations."
+}

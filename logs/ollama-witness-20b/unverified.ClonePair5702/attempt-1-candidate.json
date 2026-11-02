@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "All integer inputs produce identical boolean results for both methods; exhaustive reasoning shows no distinguishing case."
+}

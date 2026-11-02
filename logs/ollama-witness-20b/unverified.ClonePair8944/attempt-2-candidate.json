@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "For a key that is present but whose value is not a valid integer, method1 catches NumberFormatException and returns the default value, whereas method2 propagates the exception. The system property \"java.version\" is always defined in a standard JVM and its value (e.g., \"17.0.2\") cannot be parsed as an int. Thus method1 returns the supplied default, while method2 throws NumberFormatException.",
+  "arguments_java": [
+    "\"java.version\"",
+    "-1"
+  ],
+  "parameter_types": [
+    "String",
+    "int"
+  ],
+  "void_return": false
+}

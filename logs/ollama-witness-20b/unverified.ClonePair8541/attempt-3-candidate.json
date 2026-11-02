@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of the two methods, no input can be constructed that causes them to behave differently. Both methods return null for null or empty/whitespace-only strings, and for any non‑empty string they both attempt to parse it with a Double conversion that throws NumberFormatException on invalid input, which is caught and results in null. Thus the methods are equivalent for all possible String inputs."
+}

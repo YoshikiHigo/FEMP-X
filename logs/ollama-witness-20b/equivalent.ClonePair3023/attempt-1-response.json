@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical element-wise comparisons and handle all null or length mismatches in the same way; no concrete input can distinguish their return values, side effects, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 990,
+  "eval_count": 207,
+  "total_duration": 1879836600,
+  "load_duration": 2603500
+}

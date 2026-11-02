@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical operations: they create a byte array of half the input string length and parse each pair of hex characters into a byte. The code paths, variable names, and logic are the same, so no input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 992,
+  "eval_count": 74,
+  "total_duration": 674504800,
+  "load_duration": 2551800
+}

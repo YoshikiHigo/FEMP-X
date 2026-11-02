@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical arithmetic and branching on the same floating‑point values. All constants are either float literals or int literals that are promoted to float in the same way, and the order of operations is the same. No input can cause a different return value, side effect, exception, or non‑termination."
+}

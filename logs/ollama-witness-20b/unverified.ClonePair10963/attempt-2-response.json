@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns the default value when the key is missing, while method2 returns the minimum of the Max value and the default value. With key \\\"foo\\\" absent and \\\"foo.Max\\\" present as 5.0, and defaultValue 10.0, method1 returns 10.0 and method2 returns 5.0.\",\"arguments_java\":[\"props(\\\"foo.Max\\\",\\\"5.0\\\")\",\"\\\"foo\\\"\",\"Double.valueOf(10.0)\"],\"parameter_types\":[\"Properties\",\"String\",\"Double\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1071,
+  "eval_count": 625,
+  "total_duration": 5104214800,
+  "load_duration": 3204500
+}

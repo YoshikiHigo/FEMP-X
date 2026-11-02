@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair7674",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.HashSet[Integer(1),Integer(2)],java.util.LinkedHashSet[Integer(1),Integer(2)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.HashSet[Integer(1),Integer(2)],java.util.LinkedHashSet[Integer(1),Integer(2)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.HashSet[Integer(1),Integer(2)],java.util.LinkedHashSet[Integer(1),Integer(2)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.HashSet[Integer(1),Integer(2)],java.util.LinkedHashSet[Integer(1),Integer(2)]]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.HashSet[Integer(1),Integer(2)],java.util.LinkedHashSet[Integer(1),Integer(2)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.HashSet[Integer(1),Integer(2)],java.util.LinkedHashSet[Integer(1),Integer(2)]]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.HashSet[Integer(1),Integer(2)],java.util.LinkedHashSet[Integer(1),Integer(2)]]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.HashSet[Integer(1),Integer(2)],java.util.LinkedHashSet[Integer(1),Integer(2)]]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns false because the two Set instances are of different classes (HashSet vs LinkedHashSet) even though they are equal according to Set.equals, whereas method2 ignores class equality and returns true.",
+    "arguments_java": [
+      "new java.util.HashSet<>(list(1,2))",
+      "new java.util.LinkedHashSet<>(list(1,2))"
+    ],
+    "parameter_types": [
+      "Object",
+      "Object"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 159.797
+}

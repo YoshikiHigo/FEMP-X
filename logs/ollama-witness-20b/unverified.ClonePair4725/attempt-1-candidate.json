@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same linear scan to find the minimum value in the array. They handle null and empty arrays identically by throwing the same exceptions, and for all non‑null arrays they return the same result. No concrete input can distinguish their behavior."
+}

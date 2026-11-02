@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning over all integer inputs, both methods evaluate the Gregorian leap year rule identically. No concrete input can be found that causes a divergence in return value, side effects, or exception behavior."
+}

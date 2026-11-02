@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 iterates over the list using its iterator and concatenates the elements, so it succeeds and returns the string \"alpha\". method2 relies on size() and get(i); the custom list’s get(i) throws an IndexOutOfBoundsException, causing method2 to fail. The input list is the same for both methods and has the same initial state.",
+  "arguments_java": [
+    "new java.util.AbstractList(){\n  public int size(){return 1;}\n  public Object get(int i){throw new IndexOutOfBoundsException();}\n  public java.util.Iterator iterator(){return java.util.Collections.singletonList(\"alpha\").iterator();}\n}"
+  ],
+  "parameter_types": [
+    "java.util.List"
+  ],
+  "void_return": false
+}

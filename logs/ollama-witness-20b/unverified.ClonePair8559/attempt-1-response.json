@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic for determining if a character is alphabetic; no input can produce differing results.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 806,
+  "eval_count": 64,
+  "total_duration": 938956300,
+  "load_duration": 10939000
+}

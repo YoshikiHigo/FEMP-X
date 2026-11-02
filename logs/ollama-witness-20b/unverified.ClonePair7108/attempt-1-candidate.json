@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the two‑digit hexadecimal representation of the input byte in a deterministic, bounded way. For every possible byte value the control flow and the resulting string are identical, so no concrete separating input exists."
+}

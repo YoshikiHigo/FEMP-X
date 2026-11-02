@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods interpret the byte array as a big‑endian 32‑bit integer; for every possible 4‑byte input they compute the same value. No input can produce a differing return value, side effect, exception type, or non‑termination."
+}

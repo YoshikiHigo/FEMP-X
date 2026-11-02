@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all possible inputs: they return the original string when the length is sufficient, otherwise they truncate to the specified length and append \"...\". The conditional checks are logically equivalent, and both methods throw the same exceptions (e.g., NullPointerException for a null input or StringIndexOutOfBoundsException for a negative length). No concrete input can distinguish their behavior."
+}

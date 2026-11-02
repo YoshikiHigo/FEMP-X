@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic: they return false when either argument is null, otherwise they return whether the second string occurs in the first. No input can cause a differing return value, side effect, exception, or non‑termination."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical linear search over the provided array segment; for any input that does not cause an exception, they return the same index or -1. Any input that causes an exception (e.g., null array or length exceeding array bounds) causes both methods to throw the same ArrayIndexOutOfBoundsException or NullPointerException. Therefore no concrete separating input exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑wise comparison of two int arrays. They both throw a NullPointerException when the first argument is null, and otherwise return true if all corresponding elements are equal and false otherwise. No input can cause one method to behave differently from the other."
+}

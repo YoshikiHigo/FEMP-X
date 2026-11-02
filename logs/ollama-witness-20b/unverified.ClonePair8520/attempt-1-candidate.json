@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods delegate to the same underlying parsing logic (Double.valueOf(String) internally uses Double.parseDouble and constructs a new Double). They handle null, whitespace, and malformed inputs identically, and there is no input that causes one to return a non-null value while the other returns null or throws an exception. Thus no concrete separating input exists."
+}

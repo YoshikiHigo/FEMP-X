@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical null checks and parse the string using Integer(String). They return the same Integer object or null for any input, so no concrete separating test case exists."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical logic: they both iterate from the given index until a non‑whitespace character or the end of the string is reached, and then return the index. For any input string (including null) and any integer index, both methods either throw the same exception or return the same integer value. No deterministic, bounded input can produce a differing return value, side effect, or exception type between the two methods.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1042,
+  "eval_count": 236,
+  "total_duration": 1910617800,
+  "load_duration": 5297100
+}

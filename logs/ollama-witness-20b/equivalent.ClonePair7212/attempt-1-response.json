@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods produce identical observable behavior for all deterministic, bounded inputs. The only difference is the internal capacity of the returned ArrayList, which is not exposed through the List interface and cannot be distinguished by any legal test according to the constraints. Therefore no concrete separating test case can be constructed.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1101,
+  "eval_count": 366,
+  "total_duration": 3170970500,
+  "load_duration": 2679900
+}

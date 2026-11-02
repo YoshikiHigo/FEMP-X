@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic; the only difference is the use of a raw Vector versus a generic Vector<String>, which does not affect runtime behavior for the given inputs. No concrete separating input exists."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all possible String inputs: they return 0 for null or empty strings, otherwise they parse the string as a short using the same underlying parsing logic. No input can cause one method to return a different value, throw a different exception type, mutate arguments, or exhibit non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 800,
+  "eval_count": 237,
+  "total_duration": 2207370500,
+  "load_duration": 6024400
+}

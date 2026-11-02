@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, when the token is an empty string both methods enter an infinite loop, and for all other cases they perform the same string replacement logic. No concrete input can be constructed that distinguishes the return value, side effects, exception type, or termination behavior of the two methods."
+}

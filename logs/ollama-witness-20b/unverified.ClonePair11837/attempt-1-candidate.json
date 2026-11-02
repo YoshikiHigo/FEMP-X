@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods evaluate the same set of characters: digits 0–9, uppercase A–F, and lowercase a–f. For any single char input, method1 converts to upper case and checks against the same ranges that method2 explicitly tests. No input causes a differing return value, side effect, exception, or non‑termination."
+}

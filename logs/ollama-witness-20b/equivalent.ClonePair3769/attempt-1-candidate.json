@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive analysis of all control paths, both methods perform identical operations for every possible combination of arguments. No input can cause a difference in return value, side effects, or termination behavior."
+}

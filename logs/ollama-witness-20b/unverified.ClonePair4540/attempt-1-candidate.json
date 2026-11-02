@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement the same logical condition for determining leap years. For all integer inputs, including edge cases such as negative years and Integer.MIN_VALUE, both methods evaluate to the same boolean result. No input can distinguish them."
+}

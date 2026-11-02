@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical trimming of leading and trailing occurrences of the specified character. For all possible inputs—including empty strings, strings composed entirely of the strip character, and null inputs—they either return the same result or both throw a NullPointerException. No deterministic, bounded input can distinguish their behavior."
+}

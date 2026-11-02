@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods delegate to Long parsing in identical ways; for any input string (including null, empty, whitespace, or numeric with leading zeros) they produce the same result or throw the same exception. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 927,
+  "eval_count": 168,
+  "total_duration": 1600623200,
+  "load_duration": 12636900
+}

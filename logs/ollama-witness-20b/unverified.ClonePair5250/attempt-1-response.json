@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement the same leap‑year logic for all 32‑bit integer inputs; no input can cause one to return a different value or throw an exception while the other does not.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 801,
+  "eval_count": 117,
+  "total_duration": 1177863700,
+  "load_duration": 4825400
+}

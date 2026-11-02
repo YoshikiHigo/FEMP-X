@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they initialize a variable with the first element of the array and then iterate through the remaining elements, updating the variable when a smaller value is found. For any non‑null array, including empty arrays, the behavior (including the exception thrown for an empty array) is the same for both methods. Therefore no concrete input can distinguish the two methods."
+}

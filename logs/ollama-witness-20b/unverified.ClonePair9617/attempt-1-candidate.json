@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for all possible inputs: they return true iff the two char arrays are either the same reference or have equal length and all corresponding elements are equal, and return false otherwise. No input can cause a difference in return value, side effect, exception, or non‑termination."
+}

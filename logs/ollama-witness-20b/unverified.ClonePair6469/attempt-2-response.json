@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 writes exactly in_len bytes to out_buff, while method2 writes 4*in_len bytes. With in_len=1, out_offset=0 and out_buff of length 1, method1 completes normally, but method2 attempts to write four bytes and throws ArrayIndexOutOfBoundsException.\",\"arguments_java\":[\"new float[]{0.0f}\",\"0\",\"1\",\"new byte[]{0}\",\"0\"],\"parameter_types\":[\"float[]\",\"int\",\"int\",\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1768,
+  "eval_count": 257,
+  "total_duration": 2281398600,
+  "load_duration": 5366700
+}

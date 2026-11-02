@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte-to-int conversion; exhaustive reasoning shows no input can produce differing results, exceptions, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1253,
+  "eval_count": 233,
+  "total_duration": 2176573800,
+  "load_duration": 6240300
+}

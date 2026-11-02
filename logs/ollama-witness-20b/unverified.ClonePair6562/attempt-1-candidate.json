@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both return the first element of the array associated with the given key, or null if the key is absent, the array is null, or the array is empty. They also both throw a NullPointerException when the map argument itself is null. No input can cause a divergence in return value, side effect, exception type, or non‑termination."
+}

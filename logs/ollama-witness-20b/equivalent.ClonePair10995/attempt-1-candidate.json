@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical byte-wise comparisons up to the specified length. For all valid inputs—including cases with null arrays, empty arrays, negative lengths, or lengths exceeding array bounds—both methods either return the same result or throw the same exception. No deterministic, bounded input can distinguish their behavior."
+}

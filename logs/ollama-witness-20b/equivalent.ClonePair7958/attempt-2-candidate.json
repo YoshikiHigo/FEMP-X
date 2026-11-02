@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "After exhaustive reasoning, both methods behave identically for all possible inputs: they throw a NullPointerException when the first argument is null, otherwise they return the padded string. No concrete input distinguishes their behavior."
+}

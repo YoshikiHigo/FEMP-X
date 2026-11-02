@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 returns the default value when the system property value is a negative integer, whereas method2 returns the parsed negative integer. With the same input key and default, the two methods produce different results.\",\"arguments_java\":[\"\\\"k\\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1108,
+  "eval_count": 203,
+  "total_duration": 2020170600,
+  "load_duration": 10565400
+}

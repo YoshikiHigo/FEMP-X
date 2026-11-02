@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both use StringTokenizer with the same separator, handle null or empty prop identically, trim tokens, filter out empty tokens, and convert the resulting collection to a String array in the same way. No input can cause one method to return a different value, throw a different exception, or exhibit non‑termination while the other behaves differently."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform exactly the same operations; the only difference is the placement of braces, which does not affect control flow or side effects. Therefore no concrete input can distinguish their behavior."
+}

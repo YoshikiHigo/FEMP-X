@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both perform a straightforward replace-by-loop that handles null arguments by throwing NPE, and when the search string is empty they both enter an infinite loop. No input can cause one method to terminate or return a different value while the other does not."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement the same leap‑year logic; for any integer input they return identical boolean values. No input can distinguish their behavior."
+}

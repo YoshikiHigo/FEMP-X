@@ -1,0 +1,64 @@
+{
+  "key": "unverified.ClonePair6651",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(ZGVm)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.HashMap{String(aw==)->String(ICAg)},String(aw==),String(ZGVm)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.HashMap{String(aw==)->String(ICAg)},String(aw==),String(ZGVm)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(ICAg)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.HashMap{String(aw==)->String(ICAg)},String(aw==),String(ZGVm)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.HashMap{String(aw==)->String(ICAg)},String(aw==),String(ZGVm)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(ZGVm)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.HashMap{String(aw==)->String(ICAg)},String(aw==),String(ZGVm)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.HashMap{String(aw==)->String(ICAg)},String(aw==),String(ZGVm)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(ICAg)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][java.util.HashMap{String(aw==)->String(ICAg)},String(aw==),String(ZGVm)]",
+        "inputAfterSnapshot": "java.lang.Object[][java.util.HashMap{String(aw==)->String(ICAg)},String(aw==),String(ZGVm)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 replaces a null or empty (after trim) value with the default, while method2 only replaces a null value. With a map entry whose value is only whitespace, method1 returns the default but method2 returns the whitespace string.",
+    "arguments_java": [
+      "map(\"k\",\"   \")",
+      "\"k\"",
+      "\"def\""
+    ],
+    "parameter_types": [
+      "Map",
+      "String",
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 162.78
+}

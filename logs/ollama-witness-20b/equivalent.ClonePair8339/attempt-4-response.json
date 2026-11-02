@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"For input 4, method1 returns 3 while method2 returns 2 due to different branching for values between 4 and 7.\",\"arguments_java\":[\"4\"],\"parameter_types\":[\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 2247,
+  "eval_count": 651,
+  "total_duration": 5393710600,
+  "load_duration": 7487000
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 interprets the 4 input bytes as a big‑endian 32‑bit signed integer, while method2 interprets them as little‑endian. With a non‑symmetric byte sequence the resulting integer values differ, leading to different float outputs after the same scaling. For example, with in_buff={1,2,3,4} the big‑endian value is 0x01020304 and the little‑endian value is 0x04030201, which after subtracting 0x7FFFFFFF and scaling produce distinct floats.\",\"arguments_java\":[\"new byte[]{1,2,3,4}\"],\"parameter_types\":[\"byte[]\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1663,
+  "eval_count": 260,
+  "total_duration": 2386065500,
+  "load_duration": 4136900
+}

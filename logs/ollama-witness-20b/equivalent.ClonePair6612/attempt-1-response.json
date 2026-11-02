@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are byte‑by‑byte identical; they perform the same null/empty/unknown checks, construct the same literal string, look up the same key in the same map, and return the same value. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1073,
+  "eval_count": 79,
+  "total_duration": 1009810300,
+  "load_duration": 2875500
+}

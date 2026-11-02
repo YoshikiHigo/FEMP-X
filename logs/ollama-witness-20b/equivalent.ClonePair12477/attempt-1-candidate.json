@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs. Both handle null strings, strip whitespace when the second argument is null, and otherwise strip characters present in the second argument. The special case of an empty second argument is treated the same in both methods (the loop terminates immediately and the original string is returned). No input can cause a divergence in return value, side effects, exceptions, or termination."
+}

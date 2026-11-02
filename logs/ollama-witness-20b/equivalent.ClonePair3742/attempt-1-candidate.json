@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They perform equivalent element‑wise comparisons and return the same boolean value or throw the same exception types under all possible combinations of array lengths, nulls, and numeric values. No concrete separating test case can be constructed without violating the constraints."
+}

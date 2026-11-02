@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, when the search string is empty, both methods enter an infinite loop due to the way indexOf(\"\",…) returns 0 repeatedly, causing the while loop to never terminate. For any non‑empty search string, the replacement logic is equivalent, and for null inputs both methods return null. No input can produce a differing return value, side effect, exception, or non‑termination that distinguishes the two implementations."
+}

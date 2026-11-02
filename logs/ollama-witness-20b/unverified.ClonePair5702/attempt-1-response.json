@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"All integer inputs produce identical boolean results for both methods; exhaustive reasoning shows no distinguishing case.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 896,
+  "eval_count": 1063,
+  "total_duration": 8570207100,
+  "load_duration": 9562000
+}

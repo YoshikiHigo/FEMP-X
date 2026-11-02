@@ -1,0 +1,21 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 multiplies the input float by 0x7FFFFF and writes only three bytes per element, so with an output buffer of length 3 it finishes normally. method2 multiplies by 0x7FFFFFFF and writes four bytes per element; with the same 3‑byte buffer it attempts to write a fourth byte and throws an ArrayIndexOutOfBoundsException.",
+  "arguments_java": [
+    "new float[]{0.0f}",
+    "0",
+    "1",
+    "new byte[3]",
+    "0"
+  ],
+  "parameter_types": [
+    "float[]",
+    "int",
+    "int",
+    "byte[]",
+    "int"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

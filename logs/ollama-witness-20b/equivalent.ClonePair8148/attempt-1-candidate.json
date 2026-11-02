@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical linear search over the array; with the same inputs they always return the same boolean value and have no side effects. No concrete separating input exists."
+}

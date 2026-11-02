@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 calls a.equals(b) which throws a RuntimeException when the two arguments are the same instance; method2 detects identity first and returns true without invoking equals, so it does not throw.",
+  "arguments_java": [
+    "ThrowingEquals.INSTANCE",
+    "ThrowingEquals.INSTANCE"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

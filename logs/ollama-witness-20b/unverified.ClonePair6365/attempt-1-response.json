@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"In method1 a negative byte at index offset+7 sets the sign bit via OR, yielding 0x8000000000000000L. In method2 the same negative byte triggers an addition of Long.MIN_VALUE, which for an already sign‑bit‑set value produces 0x0000000000000000L, so the results differ.\",\"arguments_java\":[\"new byte[]{0,0,0,0,0,0,0,-1}\"],\"parameter_types\":[\"byte[]\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1649,
+  "eval_count": 506,
+  "total_duration": 4334162700,
+  "load_duration": 9784300
+}

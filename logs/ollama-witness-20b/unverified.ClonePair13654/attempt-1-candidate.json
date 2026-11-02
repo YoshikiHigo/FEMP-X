@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they allocate a byte array of size s.length()/2, iterate over the string two characters at a time, construct a two‑character hex string (either via substring or via charAt concatenation), parse it with Integer.parseInt(...,16), cast to byte, and store it. For all possible inputs—including null, empty, odd‑length, non‑hex characters, and valid hex strings—the control flow, exception types, and returned byte arrays are the same. No deterministic, bounded input can distinguish the two methods."
+}

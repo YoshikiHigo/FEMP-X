@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical bitwise operations on the two bytes at the specified offset; for any byte array and offset within bounds, they return the same integer value. No input can distinguish their behavior."
+}

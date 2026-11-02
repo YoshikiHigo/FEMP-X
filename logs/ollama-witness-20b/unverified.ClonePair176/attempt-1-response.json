@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical length checks and element-wise comparisons; no input can cause differing return values, side effects, or exceptions beyond the shared NullPointerException when a null array is passed.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 978,
+  "eval_count": 62,
+  "total_duration": 750122600,
+  "load_duration": 3094000
+}

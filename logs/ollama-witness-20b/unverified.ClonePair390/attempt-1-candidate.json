@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical control flow for all possible byte[] inputs. Both first check reference equality, then handle nulls, then compare lengths, and finally compare elements. No input can cause one method to return a different value, throw an exception, or terminate differently. Therefore no concrete separating test case exists."
+}

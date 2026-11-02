@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 looks up key+\\\".Min\\\" and returns that value (or def if missing), whereas method2 looks up key+\\\".Max\\\" and returns that value (or def if missing). With a Properties object that contains a value for \\\"a.Min\\\" but not for \\\"a.Max\\\", method1 will return the parsed Double 5.0 while method2 will return the default value null. This yields a concrete difference in return value for identical inputs.\",\"arguments_java\":[\"props(\\\"a.Min\\\",\\\"5.0\\\")\"],\"parameter_types\":[\"java.util.Properties\",\"String\",\"java.lang.Double\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 977,
+  "eval_count": 318,
+  "total_duration": 2869322600,
+  "load_duration": 11832300
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte extraction from the array; they either return the same integer or throw the same ArrayIndexOutOfBoundsException for any input. No concrete separating input exists."
+}

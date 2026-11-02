@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive reasoning, method1 and method2 behave identically for all possible Date inputs under the same JVM default timezone. No concrete input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1012,
+  "eval_count": 457,
+  "total_duration": 3666719900,
+  "load_duration": 5705500
+}

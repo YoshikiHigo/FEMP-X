@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks on the byte arrays: they first compare reference equality, then null checks, then length equality, and finally element-wise comparison. For any given pair of byte arrays, the control flow and return values of method1 and method2 are the same. No input can cause one method to return a different value, throw an exception, or exhibit side effects that the other does not. Therefore, no concrete separating test case exists."
+}

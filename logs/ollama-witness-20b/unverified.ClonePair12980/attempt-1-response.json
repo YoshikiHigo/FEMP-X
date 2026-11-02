@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of all edge cases—including null inputs, empty strings, overlapping patterns, and replacement strings containing the search string—both methods exhibit identical behavior. They both throw NullPointerException on null arguments, return the original string when the search string is absent, and correctly replace all non-overlapping occurrences. No input can be constructed that causes one method to return a different value, throw a different exception, or terminate differently while the other behaves otherwise. Therefore, no concrete separating test case exists for this clone pair.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1144,
+  "eval_count": 369,
+  "total_duration": 3218518400,
+  "load_duration": 15186500
+}

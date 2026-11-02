@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible String inputs: they return a Double parsed from the trimmed string when it represents a valid number, and otherwise return null. No input can cause method1 to return a non‑null value while method2 returns null, or vice versa, nor can any input trigger an exception in one method that does not also trigger an exception in the other. Therefore, no concrete separating test case exists."
+}

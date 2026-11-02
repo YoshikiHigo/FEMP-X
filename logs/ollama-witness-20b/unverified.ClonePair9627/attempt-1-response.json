@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical checks in the same order; for any pair of char[] inputs (including nulls) they produce the same boolean result. No input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 975,
+  "eval_count": 190,
+  "total_duration": 1560983800,
+  "load_duration": 3294900
+}

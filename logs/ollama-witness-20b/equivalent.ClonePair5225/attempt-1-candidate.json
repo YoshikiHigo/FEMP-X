@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic: they retrieve a property by key and return the default value if the property is null, otherwise they return the trimmed property value. No input can cause a difference in return value, side effect, exception, or termination."
+}

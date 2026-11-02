@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical bit‑shifting and masking operations on the same byte array indices. For any valid or invalid input (including null arrays, out‑of‑bounds offsets, or any byte values), both methods either produce the same integer result or throw the same exception type (ArrayIndexOutOfBoundsException or NullPointerException). No deterministic input can cause one method to return a different value, throw a different exception, or exhibit non‑termination while the other behaves differently."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same number of length‑bytes for all integer inputs; the thresholds used in method1 (0x80, 0x100, 0x10000, 0x1000000) match exactly the bit‑shift thresholds in method2 (1<<7, 1<<8, 1<<16, 1<<24). No input can produce a differing return value, side effect, exception, or non‑termination."
+}

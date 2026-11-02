@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods evaluate the same set of characters using equivalent logical expressions; no input can distinguish their outputs."
+}

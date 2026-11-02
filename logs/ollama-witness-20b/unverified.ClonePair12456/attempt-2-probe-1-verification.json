@@ -1,0 +1,65 @@
+{
+  "key": "unverified.ClonePair12456",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWE=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWFhYQ==),String(YWE=),String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWFhYQ==),String(YWE=),String(YQ==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWE=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWFhYQ==),String(YWE=),String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWFhYQ==),String(YWE=),String(YQ==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWE=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWFhYQ==),String(YWE=),String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWFhYQ==),String(YWE=),String(YQ==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(YWE=)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YWFhYQ==),String(YWE=),String(YQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YWFhYQ==),String(YWE=),String(YQ==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 performs a global replace of all non‑overlapping occurrences of the find string, while method2 replaces an occurrence and then continues searching from the end of the inserted replace string. For the input toSearch=\"aaaa\", find=\"aa\", replace=\"a\", method1 produces \"aa\" (two replacements), whereas method2 produces \"aaa\" (only two replacements are performed because the second replacement shifts the remaining text and the search index skips the overlapping occurrence).",
+    "arguments_java": [
+      "\"aaaa\"",
+      "\"aa\"",
+      "\"a\""
+    ],
+    "parameter_types": [
+      "String",
+      "String",
+      "String"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 139.832
+}

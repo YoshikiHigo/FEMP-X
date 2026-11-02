@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods implement identical logic for all possible inputs: they both return true iff the value is equal to one of the elements in the options array (handling nulls appropriately), and false otherwise. No input can cause a difference in return value, side effects, exceptions, or termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 967,
+  "eval_count": 144,
+  "total_duration": 1578697200,
+  "load_duration": 5367000
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logical checks: they compare nullity, array lengths, and element equality in the same order (method1 forwards, method2 backwards). For any deterministic, bounded byte[] inputs, both methods return the same boolean value, throw the same exceptions, and have no side effects. No concrete input can distinguish their behavior."
+}

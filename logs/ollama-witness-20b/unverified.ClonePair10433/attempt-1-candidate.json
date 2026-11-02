@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical unsigned byte accumulation; no input causes differing behavior."
+}

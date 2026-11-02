@@ -1,0 +1,60 @@
+{
+  "key": "equivalent.ClonePair10355",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(dHJ1ZQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(dHJ1ZQ==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(dHJ1ZQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(dHJ1ZQ==)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(dHJ1ZQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(dHJ1ZQ==)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(dHJ1ZQ==)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(dHJ1ZQ==)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 uses reference equality (==) for literals \"true\" and \"yes\", so a String with the same content but a different object reference is not recognized as true. method2 uses equalsIgnoreCase, which correctly identifies the value. Thus for a new String(\"true\") method1 returns null while method2 returns Boolean.TRUE.",
+    "arguments_java": [
+      "new String(\"true\")"
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 164.288
+}

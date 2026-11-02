@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum element of the array in the same way. They both initialize the maximum to the first element and iterate over the remaining elements, updating the maximum when a larger value is found. For any non‑empty array they return the same value, and for an empty array they both throw a NullPointerException due to accessing index 0. No input can distinguish their behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement identical semantics for all possible byte array inputs; exhaustive reasoning shows no input can cause differing return values, side effects, exceptions, or non‑termination."
+}

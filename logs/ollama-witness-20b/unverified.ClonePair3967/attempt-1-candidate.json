@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. They both iterate over the length of the first array and compare corresponding bytes; if the second array is shorter they both throw ArrayIndexOutOfBoundsException at the same point, and if the first array is null they both throw NullPointerException. No input can cause one method to return a different value, throw a different exception type, or terminate differently than the other."
+}

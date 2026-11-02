@@ -1,0 +1,60 @@
+{
+  "key": "equivalent.ClonePair7490",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(XHUwMGZm)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(255)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(255)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(XHUwMGZm)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(255)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(255)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(XHUwMGZm)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(255)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(255)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(XHUwMGZm)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Character(255)]",
+        "inputAfterSnapshot": "java.lang.Object[][Character(255)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For the character with code point 0x00FF (decimal 255), method1 produces \"\\\\u0ff\" while method2 produces \"\\\\u00ff\". The two strings differ, so the methods are not equivalent for this input.",
+    "arguments_java": [
+      "'\\u00ff'"
+    ],
+    "parameter_types": [
+      "char"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 159.995
+}

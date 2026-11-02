@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs: they return 0.0 for null or empty strings, parse numeric strings via Double.parseDouble (or new Double(str).doubleValue()), and throw NumberFormatException for all other malformed inputs. No input can distinguish their return values, side effects, or exception types."
+}

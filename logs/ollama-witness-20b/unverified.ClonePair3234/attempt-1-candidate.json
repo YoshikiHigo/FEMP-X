@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 compares elements pairwise in order, returning false when any mismatch is found. method2 compares elements symmetrically from the ends, so for arrays that are reverses of each other it incorrectly returns true. For input arrays [1,2] and [2,1] method1 returns false while method2 returns true.",
+  "arguments_java": [
+    "new int[]{1,2}",
+    "new int[]{2,1}"
+  ],
+  "parameter_types": [
+    "int[]",
+    "int[]"
+  ],
+  "void_return": false
+}

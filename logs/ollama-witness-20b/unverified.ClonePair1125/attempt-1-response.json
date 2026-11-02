@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally equivalent for all possible byte[] inputs and initial states. Both perform the same null checks, length comparison, and element-wise equality test, and neither mutates the inputs or has side effects. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1283,
+  "eval_count": 135,
+  "total_duration": 1553192400,
+  "load_duration": 2044700
+}

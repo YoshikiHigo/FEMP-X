@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical results for all deterministic, bounded inputs; no observable difference in return value, side effects, or exceptions can be guaranteed without relying on non-deterministic factors such as memory availability."
+}

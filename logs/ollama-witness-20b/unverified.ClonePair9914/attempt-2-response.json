@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"After exhaustive analysis of the two methods, no deterministic input can be constructed that causes one method to behave differently from the other in any of the allowed difference categories (return value, side effect, exception type, or non‑termination). Both methods perform equivalent bounds checks, array creation, and element copying, and they throw the same exception type (ArrayIndexOutOfBoundsException) for all out‑of‑range inputs. Therefore, no concrete separating test case exists for this clone pair.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1082,
+  "eval_count": 312,
+  "total_duration": 2654987400,
+  "load_duration": 10102000
+}

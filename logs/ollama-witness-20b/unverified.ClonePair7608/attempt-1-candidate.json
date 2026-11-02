@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "When the first argument is an instance of a subclass that overrides equals to return true for a superclass instance, but the superclass’s equals returns false for the subclass instance, method1 evaluates the symmetric condition (apple.equals(orange) && orange.equals(apple)) and returns false, whereas method2 only checks value1.equals(value2) and returns true.",
+  "arguments_java": [
+    "new Sub()",
+    "new Super()"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

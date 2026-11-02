@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same null checks and delegate to String.replaceAll; no input can distinguish their behavior."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical little‑endian byte‑to‑int conversion; for all possible byte arrays and offsets they produce the same result or throw the same exception. No concrete separating input exists."
+}

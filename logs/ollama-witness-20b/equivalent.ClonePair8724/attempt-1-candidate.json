@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible String inputs and defaultValue values. Both parse the string when it is non‑null and non‑empty, and in all other cases return the defaultValue. No input can cause a different return value, side effect, exception, or non‑termination."
+}

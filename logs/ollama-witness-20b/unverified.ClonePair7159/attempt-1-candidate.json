@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods produce identical results for all deterministic, bounded inputs. Both handle null collections, null join strings, and empty collections in the same way, and they append elements and separators in the same order. No input can cause a difference in return value, side effects, or exceptions."
+}

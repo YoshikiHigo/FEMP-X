@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they initialize max to array[0] and then compare each element (including the first) to update max. For any non-empty array, both methods produce the same result; for empty or null arrays they both throw the same exception. No deterministic, bounded input can distinguish their behavior."
+}

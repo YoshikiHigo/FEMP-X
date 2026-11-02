@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit unsigned value from the four bytes; for every possible byte array of length 4 the arithmetic performed by method1 and method2 yields identical results (modulo Java int overflow). No input can distinguish their return values, side effects, or exception behavior."
+}

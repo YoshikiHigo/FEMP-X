@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all valid inputs. In particular, when the target substring is empty, both methods enter an infinite loop, and for all other cases they perform the same replacements. No concrete input can be constructed that causes one method to return a different value, throw a different exception, or terminate differently while the other behaves otherwise."
+}

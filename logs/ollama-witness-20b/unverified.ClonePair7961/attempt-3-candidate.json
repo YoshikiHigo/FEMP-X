@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform the same null‑check on the first argument before any padding logic. If the first argument is null, both methods throw a NullPointerException when calling .length(). If the first argument is non‑null, the padding logic in method1 uses StringBuffer.insert(0, s) while method2 uses string concatenation pad+word. For any deterministic, bounded inputs where s (or pad) is non‑null, the resulting strings are identical because inserting a non‑null string at the beginning of a StringBuffer produces the same sequence of characters as prefixing the original string with that same string. All other combinations (including null pad/s, empty strings, or negative minLen/length) either lead to the same behavior or to the same exception. Therefore no concrete separating input exists for these two methods under the allowed difference types.}"
+}

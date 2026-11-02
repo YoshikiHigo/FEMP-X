@@ -1,0 +1,16 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns the index of the first occurrence of the delimiter starting at the given offset, ignoring backslashes. method2 treats a backslash as an escape character that causes the following character to be ignored when searching for the delimiter. For the input string \"a\\\\b\", offset 0 and delimiter 'b', method1 finds the 'b' at index 2, whereas method2 skips the 'b' because it is escaped by the preceding backslash and returns -1.",
+  "arguments_java": [
+    "\"a\\\\b\"",
+    "0",
+    "'b'"
+  ],
+  "parameter_types": [
+    "String",
+    "int",
+    "char"
+  ],
+  "void_return": false
+}

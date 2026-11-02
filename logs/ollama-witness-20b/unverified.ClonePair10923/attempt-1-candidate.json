@@ -1,0 +1,16 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 appends the elipsis only when it is non‑null, whereas method2 appends the suffix only when it is non‑null.  With elipsis==null and suffix==\"bar\" the two methods produce different strings.",
+  "arguments_java": [
+    "\"foo\"",
+    "2",
+    "null"
+  ],
+  "parameter_types": [
+    "String",
+    "int",
+    "String"
+  ],
+  "void_return": false
+}

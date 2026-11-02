@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical logic for all possible String inputs, including null, empty, and equal or differing strings. They both return the longest common prefix or the shorter string when one is a prefix of the other, and they both throw NullPointerException when either argument is null. No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1237,
+  "eval_count": 310,
+  "total_duration": 2778568700,
+  "load_duration": 24604800
+}

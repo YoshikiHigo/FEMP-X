@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical iteration and string concatenation logic; for any non‑null list and separator they produce the same result, and for a null list both throw a NullPointerException. No input can distinguish their behaviors."
+}

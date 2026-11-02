@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the median in exactly the same way for all possible double array inputs, including edge cases such as null, empty, and arrays of any length. No deterministic input can cause a difference in return value, side effects, or exception type."
+}

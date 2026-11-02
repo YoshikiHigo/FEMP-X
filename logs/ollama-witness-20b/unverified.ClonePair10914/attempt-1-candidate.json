@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logic on a String input; no deterministic input can cause differing return values, side effects, or exceptions beyond the trivial null case, which behaves identically in both methods."
+}

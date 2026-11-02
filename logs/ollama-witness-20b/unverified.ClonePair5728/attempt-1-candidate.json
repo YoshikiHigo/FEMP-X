@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement the standard leap‑year rule and produce identical boolean results for all integer inputs, including negative values and zero. No input can distinguish their outputs."
+}

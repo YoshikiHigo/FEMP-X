@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally identical for all possible inputs. Both perform the same bit‑shifting and masking operations, handle negative or zero lengths in the same way, and both throw a NullPointerException when the input array is null. No deterministic, bounded input can produce a differing return value, side effect, exception type, or non‑termination between the two methods."
+}

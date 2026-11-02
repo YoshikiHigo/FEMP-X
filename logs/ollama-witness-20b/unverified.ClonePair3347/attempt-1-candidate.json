@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs. They both return false when the array lengths differ, return false when any corresponding elements differ, and return true otherwise. They both throw a NullPointerException when either argument is null. No input can cause a divergence in return value, side effect, exception type, or non‑termination."
+}

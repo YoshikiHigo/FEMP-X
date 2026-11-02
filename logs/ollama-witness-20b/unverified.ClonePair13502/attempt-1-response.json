@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"When the replacement target string is empty, method1 appends the replacement only once at the end of the original string, whereas method2 appends the replacement between two copies of the original string, producing a longer result.\",\"arguments_java\":[\"\\\"abc\\\"\",\"\\\"\\\"\",\"\\\"X\\\"\"],\"parameter_types\":[\"String\",\"String\",\"String\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1216,
+  "eval_count": 362,
+  "total_duration": 2906950200,
+  "load_duration": 2738500
+}

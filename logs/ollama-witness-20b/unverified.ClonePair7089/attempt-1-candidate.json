@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte extraction from a byte array using the same index calculations and bit shifts. For any valid input (including edge cases such as null arrays, negative offsets, or offsets that cause out‑of‑bounds access), both methods either return the same integer value or throw the same ArrayIndexOutOfBoundsException. No deterministic, bounded input can produce a differing return value, side effect, exception type, or non‑termination between the two methods."
+}

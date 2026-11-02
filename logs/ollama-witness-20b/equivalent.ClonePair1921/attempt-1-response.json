@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical logic for all possible byte[] inputs: they both treat bytes in the range 32–126 as printable characters and replace any other byte with a period. The signedness of the byte values and the comparison bounds are equivalent, so no concrete input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 880,
+  "eval_count": 311,
+  "total_duration": 2828574300,
+  "load_duration": 4461600
+}

@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair13168",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-128]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(ODA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(ODA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-128]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(ODA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(ODA=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-128]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(ODA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(ODA=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-128]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(ODA=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(ODA=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 converts hex values 80–FF to signed bytes by subtracting 256, whereas method2 keeps them as unsigned bytes (0–255). For input \"80\" method1 returns a byte with value -128, while method2 returns a byte with value 128.",
+    "arguments_java": [
+      "\"80\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 135.68
+}

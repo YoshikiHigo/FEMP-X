@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the arithmetic mean of the elements in the given ArrayList<Double> in exactly the same way. They perform identical loops, use the same arithmetic operations, and return the same value for any non‑null input. They also both throw a NullPointerException when the argument is null, and they do not modify the input list or produce any side effects. Therefore no concrete input can distinguish their behavior."
+}

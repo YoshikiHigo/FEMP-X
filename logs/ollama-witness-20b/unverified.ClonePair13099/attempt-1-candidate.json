@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, when the replacement string 'from' is empty, both methods enter an infinite loop due to the unchanged index, leading to non‑termination in the same way. For all other inputs, the algorithms perform the same string replacement logic and produce identical results or throw the same exceptions. Therefore, no concrete test case can distinguish method1 and method2."
+}

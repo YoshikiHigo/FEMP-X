@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical lexicographic comparison of byte arrays; for any pair of byte[] inputs they produce the same integer result. No input can distinguish them."
+}

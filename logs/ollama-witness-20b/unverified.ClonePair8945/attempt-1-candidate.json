@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods rely on System.getProperty, and the test framework prohibits modifying system properties or other global state. Without the ability to set a property value, the methods cannot be distinguished on any deterministic, local input. Therefore no concrete separating test case can be constructed under the given constraints."
+}

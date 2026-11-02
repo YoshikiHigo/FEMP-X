@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return true exactly for the four whitespace characters '\\t', '\\n', '\\r', and ' ', and false for all other char values. No input can make them behave differently."
+}

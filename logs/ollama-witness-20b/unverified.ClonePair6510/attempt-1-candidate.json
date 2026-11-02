@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical computations using the same comparisons and updates; for any deterministic input the resulting strings are the same. No concrete input can distinguish their return values, side effects, or termination behavior."
+}

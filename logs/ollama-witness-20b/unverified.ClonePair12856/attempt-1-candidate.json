@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return the original string when the string is null or its length is not greater than the specified limit, and otherwise both return the substring from 0 to the limit. No input can cause one method to return a different value, throw a different exception, or terminate differently."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible inputs. Both perform the same sequence of checks: identity comparison, null checks, and class equality comparison using either the `!=` operator or the `equals` method on the `Class` objects. Since `Class.equals` is defined to return true iff the two `Class` objects represent the same class, the two methods will always produce the same boolean result for any pair of arguments. No input can cause a divergence in return value, side effect, exception, or non‑termination."
+}

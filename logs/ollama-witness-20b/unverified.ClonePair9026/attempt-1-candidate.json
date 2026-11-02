@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return the same value for all possible integer inputs; the control flow differences do not affect the outcome. No concrete input can distinguish them."
+}

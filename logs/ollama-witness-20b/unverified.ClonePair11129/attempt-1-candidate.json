@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, they both perform a straightforward replace‑all operation: they return the original string when the source is null, and otherwise iterate over all occurrences of the target substring, appending the replacement. The only pathological case is when the target substring is the empty string, in which case both methods enter an infinite loop. No input can cause one method to terminate while the other does not, nor can it cause differing return values or side effects under the constraints of the problem statement."
+}

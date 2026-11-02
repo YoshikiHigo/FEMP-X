@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte‑to‑int conversion; any input that causes an exception does so in the same way, and for all valid inputs they return the same value."
+}

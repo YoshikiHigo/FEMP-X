@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally identical; the only difference is the negated condition in method2, which yields the same result for all inputs. No concrete input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1099,
+  "eval_count": 78,
+  "total_duration": 1057284200,
+  "load_duration": 17346800
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible inputs. Both perform the same length check and element-wise comparison, and they both throw a NullPointerException when either argument is null. No input can cause one method to return a different value, throw a different exception type, or exhibit non‑termination while the other behaves differently."
+}

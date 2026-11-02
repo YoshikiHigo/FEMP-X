@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods compute the same 32‑bit integer for every possible byte array of length 4.  Method1 treats each byte as unsigned and assembles the value in big‑endian order.  Method2 converts the first three bytes to unsigned values but leaves the most significant byte signed; however, shifting a signed byte left by 24 bits produces the same 32‑bit pattern as treating it as unsigned (e.g., 0xFF000000).  Therefore, for all inputs the return values, side effects, and exception behaviour are identical, and no concrete separating test case exists."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for comparing two byte arrays: they return false if either array is null, return false if lengths differ, and otherwise compare each element pairwise, returning true only if all elements match. No input, state, or side‑effect differences exist for any deterministic, bounded input."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical comparisons of the int values of the two Integer arguments. For any pair of inputs that does not cause a NullPointerException, both methods return the same result. For inputs that cause a NullPointerException, both methods throw the same exception. Therefore no concrete input can distinguish their behavior."
+}

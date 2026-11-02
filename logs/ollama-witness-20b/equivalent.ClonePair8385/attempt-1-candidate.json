@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all valid inputs: they return false when the target array is too short, otherwise they compare corresponding bytes and return true if all match. The only potential difference would arise with negative start indices, but in that case both methods throw an ArrayIndexOutOfBoundsException, so no distinguishing input exists."
+}

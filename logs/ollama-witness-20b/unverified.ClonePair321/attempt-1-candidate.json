@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑wise equality checks on the two byte arrays. They return the same boolean value for all possible inputs (including empty arrays, equal arrays, unequal arrays, and arrays of different lengths) and throw the same NullPointerException when either argument is null. No deterministic, bounded input can distinguish their return values, side effects, or exception behavior."
+}

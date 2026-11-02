@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally identical; all control‑flow branches and operations match exactly, so no concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1869,
+  "eval_count": 381,
+  "total_duration": 3370917600,
+  "load_duration": 8880400
+}

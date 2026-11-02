@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods delegate to Integer.parseInt (directly or via Integer.valueOf), which behave identically for all valid and invalid String inputs, including null, empty, whitespace, and numeric strings. No deterministic input can distinguish their return values, side effects, or exception behavior."
+}

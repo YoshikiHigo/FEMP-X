@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all inputs that can be represented by standard CharSequence implementations. No concrete separating input can be constructed without violating the constraints (e.g., using non‑deterministic or side‑effecting CharSequence implementations)."
+}

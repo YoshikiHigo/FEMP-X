@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible inputs: they both return 0.0 for null, non‑Number non‑String, or unparsable strings; they both return the numeric value for Number instances; and they both parse non‑empty strings via Double.parseDouble. No concrete input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1120,
+  "eval_count": 360,
+  "total_duration": 3096002500,
+  "load_duration": 3367900
+}

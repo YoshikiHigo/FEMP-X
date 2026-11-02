@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible inputs: they both return true only when both arguments are null or when both are non‑null arrays of equal length containing identical characters; otherwise they return false. No distinguishing input exists under the allowed difference types."
+}

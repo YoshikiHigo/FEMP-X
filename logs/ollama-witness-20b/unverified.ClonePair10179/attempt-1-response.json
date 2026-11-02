@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods delegate to Integer.valueOf(String) and Integer.parseInt(String) respectively, which exhibit identical behavior for all valid and invalid string inputs. No deterministic input can cause one method to return a different value, throw a different exception type, or exhibit side‑effects that the other does not. Therefore, no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 755,
+  "eval_count": 387,
+  "total_duration": 3347721000,
+  "load_duration": 11498200
+}

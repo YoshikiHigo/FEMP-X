@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for all possible int inputs; exhaustive reasoning shows no input yields differing outputs, side effects, or termination behavior."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compare the same logical components of a Calendar (year and day-of-year versus year, month, and day-of-month). For any non-null Calendar instances, a matching year and day-of-year implies a matching month and day-of-month, and vice versa. Both methods throw a NullPointerException when either argument is null, so there is no input that causes differing behavior. Therefore no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1004,
+  "eval_count": 254,
+  "total_duration": 2053470500,
+  "load_duration": 5893100
+}

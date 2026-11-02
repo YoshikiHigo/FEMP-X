@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform the same byte-wise XOR operation on the input arrays and return a new array of the specified length. No input can cause differing behavior, return values, side effects, or exceptions.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1243,
+  "eval_count": 64,
+  "total_duration": 968622700,
+  "load_duration": 19344900
+}

@@ -1,0 +1,12 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 parses each dotted segment into an int and casts to byte, allowing values >255 to wrap around and still return a byte array, whereas method2 explicitly rejects any segment >255 and returns null. For the input \"256.0.0.1\", method1 will return a byte array (with the first byte being (byte)256 == 0), while method2 will return null.",
+  "arguments_java": [
+    "\"256.0.0.1\""
+  ],
+  "parameter_types": [
+    "String"
+  ],
+  "void_return": false
+}

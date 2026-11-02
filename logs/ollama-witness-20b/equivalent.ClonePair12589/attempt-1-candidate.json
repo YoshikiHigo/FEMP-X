@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical date validity checks; exhaustive reasoning shows no input can cause differing outcomes."
+}

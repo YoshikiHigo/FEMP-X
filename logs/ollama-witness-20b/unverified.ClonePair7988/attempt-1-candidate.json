@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations using StringBuilder and StringBuffer, which have the same semantics for the used methods. No input can distinguish their return values, side effects, or exception behavior."
+}

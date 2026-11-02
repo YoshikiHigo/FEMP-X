@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods produce identical results for all possible inputs. Both iterate over the list, handle null and empty lists in the same way, and build the output string using the same logic for separators. No input can cause a difference in return value, side effects, or termination."
+}

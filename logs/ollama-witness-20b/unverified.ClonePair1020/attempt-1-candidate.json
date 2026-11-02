@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible byte[] inputs, including null, empty, and non-empty arrays. They return the same boolean value, throw the same exception type (NullPointerException) for null arguments, and preserve input state. No concrete separating input exists."
+}

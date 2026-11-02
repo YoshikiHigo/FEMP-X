@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte extraction; given the same input array and offset they produce the same result or throw the same exception. No concrete separating input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1230,
+  "eval_count": 89,
+  "total_duration": 1098830000,
+  "load_duration": 3034100
+}

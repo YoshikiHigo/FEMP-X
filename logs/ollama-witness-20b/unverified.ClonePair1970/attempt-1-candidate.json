@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical logical checks on the byte arrays: they handle nulls, compare lengths, and iterate over all elements (method1 forwards, method2 backwards). For any deterministic, bounded byte array input, both methods return the same boolean value, produce no side effects, and terminate normally. No input can distinguish their behavior."
+}

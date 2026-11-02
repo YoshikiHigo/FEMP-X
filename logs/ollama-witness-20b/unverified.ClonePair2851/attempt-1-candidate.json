@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 throws a NullPointerException when the first array is non‑null and the second array is null, because it attempts to access arrayTwo.length. method2 correctly returns false for this input.",
+  "arguments_java": [
+    "new byte[]{1}",
+    "null"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "byte[]"
+  ],
+  "void_return": false
+}

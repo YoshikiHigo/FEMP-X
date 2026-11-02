@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 reverses byte order when assembling the 32‑bit integer, whereas method2 preserves the original order. With a 4‑byte buffer and offset 0, method1 returns 0x04030201 while method2 returns 0x01020304.\",\"arguments_java\":[\"new byte[]{1,2,3,4}\"],\"parameter_types\":[\"byte[]\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1203,
+  "eval_count": 521,
+  "total_duration": 4485149900,
+  "load_duration": 11131200
+}

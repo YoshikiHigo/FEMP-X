@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"No concrete, deterministic input using only standard Java types can produce an asymmetric equals result between two arguments. All standard types either have symmetric equals or return false in both directions. Therefore, a separating test case cannot be constructed within the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1094,
+  "eval_count": 571,
+  "total_duration": 4738067200,
+  "load_duration": 2998800
+}

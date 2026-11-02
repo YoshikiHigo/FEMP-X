@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair12187",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MTIzLTQ1LTY=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MTIzLTQ1LTY=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MTIzLTQ1LTY=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MTIzLTQ1LTY=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MTIzLTQ1LTY=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MTIzLTQ1LTY=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(true)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MTIzLTQ1LTY=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MTIzLTQ1LTY=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 expects a 9‑character string with a specific format; \"123-45-6\" is only 7 characters long and therefore method1 returns false. method2 parses a dash‑separated string of lengths 0‑6, 2, and 1; \"123-45-6\" satisfies those constraints and method2 returns true.",
+    "arguments_java": [
+      "\"123-45-6\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 134.809
+}

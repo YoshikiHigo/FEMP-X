@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods are functionally identical; the only difference is the placement of parentheses, which does not affect evaluation order or semantics. Therefore no concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1346,
+  "eval_count": 80,
+  "total_duration": 809946700,
+  "load_duration": 18895900
+}

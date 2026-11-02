@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods behave identically for all deterministic, bounded String inputs. method1 parses the raw string and returns null on NumberFormatException; method2 trims the string before parsing and also returns null on any Exception. Since Double(String) accepts leading/trailing whitespace, any string that causes NumberFormatException in method1 will also cause NumberFormatException in method2 after trimming, yielding the same null result. No input can trigger a different exception type or side effect, and neither method mutates its argument or produces output to stdout/stderr. Therefore no concrete separating test case exists."
+}

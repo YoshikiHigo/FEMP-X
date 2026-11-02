@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return true for the same set of characters: digits 0–9, letters A–F (case‑insensitive). No input can make one method return true while the other returns false, nor can any input cause a difference in side effects or termination."
+}

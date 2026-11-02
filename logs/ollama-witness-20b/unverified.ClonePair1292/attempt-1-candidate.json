@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic for all possible byte[] inputs: they check reference equality, nulls, length, and element-wise equality using either direct comparison or XOR accumulation. No input can cause one to return a different value, throw a different exception, or exhibit non-termination compared to the other."
+}

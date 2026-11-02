@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all deterministic, bounded inputs. Both perform a straightforward global replacement of the token in the source string, handling null arguments by throwing the same NullPointerException, and both loop until no further occurrences are found. No input can cause one method to return a different value, throw a different exception type, or terminate differently while the other behaves otherwise."
+}

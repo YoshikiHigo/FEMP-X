@@ -1,0 +1,17 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 scans the string from startIndex and returns the index of the first occurrence of the target character, regardless of braces or escape characters. method2, however, skips characters that are inside braces or escaped by a backslash. For the input string \"a{c}d\", startIndex 0, and match character 'c', method1 returns 2 (the position of 'c'), while method2 returns -1 because the 'c' is inside a brace pair and therefore ignored.",
+  "arguments_java": [
+    "\"a{c}d\"",
+    "0",
+    "'c'"
+  ],
+  "parameter_types": [
+    "String",
+    "int",
+    "char"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

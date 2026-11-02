@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks and return the same Integer instance or null for any String input; no input can distinguish their behavior."
+}

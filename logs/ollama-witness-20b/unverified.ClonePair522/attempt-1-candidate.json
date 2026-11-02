@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible byte[] inputs: they return true when the first array is a prefix of the second (including equal lengths), return false when a mismatch occurs, and throw the same ArrayIndexOutOfBoundsException when the second array is shorter than the first. No input can distinguish their return values, side effects, or exception types."
+}

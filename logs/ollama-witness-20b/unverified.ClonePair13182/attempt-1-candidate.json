@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "method1 and method2 are equivalent for all Calendar inputs; no concrete input can distinguish their return values, side effects, or exceptions."
+}

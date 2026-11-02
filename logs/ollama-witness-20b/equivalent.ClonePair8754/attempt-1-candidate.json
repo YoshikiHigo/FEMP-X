@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods return the same Class object for all possible int inputs; no input distinguishes them."
+}

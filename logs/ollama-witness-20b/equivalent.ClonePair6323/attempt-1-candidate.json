@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical binary search logic; the only syntactic difference is the use of unsigned versus signed right shift inside the loop. For any valid input where the array indices remain non‑negative, the two shift operators produce the same result because the sum (end+begin) is non‑negative. When the sum is negative, both methods eventually attempt to access a negative index and throw ArrayIndexOutOfBoundsException. No input can cause one method to return a value while the other throws an exception or to produce different return values. Therefore no concrete separating test case exists."
+}

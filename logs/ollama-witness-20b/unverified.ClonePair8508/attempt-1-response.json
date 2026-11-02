@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible inputs and initial states. Both methods iterate from the given index to the end of the string, return the first non‑whitespace character index, and return -1 when no such character exists or when the index is beyond the string length. They also both throw a StringIndexOutOfBoundsException for negative indices or null strings. No deterministic, bounded input can distinguish their outputs or side effects.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1076,
+  "eval_count": 366,
+  "total_duration": 2907277000,
+  "load_duration": 2562900
+}

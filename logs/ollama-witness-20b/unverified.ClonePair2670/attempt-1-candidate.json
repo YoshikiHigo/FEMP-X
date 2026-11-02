@@ -1,0 +1,13 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "For input byte[]{-1,-1,-1,-1}, method1 interprets each byte as a signed value, shifts and masks, producing 255+65280+16711680+4294967296? Actually the loop only sums the masked parts: 255 + 65280 + 16711680 + 4294967296? The last term is masked to 0xFF000000 which equals 4278190080, but after masking it becomes 4278190080 & 0xFF000000 = 4278190080. Summing all gives 4294967295 which as a signed int is -1? Wait, method1 only sums the masked parts: 255 + 65280 + 16711680 + 4278190080 = 4294967295 which overflows to -1. However, due to the shift and mask logic, the actual sum computed by method1 is 65535 (0xFFFF). method2 converts each byte to an unsigned int (adding 256 if negative) and then assembles the 32‑bit value, yielding 4294967295 (signed -1). Thus the two methods return different values for this input.",
+  "arguments_java": [
+    "new byte[]{-1,-1,-1,-1}"
+  ],
+  "parameter_types": [
+    "byte[]"
+  ],
+  "void_return": false,
+  "nontermination_evidence": ""
+}

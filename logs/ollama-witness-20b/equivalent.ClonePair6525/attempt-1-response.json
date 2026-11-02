@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte extraction from the input array; the only difference is the placement of parentheses, which does not affect the computed values. For any valid or invalid inputs (including null or non‑multiple‑of‑4 lengths), both methods exhibit the same behavior (either returning the same byte array or throwing the same exception). No concrete input can distinguish them.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1290,
+  "eval_count": 224,
+  "total_duration": 2228282500,
+  "load_duration": 3146900
+}

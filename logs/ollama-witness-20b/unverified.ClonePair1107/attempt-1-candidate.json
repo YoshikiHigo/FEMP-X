@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible byte[] inputs. Both compare lengths, then compare each element (method1 forwards, method2 backwards). The identity check in method2 only short‑circuits when the references are identical, which still yields the same boolean result as method1. Therefore no concrete input can distinguish their return values, side effects, or exception behavior."
+}

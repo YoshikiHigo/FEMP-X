@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic: they check for nulls, iterate over the array, compare each element with equals, and return true if a match is found, otherwise false. No input can cause differing return values, side effects, or exceptions."
+}

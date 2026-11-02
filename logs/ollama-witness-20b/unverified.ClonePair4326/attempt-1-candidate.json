@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all valid inputs. Both compare the year and the day-of-year (method1) or the year, month, and day (method2). If the dates are equal, both return true; otherwise both return false. They both throw a NullPointerException when either argument is null, and they use the same default time zone and calendar implementation. No deterministic input can distinguish their outputs."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods implement logically equivalent predicates for all possible char inputs; no concrete input can distinguish their return values, side effects, or termination behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 814,
+  "eval_count": 147,
+  "total_duration": 1217786000,
+  "load_duration": 14777600
+}

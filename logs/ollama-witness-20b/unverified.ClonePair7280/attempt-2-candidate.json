@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return true if and only if the two input strings are non‑null and equal. For any pair of strings, method1 computes a XOR‑based checksum that is zero exactly when the strings are identical, while method2 explicitly checks equality. Since the logic is equivalent for all possible inputs, no concrete separating test case exists."
+}

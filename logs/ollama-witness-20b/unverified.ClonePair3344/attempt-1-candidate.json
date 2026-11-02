@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical element‑wise equality checks on the two int arrays. They both throw a NullPointerException when either argument is null, and otherwise return true iff the arrays have the same length and all corresponding elements are equal. No deterministic, bounded input can cause one method to return a different value, throw a different exception type, or exhibit non‑termination while the other behaves differently."
+}

@@ -1,0 +1,69 @@
+{
+  "key": "unverified.ClonePair6472",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-1, -1, 63, 0]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][-1, -1, 63, 0],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-65, -1, -1, -1]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][-65, -1, -1, -1],Integer(0)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-1, -1, 63, 0]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][-1, -1, 63, 0],Integer(0)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][-65, -1, -1, -1]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][0, 0, 0, 0],Integer(0)]",
+        "inputAfterSnapshot": "java.lang.Object[][float[][0.5],Integer(0),Integer(1),byte[][-65, -1, -1, -1],Integer(0)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "side_effect",
+    "reason": "Both methods return the same out_buff reference, but method1 writes 3 bytes per float while method2 writes 4 bytes. With a single float input and a 4‑byte buffer, method1 leaves the last byte unchanged, whereas method2 overwrites it, producing different buffer contents.",
+    "arguments_java": [
+      "new float[]{0.5f}",
+      "0",
+      "1",
+      "new byte[]{0,0,0,0}",
+      "0"
+    ],
+    "parameter_types": [
+      "float[]",
+      "int",
+      "int",
+      "byte[]",
+      "int"
+    ],
+    "void_return": false,
+    "nontermination_evidence": ""
+  },
+  "remainingSeconds": 163.378
+}

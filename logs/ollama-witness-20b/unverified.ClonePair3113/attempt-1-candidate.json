@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical operations: they cast the arguments to Double and compare the resulting double values using the same relational operators. For any input that is a Double (including NaN), null, or any other object, both methods either return the same integer result or throw the same exception type (ClassCastException or NullPointerException). No deterministic input can produce a differing return value, side effect, exception type, or non‑termination between the two methods."
+}

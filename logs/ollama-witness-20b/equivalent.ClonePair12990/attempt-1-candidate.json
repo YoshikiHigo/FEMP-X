@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical results for all long inputs; the use of > / < versus >= / <= does not change the outcome because the cast to int is equivalent to clamping at the bounds. No concrete input can distinguish them."
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical lexicographic comparison of byte arrays; no deterministic input can produce a differing result, side‑effect, or exception."
+}

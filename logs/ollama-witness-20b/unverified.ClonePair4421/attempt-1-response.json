@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods return the same boolean for every possible long input; exhaustive reasoning shows no input causes a differing return value, side effect, exception, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 943,
+  "eval_count": 1146,
+  "total_duration": 8929642000,
+  "load_duration": 3702600
+}

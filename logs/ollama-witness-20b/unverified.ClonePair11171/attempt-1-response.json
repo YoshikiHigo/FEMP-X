@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all valid inputs. They both perform a straightforward replace operation, handling nulls, empty strings, and other edge cases in the same way. No input can be constructed that causes one method to return a different value, throw a different exception, or terminate differently while the other behaves otherwise.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1256,
+  "eval_count": 455,
+  "total_duration": 3615450100,
+  "load_duration": 2935300
+}

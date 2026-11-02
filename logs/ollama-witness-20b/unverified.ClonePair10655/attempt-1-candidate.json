@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, the only non‑trivial edge case is when the search string is empty: both methods enter an infinite loop in the same way, and all other cases reduce to the same string replacement logic. No input can cause one method to terminate, throw a different exception, or return a different value while the other behaves differently."
+}

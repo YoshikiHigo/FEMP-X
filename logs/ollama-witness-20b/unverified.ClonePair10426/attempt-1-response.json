@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible String inputs: they both return null when the input is null or consists solely of whitespace, and otherwise return Integer.valueOf of the trimmed string. No input can distinguish their return values, side effects, or exception behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 783,
+  "eval_count": 174,
+  "total_duration": 1423748400,
+  "load_duration": 14041100
+}

@@ -1,0 +1,16 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 returns the default value when the key exists but maps to null, whereas method2 returns null because it returns the value directly after containsKey check.",
+  "arguments_java": [
+    "new java.util.Hashtable(){ { put(\"a\", null); } }",
+    "\"a\"",
+    "\"def\""
+  ],
+  "parameter_types": [
+    "java.util.Hashtable",
+    "java.lang.String",
+    "java.lang.String"
+  ],
+  "void_return": false
+}

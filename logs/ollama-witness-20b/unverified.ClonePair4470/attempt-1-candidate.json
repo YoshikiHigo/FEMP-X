@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical computations: they return the arithmetic mean of the input array, handling empty arrays by returning Double.NaN and treating null inputs the same way. No input can distinguish their behavior."
+}

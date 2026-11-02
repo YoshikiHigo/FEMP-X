@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods exhibit identical behavior for all possible byte[] inputs: they both return true iff the inputs are both null or both non‑null and contain the same sequence of bytes, and false otherwise. No input can cause one method to return a different value, throw a different exception, or exhibit a side effect that the other does not. Hence no concrete separating test case exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1281,
+  "eval_count": 256,
+  "total_duration": 2299142300,
+  "load_duration": 5501400
+}

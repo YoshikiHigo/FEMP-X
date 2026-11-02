@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical byte‑to‑int conversion using the same arithmetic; for any valid or invalid input they produce the same result or throw the same exception. No concrete separating test can be constructed within the given constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1263,
+  "eval_count": 242,
+  "total_duration": 2031225600,
+  "load_duration": 14502200
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte conversion logic for all valid inputs (including empty, null, and odd-length strings). No input can cause a difference in return value, side effects, or exception type between method1 and method2."
+}

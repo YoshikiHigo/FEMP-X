@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods compute the same 32‑bit big‑endian value from the first four bytes of the array. For any byte array of length ≥4 they return identical results; for shorter arrays they both throw ArrayIndexOutOfBoundsException; for null they both throw NullPointerException. No input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1204,
+  "eval_count": 540,
+  "total_duration": 4345233300,
+  "load_duration": 2798400
+}

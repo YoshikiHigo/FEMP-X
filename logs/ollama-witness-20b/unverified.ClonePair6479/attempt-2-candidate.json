@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 interprets each byte as an unsigned 8‑bit value and ORs them into a 64‑bit long, while method2 masks each byte to 7 bits and then sets the sign bits separately. For a byte array where every byte has its high bit set (e.g. 0x80), method1 produces 0x8080808080808080L, whereas method2 produces 0x0808080808080800L due to the final adjustment with Long.MIN_VALUE.",
+  "arguments_java": [
+    "new byte[]{(byte)0x80,(byte)0x80,(byte)0x80,(byte)0x80,(byte)0x80,(byte)0x80,(byte)0x80,(byte)0x80}",
+    "0"
+  ],
+  "parameter_types": [
+    "byte[]",
+    "int"
+  ],
+  "void_return": false
+}

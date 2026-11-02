@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical comparisons of two byte arrays; no input can cause differing return values, side effects, or exceptions beyond the documented NullPointerException when a null argument is passed."
+}

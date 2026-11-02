@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair7697",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(7),Long(7)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(7),Long(7)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(7),Long(7)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(7),Long(7)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(7),Long(7)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(7),Long(7)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "Boolean(false)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(7),Long(7)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(7),Long(7)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 returns true because the two objects have the same hashCode and different classes, while method2 returns false because Integer.equals(Long) is false.",
+    "arguments_java": [
+      "Integer.valueOf(7)",
+      "Long.valueOf(7)"
+    ],
+    "parameter_types": [
+      "Object",
+      "Object"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 155.759
+}

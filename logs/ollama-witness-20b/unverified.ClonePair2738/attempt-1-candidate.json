@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logical checks on the input byte arrays. For all possible inputs—including nulls, empty arrays, arrays of equal length with identical or differing contents, and arrays that are the same reference—their return values, side effects, and termination behavior match exactly. No concrete input can be constructed that would cause one method to behave differently from the other under the given constraints."
+}

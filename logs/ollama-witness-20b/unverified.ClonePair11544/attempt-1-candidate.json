@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, when the replacement string \"oldString\" is empty, both methods enter an infinite loop due to the way they update the index variables, and for all other inputs they perform the same substring replacement logic. No concrete input can be constructed that causes one method to return a different value, throw a different exception, or terminate differently while the other does not."
+}

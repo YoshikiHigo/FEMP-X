@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte‑to‑long conversion; no input can cause differing return values, side effects, or exceptions."
+}

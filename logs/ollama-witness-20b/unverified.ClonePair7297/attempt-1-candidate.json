@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same 32‑bit unsigned value from four consecutive bytes starting at the given offset. For any byte array (including null or too short) they throw the same exception, and for all valid inputs they return identical results. No deterministic input can distinguish their behavior."
+}

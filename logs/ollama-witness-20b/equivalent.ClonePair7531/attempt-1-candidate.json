@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods perform identical logic: both parse up to the minimum of available hex characters and output buffer capacity, converting each pair of hex digits to a byte and counting only successful conversions. Their return values, side‑effects on the byte array, and exception behavior are the same for all deterministic, bounded inputs. No concrete input can distinguish them."
+}

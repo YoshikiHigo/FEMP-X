@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the same year, month, and day fields from the identical Date objects using the same underlying epoch representation. The deprecated Date.getYear(), getMonth(), and getDate() methods return values that are consistent with Calendar's fields for any given instant, so no input can cause the two methods to diverge in return value, side effect, exception, or termination."
+}

@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "exception",
+  "reason": "method1 iterates using the list’s iterator, which can return elements without invoking get(). method2 accesses elements via list.get(i), which throws UnsupportedOperationException for the custom list. The same input list and object produce a normal return for method1 and an exception for method2.",
+  "arguments_java": [
+    "new java.util.AbstractList(){\n    public Object get(int i){throw new UnsupportedOperationException();}\n    public int size(){return 1;}\n    public java.util.Iterator iterator(){\n        return new java.util.Iterator(){\n            Object e = new Object();\n            boolean has = true;\n            public boolean hasNext(){return has;}\n            public Object next(){has = false; return e;}\n        };\n    }\n}",
+    "new Object()"
+  ],
+  "parameter_types": [
+    "java.util.List",
+    "java.lang.Object"
+  ],
+  "void_return": false
+}

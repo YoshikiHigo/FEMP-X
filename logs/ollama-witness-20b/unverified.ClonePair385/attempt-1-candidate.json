@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical checks in the same order for all possible byte[] inputs; no input can cause a differing return value, side effect, exception, or non‑termination."
+}

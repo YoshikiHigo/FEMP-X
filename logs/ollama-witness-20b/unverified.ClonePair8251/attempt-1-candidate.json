@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods return true if and only if the two input strings are either both null or both non‑null and equal. The implementation details (equals vs. compareTo) do not introduce any observable difference for any deterministic, bounded input. No input can cause one method to return a different value, throw an exception, or exhibit a side effect that the other does not. Therefore, no concrete separating test case exists."
+}

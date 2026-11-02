@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods implement logically equivalent predicates for all possible char inputs; no concrete input can distinguish their return values, side effects, or termination behavior."
+}

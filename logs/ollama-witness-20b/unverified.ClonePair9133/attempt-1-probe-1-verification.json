@@ -1,0 +1,62 @@
+{
+  "key": "unverified.ClonePair9133",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.StringIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==),Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==),Integer(-1)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.StringIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==),Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==),Integer(-1)]"
+      }
+    ],
+    [
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.StringIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==),Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==),Integer(-1)]"
+      },
+      {
+        "status": "EX",
+        "valueSnapshot": null,
+        "exceptionClass": "java.lang.StringIndexOutOfBoundsException",
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(YQ==),Integer(-1)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(YQ==),Integer(-1)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "exception",
+    "reason": "method1 returns the negative startIdx unchanged, while method2 attempts to access src.charAt(from) which throws StringIndexOutOfBoundsException for a negative index.",
+    "arguments_java": [
+      "\"a\"",
+      "-1"
+    ],
+    "parameter_types": [
+      "String",
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 160.778
+}

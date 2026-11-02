@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods contain identical conditional logic and return the same integer values for all possible integer inputs. No distinguishing behavior such as differing return values, side effects, exceptions, or non‑termination can be observed for any deterministic input."
+}

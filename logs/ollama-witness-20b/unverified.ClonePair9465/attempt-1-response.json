@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical operations on the Calendar instance; for any non‑null Calendar they compute the same formatted string, and for a null argument both throw a NullPointerException. No deterministic input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1041,
+  "eval_count": 118,
+  "total_duration": 1364657600,
+  "load_duration": 10340400
+}

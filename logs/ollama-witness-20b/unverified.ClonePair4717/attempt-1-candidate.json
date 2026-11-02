@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods compute the maximum element of the array in the same way. They both access array[0] and iterate over the remaining elements, updating a local variable when a larger value is found. For all possible inputs—including empty arrays, null arrays, arrays with a single element, or arrays with multiple elements—their behavior (return value or exception type) is identical. No deterministic, bounded input can distinguish them."
+}

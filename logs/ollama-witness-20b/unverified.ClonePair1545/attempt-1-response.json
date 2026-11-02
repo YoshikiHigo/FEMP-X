@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods implement identical logic for comparing byte arrays; for any deterministic input the return value, side effects, exceptions, and termination behavior are the same.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1280,
+  "eval_count": 67,
+  "total_duration": 969665700,
+  "load_duration": 5431700
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods evaluate the same set of whitespace characters and return the same boolean value for any input character. No input can distinguish their behavior."
+}

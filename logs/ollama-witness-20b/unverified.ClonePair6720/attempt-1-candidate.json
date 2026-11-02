@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods perform identical byte‑to‑long conversion on the first eight elements of the array. For any input array (including null or shorter than eight elements), they either throw the same exception or return the same long value. No deterministic, bounded input can separate their behaviors."
+}

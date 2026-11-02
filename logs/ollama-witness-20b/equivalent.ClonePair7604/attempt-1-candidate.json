@@ -1,0 +1,14 @@
+{
+  "found": true,
+  "difference_type": "return_value",
+  "reason": "method1 checks symmetry of equals by evaluating both apple.equals(orange) and orange.equals(apple). method2 only checks apple.equals(orange). By supplying two objects where the equals relation is asymmetric (a.equals(b) is true but b.equals(a) is false), method1 will return false while method2 will return true.",
+  "arguments_java": [
+    "new A()",
+    "new B()"
+  ],
+  "parameter_types": [
+    "Object",
+    "Object"
+  ],
+  "void_return": false
+}

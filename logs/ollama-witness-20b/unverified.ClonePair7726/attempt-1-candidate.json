@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logical behavior for all possible Object inputs; no input can distinguish their return values, side effects, or exception behavior."
+}

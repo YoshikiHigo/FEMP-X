@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods perform identical logic; the only difference is the use of a raw Vector versus a generic Vector<String>, which does not affect runtime behavior for the given inputs. No concrete separating input exists.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1379,
+  "eval_count": 72,
+  "total_duration": 1017862100,
+  "load_duration": 2547500
+}

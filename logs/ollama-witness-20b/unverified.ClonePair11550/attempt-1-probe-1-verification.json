@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair11550",
+  "stable": true,
+  "differenceType": null,
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(MjFzdA==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(21)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(21)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(MjFzdA==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(21)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(21)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "String(MjFzdA==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(21)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(21)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "String(MjFzdA==)",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][Integer(21)]",
+        "inputAfterSnapshot": "java.lang.Object[][Integer(21)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "For i=21, method1 returns \"21st\" while method2 returns \"21th\".",
+    "arguments_java": [
+      "21"
+    ],
+    "parameter_types": [
+      "int"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 158.985
+}

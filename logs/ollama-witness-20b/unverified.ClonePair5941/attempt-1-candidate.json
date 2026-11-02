@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods produce identical boolean results for all possible String inputs; no concrete separating input exists."
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"exception\",\"reason\":\"method1 handles negative width by returning the original string, whereas method2 attempts to allocate a char array of negative size and throws NegativeArraySizeException.\",\"arguments_java\":[\"\\\"foo\\\"\"],\"parameter_types\":[\"String\",\"int\"],\"void_return\":false}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1141,
+  "eval_count": 212,
+  "total_duration": 1776304900,
+  "load_duration": 19895200
+}

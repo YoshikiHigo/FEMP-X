@@ -1,0 +1,60 @@
+{
+  "key": "unverified.ClonePair13278",
+  "stable": true,
+  "differenceType": "return_value",
+  "outcomes": [
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "null",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MDAuMS4yLjM=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MDAuMS4yLjM=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][0, 1, 2, 3]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MDAuMS4yLjM=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MDAuMS4yLjM=)]"
+      }
+    ],
+    [
+      {
+        "status": "OK",
+        "valueSnapshot": "null",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MDAuMS4yLjM=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MDAuMS4yLjM=)]"
+      },
+      {
+        "status": "OK",
+        "valueSnapshot": "byte[][0, 1, 2, 3]",
+        "exceptionClass": null,
+        "stdout": "",
+        "stderr": "",
+        "originalInputsSnapshot": "java.lang.Object[][String(MDAuMS4yLjM=)]",
+        "inputAfterSnapshot": "java.lang.Object[][String(MDAuMS4yLjM=)]"
+      }
+    ]
+  ],
+  "modelCandidate": {
+    "found": true,
+    "difference_type": "return_value",
+    "reason": "method1 rejects an octet that has more than one digit and starts with 0 (e.g., \"00\") because it checks if currentValue==0 after at least one digit, returning null. method2 uses Integer.parseInt which accepts \"00\" as 0, so it returns a byte array. The input \"00.1.2.3\" causes method1 to return null while method2 returns a non‑null byte array.",
+    "arguments_java": [
+      "\"00.1.2.3\""
+    ],
+    "parameter_types": [
+      "String"
+    ],
+    "void_return": false
+  },
+  "remainingSeconds": 123.516
+}

@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods produce identical results for all possible byte array inputs, including edge cases such as empty arrays and null references (which both throw NullPointerException). No concrete input can distinguish their behavior.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1278,
+  "eval_count": 411,
+  "total_duration": 3514295600,
+  "load_duration": 21123200
+}

@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible Integer inputs. Both perform null checks, then compare the integer values using either reference equality (which is true only when the same Integer instance is passed) or numeric comparison via intValue(). In all cases the returned integer (0, 1, or -1) matches between method1 and method2. No input can produce a differing return value, side effect, exception, or non‑termination."
+}

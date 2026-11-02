@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods are functionally equivalent for all possible byte[] inputs. Method2’s early reference equality check only short‑circuits when the two arguments are the exact same array instance, in which case the subsequent element‑wise comparison in method1 would also succeed. No input can cause one method to return a different value, throw an exception, or exhibit a side‑effect that the other does not."
+}

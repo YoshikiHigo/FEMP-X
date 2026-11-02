@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"The two methods perform identical logic: they compare array lengths and then element-wise equality. No input can cause a differing return value, side effect, exception type, or non‑termination.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1180,
+  "eval_count": 62,
+  "total_duration": 930814500,
+  "load_duration": 2873400
+}

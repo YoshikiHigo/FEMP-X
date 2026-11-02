@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":false,\"reason\":\"Both methods exhibit identical behavior for all deterministic, bounded inputs. In particular, when the search string is empty both methods enter an infinite loop, and for all other cases they produce the same output or throw the same exception. No concrete separating input can be constructed within the allowed constraints.\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 1333,
+  "eval_count": 826,
+  "total_duration": 6448470600,
+  "load_duration": 8884700
+}

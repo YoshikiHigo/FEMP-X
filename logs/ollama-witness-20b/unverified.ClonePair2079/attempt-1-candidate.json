@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible byte[] inputs. Both perform the same null checks, length comparison, and element-wise equality test (albeit in opposite loop directions). No input can cause a difference in return value, side effects, or exception type. Therefore, no concrete separating test case exists."
+}

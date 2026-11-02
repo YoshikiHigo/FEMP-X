@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods exhibit identical behavior for all possible inputs within the specified constraints. They both return false when either array or key is null, otherwise they compare each element using either equals or compareTo, which are equivalent for non‑null strings. No input can cause a differing return value, side effect, exception type, or non‑termination."
+}

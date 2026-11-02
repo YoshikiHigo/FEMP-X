@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical control flow and behavior for all deterministic, bounded inputs. No concrete input can distinguish their return values, side effects, or exception types."
+}

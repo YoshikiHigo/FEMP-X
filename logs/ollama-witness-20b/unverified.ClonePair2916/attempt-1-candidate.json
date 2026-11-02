@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "The two methods exhibit identical behavior for all possible byte[] inputs. Both perform the same sequence of checks: they first compare references, then handle nulls and length mismatches, and finally compare array contents element‑by‑element. No input can cause one method to return a different value, throw an exception, or exhibit a side effect that the other does not."
+}

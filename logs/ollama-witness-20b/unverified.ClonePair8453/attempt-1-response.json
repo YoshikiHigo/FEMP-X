@@ -1,0 +1,10 @@
+{
+  "model": "gpt-oss:20b",
+  "response": "{\"found\":true,\"difference_type\":\"return_value\",\"reason\":\"method1 attempts to parse the raw string; if the string contains leading or trailing whitespace it throws NumberFormatException and returns null. method2 trims the string before parsing; the same whitespace‑containing string is parsed successfully and returns a Double. Thus the two methods produce different return values for the same input.\",\"arguments_java\":[\"\\\" 1.0\\\"\"],\"parameter_types\":[\"String\"],\"void_return\":false,\"nontermination_evidence\":\"\"}",
+  "done": true,
+  "done_reason": "stop",
+  "prompt_eval_count": 750,
+  "eval_count": 212,
+  "total_duration": 1967946600,
+  "load_duration": 9091100
+}

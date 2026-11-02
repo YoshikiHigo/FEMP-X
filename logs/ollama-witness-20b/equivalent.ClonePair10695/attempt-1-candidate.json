@@ -1,0 +1,4 @@
+{
+  "found": false,
+  "reason": "Both methods implement identical logic for all finite double inputs, including edge cases such as NaN, positive and negative infinity, and values exactly at the boundaries. No input can produce a differing return value, side effect, exception, or non‑termination between the two methods."
+}
